@@ -1,0 +1,46 @@
+.pricingSection {
+    margin-top: -60px;
+    background-color: rgb(99, 99, 99);
+    height: 990px;
+}
+
+.sectionNumTwo {
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+}
+
+.pricingContent {
+    top: 300px;
+    position: absolute;
+    width: 600px;
+}
+
+.btnVideo {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: rgb(0,0,0,0);
+    color: #fff;
+}
+
+.btnVideo:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.cardShadow {
+    margin-top: -20px;
+    box-shadow: 5px 5px #4d4d4d;
+    border-radius: 20px;
+}
+
+.subscribeBtn {
+    border: 3px solid #007bff;
+    border-radius: 8px;
+    color: #007bff;
+    background-color: rgb(0,0,0,0);
+}
+
+.subscribeBtn:hover {
+    background-color: #007bff;
+    color: #fff;
+}

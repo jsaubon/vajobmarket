@@ -1,0 +1,15 @@
+.careerSection {
+    background-color: white;
+    height: 500px;
+}
+
+.findOutMore {
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    color: #007bff;
+}
+
+.findOutMore:hover {
+    background-color: #007bff;
+    color: #fff;
+}

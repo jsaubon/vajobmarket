@@ -1,0 +1,29 @@
+.testiSection {
+    background-color: rgb(85, 144, 211);
+    height: 400px;
+}
+
+.bgImg {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.userImg {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.userContext {
+    margin-left: 10px;
+    width: 150px;
+}
+
+.readMoreBtn {
+    height: 40px;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 20px;
+}
