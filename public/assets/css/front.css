@@ -1,5 +1,6 @@
 .frontSection {
     margin-top: -60px;
+    /* background: url('assets/images/frontAssets/main.jpg'); */
     background-color: rgb(0, 109, 109);
     height: 990px;
 }
@@ -14,7 +15,6 @@
     background-color: #fff;
     margin-top: 20px;
     border-radius: 8px;
-    box-shadow: 5px 5px #4d4d4d;
 }
 
 .findOutHowBtn {

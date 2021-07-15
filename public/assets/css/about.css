@@ -13,9 +13,27 @@
     top: 200px;
     position: absolute;
     border-radius: 10px;
-    box-shadow: 5px 5px #4d4d4d;
 }
 
 .lowtext {
     color: grey;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.goalsVision {
+    background-color: skyblue;
+    height: 800px;
+}
+
+.card-css {
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+
+.bossKenSection {
+    background-color: #007bff;
+    height: 850px;
 }

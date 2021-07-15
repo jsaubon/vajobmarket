@@ -15,6 +15,21 @@
     color:#fff;
 }
 
+.navitems {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.navitemsPlus {
+    color: #007bff;
+}
+
+.navitems:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
 .postJobBtn {
     border-radius: 15px;
     border: 1px solid #fff;
@@ -24,6 +39,14 @@
 .postJobBtn:hover {
     background-color: #fff;
     color: black;
+}
+
+.noDeco {
+    transition: 0.2s;
+}
+
+.noDeco:hover {
+    text-decoration: none;
 }
 
 /* footer section */

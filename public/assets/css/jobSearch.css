@@ -1,0 +1,26 @@
+.jobsSection {
+    margin-top: -60px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.tags button {
+    border: 1px solid #007bff;
+    color: #007bff;
+}
+
+.tags button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.card button {
+    border: 1px solid #000;
+    transition: 0.2s;
+}
+
+.card button:hover {
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+}
