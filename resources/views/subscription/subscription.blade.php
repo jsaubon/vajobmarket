@@ -9,7 +9,7 @@
                         <h4 class="text-light">{{ $subs['title'] }}</h4>
                         <hr class="bg-white" />
                         <p class="text-light">{{ $subs['body'] }}</p>
-                        <button class="btn bg-danger p-4 text-light hiringProcessBtn">{{ $subs['btnTxt'] }}</button>
+                        <button class="btn bg-danger p-4 text-light shadow hiringProcessBtn">{{ $subs['btnTxt'] }}</button>
                     </div>
                 </div>
             </div>
