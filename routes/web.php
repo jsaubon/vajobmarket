@@ -20,3 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PageController@index');
 Route::get('/about', 'AboutController@index');
 Route::get('/pricing', 'PricingController@index');
+Route::get('/jobs', 'JobSearchController@index');
+Route::get('/posts', 'JobPostingController@index');
+Route::get('/dashboard', 'DashboardController@index');
+Route::get('/signup', 'SignupController@index');
