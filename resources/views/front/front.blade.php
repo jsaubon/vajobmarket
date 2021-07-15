@@ -3,10 +3,10 @@
 <section class=frontSection>
     <div class="container">
         <div class="frontContent">
-            <h1 class="text-light">{{$front['title']}}</h1>
+            <h1 class="text-dark">{{$front['title']}}</h1>
             <p class="text-light">{{ $front['body'] }}</p>
             <button class="btn findOutHowBtn">{{ $front['btnTxt'] }}</button>
-            <div class="frontForm">
+            <div class="frontForm shadow">
                 <div class="d-flex p-4 justify-content-around">
                     <input type="text" class="form-control" placeholder="Start your search here"/>
                     <select class="form-control">
