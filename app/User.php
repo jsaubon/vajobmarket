@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'firstname','middlename','lastname', 'email', 'password','mobile_no','phone_no','type'
     ];
 
     /**
@@ -36,4 +36,25 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function client() {
+        return $this->hasOne('App\Client','user_id');
+    }
+
+    public function comments() {
+        return $this->morphMany('App\Comment','commentable');
+    }
+
+    public function created_comments() {
+        return $this->hasMany('App\Comment','created_by');
+    }
+
+    public function messages() {
+        return $this->morphMany('App\Message','messageable');
+    }
+
+    public function created_messages() {
+        return $this->hasMany('App\Message','created_by');
+    }
+
 }
