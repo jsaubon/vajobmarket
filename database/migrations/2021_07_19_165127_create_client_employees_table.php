@@ -23,6 +23,8 @@ class CreateClientEmployeesTable extends Migration
             $table->string('working_hours')->nullable();
             $table->string('date_hired')->nullable();
             $table->longText('job_description')->nullable();
+            $table->longText('responsibilities')->nullable();
+            $table->string('contract')->nullable();
 
 
 

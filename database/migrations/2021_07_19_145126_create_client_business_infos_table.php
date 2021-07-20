@@ -28,7 +28,7 @@ class CreateClientBusinessInfosTable extends Migration
             $table->string('email')->nullable();
             $table->string('mobile_no')->nullable();
             $table->string('phone_no')->nullable();
-            $table->string('business_description')->nullable();
+            $table->longText('business_description')->nullable();
             $table->string('business_photo')->nullable();
             $table->timestamps();
         });

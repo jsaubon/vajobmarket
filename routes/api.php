@@ -48,4 +48,29 @@ Route::middleware('auth:api')->group(function () {
     Route::apiResource('Sector','Backend\SectorController');
 });
 
+Route::get('test1',function() {
 
+    // $model = new \App\ClientJobPost();
+    // $fields = $model->getTableColumns();
+    $datas = \App\ClientJobPost::with([
+        'client',
+        'client.client_business_info',
+    ]);
+    // ->where(function($query) ) {
+        // if($request->search) {
+        //     foreach ($fields as $key => $field) {
+        //         $query->orWhere($field,'LIKE',"%$request->search%");    
+        //     }
+        // }
+    // });
+    $datas->where(\DB::raw('DATE(start_date)'),'<=',date('Y-m-d'));
+    $datas->where(\DB::raw('DATE(end_date)'),'>=',date('Y-m-d'));
+    // if($request->sort_order != '') {
+    //     if(in_array($request->sort_field, $fields)) {
+    //         $datas->orderBy($request->sort_field, $request->sort_order == 'ascend' ? 'asc' : 'desc');
+    //     }
+    // }
+
+    dd($datas->toSql());
+    // $datas = $datas->paginate(50);
+});
