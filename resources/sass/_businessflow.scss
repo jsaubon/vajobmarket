@@ -5,7 +5,7 @@
 }
 .business-img{
     padding :20px 0px 20px 0px;
-    background-image: url('../images/frontAssets/HAND\ PICKED.png');
+    background-image: url('../../public/assets/images/frontAssets/HAND\ PICKED.png');
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -24,12 +24,12 @@
 .back-btn{
     border: 1px solid #747677;
     width: 110px;
-    font-size: 10px;
+    font-size: 10px !important;
     text-transform: uppercase;
 }
 .proceed-btn{
     width: 110px;
-    font-size: 10px;
+    font-size: 10px!important;
     text-transform: uppercase;
 }
 .label-business-agree{

@@ -1,5 +1,4 @@
 @section('career')
-<link href="{{URL::asset('assets/css/career.css')}}" rel="stylesheet">
 <section class="careerSection container-fluid">
     <div class="container h-100">
         <br /><br />

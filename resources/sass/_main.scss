@@ -1,9 +1,11 @@
 /* header section */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body{
     margin:0;
     padding:0;
+    font-family:  'Oswald', sans-serif!important;
 }
 
 .header {
@@ -21,7 +23,7 @@ body{
 }
 .img-container{
     display: inline;
-    background-image: url(../images/frontAssets/logo-vajm-whitefont1.png);
+    background-image: url('../../public/assets/images/frontAssets/logo-vajm-whitefont1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

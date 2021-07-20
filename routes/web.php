@@ -24,3 +24,6 @@ Route::get('/jobs', 'Frontend\JobSearchController@index');
 Route::get('/posts', 'Frontend\JobPostingController@index');
 Route::get('/dashboard', 'Frontend\DashboardController@index');
 Route::get('/signup', 'Frontend\SignupController@index');
+Route::get('/jobterms', 'Frontend\JobSearchController@jobterms');
+Route::get('/personalInfo', 'Frontend\JobSearchController@personalInfo');
+Route::get('/business', 'Frontend\BusinessController@index');

@@ -112,5 +112,13 @@ class JobSearchController extends Controller
         ];
 
         return view('jobSearch.jobsearch', $metaData);
+
+    }
+    public function jobterms(){
+        return view('jobSearch.jobSearchTerm');
+    }
+
+    public function personalInfo(){
+        return view('jobSearch.jobseeker-personal-info');
     }
 }

@@ -1,5 +1,4 @@
 @section('subs')
-<link href="{{URL::asset('assets/css/subscription.css')}}" rel="stylesheet">
 <section class="subsSection container-fluid">
     <div class="container-fluid h-50">
         <div class="row text-center">

@@ -1,5 +1,5 @@
 .subsSection {
-    background-image: url(../images/frontAssets/HAND\ PICKED\ Updated@2x.jpg);
+    background-image: url('../../public/assets/images/frontAssets/HAND\ PICKED\ Updated@2x.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,12 +11,12 @@
 }
 
 .hiringProcessBtn {
-    height: 60px;
-    border-radius: 5px;
-    background-color: rgb(218, 82, 82);
-    box-shadow: 4px 5px 5px -1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 4px 5px 5px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 5px 5px -1px rgba(0,0,0,0.75);
+    height: 60px!important;
+    border-radius: 5px!important;
+    background-color: rgb(218, 82, 82)!important;
+    box-shadow: 4px 5px 5px -1px rgba(0,0,0,0.75)!important;
+    -webkit-box-shadow: 4px 5px 5px -1px rgba(0,0,0,0.75)!important;
+    -moz-box-shadow: 4px 5px 5px -1px rgba(0,0,0,0.75)!important;
 }
 
 .learnBtn {
