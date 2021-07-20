@@ -15,7 +15,7 @@
             <div class="d-flex justify-content-end">
             <img src="nothing here" alt="about us" style="border: 1px solid #000"/>
             </div>
-        </div>    
+        </div>
     </div>
 </section>
 <section class="about2section">
@@ -43,7 +43,7 @@
                     <div class="col-sm-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quos repellendus tenetur quod beatae voluptatum debitis nesciunt vel delectus similique?</p>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </div>

@@ -1,12 +1,15 @@
 .testiSection {
     background-color: rgb(85, 144, 211);
-    height: 400px;
+
 }
 
 .bgImg {
+    background-image: url('../../public/assets/images/frontAssets/blog-imag01@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
     width: 100%;
-    border-radius: 20px;
-    height: 100%;
 }
 
 .userImg {

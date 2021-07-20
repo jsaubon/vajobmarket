@@ -42,12 +42,31 @@ class PageController extends Controller
                 "title" => "Specialized Careers",
                 "btnTitle" => "FIND OUT MORE",
                 "careers" => [
-                    "Social Media Manager",
-                    "Content Writer",
-                    "Credit Repair Assistant",
-                    "Executive Assistant",
-                    "Appointment Setter",
-                    "Digital Marketing Specialist"
+                    [
+                        "name" => "Social Media Manager",
+                        "img" => "1"
+                    ],
+                    [
+                        "name" => "Content Writer",
+                        "img" => "2"
+                    ],
+                    [
+                        "name" => "Credit Repair Assistant",
+                        "img" => "3"
+                    ],
+                    [
+                        "name" => "Executive Assistant",
+                        "img" => "4"
+                    ],
+                    [
+                        "name" => "Appointment Setter",
+                        "img" => "5"
+                    ],
+                    [
+                        "name" => "Digital Marketing Specialist",
+                        "img" => "6"
+                    ]
+
                 ]
             ],
             "teams" => [
@@ -79,7 +98,7 @@ class PageController extends Controller
             ],
             "testimonials" => [
                 [
-                    "img" => "https://i.ibb.co/HBZZmxS/testimonial.jpg",
+                    "img" => "bgImg",
                     "title" => "Our Top ReWill Hiring a Virtual Assistant Help You Survive This Crisis?",
                     "body" => "The pandemic had make this year a tough year for all of us. As everyone stays at home on lockdown, so are businesses. But as business owners, we're also just humans that worry about our own family and want to tak care of them, but how do we do such, without pausing our business?",
                     "seemore" => "#seemore",

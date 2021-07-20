@@ -1,16 +1,14 @@
 @section('testimonials')
 <link href="{{URL::asset('assets/css/testimonials.css')}}" rel="stylesheet">
-<section class="testiSection">
-            <div class="container">
-                <br /><br />
+<section class="testiSection container-fluid">
+            <div class="container py-4">
+
                 @foreach($testimonials as $row)
                 <div class="row">
-                    <div class="col-sm-6">
-                        <img src="{{ $row['img'] }}"
-                            class="bgImg"
-                        />
+                    <div class="col-md-6 d-flex justify-content-center flex-column">
+                        <div class="{{ $row['img'] }}"> </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-md-6  d-flex justify-content-center flex-column">
                         <h5><b>{{ $row['title'] }}</b></h5>
                         <div class="d-flex justify-content-start">
                             @foreach(array_keys($row['metaData']) as $data)
@@ -18,7 +16,7 @@
                             @endforeach
                         </div>
                         <p> {{ $row['body'] }} </p>
-                        <div class="d-flex justify-content-between mt-5">
+                        {{-- <div class="d-flex justify-content-between mt-5">
                             <div class="d-flex">
                                 <img src="{{ $row['user']['img'] }}" class="userImg" />
                                 <span class="userContext">
@@ -26,7 +24,7 @@
                                 </span>
                             </div>
                             <a href="#seemore"><span class="btn readMoreBtn"><small>READ MORE</small></span></a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 @endforeach

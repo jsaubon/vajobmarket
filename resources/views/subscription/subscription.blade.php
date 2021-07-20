@@ -1,20 +1,19 @@
 @section('subs')
-<link href="{{URL::asset('assets/css/subscription.css')}}" rel="stylesheet">
-<section class="subsSection">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="firstCol">
-                    <div class="text-center" style="width:500px;">
-                        <h4 class="text-light">{{ $subs['title'] }}</h4>
-                        <hr class="bg-white" />
-                        <p class="text-light">{{ $subs['body'] }}</p>
-                        <button class="btn bg-danger p-4 text-light shadow hiringProcessBtn">{{ $subs['btnTxt'] }}</button>
+<section class="subsSection container-fluid">
+    <div class="container-fluid h-50">
+        <div class="row text-center">
+            <div class="col col-md-6  ">
+                {{-- <div class="text-center" style="width:500px;"> --}}
+                    <div class="container py-3 h-100 d-flex flex-column justify-content-end">
+                        <h4 class="text-light w-75 mx-auto ">{{ $subs['title'] }}</h4>
+                        <hr class="bg-light " />
+                        <p class=" w-50 mx-auto text-light">{{ $subs['body'] }}</p>
+                        <button class="btn w-50 mx-auto text-light hiringProcessBtn">{{ $subs['btnTxt'] }}</button>
                     </div>
-                </div>
+                {{-- </div> --}}
             </div>
-            <div class="col-sm-6">
-                <div class="card p-5 mt-4 shadow" style="border-radius: 20px;">
+            <div class=" col col-md-6 ">
+                <div class="card p-5 m-4 shadow" style="border-radius: 20px;">
                     <b class="text-center">{{ $subs['cardTitle'] }}</b>
                     <h4 class="text-center">{{ $subs['cardSubtitle'] }}</h4>
                     <p class="text-center">{{ $subs['cardBody'] }}</p>
@@ -24,7 +23,7 @@
                             <label>{{ $list }}</label>
                         </span>
                     @endforeach
-                    
+
                     <button class="btn learnBtn">{{ $subs['learnBtn'] }}</button>
                 </div>
             </div>
