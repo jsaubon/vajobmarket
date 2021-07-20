@@ -16,7 +16,7 @@ class CreateClientJobPostRequiredSkillsTable extends Migration
         Schema::create('client_job_post_required_skills', function (Blueprint $table) {
             $table->id();
             $table->integer('client_job_post_id')->unsigned();
-            $table->string('job_title')->nullable();
+            $table->string('skill')->nullable();
             $table->string('profeciency')->nullable();
             $table->timestamps();
         });
