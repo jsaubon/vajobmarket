@@ -9,16 +9,16 @@
         <div class="container w-75">
             <ul class="d-flex justify-content-around  progress-steps">
                 <li>
-                    <div class="shape shape-active">
+                    <div class="shape ">
                         <div class="dot dot-active"></div>
                     </div>
                     <br>
                     personal information
-                    <div class="line1"></div>
+                    <div class="line1 line-active"></div>
                 </li>
                 <li>
-                    <div class="shape">
-                        <div class="dot "></div>
+                    <div class="shape shape-active">
+                        <div class="dot dot-active"></div>
                     </div>
                     <br>
                     professional details
@@ -211,7 +211,7 @@
                     </div>
 
 
-                    {{-- proceed and back buttons --}}
+
                     <div class="row" style="padding-top:70px;">
                         <div class="col-md-2"></div>
                         <div class="col-md-8">
@@ -227,7 +227,7 @@
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
                             <button class="btn btn-light back-btn" onclick="goBack()">Back</button>
-                            <a class="btn btn-primary proceed-btn" href="/personalDetails">Proceed Next</a>
+                            <a class="btn btn-primary proceed-btn" href="#">Proceed Next</a>
                         </div>
                         <div class="col-md-4"></div>
                     </div>
