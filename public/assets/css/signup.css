@@ -1,3 +1,24 @@
-.signupSection {
-    height: 800px;
+
+
+.active-bottom.active{
+    border-bottom:4px solid;
+    border-color: #dee2e6 #dee2e6 #212529 !important;
+
 }
+
+.email-style{
+    border-bottom: 1px solid #646464 !important;
+    outline:none !important;
+    box-shadow: none!important;
+    margin-bottom: 20px;
+}
+.password-style{
+    border-bottom: 1px solid #646464 !important;
+    outline:none !important;
+    box-shadow: none!important;
+    margin-bottom: 20px;
+}
+.button-style{
+    margin-top: 100px;
+}
+

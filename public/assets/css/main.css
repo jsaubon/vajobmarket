@@ -1,23 +1,55 @@
 /* header section */
-.header {
-    top: 0;
-    position: sticky;
-    background: linear-gradient(rgb(0,0,0,0.7) 10%, rgb(255,255,255,0) );
-    z-index: 2;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    margin:0;
+    padding:0;
 }
 
+.header {
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(180deg, #646468 0%, transparent 100%);
+    z-index: 2;
+    justify-content: space-between;
+}
+.header-items-left{
+    display: flex;
+    margin-left: 8%;
+}
+.img-container{
+    display: inline;
+    background-image: url(../images/frontAssets/logo-vajm-whitefont1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    min-width: 60px;
+
+}
+.img-container i {
+    display: inline;
+}
 .headerActive {
     background-color: #fff;
 }
 
+
 .title {
-    margin: 18px 0px;
+    display: flex;
     color:#fff;
+    width: 140px;
+
+
 }
 
 .navitems {
     text-decoration: none;
     transition: 0.2s;
+    font-weight: 300;
+
 }
 
 .navitemsPlus {
@@ -29,18 +61,30 @@
     border-bottom: 2px solid #fff;
     color: #fff;
 }
+.header-items-right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 100px;
+}
 
 .postJobBtn {
     border-radius: 15px;
+    font-size: 0.7em;
     border: 1px solid #fff;
     color: #fff;
+    width: 80px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .postJobBtn:hover {
     background-color: #fff;
     color: black;
 }
-
+.btn-signin{
+    font-size: 0.65em;
+}
 .noDeco {
     transition: 0.2s;
 }
@@ -52,10 +96,35 @@
 /* footer section */
 
 .footerSection {
-    background-color: rgb(6, 0, 63);
-    height: 300px;
+    background-color: #0a1837;
+
 }
 
 .footerBody {
     width: 900px;
 }
+
+
+.active-bottom.active{
+    border-bottom:4px solid;
+    border-color: #dee2e6 #dee2e6 #212529 !important;
+
+}
+
+.email-style{
+    border-bottom: 1px solid #646464 !important;
+    outline:none !important;
+    box-shadow: none!important;
+    margin-bottom: 20px;
+}
+.password-style{
+    border-bottom: 1px solid #646464 !important;
+    outline:none !important;
+    box-shadow: none!important;
+    margin-bottom: 20px;
+}
+.button-style{
+    margin-top: 100px;
+}
+
+

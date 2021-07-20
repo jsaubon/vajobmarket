@@ -1,0 +1,42 @@
+.jobseeker-landing-container{
+    height: 100vh;
+    padding-bottom:100px;
+    background-color:#ecf6ff;
+}
+.jobseeker-img{
+    padding :20px 0px 20px 0px;
+    background-image: url('../images/frontAssets/HAND\ PICKED.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 2px 7px 5px 0px rgba(194,203,210,0.75);
+    -webkit-box-shadow: 2px 7px 5px 0px rgba(194,203,210,0.75);
+    -moz-box-shadow: 2px 7px 5px 0px rgba(194,203,210,0.75);
+}
+.content-jobseeker-landing p{
+    font-size: 10px;
+}
+.title-jobseeker-landing h2{
+    font-size: 1.2em ;
+    text-transform: uppercase;
+}
+.back-btn{
+    border: 1px solid #747677;
+    width: 110px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.proceed-btn{
+    width: 110px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.label-jobseeker-agree{
+    font-size: 8px;
+    height: 100%;
+}
+.personal-info{
+    height: 100vh;
+    background-color:#ecf6ff;
+}

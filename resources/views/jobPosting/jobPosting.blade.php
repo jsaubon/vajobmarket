@@ -18,31 +18,31 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-sm-8">        
+                    <div class="col-sm-8">
                         <input type="text" class="form-control" placeholder="Job Title" />
                     </div>
-                    <div class="col-sm-4">        
+                    <div class="col-sm-4">
                         <input type="text" class="form-control" placeholder="Sector" />
                     </div>
                 </div>
                 <br/>
                 <div class="row">
-                    <div class="col-sm-4">        
+                    <div class="col-sm-4">
                         <input type="text" class="form-control" placeholder="Job Type" />
                     </div>
-                    <div class="col-sm-4">        
+                    <div class="col-sm-4">
                         <input type="text" class="form-control" placeholder="Monthly Rate" />
                     </div>
-                    <div class="col-sm-4">        
+                    <div class="col-sm-4">
                         <input type="text" class="form-control" placeholder="Hourly Rate" />
                     </div>
                 </div>
                 <br/>
                 <div class="row">
-                    <div class="col-sm-4">        
+                    <div class="col-sm-4">
                         <input type="text" class="form-control" placeholder="start date" />
                     </div>
-                    <div class="col-sm-4">        
+                    <div class="col-sm-4">
                         <input type="text" class="form-control" placeholder="end date" />
                     </div>
                 </div>
@@ -54,10 +54,10 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-sm-8">        
+                    <div class="col-sm-8">
                         <input type="text" class="form-control" placeholder="Skills" />
                     </div>
-                    <div class="col-sm-4">        
+                    <div class="col-sm-4">
                         <input type="text" class="form-control" placeholder="Profeciency" />
                     </div>
                 </div>

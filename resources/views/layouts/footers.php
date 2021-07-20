@@ -1,4 +1,4 @@
-<section class="footerSection">
+<section class="footerSection container-fluid " style="padding-bottom: 60px;">
             <div class="container">
                 <br /><br />
                 <div class="d-flex justify-content-between">
