@@ -293,7 +293,7 @@ class DatabaseSeeder extends Seeder
             for ($i=0; $i < $employees_count; $i++) { 
                 $employees[] = [
                     'client_id' => $client->id,
-                    'jobseeker_id' => $jobseeker_ids[rand(0, count($jobseeker_ids))],
+                    'jobseeker_id' => $jobseeker_ids[rand(0, count($jobseeker_ids) -1)],
                     'employment_status' => $statuses[rand(0,5)],
                     // 'status' => '',
                     'salary' => rand(4,15).'/hr',
