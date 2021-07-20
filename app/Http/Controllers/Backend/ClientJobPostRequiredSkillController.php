@@ -21,7 +21,7 @@ class ClientJobPostRequiredSkillController extends Controller
             $datas = \App\ClientJobPostRequiredSkill::with([
                 'client_job_post'
             ])
-            ->where(function($query) use ($request) {
+            ->where(function($query) use ($request, $fields) {
                 if($request->search) {
                     foreach ($fields as $key => $field) {
                         $query->orWhere($field,'LIKE',"%$request->search%");    

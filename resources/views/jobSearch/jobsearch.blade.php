@@ -10,7 +10,7 @@
                 <h3 class="text-center"><b>
                     {{ $title }}
                 </b></h3>
-                <input type="text" class="form-control" placeholder="{{ $placeholder }}" />
+                <input type="text" id="search_job" class="form-control" placeholder="{{ $placeholder }}" />
                 <div class="d-flex justify-content-around mt-2 tags">
                     @foreach($tags as $tag)
                     <button class="btn m-1">{{ $tag }}</button>
@@ -111,6 +111,7 @@
 
 <script>
     let current_page = 1;
+    let page_count = 1;
     $(document).ready(function() {
         getJobPosts(1);
         $(document).on('click','.page-link-pages',function(e) {
@@ -120,22 +121,34 @@
         });
         $(document).on('click','.page-link-previous',function(e) {
             e.preventDefault();
-            let page = current_page - 1;
-            getJobPosts(page);
+
+            if(current_page != 1) {
+                let page = current_page - 1;
+                getJobPosts(page);
+            }
+            
         });
         $(document).on('click','.page-link-next',function(e) {
             e.preventDefault();
-            let page = current_page + 1;
-            getJobPosts(page);
+            if(current_page != page_count) {
+                let page = current_page + 1;
+                getJobPosts(page);
+            }
+            
+        });
+
+        $('#search_job').on('keydown', function() {
+            // alert();
+            getJobPosts(1, $(this).val());
         });
     });
 
-    function getJobPosts(page) {
-        var url = window.location.origin+'/api/public_job_posts?page='+page+'&sort_field=start_date&sort_order=asc';
+    function getJobPosts(page, search = '') {
+        var url = window.location.origin+'/api/public_job_posts?search='+search+'&page='+page+'&sort_field=start_date&sort_order=asc';
         axios.get(url).then(function({data: res}) {
             console.log(res);
             let data = res.data;
-            let page_count = res.page_count;
+            page_count = res.data.last_page;
             current_page = res.data.current_page;
             
             console.log('res.data.per_page',res.data.per_page);
@@ -175,7 +188,7 @@
                     </li>\
             ');
 
-            for (let index = 0; index < page_count; index++) {
+            for (let index = 0; index < page_count ; index++) {
                 let page = (index+1);
                 $('#job_posts_pagination').append('\
                     <li class="page-item"><a class="page-link page-link-pages" page="'+page+'" href="#">'+page+'</a></li>\
