@@ -56,7 +56,7 @@ class ClientJobPostController extends Controller
             'client_id' => 'required'
         ]);
         
-        $data = ClientJobPost::fill($request->all())->save();
+        $data = ClientJobPost::create($request->all())->save();
        
         return response()->json([
             'success' => true,

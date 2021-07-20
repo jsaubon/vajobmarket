@@ -64,7 +64,7 @@ class JobSeekerController extends Controller
             'client_id' => 'required'
         ]);
         
-        $data = JobSeeker::fill($request->all())->save();
+        $data = JobSeeker::create($request->all())->save();
        
         return response()->json([
             'success' => true,

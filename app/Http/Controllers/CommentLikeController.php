@@ -58,7 +58,7 @@ class CommentLikeController extends Controller
             'user_id' => 'required'
         ]);
         
-        $data = CommentLike::fill($request->all())->save();
+        $data = CommentLike::create($request->all())->save();
        
         return response()->json([
             'success' => true,

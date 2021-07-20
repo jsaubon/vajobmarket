@@ -61,7 +61,7 @@ class ClientController extends Controller
             'user_id' => 'required'
         ]);
         
-        $data = Client::fill($request->all())->save();
+        $data = Client::create($request->all())->save();
        
         return response()->json([
             'success' => true,

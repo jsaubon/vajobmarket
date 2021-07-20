@@ -56,7 +56,7 @@ class ClientJobPostRequiredSkillController extends Controller
             'client_job_post_id' => 'required'
         ]);
         
-        $data = ClientJobPostRequiredSkill::fill($request->all())->save();
+        $data = ClientJobPostRequiredSkill::create($request->all())->save();
        
         return response()->json([
             'success' => true,

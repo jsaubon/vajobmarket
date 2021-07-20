@@ -56,7 +56,7 @@ class JobSeekerProfessionController extends Controller
             'client_id' => 'required'
         ]);
         
-        $data = JobSeekerProfession::fill($request->all())->save();
+        $data = JobSeekerProfession::create($request->all())->save();
        
         return response()->json([
             'success' => true,

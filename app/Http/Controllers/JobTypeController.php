@@ -53,10 +53,10 @@ class JobTypeController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required'
+            'job_type' => 'required'
         ]);
         
-        $data = JobType::fill($request->all())->save();
+        $data = JobType::create($request->all())->save();
        
         return response()->json([
             'success' => true,

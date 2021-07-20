@@ -58,7 +58,7 @@ class ClientEmployeeController extends Controller
             'jobseeker_id' => 'required'
         ]);
         
-        $data = ClientEmployee::fill($request->all())->save();
+        $data = ClientEmployee::create($request->all())->save();
        
         return response()->json([
             'success' => true,

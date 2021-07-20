@@ -56,7 +56,7 @@ class JobSeekerSpecializedSkillController extends Controller
             'client_id' => 'required'
         ]);
         
-        $data = JobSeekerSpecializedSkill::fill($request->all())->save();
+        $data = JobSeekerSpecializedSkill::create($request->all())->save();
        
         return response()->json([
             'success' => true,

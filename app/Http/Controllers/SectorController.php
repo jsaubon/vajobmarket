@@ -53,10 +53,10 @@ class SectorController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required'
+            'sector' => 'required'
         ]);
         
-        $data = Sector::fill($request->all())->save();
+        $data = Sector::create($request->all())->save();
        
         return response()->json([
             'success' => true,

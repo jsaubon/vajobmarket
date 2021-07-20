@@ -56,7 +56,7 @@ class MessageController extends Controller
             'client_id' => 'required'
         ]);
         
-        $data = Message::fill($request->all())->save();
+        $data = Message::create($request->all())->save();
        
         return response()->json([
             'success' => true,

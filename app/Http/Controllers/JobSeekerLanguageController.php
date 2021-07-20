@@ -56,7 +56,7 @@ class JobSeekerLanguageController extends Controller
             'client_id' => 'required'
         ]);
         
-        $data = JobSeekerLanguage::fill($request->all())->save();
+        $data = JobSeekerLanguage::create($request->all())->save();
        
         return response()->json([
             'success' => true,

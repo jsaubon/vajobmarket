@@ -56,7 +56,7 @@ class ClientBusinessInfoController extends Controller
             'client_id' => 'required'
         ]);
         
-        $data = ClientBusinessInfo::fill($request->all())->save();
+        $data = ClientBusinessInfo::create($request->all())->save();
        
         return response()->json([
             'success' => true,

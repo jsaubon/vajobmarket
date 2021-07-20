@@ -56,7 +56,7 @@ class EmployeeMonitorController extends Controller
             'jobseeker_id' => 'required'
         ]);
         
-        $data = EmployeeMonitor::fill($request->all())->save();
+        $data = EmployeeMonitor::create($request->all())->save();
        
         return response()->json([
             'success' => true,

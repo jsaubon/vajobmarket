@@ -62,7 +62,7 @@ class ClientBillingDetailsController extends Controller
             'cvv' => 'required'
         ]);
         
-        $data = ClientBillingDetails::fill($request->all())->save();
+        $data = ClientBillingDetails::create($request->all())->save();
        
         return response()->json([
             'success' => true,
