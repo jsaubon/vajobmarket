@@ -20,31 +20,32 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::post('login', 'PassportController@login');
-Route::post('register', 'PassportController@register');
+Route::post('login', 'Backend/PassportController@login');
+Route::post('register', 'Backend/PassportController@register');
+Route::get('public_job_posts', 'Backend/ClientJobPostController@index');
 
 
 Route::middleware('auth:api')->group(function () {
-    Route::apiResource('User','UserController');
-    Route::apiResource('Client','ClientController');
-    Route::apiResource('ClientBillingDetail','ClientBillingDetailController');
-    Route::apiResource('ClientBusinessInfo','ClientBusinessInfoController');
-    Route::apiResource('ClientEmployee','ClientEmployeeController');
-    Route::apiResource('ClientJobPost','ClientJobPostController');
-    Route::apiResource('ClientJobPostRequiredSkill','ClientJobPostRequiredSkillController');
-    Route::apiResource('Comment','CommentController');
-    Route::apiResource('CommentLike','CommentLikeController');
-    Route::apiResource('EmployeeMonitor','EmployeeMonitorController');
-    Route::apiResource('JobSeeker','JobSeekerController');
-    Route::apiResource('JobSeekerEducation','JobSeekerEducationController');
-    Route::apiResource('JobSeekerExperience','JobSeekerExperienceController');
-    Route::apiResource('JobSeekerLanguage','JobSeekerLanguageController');
-    Route::apiResource('JobSeekerProfession','JobSeekerProfessionController');
-    Route::apiResource('JobSeekerReference','JobSeekerReferenceController');
-    Route::apiResource('JobSeekerSpecializedSkill','JobSeekerSpecializedSkillController');
-    Route::apiResource('JobType','JobTypeController');
-    Route::apiResource('Message','MessageController');
-    Route::apiResource('Sector','SectorController');
+    Route::apiResource('User','Backend/UserController');
+    Route::apiResource('Client','Backend/ClientController');
+    Route::apiResource('ClientBillingDetail','Backend/ClientBillingDetailsController');
+    Route::apiResource('ClientBusinessInfo','Backend/ClientBusinessInfoController');
+    Route::apiResource('ClientEmployee','Backend/ClientEmployeeController');
+    Route::apiResource('ClientJobPost','Backend/ClientJobPostController');
+    Route::apiResource('ClientJobPostRequiredSkill','Backend/ClientJobPostRequiredSkillController');
+    Route::apiResource('Comment','Backend/CommentController');
+    Route::apiResource('CommentLike','Backend/CommentLikeController');
+    Route::apiResource('EmployeeMonitor','Backend/EmployeeMonitorController');
+    Route::apiResource('JobSeeker','Backend/JobSeekerController');
+    Route::apiResource('JobSeekerEducation','Backend/JobSeekerEducationController');
+    Route::apiResource('JobSeekerExperience','Backend/JobSeekerExperienceController');
+    Route::apiResource('JobSeekerLanguage','Backend/JobSeekerLanguageController');
+    Route::apiResource('JobSeekerProfession','Backend/JobSeekerProfessionController');
+    Route::apiResource('JobSeekerReference','Backend/JobSeekerReferenceController');
+    Route::apiResource('JobSeekerSpecializedSkill','Backend/JobSeekerSpecializedSkillController');
+    Route::apiResource('JobType','Backend/JobTypeController');
+    Route::apiResource('Message','Backend/MessageController');
+    Route::apiResource('Sector','Backend/SectorController');
 });
 
 
