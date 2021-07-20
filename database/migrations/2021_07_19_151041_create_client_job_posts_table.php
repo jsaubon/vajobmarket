@@ -20,6 +20,7 @@ class CreateClientJobPostsTable extends Migration
             $table->longText('job_description')->nullable();
             $table->string('sector')->nullable();
             $table->string('job_type')->nullable();
+            $table->string('salary')->nullable();
             $table->string('monthly_rate')->nullable();
             $table->string('hourly_rate')->nullable();
             $table->string('start_date')->nullable();

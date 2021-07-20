@@ -14,8 +14,7 @@ class JobSeekerReferenceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+   public function index(Request $request) {
         if($request->page) {
             $model = new \App\JobSeekerReference();
             $fields = $model->getTableColumns();

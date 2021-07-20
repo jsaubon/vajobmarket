@@ -14,13 +14,13 @@ class ClientJobPostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index(Request $request){
         if($request->page) {
             $model = new \App\ClientJobPost();
             $fields = $model->getTableColumns();
             $datas = \App\ClientJobPost::with([
-                'client'
+                'client',
+                'client.client_business_detail',
             ])
             ->where(function($query) use ($request) {
                 if($request->search) {
@@ -44,7 +44,8 @@ class ClientJobPostController extends Controller
 
         return response()->json([
             'success' => true,
-            'data' => $datas
+            'data' => $datas,
+            'page_count' => $request->page ? $datas->count() : 0
         ]);
     }
 

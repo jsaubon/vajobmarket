@@ -4,22 +4,21 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 
-use App\ClientBillingDetails;
+use App\ClientBillingDetail;
 use Illuminate\Http\Request;
 
-class ClientBillingDetailsController extends Controller
+class ClientBillingDetailController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+   public function index(Request $request) {
         if($request->page) {
-            $model = new \App\ClientBillingDetails();
+            $model = new \App\ClientBillingDetail();
             $fields = $model->getTableColumns();
-            $datas = \App\ClientBillingDetails::with([
+            $datas = \App\ClientBillingDetail::with([
                 'client'
             ])
             ->where(function($query) use ($request) {
@@ -37,7 +36,7 @@ class ClientBillingDetailsController extends Controller
             $datas = $datas->paginate(50);
 
         } else {
-            $datas = \App\ClientBillingDetails::orderBy('type','asc')->get();
+            $datas = \App\ClientBillingDetail::orderBy('type','asc')->get();
         }
 
 
@@ -64,7 +63,7 @@ class ClientBillingDetailsController extends Controller
             'cvv' => 'required'
         ]);
         
-        $data = ClientBillingDetails::create($request->all())->save();
+        $data = ClientBillingDetail::create($request->all())->save();
        
         return response()->json([
             'success' => true,
@@ -80,7 +79,7 @@ class ClientBillingDetailsController extends Controller
      */
     public function show($id)
     {
-        $datas = ClientBillingDetails::with([
+        $datas = ClientBillingDetail::with([
             'client'
         ])->find($id);
         
@@ -106,12 +105,12 @@ class ClientBillingDetailsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $datas = ClientBillingDetails::find($id);
+        $datas = ClientBillingDetail::find($id);
 
         if (!$datas) {
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails with id ' . $id . ' not found'
+                'message' => 'ClientBillingDetail with id ' . $id . ' not found'
             ], 400);
         }
         $datas->fill($request->all());
@@ -125,7 +124,7 @@ class ClientBillingDetailsController extends Controller
         else
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails could not be updated'
+                'message' => 'ClientBillingDetail could not be updated'
             ], 500);
     }
 
@@ -137,12 +136,12 @@ class ClientBillingDetailsController extends Controller
      */
     public function destroy($id)
     {
-        $datas = ClientBillingDetails::find($id);
+        $datas = ClientBillingDetail::find($id);
 
         if (!$datas) {
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails with id ' . $id . ' not found'
+                'message' => 'ClientBillingDetail with id ' . $id . ' not found'
             ], 400);
         }
 
@@ -153,7 +152,7 @@ class ClientBillingDetailsController extends Controller
         } else {
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails could not be deleted'
+                'message' => 'ClientBillingDetail could not be deleted'
             ], 500);
         }
     }

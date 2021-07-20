@@ -15,8 +15,7 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+   public function index(Request $request) {
         if($request->page) {
             $user = \App\User::with([
                 'client',

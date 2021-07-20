@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ClientBillingDetails extends Model
+class ClientBillingDetail extends Model
 {
     protected $guarded = [];
 
