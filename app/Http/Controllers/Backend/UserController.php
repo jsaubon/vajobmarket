@@ -24,7 +24,7 @@ class UserController extends Controller
                 'messages',
                 'created_messages'
             ])
-            ->where(function($query) use ($request) {
+            ->where(function($query) use ($request, $fields) {
                 if($request->search) {
                     $query->where('firstname','LIKE',"%$request->search%")
                     ->orWhere('middlename','LIKE',"%$request->search%")

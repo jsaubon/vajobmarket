@@ -25,7 +25,7 @@ class ClientController extends Controller
                 'client_employees',
                 'client_job_posts',
             ])
-            ->where(function($query) use ($request) {
+            ->where(function($query) use ($request, $fields) {
                 if($request->search) {
                     foreach ($fields as $key => $field) {
                         $query->orWhere($field,'LIKE',"%$request->search%");    

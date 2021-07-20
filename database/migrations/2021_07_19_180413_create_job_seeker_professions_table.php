@@ -18,8 +18,8 @@ class CreateJobSeekerProfessionsTable extends Migration
             $table->integer('jobseeker_id')->unsigned();
             $table->string('job_title')->nullable();
             $table->string('availabilty')->nullable();
-            $table->string('monthly_rate')->nullable();
-            $table->string('hourly_rate')->nullable();
+            $table->string('salary')->nullable();
+            // $table->string('hourly_rate')->nullable();
             $table->longText('skills_summary')->nullable();
 
 

@@ -20,17 +20,17 @@ class ClientJobPostController extends Controller
             $fields = $model->getTableColumns();
             $datas = \App\ClientJobPost::with([
                 'client',
-                'client.client_business_detail',
+                'client.client_business_info',
             ])
-            ->where(function($query) use ($request) {
+            ->where(function($query) use ($request, $fields) {
                 if($request->search) {
                     foreach ($fields as $key => $field) {
                         $query->orWhere($field,'LIKE',"%$request->search%");    
                     }
                 }
-            })
-            ->where(\DB::raw('DATE(start_date)'),'>=',date('Y-m-d'))
-            ->where(\DB::raw('DATE(end_date)'),'<=',date('Y-m-d'));
+            });
+            $datas->where(\DB::raw('DATE(start_date)'),'<=',date('Y-m-d'));
+            $datas->where(\DB::raw('DATE(end_date)'),'>=',date('Y-m-d'));
             if($request->sort_order != '') {
                 if(in_array($request->sort_field, $fields)) {
                     $datas->orderBy($request->sort_field, $request->sort_order == 'ascend' ? 'asc' : 'desc');
@@ -39,7 +39,7 @@ class ClientJobPostController extends Controller
             $datas = $datas->paginate(50);
 
         } else {
-            $datas = \App\ClientJobPost::orderBy('type','asc')->get();
+            $datas = \App\ClientJobPost::orderBy('id','asc')->get();
         }
 
         return response()->json([
@@ -78,7 +78,8 @@ class ClientJobPostController extends Controller
     public function show($id)
     {
         $data = ClientJobPost::with([
-            'client'
+            'client',
+            'client.client_business_info',
         ])->find($id);
         
         if (!$data) {

@@ -21,7 +21,7 @@ class JobSeekerProfessionController extends Controller
             $datas = \App\JobSeekerProfession::with([
                 'jobseeker'
             ])
-            ->where(function($query) use ($request) {
+            ->where(function($query) use ($request, $fields) {
                 if($request->search) {
                     foreach ($fields as $key => $field) {
                         $query->orWhere($field,'LIKE',"%$request->search%");    
