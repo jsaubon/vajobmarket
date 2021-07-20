@@ -8,6 +8,12 @@ class Client extends Model
 {
     protected $guarded = [];
 
+    public function getTableColumns() {
+        return $this->getConnection()->getSchemaBuilder()->getColumnListing($this->getTable());
+    }
+
+
+
     public function user() {
         return $this->belongsTo('App\User','user_id');
     }

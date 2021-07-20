@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\ClientBillingDetails;
 use Illuminate\Http\Request;
-
-class ClientBillingDetailsController extends Controller
+use App\User;
+use App\Member;
+use Auth;
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,34 +16,31 @@ class ClientBillingDetailsController extends Controller
     public function index()
     {
         if($request->page) {
-            $model = new \App\ClientBillingDetails();
-            $fields = $model->getTableColumns();
-            $datas = \App\ClientBillingDetails::with([
-                'client'
+            $user = \App\User::with([
+                'client',
+                'comments',
+                'created_comments',
+                'messages',
+                'created_messages'
             ])
             ->where(function($query) use ($request) {
                 if($request->search) {
-                    foreach ($fields as $key => $field) {
-                        $query->orWhere($field,'LIKE',"%$request->search%");    
-                    }
+                    $query->where('firstname','LIKE',"%$request->search%")
+                    ->orWhere('middlename','LIKE',"%$request->search%")
+                    ->orWhere('lastname','LIKE',"%$request->search%")
+                    ->orWhere('email','LIKE',"%$request->search%")
+                    ->orWhere('mobile_no','LIKE',"%$request->search%")
+                    ->orWhere('phone_no','LIKE',"%$request->search%");
                 }
             });
             if($request->sort_order != '') {
-                if(in_array($request->sort_field, $fields)) {
-                    $datas->orderBy($request->sort_field, $request->sort_order == 'ascend' ? 'asc' : 'desc');
-                }
+                $user->orderBy($request->sort_field, $request->sort_order == 'ascend' ? 'asc' : 'desc');
             }
-            $datas = $datas->paginate(50);
+            $user = $user->paginate(50);
 
         } else {
-            $datas = \App\ClientBillingDetails::orderBy('type','asc')->get();
+            $user = \App\User::orderBy('type','asc')->get();
         }
-
-
-        return response()->json([
-            'success' => true,
-            'data' => $datas
-        ]);
     }
 
     /**
@@ -54,19 +52,27 @@ class ClientBillingDetailsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required',
-            'card_number' => 'required',
-            'cart_type' => 'required',
-            'exp_date' => 'required',
-            'cardholder_name' => 'required',
-            'cvv' => 'required'
+            'firstname' => 'required',
+            'middlename' => 'required',
+            'lastname' => 'required',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6',
         ]);
         
-        $data = ClientBillingDetails::fill($request->all())->save();
+        $user = User::create([
+            'firstname' => $request->firstname,
+            'middlename' => $request->middlename,
+            'lastname' => $request->lastname,
+            'email' => $request->email,
+            'password' => bcrypt($request->password),
+            'type' => $request->type,
+            'mobile_no' => $request->mobile_no,
+            'phone_no' => $request->phone_no
+        ]);
        
         return response()->json([
             'success' => true,
-            'data' => $data,
+            'data' => $user,
         ],200);
     }
 
@@ -78,11 +84,15 @@ class ClientBillingDetailsController extends Controller
      */
     public function show($id)
     {
-        $datas = ClientBillingDetails::with([
-            'client'
+        $user = User::with([
+            'client',
+            'comments',
+            'created_comments',
+            'messages',
+            'created_messages'
         ])->find($id);
         
-        if (!$datas) {
+        if (!$user) {
             return response()->json([
                 'success' => false,
                 'message' => 'Product with id ' . $id . ' not found'
@@ -91,7 +101,7 @@ class ClientBillingDetailsController extends Controller
 
         return response()->json([
             'success' => true,
-            'data' => $datas
+            'data' => $user
         ],200);
     }
 
@@ -104,16 +114,19 @@ class ClientBillingDetailsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $datas = ClientBillingDetails::find($id);
+        $user = User::find($id);
 
-        if (!$datas) {
+        if (!$user) {
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails with id ' . $id . ' not found'
+                'message' => 'User with id ' . $id . ' not found'
             ], 400);
         }
-        $datas->fill($request->all());
-        $updated = $datas->save();
+        $user->fill($request->all());
+        if(isset($request->password)) {
+            $user->password = bcrypt($request->password);
+        }
+        $updated = $user->save();
 
         if ($updated)
             return response()->json([
@@ -123,7 +136,7 @@ class ClientBillingDetailsController extends Controller
         else
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails could not be updated'
+                'message' => 'User could not be updated'
             ], 500);
     }
 
@@ -135,23 +148,23 @@ class ClientBillingDetailsController extends Controller
      */
     public function destroy($id)
     {
-        $datas = ClientBillingDetails::find($id);
+        $user = User::find($id);
 
-        if (!$datas) {
+        if (!$user) {
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails with id ' . $id . ' not found'
+                'message' => 'User with id ' . $id . ' not found'
             ], 400);
         }
 
-        if ($datas->delete()) {
+        if ($user->delete()) {
             return response()->json([
                 'success' => true
             ],200);
         } else {
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails could not be deleted'
+                'message' => 'User could not be deleted'
             ], 500);
         }
     }

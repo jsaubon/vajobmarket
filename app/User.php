@@ -57,4 +57,8 @@ class User extends Authenticatable
         return $this->hasMany('App\Message','created_by');
     }
 
+    public function getTableColumns() {
+        return $this->getConnection()->getSchemaBuilder()->getColumnListing($this->getTable());
+    }
+
 }

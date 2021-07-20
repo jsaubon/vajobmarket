@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\ClientBillingDetails;
+use App\JobSeekerSpecializedSkill;
 use Illuminate\Http\Request;
 
-class ClientBillingDetailsController extends Controller
+class JobSeekerSpecializedSkillController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,10 @@ class ClientBillingDetailsController extends Controller
     public function index()
     {
         if($request->page) {
-            $model = new \App\ClientBillingDetails();
+            $model = new \App\JobSeekerSpecializedSkill();
             $fields = $model->getTableColumns();
-            $datas = \App\ClientBillingDetails::with([
-                'client'
+            $datas = \App\JobSeekerSpecializedSkill::with([
+                'jobseeker'
             ])
             ->where(function($query) use ($request) {
                 if($request->search) {
@@ -35,9 +35,8 @@ class ClientBillingDetailsController extends Controller
             $datas = $datas->paginate(50);
 
         } else {
-            $datas = \App\ClientBillingDetails::orderBy('type','asc')->get();
+            $datas = \App\JobSeekerSpecializedSkill::orderBy('type','asc')->get();
         }
-
 
         return response()->json([
             'success' => true,
@@ -54,15 +53,10 @@ class ClientBillingDetailsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required',
-            'card_number' => 'required',
-            'cart_type' => 'required',
-            'exp_date' => 'required',
-            'cardholder_name' => 'required',
-            'cvv' => 'required'
+            'client_id' => 'required'
         ]);
         
-        $data = ClientBillingDetails::fill($request->all())->save();
+        $data = JobSeekerSpecializedSkill::fill($request->all())->save();
        
         return response()->json([
             'success' => true,
@@ -78,11 +72,11 @@ class ClientBillingDetailsController extends Controller
      */
     public function show($id)
     {
-        $datas = ClientBillingDetails::with([
-            'client'
+        $data = JobSeekerSpecializedSkill::with([
+            'jobseeker'
         ])->find($id);
         
-        if (!$datas) {
+        if (!$data) {
             return response()->json([
                 'success' => false,
                 'message' => 'Product with id ' . $id . ' not found'
@@ -91,7 +85,7 @@ class ClientBillingDetailsController extends Controller
 
         return response()->json([
             'success' => true,
-            'data' => $datas
+            'data' => $data
         ],200);
     }
 
@@ -104,16 +98,16 @@ class ClientBillingDetailsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $datas = ClientBillingDetails::find($id);
+        $data = JobSeekerSpecializedSkill::find($id);
 
-        if (!$datas) {
+        if (!$data) {
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails with id ' . $id . ' not found'
+                'message' => 'JobSeekerSpecializedSkill with id ' . $id . ' not found'
             ], 400);
         }
-        $datas->fill($request->all());
-        $updated = $datas->save();
+        $data->fill($request->all());
+        $updated = $data->save();
 
         if ($updated)
             return response()->json([
@@ -123,7 +117,7 @@ class ClientBillingDetailsController extends Controller
         else
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails could not be updated'
+                'message' => 'JobSeekerSpecializedSkill could not be updated'
             ], 500);
     }
 
@@ -135,25 +129,24 @@ class ClientBillingDetailsController extends Controller
      */
     public function destroy($id)
     {
-        $datas = ClientBillingDetails::find($id);
+        $data = JobSeekerSpecializedSkill::find($id);
 
-        if (!$datas) {
+        if (!$data) {
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails with id ' . $id . ' not found'
+                'message' => 'JobSeekerSpecializedSkill with id ' . $id . ' not found'
             ], 400);
         }
 
-        if ($datas->delete()) {
+        if ($data->delete()) {
             return response()->json([
                 'success' => true
             ],200);
         } else {
             return response()->json([
                 'success' => false,
-                'message' => 'ClientBillingDetails could not be deleted'
+                'message' => 'JobSeekerSpecializedSkill could not be deleted'
             ], 500);
         }
     }
-
 }

@@ -4,10 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class JobSeekerSpecializedSkills extends Model
+class JobSeekerSpecializedSkill extends Model
 {
     
     protected $guarded = [];
+
+    public function getTableColumns() {
+        return $this->getConnection()->getSchemaBuilder()->getColumnListing($this->getTable());
+    }
+
+
 
     public function jobseeker() {
         return $this->belongsTo('App\JobSeeker','jobseeker_id');
