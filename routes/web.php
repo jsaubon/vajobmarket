@@ -17,10 +17,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', 'PageController@index');
-Route::get('/about', 'AboutController@index');
-Route::get('/pricing', 'PricingController@index');
-Route::get('/jobs', 'JobSearchController@index');
-Route::get('/posts', 'JobPostingController@index');
-Route::get('/dashboard', 'DashboardController@index');
-Route::get('/signup', 'SignupController@index');
+Route::get('/', 'Frontend\PageController@index');
+Route::get('/about', 'Frontend\AboutController@index');
+Route::get('/pricing', 'Frontend\PricingController@index');
+Route::get('/jobs', 'Frontend\JobSearchController@index');
+Route::get('/posts', 'Frontend\JobPostingController@index');
+Route::get('/dashboard', 'Frontend\DashboardController@index');
+Route::get('/signup', 'Frontend\SignupController@index');
