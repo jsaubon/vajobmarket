@@ -21,4 +21,9 @@ class ClientEmployee extends Model
     public function jobseeker() {
         return $this->belongsTo('App\JobSeeker','jobseeker_id');
     }
+
+
+    public function employee_monitors() {
+        return $this->hasMany('App\EmployeeMonitor','client_employee_id');
+    }
 }
