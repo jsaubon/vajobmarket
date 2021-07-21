@@ -124,4 +124,13 @@ class JobSearchController extends Controller
     public function personalDetails(){
         return view('jobSearch.jobseeker-personal-details');
     }
+    public function jobseekerSkillset(){
+        return view('jobSearch.jobseeker-skillset');
+    }
+    public function jobseekerProfileReview(){
+        return view('jobSearch.jobseeker-profile-review');
+    }
+    public function jobseekerFinalize(){
+        return view('jobSearch.jobseeker-finalize');
+    }
 }

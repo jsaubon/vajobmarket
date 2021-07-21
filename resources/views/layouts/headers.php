@@ -56,7 +56,7 @@ $obj = [
         </button>
       </div>
       <div style="modal-body">
-                <p class="text-center"><b>SIGN UP</b></p>
+                <p class="text-center"><b>SIGN IN</b></p>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item " role="presentation" style="width:50%;">
                         <a class="nav-link active-bottom active border-top-0  border-left-0 border-right-0 text-center text-dark" id="home-tab" data-toggle="tab" href="#business-in" role="tab" aria-controls="home" aria-selected="true">
