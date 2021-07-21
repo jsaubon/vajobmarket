@@ -1,5 +1,4 @@
 @section('teams')
-<link href="{{URL::asset('assets/css/teams.css')}}" rel="stylesheet">
 <section class="teamSection container-fluid">
     <div class="container">
         <br /><br />

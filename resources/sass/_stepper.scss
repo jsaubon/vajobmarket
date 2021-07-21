@@ -1,0 +1,86 @@
+.progress-steps{
+    list-style: none;
+    font-size: 10px;
+}
+.shape{
+    width: 30px;
+    height: 30px;
+    margin:auto;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.shape-active{
+    background-color:rgba(216,224,232,0.5) ;
+
+}
+
+.line1{
+    position: absolute;
+    top:138px;
+    left:30.8%;
+    height: 2px;
+    width: 13%;
+
+    background-color: #d8e0e8;
+}
+.line2{
+    position: absolute;
+    top:138px;
+    left:45%;
+    height: 2px;
+    width: 13%;
+    background-color: #d8e0e8;
+}
+.line3{
+    position: absolute;
+    top:138px;
+    left:59%;
+    height: 2px;
+    width: 13%;
+    background-color: #d8e0e8;
+}
+.line-active{
+    background-color: #515557;
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    margin:auto;
+    background-color: #d8e0e8;
+    border: 1px solid  #d8e0e8;
+    border-radius: 50%;
+
+}
+.dot-active{
+    background-color: #515557;
+    border: 1px solid  #515557;
+    z-index: 10;
+}
+
+
+.progress-steps li{
+    max-width: 100px;
+    min-width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+@media screen and (min-width: 1400px) {
+    .line1{
+        left:36.5%;
+        width: 9%;
+    }
+    .line2{
+        left:46.5%;
+        width: 9%;
+
+    }
+    .line3{
+        left:56.5%;
+        width: 9%;
+
+    }
+}

@@ -22,7 +22,7 @@
     text-transform: uppercase;
 }
 .back-btn{
-    border: 1px solid #747677;
+    border: 2px solid #747677 !important;
     width: 110px;
     font-size: 10px;
     text-transform: uppercase;
@@ -39,4 +39,45 @@
 .personal-info{
     height: 100vh;
     background-color:#ecf6ff;
+}
+.title-personal-info{
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 40px;
+    color:#747677;
+}
+.personal-info-forms-items{
+    background-color:#ecf6ff !important;
+    border: none!important;
+    padding-left: 0 !important;
+    border-radius: 0px !important;
+    border-bottom: 2px solid #747677 !important;
+    outline:none !important;
+    box-shadow: none!important;
+    font-size: 12px !important;
+    color:#747677;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #ecf6ff inset !important;
+}
+.btn-plus{
+    background-image: url('../../public/assets/images/frontAssets/icon-plus@2x.png');
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    filter: invert(60%) sepia(40%) saturate(2166%) hue-rotate(137deg) brightness(0%) contrast(98%);
+
+}
+.btn-container{
+    background-color: #d1d9e0;
+    height: 40px;
+    border: 1px solid #747677;
+    border-radius: 2.5px;
 }
