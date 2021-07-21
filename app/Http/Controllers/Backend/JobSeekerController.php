@@ -18,24 +18,42 @@ class JobSeekerController extends Controller
         if($request->page) {
             $model = new \App\JobSeeker();
             $fields = $model->getTableColumns();
-            $datas = \App\JobSeeker::with([
+            $fields[] = \DB::raw('CONCAT(users.firstname, " ", users.lastname)');
+            $fields[] = 'email';
+            $fields[] = 'job_seeker_professions.job_title';
+            
+            $exclude_fields = ['id','created_at','updated_at'];
+
+            $datas = \App\JobSeeker::select([
+                    \DB::raw('CONCAT(users.firstname, " ", users.lastname) as `name`'),
+                    \DB::raw('users.email'),
+                    \DB::raw('job_seekers.*'),
+                    \DB::raw('job_seeker_professions.job_title'),
+                    \DB::raw('job_seeker_professions.skills_summary'),
+            ])
+            ->with([
                 'user',
-                'client_employees',
-                'employee_monitors',
+                'client_employees.employee_monitors',
                 'jobseeker_educations',
                 'jobseeker_experiences',
                 'jobseeker_languages',
-                'jobseeker_professions',
+                'jobseeker_profession',
                 'jobseeker_references',
                 'jobseeker_specialized_skills',
             ])
-            ->where(function($query) use ($request, $fields) {
+            ->join('users','users.id','=','job_seekers.user_id')
+            ->join('job_seeker_professions','job_seeker_professions.jobseeker_id','=','job_seekers.id')
+            ->where(function($query) use ($request, $fields,$exclude_fields) {
                 if($request->search) {
                     foreach ($fields as $key => $field) {
-                        $query->orWhere($field,'LIKE',"%$request->search%");    
+                        if(!in_array($field,$exclude_fields)) {
+                            $query->orWhere($field,'LIKE',"%$request->search%");    
+                        }
+                        
                     }
                 }
-            });
+            })
+            ->groupBy('job_seekers.id');
             if($request->sort_order != '') {
                 if(in_array($request->sort_field, $fields)) {
                     $datas->orderBy($request->sort_field, $request->sort_order == 'ascend' ? 'asc' : 'desc');
@@ -44,7 +62,7 @@ class JobSeekerController extends Controller
             $datas = $datas->paginate(50);
 
         } else {
-            $datas = \App\JobSeeker::orderBy('type','asc')->get();
+            $datas = \App\JobSeeker::orderBy('id','asc')->get();
         }
 
         return response()->json([
@@ -88,7 +106,7 @@ class JobSeekerController extends Controller
             'jobseeker_educations',
             'jobseeker_experiences',
             'jobseeker_languages',
-            'jobseeker_professions',
+            'jobseeker_profession',
             'jobseeker_references',
             'jobseeker_specialized_skills',
         ])->find($id);
