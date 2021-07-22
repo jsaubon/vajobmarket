@@ -3,16 +3,19 @@
 @import 'main';
 @import 'media';
 @import 'career';
-@import 'jobseeker';
 @import 'subscription';
 @import 'teams';
 @import 'testimonials';
 @import 'signup';
-@import 'businessflow';
 @import 'stepper';
+@import 'profile-layout';
+
+//business-flow
+@import 'businessflow';
 
 
-
+//jobseeker
+@import 'jobseeker';
 
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;400;700&display=swap');
