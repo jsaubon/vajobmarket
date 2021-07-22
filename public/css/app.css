@@ -757,6 +757,11 @@ img {
   z-index: 10;
 }
 
+.stepper-container {
+  min-width: 800px !important;
+  max-width: 1400px !important;
+}
+
 .progress-steps li {
   max-width: 100px;
   min-width: 100px;
