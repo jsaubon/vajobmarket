@@ -21,7 +21,7 @@
                         <div class="dot "></div>
                     </div>
                     <br>
-                    professional details
+                    business information
                     <div class="line2"></div>
                 </li>
                 <li>
@@ -29,7 +29,7 @@
                         <div class="dot"></div>
                     </div>
                     <br>
-                    skill sets
+                    billing details
                     <div class="line3"></div>
                 </li>
                 <li>
@@ -37,7 +37,7 @@
                         <div class="dot"></div>
                     </div>
                     <br>
-                    profile review
+                   profile review
                 </li>
             </ul>
         </div>
@@ -51,17 +51,17 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="fname" placeholder="First Name">
+                                <input type="text" class="form-control personal-info-forms-items"  placeholder="First Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="mname" placeholder="Middle Name">
+                                <input type="text" class="form-control personal-info-forms-items" placeholder="Middle Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="lname" placeholder="Last Name">
+                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Last Name">
                               </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                             <label class="personal-info-forms-items" style="border:0 !important;">Date of Birth</label>
                         </div>
                         <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" id="b-month">
+                            <select class="form-control personal-info-forms-items" >
                                 <option>Month</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -80,7 +80,7 @@
                               </select>
                         </div>
                         <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" id="b-month">
+                            <select class="form-control personal-info-forms-items" >
                                 <option>Date</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -89,7 +89,7 @@
                               </select>
                         </div>
                         <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" id="b-month">
+                            <select class="form-control personal-info-forms-items" >
                                 <option>Year</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -99,41 +99,41 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="nationality" placeholder="Nationality">
+                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Nationality">
                               </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="address" placeholder="Address">
+                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="Apartment" placeholder="Apartment, Suite, etc.">
+                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Apartment, Suite, etc.">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="city" placeholder="City">
+                                <input type="text" class="form-control personal-info-forms-items" placeholder="City">
                               </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="state" placeholder="State / Province">
+                                <input type="text" class="form-control personal-info-forms-items" placeholder="State / Province">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="country" placeholder="Country">
+                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Country">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="zip" placeholder="Zip / Postal">
+                                <input type="text" class="form-control personal-info-forms-items" placeholder="Zip / Postal">
                               </div>
                         </div>
                     </div>
@@ -141,72 +141,18 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="email" class="form-control personal-info-forms-items" id="email" placeholder="E-mail Address">
+                                <input type="email" class="form-control personal-info-forms-items" placeholder="E-mail Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="mobile" placeholder="Mobile Number">
+                                <input type="text" class="form-control personal-info-forms-items" placeholder="Mobile Number">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="phone" placeholder="Phone Number">
+                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Phone Number">
                               </div>
-                        </div>
-                    </div>
-
-                    {{-- education --}}
-                    <h2 class="title-personal-info">Education</h2>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="school" placeholder="Name of School">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <select class="form-control personal-info-forms-items" id="grad-year">
-                                <option>Year Graduated</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="course" placeholder="Course Graduated">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row m-auto">
-                        <div class="col-md-12 d-flex justify-content-center p-2 btn-container">
-                            <div class="btn-plus"></div>
-                        </div>
-                    </div>
-                 {{-- references --}}
-                    <h2 class="title-personal-info">references</h2>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <select class="form-control personal-info-forms-items" id="social-media">
-                                <option>Social Media / Website</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="url-link" placeholder="Enter URL/Link here">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row m-auto">
-                        <div class="col-md-12 d-flex justify-content-center p-2 btn-container">
-                            <div class="btn-plus"></div>
                         </div>
                     </div>
 
@@ -226,8 +172,8 @@
                     <div class="row" style="margin-bottom:70px;">
                         <div class="col-md-2"></div>
                         <div class="col-md-8 d-flex justify-content-center">
-                            <a class="btn mr-2 btn-light back-btn" href="/jobterms">Back</a>
-                            <a class="btn btn-primary proceed-btn" href="/personalDetails">Proceed Next</a>
+                            <a class="btn mr-2 btn-light back-btn" href="/business">Back</a>
+                            <a class="btn btn-primary proceed-btn" href="/businessInfo">Proceed Next</a>
                         </div>
                         <div class="col-md-2"></div>
                     </div>

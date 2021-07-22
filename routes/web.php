@@ -24,7 +24,22 @@ Route::get('/jobs', 'Frontend\JobSearchController@index');
 Route::get('/posts', 'Frontend\JobPostingController@index');
 Route::get('/dashboard', 'Frontend\DashboardController@index');
 Route::get('/signup', 'Frontend\SignupController@index');
+
+//jobseeker
 Route::get('/jobterms', 'Frontend\JobSearchController@jobterms');
 Route::get('/personalInfo', 'Frontend\JobSearchController@personalInfo');
 Route::get('/personalDetails', 'Frontend\JobSearchController@personalDetails');
+Route::get('/jobseekerSkillset', 'Frontend\JobSearchController@jobseekerSkillset');
+Route::get('/jobseekerProfileReview', 'Frontend\JobSearchController@jobseekerProfileReview');
+Route::get('/jobseekerFinalize', 'Frontend\JobSearchController@jobseekerFinalize');
+
+
+//business-owner
 Route::get('/business', 'Frontend\BusinessController@index');
+Route::get('/businessReview', 'Frontend\BusinessController@businessReview');
+Route::get('/businessPersonalInfo', 'Frontend\BusinessController@businessPersonalInfo');
+Route::get('/businessInfo', 'Frontend\BusinessController@businessInfo');
+Route::get('/BusinessBilling', 'Frontend\BusinessController@BusinessBilling');
+Route::get('/BusinessFinalize', 'Frontend\BusinessController@BusinessFinalize');
+
+
