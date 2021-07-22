@@ -19,9 +19,7 @@ class PassportController extends Controller
     {
         $this->validate($request, [
             'email' => 'required|email|unique:users',
-            'firstname' => 'required',
-            'middlename' => 'required',
-            'lastname' => 'required',
+            'password' => 'required|min:6',
         ]);
         $raw_password = $request->password ? $request->password : \Str::random(8);
         $user = User::create([
@@ -36,7 +34,10 @@ class PassportController extends Controller
         
         $token = $user->createToken('VAJOBMARKET2021')->accessToken;
 
-        return response()->json(['token' => $token], 200);
+        return response()->json([
+            'token' => $token,
+            'userdata' => $user
+        ], 200);
     }
 
     /**
