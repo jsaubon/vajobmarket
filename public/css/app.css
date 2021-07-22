@@ -779,6 +779,10 @@ img {
   padding: 3px;
 }
 
+.nav-style {
+  background-color: #ecf6ff;
+}
+
 .jobseeker-landing-container {
   height: 100vh !important;
   background-color: #ecf6ff;
