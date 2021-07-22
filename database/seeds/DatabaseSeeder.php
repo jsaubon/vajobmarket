@@ -40,7 +40,36 @@ class DatabaseSeeder extends Seeder
     
         $model_job_types = \App\JobType::insert($job_types);
     
-        $users = [];
+        $users = [
+            [
+                'firstname' => 'admin',
+                'middlename' => '',
+                'lastname' => 'test',
+                'email' => 'admin@test.com',
+                'password' => bcrypt('admin123'),
+                'mobile_no' => $faker->phoneNumber,
+                'phone_no' => $faker->phoneNumber,
+                'type' => 'Admin'
+            ],[
+                'firstname' => 'client',
+                'middlename' => '',
+                'lastname' => 'test',
+                'email' => 'client@test.com',
+                'password' => bcrypt('admin123'),
+                'mobile_no' => $faker->phoneNumber,
+                'phone_no' => $faker->phoneNumber,
+                'type' => 'Client'
+            ],[
+                'firstname' => 'jobseeker',
+                'middlename' => '',
+                'lastname' => 'test',
+                'email' => 'jobseeker@test.com',
+                'password' => bcrypt('admin123'),
+                'mobile_no' => $faker->phoneNumber,
+                'phone_no' => $faker->phoneNumber,
+                'type' => 'JobSeeker'
+            ],
+        ];
         $types = ['JobSeeker','Client'];
         $user_count = 50;
         for ($i=0; $i < $user_count; $i++) { 
@@ -159,7 +188,6 @@ class DatabaseSeeder extends Seeder
             $gender = ['Male','Female'];
             $jobseekers[] = [
                 'user_id' => $id,
-                // 'jobseeker_photo' => $faker->gender,
                 'gender' => $gender[rand(0,1)],
                 // 'date_of_birth' => $faker->gender,
                 'nationality' => $faker->name,
@@ -205,20 +233,18 @@ class DatabaseSeeder extends Seeder
         $model_references = \App\JobSeekerReference::insert($references);
 
 
-        $professions = [];
         foreach ($jobseeker_ids as $key => $id) {
-            for ($i=0; $i < rand(1,3); $i++) { 
-                $professions[] = [
-                    'jobseeker_id' => $id,
-                    'job_title' => array_column($sectors,'sector')[rand(0,12)],
-                    'availabilty' => '',
-                    'salary' => rand(4,15).'/hr',
-                    'skills_summary' => $faker->sentence(rand(2,20)),
-                ];
-            }
+            $profession = [
+                'jobseeker_id' => $id,
+                'job_title' => array_column($sectors,'sector')[rand(0,12)],
+                'availabilty' => '',
+                'salary' => rand(4,15).'/hr',
+                'skills_summary' => $faker->sentence(rand(2,20)),
+            ];
+            $model_profession = \App\JobSeekerProfession::create($profession);
         }
         // dd($professions);
-        $model_professions = \App\JobSeekerProfession::insert($professions);
+        
 
         $languages = [];
         foreach ($jobseeker_ids as $key => $id) {
@@ -293,7 +319,7 @@ class DatabaseSeeder extends Seeder
             for ($i=0; $i < $employees_count; $i++) { 
                 $employees[] = [
                     'client_id' => $client->id,
-                    'jobseeker_id' => $jobseeker_ids[rand(0, count($jobseeker_ids))],
+                    'jobseeker_id' => $jobseeker_ids[rand(0, count($jobseeker_ids) -1)],
                     'employment_status' => $statuses[rand(0,5)],
                     // 'status' => '',
                     'salary' => rand(4,15).'/hr',

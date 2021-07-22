@@ -10,7 +10,13 @@ $obj = [
 ];
 
 ?>
+<style>
 
+
+.hide {
+    display: none;
+}
+</style>
 <div class="header">
             <div class="header-items-left">
                 <small class="title m-3">
@@ -74,15 +80,18 @@ $obj = [
                    <!-- business Owner  -->
                     <div class="tab-pane fade show active" id="business-in" role="tabpanel" aria-labelledby="home-tab">
                         <div class="p-5">
-                            <form action="/business">
+                            <form id="form_bo">
                                 <div class="d-flex">
                                 <div class="email-logo"></div>
-                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                                <input type="text" required class="bo_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
-                                <input type="password" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <input type="password" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
+                                <input type="password" required class="bo_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
+                                <div id="error_bo" class="hide">
+                                    <div class="alert alert-danger" id="error_bo_message"  role="alert">
+                                    </div>
+                                </div>
                                 <div class="button-style">
-                                    <button class="btn btn-primary form-control mt-4">
+                                    <button class="btn btn-primary form-control  mt-4" type="submit">
                                         Sign-In
                                     </button>
                                 </div>
@@ -105,15 +114,18 @@ $obj = [
                     <!-- job Search  -->
                     <div class="tab-pane fade" id="job-in" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="p-5">
-                            <form action="/jobterms">
+                            <form id="form_js">
                                 <div class="d-flex">
                                 <div class="email-logo"></div>
-                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                                <input type="text" class="js_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
-                                <input type="password" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <input type="password" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
+                                <input type="password" class="js_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
+                                <div id="error_js" class="hide">
+                                    <div class="alert alert-danger" id="error_js_message"  role="alert">
+                                    </div>
+                                </div>
                                 <div class="button-style">
-                                    <button class="btn btn-primary form-control mt-4">
+                                    <button class="btn btn-primary form-control signup-js mt-4">
                                         Sign-In
                                     </button>
                                 </div>
@@ -141,3 +153,57 @@ $obj = [
 </div>
 
 
+<script>
+    $(document).ready(function() {
+        $('#form_bo').on('submit', function(e) {
+            e.preventDefault();
+            let email = $('.bo_email').val();
+            let password = $('.bo_password').val();
+            let data = {
+                email: email,
+                password: password,
+            }
+
+            login(data,'bo');
+        });
+        
+        $('#form_js').on('submit', function(e) {
+            e.preventDefault();
+            let email = $('.js_email').val();
+            let password = $('.js_password').val();
+            let data = {
+                email: email,
+                password: password,
+            }
+
+            login(data,'js');
+        });
+    });
+
+    function login(data, type) {
+        var url = window.location.origin+'/api/login';
+        axios.post(url, data).then(function({data: res}) {
+            localStorage.token = res.token;
+            localStorage.userdata = res.userdata;
+
+            if(type == 'bo') {
+                alert('business owner successfully logged in');
+            }
+            
+            if(type == 'js') {
+                alert('job seeker successfully logged in');
+            }
+        }).catch(err =>  {
+            console.log(err.response.data);
+            if(type == 'bo') {
+                $('#error_bo').removeClass('hide');
+                $('#error_bo_message').html(err.response.data.error);
+            }
+
+            if(type == 'bo') {
+                $('#error_js').removeClass('hide');
+                $('#error_js_message').html(err.response.data.error);
+            }
+        });
+    }
+</script>
