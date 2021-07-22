@@ -73,28 +73,25 @@
                         <div class="col-md-2">
                             <select class="form-control personal-info-forms-items" name="dob_month">
                                 <option>Month</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                <?php for ($i=0; $i < 12; $i++) {  ?>
+                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                                <?php }?>
                               </select>
                         </div>
                         <div class="col-md-2">
                             <select class="form-control personal-info-forms-items" name="dob_date">
                                 <option>Date</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                                <?php for ($i=0; $i < 31; $i++) {  ?>
+                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                                <?php }?>
+                            </select>
                         </div>
                         <div class="col-md-2">
                             <select class="form-control personal-info-forms-items" name="dob_year">
                                 <option>Year</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                <?php for ($i=(int)date('Y'); $i > (int)date('Y') - 70; $i--) {  ?>
+                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                                <?php }?>
                               </select>
                         </div>
                         <div class="col-md-4">
@@ -202,7 +199,6 @@
             });
             data = {...data, user_id: userdata.id};
 
-            console.log('data',data);
             let data_user = {
                 id: userdata.id,
                 firstname: data.firstname,
@@ -222,11 +218,12 @@
             delete data_client.dob_year;
             delete data_client.dob_month;
             delete data_client.dob_date;
-            updateData('/api/User/'+data_user.id,data_user, res => {
-                if(res.data.success) {
-                    // window.location.href = '/businessInfo';
-                    postData('/api/Client',data_client, res => {
-                        if(res.data.success) {
+            updateData('/api/User/'+data_user.id,data_user, ({data:res}) => {
+                if(res.success) {
+                    postData('/api/Client',data_client, ({data:res}) => {
+                        if(res.success) {
+                            userdata.client = res.data;
+                            localStorage.userdata = JSON.stringify(userdata);
                             window.location.href = '/businessInfo';
                         }
                     });

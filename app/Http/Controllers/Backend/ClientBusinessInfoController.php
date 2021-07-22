@@ -99,7 +99,28 @@ class ClientBusinessInfoController extends Controller
      */
     public function update(Request $request, $id)
     {
+        
+        if($request->logo) {
+            $data = ClientBusinessInfo::where('client_id',$id)->first();
+
+            
+            //Display File Name
+            $file_name = time().'.jpg';
+            //Move Uploaded File
+            $destinationPath = 'public/'.$file_name;
+            \Storage::disk('local')->put($destinationPath, base64_decode($request->logo));
+            
+            $data->business_logo = $file_name;
+            $data->save();
+            return response()->json([
+                'success' => true,
+                'data' => $data
+            ]);
+        }
+
+
         $data = ClientBusinessInfo::find($id);
+        
 
         if (!$data) {
             return response()->json([

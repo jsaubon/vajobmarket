@@ -127,21 +127,18 @@
                     type: 'Client'
                 }
                 let url = window.location.origin+'/api/register';
-                postData(url,data,res => {
-                    let res = res.data;
+                postData(url,data,({data:res}) => {
                     localStorage.token = res.token;
                     localStorage.userdata = JSON.stringify(res.userdata);
                     window.location.href = '/business';
                 }, err =>  {
-                    if(type == 'bo') {
-                        if(err.response.data.error) {
-                            $('#signup_error_bo').removeClass('hide');
-                            $('#signup_error_bo_message').html(err.response.data.error);
-                        } else {
-                            $('#signup_error_bo').removeClass('hide');
-                            $('#signup_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
-                        }
-                        
+                    console.log('err',err)
+                    if(err.response.data.error) {
+                        $('#signup_error_bo').removeClass('hide');
+                        $('#signup_error_bo_message').html(err.response.data.error);
+                    } else {
+                        $('#signup_error_bo').removeClass('hide');
+                        $('#signup_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
                     }
                 });
             }
@@ -164,20 +161,17 @@
                     type: 'JobSeeker'
                 }
                 let url = window.location.origin+'/api/register';
-                postData(url,data,res => {
-                    let res = res.data;
+                postData(url,data,({data:res}) => {
                     localStorage.token = res.token;
                     localStorage.userdata = JSON.stringify(res.userdata);
                     window.location.href = '/jobterms';
                 }, err =>  {
-                    if(type == 'js') {
-                        if(err.response.data.error) {
-                            $('#signup_error_js').removeClass('hide');
-                            $('#signup_error_js_message').html(err.response.data.error);
-                        }else {
-                            $('#signup_error_js').removeClass('hide');
-                            $('#signup_error_js_message').html(Object.values(err.response.data.errors)[0][0]);
-                        }
+                    if(err.response.data.error) {
+                        $('#signup_error_js').removeClass('hide');
+                        $('#signup_error_js_message').html(err.response.data.error);
+                    }else {
+                        $('#signup_error_js').removeClass('hide');
+                        $('#signup_error_js_message').html(Object.values(err.response.data.errors)[0][0]);
                     }
                 });
             }

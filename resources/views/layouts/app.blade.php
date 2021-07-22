@@ -34,9 +34,7 @@
                 headers: {
                     Authorization: "Bearer " + token
                 }
-            }).then(then_function).catch(err =>  {
-                console.log(err.response.data);
-            }).catch(catch_function);
+            }).then(then_function).catch(catch_function);
         };
         
         function postData(url,data, then_function = () => {}, catch_function = () => {}) {
@@ -44,9 +42,16 @@
                 headers: {
                     Authorization: "Bearer " + token
                 }
-            }).then(then_function).catch(err =>  {
-                console.log(err.response.data);
-            }).catch(catch_function);
+            }).then(then_function).catch(catch_function);
+        };
+
+        function uploadImage(url,data, then_function = () => {}, catch_function = () => {}) {
+            axios.put(url, data,{
+                headers: {
+                    Authorization: "Bearer " + token,
+                    "Content-Type": "multipart/form-data"
+                }
+            }).then(then_function).catch(catch_function);
         };
 
         function updateData(url,data, then_function = () => {}, catch_function = () => {}) {
@@ -54,9 +59,7 @@
                 headers: {
                     Authorization: "Bearer " + token
                 }
-            }).then(then_function).catch(err =>  {
-                console.log(err.response.data);
-            }).catch(catch_function);
+            }).then(then_function).catch(catch_function);
         };
 
         function deleteData(url,data, then_function = () => {}, catch_function = () => {}) {
@@ -64,9 +67,7 @@
                 headers: {
                     Authorization: "Bearer " + token
                 }
-            }).then(then_function).catch(err =>  {
-                console.log(err.response.data);
-            }).catch(catch_function);
+            }).then(then_function).catch(catch_function);
         };
     </script>
 
