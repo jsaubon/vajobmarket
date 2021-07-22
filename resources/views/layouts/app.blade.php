@@ -30,7 +30,7 @@
         let userdata = localStorage.userdata ? JSON.parse(localStorage.userdata) : null; 
 
         function getData(url, then_function = () => {}, catch_function = () => {}) {
-            axios.post(url,{
+            axios.get(url,{
                 headers: {
                     Authorization: "Bearer " + token
                 }
