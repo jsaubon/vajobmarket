@@ -86,10 +86,7 @@
 
         @include('layouts.footers')
 
-<<<<<<< HEAD
 
     <script src="{{URL::asset('js/app.js')}}"></script>
-=======
->>>>>>> 69b48005967c007f6995d09d4ff5eb0bb7d81a80
     </body>
 </html>
