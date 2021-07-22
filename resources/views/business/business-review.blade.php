@@ -6,7 +6,7 @@
         <div class="d-flex justify-content-end">
             <a href="/">Cancel</a>
         </div>
-        <div class="container w-75">
+        <div class="container w-75 stepper-container">
             <ul class="d-flex justify-content-around  progress-steps">
                 <li class="text-active">
                     <div class="shape ">

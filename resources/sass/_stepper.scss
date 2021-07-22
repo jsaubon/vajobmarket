@@ -58,7 +58,10 @@
     border: 1px solid  #515557;
     z-index: 10;
 }
-
+.stepper-container{
+    min-width: 800px !important;
+    max-width: 1400px !important;
+}
 
 .progress-steps li{
     max-width: 100px;
