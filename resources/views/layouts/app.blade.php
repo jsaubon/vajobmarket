@@ -15,7 +15,7 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        
+
         <style>
 
 
@@ -27,7 +27,7 @@
     <body>
     <script>
         let token = localStorage.token;
-        let userdata = localStorage.userdata ? JSON.parse(localStorage.userdata) : null; 
+        let userdata = localStorage.userdata ? JSON.parse(localStorage.userdata) : null;
 
         function getData(url, then_function = () => {}, catch_function = () => {}) {
             axios.post(url,{
@@ -36,7 +36,7 @@
                 }
             }).then(then_function).catch(catch_function);
         };
-        
+
         function postData(url,data, then_function = () => {}, catch_function = () => {}) {
             axios.post(url, data,{
                 headers: {

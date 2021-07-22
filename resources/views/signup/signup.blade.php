@@ -36,7 +36,7 @@
                                 </div>
                                 <input type="password" required class="signup_password_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
                                 <input type="password" required class="signup_confirm_password_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
-                                
+
                                 <div id="signup_error_bo" class="hide">
                                     <div class="alert alert-danger" id="signup_error_bo_message"  role="alert">
                                     </div>
@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    
+
 
 </section>
 
@@ -178,6 +178,6 @@
         });
     });
 
-    
+
 </script>
 @endsection
