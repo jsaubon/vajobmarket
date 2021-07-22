@@ -582,6 +582,34 @@ img {
   }
 }
 
+.user-dashboard {
+  background-color: #ECF6FF;
+}
+
+.fullwidth {
+  max-width: 1260px !important;
+  width: 100%;
+}
+
+.container {
+  padding: 100px 0px 10px 0px;
+}
+
+.container .breadcrumb {
+  color: #6e6e6e;
+  background: none !important;
+}
+
+.container .breadcrumb .active {
+  text-decoration: none;
+}
+
+.container .table {
+  color: #6e6e6e;
+  background: #fff;
+  border-radius: 10px;
+}
+
 .business-landing-container {
   height: 100vh;
   padding-bottom: 100px;
