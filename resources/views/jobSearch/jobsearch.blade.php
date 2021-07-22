@@ -94,7 +94,6 @@
     </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script>
     let current_page = 1;
@@ -127,15 +126,23 @@
             
         });
 
-        $('#search_job').on('keydown', function() {
-            const timeOutId = setTimeout(() => {
-                getJobPosts(1, $(this).val());
-                getCandidates(1, $(this).val());
-            }, 500);
-            
-        });
+        $('#search_job').keyup(delay(function(e) {
+            getJobPosts(1, $(this).val());
+            getCandidates(1, $(this).val());
+        }, 500));
  
     });
+
+    function delay(callback, ms) {
+        var timer = 0;
+        return function() {
+            var context = this, args = arguments;
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+            callback.apply(context, args);
+            }, ms || 0);
+        };
+    }
 
     function getJobPosts(page, search = '') {
         var url = window.location.origin+'/api/public_job_posts?search='+search+'&page='+page+'&sort_field=start_date&sort_order=asc';
