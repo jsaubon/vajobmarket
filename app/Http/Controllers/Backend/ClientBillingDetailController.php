@@ -56,11 +56,6 @@ class ClientBillingDetailController extends Controller
     {
         $this->validate($request, [
             'client_id' => 'required',
-            'card_number' => 'required',
-            'cart_type' => 'required',
-            'exp_date' => 'required',
-            'cardholder_name' => 'required',
-            'cvv' => 'required'
         ]);
         
         $data = ClientBillingDetail::create($request->all())->save();
