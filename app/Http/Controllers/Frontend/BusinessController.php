@@ -42,4 +42,12 @@ class BusinessController extends Controller
         return view('business.business-post-job');
     }
 
+    function BusinessEditJobPost(){
+        return view('business.business-edit-job-post');
+    }
+
+    function BusinessApplications(){
+        return view('business.business-applications');
+    }
+
 }
