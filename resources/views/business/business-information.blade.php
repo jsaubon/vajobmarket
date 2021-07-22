@@ -183,7 +183,6 @@
 
     $(document).ready(function() {
         $('[name="email"]').val(userdata.email);
-        console.log('userdata',userdata);
 
         $('#bo_business_info').on('submit', function(e) {
             e.preventDefault();

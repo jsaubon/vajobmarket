@@ -73,7 +73,7 @@
                         <div class="col-md-2">
                             <select class="form-control personal-info-forms-items" name="dob_month">
                                 <option>Month</option>
-                                <?php for ($i=0; $i < 12; $i++) {  ?>
+                                <?php for ($i=1; $i <= 12; $i++) {  ?>
                                     <option value="<?php echo $i;?>"><?php echo $i;?></option>
                                 <?php }?>
                               </select>
@@ -81,7 +81,7 @@
                         <div class="col-md-2">
                             <select class="form-control personal-info-forms-items" name="dob_date">
                                 <option>Date</option>
-                                <?php for ($i=0; $i < 31; $i++) {  ?>
+                                <?php for ($i=1; $i <= 31; $i++) {  ?>
                                     <option value="<?php echo $i;?>"><?php echo $i;?></option>
                                 <?php }?>
                             </select>
