@@ -16,6 +16,13 @@
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         
+        <style>
+
+
+        .hide {
+            display: none;
+        }
+        </style>
     </head>
     <body>
 

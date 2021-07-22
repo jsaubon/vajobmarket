@@ -10,13 +10,6 @@ $obj = [
 ];
 
 ?>
-<style>
-
-
-.hide {
-    display: none;
-}
-</style>
 <div class="header">
             <div class="header-items-left">
                 <small class="title m-3">
