@@ -29,7 +29,7 @@ class CreateClientBusinessInfosTable extends Migration
             $table->string('mobile_no')->nullable();
             $table->string('phone_no')->nullable();
             $table->longText('business_description')->nullable();
-            $table->string('business_photo')->nullable();
+            $table->string('business_logo')->nullable();
             $table->timestamps();
         });
     }

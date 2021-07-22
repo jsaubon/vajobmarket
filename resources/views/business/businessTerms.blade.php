@@ -46,6 +46,12 @@
      </div>
 
 </div>
-
+<script>
+    let token = localStorage.token;
+    let userdata = localStorage.userdata ? JSON.parse(localStorage.userdata) : null; 
+    if(!token) {
+        window.location.href = '/signup';
+    }
+</script>
 @endsection
 
