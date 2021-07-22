@@ -40,7 +40,36 @@ class DatabaseSeeder extends Seeder
     
         $model_job_types = \App\JobType::insert($job_types);
     
-        $users = [];
+        $users = [
+            [
+                'firstname' => 'admin',
+                'middlename' => '',
+                'lastname' => 'test',
+                'email' => 'admin@test.com',
+                'password' => bcrypt('admin123'),
+                'mobile_no' => $faker->phoneNumber,
+                'phone_no' => $faker->phoneNumber,
+                'type' => 'Admin'
+            ],[
+                'firstname' => 'client',
+                'middlename' => '',
+                'lastname' => 'test',
+                'email' => 'client@test.com',
+                'password' => bcrypt('admin123'),
+                'mobile_no' => $faker->phoneNumber,
+                'phone_no' => $faker->phoneNumber,
+                'type' => 'Client'
+            ],[
+                'firstname' => 'jobseeker',
+                'middlename' => '',
+                'lastname' => 'test',
+                'email' => 'jobseeker@test.com',
+                'password' => bcrypt('admin123'),
+                'mobile_no' => $faker->phoneNumber,
+                'phone_no' => $faker->phoneNumber,
+                'type' => 'JobSeeker'
+            ],
+        ];
         $types = ['JobSeeker','Client'];
         $user_count = 50;
         for ($i=0; $i < $user_count; $i++) { 
