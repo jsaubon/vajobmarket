@@ -160,7 +160,7 @@
                     <div class="row" style="margin-bottom:70px;">
                         <div class="col-md-2"></div>
                         <div class="col-md-8 d-flex justify-content-center">
-                            <a class="btn mr-2 btn-light back-btn" href="/businessInfo">Back</a>
+                            <a class="btn mr-2 btn-light back-btn" href="/business">Back</a>
                             <a class="btn btn-primary proceed-btn" href="/BusinessBilling">Proceed Next</a>
                         </div>
                         <div class="col-md-2"></div>
