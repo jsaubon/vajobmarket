@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<link href="{{URL::asset('assets/css/businessflow.css')}}" rel="stylesheet">
-<div class="container-fluid business-landing-container">
+<div class="container-fluid h-auto business-landing-container">
     <div class="container d-flex flex-column justify-content-center h-100" style="padding-top: 100px;">
         <div class="row h-100">
                 <div class="col-md-6 business-img"></div>
@@ -37,8 +36,8 @@
                          </div>
                     </div>
                     <div class="container-fluid d-flex justify-content-center ">
-                        <button class="btn btn-light back-btn mx-2">Back</button>
-                        <button class="btn btn-primary proceed-btn">Proceed Next</button>
+                        <a class="btn btn-light back-btn mx-2" href="#">Back</a>
+                        <a class="btn btn-primary proceed-btn" href="/businessPersonalInfo">Proceed Next</a>
                     </div>
 
                 </div>

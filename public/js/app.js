@@ -19423,9 +19423,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function goBack() {
-  window.history.back();
-}
+console.log('hello');
 
 /***/ }),
 

@@ -1,14 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<link href="{{URL::asset('assets/css/jobseeker.css')}}" rel="stylesheet">
-<div class="container-fluid jobseeker-landing-container">
+
+<div class="container-fluid h-auto jobseeker-landing-container">
     <div class="container d-flex flex-column justify-content-center h-100" style="padding-top: 100px;">
-        <div class="d-flex justify-content-end">
+        <div class=" h-100 d-flex justify-content-end">
             <a href="/">Cancel</a>
         </div>
         <div class="row h-100">
-                <div class="col-md-6 jobseeker-img"></div>
+                <div class="col-md-6">
+                    <div class="jobseeker-img"></div>
+                </div>
                 <div class="col-md-1 "></div>
                 <div class="col-md-5 d-flex flex-column justify-content-center">
                     <div class="title-jobseeker-landing">
