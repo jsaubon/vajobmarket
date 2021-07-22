@@ -25,6 +25,50 @@
         </style>
     </head>
     <body>
+    <script>
+        let token = localStorage.token;
+        let userdata = localStorage.userdata ? JSON.parse(localStorage.userdata) : null; 
+
+        function getData(url, then_function = () => {}, catch_function = () => {}) {
+            axios.post(url,{
+                headers: {
+                    Authorization: "Bearer " + token
+                }
+            }).then(then_function).catch(err =>  {
+                console.log(err.response.data);
+            }).catch(catch_function);
+        };
+        
+        function postData(url,data, then_function = () => {}, catch_function = () => {}) {
+            axios.post(url, data,{
+                headers: {
+                    Authorization: "Bearer " + token
+                }
+            }).then(then_function).catch(err =>  {
+                console.log(err.response.data);
+            }).catch(catch_function);
+        };
+
+        function updateData(url,data, then_function = () => {}, catch_function = () => {}) {
+            axios.put(url, data,{
+                headers: {
+                    Authorization: "Bearer " + token
+                }
+            }).then(then_function).catch(err =>  {
+                console.log(err.response.data);
+            }).catch(catch_function);
+        };
+
+        function deleteData(url,data, then_function = () => {}, catch_function = () => {}) {
+            axios.delete(url, data,{
+                headers: {
+                    Authorization: "Bearer " + token
+                }
+            }).then(then_function).catch(err =>  {
+                console.log(err.response.data);
+            }).catch(catch_function);
+        };
+    </script>
 
         @include('layouts.headers')
 
@@ -41,7 +85,5 @@
 
         @include('layouts.footers')
 
-
-        
     </body>
 </html>

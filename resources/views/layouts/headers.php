@@ -157,7 +157,12 @@ $obj = [
                 password: password,
             }
 
-            login(data,'bo');
+            let url = window.location.origin+'/api/login';
+            postData(url,data,function({data: res}) {
+                localStorage.token = res.token;
+                localStorage.userdata = JSON.stringify(res.userdata);
+                alert('business owner successfully logged in');
+            });
         });
         
         $('#form_js').on('submit', function(e) {
@@ -168,35 +173,14 @@ $obj = [
                 email: email,
                 password: password,
             }
-
-            login(data,'js');
+            let url = window.location.origin+'/api/login';
+            postData(url,data,function({data: res}) {
+                localStorage.token = res.token;
+                localStorage.userdata = JSON.stringify(res.userdata);
+                alert('job seeker successfully logged in');
+            });
         });
     });
 
-    function login(data, type) {
-        var url = window.location.origin+'/api/login';
-        axios.post(url, data).then(function({data: res}) {
-            localStorage.token = res.token;
-            localStorage.userdata = res.userdata;
-
-            if(type == 'bo') {
-                alert('business owner successfully logged in');
-            }
-            
-            if(type == 'js') {
-                alert('job seeker successfully logged in');
-            }
-        }).catch(err =>  {
-            console.log(err.response.data);
-            if(type == 'bo') {
-                $('#error_bo').removeClass('hide');
-                $('#error_bo_message').html(err.response.data.error);
-            }
-
-            if(type == 'bo') {
-                $('#error_js').removeClass('hide');
-                $('#error_js_message').html(err.response.data.error);
-            }
-        });
-    }
+    
 </script>

@@ -114,9 +114,6 @@
             let email = $('.signup_email_bo').val();
             let password = $('.signup_password_bo').val();
             let confirm_password = $('.signup_confirm_password_bo').val();
-            console.log(email);
-            console.log(password);
-            console.log(confirm_password);
             if(password != confirm_password) {
                 // alert('Confirm Password Mismatch, please try again');
                 $('#signup_error_bo').removeClass('hide');
@@ -129,7 +126,24 @@
                     password: password,
                     type: 'Client'
                 }
-                register(data,'bo');
+                let url = window.location.origin+'/api/register';
+                postData(url,data,res => {
+                    let res = res.data;
+                    localStorage.token = res.token;
+                    localStorage.userdata = JSON.stringify(res.userdata);
+                    window.location.href = '/business';
+                }, err =>  {
+                    if(type == 'bo') {
+                        if(err.response.data.error) {
+                            $('#signup_error_bo').removeClass('hide');
+                            $('#signup_error_bo_message').html(err.response.data.error);
+                        } else {
+                            $('#signup_error_bo').removeClass('hide');
+                            $('#signup_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
+                        }
+                        
+                    }
+                });
             }
         });
         $('#signup_form_js').on('submit', function(e) {
@@ -137,9 +151,6 @@
             let email = $('.signup_email_js').val();
             let password = $('.signup_password_js').val();
             let confirm_password = $('.signup_confirm_password_js').val();
-            console.log(email);
-            console.log(password);
-            console.log(confirm_password);
             if(password != confirm_password) {
                 alert('Confirm Password Mismatch, please try again');
                 $('#signup_error_js').removeClass('hide');
@@ -152,48 +163,27 @@
                     password: password,
                     type: 'JobSeeker'
                 }
-                register(data,'js');
+                let url = window.location.origin+'/api/register';
+                postData(url,data,res => {
+                    let res = res.data;
+                    localStorage.token = res.token;
+                    localStorage.userdata = JSON.stringify(res.userdata);
+                    window.location.href = '/jobterms';
+                }, err =>  {
+                    if(type == 'js') {
+                        if(err.response.data.error) {
+                            $('#signup_error_js').removeClass('hide');
+                            $('#signup_error_js_message').html(err.response.data.error);
+                        }else {
+                            $('#signup_error_js').removeClass('hide');
+                            $('#signup_error_js_message').html(Object.values(err.response.data.errors)[0][0]);
+                        }
+                    }
+                });
             }
         });
     });
 
-    function register(data, type) {
-        var url = window.location.origin+'/api/register';
-        axios.post(url, data).then(function({data: res}) {
-            localStorage.token = res.token;
-            localStorage.userdata = res.userdata;
-
-            if(type == 'bo') {
-                alert('business owner successfully logged in');
-            }
-            
-            if(type == 'js') {
-                alert('job seeker successfully logged in');
-            }
-        }).catch(err =>  {
-            console.log(err.response.data);
-            if(type == 'bo') {
-                if(err.response.data.error) {
-                    $('#signup_error_bo').removeClass('hide');
-                    $('#signup_error_bo_message').html(err.response.data.error);
-                } else {
-                    $('#signup_error_bo').removeClass('hide');
-                    $('#signup_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
-                }
-                
-            }
-
-            if(type == 'js') {
-                if(err.response.data.error) {
-                    $('#signup_error_js').removeClass('hide');
-                    $('#signup_error_js_message').html(err.response.data.error);
-                }else {
-                    $('#signup_error_js').removeClass('hide');
-                    $('#signup_error_js_message').html(Object.values(err.response.data.errors)[0][0]);
-                }
-                
-            }
-        });
-    }
+    
 </script>
 @endsection
