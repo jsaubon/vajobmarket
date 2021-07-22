@@ -9,13 +9,20 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"> <a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active"> <a href="#">Job Post</a></li>
-                <li class="breadcrumb-item" aria-current="page">New Post</li>
+                <li class="breadcrumb-item" aria-current="page">Edit Post</li>
             </ol>
         </nav>
 
         <div class="card w-100">
             <div class="card-header">
-                    JOB DETAILS
+                    <div class="row">
+                        <div class="col-md-6">
+                            JOB DETAILS
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <button class="btn EditPost">Edit</button>
+                        </div>
+                    </div>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -56,7 +63,14 @@
                 </div>
             </div>
             <div class="card-header">
-                    REQUIRED SKILLS
+                <div class="row">
+                    <div class="col-md-6">
+                        JOB DETAILS
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <button class="btn EditPost">Edit</button>
+                    </div>
+                </div>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -75,7 +89,14 @@
             </div>
 
             <div class="card-header">
-                JOB DESCRIPTION
+                <div class="row">
+                    <div class="col-md-6">
+                        JOB DETAILS
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <button class="btn EditPost">Edit</button>
+                    </div>
+                </div>
             </div>
 
             <div class="card-body text-center">
