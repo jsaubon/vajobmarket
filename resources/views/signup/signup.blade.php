@@ -29,15 +29,20 @@
                     {{-- business Owner --}}
                     <div class="tab-pane fade show active" id="business" role="tabpanel" aria-labelledby="home-tab">
                         <div class="p-5">
-                            <form action="/business">
+                            <form action="/business" id="signup_form_bo">
                                 <div class="d-flex">
                                 <div class="email-logo"></div>
-                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                                <input type="email" required class="signup_email_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
-                                <input type="password" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <input type="password" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
+                                <input type="password" required class="signup_password_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
+                                <input type="password" required class="signup_confirm_password_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
+                                
+                                <div id="signup_error_bo" class="hide">
+                                    <div class="alert alert-danger" id="signup_error_bo_message"  role="alert">
+                                    </div>
+                                </div>
                                 <div class="button-style">
-                                    <button class="btn btn-primary form-control mt-4">
+                                    <button class="btn btn-primary form-control mt-4" type="submit">
                                         Sign-Up
                                     </button>
                                 </div>
@@ -60,15 +65,19 @@
                     {{-- job Search --}}
                     <div class="tab-pane fade" id="job" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="p-5">
-                            <form action="/jobterms">
+                            <form action="/jobterms" id="signup_form_js">
                                 <div class="d-flex">
                                 <div class="email-logo"></div>
-                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                                <input type="email" required class=" signup_email_js form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
-                                <input type="password" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <input type="password" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
+                                <input type="password" required class=" signup_password_js form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
+                                <input type="password" required class=" signup_confirm_password_js form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
+                                <div id="signup_error_js" class="hide">
+                                    <div class="alert alert-danger" id="signup_error_js_message"  role="alert">
+                                    </div>
+                                </div>
                                 <div class="button-style">
-                                    <button class="btn btn-primary form-control mt-4">
+                                    <button class="btn btn-primary form-control mt-4" type="submit">
                                         Sign-Up
                                     </button>
                                 </div>
@@ -94,7 +103,81 @@
         </div>
     </div>
 
-
+    
 
 </section>
+
+<script>
+    $(document).ready(function() {
+        $('#signup_form_bo').on('submit', function(e) {
+            e.preventDefault();
+            let email = $('.signup_email_bo').val();
+            let password = $('.signup_password_bo').val();
+            let confirm_password = $('.signup_confirm_password_bo').val();
+            if(password != confirm_password) {
+                // alert('Confirm Password Mismatch, please try again');
+                $('#signup_error_bo').removeClass('hide');
+                $('#signup_error_bo_message').html('Confirm Password Mismatch, please try again');
+            } else {
+                $('#signup_error_bo').addClass('hide');
+                $('#signup_error_bo_message').html('');
+                let data = {
+                    email: email,
+                    password: password,
+                    type: 'Client'
+                }
+                let url = window.location.origin+'/api/register';
+                postData(url,data,({data:res}) => {
+                    localStorage.token = res.token;
+                    localStorage.userdata = JSON.stringify(res.userdata);
+                    window.location.href = '/business';
+                }, err =>  {
+                    console.log('err',err)
+                    if(err.response.data.error) {
+                        $('#signup_error_bo').removeClass('hide');
+                        $('#signup_error_bo_message').html(err.response.data.error);
+                    } else {
+                        $('#signup_error_bo').removeClass('hide');
+                        $('#signup_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
+                    }
+                });
+            }
+        });
+        $('#signup_form_js').on('submit', function(e) {
+            e.preventDefault();
+            let email = $('.signup_email_js').val();
+            let password = $('.signup_password_js').val();
+            let confirm_password = $('.signup_confirm_password_js').val();
+            if(password != confirm_password) {
+                alert('Confirm Password Mismatch, please try again');
+                $('#signup_error_js').removeClass('hide');
+                $('#signup_error_js_message').html('Confirm Password Mismatch, please try again');
+            } else {
+                $('#signup_error_js').addClass('hide');
+                $('#signup_error_js_message').html('');
+                let data = {
+                    email: email,
+                    password: password,
+                    type: 'JobSeeker'
+                }
+                let url = window.location.origin+'/api/register';
+                postData(url,data,({data:res}) => {
+                    localStorage.token = res.token;
+                    localStorage.userdata = JSON.stringify(res.userdata);
+                    window.location.href = '/jobterms';
+                }, err =>  {
+                    if(err.response.data.error) {
+                        $('#signup_error_js').removeClass('hide');
+                        $('#signup_error_js_message').html(err.response.data.error);
+                    }else {
+                        $('#signup_error_js').removeClass('hide');
+                        $('#signup_error_js_message').html(Object.values(err.response.data.errors)[0][0]);
+                    }
+                });
+            }
+        });
+    });
+
+    
+</script>
 @endsection

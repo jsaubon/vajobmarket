@@ -63,6 +63,7 @@ class ClientController extends Controller
         ]);
         
         $data = Client::create($request->all())->save();
+        $data = Client::where('user_id',$request->user_id)->first();
        
         return response()->json([
             'success' => true,
@@ -108,6 +109,8 @@ class ClientController extends Controller
      */
     public function update(Request $request, $id)
     {
+        
+
         $data = Client::find($id);
 
         if (!$data) {
@@ -116,6 +119,9 @@ class ClientController extends Controller
                 'message' => 'Client with id ' . $id . ' not found'
             ], 400);
         }
+
+
+
         $data->fill($request->all());
         $updated = $data->save();
 

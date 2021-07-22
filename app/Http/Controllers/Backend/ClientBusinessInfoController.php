@@ -57,7 +57,7 @@ class ClientBusinessInfoController extends Controller
             'client_id' => 'required'
         ]);
         
-        $data = ClientBusinessInfo::create($request->all())->save();
+        $data = ClientBusinessInfo::updateOrCreate(['client_id'=> $request->client_id],$request->all())->save();
        
         return response()->json([
             'success' => true,
@@ -99,7 +99,31 @@ class ClientBusinessInfoController extends Controller
      */
     public function update(Request $request, $id)
     {
+        
+        if($request->logo) {
+            $data = ClientBusinessInfo::where('client_id',$id)->first();
+            if(!$data) {
+                $data = new ClientBusinessInfo();
+            }
+            
+            //Display File Name
+            $file_name = time().'.jpg';
+            //Move Uploaded File
+            $destinationPath = 'public/'.$file_name;
+            \Storage::disk('local')->put($destinationPath, base64_decode($request->logo));
+            
+            $data->client_id = $id;
+            $data->business_logo = $file_name;
+            $data->save();
+            return response()->json([
+                'success' => true,
+                'data' => $data
+            ]);
+        }
+
+
         $data = ClientBusinessInfo::find($id);
+        
 
         if (!$data) {
             return response()->json([

@@ -17,7 +17,7 @@ class CreateClientBillingDetailsTable extends Migration
             $table->id();
             $table->integer('client_id')->unsigned();
             $table->string('card_number')->nullable();
-            $table->string('cart_type')->nullable();
+            $table->string('card_type')->nullable();
             $table->string('exp_date')->nullable();
             $table->string('cardholder_name')->nullable();
             $table->string('cvv')->nullable();
