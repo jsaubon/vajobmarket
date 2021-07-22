@@ -27,4 +27,10 @@ class BusinessController extends Controller
     function BusinessFinalize(){
         return view('business.business-finalize');
     }
+    function BusinessProfile(){
+        return view('business.business-profile');
+    }
+    function BusinessProfilePersonal(){
+        return view('business.business-profile-personal');
+    }
 }
