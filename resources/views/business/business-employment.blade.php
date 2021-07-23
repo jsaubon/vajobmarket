@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.blank-layout')
 
 @section('content')
 
@@ -54,11 +54,11 @@
                                                 <label class="col-form-label">
                                                     Employment Status:
                                                 </label>
-                                                
+
                                                 <div class="col">
                                                     <input type="text" class="form-control" placeholder="Fulltime" disabled>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
 
@@ -67,11 +67,11 @@
                                                 <label class="col-form-label">
                                                     Salary:
                                                 </label>
-                                                
+
                                                 <div class="col">
                                                     <input type="text" class="form-control" placeholder="$140.00/Month" disabled>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
 
@@ -80,11 +80,11 @@
                                                 <label class="col-form-label">
                                                     Working Hours:
                                                 </label>
-                                                
+
                                                 <div class="col">
                                                     <input type="text" class="form-control" placeholder="40 Hours/Week" disabled>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -123,25 +123,25 @@
                                     <div class="row">
 
                                         <div class="col-md-6">
-                                            
+
                                                 <label>
                                                     Job Description
                                                 </label>
-                                            
-                                            
+
+
                                                 <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-                                            
+
                                         </div>
 
                                         <div class="col-md-6">
-                                            
+
                                                 <label>
                                                     Responsibilities
                                                 </label>
-                                           
-                                            
+
+
                                                 <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-                                            
+
                                         </div>
 
 

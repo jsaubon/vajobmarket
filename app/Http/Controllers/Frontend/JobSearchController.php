@@ -134,6 +134,9 @@ class JobSearchController extends Controller
         return view('jobSearch.jobseeker-finalize');
     }
     public function jobseekerProfile(){
-        return view('jobSearch.jobseeker-finalize');
+        return view('jobSearch.jobseeker-profile-page');
+    }
+    public function jobseekerUpdateDetails(){
+        return view('jobSearch.jobseeker-update-details');
     }
 }

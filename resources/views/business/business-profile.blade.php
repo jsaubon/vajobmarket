@@ -1,5 +1,6 @@
 @extends('layouts.profile-layout')
 @section('content')
+
     <div class="container-fluid h-auto nav-style">
         <div class="card-banner mx-auto w-50 d-flex  justify-content-center">
             <div class="profile-stats container">

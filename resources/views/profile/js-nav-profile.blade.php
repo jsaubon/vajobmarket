@@ -64,43 +64,38 @@ $obj = [
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="/BusinessProfile" class="small-nav-link">
+                    <a href="/jobseekerProfile" class="small-nav-link">
                         <li class="small-nav-list">
                           profile
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="/BusinessAllJobPost" class="small-nav-link">
+                    <a href="#" class="small-nav-link">
                         <li class="small-nav-list">
-                            Job Posts
-                        </li>
-                    </a>
-                    <hr class=" m-0">
-                    <a href="/BusinessApplications" class="small-nav-link">
-                        <li class="small-nav-list">
-                          application
-                        </li>
-                    </a>
-                    <hr class=" m-0">
-                    <a href="/BusinessEmployment" class="small-nav-link">
-                        <li class="small-nav-list">
-                          employment
+                            job application
                         </li>
                     </a>
                     <hr class=" m-0">
                     <a href="#" class="small-nav-link">
                         <li class="small-nav-list">
-                          message
+                          employment
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="/BusinessProfileCompany" class="small-nav-link">
+                    <hr class=" m-0">
+                    <a href="#" class="small-nav-link">
+                        <li class="small-nav-list">
+                          messages
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="/jobseekerUpdateDetails" class="small-nav-link">
                         <li class="small-nav-list">
                           settings
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="/" class="small-nav-link">
+                    <a href="#" class="small-nav-link">
                         <li class="small-nav-list">
                           logout
                         </li>
