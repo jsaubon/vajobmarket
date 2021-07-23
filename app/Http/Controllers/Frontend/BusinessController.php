@@ -50,4 +50,8 @@ class BusinessController extends Controller
         return view('business.business-applications');
     }
 
+    function BusinessEmployment(){
+        return view('business.business-employment');
+    }
+
 }
