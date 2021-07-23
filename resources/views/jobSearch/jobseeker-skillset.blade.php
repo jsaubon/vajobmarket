@@ -45,136 +45,42 @@
             <div class="container">
                 {{-- Profession --}}
 
-                <form class="container" action="">
+                <form class="container" action="#" id="js_skills">
                     <h2 class="title-personal-info">List of Specialized Skills</h2>
                     <hr>
                     {{-- skill-1 --}}
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <select class="form-control personal-info-forms-items" id="skill-title1">
-                                    <option>Title</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
+                    <div id="skills_section">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <input type="text" class="form-control personal-info-forms-items" name="skills[1][title]" placeholder="Title">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="text" class="form-control personal-info-forms-items" name="skills[1][experience]" placeholder="Experience">
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                                <select class="form-control personal-info-forms-items"  name="skills[1][proficiency]">
+                                    <option>Proficiency</option>
+                                    <option>Beginner</option>
+                                    <option>Advanced</option>
+                                    <option>Expert</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-md-2">
-
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items "  id="skill-experience1">
-                                <option>Experience</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items"  id="skill-proficiency1">
-                                <option>Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <textarea placeholder="Description"class="jobseeker-textarea p-2 w-100" rows="2" style=" resize: none; min-height:50px !important;"></textarea>
-                        </div>
-                    </div>
-
-                    {{-- skill-2 --}}
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <select class="form-control personal-info-forms-items" id="skill-title2">
-                                    <option>Title</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <textarea placeholder="Description"class="jobseeker-textarea p-2 w-100" name="skills[1][description]" rows="2" style=" resize: none; min-height:50px !important;"></textarea>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items "  id="skill-experience2">
-                                <option>Experience</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items"  id="skill-proficiency2">
-                                <option>Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <textarea placeholder="Description"class="jobseeker-textarea p-2 w-100" rows="2" style=" resize: none; min-height:50px !important;"></textarea>
-                        </div>
-                    </div>
-
-                    {{-- skill-3 --}}
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <select class="form-control personal-info-forms-items" id="skill-title3">
-                                    <option>Title</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items "  id="skill-experience3">
-                                <option>Experience</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items"  id="skill-proficiency3">
-                                <option>Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <textarea placeholder="Description"class="jobseeker-textarea p-2 w-100" rows="2" style=" resize: none; min-height:50px !important;"></textarea>
                         </div>
                     </div>
 
                     <br>
                     {{-- button --}}
                     <div class="row m-auto">
-                        <div class="col-md-12 d-flex justify-content-center p-2 btn-container">
+                        <div class="col-md-12 d-flex justify-content-center p-2 btn-container btn_add_skill">
                             <div class="btn-plus"></div>
                         </div>
                     </div>
@@ -196,7 +102,7 @@
                         <div class="col-md-2"></div>
                         <div class="col-md-8 d-flex justify-content-center">
                             <a class="btn btn-light mr-2 back-btn" href="/personalDetails">Back</a>
-                            <a class="btn btn-primary proceed-btn" href="/jobseekerProfileReview">Proceed Next</a>
+                            <button class="btn btn-primary proceed-btn" type="submit">Proceed Next</button>
                         </div>
                         <div class="col-md-2"></div>
                     </div>
@@ -207,5 +113,79 @@
      </div>
 </div>
 
+<script>
+    if(!token) {
+        window.location.href = '/signup';
+    } 
+
+    $(document).ready(function() {
+        $('[name="email"]').val(userdata.email);
+
+        $('#js_skills').on('submit', function(e) {
+            e.preventDefault();
+
+            let data = $(this).serializeControls();
+            
+
+            let data_skills = {...data.skills};
+            data_skills = Object.values(data_skills); 
+
+
+            let jobseeker_id = userdata.jobseeker.id;
+            data_skills.map((edu, key) => {
+                data_skills[key]['jobseeker_id'] = jobseeker_id;
+            });
+            
+            data_skills = {
+                jobseeker_id: jobseeker_id,
+                skills: data_skills
+            };
+            
+            console.log(data_skills)
+
+            postData('/api/JobSeekerSpecializedSkill',data_skills, ({data:res}) => {
+                if(res.success) {
+                    window.location.href = '/jobseekerProfileReview';
+                }
+            });
+            
+        }); 
+
+
+
+        $('.btn_add_skill').on('click', function() {
+            let rows = $('#skills_section').find('.row').length;
+            $('#skills_section').append('\
+                <div class="row">\
+                    <div class="col-md-8">\
+                        <div class="form-group">\
+                            <input type="text" class="form-control personal-info-forms-items" name="skills['+(rows+1)+'][title]" placeholder="Title">\
+                        </div>\
+                    </div>\
+                    <div class="col-md-2">\
+                        <div class="form-group">\
+                            <input type="text" class="form-control personal-info-forms-items" name="skills['+(rows+1)+'][experience]" placeholder="Experience">\
+                        </div>\
+                    </div>\
+                    <div class="col-md-2 ">\
+                        <select class="form-control personal-info-forms-items"  name="skills['+(rows+1)+'][proficiency]">\
+                            <option>Proficiency</option>\
+                            <option>Beginner</option>\
+                            <option>Advanced</option>\
+                            <option>Expert</option>\
+                        </select>\
+                    </div>\
+                </div>\
+                <div class="row">\
+                    <div class="col-md-12 ">\
+                        <textarea placeholder="Description"class="jobseeker-textarea p-2 w-100" name="skills['+(rows+1)+'][description]" rows="2" style=" resize: none; min-height:50px !important;"></textarea>\
+                    </div>\
+                </div>\
+            ');
+        });
+
+ 
+    });
+</script>
 @endsection
 

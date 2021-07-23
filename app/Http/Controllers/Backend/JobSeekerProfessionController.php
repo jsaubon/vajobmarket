@@ -54,10 +54,10 @@ class JobSeekerProfessionController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required'
+            'jobseeker_id' => 'required'
         ]);
         
-        $data = JobSeekerProfession::create($request->all())->save();
+        $data = JobSeekerProfession::updateOrCreate(['jobseeker_id'=> $request->jobseeker_id],$request->all())->save();
        
         return response()->json([
             'success' => true,
@@ -99,6 +99,7 @@ class JobSeekerProfessionController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         $data = JobSeekerProfession::find($id);
 
         if (!$data) {

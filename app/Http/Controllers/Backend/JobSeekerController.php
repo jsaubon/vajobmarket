@@ -80,10 +80,11 @@ class JobSeekerController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required'
+            'user_id' => 'required'
         ]);
         
         $data = JobSeeker::create($request->all())->save();
+        $data = JobSeeker::where('user_id',$request->user_id)->first();
        
         return response()->json([
             'success' => true,
@@ -101,8 +102,7 @@ class JobSeekerController extends Controller
     {
         $data = JobSeeker::with([
             'user',
-            'client_employees',
-            'employee_monitors',
+            'client_employees.employee_monitors',
             'jobseeker_educations',
             'jobseeker_experiences',
             'jobseeker_languages',

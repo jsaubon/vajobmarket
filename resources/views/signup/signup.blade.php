@@ -149,7 +149,7 @@
             let password = $('.signup_password_js').val();
             let confirm_password = $('.signup_confirm_password_js').val();
             if(password != confirm_password) {
-                alert('Confirm Password Mismatch, please try again');
+                // alert('Confirm Password Mismatch, please try again');
                 $('#signup_error_js').removeClass('hide');
                 $('#signup_error_js_message').html('Confirm Password Mismatch, please try again');
             } else {

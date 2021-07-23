@@ -54,10 +54,14 @@ class JobSeekerReferenceController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required'
+            'jobseeker_id' => 'required'
         ]);
         
-        $data = JobSeekerReference::create($request->all())->save();
+        if($request->references) {
+            $data = JobSeekerReference::insert($request->references);
+        } else {
+            $data = JobSeekerReference::create($request->all())->save();
+        }
        
         return response()->json([
             'success' => true,
