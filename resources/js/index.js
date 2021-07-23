@@ -14,3 +14,7 @@ lilnav.addEventListener('mouseout',function(){
 showbtn.addEventListener('mouseout',function(){
     lilnav.style.display ='none'
 })
+
+$(document).ready( function () {
+    $('#myDataTable').DataTable();
+} );
