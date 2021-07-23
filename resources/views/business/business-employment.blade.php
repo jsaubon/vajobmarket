@@ -5,73 +5,153 @@
 <div class="user-dashboard">
     <div class="container fullwidth">
 
-
+    <!-- Breamcrumbs Start -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"> <a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item active">Applications</li>
+                <li class="breadcrumb-item active">Employment</li>
             </ol>
         </nav>
+    <!-- Breadcrumbs End -->
 
+    <!-- Card Start -->
         <div class="card w-100">
             <div class="card-header">
 
+            <!-- NavTabs List Start -->
                 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="applicants-tab" data-toggle="tab" href="#applicants" role="tab" aria-controls="applicants" aria-selected="true">Applicants</a>
+                        <a class="nav-link active" id="currentEmployees-tab" data-toggle="tab" href="#currentEmployees" role="tab" aria-controls="currentEmployees" aria-selected="true">Current Employees</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="shortlistings-tab" data-toggle="tab" href="#shortlistings" role="tab" aria-controls="shortlistings" aria-selected="false">Shortlisting</a>
+                        <a class="nav-link" id="employeeMonitor-tab" data-toggle="tab" href="#employeeMonitor" role="tab" aria-controls="employeeMonitor" aria-selected="false">Employee Monitor</a>
                     </li>
                 </ul>
+            <!-- NavTabs List End -->
 
+            <!-- Tab Content 1 Start -->
                 <div class="tab-content" id="myTabContent">
 
-                    <div class="tab-pane fade show active" id="applicants" role="tabpanel" aria-labelledby="applicants-tab">
+                    <div class="tab-pane fade show active" id="currentEmployees" role="tabpanel" aria-labelledby="currentEmployees-tab">
 
+                <!-- Accordion Start 1 -->
                     <div class="accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Collapsible Group Item #1
+                                    Employee 1 (Content Writer)
                                     </button>
                                 </h2>
                             </div>
 
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                            
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                    <th class="text-center" scope="col">Name</th>
-                                    <th class="text-center" scope="col">Rating</th>
-                                    <th class="text-center" scope="col">Rating</th>
-                                    <th class="text-center" scope="col">Recommendation</th>
-                                    <th class="text-center" scope="col">Date Applied</th>
-                                    <th class="text-center" scope="col">Actions</th>
-                                    </tr>
-                                </thead>
+                                <div class="card-body">
 
-                                <tbody>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <label class="col-form-label">
+                                                    Employment Status:
+                                                </label>
+                                                
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Fulltime" disabled>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
 
-                                    <tr>
-                                        <td>Jane Doe</td>
-                                        <td class="text-center">95%</td>
-                                        <td class="text-center">56</td>
-                                        <td class="text-center">High</td>
-                                        <td class="text-center">May 20, 2021</td>
-                                        <td class="text-center">A1 A2 A3</td>
-                                    </tr>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <label class="col-form-label">
+                                                    Salary:
+                                                </label>
+                                                
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="$140.00/Month" disabled>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
 
-                                </tbody>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <label class="col-form-label">
+                                                    Working Hours:
+                                                </label>
+                                                
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="40 Hours/Week" disabled>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            </table>
-                            
-                            </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-form-label">
+                                                    Date Hired:
+                                                </label>
+
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="July 9, 2021" disabled>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-form-label">
+                                                    Contract:
+                                                </label>
+
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="1 Year" disabled>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+                                            
+                                                <label>
+                                                    Job Description
+                                                </label>
+                                            
+                                            
+                                                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                            
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            
+                                                <label>
+                                                    Responsibilities
+                                                </label>
+                                           
+                                            
+                                                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                            
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
+                <!-- Accordion End 1 -->
+
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                             <h2 class="mb-0">
@@ -103,8 +183,11 @@
                         </div>
 
                     </div>
+                    <!-- NavTabs 1 Content End -->
 
-                    <div class="tab-pane fade" id="shortlistings" role="tabpanel" aria-labelledby="shortlistings-tab">
+
+                    <!-- NavTabs 2 Content Start -->
+                    <div class="tab-pane fade" id="employeeMonitor" role="tabpanel" aria-labelledby="employeeMonitor-tab">
 
                     <div class="accordion" id="accordionExample">
                         <div class="card">
@@ -251,9 +334,14 @@
 
                     </div>
 
+                <!-- NavTabs 2 Content End -->
+
                 </div>
+            <!-- NavTabs End -->
+
             </div>
         </div>
+    <!-- Card End -->
 
     </div>
 </div>
