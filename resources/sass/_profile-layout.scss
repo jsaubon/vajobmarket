@@ -1,0 +1,32 @@
+//AllJobPost Table
+
+
+.user-dashboard {
+    background-color: #ECF6FF;
+}
+
+.fullwidth {
+    max-width: 1260px !important;
+    width: 100%;
+}
+
+.container  {
+
+    // padding: 100px 0px 10px 0px;
+
+    .breadcrumb {
+
+        .active {
+            text-decoration: none;
+        }
+
+        color: #6e6e6e;
+        background: none !important;
+    }
+
+    .table{
+        color: #6e6e6e;
+        background: #fff;
+        border-radius: 10px;
+    }
+}

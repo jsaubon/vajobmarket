@@ -41,5 +41,10 @@ Route::get('/businessPersonalInfo', 'Frontend\BusinessController@businessPersona
 Route::get('/businessInfo', 'Frontend\BusinessController@businessInfo');
 Route::get('/BusinessBilling', 'Frontend\BusinessController@BusinessBilling');
 Route::get('/BusinessFinalize', 'Frontend\BusinessController@BusinessFinalize');
+Route::get('/BusinessProfile', 'Frontend\BusinessController@BusinessProfile');
+Route::get('/BusinessProfilePersonal', 'Frontend\BusinessController@BusinessProfilePersonal');
 
-
+Route::get('/BusinessAllJobPost', 'Frontend\BusinessCOntroller@BusinessAllJobPost');
+Route::get('/BusinessPostJob', 'Frontend\BusinessController@BusinessPostJob');
+Route::get('/BusinessEditJobPost', 'Frontend\BusinessController@BusinessEditJobPost');
+Route::get('/BusinessApplications', 'Frontend\BusinessController@BusinessApplications');

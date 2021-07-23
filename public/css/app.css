@@ -259,7 +259,7 @@ body {
   background-position: center;
   background-size: cover;
   filter: grayscale(100%);
-  padding: 100px;
+  padding: 100px !important;
 }
 
 @media screen and (min-width: 1400px) {
@@ -582,6 +582,111 @@ img {
   }
 }
 
+.user-dashboard {
+  background-color: #ECF6FF;
+}
+
+.fullwidth {
+  max-width: 1260px !important;
+  width: 100%;
+}
+
+.container .breadcrumb {
+  color: #6e6e6e;
+  background: none !important;
+}
+
+.container .breadcrumb .active {
+  text-decoration: none;
+}
+
+.container .table {
+  color: #6e6e6e;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.banner-offset-items {
+  position: absolute;
+  width: 100%;
+  top: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.banner-container {
+  border: 1px solid;
+  margin: 0 !important;
+}
+
+.top-banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-banner-container {
+  background: url("/images/HAND PICKED Updated@2x.jpg?7e201d21b378d835a9ae4321cbf27860") no-repeat center;
+  background-size: cover;
+  height: 300px;
+  width: 100% !important;
+}
+
+.profile-pic {
+  border: 4px solid white;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  height: 200px;
+}
+
+.space-container {
+  background-color: #ecf6ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 180px 0px 30px 0px;
+}
+
+.col-banner {
+  max-width: 100% !important;
+}
+
+.card-banner {
+  position: relative;
+}
+
+.hire-me-btn {
+  height: 25px;
+  width: 250px;
+  margin-bottom: 20px;
+  font-size: 10px !important;
+  padding: 2px !important;
+}
+
+.profile-name {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif !important;
+}
+
+.card-banner {
+  border-radius: 20px !important;
+}
+
 .business-landing-container {
   height: 100vh;
   padding-bottom: 100px;
@@ -668,6 +773,31 @@ img {
   font-size: 10px;
   display: flex;
   padding: 3px;
+}
+
+.nav-style {
+  background-color: #ecf6ff;
+}
+
+.nav-style ul {
+  border-bottom: none;
+}
+
+.nav-link-style,
+.nav-link-style:active {
+  background-color: #ecf6ff !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-link-style::before {
+  content: "";
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 10;
+  background-color: red;
 }
 
 .jobseeker-landing-container {
