@@ -199,29 +199,32 @@
 
                     <!-- NavTabs 2 Content Start -->
                     <div class="tab-pane fade" id="employeeMonitor" role="tabpanel" aria-labelledby="employeeMonitor-tab">
-
-
-                        <div class="card">
-                            <table class="display" id="myDataTable">
-                            <thead>
-                                <tr>
-                                    <th>Column 1</th>
-                                    <th>Column 2</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Row 1 Data 1</td>
-                                    <td>Row 1 Data 2</td>
-                                </tr>
-                                <tr>
-                                    <td>Row 2 Data 1</td>
-                                    <td>Row 2 Data 2</td>
-                                </tr>
-                            </tbody>
-                            </table>
+                        <div class="wrapper">
+                            
+                                <table class="display" id="myDataTable">
+                                <thead>
+                                    <tr>
+                                        <th>Employee Name</th>
+                                        <th>Hours</th>
+                                        <th>Adhearance</th>
+                                        <th>Breal</th>
+                                        <th>Date</th>
+                                        <th>Remarks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Jane Doe</td>
+                                        <td>7.5</td>
+                                        <td>30 minutes</td>
+                                        <td>1 hr</td>
+                                        <td>June 10,2021</td>
+                                        <td>Complete</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            
                         </div>
-        
 
                     </div>
 
