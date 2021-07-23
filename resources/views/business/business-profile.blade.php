@@ -44,7 +44,7 @@
         <div class="tab-content " id="myTabContent">
             {{-- first--}}
             <div class="tab-pane fade show active" id="first-choice" role="tabpanel" aria-labelledby="home-tab">
-                PERSONAL
+                POSTS
             </div>
             {{-- second --}}
             <div class="tab-pane fade" id="second-choice" role="tabpanel" aria-labelledby="profile-tab">
@@ -56,7 +56,8 @@
                             </div>
                             <div class="my-auto pl-2">
                                 <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                <p style="font-size: 10px; margin:0;">Type of business</p>
+                                <p style="font-size: 10px; margin:0;">
+                                    <a href="/BusinessProfilePersonal">Type of business</a></p>
                             </div>
                         </div>
                         <hr>
@@ -89,7 +90,7 @@
             </div>
             {{-- third --}}
             <div class="tab-pane fade" id="third-choice" role="tabpanel" aria-labelledby="profile-tab">
-              bILLING
+              COMMENTS
             </div>
         </div>
     </div>

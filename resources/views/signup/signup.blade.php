@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<link href="{{URL::asset('assets/css/signup.css')}}" rel="stylesheet">
+
 <section class="container-fluid">
     <div class="container">
         <br/> <br/> <br/>
@@ -58,7 +58,7 @@
                                     <span class="p-1">Twitter</span>
                                     <span class="p-1">Google</span>
                                 </div>
-                                <p class="text-center">Already have an account? <a href="/">SIGN IN</a></p>
+                                <p class="text-center">Already have an account? <a href="/business">SIGN IN</a></p>
                             </div>
                         </div>
                     </div>

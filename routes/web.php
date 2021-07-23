@@ -36,10 +36,10 @@ Route::get('/jobseekerFinalize', 'Frontend\JobSearchController@jobseekerFinalize
 
 //business-owner
 Route::get('/business', 'Frontend\BusinessController@index');
-Route::get('/businessReview', 'Frontend\BusinessController@businessReview');
 Route::get('/businessPersonalInfo', 'Frontend\BusinessController@businessPersonalInfo');
 Route::get('/businessInfo', 'Frontend\BusinessController@businessInfo');
 Route::get('/BusinessBilling', 'Frontend\BusinessController@BusinessBilling');
+Route::get('/businessReview', 'Frontend\BusinessController@businessReview');
 Route::get('/BusinessFinalize', 'Frontend\BusinessController@BusinessFinalize');
 Route::get('/BusinessProfile', 'Frontend\BusinessController@BusinessProfile');
 Route::get('/BusinessProfilePersonal', 'Frontend\BusinessController@BusinessProfilePersonal');
@@ -48,3 +48,4 @@ Route::get('/BusinessAllJobPost', 'Frontend\BusinessCOntroller@BusinessAllJobPos
 Route::get('/BusinessPostJob', 'Frontend\BusinessController@BusinessPostJob');
 Route::get('/BusinessEditJobPost', 'Frontend\BusinessController@BusinessEditJobPost');
 Route::get('/BusinessApplications', 'Frontend\BusinessController@BusinessApplications');
+Route::get('/BusinessEmployment', 'Frontend\BusinessController@BusinessEmployment');

@@ -589,6 +589,7 @@ img {
 .fullwidth {
   max-width: 1260px !important;
   width: 100%;
+  padding: 100px 0px 50px 0px;
 }
 
 .container .breadcrumb {
@@ -798,6 +799,18 @@ img {
   width: 10px;
   top: 10;
   background-color: red;
+}
+
+.profile-info-forms-items {
+  background-color: white !important;
+  border: none !important;
+  padding-left: 0 !important;
+  border-radius: 0px !important;
+  border-bottom: 2px solid #747677 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 12px !important;
+  color: #747677;
 }
 
 .jobseeker-landing-container {
