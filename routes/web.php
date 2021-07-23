@@ -49,3 +49,4 @@ Route::get('/BusinessPostJob', 'Frontend\BusinessController@BusinessPostJob');
 Route::get('/BusinessEditJobPost', 'Frontend\BusinessController@BusinessEditJobPost');
 Route::get('/BusinessApplications', 'Frontend\BusinessController@BusinessApplications');
 Route::get('/BusinessEmployment', 'Frontend\BusinessController@BusinessEmployment');
+Route::get('/BusinessMessages', 'Frontend\BusinessController@BusinessMessages');

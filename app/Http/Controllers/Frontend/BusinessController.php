@@ -54,4 +54,8 @@ class BusinessController extends Controller
         return view('business.business-employment');
     }
 
+    function BusinessMessages(){
+        return view('business.business-messages');
+    }
+
 }
