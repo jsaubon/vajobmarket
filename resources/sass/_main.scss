@@ -64,8 +64,8 @@ body{
 .postJobBtn {
     border-radius: 15px;
     font-size: 0.7em;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #383232;
+    color: #383232;
     width: 80px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -80,10 +80,12 @@ body{
 }
 .noDeco {
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .noDeco:hover {
     text-decoration: none;
+    color:white;
 }
 
 /* footer section */

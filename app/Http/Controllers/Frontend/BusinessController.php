@@ -33,6 +33,9 @@ class BusinessController extends Controller
     function BusinessProfilePersonal(){
         return view('business.business-profile-personal');
     }
+    function BusinessProfileCompany(){
+        return view('business.business-profile-company');
+    }
 
     function BusinessAllJobPost(){
         return view('business.business-all-job-post');

@@ -19375,9 +19375,15 @@ module.exports = function(module) {
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module '@fortawesome/fontawesome-free/js/fontawesome'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '@fortawesome/fontawesome-free/js/solid'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '@fortawesome/fontawesome-free/js/regular'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '@fortawesome/fontawesome-free/js/brands'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./index */ "./resources/js/index.js");
@@ -19385,6 +19391,10 @@ __webpack_require__(/*! ./index */ "./resources/js/index.js");
 $(document).ready(function () {
   $('#myDataTable').DataTable();
 });
+
+
+
+
 
 /***/ }),
 
@@ -19427,7 +19437,23 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-console.log('hello');
+var showbtn = document.querySelector('.user-btn');
+var lilnav = document.querySelector('.small-nav');
+showbtn.addEventListener('mouseover', function () {
+  lilnav.style.display = 'block';
+});
+lilnav.addEventListener('mouseover', function () {
+  lilnav.style.display = 'block';
+});
+lilnav.addEventListener('mouseout', function () {
+  lilnav.style.display = 'none';
+});
+showbtn.addEventListener('mouseout', function () {
+  lilnav.style.display = 'none';
+});
+$(document).ready(function () {
+  $('#myDataTable').DataTable();
+});
 
 /***/ }),
 

@@ -111,7 +111,7 @@
                 <a class="btn btn-primary proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="#">
                     search for jobs
                 </a>
-                <a class="btn btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">
+                <a href="/jobseekerProfile" class="btn btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">
                     skip to dashboard
                 </a>
             </div>
