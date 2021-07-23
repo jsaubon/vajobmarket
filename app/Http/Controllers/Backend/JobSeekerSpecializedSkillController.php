@@ -54,10 +54,14 @@ class JobSeekerSpecializedSkillController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required'
+            'jobseeker_id' => 'required'
         ]);
         
-        $data = JobSeekerSpecializedSkill::create($request->all())->save();
+        if($request->skills) {
+            $data = JobSeekerSpecializedSkill::insert($request->skills);
+        } else {
+            $data = JobSeekerSpecializedSkill::create($request->all())->save();
+        }
        
         return response()->json([
             'success' => true,

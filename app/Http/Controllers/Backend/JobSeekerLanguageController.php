@@ -54,10 +54,15 @@ class JobSeekerLanguageController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required'
+            'jobseeker_id' => 'required'
         ]);
+
+        if($request->languages) {
+            $data = JobSeekerLanguage::insert($request->languages);
+        } else {
+            $data = JobSeekerLanguage::create($request->all())->save();
+        }
         
-        $data = JobSeekerLanguage::create($request->all())->save();
        
         return response()->json([
             'success' => true,

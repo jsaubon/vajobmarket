@@ -17,8 +17,8 @@ class CreateJobSeekerLanguagesTable extends Migration
             $table->id();
             $table->integer('jobseeker_id')->unsigned();
             $table->string('language')->nullable();
-            $table->string('written_preffeciency')->nullable();
-            $table->string('oral_preffeciency')->nullable();
+            $table->string('written_proficiency')->nullable();
+            $table->string('oral_proficiency')->nullable();
             $table->timestamps();
         });
     }
