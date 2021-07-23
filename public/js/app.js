@@ -19382,6 +19382,10 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./index */ "./resources/js/index.js");
 
+$(document).ready(function () {
+  $('#myDataTable').DataTable();
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -19445,8 +19449,8 @@ console.log('hello');
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\ihrbuddy-new\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\ihrbuddy-new\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\xampp\htdocs\vajobmarket-new\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\xampp\htdocs\vajobmarket-new\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
