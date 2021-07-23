@@ -51,17 +51,17 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="fname" placeholder="First Name">
+                                <input type="text" disabled name="personal_firstname" class="form-control personal-info-forms-items"  placeholder="First Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="mname" placeholder="Middle Name">
+                                <input type="text" disabled name="personal_middlename" class="form-control personal-info-forms-items" placeholder="Middle Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="lname" placeholder="Last Name">
+                                <input type="text" disabled name="personal_lastname" class="form-control personal-info-forms-items"  placeholder="Last Name">
                               </div>
                         </div>
                     </div>
@@ -70,70 +70,48 @@
                         <div class="col-md-2">
                             <label class="personal-info-forms-items" style="border:0 !important;">Date of Birth</label>
                         </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" id="b-month-review">
-                                <option>Month</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" id="b-date-review">
-                                <option>Date</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" id="b-year-review">
-                                <option>Year</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items"  disabled name="personal_date_of_birth"  placeholder="Date of Birth">
+                              </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="nationality" placeholder="Nationality">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="personal_nationality"  placeholder="Nationality">
                               </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="address" placeholder="Address">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="personal_address1"  placeholder="Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="Apartment" placeholder="Apartment, Suite, etc.">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="personal_address2"  placeholder="Apartment, Suite, etc.">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="city" placeholder="City">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="personal_city" placeholder="City">
                               </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="state" placeholder="State / Province">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="personal_state" placeholder="State / Province">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="country" placeholder="Country">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="personal_country"  placeholder="Country">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="zip" placeholder="Zip / Postal">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="personal_zip" placeholder="Zip / Postal">
                               </div>
                         </div>
                     </div>
@@ -141,17 +119,17 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="email" class="form-control personal-info-forms-items" id="email" placeholder="E-mail Address">
+                                <input disabled type="email" class="form-control personal-info-forms-items" disabled name="personal_email" placeholder="E-mail Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="mobile" placeholder="Mobile Number">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="personal_mobile_no" placeholder="Mobile Number">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="phone" placeholder="Phone Number">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="personal_phone_no"  placeholder="Phone Number">
                               </div>
                         </div>
                     </div>
@@ -159,46 +137,15 @@
                     {{-- education --}}
                     <h2 class="title-personal-info">Education</h2>
                     <hr>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="school" placeholder="Name of School">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <select class="form-control personal-info-forms-items" id="grad-year">
-                                <option>Year Graduated</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="course" placeholder="Course Graduated">
-                            </div>
-                        </div>
+                    <div id="educations_section">
+
                     </div>
 
                     {{-- references --}}
                     <h2 class="title-personal-info">references</h2>
                     <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <select class="form-control personal-info-forms-items" id="social-media">
-                                <option>Social Media / Website</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="url-link" placeholder="Enter URL/Link here">
-                            </div>
-                        </div>
+                    <div id="references_section">
+                    
                     </div>
 
                     {{-- Profession --}}
@@ -206,249 +153,45 @@
                     <h2 class="title-personal-info">Profession</h2>
                     <hr>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="job-title" placeholder="Job title">
-                              </div>
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="profession_job_title" placeholder="Job title">
+                            </div>
                         </div>
                         <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" id="avail">
-                                <option>Availability</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="profession_availability" placeholder="Availability">
+                            </div>
                         </div>
-                        <div class="col-md-2 p-1">
-                            <select class="form-control personal-info-forms-items " style="font-size:9px !important;" id="rate-month-review">
-                                <option>Asking Rate/Month</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2 p-1">
-                            <select class="form-control personal-info-forms-items" style="font-size:9px !important;" id="rate-hour-review">
-                                <option>Asking Rate/Hr</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items" disabled name="profession_salary" placeholder="Rate">
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 ">
-                            <textarea placeholder="Write your skill Summary here.."class="jobseeker-textarea textarea-review p-2 w-100" rows="8" style=" resize: none;" wrap="hard">Nulla non sapien aliquet, dictum massa id, condimentum mauris. Quisque vulputate libero non mi eleifend egestas. Duis at mattis est. Morbi velit nisi, condimentum sed turpis in, ultricies rhoncus dolor. Vestibulum finibus porttitor rhoncus. Vivamus a mollis purus, vel posuere risus. Integer luctus mauris nisi, vulputate venenatis elit porttitor ut. Cras tempor, ante tincidunt ultrices molestie, ipsum elit tempor augue, et venenatis lectus purus vel urna.Nulla non sapien aliquet, dictum massa id, condimentum mauris. Quisque vulputate libero non mi eleifend egestas. Duis at mattis est. Morbi velit nisi, condimentum sed turpis in, ultricies rhoncus dolor. Vestibulum finibus porttitor rhoncus. Vivamus a mollis purus, vel posuere risus. Integer luctus mauris nisi, vulputate venenatis elit porttitor ut. Cras tempor, ante tincidunt ultrices molestie, ipsum elit tempor augue, et venenatis lectus purus vel urna.
+                            <textarea placeholder="Write your skill Summary here.."  disabled name="profession_skills_summary" class="jobseeker-textarea textarea-review p-2 w-100" rows="8" style=" resize: none;" wrap="hard">
                             </textarea>
                         </div>
                     </div>
+                    
 
                     {{-- Languages --}}
                     <h2 class="title-personal-info">Languages</h2>
                     <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="language" placeholder="Select Language">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <select class="form-control personal-info-forms-items" id="written-proficiency">
-                                <option>Written Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <select class="form-control personal-info-forms-items" id="oras-proficiency">
-                                <option>Oral Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
+                    <div id="languages_section">
                     </div>
                     {{-- Job Experiences --}}
                     <h2 class="title-personal-info">Job Experiences</h2>
                     <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="jobseeker-company-name" placeholder="Company Name">
-                              </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="job-description" placeholder="Job Description">
-                              </div>
-                        </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items "  id="rate-month">
-                                <option>From</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items"  id="rate-hour">
-                                <option>Until</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 d-flex justify-content-end">
-                            <div class="form-group personal-info-forms-items form-check " style="border:none !important;">
-                                <input type="checkbox" class="form-check-input p-2" id="exampleCheck1">
-                                <label class="form-check-label p-1" for="exampleCheck1">I currently work here</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <textarea placeholder="Write your skill Summary here.."class="jobseeker-textarea textarea-review p-2 w-100" rows="8" style=" resize: none;" wrap="hard">Nulla non sapien aliquet, dictum massa id, condimentum mauris. Quisque vulputate libero non mi eleifend egestas. Duis at mattis est. Morbi velit nisi, condimentum sed turpis in, ultricies rhoncus dolor. Vestibulum finibus porttitor rhoncus. Vivamus a mollis purus, vel posuere risus. Integer luctus mauris nisi, vulputate venenatis elit porttitor ut. Cras tempor, ante tincidunt ultrices molestie, ipsum elit tempor augue, et venenatis lectus purus vel urna.Nulla non sapien aliquet, dictum massa id, condimentum mauris. Quisque vulputate libero non mi eleifend egestas. Duis at mattis est. Morbi velit nisi, condimentum sed turpis in, ultricies rhoncus dolor. Vestibulum finibus porttitor rhoncus. Vivamus a mollis purus, vel posuere risus. Integer luctus mauris nisi, vulputate venenatis elit porttitor ut. Cras tempor, ante tincidunt ultrices molestie, ipsum elit tempor augue, et venenatis lectus purus vel urna.
-                            </textarea>
-                        </div>
+                    <div id="experiences_section">
                     </div>
                     <h2 class="title-personal-info">List of Specialized Skills</h2>
                     <hr>
                     {{-- skill-1 --}}
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <select class="form-control personal-info-forms-items" id="skill-title1">
-                                    <option>Title</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items "  id="skill-experience1">
-                                <option>Experience</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items"  id="skill-proficiency1">
-                                <option>Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
+                    <div id="skills_section">
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <textarea placeholder="Write your skill Summary here.."class="jobseeker-textarea textarea-review p-2 w-100" rows="5"  style=" resize: none; min-height:50px !important;" wrap="hard">Nulla non sapien aliquet, dictum massa id, condimentum mauris. Quisque vulputate libero non mi eleifend egestas. Duis at mattis est. Morbi velit nisi, condimentum sed turpis in, ultricies rhoncus dolor. Vestibulum finibus porttitor rhoncus. Vivamus a mollis purus, vel posuere risus. Integer luctus mauris nisi, vulputate venenatis elit porttitor ut. Cras tempor, ante tincidunt ultrices molestie, ipsum elit tempor augue, et venenatis lectus purus vel urna.
-                            </textarea>
-                        </div>
-                    </div>
-
-                    {{-- skill-2 --}}
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <select class="form-control personal-info-forms-items" id="skill-title2">
-                                    <option>Title</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items "  id="skill-experience2">
-                                <option>Experience</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items"  id="skill-proficiency2">
-                                <option>Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <textarea placeholder="Write your skill Summary here.."class="jobseeker-textarea textarea-review p-2 w-100" rows="5" style=" resize: none; min-height:50px !important;" wrap="hard">Nulla non sapien aliquet, dictum massa id, condimentum mauris. Quisque vulputate libero non mi eleifend egestas. Duis at mattis est. Morbi velit nisi, condimentum sed turpis in, ultricies rhoncus dolor. Vestibulum finibus porttitor rhoncus. Vivamus a mollis purus, vel posuere risus. Integer luctus mauris nisi, vulputate venenatis elit porttitor ut. Cras tempor, ante tincidunt ultrices molestie, ipsum elit tempor augue, et venenatis lectus purus vel urna.
-                            </textarea>
-                        </div>
-                    </div>
-
-                    {{-- skill-3 --}}
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <select class="form-control personal-info-forms-items" id="skill-title3">
-                                    <option>Title</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                  </select>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items "  id="skill-experience3">
-                                <option>Experience</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2 ">
-                            <select class="form-control personal-info-forms-items"  id="skill-proficiency3">
-                                <option>Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <textarea placeholder="Write your skill Summary here.."class="jobseeker-textarea textarea-review p-2 w-100" rows="5" style=" resize: none; min-height:50px !important;" wrap="hard">Nulla non sapien aliquet, dictum massa id, condimentum mauris. Quisque vulputate libero non mi eleifend egestas. Duis at mattis est. Morbi velit nisi, condimentum sed turpis in, ultricies rhoncus dolor. Vestibulum finibus porttitor rhoncus. Vivamus a mollis purus, vel posuere risus. Integer luctus mauris nisi, vulputate venenatis elit porttitor ut. Cras tempor, ante tincidunt ultrices molestie, ipsum elit tempor augue, et venenatis lectus purus vel urna.
-                            </textarea>
-                        </div>
-                    </div>
-
                     {{-- proceed and back buttons --}}
                     <div class="row" style="padding-top:70px;">
                         <div class="col-md-2"></div>
@@ -477,5 +220,174 @@
      </div>
 </div>
 
+<script>
+ if(!token) {
+    window.location.href = '/signup';
+} 
+$(document).ready(function() {
+    getData('/api/JobSeeker/'+userdata.jobseeker.id, ({data:res}) => {
+        if(res.success) {
+            let jobseeker_data = res.data;
+            let user = jobseeker_data.user;
+            let jobseeker_educations = jobseeker_data.jobseeker_educations;
+            let jobseeker_experiences = jobseeker_data.jobseeker_experiences;
+            let jobseeker_languages = jobseeker_data.jobseeker_languages;
+            let jobseeker_profession = jobseeker_data.jobseeker_profession;
+            let jobseeker_references = jobseeker_data.jobseeker_references;
+            let jobseeker_specialized_skills = jobseeker_data.jobseeker_specialized_skills;
+            Object.keys(jobseeker_data).map((field, key) => {
+                let input = $('[name="personal_'+field+'"]');
+                if(input.length) {
+                    input.val(jobseeker_data[field]);
+                }
+            });
+            
+            Object.keys(user).map((field, key) => {
+                let input = $('[name="personal_'+field+'"]');
+                if(input.length) {
+                    input.val(user[field]);
+                }
+            });
+            
+            Object.keys(jobseeker_profession).map((field, key) => {
+                let input = $('[name="profession_'+field+'"]');
+                if(input.length) {
+                    input.val(jobseeker_profession[field]);
+                }
+            });
+
+            jobseeker_educations.map((edu, key) => {
+                $('#educations_section').append('\
+                    <div class="row">\
+                        <div class="col-md-5">\
+                            <div class="form-group">\
+                                <input type="text" disabled class="form-control personal-info-forms-items"  value="'+edu.name_of_school+'" placeholder="Name of School">\
+                            </div>\
+                        </div>\
+                        <div class="col-md-3">\
+                            <select class="form-control personal-info-forms-items" disabled >\
+                                <option>'+edu.year_graduated+'</option>\
+                            </select>\
+                        </div>\
+                        <div class="col-md-4">\
+                            <div class="form-group">\
+                                <input type="text" disabled class="form-control personal-info-forms-items" value="'+edu.course_graduated+'" placeholder="Course Graduated">\
+                            </div>\
+                        </div>\
+                    </div>\
+                ');
+            });
+
+            jobseeker_references.map((reference, key) => {
+                $('#references_section').append('\
+                    <div class="row">\
+                        <div class="col-md-4">\
+                            <select disabled class="form-control personal-info-forms-items" i>\
+                                <option>'+reference.website+'</option>\
+                            </select>\
+                        </div>\
+                        <div class="col-md-8">\
+                            <div class="form-group">\
+                                <input type="text" disabled class="form-control personal-info-forms-items"  value="'+reference.link+'" placeholder="Enter URL/Link here">\
+                            </div>\
+                        </div>\
+                    </div>\
+                ');
+            });
+              
+
+            jobseeker_languages.map((language, key) => {
+                $('#languages_section').append('\
+                    <div class="row">\
+                        <div class="col-md-4">\
+                            <div class="form-group">\
+                                <input type="text" disabled class="form-control personal-info-forms-items" value="'+language.language+'" placeholder="Select Language">\
+                            </div>\
+                        </div>\
+                        <div class="col-md-4">\
+                            <select disabled class="form-control personal-info-forms-items"  >\
+                                <option>'+language.written_proficiency+'</option>\
+                            </select>\
+                        </div>\
+                        <div class="col-md-4">\
+                            <select disabled class="form-control personal-info-forms-items"  >\
+                                <option>'+language.oral_proficiency+'</option>\
+                            </select>\
+                        </div>\
+                    </div>\
+                ');
+            });
+              
+            jobseeker_experiences.map((experience, key) => {
+                $('#experiences_section').append('\
+                    <div class="row">\
+                        <div class="col-md-4">\
+                            <div class="form-group">\
+                                <input disabled type="text" class="form-control personal-info-forms-items" value="'+experience.company_name+'" placeholder="Company Name">\
+                              </div>\
+                        </div>\
+                        <div class="col-md-4">\
+                            <div class="form-group">\
+                                <input disabled type="text" class="form-control personal-info-forms-items" value="'+experience.job_description+'" placeholder="Job Description">\
+                              </div>\
+                        </div>\
+                        <div class="col-md-2">\
+                            <select disabled class="form-control personal-info-forms-items "  >\
+                                <option>'+experience.from_date+'</option>\
+                              </select>\
+                        </div>\
+                        <div class="col-md-2">\
+                            <select disabled class="form-control personal-info-forms-items" >\
+                                <option>'+experience.to_date+'</option>\
+                              </select>\
+                        </div>\
+                    </div>\
+                    <div class="row">\
+                        <div class="col-md-12 ">\
+                            <textarea disabled placeholder="Write your skill Summary here.."class="jobseeker-textarea textarea-review p-2 w-100" rows="8" style=" resize: none;" wrap="hard">'+experience.job_scope+'</textarea>\
+                        </div>\
+                    </div>\
+                ');
+            });
+
+            jobseeker_specialized_skills.map((skill, key) => {
+                $('#skills_section').append(''+
+                    '<div class="row">'+
+                        '<div class="col-md-6">'+
+                            '<div class="form-group">'+
+                                '<div class="form-group">'+
+                                    '<input disabled type="text" class="form-control personal-info-forms-items" value="'+skill.title+'" placeholder="Title">'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="col-md-2">'+
+
+                        '</div>'+
+                        '<div class="col-md-2 ">'+
+                            '<div class="form-group">'+
+                                '<input disabled type="text" class="form-control personal-info-forms-items" value="'+skill.experience+'" placeholder="Experience">'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="col-md-2 ">'+
+                            '<div class="form-group">'+
+                                '<input disabled type="text" class="form-control personal-info-forms-items" value="'+skill.proficiency+'" placeholder="Proficiency">'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'+
+                    '<div class="row">'+
+                        '<div class="col-md-12 ">'+
+                            '<textarea placeholder="Write your skill Summary here.."class="jobseeker-textarea textarea-review p-2 w-100" rows="5"  style=" resize: none; min-height:50px !important;" wrap="hard">'+skill.description+''+
+                            '</textarea>'+
+                        '</div>'+
+                    '</div>'
+                );
+            });
+              
+
+
+        }
+    });
+});
+</script>
 @endsection
 

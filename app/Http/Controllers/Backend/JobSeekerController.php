@@ -102,8 +102,7 @@ class JobSeekerController extends Controller
     {
         $data = JobSeeker::with([
             'user',
-            'client_employees',
-            'employee_monitors',
+            'client_employees.employee_monitors',
             'jobseeker_educations',
             'jobseeker_experiences',
             'jobseeker_languages',
