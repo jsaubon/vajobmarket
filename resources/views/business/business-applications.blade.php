@@ -5,6 +5,7 @@
 <div class="user-dashboard">
     <div class="container fullwidth">
 
+
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"> <a href="#">Dashboard</a></li>
@@ -17,16 +18,16 @@
 
                 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Applicants</a>
+                        <a class="nav-link active" id="applicants-tab" data-toggle="tab" href="#applicants" role="tab" aria-controls="applicants" aria-selected="true">Applicants</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Shortlisting</a>
+                        <a class="nav-link" id="shortlistings-tab" data-toggle="tab" href="#shortlistings" role="tab" aria-controls="shortlistings" aria-selected="false">Shortlisting</a>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
 
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade show active" id="applicants" role="tabpanel" aria-labelledby="applicants-tab">
 
                     <div class="accordion" id="accordionExample">
                         <div class="card">
@@ -103,7 +104,7 @@
 
                     </div>
 
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="tab-pane fade" id="shortlistings" role="tabpanel" aria-labelledby="shortlistings-tab">
 
                     <div class="accordion" id="accordionExample">
                         <div class="card">
