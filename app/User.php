@@ -41,6 +41,10 @@ class User extends Authenticatable
         return $this->hasOne('App\Client','user_id');
     }
 
+    public function jobseeker() {
+        return $this->hasOne('App\JobSeeker','user_id');
+    }
+
     public function comments() {
         return $this->morphMany('App\Comment','commentable');
     }

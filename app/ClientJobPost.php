@@ -21,4 +21,7 @@ class ClientJobPost extends Model
     public function client_job_post_required_skills() {
         return $this->hasMany('App\ClientJobPostRequiredSkill','client_job_post_id');
     }
+    public function applicants() {
+        return $this->hasMany('App\ClientEmployee','client_job_post_id');
+    }
 }
