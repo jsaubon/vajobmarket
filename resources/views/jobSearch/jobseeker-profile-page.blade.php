@@ -7,17 +7,32 @@
                 <div class="row card-deck mb-4">
                     <div class="col-md-4 card shadow card-banner">
                         <div class="card-body ">
-                        This is some text within a card body.
+                            <div class="row ">
+                                <div class="col-md-12 text-center">Job Status</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center h2">NONE</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4 card shadow card-banner">
                         <div class="card-body">
-                        This is some text within a card body.
+                            <div class="row ">
+                                <div class="col-md-12 text-center">Jobs Taken</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center h2">20</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4 card shadow card-banner">
                         <div class="card-body">
-                        This is some text within a card body.
+                            <div class="row ">
+                                <div class="col-md-12 text-center">Profile Rating</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center h2">85%</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -25,17 +40,17 @@
         </div>
         <ul class="nav nav-tabs d-flex justify-content-around " id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#first-choice" role="tab" aria-controls="home" aria-selected="true">
+                <a class="nav-link active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#js-candidate-detail" role="tab" aria-controls="home" aria-selected="true">
                     candidate detail
                 </a>
             </li>
             <li class="nav-item " role="presentation" >
-                <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#second-choice" role="tab" aria-controls="profile" aria-selected="false">
+                <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#js-skillset" role="tab" aria-controls="profile" aria-selected="false">
                     skill sets
                 </a>
             </li>
             <li class="nav-item " role="presentation" >
-                <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#third-choice" role="tab" aria-controls="profile" aria-selected="false">
+                <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#js-comments" role="tab" aria-controls="profile" aria-selected="false">
                     comments
                 </a>
             </li>
@@ -44,7 +59,7 @@
     <div class="container-fluid h-auto py-4 my-4">
         <div class="tab-content " id="myTabContent">
             {{-- first--}}
-            <div class="tab-pane fade show active" id="first-choice" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="js-candidate-detail" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container ">
                     <div class="card p-4 shadow">
                         <div class="container">
@@ -266,7 +281,7 @@
                 </div>
             </div>
             {{-- second --}}
-            <div class="tab-pane fade" id="second-choice" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tab-pane fade" id="js-skillset" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="container ">
                     <div class="card p-4 shadow">
                         <h2 class="title-personal-info">List of Specialized Skills</h2>
@@ -401,11 +416,378 @@
                 </div>
             </div>
             {{-- third --}}
-            <div class="tab-pane fade" id="third-choice" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="container h-auto ">
-                    <div class="card h-auto p-4 shadow">
-
+            <div class="tab-pane fade" id="js-comments" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container pb-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            Showing 6 comments out of 25
+                        </div>
                     </div>
+                </div>
+                <div class="container d-flex h-auto" style="gap:10px;">
+
+                    {{-- comments --}}
+                      {{-- col1 --}}
+                    <div class="row h-100 d-flex px-4 flex-column">
+                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                            <div class="card-body">
+                              <h5 class="card-title d-flex" style="font-size:15px;">
+                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                </div>
+                                <div class="my-auto pl-2">
+                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                    <p style="font-size: 10px; margin:0;">
+                                       Type of business
+                                    </p>
+                                </div>
+                              </h5>
+
+                              <hr class="lsep">
+                              <p class="card-text" style="font-size:10px;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum.
+                              </p>
+                              <div class="row pb-4">
+                                  <div class="col-md-12 text-center">
+                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                            <div class="card-body">
+                              <h5 class="card-title d-flex" style="font-size:15px;">
+                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                </div>
+                                <div class="my-auto pl-2">
+                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                    <p style="font-size: 10px; margin:0;">
+                                       Type of business
+                                    </p>
+                                </div>
+                              </h5>
+
+                              <hr class="lsep">
+                              <p class="card-text" style="font-size:10px;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum.
+                              </p>
+                              <div class="row pb-4">
+                                  <div class="col-md-12 text-center">
+                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                            <div class="card-body">
+                              <h5 class="card-title d-flex" style="font-size:15px;">
+                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                </div>
+                                <div class="my-auto pl-2">
+                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                    <p style="font-size: 10px; margin:0;">
+                                       Type of business
+                                    </p>
+                                </div>
+                              </h5>
+
+                              <hr class="lsep">
+                              <p class="card-text" style="font-size:10px;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum.
+                              </p>
+                              <div class="row pb-4">
+                                  <div class="col-md-12 text-center">
+                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- col2 --}}
+                    <div class="row h-100 d-flex px-4 flex-column">
+                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                            <div class="card-body">
+                              <h5 class="card-title d-flex" style="font-size:15px;">
+                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                </div>
+                                <div class="my-auto pl-2">
+                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                    <p style="font-size: 10px; margin:0;">
+                                       Type of business
+                                    </p>
+                                </div>
+                              </h5>
+
+                              <hr class="lsep">
+                              <p class="card-text" style="font-size:10px;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum.
+                              </p>
+                              <div class="row pb-4">
+                                  <div class="col-md-12 text-center">
+                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                            <div class="card-body">
+                              <h5 class="card-title d-flex" style="font-size:15px;">
+                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                </div>
+                                <div class="my-auto pl-2">
+                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                    <p style="font-size: 10px; margin:0;">
+                                       Type of business
+                                    </p>
+                                </div>
+                              </h5>
+
+                              <hr class="lsep">
+                              <p class="card-text" style="font-size:10px;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum.
+                              </p>
+                              <div class="row pb-4">
+                                  <div class="col-md-12 text-center">
+                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                            <div class="card-body">
+                              <h5 class="card-title d-flex" style="font-size:15px;">
+                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                </div>
+                                <div class="my-auto pl-2">
+                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                    <p style="font-size: 10px; margin:0;">
+                                       Type of business
+                                    </p>
+                                </div>
+                              </h5>
+
+                              <hr class="lsep">
+                              <p class="card-text" style="font-size:10px;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum.
+                              </p>
+                              <div class="row pb-4">
+                                  <div class="col-md-12 text-center">
+                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     {{-- col3--}}
+                    <div class="row h-100 d-flex px-4 flex-column">
+                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                            <div class="card-body">
+                              <h5 class="card-title d-flex" style="font-size:15px;">
+                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                </div>
+                                <div class="my-auto pl-2">
+                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                    <p style="font-size: 10px; margin:0;">
+                                       Type of business
+                                    </p>
+                                </div>
+                              </h5>
+
+                              <hr class="lsep">
+                              <p class="card-text" style="font-size:10px;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum.
+                              </p>
+                              <div class="row pb-4">
+                                  <div class="col-md-12 text-center">
+                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                            <div class="card-body">
+                              <h5 class="card-title d-flex" style="font-size:15px;">
+                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                </div>
+                                <div class="my-auto pl-2">
+                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                    <p style="font-size: 10px; margin:0;">
+                                       Type of business
+                                    </p>
+                                </div>
+                              </h5>
+
+                              <hr class="lsep">
+                              <p class="card-text" style="font-size:10px;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum.
+                              </p>
+                              <div class="row pb-4">
+                                  <div class="col-md-12 text-center">
+                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                            <div class="card-body">
+                              <h5 class="card-title d-flex" style="font-size:15px;">
+                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                </div>
+                                <div class="my-auto pl-2">
+                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                    <p style="font-size: 10px; margin:0;">
+                                       Type of business
+                                    </p>
+                                </div>
+                              </h5>
+
+                              <hr class="lsep">
+                              <p class="card-text" style="font-size:10px;">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur
+                                <br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum.
+                              </p>
+                              <div class="row pb-4">
+                                  <div class="col-md-12 text-center">
+                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                     {{-- comments end--}}
+                </div>
+                <div class="container">
+                    <hr>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
                 </div>
             </div>
         </div>

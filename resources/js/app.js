@@ -1,5 +1,6 @@
 require('./bootstrap');
 require('./index');
+require('./datatables');
 
 $(document).ready( function () {
     $('#myDataTable').DataTable();

@@ -124,10 +124,10 @@
 
         <div class="row" style="margin-top: 20%;">
             <div class="container-fluid py-2 d-flex justify-content-center ">
-                <a class="btn btn-primary proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="#">
+                <a class="btn btn-primary proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="/BusinessPostJob">
                     start posting
                 </a>
-                <a href="/BusinessProfile" class="btn btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">
+                <a href="/DashboardBusiness" class="btn btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">
                     skip to dashboard
                 </a>
             </div>

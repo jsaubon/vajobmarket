@@ -205,7 +205,7 @@ body {
 
 .postJobBtn:hover {
   background-color: #fff;
-  color: black;
+  color: #383232 !important;
 }
 
 .btn-signin {
@@ -1009,5 +1009,55 @@ input:-webkit-autofill:active {
   box-shadow: none !important;
   font-size: 12px !important;
   color: #747677;
+}
+
+.dash-text {
+  text-transform: capitalize;
+  font-size: 11px;
+  color: #747677;
+}
+
+.dash-accordion {
+  border: 1px solid transparent;
+  outline: none !important;
+  border: 1px solid #efeeee;
+}
+
+.dash-accordion button {
+  font-size: 12px;
+  box-shadow: none !important;
+}
+
+.boxes {
+  border: 4px solid #bce0fd;
+  border-radius: 5px;
+  padding: 3px 8px;
+  background-color: #f1f9ff;
+  color: #007bff;
+  font-size: 10px;
+}
+
+.box-outline-none {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.placeholder-style {
+  font-size: 12px;
+}
+
+.placeholder-style::-moz-placeholder {
+  font-size: 10px;
+  color: #cccccc !important;
+}
+
+.placeholder-style:-ms-input-placeholder {
+  font-size: 10px;
+  color: #cccccc !important;
+}
+
+.placeholder-style::placeholder {
+  font-size: 10px;
+  color: #cccccc !important;
 }
 

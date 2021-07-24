@@ -17,7 +17,7 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body>
-        @include('profile.nav-profile')
+        @include('profile.js-nav-profile')
 
 
 

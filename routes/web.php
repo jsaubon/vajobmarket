@@ -34,6 +34,7 @@ Route::get('/jobseekerProfileReview', 'Frontend\JobSearchController@jobseekerPro
 Route::get('/jobseekerFinalize', 'Frontend\JobSearchController@jobseekerFinalize');
 Route::get('/jobseekerProfile', 'Frontend\JobSearchController@jobseekerProfile');
 Route::get('/jobseekerUpdateDetails', 'Frontend\JobSearchController@jobseekerUpdateDetails');
+Route::get('/jobseekerDashboard', 'Frontend\JobSearchController@jobseekerDashboard');
 
 
 //business-owner

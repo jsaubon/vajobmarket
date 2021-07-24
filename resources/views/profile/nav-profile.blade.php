@@ -41,10 +41,12 @@ $obj = [
                 </div>
             </div>
             <div class="header-items-right">
+                <a href="/BusinessPostJob" style="text-decoration:none;">
                 <div  class="px-2 py-1 ml-3 postJobBtn d-flex justify-content-around" style="margin:0 !important; width:95px;color:#383232 ">
                     <i class="fas fa-plus-circle my-auto" style="font-size:12px;" ></i>&nbsp;
                     <b class="my-auto">Post A Job</b>
                 </div>
+                </a>
                 <div  class="p-1 noDeco ml-2" style="color:#383232;">
                     <i class="fas fa-bell noDeco shadow" style="font-size:15px;"></i>
                 </div>
@@ -94,7 +96,7 @@ $obj = [
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="/BusinessProfileCompany" class="small-nav-link">
+                    <a href="/BusinessProfilePersonal" class="small-nav-link">
                         <li class="small-nav-list">
                           settings
                         </li>

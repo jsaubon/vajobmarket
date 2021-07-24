@@ -164,7 +164,7 @@ $obj = [
                 alert('business owner successfully logged in');
             });
         });
-        
+
         $('#form_js').on('submit', function(e) {
             e.preventDefault();
             let email = $('.js_email').val();
@@ -182,5 +182,5 @@ $obj = [
         });
     });
 
-    
+
 </script>
