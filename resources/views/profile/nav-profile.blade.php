@@ -58,7 +58,7 @@ $obj = [
             </div>
             <div class="small-nav shadow">
                 <ul>
-                    <a href="#" class="small-nav-link">
+                    <a href="/DashboardBusiness" class="small-nav-link">
                         <li class="small-nav-list">
                           dashboard
                         </li>
