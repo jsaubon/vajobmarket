@@ -25,17 +25,17 @@
         <ul class="nav nav-tabs d-flex justify-content-around " id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#first-choice" role="tab" aria-controls="home" aria-selected="true">
-                    job description
+                    personal
                 </a>
             </li>
             <li class="nav-item " role="presentation" >
                 <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#second-choice" role="tab" aria-controls="profile" aria-selected="false">
-                    skills required
+                    business
                 </a>
             </li>
             <li class="nav-item " role="presentation" >
                 <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#third-choice" role="tab" aria-controls="profile" aria-selected="false">
-                    job details
+                    billing
                 </a>
             </li>
         </ul>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="container ">
-                    <div class="card p-4">
+                    <div class="card p-4 shadow">
                         <form class="container" action="" id="bo_personal_info">
                             <div class="row">
                                 <div class="col-md-4">

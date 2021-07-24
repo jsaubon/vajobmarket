@@ -127,17 +127,14 @@
                                                 <label>
                                                     Job Description
                                                 </label>
-<<<<<<< HEAD
 
 
                                                 <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
 
-=======
 
 
                                                 <textarea name="" id="" cols="30" rows="10" class="form-control" disabled></textarea>
 
->>>>>>> 42d25e93a269b448b16887cbcddefd47059ef828
                                         </div>
 
                                         <div class="col-md-6">
@@ -145,17 +142,14 @@
                                                 <label>
                                                     Responsibilities
                                                 </label>
-<<<<<<< HEAD
 
 
                                                 <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
 
-=======
 
 
                                                 <textarea name="" id="" cols="30" rows="10" class="form-control" disabled></textarea>
 
->>>>>>> 42d25e93a269b448b16887cbcddefd47059ef828
                                         </div>
 
 

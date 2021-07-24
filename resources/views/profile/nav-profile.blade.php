@@ -88,7 +88,7 @@ $obj = [
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="#" class="small-nav-link">
+                    <a href="/BusinessMessages" class="small-nav-link">
                         <li class="small-nav-list">
                           message
                         </li>

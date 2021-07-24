@@ -43,7 +43,7 @@
         </div>
         <div class="container w-75 d-flex justify-content-center">
             <div class="container">
-                {{-- Profession --}}
+
 
                 <form class="container" action="">
                     <h2 class="title-personal-info">Profession</h2>

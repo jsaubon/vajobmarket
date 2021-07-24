@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.blank-layout')
 
 @section('content')
 
@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                             </div>
-                        
+
                         </div> <br>
 
 
@@ -169,16 +169,16 @@
 
                 </div>
 
-                
-                
+
+
                 <!-- Tab Content End -->
 
-                
+
 
             </div>
         </div>
 
-         
+
 
     <!-- Content End -->
     </div>

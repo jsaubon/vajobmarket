@@ -406,46 +406,47 @@
                     <div class="card h-auto p-4 shadow">
                         <div style="display: flex; width: 100%; height:600px; flex-wrap:nowrap; gap:6px;">
                             <div style="display: flex; flex-direction: column; width: 33%; " >
-                              <div class="item container mb-2 p-2 card h-auto" >
-                                    <div class="card-title d-flex mt-1">
-                                        <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                            <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                        </div>
-                                        <div class="my-auto pl-2">
-                                            <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                            <p style="font-size: 10px; margin:0;">
-                                                <a href="/BusinessProfilePersonal">Type of business</a></p>
-                                        </div>
+                                    <div class="item container mb-2 p-2 card h-auto" >
+                                                    <div class="card-title d-flex mt-1">
+                                                        <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                                            <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                                        </div>
+                                                        <div class="my-auto pl-2">
+                                                            <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                                            <p style="font-size: 10px; margin:0;">
+                                                                <a href="/BusinessProfilePersonal">Type of business</a></p>
+                                                        </div>
+                                                    </div>
+                                            <hr>
+                                            <p class="card-text ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Mauris imperdiet ante hendrerit massa dignissim scelerisque.
+                                                Nunc pellentesque blandit placerat. Suspendisse viverra porta dolor,
+                                                commodo eleifend mauris pretium ac. Nam pellentesque magna id quam suscipit
+                                                ellentesque. Proin a ultricies lectus. Phasellus ut mauris nec lacus lobortis
+                                            </p>
                                     </div>
-                                    <hr>
-                                    <p class="card-text ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Mauris imperdiet ante hendrerit massa dignissim scelerisque.
-                                        Nunc pellentesque blandit placerat. Suspendisse viverra porta dolor,
-                                        commodo eleifend mauris pretium ac. Nam pellentesque magna id quam suscipit
-                                        ellentesque. Proin a ultricies lectus. Phasellus ut mauris nec lacus lobortis
-                                    </p>
-                              </div>
-                              <div class="item container mb-2 p-2 card h-auto" >
-                                <div class="card-title d-flex mt-1">
-                                    <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                        <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                    <div class="item container mb-2 p-2 card h-auto" >
+                                            <div class="card-title d-flex mt-1">
+                                                    <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                                        <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                                    </div>
+                                                    <div class="my-auto pl-2">
+                                                        <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                                        <p style="font-size: 10px; margin:0;">
+                                                            <a href="/BusinessProfilePersonal">Type of business</a>
+                                                        </p>
+                                                    </div>
+                                            </div>
+                                            <hr>
+                                            <p class="card-text ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Mauris imperdiet ante hendrerit massa dignissim scelerisque.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Mauris imperdiet ante hendrerit massa dignissim scelerisque.
+                                                Lorem ipsum dolor sit amet,
+                                            </p>
                                     </div>
-                                    <div class="my-auto pl-2">
-                                        <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                        <p style="font-size: 10px; margin:0;">
-                                            <a href="/BusinessProfilePersonal">Type of business</a></p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <p class="card-text ">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Mauris imperdiet ante hendrerit massa dignissim scelerisque.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Mauris imperdiet ante hendrerit massa dignissim scelerisque.
-                                    Lorem ipsum dolor sit amet,
-                                </p>
-                             </div>
                             </div>
                             <div style="display: flex; flex-direction: column; width: 33%;">
                                 <div class="item container mb-2 p-2 card h-auto" >
@@ -456,7 +457,8 @@
                                         <div class="my-auto pl-2">
                                             <h3 style="font-size:15px; margin:0;">My Company Name</h3>
                                             <p style="font-size: 10px; margin:0;">
-                                                <a href="/BusinessProfilePersonal">Type of business</a></p>
+                                                <a href="/BusinessProfilePersonal">Type of business</a>
+                                            </p>
                                         </div>
                                     </div>
                                     <hr>
@@ -465,7 +467,7 @@
                                         Mauris imperdiet ante hendrerit massa dignissim scelerisque.
 
                                     </p>
-                                 </div>
+                                </div>
 
                                  <div class="item container mb-2 p-2 card h-auto" >
                                     <div class="card-title d-flex mt-1">
@@ -475,7 +477,8 @@
                                         <div class="my-auto pl-2">
                                             <h3 style="font-size:15px; margin:0;">My Company Name</h3>
                                             <p style="font-size: 10px; margin:0;">
-                                                <a href="/BusinessProfilePersonal">Type of business</a></p>
+                                                <a href="/BusinessProfilePersonal">Type of business</a>
+                                            </p>
                                         </div>
                                     </div>
                                     <hr>
@@ -496,7 +499,8 @@
                                         <div class="my-auto pl-2">
                                             <h3 style="font-size:15px; margin:0;">My Company Name</h3>
                                             <p style="font-size: 10px; margin:0;">
-                                                <a href="/BusinessProfilePersonal">Type of business</a></p>
+                                                <a href="/BusinessProfilePersonal">Type of business</a>
+                                            </p>
                                         </div>
                                     </div>
                                     <hr>
@@ -525,44 +529,45 @@
                                     </p>
                                  </div>
 
-                                 <div class="item container mb-2 p-2 card h-auto" >
-                                    <div class="card-title d-flex mt-1">
-                                        <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                            <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                    <div class="item container mb-2 p-2 card h-auto" >
+                                        <div class="card-title d-flex mt-1">
+                                            <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                                <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                            </div>
+                                            <div class="my-auto pl-2">
+                                                <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                                <p style="font-size: 10px; margin:0;">
+                                                    <a href="/BusinessProfilePersonal">Type of business</a></p>
+                                            </div>
                                         </div>
-                                        <div class="my-auto pl-2">
-                                            <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                            <p style="font-size: 10px; margin:0;">
-                                                <a href="/BusinessProfilePersonal">Type of business</a></p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="card-text ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Mauris imperdiet ante hendrerit massa dignissim scelerisque.
-                                    </p>
-                                 </div>
-                                 <div class="item container mb-2 p-2 card h-auto" >
-                                    <div class="card-title d-flex mt-1">
-                                        <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                            <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                        </div>
-                                        <div class="my-auto pl-2">
-                                            <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                            <p style="font-size: 10px; margin:0;">
-                                                <a href="/BusinessProfilePersonal">Type of business</a></p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <p class="card-text ">
-                                        Lorem ipsum dolor sit amet, consectetur      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Mauris imperdiet ante hendrerit massa dignissim scelerisque.
-                                    </p>
-                                 </div>
-                            </div>
 
+                                        <hr>
+                                        <p class="card-text ">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Mauris imperdiet ante hendrerit massa dignissim scelerisque.
+                                        </p>
+                                    </div>
+                                    <div class="item container mb-2 p-2 card h-auto" >
+                                        <div class="card-title d-flex mt-1">
+                                            <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
+                                                <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                                            </div>
+                                            <div class="my-auto pl-2">
+                                                <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                                <p style="font-size: 10px; margin:0;">
+                                                    <a href="/BusinessProfilePersonal">Type of business</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <p class="card-text ">
+                                            Lorem ipsum dolor sit amet, consectetur      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Mauris imperdiet ante hendrerit massa dignissim scelerisque.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>

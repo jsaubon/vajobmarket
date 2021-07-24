@@ -984,22 +984,3 @@ input:-webkit-autofill:active {
   color: #747677;
 }
 
-.flex-wrapper {
-  /* Chrome, Safari, Opera */
-  -moz-column-count: 3;
-  /* Firefox */
-  column-count: 3;
-  /* Chrome, Safari, Opera */
-  -moz-column-gap: 1;
-  /* Firefox */
-  column-gap: 1;
-  width: 100%;
-}
-
-.flex-wrapper div {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  vertical-align: top;
-}
-
