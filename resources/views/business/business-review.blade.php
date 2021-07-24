@@ -187,7 +187,7 @@
 </div>
 
 <script>
- if(!token) {
+if(!token) {
     window.location.href = '/signup';
 } 
 $(document).ready(function() {

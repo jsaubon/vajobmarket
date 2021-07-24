@@ -237,7 +237,7 @@ class DatabaseSeeder extends Seeder
             $profession = [
                 'jobseeker_id' => $id,
                 'job_title' => array_column($sectors,'sector')[rand(0,12)],
-                'availabilty' => '',
+                'availability' => '',
                 'salary' => rand(4,15).'/hr',
                 'skills_summary' => $faker->sentence(rand(2,20)),
             ];
@@ -252,8 +252,8 @@ class DatabaseSeeder extends Seeder
                 $languages[] = [
                     'jobseeker_id' => $id,
                     'language' => $faker->word,
-                    'written_preffeciency' => $profeciencies[rand(0,2)],
-                    'oral_preffeciency' => $profeciencies[rand(0,2)],
+                    'written_proficiency' => $profeciencies[rand(0,2)],
+                    'oral_proficiency' => $profeciencies[rand(0,2)],
                 ];
             }
         }
@@ -284,7 +284,7 @@ class DatabaseSeeder extends Seeder
                     'jobseeker_id' => $id,
                     'title' => $faker->text,
                     'experience' => $faker->text,
-                    'prefeciency' => $profeciencies[rand(0,2)],
+                    'proficiency' => $profeciencies[rand(0,2)],
                     'description' => $faker->text,
                 ];
             }
@@ -313,12 +313,14 @@ class DatabaseSeeder extends Seeder
 
 
         foreach ($clients as $key => $client) {
+            $client_job_posts = $client->client_job_posts()->get();
             $employees_count = rand(0,5);
             $employees = [];
             $statuses = ['Hired','Terminated','Applied','Dismissed','End of Contract','Shortlisted'];
             for ($i=0; $i < $employees_count; $i++) { 
                 $employees[] = [
                     'client_id' => $client->id,
+                    'client_job_post_id' => $client_job_posts[rand(0,count($client_job_posts) -1)]['id'],
                     'jobseeker_id' => $jobseeker_ids[rand(0, count($jobseeker_ids) -1)],
                     'employment_status' => $statuses[rand(0,5)],
                     // 'status' => '',
@@ -330,6 +332,8 @@ class DatabaseSeeder extends Seeder
                     'contract' => rand(1,4).'yr',
                 ];
             }
+
+            $model_employees = \App\ClientEmployee::insert($employees);
         }
         
     }

@@ -33,7 +33,7 @@ class PassportController extends Controller
 
         
         $token = $user->createToken('VAJOBMARKET2021')->accessToken;
-
+        $user = User::with('client','jobseeker')->find($user->id);
         return response()->json([
             'token' => $token,
             'userdata' => $user
@@ -56,6 +56,7 @@ class PassportController extends Controller
         if (auth()->attempt($credentials)) {
             $user = Auth::guard('web')->user();
             $token = auth()->user()->createToken('VAJOBMARKET2021')->accessToken;
+            $user = \App\User::with('client','jobseeker')->find(auth()->user()->id);
             return response()->json(['token' => $token , 'userdata'=>$user], 200);
         } else {
             return response()->json(['error' => 'Username or Password is Invalid', 'data' => $credentials], 401);

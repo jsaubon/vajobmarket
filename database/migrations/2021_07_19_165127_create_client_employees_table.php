@@ -17,6 +17,7 @@ class CreateClientEmployeesTable extends Migration
             $table->id();
             $table->integer('client_id')->unsigned();
             $table->integer('jobseeker_id')->unsigned();
+            $table->integer('client_job_post_id')->unsigned();
             $table->string('status')->default('Applicant');
             $table->string('employment_status')->nullable();
             $table->string('salary')->nullable();

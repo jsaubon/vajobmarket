@@ -79,8 +79,8 @@ $obj = [
                                 <input type="text" required class="bo_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
                                 <input type="password" required class="bo_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <div id="error_bo" class="hide">
-                                    <div class="alert alert-danger" id="error_bo_message"  role="alert">
+                                <div id="signin_error_bo" class="hide">
+                                    <div class="alert alert-danger" id="signin_error_bo_message"  role="alert">
                                     </div>
                                 </div>
                                 <div class="button-style">
@@ -113,8 +113,8 @@ $obj = [
                                 <input type="text" class="js_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
                                 <input type="password" class="js_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <div id="error_js" class="hide">
-                                    <div class="alert alert-danger" id="error_js_message"  role="alert">
+                                <div id="signin_error_js" class="hide">
+                                    <div class="alert alert-danger" id="signin_error_js_message"  role="alert">
                                     </div>
                                 </div>
                                 <div class="button-style">
@@ -162,6 +162,14 @@ $obj = [
                 localStorage.token = res.token;
                 localStorage.userdata = JSON.stringify(res.userdata);
                 alert('business owner successfully logged in');
+            }, err =>  {
+                if(err.response.data.error) {
+                    $('#signin_error_bo').removeClass('hide');
+                    $('#signin_error_bo_message').html(err.response.data.error);
+                }else {
+                    $('#signin_error_bo').removeClass('hide');
+                    $('#signin_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
+                }
             });
         });
         
@@ -178,6 +186,14 @@ $obj = [
                 localStorage.token = res.token;
                 localStorage.userdata = JSON.stringify(res.userdata);
                 alert('job seeker successfully logged in');
+            }, err =>  {
+                if(err.response.data.error) {
+                    $('#signin_error_bo').removeClass('hide');
+                    $('#signin_error_bo_message').html(err.response.data.error);
+                }else {
+                    $('#signin_error_bo').removeClass('hide');
+                    $('#signin_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
+                }
             });
         });
     });

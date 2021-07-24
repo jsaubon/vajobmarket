@@ -14,7 +14,7 @@
     </nav>
 
     <div class="wrapper">
-        <table class="display" id="myDataTable">
+        <table class="display tbl_bo_job_posts_all" id="myDataTable">
             <thead>
                 <tr>
                 <th class="text-center" scope="col">Job Posted</th>
@@ -28,15 +28,6 @@
 
             <tbody>
 
-                <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                    <td class="text-center">25</td>
-                    <td class="text-center">123</td>
-                    <td class="text-center">April 20, 2021</td>
-                    <td class="text-center">May 20, 2021</td>
-                    <td class="text-center">A1 A2 A3</td>
-                </tr>
-
             </tbody>
 
         </table>
@@ -44,5 +35,32 @@
     </div>
 
 </div>
+
+
+<script>
+if(!token) {
+    window.location.href = '/';
+} 
+// $(document).ready(function() {
+    getData('/api/Client/'+userdata.client.id, ({data:res}) => {
+        if(res.success) {
+            console.log('ClientJobPost',res.data);
+            let client_job_posts = res.data.client_job_posts;
+            client_job_posts.map((post, key) => {
+                $('.tbl_bo_job_posts_all').find('tbody').append('\
+                    <tr>\
+                        <td>'+post.job_title+'</td>\
+                        <td class="text-center">'+post.applicants.length+'</td>\
+                        <td class="text-center">'+post.visits+'</td>\
+                        <td class="text-center">'+post.start_date+'</td>\
+                        <td class="text-center">'+post.start_date+'</td>\
+                        <td class="text-center">A1 A2 A3</td>\
+                    </tr>\
+                ');
+            });
+        }
+    });
+// });
+</script>
 
 @endsection
