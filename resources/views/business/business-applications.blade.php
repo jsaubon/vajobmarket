@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.blank-layout')
 
 @section('content')
 
@@ -41,7 +41,7 @@
 
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
-                            
+
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -68,7 +68,7 @@
                                 </tbody>
 
                             </table>
-                            
+
                             </div>
                             </div>
                         </div>

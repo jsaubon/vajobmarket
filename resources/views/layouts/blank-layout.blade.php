@@ -18,7 +18,7 @@
     </head>
     <body>
         @include('profile.nav-profile')
-        @include('profile.banner')
+
 
 
         @yield('content')

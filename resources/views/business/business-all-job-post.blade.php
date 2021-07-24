@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.blank-layout')
 
 @section('content')
 
@@ -13,8 +13,8 @@
         </ol>
     </nav>
 
-
-        <table class="table">
+    <div class="wrapper">
+        <table class="display" id="myDataTable">
             <thead>
                 <tr>
                 <th class="text-center" scope="col">Job Posted</th>
@@ -40,6 +40,7 @@
             </tbody>
 
         </table>
+    </div>
     </div>
 
 </div>

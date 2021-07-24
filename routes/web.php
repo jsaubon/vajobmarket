@@ -32,6 +32,8 @@ Route::get('/personalDetails', 'Frontend\JobSearchController@personalDetails');
 Route::get('/jobseekerSkillset', 'Frontend\JobSearchController@jobseekerSkillset');
 Route::get('/jobseekerProfileReview', 'Frontend\JobSearchController@jobseekerProfileReview');
 Route::get('/jobseekerFinalize', 'Frontend\JobSearchController@jobseekerFinalize');
+Route::get('/jobseekerProfile', 'Frontend\JobSearchController@jobseekerProfile');
+Route::get('/jobseekerUpdateDetails', 'Frontend\JobSearchController@jobseekerUpdateDetails');
 
 
 //business-owner
@@ -43,9 +45,11 @@ Route::get('/businessReview', 'Frontend\BusinessController@businessReview');
 Route::get('/BusinessFinalize', 'Frontend\BusinessController@BusinessFinalize');
 Route::get('/BusinessProfile', 'Frontend\BusinessController@BusinessProfile');
 Route::get('/BusinessProfilePersonal', 'Frontend\BusinessController@BusinessProfilePersonal');
+Route::get('/BusinessProfileCompany', 'Frontend\BusinessController@BusinessProfileCompany');
 
 Route::get('/BusinessAllJobPost', 'Frontend\BusinessCOntroller@BusinessAllJobPost');
 Route::get('/BusinessPostJob', 'Frontend\BusinessController@BusinessPostJob');
 Route::get('/BusinessEditJobPost', 'Frontend\BusinessController@BusinessEditJobPost');
 Route::get('/BusinessApplications', 'Frontend\BusinessController@BusinessApplications');
 Route::get('/BusinessEmployment', 'Frontend\BusinessController@BusinessEmployment');
+Route::get('/BusinessMessages', 'Frontend\BusinessController@BusinessMessages');

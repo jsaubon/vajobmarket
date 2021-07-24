@@ -43,7 +43,7 @@
         </div>
         <div class="container w-75 d-flex justify-content-center">
             <div class="container">
-                {{-- personal-info --}}
+
 
                 <form class="container w-50" action="#" id="bo_business_billing">
                     <h2 class="title-personal-info"></h2>
@@ -168,7 +168,7 @@
                         <div class="col-md-2"></div>
                     </div>
                 </form>
-                    
+
             </div>
         </div>
 
@@ -178,7 +178,7 @@
 <script>
  if(!token) {
     window.location.href = '/signup';
-} 
+}
 
 $(document).ready(function() {
     $('#bo_business_billing').on('submit', function(e) {

@@ -25,17 +25,17 @@
         <ul class="nav nav-tabs d-flex justify-content-around " id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#first-choice" role="tab" aria-controls="home" aria-selected="true">
-                    personal
+                    job description
                 </a>
             </li>
             <li class="nav-item " role="presentation" >
                 <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#second-choice" role="tab" aria-controls="profile" aria-selected="false">
-                    business
+                    skills required
                 </a>
             </li>
             <li class="nav-item " role="presentation" >
                 <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#third-choice" role="tab" aria-controls="profile" aria-selected="false">
-                    billing
+                    job details
                 </a>
             </li>
         </ul>
@@ -320,7 +320,7 @@
             <div class="tab-pane fade" id="third-choice" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="row container px-0" style="margin:0px auto 20px auto;">
                     <div class="col-md-12 d-flex justify-content-end">
-                        <a class="btn mr-2 btn-light back-btn" style="border-radius: 50px;" href="/BusinessProfileCompany">Edit</a>
+                        <a class="btn mr-2 btn-light back-btn" style="border-radius: 50px;" href="#">Edit</a>
                     </div>
                 </div>
                 <div class="container ">
