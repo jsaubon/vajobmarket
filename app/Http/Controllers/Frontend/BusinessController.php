@@ -60,5 +60,8 @@ class BusinessController extends Controller
     function BusinessMessages(){
         return view('business.business-messages');
     }
+    function DashboardBusiness(){
+        return view('business.business-dashboard');
+    }
 
 }
