@@ -24238,22 +24238,22 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var showbtn = document.querySelector('.user-btn');
-var lilnav = document.querySelector('.small-nav');
-showbtn.addEventListener('mouseover', function () {
-  lilnav.style.display = 'block';
+var showbtnBo = document.querySelector(".user-btn-bo");
+var lilnavBo = document.querySelector(".small-nav-bo");
+showbtnBo.addEventListener("mouseover", function () {
+  lilnavBo.style.display = "block";
 });
-lilnav.addEventListener('mouseover', function () {
-  lilnav.style.display = 'block';
+lilnavBo.addEventListener("mouseover", function () {
+  lilnavBo.style.display = "block";
 });
-lilnav.addEventListener('mouseout', function () {
-  lilnav.style.display = 'none';
+lilnavBo.addEventListener("mouseout", function () {
+  lilnavBo.style.display = "none";
 });
-showbtn.addEventListener('mouseout', function () {
-  lilnav.style.display = 'none';
+showbtnBo.addEventListener("mouseout", function () {
+  lilnavBo.style.display = "none";
 });
 $(document).ready(function () {
-  $('#myDataTable').DataTable();
+  $("#myDataTable").DataTable();
 });
 
 /***/ }),
@@ -24276,8 +24276,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/jsaubon/Documents/ihrbuddy/vajobmarket/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/jsaubon/Documents/ihrbuddy/vajobmarket/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/joshuasaubon/Documents/websites/vajobmarket/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/joshuasaubon/Documents/websites/vajobmarket/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -90,6 +90,10 @@
     </div>
 </div>
 
-
+<script>
+    $('#modalLogin').modal('show');
+    if(!token) {
+    }
+</script>
 
 @endsection
