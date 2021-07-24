@@ -141,6 +141,6 @@ class JobSearchController extends Controller
     }
 
     public function jobseekerMessages(){
-        return view('jobSearchjob.jobseeker-update-details');
+        return view('jobSearch.jobseeker-messages');
     }
 }
