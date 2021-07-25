@@ -19,19 +19,19 @@ $obj = [
 </style>
 <div class="header" style="z-index:100;">
             <div class="header-items-left">
-                <a class="my-auto" style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
-                    <small class="title m-3 mylogo"> </small>
+                <a class="my-auto px-3 mb-3" style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
+                    <div class="title my-auto h-100  mylogo"></div>
                 </a>
-                <div class="nav-titles m-3">
+                <div class="nav-titles my-auto ml-4 px-3">
                     <?php
                     foreach(array_keys($obj) as $row) {
                         if ($row == "JOB ACADEMY") {
                             ?>
-                            <a href="<?= $obj[$row] ?>" class="p-2 navitemsPlus navitems"><b><small><b><?= $row ?></b></small></b></a>
+                            <a href="<?= $obj[$row] ?>" class="px-2 ml-4 navitemsPlus navitems my-auto text-decoration-none"><b><small><b><?= $row ?></b></small></b></a>
                             <?php
                         } else {
                             ?>
-                            <a href="<?= $obj[$row] ?>" class="p-2 text-light navitems"><small><b><?= $row ?></b></small></a>
+                            <a href="<?= $obj[$row] ?>" class="px-2 ml-4  text-light navitems my-auto text-decoration-none"><small><b><?= $row ?></b></small></a>
                             <?php
                         }
                     }
@@ -39,10 +39,12 @@ $obj = [
                 </div>
             </div>
             <div class="header-items-right">
+                <a href="/jobs" class="text-decoration-none">
                 <div  class="px-2 py-1 ml-3 postJobBtn d-flex justify-content-around" style="margin:0 !important; width:95px;color:#383232 ">
                     <i class="fas fa-search-plus my-auto" style="font-size:12px;" ></i>&nbsp;
                     <b class="my-auto">Job Search</b>
                 </div>
+                </a>
                 <div  class="p-1 noDeco ml-2" style="color:#383232;">
                     <i class="fas fa-bell noDeco shadow" style="font-size:15px;"></i>
                 </div>
