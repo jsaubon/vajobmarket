@@ -128,11 +128,6 @@
                                                     Job Description
                                                 </label>
 
-
-                                                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-
-
-
                                                 <textarea name="" id="" cols="30" rows="10" class="form-control" disabled></textarea>
 
                                         </div>
@@ -142,11 +137,6 @@
                                                 <label>
                                                     Responsibilities
                                                 </label>
-
-
-                                                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-
-
 
                                                 <textarea name="" id="" cols="30" rows="10" class="form-control" disabled></textarea>
 
