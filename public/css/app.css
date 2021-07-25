@@ -1,11 +1,17 @@
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;400;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
-
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;
+200;400;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);@charset "UTF-8";
 body h1,
+body .h1,
 body h2,
+body .h2,
 body h3,
+body .h3,
 body h4,
+body .h4,
 body h5,
-body h6 {
+body .h5,
+body h6,
+body .h6 {
   font-family: "Oswald", sans-serif;
   margin-bottom: 1rem;
 }
@@ -25,7 +31,6 @@ body button {
 }
 
 .frontSection-1 {
-
   background-image: url(/images/hero_new.jpg?d7cb3d25725f5621833de4cff96995e7);
   background-size: cover;
   background-position: center;
@@ -34,7 +39,8 @@ body button {
   padding: 250px 200px;
 }
 
-.frontSection-1 h1 {
+.frontSection-1 h1,
+.frontSection-1 .h1 {
   color: #fff;
   font-size: 4rem;
   line-height: 4.5rem;
@@ -103,7 +109,8 @@ body button {
   padding-top: 300px;
 }
 
-.frontSection-2 .leftColumn h2 {
+.frontSection-2 .leftColumn h2,
+.frontSection-2 .leftColumn .h2 {
   color: #fff;
   font-weight: 600;
 }
@@ -120,14 +127,16 @@ body button {
   padding: 50px 30px;
 }
 
-.frontSection-2 .rightColumn .card h2 {
+.frontSection-2 .rightColumn .card h2,
+.frontSection-2 .rightColumn .card .h2 {
   font-weight: 600;
   margin-bottom: 1rem;
   color: #646464;
   font-size: 30px;
 }
 
-.frontSection-2 .rightColumn .card h4 {
+.frontSection-2 .rightColumn .card h4,
+.frontSection-2 .rightColumn .card .h4 {
   font-size: 40px;
   color: #767676;
 }
