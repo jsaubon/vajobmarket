@@ -19,21 +19,19 @@ $obj = [
 </style>
 <div class="header" style="z-index:100;">
             <div class="header-items-left">
-                <small class="title m-3">
-                    <a style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
-                        <b><i><?= $navBrand[0]; ?></i></b>
-                    </a>
-                </small>
-                <div class="nav-titles m-3">
+                <a class="my-auto px-3 mb-3" style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
+                    <div class="title my-auto h-100  mylogo"></div>
+                </a>
+                <div class="nav-titles my-auto ml-4 px-3">
                     <?php
                     foreach(array_keys($obj) as $row) {
                         if ($row == "JOB ACADEMY") {
                             ?>
-                            <a href="<?= $obj[$row] ?>" class="p-2 navitemsPlus navitems"><b><small><b><?= $row ?></b></small></b></a>
+                            <a href="<?= $obj[$row] ?>" class="px-2 ml-4 navitemsPlus navitems my-auto text-decoration-none"><b><small><b><?= $row ?></b></small></b></a>
                             <?php
                         } else {
                             ?>
-                            <a href="<?= $obj[$row] ?>" class="p-2 text-light navitems"><small><b><?= $row ?></b></small></a>
+                            <a href="<?= $obj[$row] ?>" class="px-2 ml-4  text-light navitems my-auto text-decoration-none"><small><b><?= $row ?></b></small></a>
                             <?php
                         }
                     }

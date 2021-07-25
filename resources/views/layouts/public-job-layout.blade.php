@@ -17,8 +17,8 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body style="overflow-x: hidden;">
-        @include('profile.nav-profile')
-        @include('profile.banner')
+        @include('profile.nav-public-post')
+        @include('profile.public-post-banner')
 
 
         @yield('content')
@@ -28,12 +28,12 @@
 
 
         <script src="{{URL::asset('js/app.js')}}"></script>
-        <script>
+        {{-- <script>
             ClassicEditor
                 .create( document.querySelector( '#editor' ) )
                 .catch( error => {
                     console.error( error );
                 } );
-        </script>
+        </script> --}}
     </body>
 </html>

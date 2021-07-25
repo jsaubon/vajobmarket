@@ -1,3 +1,8 @@
+.stepper-container,.progress-steps{
+    min-width: 800px !important;
+    max-width: 1400px !important;
+
+}
 .progress-steps{
     list-style: none;
     font-size: 10px;
@@ -16,10 +21,11 @@
 
 }
 
+
 .line1{
     position: absolute;
     top:138px;
-    left:30.8%;
+    left:18.8% !important;
     height: 2px;
     width: 178px;
     background-color: #d8e0e8;
@@ -27,7 +33,7 @@
 .line2{
     position: absolute;
     top:138px;
-    left:45%;
+    left:40%;
     height: 2px;
     width:178px;
     background-color: #d8e0e8;
@@ -57,11 +63,7 @@
     border: 1px solid  #515557;
     z-index: 10;
 }
-.stepper-container,.progress-steps{
-    min-width: 800px !important;
-    max-width: 1400px !important;
 
-}
 
 .progress-steps li{
     max-width: 100px;
@@ -77,16 +79,16 @@
 
 @media screen and (min-width: 1400px) {
     .line1{
-        left:36.5%;
+        left:36.5% !important;
         width: 9%;
     }
     .line2{
-        left:46.5%;
+        left:46.5% !important;
         width: 9%;
 
     }
     .line3{
-        left:56.5%;
+        left:56.5% !important;
         width: 9%;
 
     }

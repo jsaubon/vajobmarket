@@ -40,6 +40,18 @@
                    profile review
                 </li>
             </ul>
+            {{-- <div class="row">
+                <div class="col-md-1">
+                    <div class="shape shape-active">
+                        <div class="dot dot-active"></div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="shape shape-active">
+                        <div class="dot dot-active"></div>
+                    </div>
+                </div>
+            </div> --}}
         </div>
         <div class="container w-75 d-flex justify-content-center">
             <div class="container">
@@ -184,7 +196,7 @@
 <script>
     if(!token) {
         window.location.href = '/signup';
-    } 
+    }
 
     $(document).ready(function() {
         $('[name="email"]').val(userdata.email);
@@ -229,7 +241,7 @@
                     });
                 }
             });
-            
+
         })
     })
 

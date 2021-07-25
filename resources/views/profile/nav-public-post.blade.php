@@ -39,12 +39,6 @@ $obj = [
                 </div>
             </div>
             <div class="header-items-right">
-                <a href="/jobs" class="text-decoration-none">
-                <div  class="px-2 py-1 ml-3 postJobBtn d-flex justify-content-around" style="margin:0 !important; width:95px;color:#383232 ">
-                    <i class="fas fa-search-plus my-auto" style="font-size:12px;" ></i>&nbsp;
-                    <b class="my-auto">Job Search</b>
-                </div>
-                </a>
                 <div  class="p-1 noDeco ml-2" style="color:#383232;">
                     <i class="fas fa-bell noDeco shadow" style="font-size:15px;"></i>
                 </div>
@@ -58,44 +52,49 @@ $obj = [
             </div>
             <div class="small-nav shadow">
                 <ul>
-                    <a href="#" class="small-nav-link">
+                    <a href="/DashboardBusiness" class="small-nav-link">
                         <li class="small-nav-list">
                           dashboard
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="/jobseekerProfile" class="small-nav-link">
+                    <a href="/BusinessProfile" class="small-nav-link">
                         <li class="small-nav-list">
                           profile
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="#" class="small-nav-link">
+                    <a href="/BusinessAllJobPost" class="small-nav-link">
                         <li class="small-nav-list">
-                            job application
+                            Job Posts
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="#" class="small-nav-link">
+                    <a href="/BusinessApplications" class="small-nav-link">
+                        <li class="small-nav-list">
+                          application
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="/BusinessEmployment" class="small-nav-link">
                         <li class="small-nav-list">
                           employment
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <hr class=" m-0">
-                    <a href="#" class="small-nav-link">
+                    <a href="/BusinessMessages" class="small-nav-link">
                         <li class="small-nav-list">
-                          messages
+                          message
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="/jobseekerUpdateDetails" class="small-nav-link">
+                    <a href="/BusinessProfilePersonal" class="small-nav-link">
                         <li class="small-nav-list">
                           settings
                         </li>
                     </a>
                     <hr class=" m-0">
-                    <a href="#" class="small-nav-link">
+                    <a href="/" class="small-nav-link">
                         <li class="small-nav-list">
                           logout
                         </li>

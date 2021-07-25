@@ -13,16 +13,23 @@ body{
     background: linear-gradient(180deg, #646468 0%, transparent 100%);
     z-index: 2;
     justify-content: space-between;
+    padding: 0rem 10rem;
+}
+.mylogo{
+    background: url('../../public/assets/images/frontAssets/vajm-header-logo.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    padding:30px;
 }
 .header-items-left{
     display: flex;
-    margin-left: 8%;
+
 }
 .img-container{
     display: inline;
     background-image: url('../../public/assets/images/frontAssets/logo-vajm-whitefont1.png');
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 80px;
     min-width: 60px;
@@ -51,14 +58,14 @@ body{
 
 .navitems:hover {
     text-decoration: none;
-    border-bottom: 2px solid #fff;
+    // border-bottom: 2px solid #fff;
     color: #fff;
 }
 .header-items-right{
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-right: 100px;
+
 }
 
 .postJobBtn {
