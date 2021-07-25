@@ -19,11 +19,9 @@ $obj = [
 </style>
 <div class="header" style="z-index:100;">
             <div class="header-items-left">
-                <small class="title m-3">
-                    <a style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
-                        <b><i><?= $navBrand[0]; ?></i></b>
-                    </a>
-                </small>
+                <a class="my-auto" style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
+                    <small class="title m-3 mylogo"> </small>
+                </a>
                 <div class="nav-titles m-3">
                     <?php
                     foreach(array_keys($obj) as $row) {

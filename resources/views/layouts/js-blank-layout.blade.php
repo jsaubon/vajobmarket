@@ -16,7 +16,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
-    <body>
+    <body style="overflow-x: hidden;">
         @include('profile.js-nav-profile')
 
 

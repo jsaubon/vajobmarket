@@ -37,7 +37,7 @@
 
                     <!-- @foreach($jobPosts as $post)
                     <div class="col-sm-6">
-                        <a href="/123">
+                        <a href="/BusinessProfileCompany">
                             <div class="card shadow p-4" style="border-radius: 20px;">
                                 <p class="text-center">{{ $post['title'] }}</p>
                                 <div class="d-flex justify-content-between">
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-                    
+
 
     </div>
 </section>
@@ -98,8 +98,8 @@
 <script>
     let current_page = 1;
     let page_count = 1;
-    
-    
+
+
     $(document).ready(function() {
         getJobPosts(1);
         getCandidates(1);
@@ -115,7 +115,7 @@
                 let page = current_page - 1;
                 getJobPosts(page);
             }
-            
+
         });
         $(document).on('click','.page-link-next',function(e) {
             e.preventDefault();
@@ -123,14 +123,14 @@
                 let page = current_page + 1;
                 getJobPosts(page);
             }
-            
+
         });
 
         $('#search_job').keyup(delay(function(e) {
             getJobPosts(1, $(this).val());
             getCandidates(1, $(this).val());
         }, 500));
- 
+
     });
 
     function delay(callback, ms) {
@@ -151,18 +151,18 @@
             let data = res.data;
             page_count = res.data.last_page;
             current_page = res.data.current_page;
-            
+
             console.log('res.data.per_page',res.data.per_page);
             $('#job_posts_showing_count').html(res.data.data.length);
             $('#job_posts_all_count').html(res.data.total);
             $('#job_posts_list').empty();
 
             $('#job_posts_pagination').empty();
-            
+
             res.data.data.map((job_post) => {
                 $('#job_posts_list').append('\
                     <div class="col-sm-6">\
-                        <a href="/123">\
+                        <a href="/BusinessProfileCompany">\
                             <div class="card shadow p-4" style="border-radius: 20px;">\
                                 <p class="text-center">'+job_post.job_title+'</p>\
                                 <div class="d-flex justify-content-between">\
@@ -214,14 +214,14 @@
             let data = res.data;
             page_count = res.data.last_page;
             current_page = res.data.current_page;
-            
+
             console.log('res.data.per_page',res.data.per_page);
             $('#job_seekers_showing_count').html(res.data.data.length);
             $('#job_seekers_all_count').html(res.data.total);
             $('#job_seekers_list').empty();
 
             $('#job_seekers_pagination').empty();
-            
+
             res.data.data.map((job_seeker) => {
                 let name = job_seeker.user.firstname+ ' ' + job_seeker.user.lastname;
                 let photo = job_seeker.job_seeker_photo ? job_seeker.job_seeker_photo : 'https://i.ibb.co/L1xT86W/profileworkers.jpg';
@@ -276,6 +276,6 @@
     }
 
 
-   
+
 </script>
 @endsection
