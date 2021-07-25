@@ -24189,6 +24189,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./index */ "./resources/js/index.js");
 
+__webpack_require__(/*! ./datatables */ "./resources/js/datatables.js");
+
 $(document).ready(function () {
   $('#myDataTable').DataTable();
 });
@@ -24231,27 +24233,13 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/index.js":
-/*!*******************************!*\
-  !*** ./resources/js/index.js ***!
-  \*******************************/
+/***/ "./resources/js/datatables.js":
+/*!************************************!*\
+  !*** ./resources/js/datatables.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var showbtn = document.querySelector('.user-btn');
-var lilnav = document.querySelector('.small-nav');
-showbtn.addEventListener('mouseover', function () {
-  lilnav.style.display = 'block';
-});
-lilnav.addEventListener('mouseover', function () {
-  lilnav.style.display = 'block';
-});
-lilnav.addEventListener('mouseout', function () {
-  lilnav.style.display = 'none';
-});
-showbtn.addEventListener('mouseout', function () {
-  lilnav.style.display = 'none';
-});
 $(document).ready(function () {
   $('#myDataTable').DataTable();
   var $label = document.querySelector("#myDataTable_length");
@@ -24284,6 +24272,74 @@ $(document).ready(function () {
   $hidepagination.style.display = 'none';
   $filterz.style.display = 'none';
   $label.style.display = 'none';
+});
+$(document).ready(function () {
+  $('#jobtitletable').DataTable();
+  var $label = document.querySelector("#jobtitletable_length");
+  var $filterz = document.querySelector('#jobtitletable_filter');
+  var $hidepagination = document.querySelector('#jobtitletable_paginate');
+  var $hideInfo = document.querySelector('#jobtitletable_info');
+  $hideInfo.style.display = 'none';
+  $hidepagination.style.display = 'none';
+  $filterz.style.display = 'none';
+  $label.style.display = 'none';
+});
+$(document).ready(function () {
+  $('#jobtitletable2').DataTable();
+  var $label = document.querySelector("#jobtitletable2_length");
+  var $filterz = document.querySelector('#jobtitletable2_filter');
+  var $hidepagination = document.querySelector('#jobtitletable2_paginate');
+  var $hideInfo = document.querySelector('#jobtitletable2_info');
+  $hideInfo.style.display = 'none';
+  $hidepagination.style.display = 'none';
+  $filterz.style.display = 'none';
+  $label.style.display = 'none';
+});
+$(document).ready(function () {
+  $('#jobtitletable3').DataTable();
+  var $label = document.querySelector("#jobtitletable3_length");
+  var $filterz = document.querySelector('#jobtitletable3_filter');
+  var $hidepagination = document.querySelector('#jobtitletable3_paginate');
+  var $hideInfo = document.querySelector('#jobtitletable3_info');
+  $hideInfo.style.display = 'none';
+  $hidepagination.style.display = 'none';
+  $filterz.style.display = 'none';
+  $label.style.display = 'none';
+});
+$(document).ready(function () {
+  $('#jobtitletable4').DataTable();
+  var $label = document.querySelector("#jobtitletable4_length");
+  var $filterz = document.querySelector('#jobtitletable4_filter');
+  var $hidepagination = document.querySelector('#jobtitletable4_paginate');
+  var $hideInfo = document.querySelector('#jobtitletable4_info');
+  $hideInfo.style.display = 'none';
+  $hidepagination.style.display = 'none';
+  $filterz.style.display = 'none';
+  $label.style.display = 'none';
+});
+
+/***/ }),
+
+/***/ "./resources/js/index.js":
+/*!*******************************!*\
+  !*** ./resources/js/index.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var showbtn = document.querySelector('.user-btn');
+var lilnav = document.querySelector('.small-nav');
+showbtn.addEventListener('mouseover', function () {
+  lilnav.style.display = 'block';
+});
+lilnav.addEventListener('mouseover', function () {
+  lilnav.style.display = 'block';
+});
+lilnav.addEventListener('mouseout', function () {
+  lilnav.style.display = 'none';
+});
+showbtn.addEventListener('mouseout', function () {
+  lilnav.style.display = 'none';
 });
 
 /***/ }),

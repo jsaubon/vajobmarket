@@ -34,8 +34,14 @@ Route::get('/jobseekerProfileReview', 'Frontend\JobSearchController@jobseekerPro
 Route::get('/jobseekerFinalize', 'Frontend\JobSearchController@jobseekerFinalize');
 Route::get('/jobseekerProfile', 'Frontend\JobSearchController@jobseekerProfile');
 Route::get('/jobseekerUpdateDetails', 'Frontend\JobSearchController@jobseekerUpdateDetails');
+<<<<<<< HEAD
 Route::get('/jobseekerMessages', 'Frontend\JobSearchController@jobseekerMessages');\
 Route::get('/jobseekerApplications', 'Frontend\JobSearchController@jobseekerApplications');
+=======
+Route::get('/jobseekerDashboard', 'Frontend\JobSearchController@jobseekerDashboard');
+Route::get('/jobseekerMessages', 'Frontend\JobSearchController@jobseekerMessages');
+
+>>>>>>> a6fc819bd1c4d89b02d1350136a344e91ad7c006
 
 //business-owner
 Route::get('/business', 'Frontend\BusinessController@index');
