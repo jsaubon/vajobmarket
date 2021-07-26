@@ -294,6 +294,11 @@
                 lilnavJs.style.display = "none";
             });
         }
+
+
+        if(userdata) {
+            $('.user-firstname').html(userdata.firstname);
+        }
     });
 
 </script>
