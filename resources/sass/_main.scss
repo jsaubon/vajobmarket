@@ -1,0 +1,132 @@
+/* header section */
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Oswald', sans-serif!important;
+}
+
+.header {
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(180deg, #646468 0%, transparent 100%);
+    z-index: 2;
+    justify-content: space-between;
+    padding: 0rem 10rem;
+}
+.mylogo{
+    background: url('../../public/assets/images/frontAssets/vajm-header-logo.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    padding:30px;
+}
+.header-items-left{
+    display: flex;
+
+}
+.img-container{
+    display: inline;
+    background-image: url('../../public/assets/images/frontAssets/logo-vajm-whitefont1.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    min-width: 60px;
+
+}
+.img-container i {
+    display: inline;
+}
+.headerActive {
+    background-color: #fff;
+}
+.title {
+    display: flex;
+    color:#fff;
+    width: 140px;
+}
+.navitems {
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: 300;
+}
+
+.navitemsPlus {
+    color: #007bff;
+}
+
+.navitems:hover {
+    text-decoration: none;
+    // border-bottom: 2px solid #fff;
+    color: #fff;
+}
+.header-items-right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.postJobBtn {
+    border-radius: 15px;
+    font-size: 0.7em;
+    border: 1px solid #383232;
+    color: #383232;
+    width: 80px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.postJobBtn:hover {
+    background-color: #fff;
+    color: #383232 !important;
+}
+.btn-signin{
+    font-size: 0.65em;
+}
+.noDeco {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.noDeco:hover {
+    text-decoration: none;
+    color:white;
+}
+
+/* footer section */
+
+.footerSection {
+    background-color: #0a1837;
+
+}
+
+.footerBody {
+    width: 900px;
+}
+
+
+.active-bottom.active{
+    border-bottom:4px solid;
+    border-color: #dee2e6 #dee2e6 #212529 !important;
+
+}
+
+.email-style{
+    border-bottom: 1px solid #646464 !important;
+    outline:none !important;
+    box-shadow: none!important;
+    margin-bottom: 20px;
+}
+.password-style{
+    border-bottom: 1px solid #646464 !important;
+    outline:none !important;
+    box-shadow: none!important;
+    margin-bottom: 20px;
+}
+.button-style{
+    margin-top: 100px;
+}
+
+

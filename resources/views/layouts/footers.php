@@ -1,4 +1,4 @@
-<section class="footerSection">
+<section class="footerSection container-fluid " style="padding-bottom: 60px;">
             <div class="container">
                 <br /><br />
                 <div class="d-flex justify-content-between">
@@ -53,10 +53,21 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="d-flex justify-content-around">
-                                    <a href="#fb">ic</a>
-                                    <a href="#twitter">ic</a>
-                                    <a href="#instagram">ic</a>
-                                    <a href="#youtube">ic</a>
+                                    <a href="#fb">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#youtube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -64,3 +75,5 @@
                 </div>
             </div>
         </section>
+
+

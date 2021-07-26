@@ -1,7 +1,9 @@
 .pricingSection {
+    background: url('../images/frontAssets/Video\ Background\ Image@2x.png') no-repeat center center;
+    background-size: cover;
     margin-top: -60px;
     background-color: rgb(99, 99, 99);
-    height: 990px;
+    height: 100vh;
 }
 
 .sectionNumTwo {

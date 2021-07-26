@@ -1,0 +1,23 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+// Variables
+// $primary-color:
+// $secondary-color:
+// $accent-color:
+
+// Typography
+
+body {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    p, a, button {
+        font-family: 'Roboto', san-serif;
+    }
+
+}
+

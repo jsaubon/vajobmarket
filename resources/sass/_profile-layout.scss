@@ -1,0 +1,79 @@
+//AllJobPost Table
+
+
+.user-dashboard {
+    background-color: #ECF6FF;
+}
+
+.fullwidth {
+    max-width: 1260px !important;
+    width: 100%;
+    padding: 100px 0px 50px 0px;
+}
+
+.container  {
+
+    // padding: 100px 0px 10px 0px;
+
+    .breadcrumb {
+
+        .active {
+            text-decoration: none;
+        }
+
+        color: #6e6e6e;
+        background: none !important;
+    }
+
+    .table{
+        color: #6e6e6e;
+        background: #fff;
+        border-radius: 10px;
+    }
+
+}
+
+.wrapper {
+    background: #fff !important;
+    padding: 20px;
+}
+
+.emp-monitor {
+    padding: 20px;
+}
+
+.small-nav{
+display:none;
+position: absolute;
+right: 120px;
+top: 40px;
+background-color: #ECF6FF;
+border-radius:5px;
+width: 120px;
+}
+.small-nav ul{
+    list-style: none;
+    padding: 10px;
+    font-size: 10px !important;
+    margin: 0;
+    text-transform: uppercase;
+}
+.small-nav-list{
+    background-color: #ECF6FF;
+
+}
+.small-nav-list:hover{
+    background-color: #6e6e6e;
+
+}
+.small-nav-link{
+    text-decoration: none;
+    color:#6e6e6e !important;
+    width: 100%;
+}
+.small-nav-link:hover{
+    text-decoration: none;
+    color:#ECF6FF !important;
+}
+
+

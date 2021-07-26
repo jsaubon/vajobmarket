@@ -1,1 +1,17 @@
-//
+//Styles Primary Pages
+@import 'utilities';
+@import 'front';
+@import 'main';
+@import 'signup';
+@import 'stepper';
+@import 'profile-layout';
+@import 'banner';
+@import 'dashboard';
+
+//business-flow
+@import 'businessflow';
+
+//jobseeker
+@import 'jobseeker';
+
+@import "~bootstrap/scss/bootstrap";
