@@ -17,7 +17,7 @@ class CreateClientJobPostRequiredSkillsTable extends Migration
             $table->id();
             $table->integer('client_job_post_id')->unsigned();
             $table->string('skill')->nullable();
-            $table->string('profeciency')->nullable();
+            $table->string('proficiency')->nullable();
             $table->timestamps();
         });
     }

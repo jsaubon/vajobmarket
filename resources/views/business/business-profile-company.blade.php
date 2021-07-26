@@ -6,24 +6,25 @@
             <div class="profile-stats container">
                <div class="row">
                     <div class="col-md-12 text-center">
-                        <h3 class="card-title" > Excepteur sint occaecat cupidatat non proident</h3>
+                        <h3 class="card-title job_post-job_title" > Excepteur sint occaecat cupidatat non proident</h3>
                     </div>
                     <div class="col-md-12">
                             <h6 class="card-subtitle mb-2 text-muted">
                                 <div class="row" style="text-transform: capitalize;">
                                     <div class="d-flex justify-content-center w-100" >
                                         <div class="wrapper  py-0" style="background-color:#ecf6ff !important">
-                                            <div class="border border-primary rounded p-1 text-center" style="width: 80px; font-size:12px; color:#007bff;">
-                                                fulltime
+                                            <div class="job_post-job_type border border-primary rounded p-1 text-center" style="width: 80px; font-size:12px; color:#007bff;">
+                                                -
                                             </div>
                                         </div>
                                         <div  class="wrapper p-0 my-auto" style=" font-size:12px; background-color:#ecf6ff !important">
                                             <i class="fas fa-money-bill-wave-alt"></i>
-                                            salary negotiable
+                                            <span class="job_post-salary">-</span>
                                         </div>
                                         <div  class="wrapper py-0 my-auto" style="font-size:12px; background-color:#ecf6ff !important">
                                             <i class="fas fa-clock"></i>
-                                            posted: june 25,2021
+                                            
+                                            <span class="job_post-start_date">-</span>
                                         </div>
                                     </div>
                                 </div>
@@ -84,29 +85,8 @@
             <div class="tab-pane fade show active" id="job-desc-post" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container ">
                     <div class="card p-4 shadow" style="border-radius: 10px;">
-                        <p class="card-text" style="margin-bottom:60px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mauris imperdiet ante hendrerit massa dignissim scelerisque.
-                            Nunc pellentesque blandit placerat. Suspendisse viverra porta dolor,
-                            commodo eleifend mauris pretium ac. Nam pellentesque magna id quam suscipit
-                            ellentesque. Proin a ultricies lectus. Phasellus ut mauris nec lacus lobortis
-                            posuere. Aliquam dignissim pretium neque, id semper diam ornare sit amet.
-                            Cras massa augue, luctus quis pharetra vel, egestas nec lectus. Maecenas vel
-                            tellus tempus, tristique urna et, mattis nunc. Integer aliquet rutrum leo,
-                            vitae condimentum libero porta ut. Donec pharetra ut ex sit amet ornare.
-                            Donec elit neque, egestas quis purus ut, faucibus dignissim lacus. Nunc
-                            mollis porttitor ligula porttitor faucibus.
-                            Praesent ut orci rhoncus enim laoreet elementum
-                            id a ligula. Aenean fringilla hendrerit pretium. Morbi ut
-                            lacus tincidunt justo interdum blandit sit amet vel dui.
-                            Nam vestibulum sapien id leo ornare elementum. In mollis
-                            mauris eu nunc aliquet, ac mollis lectus faucibus. Pellentesque
-                            posuere nisl id turpis aliquet, at fermentum lectus commodo. Sed tincidunt
-                            dolor vitae cursus pellentesque. Curabitur sollicitudin maximus ipsum, id
-                            euismod augue pretium quis. Morbi gravida pellentesque egestas. Donec vel
-                            urna pretium, aliquam quam sed, commodo tellus. Sed ipsum eros, dignissim
-                            eget finibus eu, rutrum eget sapien. Phasellus ante lacus, volutpat vel velit
-                            sed, porta euismod felis.
+                        <p class="card-text job_post-job_description" style="margin-bottom:60px;">
+                            -
                         </p>
                     </div>
 
@@ -293,49 +273,20 @@
             {{-- second --}}
             <div class="tab-pane fade" id="job-skills-post" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="container ">
-                    <div class="card p-4 shadow" style="border-radius: 10px;">
-                       <div class="row pt-4">
-                           <div class="col-md-12 d-flex justify-content-between" >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                <div style="color:#007bff;">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                           </div>
-                       </div>
-                       <hr>
-
-                        <div class="row ">
+                    <div class="card p-4 shadow job_post-skills_required" style="border-radius: 10px;">
+                        <!-- <div class="row pt-4">
                             <div class="col-md-12 d-flex justify-content-between" >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                <div style="color:#007bff;">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    <div style="color:#007bff;">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
                             </div>
                         </div>
-                            <hr>
-
-
-                        <div class="row ">
-                            <div class="col-md-12 d-flex justify-content-between" >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                <div style="color:#007bff;">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                            <hr>
+                        <hr> -->
 
                     </div>
 
@@ -526,17 +477,12 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="text" class="form-control profile-info-forms-items"  placeholder="Jobe Type">
+                                    <input type="text" class="form-control profile-info-forms-items job_post-job_type"  placeholder="Job Type">
                                   </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-8">
                                 <div class="form-group">
-                                    <input type="text" class="form-control profile-info-forms-items" placeholder="Monthly Rate Offered">
-                                  </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <input type="text" class="form-control profile-info-forms-items"  placeholder="Hourly Rate">
+                                    <input type="text" class="form-control profile-info-forms-items job_post-salary" placeholder="Salary Rate Offered">
                                   </div>
                             </div>
                         </div>
@@ -544,17 +490,17 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="text" class="form-control profile-info-forms-items"  placeholder="Start Date">
+                                    <input type="text" class="form-control profile-info-forms-items job_post-start_date"  placeholder="Start Date">
                                   </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="text" class="form-control profile-info-forms-items" placeholder="End Date">
+                                    <input type="text" class="form-control profile-info-forms-items job_post-end_date" placeholder="End Date">
                                   </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="text" class="form-control profile-info-forms-items"  placeholder="Sector">
+                                    <input type="text" class="form-control profile-info-forms-items job_post-sector"  placeholder="Sector">
                                   </div>
                             </div>
                         </div>
@@ -744,4 +690,58 @@
         </div>
     </div>
 
+
+<script>
+$(document).ready(function() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let job_id = urlParams.get('job_id');
+    if(job_id) {
+        getData('/api/ClientJobPost/'+job_id, ({data:res}) => {
+            if(res.success) {
+                console.log(res);
+                let jobpost_data = res.data;
+                let client = jobpost_data.client;
+                let client_business_info = client.client_business_info;
+                let client_job_post_required_skills = jobpost_data.client_job_post_required_skills;
+                Object.keys(jobpost_data).map((field, key) => {
+                    let element = $('.job_post-'+field);
+                    if(element.length) {
+                        element.html(jobpost_data[field]);
+                        element.val(jobpost_data[field]);
+                    }
+                });
+                Object.keys(client).map((field, key) => {
+                    let element = $('.client-'+field);
+                    if(element.length) {
+                        element.html(client[field]);
+                    }
+                });
+                Object.keys(client_business_info).map((field, key) => {
+                    let element = $('.client_business_info-'+field);
+                    if(element.length) {
+                        element.html(client_business_info[field]);
+                    }
+                });
+
+
+                client_job_post_required_skills.map((skills_required, key) => {
+                    $('.job_post-skills_required').append(
+                        '<div class="row pt-4">'+
+                            '<div class="col-md-12 d-flex justify-content-between" >'+
+                                    ''+skills_required.skill+''+
+                                    '<div style="float: right">'+
+                                    ''+skills_required.proficiency+''+
+                                    '</div>'+
+                            '</div>'+
+                        '</div>'+
+                        '<hr>'
+                    );
+                })
+            }
+        });
+    }
+    
+});
+</script>
 @endsection

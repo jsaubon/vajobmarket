@@ -162,7 +162,7 @@ class DatabaseSeeder extends Seeder
         $client_job_post_ids = \App\ClientJobPost::all()->toArray();
         $client_job_post_ids = array_column($client_job_post_ids, 'id');
         $required_skills = [];
-        $profeciencies = [
+        $proficiencies = [
             'Beginner',
             'Advanced',
             'Expert'
@@ -172,7 +172,7 @@ class DatabaseSeeder extends Seeder
                 $required_skills[] = [
                     'client_job_post_id' => $id,
                     'skill' => $faker->text,
-                    'profeciency' => $profeciencies[rand(0,2)],
+                    'proficiency' => $proficiencies[rand(0,2)],
                 ];
             }
         }
@@ -254,8 +254,8 @@ class DatabaseSeeder extends Seeder
                 $languages[] = [
                     'jobseeker_id' => $id,
                     'language' => $faker->word,
-                    'written_proficiency' => $profeciencies[rand(0,2)],
-                    'oral_proficiency' => $profeciencies[rand(0,2)],
+                    'written_proficiency' => $proficiencies[rand(0,2)],
+                    'oral_proficiency' => $proficiencies[rand(0,2)],
                 ];
             }
         }
@@ -286,7 +286,7 @@ class DatabaseSeeder extends Seeder
                     'jobseeker_id' => $id,
                     'title' => $faker->text,
                     'experience' => $faker->text,
-                    'proficiency' => $profeciencies[rand(0,2)],
+                    'proficiency' => $proficiencies[rand(0,2)],
                     'description' => $faker->text,
                 ];
             }

@@ -162,7 +162,7 @@
             res.data.data.map((job_post) => {
                 $('#job_posts_list').append('\
                     <div class="col-sm-6">\
-                        <a href="/BusinessProfileCompany">\
+                        <a href="/BusinessProfileCompany?job_id='+job_post.id+'">\
                             <div class="card shadow p-4" style="border-radius: 20px;">\
                                 <p class="text-center">'+job_post.job_title+'</p>\
                                 <div class="d-flex justify-content-between">\
