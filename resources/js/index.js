@@ -1,19 +1,19 @@
+var showbtnBo = document.querySelector(".user-btn-bo");
+var lilnavBo = document.querySelector(".small-nav-bo");
 
-var showbtn = document.querySelector('.user-btn')
-var lilnav = document.querySelector('.small-nav')
+showbtnBo.addEventListener("mouseover", function() {
+    lilnavBo.style.display = "block";
+});
+lilnavBo.addEventListener("mouseover", function() {
+    lilnavBo.style.display = "block";
+});
+lilnavBo.addEventListener("mouseout", function() {
+    lilnavBo.style.display = "none";
+});
+showbtnBo.addEventListener("mouseout", function() {
+    lilnavBo.style.display = "none";
+});
 
-showbtn.addEventListener('mouseover',function(){
-    lilnav.style.display ='block'
-})
-lilnav.addEventListener('mouseover',function(){
-    lilnav.style.display ='block'
-})
-lilnav.addEventListener('mouseout',function(){
-    lilnav.style.display ='none'
-})
-showbtn.addEventListener('mouseout',function(){
-    lilnav.style.display ='none'
-})
-
-
-
+$(document).ready(function() {
+    $("#myDataTable").DataTable();
+});

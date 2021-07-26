@@ -54,10 +54,15 @@ class JobSeekerExperienceController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required'
+            'jobseeker_id' => 'required'
         ]);
         
-        $data = JobSeekerExperience::create($request->all())->save();
+        if($request->experiences) {
+            $data = JobSeekerExperience::insert($request->experiences);
+        } else {
+            $data = JobSeekerExperience::create($request->all())->save();
+        }
+        
        
         return response()->json([
             'success' => true,

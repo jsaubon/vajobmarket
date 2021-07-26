@@ -54,10 +54,15 @@ class JobSeekerEducationController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'client_id' => 'required'
+            'jobseeker_id' => 'required'
         ]);
         
-        $data = JobSeekerEducation::create($request->all())->save();
+        if($request->educations) {
+            $data = JobSeekerEducation::insert($request->educations);
+        } else {
+            $data = JobSeekerEducation::create($request->all())->save();
+        }
+        
        
         return response()->json([
             'success' => true,

@@ -18,7 +18,7 @@ class CreateJobSeekerSpecializedSkillsTable extends Migration
             $table->integer('jobseeker_id')->unsigned();
             $table->string('title')->nullable();
             $table->string('experience')->nullable();
-            $table->string('prefeciency')->nullable();
+            $table->string('proficiency')->nullable();
             $table->longText('description')->nullable();
             $table->timestamps();
         });

@@ -25,53 +25,9 @@
             display: none;
         }
         </style>
+        @include('layouts.scriptFunctions')
     </head>
     <body>
-    <script>
-        let token = localStorage.token;
-        let userdata = localStorage.userdata ? JSON.parse(localStorage.userdata) : null;
-
-        function getData(url, then_function = () => {}, catch_function = () => {}) {
-            axios.post(url,{
-                headers: {
-                    Authorization: "Bearer " + token
-                }
-            }).then(then_function).catch(catch_function);
-        };
-
-        function postData(url,data, then_function = () => {}, catch_function = () => {}) {
-            axios.post(url, data,{
-                headers: {
-                    Authorization: "Bearer " + token
-                }
-            }).then(then_function).catch(catch_function);
-        };
-
-        function uploadImage(url,data, then_function = () => {}, catch_function = () => {}) {
-            axios.put(url, data,{
-                headers: {
-                    Authorization: "Bearer " + token,
-                    "Content-Type": "multipart/form-data"
-                }
-            }).then(then_function).catch(catch_function);
-        };
-
-        function updateData(url,data, then_function = () => {}, catch_function = () => {}) {
-            axios.put(url, data,{
-                headers: {
-                    Authorization: "Bearer " + token
-                }
-            }).then(then_function).catch(catch_function);
-        };
-
-        function deleteData(url,data, then_function = () => {}, catch_function = () => {}) {
-            axios.delete(url, data,{
-                headers: {
-                    Authorization: "Bearer " + token
-                }
-            }).then(then_function).catch(catch_function);
-        };
-    </script>
 
         @include('layouts.headers')
 
@@ -90,5 +46,25 @@
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
     <script src="{{URL::asset('js/app.js')}}"></script>
+
+    <script>
+        $('.bo-nav').addClass('hide');
+        $('.js-nav').addClass('hide');
+        if(token) {
+            console.log(userdata);
+            $('.not_logged_in_nav').addClass('hide');
+            if(userdata.type == 'Client') {
+                $('.bo-nav').removeClass('hide');
+                $('.js-nav').remove();
+                $('.not_logged_in_nav').remove();
+            }
+            if(userdata.type == 'JobSeeker') {
+
+                $('.js-nav').removeClass('hide');
+                $('.bo-nav').remove();
+                $('.not_logged_in_nav').remove();
+            }
+        }
+    </script>
     </body>
 </html>

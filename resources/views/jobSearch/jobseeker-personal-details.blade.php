@@ -45,131 +45,109 @@
             <div class="container">
 
 
-                <form class="container" action="">
+                <form class="container" action="#" id="js_personal_detail"> 
                     <h2 class="title-personal-info">Profession</h2>
                     <hr>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="job-title" placeholder="Job title">
+                                <input type="text" class="form-control personal-info-forms-items" name="job_title" placeholder="Job title">
                               </div>
                         </div>
                         <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" id="avail">
-                                <option>Availability</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items" name="availability" placeholder="Availability">
+                            </div>
                         </div>
-                        <div class="col-md-2 p-1">
-                            <select class="form-control personal-info-forms-items " style="font-size:9px !important;" id="rate-month">
-                                <option>Asking Rate/Month</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2 p-1">
-                            <select class="form-control personal-info-forms-items" style="font-size:9px !important;" id="rate-hour">
-                                <option>Asking Rate/Hr</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items" name="salary" placeholder="Asking Rate/Hr or Rate/Month">
+                            </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-12 ">
-                            <textarea placeholder="Write your skill Summary here.."class="jobseeker-textarea p-2 w-100" rows="8" style=" resize: none;"></textarea>
+                            <textarea placeholder="Write your skill Summary here.."class="jobseeker-textarea p-2 w-100" name="skills_summary" rows="8" style=" resize: none;"></textarea>
                         </div>
                     </div>
 
                     {{-- Languages --}}
                     <h2 class="title-personal-info">Languages</h2>
                     <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="language" placeholder="Select Language">
+                    <div id="languages_section">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control personal-info-forms-items" name="languages[1][language]" placeholder="Language">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <select class="form-control personal-info-forms-items" id="written-proficiency">
-                                <option>Written Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <select class="form-control personal-info-forms-items" id="oras-proficiency">
-                                <option>Oral Proficiency</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
+                            <div class="col-md-4">
+                                <select class="form-control personal-info-forms-items" name="languages[1][written_proficiency]">
+                                    <option>Written Proficiency</option>
+                                    <option>Beginner</option>
+                                    <option>Advanced</option>
+                                    <option>Expert</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-control personal-info-forms-items" name="languages[1][oral_proficiency]">
+                                    <option>Oral Proficiency</option>
+                                    <option>Beginner</option>
+                                    <option>Advanced</option>
+                                    <option>Expert</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="row m-auto">
-                        <div class="col-md-12 d-flex justify-content-center p-2 btn-container">
+                        <div class="col-md-12 d-flex justify-content-center p-2 btn-container btn_add_language">
                             <div class="btn-plus"></div>
                         </div>
                     </div>
                     {{-- Job Experiences --}}
                     <h2 class="title-personal-info">Job Experiences</h2>
                     <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="jobseeker-company-name" placeholder="Company Name">
-                              </div>
+                    <div id="experiences_section">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control personal-info-forms-items" name="experiences[1][company_name]" placeholder="Company Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control personal-info-forms-items" name="experiences[1][job_description]" placeholder="Job Description">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="date" class="form-control personal-info-forms-items" name="experiences[1][from_date]" placeholder="From Date">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <input type="date" class="form-control personal-info-forms-items" name="experiences[1][to_date]" placeholder="To Date">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" id="job-description" placeholder="Job Description">
-                              </div>
+                        <div class="row">
+                            <div class="col-md-12 d-flex justify-content-end">
+                                <div class="form-group personal-info-forms-items form-check " style="border:none !important;">
+                                    <input type="checkbox" class="form-check-input p-2" name="exampleCheck1">
+                                    <label class="form-check-label p-1" for="exampleCheck1">I currently work here</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items "  id="rate-month">
-                                <option>From</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items"  id="rate-hour">
-                                <option>Until</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 d-flex justify-content-end">
-                            <div class="form-group personal-info-forms-items form-check " style="border:none !important;">
-                                <input type="checkbox" class="form-check-input p-2" id="exampleCheck1">
-                                <label class="form-check-label p-1" for="exampleCheck1">I currently work here</label>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <textarea placeholder="Write job scope here.."class="jobseeker-textarea p-2 w-100" name="experiences[1][job_scope]" rows="5" style=" resize: none;"></textarea>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <textarea placeholder="Write job scope here.."class="jobseeker-textarea p-2 w-100" rows="5" style=" resize: none;"></textarea>
-                        </div>
-                    </div>
+                    
                     <div class="row m-auto">
-                        <div class="col-md-12 d-flex justify-content-center p-2 btn-container">
+                        <div class="col-md-12 d-flex justify-content-center p-2 btn-container btn_add_experience" >
                             <div class="btn-plus"></div>
                         </div>
                     </div>
@@ -191,7 +169,7 @@
                         <div class="col-md-2"></div>
                         <div class="col-md-8  d-flex justify-content-center">
                             <a class="btn btn-light mr-2 back-btn" href="/personalInfo">Back</a>
-                            <a class="btn btn-primary proceed-btn" href="/jobseekerSkillset">Proceed Next</a>
+                            <button class="btn btn-primary proceed-btn"  type="submit">Proceed Next</button>
                         </div>
                         <div class="col-md-2"></div>
                     </div>
@@ -201,6 +179,161 @@
 
      </div>
 </div>
+
+
+<script>
+    if(!token) {
+        window.location.href = '/signup';
+    } 
+
+    $(document).ready(function() {
+        $('[name="email"]').val(userdata.email);
+
+        $('#js_personal_detail').on('submit', function(e) {
+            e.preventDefault();
+
+            let data = $(this).serializeControls();
+            console.log('data',data)
+
+            let data_profession = {
+                ...data, jobseeker_id: userdata.jobseeker.id
+            };
+
+
+
+
+            let data_languages = {...data.languages};
+            data_languages = Object.values(data_languages); 
+            let data_experiences = {...data.experiences};
+            data_experiences = Object.values(data_experiences);
+
+
+            let jobseeker_id = userdata.jobseeker.id;
+            data_languages.map((edu, key) => {
+                data_languages[key]['jobseeker_id'] = jobseeker_id;
+            });
+            
+            data_experiences.map((edu, key) => {
+                data_experiences[key]['jobseeker_id'] = jobseeker_id;
+            });
+
+            data_languages = {
+                jobseeker_id: jobseeker_id,
+                languages: data_languages
+            };
+            
+            data_experiences = {
+                jobseeker_id: jobseeker_id,
+                experiences: data_experiences
+            };
+
+            delete data_profession.languages;
+            delete data_profession.experiences;
+
+            console.log(data_profession);
+            console.log(data_languages);
+            console.log(data_experiences);
+
+            postData('/api/JobSeekerProfession',data_profession, ({data:res}) => {
+                if(res.success) {
+                    createJobSeekerLanguages(data_languages, data_experiences);
+                }
+            });
+            
+        });
+
+        function createJobSeekerLanguages(data_languages, data_experiences) {
+            postData('/api/JobSeekerLanguage',data_languages, ({data:res}) => {
+                if(res.success) {
+                    createJobSeekerExperiences(data_experiences);
+                }
+            });
+        }
+
+        function createJobSeekerExperiences(data_experiences) {
+            postData('/api/JobSeekerExperience',data_experiences, ({data:res}) => {
+                if(res.success) {
+                    window.location.href = '/jobseekerSkillset';
+                }
+            });
+        }
+
+
+
+
+        $('.btn_add_language').on('click', function() {
+            let rows = $('#languages_section').find('.row').length;
+            $('#languages_section').append('\
+                <div class="row">\
+                    <div class="col-md-4">\
+                        <div class="form-group">\
+                            <input type="text" class="form-control personal-info-forms-items" name="languages['+(rows+1)+'][language]" placeholder="Select Language">\
+                        </div>\
+                    </div>\
+                    <div class="col-md-4">\
+                        <select class="form-control personal-info-forms-items" name="languages['+(rows+1)+'][written_proficiency]">\
+                            <option>Written Proficiency</option>\
+                            <option>Beginner</option>\
+                            <option>Advanced</option>\
+                            <option>Expert</option>\
+                        </select>\
+                    </div>\
+                    <div class="col-md-4">\
+                        <select class="form-control personal-info-forms-items" name="languages['+(rows+1)+'][oral_proficiency]">\
+                            <option>Oral Proficiency</option>\
+                            <option>Beginner</option>\
+                            <option>Advanced</option>\
+                            <option>Expert</option>\
+                        </select>\
+                    </div>\
+                </div>\
+            ');
+        });
+
+
+        $('.btn_add_experience').on('click', function() {
+            let rows = $('#experiences_section').find('.row').length;
+            $('#experiences_section').append('\
+                <div class="row">\
+                    <div class="col-md-4">\
+                        <div class="form-group">\
+                            <input type="text" class="form-control personal-info-forms-items" name="experiences['+(rows+1)+'][company_name]" placeholder="Company Name">\
+                        </div>\
+                    </div>\
+                    <div class="col-md-4">\
+                        <div class="form-group">\
+                            <input type="text" class="form-control personal-info-forms-items" name="experiences['+(rows+1)+'][job_description]" placeholder="Job Description">\
+                        </div>\
+                    </div>\
+                    <div class="col-md-2">\
+                        <div class="form-group">\
+                            <input type="date" class="form-control personal-info-forms-items" name="experiences[1][from_date]" placeholder="From Date">\
+                        </div>\
+                    </div>\
+                    <div class="col-md-2">\
+                        <div class="form-group">\
+                            <input type="date" class="form-control personal-info-forms-items" name="experiences[1][to_date]" placeholder="To Date">\
+                        </div>\
+                    </div>\
+                </div>\
+                <div class="row">\
+                    <div class="col-md-12 d-flex justify-content-end">\
+                        <div class="form-group personal-info-forms-items form-check " style="border:none !important;">\
+                            <input type="checkbox" class="form-check-input p-2" name="exampleCheck1">\
+                            <label class="form-check-label p-1" for="exampleCheck1">I currently work here</label>\
+                        </div>\
+                    </div>\
+                </div>\
+                <div class="row">\
+                    <div class="col-md-12 ">\
+                        <textarea placeholder="Write job scope here.."class="jobseeker-textarea p-2 w-100" name="experiences['+(rows+1)+'][job_scope]" rows="5" style=" resize: none;"></textarea>\
+                    </div>\
+                </div>\
+            ');
+        });
+    });
+
+</script>
 
 @endsection
 

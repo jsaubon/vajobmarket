@@ -51,89 +51,67 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items"  placeholder="First Name">
+                                <input type="text" class="form-control personal-info-forms-items" name="personal_firstname" placeholder="First Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" placeholder="Middle Name">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_middlename" placeholder="Middle Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Last Name">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_lastname"  placeholder="Last Name">
                               </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-2">
-                            <label class="personal-info-forms-items" style="border:0 !important;">Date of Birth</label>
+                            <label class="personal-info-forms-items"   style="border:0 !important;">Date of Birth</label>
                         </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" >
-                                <option>Month</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" >
-                                <option>Date</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                        </div>
-                        <div class="col-md-2">
-                            <select class="form-control personal-info-forms-items" >
-                                <option>Year</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_date_of_birth"  placeholder="Date of Birth">
+                              </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Nationality">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_nationality"  placeholder="Nationality">
                               </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Address">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_address1"  placeholder="Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Apartment, Suite, etc.">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_address2"  placeholder="Apartment, Suite, etc.">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" placeholder="City">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_city" placeholder="City">
                               </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" placeholder="State / Province">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_state" placeholder="State / Province">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Country">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_country"  placeholder="Country">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" placeholder="Zip / Postal">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_zip" placeholder="Zip / Postal">
                               </div>
                         </div>
                     </div>
@@ -141,17 +119,17 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="email" class="form-control personal-info-forms-items" placeholder="E-mail Address">
+                                <input type="email" class="form-control personal-info-forms-items"  name="personal_email" placeholder="E-mail Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" placeholder="Mobile Number">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_mobile_no" placeholder="Mobile Number">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items"  placeholder="Phone Number">
+                                <input type="text" class="form-control personal-info-forms-items"  name="personal_phone_no"  placeholder="Phone Number">
                               </div>
                         </div>
                     </div>
@@ -208,5 +186,35 @@
      </div>
 </div>
 
+<script>
+if(!token) {
+    window.location.href = '/signup';
+} 
+$(document).ready(function() {
+    getData('/api/Client/'+userdata.client.id, ({data:res}) => {
+        if(res.success) {
+            let client_data = res.data;
+            let user = client_data.user;
+            let client_business_info = client_data.client_business_info;
+            let client_billing_detail = client_data.client_billing_detail;
+            Object.keys(client_data).map((field, key) => {
+                let input = $('[name="personal_'+field+'"]');
+                if(input.length) {
+                    // console.log(input);
+                    input.val(client_data[field]);
+                }
+            });
+            
+            Object.keys(user).map((field, key) => {
+                let input = $('[name="personal_'+field+'"]');
+                if(input.length) {
+                    // console.log(input);
+                    input.val(user[field]);
+                }
+            });
+        }
+    });
+});
+</script>
 @endsection
 

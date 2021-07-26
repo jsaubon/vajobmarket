@@ -10,7 +10,12 @@ $obj = [
 ];
 
 ?>
-<div class="header">
+<style>
+    .hide {
+        display: none;
+    }
+</style>
+<div class="header ">
             <div class="header-items-left">
 
                     <a class="my-auto px-3 mb-3" style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
@@ -33,20 +38,160 @@ $obj = [
                     ?>
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="header-items-right ">
                 <a href="/jobs" class="p-1 ml-3 my-auto postJobBtn btn-outline-light noDeco"><small><b>JOB SEARCH</b></small></a>
                 <a href="/posts" class="p-1 ml-3 mr-3 my-auto postJobBtn btn-outline-light noDeco"><small><b>POST A JOB</b></small></a>
                 <button type="button " class="btn text-light my-auto" data-toggle="modal" data-target="#exampleModal">
                 <small class="btn-signin my-auto"><b>SIGN-IN</b></small>
+=======
+            <div class="header-items-right not_logged_in_nav">
+                <a href="/jobs" class="p-1 ml-3 postJobBtn noDeco"><small><b>JOB SEARCH</b></small></a>
+                <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco"><small><b>POST A JOB</b></small></a>
+                <button type="button " class="btn text-light" data-toggle="modal" data-target="#modalLogin">
+                <small class="btn-signin"><b>SIGN-IN</b></small>
+>>>>>>> 72489ddc181ec7bf266ea88726d0fb97c4832e2b
                 </button>
             </div>
+            <div class="header-items-right js-nav">
+                <div  class="px-2 py-1 ml-3 postJobBtn d-flex justify-content-around" style="margin:0 !important; width:95px;color:#383232 ">
+                    <i class="fas fa-plus-circle my-auto" style="font-size:12px;" ></i>&nbsp;
+                    <b class="my-auto">Post A Job</b>
+                </div>
+                <div  class="p-1 noDeco ml-2" style="color:#383232;">
+                    <i class="fas fa-bell noDeco shadow" style="font-size:15px;"></i>
+                </div>
+                <div  class="p-1  noDeco ml-2" style="color:#383232;">
+                    <i class="fas fa-user noDeco shadow" style="font-size:15px;"></i>
+                </div>
+                <div class="p-1 ml-3 mr-3 noDeco user-btn user-btn-js">
+                    <small><b class="my-auto">Username</b></small>
+                    <i class="fas fa-chevron-down my-auto" style="font-size:10px;"></i>
+                </div>
+            </div>
+            <div class="small-nav-js small-nav shadow js-nav">
+                <ul>
+                    <a href="#" class="small-nav-link">
+                        <li class="small-nav-list">
+                          dashboard
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="/jobseekerProfile" class="small-nav-link">
+                        <li class="small-nav-list">
+                          profile
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="#" class="small-nav-link">
+                        <li class="small-nav-list">
+                            job application
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="#" class="small-nav-link">
+                        <li class="small-nav-list">
+                          employment
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <hr class=" m-0">
+                    <a href="#" class="small-nav-link">
+                        <li class="small-nav-list">
+                          messages
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="/jobseekerUpdateDetails" class="small-nav-link">
+                        <li class="small-nav-list">
+                          settings
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="#" class="small-nav-link btn-logout">
+                        <li class="small-nav-list">
+                          logout
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="header-items-right bo-nav">
+                <div  class="px-2 py-1 ml-3 postJobBtn d-flex justify-content-around" style="margin:0 !important; width:95px;color:#383232 ">
+                    <i class="fas fa-plus-circle my-auto" style="font-size:12px;" ></i>&nbsp;
+                    <b class="my-auto">Post A Job</b>
+                </div>
+                <div  class="p-1 noDeco ml-2" style="color:#383232;">
+                    <i class="fas fa-bell noDeco shadow" style="font-size:15px;"></i>
+                </div>
+                <div  class="p-1  noDeco ml-2" style="color:#383232;">
+                    <i class="fas fa-user noDeco shadow" style="font-size:15px;"></i>
+                </div>
+                <div class="p-1 ml-3 mr-3 noDeco user-btn user-btn-bo">
+                    <small><b class="my-auto">Username</b></small>
+                    <i class="fas fa-chevron-down my-auto" style="font-size:10px;"></i>
+                </div>
+            </div>
+            <div class="small-nav small-nav-bo shadow bo-nav">
+                <ul>
+                    <a href="#" class="small-nav-link">
+                        <li class="small-nav-list">
+                          dashboard
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="/BusinessProfile" class="small-nav-link">
+                        <li class="small-nav-list">
+                          profile
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="/BusinessAllJobPost" class="small-nav-link">
+                        <li class="small-nav-list">
+                            Job Posts
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="/BusinessApplications" class="small-nav-link">
+                        <li class="small-nav-list">
+                          application
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="/BusinessEmployment" class="small-nav-link">
+                        <li class="small-nav-list">
+                          employment
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="#" class="small-nav-link">
+                        <li class="small-nav-list">
+                          message
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="/BusinessProfileCompany" class="small-nav-link">
+                        <li class="small-nav-list">
+                          settings
+                        </li>
+                    </a>
+                    <hr class=" m-0">
+                    <a href="#" class="small-nav-link btn-logout">
+                        <li class="small-nav-list">
+                          logout
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
 
             <div class="chat-support"></div>
 
 
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="d-flex justify-content-end">
@@ -79,8 +224,8 @@ $obj = [
                                 <input type="text" required class="bo_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
                                 <input type="password" required class="bo_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <div id="error_bo" class="hide">
-                                    <div class="alert alert-danger" id="error_bo_message"  role="alert">
+                                <div id="signin_error_bo" class="hide">
+                                    <div class="alert alert-danger" id="signin_error_bo_message"  role="alert">
                                     </div>
                                 </div>
                                 <div class="button-style">
@@ -113,8 +258,8 @@ $obj = [
                                 <input type="text" class="js_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
                                 <input type="password" class="js_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <div id="error_js" class="hide">
-                                    <div class="alert alert-danger" id="error_js_message"  role="alert">
+                                <div id="signin_error_js" class="hide">
+                                    <div class="alert alert-danger" id="signin_error_js_message"  role="alert">
                                     </div>
                                 </div>
                                 <div class="button-style">
@@ -147,6 +292,16 @@ $obj = [
 
 
 <script>
+    $('.btn-logout').on('click', function(e) {
+        e.preventDefault();
+        localStorage.removeItem('token');
+        localStorage.removeItem('userdata');
+        window.location.href = '/';
+    });
+</script>
+
+<script>
+
     $(document).ready(function() {
         $('#form_bo').on('submit', function(e) {
             e.preventDefault();
@@ -161,7 +316,15 @@ $obj = [
             postData(url,data,function({data: res}) {
                 localStorage.token = res.token;
                 localStorage.userdata = JSON.stringify(res.userdata);
-                alert('business owner successfully logged in');
+                // alert('business owner successfully logged in');
+            }, err =>  {
+                if(err.response.data.error) {
+                    $('#signin_error_bo').removeClass('hide');
+                    $('#signin_error_bo_message').html(err.response.data.error);
+                }else {
+                    $('#signin_error_bo').removeClass('hide');
+                    $('#signin_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
+                }
             });
         });
 
@@ -178,9 +341,24 @@ $obj = [
                 localStorage.token = res.token;
                 localStorage.userdata = JSON.stringify(res.userdata);
                 alert('job seeker successfully logged in');
+            }, err =>  {
+                if(err.response.data.error) {
+                    $('#signin_error_bo').removeClass('hide');
+                    $('#signin_error_bo_message').html(err.response.data.error);
+                }else {
+                    $('#signin_error_bo').removeClass('hide');
+                    $('#signin_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
+                }
             });
         });
     });
 
+<<<<<<< HEAD
 
 </script>
+=======
+    
+
+    
+</script>
+>>>>>>> 72489ddc181ec7bf266ea88726d0fb97c4832e2b
