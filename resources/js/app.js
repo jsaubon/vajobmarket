@@ -1,14 +1,7 @@
-require('./bootstrap');
-require('./index');
-require('./datatables');
+require("./bootstrap");
 
-$(document).ready( function () {
-    $('#myDataTable').DataTable();
-} );
-
-import 'bootstrap';
-import '@fortawesome/fontawesome-free/js/fontawesome'
-import '@fortawesome/fontawesome-free/js/solid'
-import '@fortawesome/fontawesome-free/js/regular'
-import '@fortawesome/fontawesome-free/js/brands'
-
+import "bootstrap";
+import "@fortawesome/fontawesome-free/js/fontawesome";
+import "@fortawesome/fontawesome-free/js/solid";
+import "@fortawesome/fontawesome-free/js/regular";
+import "@fortawesome/fontawesome-free/js/brands";

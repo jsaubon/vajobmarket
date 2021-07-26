@@ -80,6 +80,7 @@ class ClientJobPostController extends Controller
         $data = ClientJobPost::with([
             'client',
             'client.client_business_info',
+            'client_job_post_required_skills',
         ])->find($id);
         
         if (!$data) {

@@ -18,13 +18,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-        <style>
-
-
-        .hide {
-            display: none;
-        }
-        </style>
+        
         @include('layouts.scriptFunctions')
     </head>
     <body>
@@ -46,25 +40,6 @@
 
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
     <script src="{{URL::asset('js/app.js')}}"></script>
-
-    <script>
-        $('.bo-nav').addClass('hide');
-        $('.js-nav').addClass('hide');
-        if(token) {
-            console.log(userdata);
-            $('.not_logged_in_nav').addClass('hide');
-            if(userdata.type == 'Client') {
-                $('.bo-nav').removeClass('hide');
-                $('.js-nav').remove();
-                $('.not_logged_in_nav').remove();
-            }
-            if(userdata.type == 'JobSeeker') {
-
-                $('.js-nav').removeClass('hide');
-                $('.bo-nav').remove();
-                $('.not_logged_in_nav').remove();
-            }
-        }
-    </script>
+ 
     </body>
 </html>

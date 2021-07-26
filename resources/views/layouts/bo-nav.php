@@ -1,4 +1,4 @@
-<div class="header-items-right bo-nav">
+<div class="header-items-right bo-nav hide">
     <div  class="px-2 py-1 ml-3 postJobBtn d-flex justify-content-around" style="margin:0 !important; width:95px;color:#383232 ">
         <i class="fas fa-plus-circle my-auto" style="font-size:12px;" ></i>&nbsp;
         <b class="my-auto">Post A Job</b>
@@ -16,7 +16,7 @@
 </div>
 <div class="small-nav small-nav-bo shadow bo-nav">
     <ul>
-        <a href="#" class="small-nav-link">
+        <a href="/DashboardBusiness" class="small-nav-link">
             <li class="small-nav-list">
                 dashboard
             </li>

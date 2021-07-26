@@ -1,4 +1,4 @@
-<div class="header-items-right js-nav">
+<div class="header-items-right js-nav hide">
     <a href="/jobs" class="p-1 ml-3 postJobBtn noDeco"><small><b>JOB SEARCH</b></small></a>
     <div  class="p-1 noDeco ml-2" style="color:#383232;">
         <i class="fas fa-bell noDeco shadow" style="font-size:15px;"></i>

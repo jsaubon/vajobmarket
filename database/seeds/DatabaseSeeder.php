@@ -177,6 +177,8 @@ class DatabaseSeeder extends Seeder
             }
         }
 
+        $model_required_skills = \App\ClientJobPostRequiredSkill::insert($required_skills);
+
 
 
 

@@ -38,71 +38,7 @@ $obj = [
                     ?>
                 </div>
             </div>
-            <div class="header-items-right">
-                <a href="/jobs" class="text-decoration-none">
-                <div  class="px-2 py-1 ml-3 postJobBtn d-flex justify-content-around" style="margin:0 !important; width:95px;color:#383232 ">
-                    <i class="fas fa-search-plus my-auto" style="font-size:12px;" ></i>&nbsp;
-                    <b class="my-auto">Job Search</b>
-                </div>
-                </a>
-                <div  class="p-1 noDeco ml-2" style="color:#383232;">
-                    <i class="fas fa-bell noDeco shadow" style="font-size:15px;"></i>
-                </div>
-                <div  class="p-1  noDeco ml-2" style="color:#383232;">
-                    <i class="fas fa-user noDeco shadow" style="font-size:15px;"></i>
-                </div>
-                <div class="p-1 ml-3 mr-3 noDeco user-btn">
-                    <small><b class="my-auto">Username</b></small>
-                    <i class="fas fa-chevron-down my-auto" style="font-size:10px;"></i>
-                </div>
-            </div>
-            <div class="small-nav shadow">
-                <ul>
-                    <a href="#" class="small-nav-link">
-                        <li class="small-nav-list">
-                          dashboard
-                        </li>
-                    </a>
-                    <hr class=" m-0">
-                    <a href="/jobseekerProfile" class="small-nav-link">
-                        <li class="small-nav-list">
-                          profile
-                        </li>
-                    </a>
-                    <hr class=" m-0">
-                    <a href="#" class="small-nav-link">
-                        <li class="small-nav-list">
-                            job application
-                        </li>
-                    </a>
-                    <hr class=" m-0">
-                    <a href="#" class="small-nav-link">
-                        <li class="small-nav-list">
-                          employment
-                        </li>
-                    </a>
-                    <hr class=" m-0">
-                    <hr class=" m-0">
-                    <a href="#" class="small-nav-link">
-                        <li class="small-nav-list">
-                          messages
-                        </li>
-                    </a>
-                    <hr class=" m-0">
-                    <a href="/jobseekerUpdateDetails" class="small-nav-link">
-                        <li class="small-nav-list">
-                          settings
-                        </li>
-                    </a>
-                    <hr class=" m-0">
-                    <a href="#" class="small-nav-link">
-                        <li class="small-nav-list">
-                          logout
-                        </li>
-                    </a>
-                </ul>
-            </div>
-
+            @include('layouts.js-nav')
             <div class="chat-support"></div>
 
 

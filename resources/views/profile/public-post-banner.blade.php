@@ -27,7 +27,7 @@
                     <img src="https://i.ibb.co/DwnSyq4/scott-webb-bmmcf-Zq-Sj-BU-unsplash.jpg" alt="" />
                 </div>
                 <div class="profile-name">
-                    <h3>my company name</h3>
+                    <h3 class="client_business_info-business_name">my company name</h3>
                     <div style="color:#007bff;">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

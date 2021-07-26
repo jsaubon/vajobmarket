@@ -32278,13 +32278,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fortawesome_fontawesome_free_js_brands__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_free_js_brands__WEBPACK_IMPORTED_MODULE_4__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! ./index */ "./resources/js/index.js");
-
-__webpack_require__(/*! ./datatables */ "./resources/js/datatables.js");
-
-$(document).ready(function () {
-  $('#myDataTable').DataTable();
-});
 
 
 
@@ -32322,120 +32315,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
-
-/***/ }),
-
-/***/ "./resources/js/datatables.js":
-/*!************************************!*\
-  !*** ./resources/js/datatables.js ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-$(document).ready(function () {
-  $('#myDataTable').DataTable();
-  var $label = document.querySelector("#myDataTable_length");
-  var $filterz = document.querySelector('#myDataTable_filter');
-  var $hidepagination = document.querySelector('#myDataTable_paginate');
-  var $hideInfo = document.querySelector('#myDataTable_info');
-  $hideInfo.style.display = 'none';
-  $hidepagination.style.display = 'none';
-  $filterz.style.display = 'none';
-  $label.style.display = 'none';
-});
-$(document).ready(function () {
-  $('#myDataTable2').DataTable();
-  var $label = document.querySelector("#myDataTable2_length");
-  var $filterz = document.querySelector('#myDataTable2_filter');
-  var $hidepagination = document.querySelector('#myDataTable2_paginate');
-  var $hideInfo = document.querySelector('#myDataTable2_info');
-  $hideInfo.style.display = 'none';
-  $hidepagination.style.display = 'none';
-  $filterz.style.display = 'none';
-  $label.style.display = 'none';
-});
-$(document).ready(function () {
-  $('#myDataTable3').DataTable();
-  var $label = document.querySelector("#myDataTable3_length");
-  var $filterz = document.querySelector('#myDataTable3_filter');
-  var $hidepagination = document.querySelector('#myDataTable3_paginate');
-  var $hideInfo = document.querySelector('#myDataTable3_info');
-  $hideInfo.style.display = 'none';
-  $hidepagination.style.display = 'none';
-  $filterz.style.display = 'none';
-  $label.style.display = 'none';
-});
-$(document).ready(function () {
-  $('#jobtitletable').DataTable();
-  var $label = document.querySelector("#jobtitletable_length");
-  var $filterz = document.querySelector('#jobtitletable_filter');
-  var $hidepagination = document.querySelector('#jobtitletable_paginate');
-  var $hideInfo = document.querySelector('#jobtitletable_info');
-  $hideInfo.style.display = 'none';
-  $hidepagination.style.display = 'none';
-  $filterz.style.display = 'none';
-  $label.style.display = 'none';
-});
-$(document).ready(function () {
-  $('#jobtitletable2').DataTable();
-  var $label = document.querySelector("#jobtitletable2_length");
-  var $filterz = document.querySelector('#jobtitletable2_filter');
-  var $hidepagination = document.querySelector('#jobtitletable2_paginate');
-  var $hideInfo = document.querySelector('#jobtitletable2_info');
-  $hideInfo.style.display = 'none';
-  $hidepagination.style.display = 'none';
-  $filterz.style.display = 'none';
-  $label.style.display = 'none';
-});
-$(document).ready(function () {
-  $('#jobtitletable3').DataTable();
-  var $label = document.querySelector("#jobtitletable3_length");
-  var $filterz = document.querySelector('#jobtitletable3_filter');
-  var $hidepagination = document.querySelector('#jobtitletable3_paginate');
-  var $hideInfo = document.querySelector('#jobtitletable3_info');
-  $hideInfo.style.display = 'none';
-  $hidepagination.style.display = 'none';
-  $filterz.style.display = 'none';
-  $label.style.display = 'none';
-});
-$(document).ready(function () {
-  $('#jobtitletable4').DataTable();
-  var $label = document.querySelector("#jobtitletable4_length");
-  var $filterz = document.querySelector('#jobtitletable4_filter');
-  var $hidepagination = document.querySelector('#jobtitletable4_paginate');
-  var $hideInfo = document.querySelector('#jobtitletable4_info');
-  $hideInfo.style.display = 'none';
-  $hidepagination.style.display = 'none';
-  $filterz.style.display = 'none';
-  $label.style.display = 'none';
-});
-
-/***/ }),
-
-/***/ "./resources/js/index.js":
-/*!*******************************!*\
-  !*** ./resources/js/index.js ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var showbtnBo = document.querySelector(".user-btn-bo");
-var lilnavBo = document.querySelector(".small-nav-bo");
-showbtnBo.addEventListener("mouseover", function () {
-  lilnavBo.style.display = "block";
-});
-lilnavBo.addEventListener("mouseover", function () {
-  lilnavBo.style.display = "block";
-});
-lilnavBo.addEventListener("mouseout", function () {
-  lilnavBo.style.display = "none";
-});
-showbtnBo.addEventListener("mouseout", function () {
-  lilnavBo.style.display = "none";
-});
-$(document).ready(function () {
-  $("#myDataTable").DataTable();
-});
 
 /***/ }),
 
