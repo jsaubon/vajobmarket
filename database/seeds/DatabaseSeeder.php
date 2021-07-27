@@ -316,15 +316,17 @@ class DatabaseSeeder extends Seeder
 
         foreach ($clients as $key => $client) {
             $client_job_posts = $client->client_job_posts()->get();
-            $employees_count = rand(0,5);
+            $employees_count = rand(0,30);
             $employees = [];
-            $statuses = ['Hired','Terminated','Applied','Dismissed','End of Contract','Shortlisted'];
+            $statuses = ['Applicant','Shortlisted','Hired', 'Dismissed'];
+            $employment_statuses = ['Terminated','End of Contract','Employed'];
             for ($i=0; $i < $employees_count; $i++) { 
                 $employees[] = [
                     'client_id' => $client->id,
                     'client_job_post_id' => $client_job_posts[rand(0,count($client_job_posts) -1)]['id'],
                     'jobseeker_id' => $jobseeker_ids[rand(0, count($jobseeker_ids) -1)],
-                    'employment_status' => $statuses[rand(0,5)],
+                    'employment_status' => $employment_statuses[rand(0,2)],
+                    'status' => $statuses[rand(0,3)],
                     // 'status' => '',
                     'salary' => rand(4,15).'/hr',
                     'working_hours' => rand(20,40).'hrs./Week',
@@ -332,6 +334,7 @@ class DatabaseSeeder extends Seeder
                     'job_description' => $faker->sentence(50),
                     'responsibilities' => $faker->sentence(50),
                     'contract' => rand(1,4).'yr',
+                    'date_applied' => $faker->date,
                 ];
             }
 

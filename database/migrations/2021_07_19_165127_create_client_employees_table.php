@@ -30,6 +30,8 @@ class CreateClientEmployeesTable extends Migration
 
 
 
+            $table->date('date_applied')->nullable();
+            
             $table->date('initial_interview_date')->nullable();
             $table->longText('initial_interview_message')->nullable();
             $table->longText('initial_interview_remarks')->nullable();

@@ -53,32 +53,7 @@
 
                     <tbody>
 
-                        <tr>
-                            <td class="dash-table-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            <td class="text-center  dash-table-content">25</td>
-                            <td class="text-center  dash-table-content">123</td>
-                            <td class="text-center  dash-table-content">April 20, 2021</td>
-                            <td class="text-center  dash-table-content">May 20, 2021</td>
-                            <td class="text-center  dash-table-content d-flex justify-content-around">
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-edit"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="dash-table-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            <td class="text-center  dash-table-content">25</td>
-                            <td class="text-center  dash-table-content">123</td>
-                            <td class="text-center  dash-table-content">April 20, 2021</td>
-                            <td class="text-center  dash-table-content">May 20, 2021</td>
-                            <td class="text-center  dash-table-content d-flex justify-content-around">
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-edit"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </td>
-                        </tr>
-
+                      
                     </tbody>
 
                 </table>
@@ -100,7 +75,7 @@
                     <thead>
                         <tr>
                         <th class="text-center dash-table-title" scope="col">name</th>
-                        <th class="text-center dash-table-title" scope="col">profile</th>
+                        <th class="text-center dash-table-title" scope="col">status</th>
                         <th class="text-center dash-table-title" scope="col">rating</th>
                         <th class="text-center dash-table-title" scope="col">recomendation</th>
                         <th class="text-center dash-table-title" scope="col">Date applied</th>
@@ -110,33 +85,7 @@
 
                     <tbody>
 
-                        <tr>
-                            <td class="dash-table-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            <td class="text-center  dash-table-content">25</td>
-                            <td class="text-center  dash-table-content">123</td>
-                            <td class="text-center  dash-table-content">April 20, 2021</td>
-                            <td class="text-center  dash-table-content">May 20, 2021</td>
-                            <td class="text-center  dash-table-content d-flex justify-content-around">
-                                <i class="fas fa-comment-alt"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-clipboard-check"></i>
-                                <i class="fas fa-times-circle"></i>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="dash-table-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            <td class="text-center  dash-table-content">25</td>
-                            <td class="text-center  dash-table-content">123</td>
-                            <td class="text-center  dash-table-content">April 20, 2021</td>
-                            <td class="text-center  dash-table-content">May 20, 2021</td>
-                            <td class="text-center  dash-table-content d-flex justify-content-around">
-                                <i class="fas fa-comment-alt"></i>
-                                <i class="fas fa-eye"></i>
-                                <i class="fas fa-clipboard-check"></i>
-                                <i class="fas fa-times-circle"></i>
-                            </td>
-                        </tr>
+                       
 
                     </tbody>
 
@@ -159,34 +108,19 @@
                 <table class="row-border hover border-bottom" id="myDataTable3">
                     <thead >
                         <tr>
-                        <th class="text-center dash-table-title" scope="col">employee name</th>
-                        <th class="text-center dash-table-title" scope="col">hours</th>
-                        <th class="text-center dash-table-title" scope="col">adherance</th>
-                        <th class="text-center dash-table-title" scope="col">break</th>
-                        <th class="text-center dash-table-title" scope="col">date</th>
-                        <th class="text-center dash-table-title" scope="col">remarks</th>
+                            <th class="text-center dash-table-title" scope="col">employee name</th>
+                            <th class="text-center dash-table-title" scope="col">employment status</th>
+                            <th class="text-center dash-table-title" scope="col">salary</th>
+                            <th class="text-center dash-table-title" scope="col">working hours</th>
+                            <th class="text-center dash-table-title" scope="col">date applied</th>
+                            <th class="text-center dash-table-title" scope="col">date hired</th>
+                            <th class="text-center dash-table-title" scope="col">Actions</th>
                         </tr>
                     </thead>
 
                     <tbody>
 
-                        <tr>
-                            <td class="dash-table-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            <td class="text-center  dash-table-content">25</td>
-                            <td class="text-center  dash-table-content">123</td>
-                            <td class="text-center  dash-table-content">April 20, 2021</td>
-                            <td class="text-center  dash-table-content">May 20, 2021</td>
-                            <td class="text-center  dash-table-content" style="text-transform: uppercase;">undertime</td>
-                        </tr>
-
-                        <tr>
-                            <td class="dash-table-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            <td class="text-center  dash-table-content">25</td>
-                            <td class="text-center  dash-table-content">123</td>
-                            <td class="text-center  dash-table-content">April 20, 2021</td>
-                            <td class="text-center  dash-table-content">May 20, 2021</td>
-                            <td class="text-center  dash-table-content" style="text-transform: uppercase;">complete</td>
-                        </tr>
+                      
 
                     </tbody>
 
@@ -198,3 +132,155 @@
 
     </div>
 </div>
+
+<script>
+$(document).ready(function() {
+    getData('/api/Client/'+userdata.client.id, ({data:res}) => {
+        if(res.success) {
+            console.log('res',res);
+            $('#myDataTable').DataTable().destroy();
+            let client_job_posts = res.data.client_job_posts;
+            let applicants = [];
+            client_job_posts.map((job_post, key) => {
+
+                applicants = [...applicants, ...job_post.applicants];
+                $('#myDataTable tbody').append(
+                    '<tr>'+
+                        '<td class="dash-table-content">'+job_post.job_title+'</td>'+
+                        '<td class="text-center  dash-table-content">'+job_post.applicants.length+'</td>'+
+                        '<td class="text-center  dash-table-content">'+job_post.visits+'</td>'+
+                        '<td class="text-center  dash-table-content">'+job_post.start_date+'</td>'+
+                        '<td class="text-center  dash-table-content">'+job_post.start_date+'</td>'+
+                        '<td class="text-center  dash-table-content d-flex justify-content-around">'+
+                            '<i class="fas fa-eye"></i>'+
+                            '<i class="fas fa-edit"></i>'+
+                            '<i class="fas fa-trash-alt"></i>'+
+                        '</td>'+
+                    '</tr>'
+                );
+            });
+            
+            $('#myDataTable').DataTable().draw();
+            var $label = document.querySelector("#myDataTable_length");
+            if($label) {
+                var $filterz = document.querySelector('#myDataTable_filter')
+                var $hidepagination = document.querySelector('#myDataTable_paginate')
+                var $hideInfo = document.querySelector('#myDataTable_info')
+                $hideInfo.style.display='none'
+                $hidepagination.style.display='none'
+                $filterz.style.display='none'
+                $label.style.display ='none'
+            }
+
+            console.log('applicants',applicants);
+            $('#myDataTable2').DataTable().destroy();
+            applicants.map((applicant, key) => {
+                let name = applicant.jobseeker.user.firstname+ ' ' + applicant.jobseeker.user.lastname;
+                $('#myDataTable2 tbody').append(
+                        '<tr>'+
+                            '<td class="dash-table-content">'+name+'</td>'+
+                            '<td class="text-center  dash-table-content">'+applicant.status+'</td>'+
+                            '<td class="text-center  dash-table-content"></td>'+
+                            '<td class="text-center  dash-table-content"></td>'+
+                            '<td class="text-center  dash-table-content">'+applicant.date_applied+'</td>'+
+                            '<td class="text-center  dash-table-content d-flex justify-content-around">'+
+                                '<i class="fas fa-eye"></i>'+
+                                '<i class="fas fa-edit"></i>'+
+                                '<i class="fas fa-trash-alt"></i>'+
+                            '</td>'+
+                        '</tr>'
+                    );
+            });
+
+            $('#myDataTable2').DataTable().draw();
+            var $label = document.querySelector("#myDataTable2_length");
+            if($label) {
+                var $filterz = document.querySelector('#myDataTable2_filter')
+                var $hidepagination = document.querySelector('#myDataTable2_paginate')
+                var $hideInfo = document.querySelector('#myDataTable2_info')
+                $hideInfo.style.display='none'
+                $hidepagination.style.display='none'
+                $filterz.style.display='none'
+                $label.style.display ='none'
+            }
+
+            
+            $('#myDataTable3').DataTable().destroy();
+            let client_employees_hired = res.data.client_employees.filter(p => p.status == 'Hired');
+            client_employees_hired.map((client_employee, key) => {
+                console.log('client_employee',client_employee);
+                let name = client_employee.jobseeker.user.firstname+ ' ' + client_employee.jobseeker.user.lastname;
+                $('#myDataTable3 tbody').append(
+                        '<tr>'+
+                            '<td class="dash-table-content">'+name+'</td>'+
+                            '<td class="text-center  dash-table-content">'+client_employee.employment_status+'</td>'+
+                            '<td class="text-center  dash-table-content">'+client_employee.salary+'</td>'+
+                            '<td class="text-center  dash-table-content">'+client_employee.working_hours+'</td>'+
+                            '<td class="text-center  dash-table-content">'+client_employee.date_applied+'</td>'+
+                            '<td class="text-center  dash-table-content">'+client_employee.date_hired+'</td>'+
+                            '<td class="text-center  dash-table-content d-flex justify-content-around">'+
+                                '<i class="fas fa-eye"></i>'+
+                                '<i class="fas fa-edit"></i>'+
+                                '<i class="fas fa-trash-alt"></i>'+
+                            '</td>'+
+                        '</tr>'
+                    );
+            });
+
+            $('#myDataTable3').DataTable();
+            var $label = document.querySelector("#myDataTable3_length");
+            if($label) {
+                var $filterz = document.querySelector('#myDataTable3_filter')
+                var $hidepagination = document.querySelector('#myDataTable3_paginate')
+                var $hideInfo = document.querySelector('#myDataTable3_info')
+                $hideInfo.style.display='none'
+                $hidepagination.style.display='none'
+                $filterz.style.display='none'
+                $label.style.display ='none'
+            }
+
+
+            // let jobpost_data = res.data;
+            // let client = jobpost_data.client;
+            // let client_business_info = client.client_business_info;
+            // let client_job_post_required_skills = jobpost_data.client_job_post_required_skills;
+            // Object.keys(jobpost_data).map((field, key) => {
+            //     let element = $('.job_post-'+field);
+            //     if(element.length) {
+            //         element.html(jobpost_data[field]);
+            //         element.val(jobpost_data[field]);
+            //     }
+            // });
+            // Object.keys(client).map((field, key) => {
+            //     let element = $('.client-'+field);
+            //     if(element.length) {
+            //         element.html(client[field]);
+            //     }
+            // });
+            // Object.keys(client_business_info).map((field, key) => {
+            //     let element = $('.client_business_info-'+field);
+            //     if(element.length) {
+            //         element.html(client_business_info[field]);
+            //     }
+            // });
+
+
+            // client_job_post_required_skills.map((skills_required, key) => {
+            //     $('.job_post-skills_required').append(
+            //         '<div class="row pt-4">'+
+            //             '<div class="col-md-12 d-flex justify-content-between" >'+
+            //                     ''+skills_required.skill+''+
+            //                     '<div style="float: right">'+
+            //                     ''+skills_required.proficiency+''+
+            //                     '</div>'+
+            //             '</div>'+
+            //         '</div>'+
+            //         '<hr>'
+            //     );
+            // })
+        }
+    });
+    
+});
+</script>
+@endsection

@@ -83,8 +83,11 @@ class ClientController extends Controller
             'user',
             'client_billing_detail',
             'client_business_info',
-            'client_employees',
+            'client_employees.jobseeker.user',
+            'client_employees.employee_monitors.jobseeker.user',
             'client_job_posts.applicants',
+            'client_job_posts.applicants.jobseeker',
+            'client_job_posts.applicants.jobseeker.user',
         ])->find($id);
         
         if (!$data) {
