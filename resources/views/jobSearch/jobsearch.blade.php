@@ -22,58 +22,92 @@
             <br/>
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-link active text-center text-dark" style="width:50%;" type="job_posts" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                    <a class="nav-link active-bottom active border-top-0  border-left-0 border-right-0 text-center text-dark" style="width:50%;" type="job_posts" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
                         <b>Job Posts</b>
                     </a>
-                    <a class="nav-link text-center text-dark" style="width:50%;" type="candidates" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                    <a class="nav-link active-bottom border-top-0  border-left-0 border-right-0 text-center text-dark" style="width:50%;" type="candidates" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
                         <b>Candidates</b>
                     </a>
                 </div>
             </nav>
             <br/>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <p>Showing <span id="job_posts_showing_count">-</span> Job Posts out of <span id="job_posts_all_count">-</span></p>
+                {{-- jobpost --}}
+                <div class="tab-pane  fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="wrapper d-flex flex-wrap">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Showing <span id="job_posts_showing_count">-</span> Job Posts out of <span id="job_posts_all_count">-</span></p>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center" id="job_posts_list">
+
+                            <!-- @foreach($jobPosts as $post)
+                            <div class="col-sm-6">
+                                <a href="/BusinessProfileCompany">
+                                    <div class="card shadow p-4" style="border-radius: 20px;">
+                                        <p class="text-center">{{ $post['title'] }}</p>
+                                        <div class="d-flex justify-content-between">
+                                            @foreach($post['basicInfo'] as $basic)
+                                            <span><small>{{ $basic }}</small></span>
+                                            @endforeach
+                                        </div>
+                                        <hr/>
+                                        <p>{{ $post['body'] }}</p>
+                                        <button class="btn">{{ $post['btnTxt'] }}</button>
+                                    </div>
+                                </a>
+                            </div>
+                            @endforeach -->
+
+                        </div>
+                        <hr/>
 
 
-                    <div class="row" id="job_posts_list">
-
-
-
+                        <div class="row w-100 pt-4 mt-4">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination" id="job_posts_pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
 
-                    <hr/>
-                    <div class="d-flex justify-content-center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination" id="job_posts_pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li> -->
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <p>Showing <span id="job_seekers_showing_count">-</span> Candidates out of <span id="job_seekers_all_count">-</span></p>
-                    <div class="row mt-4" id="job_seekers_list">
 
-                    </div>
-                    <hr/>
-                    <div class="d-flex justify-content-center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination" id="job_seekers_pagination">
-                            </ul>
-                        </nav>
+                {{-- candidates --}}
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="wrapper d-flex flex-wrap">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Showing <span id="job_seekers_showing_count">-</span> Job Posts out of <span id="job_seekers_all_count">-</span></p>
+                            </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-center" id="job_seekers_list">
+
+                        </div>
+                        <hr/>
+                        <div class="row d-flex justify-content-center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination" id="job_seekers_pagination">
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,9 +184,9 @@
 
             res.data.data.map((job_post) => {
                 $('#job_posts_list').append('\
-                    <div class="col-md-12 my-2">\
+                    <div class="col-sm-3 m-2 p-0">\
                         <a href="/BusinessProfileCompany?job_id='+job_post.id+'">\
-                            <div class="card shadow p-4" style="border-radius: 20px; width:60%;">\
+                            <div class="card h-100 shadow  p-4" style="border-radius: 20px;">\
                                 <p class="text-center">'+job_post.job_title+'</p>\
                                 <div class="d-flex justify-content-between">\
                                     <span><small>'+job_post.job_type+'</small></span>\
@@ -215,8 +249,8 @@
                 let name = job_seeker.user.firstname+ ' ' + job_seeker.user.lastname;
                 let photo = job_seeker.job_seeker_photo ? job_seeker.job_seeker_photo : 'https://i.ibb.co/L1xT86W/profileworkers.jpg';
                 $('#job_seekers_list').append('\
-                    <div class="col-sm-6">\
-                        <div class="card shadow p-4" style="border-radius: 20px;">\
+                    <div class="col-sm-3 m-2 p-0">\
+                        <div class="card h-100 shadow p-4" style="border-radius: 20px;">\
                             <div class="row">\
                                 <div class="col-sm-3">        \
                                     <img src="'+photo+'" style="height:80px; width:80px; border-radius: 40px; object-fit:cover;" />\
