@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100,200,400,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);@charset "UTF-8";
 
-200;400;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);@charset "UTF-8";
 body h1,
 body .h1,
 body h2,
@@ -21,6 +20,10 @@ body p,
 body a,
 body button {
   font-family: "Roboto", san-serif;
+}
+
+ul li {
+  font-family: "Oswald", sans-serif;
 }
 
 .frontSection-2,
@@ -510,6 +513,7 @@ body {
 
 .user-dashboard {
   background-color: #ECF6FF;
+  height: 100vh;
 }
 
 .fullwidth {
@@ -545,23 +549,25 @@ body {
 .small-nav {
   display: none;
   position: absolute;
-  right: 120px;
-  top: 40px;
+  right: 176px;
+  top: 44px;
   background-color: #ECF6FF;
   border-radius: 5px;
-  width: 120px;
+  width: 140px;
+  cursor: pointer;
 }
 
 .small-nav ul {
   list-style: none;
   padding: 10px;
-  font-size: 10px !important;
+  font-size: 12px !important;
   margin: 0;
   text-transform: uppercase;
 }
 
 .small-nav-list {
   background-color: #ECF6FF;
+  cursor: pointer;
 }
 
 .small-nav-list:hover {
@@ -601,9 +607,9 @@ body {
 }
 
 .profile-banner-container {
-  background: url("/images/HAND PICKED Updated@2x.jpg?7e201d21b378d835a9ae4321cbf27860") no-repeat center;
+  background: url("/images/Mask Group 11@2x.png?5cb73f871fa355bb37001e5ce2c3048c") no-repeat center;
   background-size: cover;
-  height: 300px;
+  height: 450px;
   width: 100% !important;
 }
 
@@ -939,7 +945,7 @@ input:-webkit-autofill:active {
 
 .dash-text {
   text-transform: capitalize;
-  font-size: 11px;
+  font-size: 0.75em;
   color: #747677;
 }
 
@@ -960,7 +966,7 @@ input:-webkit-autofill:active {
   padding: 3px 8px;
   background-color: #f1f9ff;
   color: #007bff;
-  font-size: 10px;
+  font-size: 0.8em;
 }
 
 .box-outline-none {
@@ -985,6 +991,10 @@ input:-webkit-autofill:active {
 .placeholder-style::placeholder {
   font-size: 10px;
   color: #cccccc !important;
+}
+
+#job_posts_list {
+  display: flex;
 }
 
 /*!

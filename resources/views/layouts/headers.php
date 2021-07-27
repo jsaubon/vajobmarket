@@ -39,8 +39,8 @@ $obj = [
                 </div>
             </div>
             <div class="header-items-right not_logged_in_nav">
-                <a href="/jobs" class="p-1 ml-3 postJobBtn noDeco"><small><b>JOB SEARCH</b></small></a>
-                <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco"><small><b>POST A JOB</b></small></a>
+                <a href="/jobs" class="p-1 ml-3 postJobBtn noDeco btn-outline-light"><small><b>JOB SEARCH</b></small></a>
+                <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco btn-outline-light"><small><b>POST A JOB</b></small></a>
                 <button type="button " class="btn text-light" data-toggle="modal" data-target="#modalLogin">
                 <small class="btn-signin"><b>SIGN-IN</b></small>
                 </button>
@@ -106,9 +106,21 @@ $obj = [
                                     Sign-up using your social media account
                                 </p>
                                 <div class="d-flex justify-content-center mb-5">
-                                    <span class="p-1">Facebook</span>
-                                    <span class="p-1">Twitter</span>
-                                    <span class="p-1">Google</span>
+                                    <a href="#" class="text-decoration-none " >
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                        <i class="fab fa-facebook-f my-auto" ></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none mx-2">
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                            <i class="fas fa-user-clock my-auto"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                            <i class="fab fa-google-plus-g my-auto"></i>
+                                        </div>
+                                    </a>
                                 </div>
                                 <p class="text-center">Dont have an account? <a href="/signup">SIGN UP</a></p>
                             </div>
@@ -140,9 +152,21 @@ $obj = [
                                     Sign-up using your social media account
                                 </p>
                                 <div class="d-flex justify-content-center mb-5">
-                                    <span class="p-1">Facebook</span>
-                                    <span class="p-1">Twitter</span>
-                                    <span class="p-1">Google</span>
+                                    <a href="#" class="text-decoration-none " >
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                        <i class="fab fa-facebook-f my-auto" ></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none mx-2">
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                            <i class="fas fa-user-clock my-auto"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                            <i class="fab fa-google-plus-g my-auto"></i>
+                                        </div>
+                                    </a>
                                 </div>
                                 <p class="text-center">Don't have an account? <a href="/signup">SIGN UP</a></p>
                             </div>
@@ -154,7 +178,7 @@ $obj = [
     </div>
   </div>
 </div>
- 
+
 
 <script>
 
@@ -211,7 +235,7 @@ $obj = [
         });
     });
 
-    
 
-    
+
+
 </script>

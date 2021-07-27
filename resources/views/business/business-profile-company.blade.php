@@ -14,17 +14,21 @@
                                     <div class="d-flex justify-content-center w-100" >
                                         <div class="wrapper  py-0" style="background-color:#ecf6ff !important">
                                             <div class="job_post-job_type border border-primary rounded p-1 text-center" style="width: 80px; font-size:12px; color:#007bff;">
-                                                -
+                                                fulltime
                                             </div>
                                         </div>
                                         <div  class="wrapper p-0 my-auto" style=" font-size:12px; background-color:#ecf6ff !important">
                                             <i class="fas fa-money-bill-wave-alt"></i>
-                                            <span class="job_post-salary">-</span>
+                                            <span class="job_post-salary">
+                                                salary negotiable
+                                            </span>
                                         </div>
                                         <div  class="wrapper py-0 my-auto" style="font-size:12px; background-color:#ecf6ff !important">
                                             <i class="fas fa-clock"></i>
-                                            
-                                            <span class="job_post-start_date">-</span>
+
+                                            <span class="job_post-start_date">
+                                                posted:
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -741,7 +745,7 @@ $(document).ready(function() {
             }
         });
     }
-    
+
 });
 </script>
 @endsection

@@ -9,7 +9,7 @@
         <div class="card w-100 shadow ">
             <div class="wrapper rounded-lg" style="padding: 50px 40px 80px 40px;" >
                 <div class="row pt-2">
-                    <div class="col-md-12" style="text-transform: uppercase ; color:#767676; font-size:1em;">
+                    <div class="col-md-12" style="text-transform: uppercase ; color:#767676; font-size:1.3em;">
                         Welcome back username!
                     </div>
                 </div>
@@ -28,10 +28,10 @@
                 </div>
                 <!---alerts end--->
 
-                <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                <div class="row pt-2" style="text-transform:uppercase; font-size: 1rem;  margin-top:40px;">
                     <div class="col-md-6 title-personal-info" style="margin: 0px;">current employment</div>
-                    <div class="col-md-6 text-right">
-                        <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                    <div class="col-md-6 text-right title-personal-info">
+                        <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
                         view
                         <i class="fas fa-angle-right"></i>
                         </a>
@@ -39,8 +39,8 @@
                 </div>
                 <hr class="lsep">
 
-                <div class="row px-2 text-center">
-                    <div class="col-md-2 dash-text">
+                <div class="row px-2 text-center ">
+                    <div class="col-md-2 dash-text ">
                         employment status : fulltime
                     </div>
                     <div class="col-md-2 dash-text">
@@ -58,8 +58,8 @@
                 </div>
                 <hr>
 
-                <div class="row text-left">
-                    <div class="col-md-5 dash-text">
+                <div class="row text-left ml-1 ">
+                    <div class="col-md-5 dash-text pl-0">
                         Job Description
                     </div>
                     <div class="col-md-1 dash-text">
@@ -126,10 +126,10 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                        <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                             <div class="col-md-6 title-personal-info" style="margin: 0px;">jobs you applied for</div>
-                            <div class="col-md-6 text-right">
-                                <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                            <div class="col-md-6 text-right title-personal-info">
+                                <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
                                 see more
                                 <i class="fas fa-angle-right"></i>
                                 </a>
@@ -138,10 +138,10 @@
                         <hr class="lsep">
                     </div>
                     <div class="col-md-6">
-                        <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                        <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                             <div class="col-md-6 title-personal-info" style="margin: 0px;">on going recruitement</div>
-                            <div class="col-md-6 text-right">
-                                <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                            <div class="col-md-6 text-right title-personal-info">
+                                <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
                                 see more
                                 <i class="fas fa-angle-right"></i>
                                 </a>
@@ -158,8 +158,8 @@
                         <div class="accordion" id="accordionExample">
                             <div class="card border-0">
                               <div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne">
-                                <h2 class="mb-0">
-                                  <button class="btn w-100 text-left" type="button" data-toggle="collapse" data-target="#job-title1" aria-expanded="true" aria-controls="collapseOne">
+                                <h2 class="mb-0 ">
+                                  <button class="btn w-100 text-left" style="font-family: 'Oswald', sans-serif;" type="button" data-toggle="collapse" data-target="#job-title1" aria-expanded="true" aria-controls="collapseOne" >
                                     JOB TITLE: Lorem ipsum dolor sit amet, consectetur(full time)
                                   </button>
                                 </h2>
@@ -206,7 +206,7 @@
                             <div class="card border-0">
                                 <div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne">
                                     <h2 class="mb-0">
-                                      <button class="btn w-100 text-left" type="button" data-toggle="collapse" data-target="#job-title2" aria-expanded="true" aria-controls="collapseOne">
+                                      <button class="btn w-100 text-left" style="font-family: 'Oswald', sans-serif;" type="button" data-toggle="collapse" data-target="#job-title2" aria-expanded="true" aria-controls="collapseOne">
                                         JOB TITLE: Lorem ipsum dolor sit amet, consectetur(part time)
                                       </button>
                                     </h2>
@@ -254,7 +254,7 @@
                             <div class="card border-0">
                               <div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne">
                                 <h2 class="mb-0">
-                                  <button class="btn w-100 text-left" type="button" data-toggle="collapse" data-target="#job-title3" aria-expanded="true" aria-controls="collapseOne">
+                                  <button class="btn w-100 text-left" style="font-family: 'Oswald', sans-serif;" type="button" data-toggle="collapse" data-target="#job-title3" aria-expanded="true" aria-controls="collapseOne">
                                     JOB TITLE: Lorem ipsum dolor sit amet, consectetur(full time)
                                   </button>
                                 </h2>
@@ -301,7 +301,7 @@
                             <div class="card border-0">
                                 <div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne">
                                     <h2 class="mb-0">
-                                      <button class="btn w-100 text-left" type="button" data-toggle="collapse" data-target="#job-title4" aria-expanded="true" aria-controls="collapseOne">
+                                      <button class="btn w-100 text-left" style="font-family: 'Oswald', sans-serif;" type="button" data-toggle="collapse" data-target="#job-title4" aria-expanded="true" aria-controls="collapseOne">
                                         JOB TITLE: Lorem ipsum dolor sit amet, consectetur(part time)
                                       </button>
                                     </h2>
@@ -385,9 +385,9 @@
                     <!----cards ---->
                     <div class="row pt-4">
                         <div class="col-md-4">
-                            <div class="card  shadow" style="border-radius: 10px;" >
+                            <div class="card  shadow" style="border-radius: 10px; font-family: 'Oswald', sans-serif;" >
                                 <div class="card-body">
-                                  <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
+                                  <h5 class="card-title" style="font-size:0.95em;"> Excepteur sint occaecat cupidatat non proident</h5>
                                   <h6 class="card-subtitle mb-2 text-muted">
                                       <div class="row" style="text-transform: capitalize;">
                                           <div class="col-md-2 pr-0" style="font-size:9px;">
@@ -408,7 +408,7 @@
                                       </div>
                                   </h6>
                                   <hr class="lsep">
-                                  <p class="card-text" style="font-size:10px;">
+                                  <p class="card-text" style="font-size:0.7em; font-family: 'Oswald', sans-serif;">
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                     irure dolor in reprehenderit in voluptate velit esse cillum
@@ -425,16 +425,16 @@
                                   </p>
                                   <div class="row pb-4">
                                       <div class="col-md-12 text-center">
-                                        <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                        <a href="#" style="text-transform: uppercase; font-size:8px; font-family: 'Oswald', sans-serif;" class="card-link btn btn-outline-secondary">read more</a>
                                       </div>
                                   </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card  shadow" style="border-radius: 10px;" >
+                            <div class="card  shadow" style="border-radius: 10px; font-family: 'Oswald', sans-serif;" >
                                 <div class="card-body">
-                                  <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
+                                  <h5 class="card-title" style="font-size:0.95em;"> Excepteur sint occaecat cupidatat non proident</h5>
                                   <h6 class="card-subtitle mb-2 text-muted">
                                       <div class="row" style="text-transform: capitalize;">
                                           <div class="col-md-2 pr-0" style="font-size:9px;">
@@ -455,7 +455,7 @@
                                       </div>
                                   </h6>
                                   <hr class="lsep">
-                                  <p class="card-text" style="font-size:10px;">
+                                  <p class="card-text" style="font-size:0.7em; font-family: 'Oswald', sans-serif;">
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                     irure dolor in reprehenderit in voluptate velit esse cillum
@@ -472,16 +472,16 @@
                                   </p>
                                   <div class="row pb-4">
                                       <div class="col-md-12 text-center">
-                                        <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                        <a href="#" style="text-transform: uppercase; font-size:8px; font-family: 'Oswald', sans-serif;" class="card-link btn btn-outline-secondary">read more</a>
                                       </div>
                                   </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card  shadow" style="border-radius: 10px;" >
+                            <div class="card  shadow" style="border-radius: 10px; font-family: 'Oswald', sans-serif;" >
                                 <div class="card-body">
-                                  <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
+                                  <h5 class="card-title" style="font-size:0.95em;"> Excepteur sint occaecat cupidatat non proident</h5>
                                   <h6 class="card-subtitle mb-2 text-muted">
                                       <div class="row" style="text-transform: capitalize;">
                                           <div class="col-md-2 pr-0" style="font-size:9px;">
@@ -502,7 +502,7 @@
                                       </div>
                                   </h6>
                                   <hr class="lsep">
-                                  <p class="card-text" style="font-size:10px;">
+                                  <p class="card-text" style="font-size:0.7em; font-family: 'Oswald', sans-serif;">
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                     irure dolor in reprehenderit in voluptate velit esse cillum
@@ -519,7 +519,7 @@
                                   </p>
                                   <div class="row pb-4">
                                       <div class="col-md-12 text-center">
-                                        <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                        <a href="#" style="text-transform: uppercase; font-size:8px; font-family: 'Oswald', sans-serif;" class="card-link btn btn-outline-secondary">read more</a>
                                       </div>
                                   </div>
                                 </div>

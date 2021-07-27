@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="user-dashboard">
+<div class="user-dashboard h-auto">
 
     <div class="container fullwidth">
 
@@ -40,7 +40,7 @@
 <script>
 if(!token) {
     window.location.href = '/';
-} 
+}
 // $(document).ready(function() {
     getData('/api/Client/'+userdata.client.id, ({data:res}) => {
         if(res.success) {

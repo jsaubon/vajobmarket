@@ -52,7 +52,7 @@
             </li>
         </a>
         <hr class=" m-0">
-        <a href="/BusinessProfileCompany" class="small-nav-link">
+        <a href="/BusinessProfilePersonal" class="small-nav-link">
             <li class="small-nav-list">
                 settings
             </li>
