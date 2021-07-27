@@ -24,3 +24,20 @@ body {
         font-family: 'Oswald', sans-serif;
      }
  }
+
+
+ //Buttons
+
+.btn-fom {
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    color: #007bff;
+    background-color: transparent;
+    margin: 10px 0px;
+}
+
+
+.btn-fom:hover {
+    background-color: #007bff;
+    color: #fff;
+}

@@ -29,36 +29,6 @@
 
 <section class="frontSection-2">
 
-    <!-- <div class="container-fluid h-50">
-        <div class="row text-center">
-            <div class="col col-md-6  ">
-                {{-- <div class="text-center" style="width:500px;"> --}}
-                    <div class="container py-3 h-100 d-flex flex-column justify-content-end">
-                        <h4 class="text-light w-75 mx-auto ">{{ $subs['title'] }}</h4>
-                        <hr class="bg-light " />
-                        <p class=" w-50 mx-auto text-light">{{ $subs['body'] }}</p>
-                        <button class="btn w-50 mx-auto text-light hiringProcessBtn">{{ $subs['btnTxt'] }}</button>
-                    </div>
-                {{-- </div> --}}
-            </div>
-            <div class=" col col-md-6 ">
-                <div class="card p-5 m-4 shadow" style="border-radius: 20px;">
-                    <b class="text-center">{{ $subs['cardTitle'] }}</b>
-                    <h4 class="text-center">{{ $subs['cardSubtitle'] }}</h4>
-                    <p class="text-center">{{ $subs['cardBody'] }}</p>
-                    @foreach($subs['checkList'] as $list)
-                        <span>
-                            <input class="mr-2" type="checkbox" checked />
-                            <label>{{ $list }}</label>
-                        </span>
-                    @endforeach
-
-                    <button class="btn learnBtn">{{ $subs['learnBtn'] }}</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 text-center leftColumn">
@@ -74,7 +44,7 @@
             </div>
             
             <div class="col-md-6 rightColumn">
-                <div class="card text-center">
+                <div class="card">
                     <h2>
                         SUBSCRIBE TO OUR PREMIUM PACKAGE AND HIRE YOUR OWN VIRTUAL STAFF
                     </h2>
@@ -89,26 +59,32 @@
                     </span>
                     <span>
                         <input class="mr-2" type="checkbox" checked />
-                        <label>UNLIMITED JOB POSTING</label>
+                        <label>Job Displayed for 30 Days</label>
                     </span>
                     <span>
                         <input class="mr-2" type="checkbox" checked />
-                        <label>UNLIMITED JOB POSTING</label>
+                        <label>Weekly Featured Ad Jobs</label>
                     </span>
                     <span>
                         <input class="mr-2" type="checkbox" checked />
-                        <label>UNLIMITED JOB POSTING</label>
+                        <label>Email and Chat Support 24/7</label>
                     </span>
                     <span>
                         <input class="mr-2" type="checkbox" checked />
-                        <label>UNLIMITED JOB POSTING</label>
+                        <label>Unlimited Download of Candidate Resume PDF</label>
                     </span>
                     <span>
                         <input class="mr-2" type="checkbox" checked />
-                        <label>UNLIMITED JOB POSTING</label>
+                        <label>Quick VA Skilled Matching</label>
+                    </span>
+                    <span>
+                        <input class="mr-2" type="checkbox" checked />
+                        <label>Access to Exckysuve Facebook Community</label>
                     </span>
 
                     <button class="btn btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
+
+       
 
                 </div>
             </div>
@@ -119,55 +95,78 @@
 </section>
 
 <section class="frontSection-3">
-    <!-- <div class="container h-100 d-flex flex-column justify-content-center">
-        <div class=" text-center">
-            <h1 class="content">{{ $media['title'] }}</h1>
-            <button class="playIcon"></button><br />
-            <button class="btn findOutBtn">{{ $media['btnTitle'] }}</button>
-        </div>
-    </div> -->
-    
+
     <div class="container-fluid text-center">
-        <h1>Upskill your Virtual Assistants to their full Potential</h1>
-        <button class="playIcon"></button> <br>
-        <button class="btn btn-foh">WATCH THE VIDEO AND FIND OUT HOW</button>
+        <div class="inner">
+            <h2>Upskill your Virtual Assistants to their full Potential</h2>
+            <button class="playIcon"></button> <br>
+            <button class="btn-foh">WATCH THE VIDEO AND FIND OUT HOW</button>
+        </div>
     </div>
 
 </section>
 
 <section class="frontSection-4">
 
-    <!-- <div class="container h-100">
-        <br /><br />
-        <h2 class="text-center">{{ $careers['title'] }}</h2>
-        <center>
-            <span class="btn findOutMore mt-3"><small>{{ $careers['btnTitle'] }}</small></span>
-        </center>
-        <br/>
-        <div class="container mt-4">
-               <div class="row d-flex ">
-            @foreach($careers['careers'] as $row)
-            <div class="col-md-2 career-margin">
-                <div class="card shadow h-100 py-2 mx-4 carrer-box" style="width:180px;">
-                    <div class="my-4 img-career-container{{ $row['img'] }}"></div>
-                    <h5 class="pb-4 text-center">{{ $row['name'] }}</h5>
-                </div>
-            </div>
-            @endforeach
-        </div>
-        </div>
-    </div> -->
-
-    <div class="container-fluid">
+    <div class="text-center container-fluid">
         <h2>
-            Specialized Careers
+            SPECIALIZED CAREERS
         </h2>
-        <button class="btn-fom">FIND OUT MORE</button>
+
+            <button class="btn-fom">FIND OUT MORE</button>
 
         <div class="row">
             <div class="col-md-2">
                 <div class="card shadow">
-                    <img src="{{url('../../public/assets/images/frontAssets/social-media@2x.png')}}" alt="" class="img-fluid">
+                    <img src="{{URL::to('/assets/images/frontAssets/social-media@2x.png')}}" alt="" class="img-fluid">
+                    <h4>
+                        Social Media Manager
+                    </h4>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card shadow">
+                    <img src="{{URL::to('/assets/images/frontAssets/content@2x.png')}}" alt="" class="img-fluid">
+                    <h4>
+                        Social Media Manager
+                    </h4>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card shadow">
+                    <img src="{{URL::to('/assets/images/frontAssets/credit-card@2x.png')}}" alt="" class="img-fluid">
+                    <h4>
+                        Social Media Manager
+                    </h4>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card shadow">
+                    <img src="{{URL::to('/assets/images/frontAssets/digital-assistant@2x.png')}}" alt="" class="img-fluid">
+                    <h4>
+                        Social Media Manager
+                    </h4>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card shadow">
+                    <img src="{{URL::to('/assets/images/frontAssets/30-appointment@2x.png')}}" alt="" class="img-fluid">
+                    <h4>
+                        Social Media Manager
+                    </h4>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card shadow">
+                    <img src="{{URL::to('/assets/images/frontAssets/media-monitor-screen-Digital Marketing@2x.png')}}" alt="" class="img-fluid">
+                    <h4>
+                        Social Media Manager
+                    </h4>
                 </div>
             </div>
         </div>
@@ -177,38 +176,22 @@
 </section>
 
 <section class="frontSection-5">
-    <!-- <div class="container">
-        <br /><br />
-        <center>
-            <h2>{{ $teams['title'] }}</h2>
-            <h5 class="text-center teamsBody">{{ $teams['body'] }}</h5>
-            <span class="btn findOutMoreBtn"><small> {{ $teams['btnTxt'] }} </small></span>
-        </center>
-        <br/>
-        <div class="d-flex justify-content-between">
-            @foreach($teams['workers'] as $row)
-            <div>
-                <img src="{{ $row['img'] }}" />
-                <p class="text-center"><b>{{ $row['name'] }}</b></p>
-                <p class="text-center">{{ $row['ratings'] }}</p>
-            </div>
-            @endforeach
-        </div>
-    </div> -->
 
     <div class="container-fluid">
         <h2>
-            Our Top Remote Workers
+            OUR TOP REMOTE WORKERS
         </h2>
         <p>
             Be with only the best. Meet our top performing Virtual Assistants, see how they love working remotely and how they will help you level up your business!
         </p>
 
+        <div class="col text-center">
         <button class="btn-fom">FIND OUT MORE</button>
+        </div>
 
         <div class="row">
             <div class="col-md-3">
-                <img src="" alt="" class="img-fluid">
+                <img src="{{URL::to('/assets/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
                 <h4>
                     Jane Doe
                 </h4>
@@ -217,6 +200,40 @@
                 </p>
 
             </div>
+
+            <div class="col-md-3">
+                <img src="{{URL::to('/assets/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <h4>
+                    Jane Doe
+                </h4>
+                <p>
+                    Credit Repair Specialist
+                </p>
+
+            </div>
+
+            <div class="col-md-3">
+                <img src="{{URL::to('/assets/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <h4>
+                    Jane Doe
+                </h4>
+                <p>
+                    Credit Repair Specialist
+                </p>
+
+            </div>
+
+            <div class="col-md-3">
+                <img src="{{URL::to('/assets/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <h4>
+                    Jane Doe
+                </h4>
+                <p>
+                    Credit Repair Specialist
+                </p>
+
+            </div>
+
         </div>
 
     </div>
