@@ -2,7 +2,7 @@
 
 @section('content')
 <link href="{{URL::asset('assets/css/jobSearch.css')}}" rel="stylesheet">
-<section class="jobsSection mx-4">
+<section class="jobsSection mx-4" style="padding-top: 100px">
     <div class="container-fluid ">
         <div class="wrapper w-100">
             <br/> <br/> <br/> <br/>
@@ -22,10 +22,10 @@
             <br/>
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-link active-bottom active border-top-0  border-left-0 border-right-0 text-center text-dark" style="width:50%;" type="job_posts" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                    <a class="nav-link active-bottom active border-top-0  border-left-0 border-right-0 text-center text-dark" style="width:50%; border-width:4px" type="job_posts" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
                         <b>Job Posts</b>
                     </a>
-                    <a class="nav-link active-bottom border-top-0  border-left-0 border-right-0 text-center text-dark" style="width:50%;" type="candidates" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                    <a class="nav-link active-bottom border-top-0  border-left-0 border-right-0 text-center text-dark" style="width:50%; border-width:4px" type="candidates" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
                         <b>Candidates</b>
                     </a>
                 </div>

@@ -47,10 +47,15 @@
 
                             <div class="row ">
                                 <div class="col-md-12 text-center">
-                                    <div class="w-50 mx-auto">
-                                        <a href="#" style="text-transform: uppercase; font-size:10px " class=" w-100 card-link btn btn-primary py-2">
+                                    <div class="mx-auto" style="width:320px;">
+                                        <button type="button" style="text-transform: uppercase; font-size:10px " class=" w-100 card-link btn btn-primary py-2" data-toggle="modal" data-target="#job-application-modal">
                                             apply for this job
-                                        </a>
+                                        </button>
+
+
+
+
+                                        @include('modals.job-application')
                                     </div>
                                 </div>
                             </div>
