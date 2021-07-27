@@ -33,6 +33,7 @@
                     <div class="col-md-6 text-right">
                         <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:10px;">
                         see more
+
                         <i class="fas fa-angle-right"></i>
                         </a>
                     </div>
@@ -132,8 +133,14 @@
 
     </div>
 </div>
+<script>
+if(!token) {
+    window.location.href = '/';
+}  
+</script>
 
 <script>
+    
 $(document).ready(function() {
     getData('/api/Client/'+userdata.client.id, ({data:res}) => {
         if(res.success) {
@@ -150,7 +157,7 @@ $(document).ready(function() {
                         '<td class="text-center  dash-table-content">'+job_post.applicants.length+'</td>'+
                         '<td class="text-center  dash-table-content">'+job_post.visits+'</td>'+
                         '<td class="text-center  dash-table-content">'+job_post.start_date+'</td>'+
-                        '<td class="text-center  dash-table-content">'+job_post.start_date+'</td>'+
+                        '<td class="text-center  dash-table-content">'+job_post.end_date+'</td>'+
                         '<td class="text-center  dash-table-content d-flex justify-content-around">'+
                             '<i class="fas fa-eye"></i>'+
                             '<i class="fas fa-edit"></i>'+
