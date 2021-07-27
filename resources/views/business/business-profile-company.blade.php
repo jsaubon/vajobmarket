@@ -697,7 +697,7 @@ $(document).ready(function() {
     const urlParams = new URLSearchParams(queryString);
     let job_id = urlParams.get('job_id');
     if(job_id) {
-        getData('/api/ClientJobPost/'+job_id, ({data:res}) => {
+        getData('/api/PublicClientJobPost/'+job_id, ({data:res}) => {
             if(res.success) {
                 console.log(res);
                 let jobpost_data = res.data;
