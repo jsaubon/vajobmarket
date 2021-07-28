@@ -2,24 +2,13 @@
 
 @section('content')
 
-<section class="aboutSection-2">
-    <div class="container">
-        <!-- <div class="card shadow p-4 cardSize text-start">
-            <h4><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat!</b></h4>
-            <br/>
-            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ab quasi maiores dolorem sapiente saepe earum, cupiditate veniam rerum repellendus dolore quo facere nobis, repudiandae error asperiores cum vitae natus quia nostrum id voluptate voluptatum. Tempore consectetur sapiente molestias adipisci. Voluptatibus quos soluta corporis ipsam exercitationem iusto repellat repudiandae reprehenderit?</small>
-            <br/>
-            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, possimus fuga ex iusto aliquam esse ab iure officia harum similique rerum voluptatibus assumenda corporis voluptates provident placeat, tenetur atque enim illum, expedita praesentium. Possimus distinctio, facere ipsa, porro eaque labore consectetur ullam nesciunt, debitis laborum voluptatum voluptas animi beatae corporis!</small>
-            <br/>
-            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consequatur repudiandae voluptatum labore obcaecati fugiat. Eaque earum, voluptatum perspiciatis rem ipsum iure neque error, corporis dolorem corrupti consequuntur ipsam porro explicabo magnam repudiandae adipisci consectetur. Nesciunt tempore voluptatem illum tempora fugit, atque deserunt itaque enim, facere reiciendis officiis. Ex, saepe?</small>
-            <div class="d-flex justify-content-end">
-            <img src="nothing here" alt="about us" style="border: 1px solid #000"/>
-            </div>
-        </div> -->
+<section class="aboutSection-1">
+    <div class="container-fluid text-center">
+        <button class="playIcon"></button>
     </div>
 </section>
-<section class="about2section-3">
-    <div class="container">
+<section class="about2section-2">
+    <div class="container-fluid">
         <div class="row mt-5 lowtext">
             <div class="col-sm-6">
                 <h2 class="text-right"><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, alias!</b></h2>
@@ -49,8 +38,8 @@
     </div>
 </section>
 
-<section class="aboutSection-4 mt-5 mb-5">
-    <div class="container">
+<section class="aboutSection-3 mt-5 mb-5">
+    <div class="container-fluid">
         <div class="text-center">
             <h1><b>OUR SERVICES</b></h1>
             <div class="d-flex justify-content-center">
@@ -71,8 +60,8 @@
     </div>
 </section>
 
-<section class="aboutSection-5">
-    <div class="container">
+<section class="aboutSection-4">
+    <div class="container-fluid">
         <br/>
         <br/>
         <br/>
@@ -95,8 +84,8 @@
     </div>
 </section>
 
-<section class="aboutSection-6">
-    <div class="container">
+<section class="aboutSection-5">
+    <div class="container-fluid">
         <br/>
         <br/>
         <br/>

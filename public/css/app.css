@@ -4,7 +4,12 @@
 .frontSection-3,
 .frontSection-4,
 .frontSection-5,
-.frontSection-6 {
+.frontSection-6,
+.aboutSection-1,
+.aboutSection-2,
+.aboutSection-3,
+.aboutSection-4,
+.aboutSection-5 {
   padding: 100px 200px;
 }
 
@@ -186,18 +191,6 @@
   color: #000;
 }
 
-.frontSection-3 .inner .playIcon {
-  background-image: url(/images/icon-playwhite.png?9dc58ec9f32f423651d32bac9968712c);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: transparent;
-  border: none;
-  height: 100px;
-  width: 100px;
-  margin: 20px auto;
-}
-
 .frontSection-4 {
   background-color: white;
 }
@@ -348,6 +341,18 @@ body button {
 .btn-fom:hover {
   background-color: #007bff;
   color: #fff;
+}
+
+.playIcon {
+  background-image: url(/images/icon-playwhite.png?9dc58ec9f32f423651d32bac9968712c);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
 }
 
 .header {

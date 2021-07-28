@@ -40,6 +40,18 @@ body {
     color: #fff;
 }
 
+.playIcon {
+    background-image: url('../../public/assets/images/frontAssets/icon-playwhite.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border:none;
+    height: 100px;
+    width: 100px;
+    margin:20px auto;
+}
+
 
 //Header Start
 .header {
