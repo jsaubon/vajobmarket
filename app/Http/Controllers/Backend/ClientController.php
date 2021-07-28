@@ -62,7 +62,7 @@ class ClientController extends Controller
             'user_id' => 'required'
         ]);
         
-        $data = Client::create($request->all())->save();
+        $data = Client::create($request->all());
         $data = Client::where('user_id',$request->user_id)->first();
        
         return response()->json([
@@ -83,6 +83,7 @@ class ClientController extends Controller
             'user',
             'client_billing_detail',
             'client_business_info',
+            'client_employees.client_job_post',
             'client_employees.jobseeker.user',
             'client_employees.employee_monitors.jobseeker.user',
             'client_job_posts.applicants',

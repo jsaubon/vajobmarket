@@ -60,7 +60,7 @@ class JobSeekerEducationController extends Controller
         if($request->educations) {
             $data = JobSeekerEducation::insert($request->educations);
         } else {
-            $data = JobSeekerEducation::create($request->all())->save();
+            $data = JobSeekerEducation::create($request->all());
         }
         
        

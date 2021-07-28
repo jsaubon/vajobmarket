@@ -159,7 +159,7 @@ $(document).ready(function() {
                         '<td class="text-center  dash-table-content">'+job_post.start_date+'</td>'+
                         '<td class="text-center  dash-table-content">'+job_post.end_date+'</td>'+
                         '<td class="text-center  dash-table-content d-flex justify-content-around">'+
-                            '<i class="fas fa-eye"></i>'+
+                            '<a target="_blank" href="/BusinessProfileCompany?job_id='+job_post.id+'"><i class="fas fa-eye"></i></a>'+
                             '<i class="fas fa-edit"></i>'+
                             '<i class="fas fa-trash-alt"></i>'+
                         '</td>'+

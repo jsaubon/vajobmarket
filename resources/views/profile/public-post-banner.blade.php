@@ -24,7 +24,7 @@
             <div class="banner-offset-items" style="top:380px !important;">
                 <a href="#" class="btn btn-danger hire-me-btn shadow" style="display: none;">hire me</a>
                 <div class="profile-pic shadow">
-                    <img src="https://i.ibb.co/DwnSyq4/scott-webb-bmmcf-Zq-Sj-BU-unsplash.jpg" alt="" />
+                    <img class="client_business_info-business_logo" src="https://thumbs.dreamstime.com/z/realty-flat-apartment-modern-building-logo-design-graphic-style-realty-flat-apartment-modern-building-logo-design-graphic-style-158041756.jpg" alt="" />
                 </div>
                 <div class="profile-name">
                     <h3 class="client_business_info-business_name">my company name</h3>

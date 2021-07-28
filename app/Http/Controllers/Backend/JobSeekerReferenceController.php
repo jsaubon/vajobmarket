@@ -60,7 +60,7 @@ class JobSeekerReferenceController extends Controller
         if($request->references) {
             $data = JobSeekerReference::insert($request->references);
         } else {
-            $data = JobSeekerReference::create($request->all())->save();
+            $data = JobSeekerReference::create($request->all());
         }
        
         return response()->json([

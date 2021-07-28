@@ -1,8 +1,5 @@
 <div class="header-items-right bo-nav hide">
-    <div  class="px-2 py-1 ml-3 postJobBtn d-flex justify-content-around" style="margin:0 !important; width:95px;color:#383232 ">
-        <i class="fas fa-plus-circle my-auto" style="font-size:12px;" ></i>&nbsp;
-        <b class="my-auto">Post A Job</b>
-    </div>
+    <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco"><small><b>POST A JOB</b></small></a>
     <div  class="p-1 noDeco ml-2" style="color:#383232;">
         <i class="fas fa-bell noDeco shadow" style="font-size:15px;"></i>
     </div>

@@ -24,6 +24,7 @@ Route::post('login', 'Backend\PassportController@login');
 Route::post('register', 'Backend\PassportController@register');
 Route::get('public_job_posts', 'Backend\ClientJobPostController@index');
 Route::get('public_job_seekers', 'Backend\JobSeekerController@index');
+Route::get('PublicClientJobPost/{id}', 'Backend\ClientJobPostController@show');
 
 
 Route::middleware('auth:api')->group(function () {

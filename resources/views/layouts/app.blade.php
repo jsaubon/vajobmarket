@@ -14,10 +14,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
-
-
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
         
         @include('layouts.scriptFunctions')
     </head>
