@@ -119,8 +119,8 @@
         return data;
     };
 
-    
-    
+
+
 
     $(document).ready(function() {
         $("#myDataTable").DataTable();
@@ -140,7 +140,7 @@
             $filterz.style.display='none'
             $label.style.display ='none'
         }
-        
+
     } );
 
 
@@ -156,7 +156,7 @@
             $filterz.style.display='none'
             $label.style.display ='none'
         }
-        
+
     } );
     $(document).ready( function () {
         $('#myDataTable3').DataTable();
@@ -170,7 +170,7 @@
             $filterz.style.display='none'
             $label.style.display ='none'
         }
-        
+
     } );
     $(document).ready( function () {
         $('#jobtitletable').DataTable();
@@ -184,7 +184,7 @@
             $filterz.style.display='none'
             $label.style.display ='none'
         }
-        
+
     } );
     $(document).ready( function () {
         $('#jobtitletable2').DataTable();
@@ -198,7 +198,7 @@
             $filterz.style.display='none'
             $label.style.display ='none'
         }
-        
+
     } );
     $(document).ready( function () {
         $('#jobtitletable3').DataTable();
@@ -212,7 +212,7 @@
             $filterz.style.display='none'
             $label.style.display ='none'
         }
-        
+
     } );
     $(document).ready( function () {
         $('#jobtitletable4').DataTable();
@@ -226,7 +226,37 @@
             $filterz.style.display='none'
             $label.style.display ='none'
         }
-        
+
+    } );
+
+    $(document).ready( function () {
+        $('#jobtitletable5').DataTable();
+        var $label = document.querySelector("#jobtitletable5_length");
+        if($label) {
+            var $filterz = document.querySelector('#jobtitletable5_filter')
+            var $hidepagination = document.querySelector('#jobtitletable5_paginate')
+            var $hideInfo = document.querySelector('#jobtitletable5_info')
+            $hideInfo.style.display='none'
+            $hidepagination.style.display='none'
+            $filterz.style.display='none'
+            $label.style.display ='none'
+        }
+
+    } );
+
+    $(document).ready( function () {
+        $('#jobtitletable6').DataTable();
+        var $label = document.querySelector("#jobtitletable6_length");
+        if($label) {
+            var $filterz = document.querySelector('#jobtitletable6_filter')
+            var $hidepagination = document.querySelector('#jobtitletable6_paginate')
+            var $hideInfo = document.querySelector('#jobtitletable6_info')
+            $hideInfo.style.display='none'
+            $hidepagination.style.display='none'
+            $filterz.style.display='none'
+            $label.style.display ='none'
+        }
+
     } );
 
 
@@ -278,7 +308,7 @@
                 lilnavBo.removeClass('show');
             });
         }
-        
+
 
         var showbtnJs = document.querySelector(".user-btn-js");
         var lilnavJs = document.querySelector(".small-nav-js");

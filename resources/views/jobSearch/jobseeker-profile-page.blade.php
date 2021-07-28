@@ -39,18 +39,18 @@
             </div>
         </div>
         <ul class="nav nav-tabs d-flex justify-content-around " id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#js-candidate-detail" role="tab" aria-controls="home" aria-selected="true">
+            <li class="nav-item m-0" role="presentation">
+                <a class="nav-link title-personal-info mt-0  active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#js-candidate-detail" role="tab" aria-controls="home" aria-selected="true">
                     candidate detail
                 </a>
             </li>
-            <li class="nav-item " role="presentation" >
-                <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#js-skillset" role="tab" aria-controls="profile" aria-selected="false">
+            <li class="nav-item m-0" role="presentation" >
+                <a class="nav-link title-personal-info mt-0 active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#js-skillset" role="tab" aria-controls="profile" aria-selected="false">
                     skill sets
                 </a>
             </li>
-            <li class="nav-item " role="presentation" >
-                <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#js-comments" role="tab" aria-controls="profile" aria-selected="false">
+            <li class="nav-item m-0" role="presentation" >
+                <a class="nav-link title-personal-info mt-0 active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#js-comments" role="tab" aria-controls="profile" aria-selected="false">
                     comments
                 </a>
             </li>
@@ -61,6 +61,11 @@
             {{-- first--}}
             <div class="tab-pane fade show active" id="js-candidate-detail" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container ">
+                    <div class="row my-3">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <a class="btn mr-2 btn-light back-btn" style="border-radius: 50px;" href="/jobseekerUpdateDetails">Edit</a>
+                        </div>
+                    </div>
                     <div class="card p-4 shadow">
                         <div class="container">
                             {{-- personal-info --}}
@@ -267,14 +272,14 @@
                                 </div>
 
                                 {{--  buttons --}}
-                                <div class="row" style="margin:70px auto 70px auto;">
+                                {{-- <div class="row" style="margin:70px auto 70px auto;">
                                     <div class="col-md-2"></div>
                                     <div class="col-md-8 d-flex justify-content-center">
                                         <a class="btn mr-2 btn-light back-btn" href="#">discard</a>
                                         <button class="btn btn-primary proceed-btn">save changes</button>
                                     </div>
                                     <div class="col-md-2"></div>
-                                </div>
+                                </div> --}}
                             </form>
                         </div>
                     </div>
@@ -424,7 +429,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container d-flex h-auto" style="gap:10px;">
+                <div class="container w-75 d-flex h-auto" style="gap:10px;">
 
                     {{-- comments --}}
                       {{-- col1 --}}
@@ -559,7 +564,7 @@
                               </h5>
 
                               <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
+                              <p class="card-text " style="font-size:10px;">
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                 irure dolor in reprehenderit in voluptate velit esse cillum

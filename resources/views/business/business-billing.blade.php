@@ -148,10 +148,10 @@
 
                     </div>
                     {{-- proceed and back buttons --}}
-                    <div class="row" style="padding-top:20px;">
+                    <div class="row" style="padding-top:20px; font-size:0.6em; font-weight:400;">
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
-                            <p class="text-center">ligula, cursus id sagittis eu,
+                            <p class="text-center  title-personal-info">ligula, cursus id sagittis eu,
                                 volutpat id sapien. Cras scelerisque
                                 ullamcorper tellus, sed efficitur odio iaculis a.
                                 Pellentesque habitant morbi tristique senectus

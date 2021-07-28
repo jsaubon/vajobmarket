@@ -2,20 +2,55 @@
 @section('content')
 
     <div class="container-fluid h-auto nav-style">
-
+        <div class="card-banner mx-auto w-50 d-flex  justify-content-center">
+            <div class="profile-stats pt-4 mt-4 container">
+                <div class="row card-deck mb-4">
+                    {{-- <div class="col-md-4 card shadow card-banner">
+                        <div class="card-body ">
+                            <div class="row ">
+                                <div class="col-md-12 text-center">Job Status</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center h2">NONE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card shadow card-banner">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-md-12 text-center">Jobs Taken</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center h2">20</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card shadow card-banner">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-md-12 text-center">Profile Rating</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center h2">85%</div>
+                            </div>
+                        </div>
+                    </div> --}}
+                </div>
+            </div>
+        </div>
         <ul class="nav nav-tabs d-flex justify-content-around " id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#first-choice" role="tab" aria-controls="home" aria-selected="true">
+            <li class="nav-item m-0" role="presentation">
+                <a class="nav-link title-personal-info mt-0 active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#first-choice" role="tab" aria-controls="home" aria-selected="true">
                     personal
                 </a>
             </li>
-            <li class="nav-item " role="presentation" >
-                <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#second-choice" role="tab" aria-controls="profile" aria-selected="false">
+            <li class="nav-item m-0" role="presentation" >
+                <a class="nav-link title-personal-info mt-0 active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#second-choice" role="tab" aria-controls="profile" aria-selected="false">
                     professional
                 </a>
             </li>
-            <li class="nav-item " role="presentation" >
-                <a class="nav-link active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#third-choice" role="tab" aria-controls="profile" aria-selected="false">
+            <li class="nav-item m-0" role="presentation" >
+                <a class="nav-link title-personal-info mt-0 active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#third-choice" role="tab" aria-controls="profile" aria-selected="false">
                     skills
                 </a>
             </li>
