@@ -180,16 +180,6 @@
         </div>
     </div>
 <script>
-    function paginate (arr, size) {
-        return arr.reduce((acc, val, i) => {
-            let idx = Math.floor(i / size)
-            let page = acc[idx] || (acc[idx] = [])
-            page.push(val)
-
-            return acc
-        }, [])
-    }
-
     let client_job_posts;
     let client_business_info;
     let comments;
@@ -197,7 +187,7 @@
     let comments_current_page = 0;
 
 
-    $(document).ready(function() {
+$(document).ready(function() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     let client_id = urlParams.get('client_id');

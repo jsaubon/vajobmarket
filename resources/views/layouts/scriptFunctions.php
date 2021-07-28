@@ -13,6 +13,19 @@
     let token = localStorage.token;
     let userdata = localStorage.userdata ? JSON.parse(localStorage.userdata) : null;
 
+
+    function paginate (arr, size) {
+        return arr.reduce((acc, val, i) => {
+            let idx = Math.floor(i / size)
+            let page = acc[idx] || (acc[idx] = [])
+            page.push(val)
+
+            return acc
+        }, [])
+    }
+
+
+    
     function getData(url, then_function = () => {}, catch_function = () => {}) {
         axios
             .get(url, {
