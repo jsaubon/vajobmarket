@@ -81,6 +81,8 @@ class ClientController extends Controller
     {
         $data = Client::with([
             'user',
+            'user.comments',
+            'user.comments.created_by.jobseeker.jobseeker_profession',
             'client_billing_detail',
             'client_business_info',
             'client_employees.client_job_post',

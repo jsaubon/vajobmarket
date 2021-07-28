@@ -11,7 +11,7 @@
                             <div class="col-md-12 text-center">Job Posts</div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12 text-center h2">6</div>
+                            <div class="col-md-12 text-center h2 client_job_posts_count">-</div>
                         </div>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                                 <div class="col-md-12 text-center">VA Hired</div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12 text-center h2">20</div>
+                                <div class="col-md-12 text-center h2 client_employees_count">-</div>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                                 <div class="col-md-12 text-center">Profile Rating</div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12 text-center h2">85%</div>
+                                <div class="col-md-12 text-center h2">N/A</div>
                             </div>
                         </div>
                     </div>
@@ -63,433 +63,29 @@
                 <div class="container pb-4">
                     <div class="row">
                         <div class="col-md-12">
-                            Showing 6 posts out of 25
+                            Showing <span class="client_job_posts-per_page">-</span> posts out of <span class="client_job_posts-total">-</span>
                         </div>
                     </div>
                 </div>
-                <div class="container d-flex h-auto" style="gap:10px;">
-                    <div class="row h-100 d-flex px-4 flex-column">
-                        <div class="col-md-12 my-2 card  shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                  <div class="row" style="text-transform: capitalize;">
-                                      <div class="col-md-2 pr-0" style="font-size:9px;">
-                                        <div class="border border-primary rounded px-1" style="width: 42px;">fulltime</div>
-                                        </div>
-                                      <div class="col-md-4 " style="font-size:9px;">
-                                        <i class="fas fa-building"></i>
-                                        my busniess name
-                                       </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-money-bill-wave-alt"></i>
-                                        salaray negotiable
-                                      </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-clock"></i>
-                                        posted: june 25,2021
-                                      </div>
-                                  </div>
-                              </h6>
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                  <div class="row" style="text-transform: capitalize;">
-                                      <div class="col-md-2 pr-0" style="font-size:9px;">
-                                        <div class="border border-primary rounded px-1" style="width: 42px;">fulltime</div>
-                                        </div>
-                                      <div class="col-md-4 " style="font-size:9px;">
-                                        <i class="fas fa-building"></i>
-                                        my busniess name
-                                       </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-money-bill-wave-alt"></i>
-                                        salaray negotiable
-                                      </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-clock"></i>
-                                        posted: june 25,2021
-                                      </div>
-                                  </div>
-                              </h6>
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                  <div class="row" style="text-transform: capitalize;">
-                                      <div class="col-md-2 pr-0" style="font-size:9px;">
-                                        <div class="border border-primary rounded px-1" style="width: 42px;">fulltime</div>
-                                        </div>
-                                      <div class="col-md-4 " style="font-size:9px;">
-                                        <i class="fas fa-building"></i>
-                                        my busniess name
-                                       </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-money-bill-wave-alt"></i>
-                                        salaray negotiable
-                                      </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-clock"></i>
-                                        posted: june 25,2021
-                                      </div>
-                                  </div>
-                              </h6>
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row h-100 d-flex px-4 flex-column">
-                        <div class="col-md-12 my-2 card  shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                  <div class="row" style="text-transform: capitalize;">
-                                      <div class="col-md-2 pr-0" style="font-size:9px;">
-                                        <div class="border border-primary rounded px-1" style="width: 42px;">fulltime</div>
-                                        </div>
-                                      <div class="col-md-4 " style="font-size:9px;">
-                                        <i class="fas fa-building"></i>
-                                        my busniess name
-                                       </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-money-bill-wave-alt"></i>
-                                        salaray negotiable
-                                      </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-clock"></i>
-                                        posted: june 25,2021
-                                      </div>
-                                  </div>
-                              </h6>
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                  <div class="row" style="text-transform: capitalize;">
-                                      <div class="col-md-2 pr-0" style="font-size:9px;">
-                                        <div class="border border-primary rounded px-1" style="width: 42px;">fulltime</div>
-                                        </div>
-                                      <div class="col-md-4 " style="font-size:9px;">
-                                        <i class="fas fa-building"></i>
-                                        my busniess name
-                                       </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-money-bill-wave-alt"></i>
-                                        salaray negotiable
-                                      </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-clock"></i>
-                                        posted: june 25,2021
-                                      </div>
-                                  </div>
-                              </h6>
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
+                <div class="container h-auto " style="gap:10px;">
+                    <div class="client_job_post_container row">
 
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                  <div class="row" style="text-transform: capitalize;">
-                                      <div class="col-md-2 pr-0" style="font-size:9px;">
-                                        <div class="border border-primary rounded px-1" style="width: 42px;">fulltime</div>
-                                        </div>
-                                      <div class="col-md-4 " style="font-size:9px;">
-                                        <i class="fas fa-building"></i>
-                                        my busniess name
-                                       </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-money-bill-wave-alt"></i>
-                                        salaray negotiable
-                                      </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-clock"></i>
-                                        posted: june 25,2021
-                                      </div>
-                                  </div>
-                              </h6>
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="row h-100 d-flex px-4 flex-column">
-                        <div class="col-md-12 my-2 card  shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                  <div class="row" style="text-transform: capitalize;">
-                                      <div class="col-md-2 pr-0" style="font-size:9px;">
-                                        <div class="border border-primary rounded px-1" style="width: 42px;">fulltime</div>
-                                        </div>
-                                      <div class="col-md-4 " style="font-size:9px;">
-                                        <i class="fas fa-building"></i>
-                                        my busniess name
-                                       </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-money-bill-wave-alt"></i>
-                                        salaray negotiable
-                                      </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-clock"></i>
-                                        posted: june 25,2021
-                                      </div>
-                                  </div>
-                              </h6>
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                  <div class="row" style="text-transform: capitalize;">
-                                      <div class="col-md-2 pr-0" style="font-size:9px;">
-                                        <div class="border border-primary rounded px-1" style="width: 42px;">fulltime</div>
-                                        </div>
-                                      <div class="col-md-4 " style="font-size:9px;">
-                                        <i class="fas fa-building"></i>
-                                        my busniess name
-                                       </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-money-bill-wave-alt"></i>
-                                        salaray negotiable
-                                      </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-clock"></i>
-                                        posted: june 25,2021
-                                      </div>
-                                  </div>
-                              </h6>
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">
-                                  <div class="row" style="text-transform: capitalize;">
-                                      <div class="col-md-2 pr-0" style="font-size:9px;">
-                                        <div class="border border-primary rounded px-1" style="width: 42px;">fulltime</div>
-                                        </div>
-                                      <div class="col-md-4 " style="font-size:9px;">
-                                        <i class="fas fa-building"></i>
-                                        my busniess name
-                                       </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-money-bill-wave-alt"></i>
-                                        salaray negotiable
-                                      </div>
-                                      <div class="col-md-3 " style="font-size:8px;">
-                                        <i class="fas fa-clock"></i>
-                                        posted: june 25,2021
-                                      </div>
-                                  </div>
-                              </h6>
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="container">
                     <hr>
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                          <li class="page-item disabled">
+                        <ul class="pagination client_job_posts-pagination justify-content-center">
+                          <!-- <li class="page-item disabled">
                             <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                           </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
                           <li class="page-item"><a class="page-link" href="#">2</a></li>
                           <li class="page-item"><a class="page-link" href="#">3</a></li>
                           <li class="page-item">
                             <a class="page-link" href="#">Next</a>
-                          </li>
+                          </li> -->
                         </ul>
                       </nav>
                 </div>
@@ -500,38 +96,17 @@
                     <div class="card p-4">
                         <div class="card-title d-flex">
                             <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
+                            <img class="client_business_info-business_logo" src="https://thumbs.dreamstime.com/z/realty-flat-apartment-modern-building-logo-design-graphic-style-realty-flat-apartment-modern-building-logo-design-graphic-style-158041756.jpg" alt="" />
                             </div>
                             <div class="my-auto pl-2">
-                                <h3 style="font-size:15px; margin:0;">My Company Name</h3>
+                                <h3 style="font-size:15px; margin:0;" class="client_business_info-business_name">My Company Name</h3>
                                 <p style="font-size: 10px; margin:0;">
-                                    <a href="/BusinessProfilePersonal">Type of business</a></p>
+                                    <a href="/BusinessProfilePersonal" class="client_business_info-type_of_business">Type of business</a></p>
                             </div>
                         </div>
                         <hr>
-                        <p class="card-text " style="margin-bottom:60px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Mauris imperdiet ante hendrerit massa dignissim scelerisque.
-                            Nunc pellentesque blandit placerat. Suspendisse viverra porta dolor,
-                            commodo eleifend mauris pretium ac. Nam pellentesque magna id quam suscipit
-                            ellentesque. Proin a ultricies lectus. Phasellus ut mauris nec lacus lobortis
-                            posuere. Aliquam dignissim pretium neque, id semper diam ornare sit amet.
-                            Cras massa augue, luctus quis pharetra vel, egestas nec lectus. Maecenas vel
-                            tellus tempus, tristique urna et, mattis nunc. Integer aliquet rutrum leo,
-                            vitae condimentum libero porta ut. Donec pharetra ut ex sit amet ornare.
-                            Donec elit neque, egestas quis purus ut, faucibus dignissim lacus. Nunc
-                            mollis porttitor ligula porttitor faucibus.
-                            Praesent ut orci rhoncus enim laoreet elementum
-                            id a ligula. Aenean fringilla hendrerit pretium. Morbi ut
-                            lacus tincidunt justo interdum blandit sit amet vel dui.
-                            Nam vestibulum sapien id leo ornare elementum. In mollis
-                            mauris eu nunc aliquet, ac mollis lectus faucibus. Pellentesque
-                            posuere nisl id turpis aliquet, at fermentum lectus commodo. Sed tincidunt
-                            dolor vitae cursus pellentesque. Curabitur sollicitudin maximus ipsum, id
-                            euismod augue pretium quis. Morbi gravida pellentesque egestas. Donec vel
-                            urna pretium, aliquam quam sed, commodo tellus. Sed ipsum eros, dignissim
-                            eget finibus eu, rutrum eget sapien. Phasellus ante lacus, volutpat vel velit
-                            sed, porta euismod felis.
+                        <p class="card-text client_business_info-business_description" style="margin-bottom:60px;">
+                            -
                         </p>
                     </div>
                 </div>
@@ -541,320 +116,14 @@
                 <div class="container pb-4">
                     <div class="row">
                         <div class="col-md-12">
-                            Showing 6 comments out of 25
+                            Showing <span class="comments-per_page"></span> comments out of <span class="comments-total"></span>
                         </div>
                     </div>
                 </div>
-                <div class="container d-flex h-auto" style="gap:10px;">
-
+                <div class="container h-auto" style="gap:10px;">
                     {{-- comments --}}
-                      {{-- col1 --}}
-                    <div class="row h-100 d-flex px-4 flex-column">
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title d-flex" style="font-size:15px;">
-                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                </div>
-                                <div class="my-auto pl-2">
-                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                    <p style="font-size: 10px; margin:0;">
-                                       Type of business
-                                    </p>
-                                </div>
-                              </h5>
-
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title d-flex" style="font-size:15px;">
-                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                </div>
-                                <div class="my-auto pl-2">
-                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                    <p style="font-size: 10px; margin:0;">
-                                       Type of business
-                                    </p>
-                                </div>
-                              </h5>
-
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title d-flex" style="font-size:15px;">
-                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                </div>
-                                <div class="my-auto pl-2">
-                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                    <p style="font-size: 10px; margin:0;">
-                                       Type of business
-                                    </p>
-                                </div>
-                              </h5>
-
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- col2 --}}
-                    <div class="row h-100 d-flex px-4 flex-column">
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title d-flex" style="font-size:15px;">
-                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                </div>
-                                <div class="my-auto pl-2">
-                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                    <p style="font-size: 10px; margin:0;">
-                                       Type of business
-                                    </p>
-                                </div>
-                              </h5>
-
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title d-flex" style="font-size:15px;">
-                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                </div>
-                                <div class="my-auto pl-2">
-                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                    <p style="font-size: 10px; margin:0;">
-                                       Type of business
-                                    </p>
-                                </div>
-                              </h5>
-
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title d-flex" style="font-size:15px;">
-                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                </div>
-                                <div class="my-auto pl-2">
-                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                    <p style="font-size: 10px; margin:0;">
-                                       Type of business
-                                    </p>
-                                </div>
-                              </h5>
-
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                     {{-- col3--}}
-                    <div class="row h-100 d-flex px-4 flex-column">
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title d-flex" style="font-size:15px;">
-                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                </div>
-                                <div class="my-auto pl-2">
-                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                    <p style="font-size: 10px; margin:0;">
-                                       Type of business
-                                    </p>
-                                </div>
-                              </h5>
-
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
-                            <div class="card-body">
-                              <h5 class="card-title d-flex" style="font-size:15px;">
-                                <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
-                                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
-                                </div>
-                                <div class="my-auto pl-2">
-                                    <h3 style="font-size:15px; margin:0;">My Company Name</h3>
-                                    <p style="font-size: 10px; margin:0;">
-                                       Type of business
-                                    </p>
-                                </div>
-                              </h5>
-
-                              <hr class="lsep">
-                              <p class="card-text" style="font-size:10px;">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur
-                                <br><br>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum.
-                              </p>
-                              <div class="row pb-4">
-                                  <div class="col-md-12 text-center">
-                                    <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 my-2 shadow" style="border-radius: 10px;" >
+                    <div class="row comments_container">
+                        <div class="col-md-4 my-2 shadow" style="border-radius: 10px;" >
                             <div class="card-body">
                               <h5 class="card-title d-flex" style="font-size:15px;">
                                 <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
@@ -897,13 +166,10 @@
                 <div class="container">
                     <hr>
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
+                        <ul class="pagination comments-pagination justify-content-center">
                           <li class="page-item disabled">
                             <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                           </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
                           <li class="page-item">
                             <a class="page-link" href="#">Next</a>
                           </li>
@@ -913,6 +179,268 @@
             </div>
         </div>
     </div>
+<script>
+    function paginate (arr, size) {
+        return arr.reduce((acc, val, i) => {
+            let idx = Math.floor(i / size)
+            let page = acc[idx] || (acc[idx] = [])
+            page.push(val)
 
+            return acc
+        }, [])
+    }
+
+    let client_job_posts;
+    let client_business_info;
+    let comments;
+    let client_job_posts_current_page = 0;
+    let comments_current_page = 0;
+
+
+    $(document).ready(function() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let client_id = urlParams.get('client_id');
+    if(!client_id) {
+        if(token) {
+            client_id = userdata.client.id;
+        } else {
+            window.location.href = '/';
+        }
+    }
+
+    
+    if(client_id) {
+        getData('/api/Client/'+client_id, ({data:res}) => {
+            if(res.success) {
+                let client = res.data;
+                client_business_info = client.client_business_info;
+                
+                
+                let client_employees = client.client_employees.filter(p => p.status == 'Hired');
+                
+                $('.client_job_posts_count').html(client.client_job_posts.length);
+                $('.client_employees_count').html(client_employees.length);
+
+
+
+                Object.keys(client).map((field, key) => {
+                    let element = $('.job_post-'+field);
+                    if(element.length) {
+                        element.html(client[field]);
+                        element.val(client[field]);
+                    }
+                });
+
+                Object.keys(client).map((field, key) => {
+                    let element = $('.client-'+field);
+                    if(element.length) {
+                        element.html(client[field]);
+                    }
+                });
+
+                Object.keys(client_business_info).map((field, key) => {
+                    let element = $('.client_business_info-'+field);
+                    if(element.length) {
+                        element.html(client_business_info[field]);
+                    }
+                });
+
+                let client_job_posts_per_page = 10;
+                client_job_posts = paginate(client.client_job_posts, client_job_posts_per_page);
+                
+                $('.client_job_posts-total').html(client.client_job_posts.length);
+                populateJobPosts(0);
+
+
+                
+                let comments_per_page = 1;
+                comments = paginate(client.user.comments, comments_per_page);
+                console.log('client.comments',client.user.comments);
+                $('.comments-total').html(client.user.comments.length);
+                populateComments(0);
+                
+            }
+        });
+
+        function populateJobPosts(page_number) {
+            $('.client_job_post_container').empty();
+            client_job_posts_current_page = page_number;
+            $('.client_job_posts-per_page').html(client_job_posts[client_job_posts_current_page].length);
+            client_job_posts[client_job_posts_current_page].map((client_job_posts, key) => {
+                $('.client_job_post_container').append(
+                    '<div class="col-md-4 my-2 card  shadow" style="border-radius: 10px;" >'+
+                        '<div class="card-body">'+
+                            '<h5 class="card-title" style="font-size:15px;"> '+client_job_posts.job_title+'</h5>'+
+                            '<h6 class="card-subtitle mb-2 text-muted">'+
+                                '<div class="row" style="text-transform: capitalize;">'+
+                                    '<div class="col-md-2 pr-0" style="font-size:9px;">'+
+                                    '<div class="border border-primary rounded px-1" style="width: 42px;">'+client_job_posts.job_type+'</div>'+
+                                    '</div>'+
+                                    '<div class="col-md-4 " style="font-size:9px;">'+
+                                    '<i class="fas fa-building"></i>'+
+                                    ''+client_business_info.business_name+''+
+                                    '</div>'+
+                                    '<div class="col-md-3 " style="font-size:8px;">'+
+                                    '<i class="fas fa-money-bill-wave-alt"></i>'+
+                                    ''+client_job_posts.salary+''+
+                                    '</div>'+
+                                    '<div class="col-md-3 " style="font-size:8px;">'+
+                                    '<i class="fas fa-clock"></i>'+
+                                    'posted: '+client_job_posts.start_date+''+
+                                    '</div>'+
+                                '</div>'+
+                            '</h6>'+
+                            '<hr class="lsep">'+
+                            '<p class="card-text" style="font-size:10px;">'+
+                            ''+client_job_posts.job_description+''+
+                            '</p>'+
+                            '<div class="row pb-4">'+
+                                '<div class="col-md-12 text-center">'+
+                                '<a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'
+                );
+            })
+
+            populateJobPostsPagination();
+        }
+
+        function populateJobPostsPagination() {
+            $('.client_job_posts-pagination').empty();
+            let prev_disabled = client_job_posts_current_page == 0 ? 'disabled' : '';
+            let next_disabled = client_job_posts_current_page == client_job_posts.length -1 ? 'disabled' : '';
+            $('.client_job_posts-pagination').append(
+                '<li class="page-item '+prev_disabled+'">'+
+                    '<a class="page-link client_job_posts-prev_page" href="#" tabindex="-1" aria-disabled="true">Previous</a>'+
+                '</li>'
+            );
+            for (let index = 0; index < client_job_posts.length; index++) {
+                let active = (index == client_job_posts_current_page ? 'active' : '');
+                $('.client_job_posts-pagination').append(
+                    '<li class="page-item '+active+'"><a class="page-link client_job_posts-page" href="#">'+(index + 1)+'</a></li>'
+                );
+                
+            }
+            $('.client_job_posts-pagination').append(
+                '<li class="page-item '+next_disabled+'">'+
+                    '<a class="page-link client_job_posts-next_page" href="#">Next</a>'+
+                '</li>'
+            );
+        }
+
+
+        $('body').on('click', '.client_job_posts-page', function(e) {
+            e.preventDefault();
+
+            let page = $(this).html();
+            page = page -1;
+            populateJobPosts(page);
+        });
+
+        $('body').on('click', '.client_job_posts-prev_page', function(e) {
+            e.preventDefault();
+            populateJobPosts(client_job_posts_current_page -1);
+        });
+        
+        $('body').on('click', '.client_job_posts-next_page', function(e) {
+            e.preventDefault();
+            populateJobPosts(client_job_posts_current_page +1);
+        });
+
+
+        function populateComments(page_number) {
+            $('.comments_container').empty();
+            comments_current_page = page_number;
+            $('.comments-per_page').html(comments[comments_current_page].length);
+            console.log('comments[comments_current_page]',comments[comments_current_page]);
+            comments[comments_current_page].map((comment, key) => {
+                console.log('comment',comment);
+                let jobseeker = comment.created_by.jobseeker; //jobseeker_photo
+                console.log('jobseeker',jobseeker);
+                let name = comment.created_by.firstname + ' ' + comment.created_by.lastname;
+                let image = jobseeker.jobseeker_photo ? jobseeker.jobseeker_photo : 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png';
+                
+                $('.comments_container').append(
+                    '<div class="col-md-4 my-2 shadow" style="border-radius: 10px;" >'+
+                        '<div class="card-body">'+
+                            '<h5 class="card-title d-flex" style="font-size:15px;">'+
+                            '<div class="profile-pic shadow my-auto" style="height:50px; width:50px;">'+
+                                '<img src="'+image+'" style="height:50px;" alt="" />'+
+                            '</div>'+
+                            '<div class="my-auto pl-2">'+
+                                '<h3 style="font-size:15px; margin:0;">'+name+'</h3>'+
+                                '<p style="font-size: 10px; margin:0;">'+
+                                    ''+jobseeker.jobseeker_profession.job_title+''+
+                                '</p>'+
+                            '</div>'+
+                            '</h5>'+
+
+                            '<hr class="lsep">'+
+                            '<p class="card-text" style="font-size:10px;">'+
+                            ''+comment.content+''+
+                            '</p>'+
+                            '<div class="row pb-4">'+
+                                '<div class="col-md-12 text-center">'+
+                                '<a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'
+                );
+            });
+
+            populateCommentsPagination();
+
+        }
+
+        function populateCommentsPagination() {
+            $('.comments-pagination').empty();
+            let prev_disabled = comments_current_page == 0 ? 'disabled' : '';
+            let next_disabled = comments_current_page == comments.length -1 ? 'disabled' : '';
+            $('.comments-pagination').append(
+                '<li class="page-item '+prev_disabled+'">'+
+                    '<a class="page-link comments-prev_page" href="#" tabindex="-1" aria-disabled="true">Previous</a>'+
+                '</li>'
+            );
+            for (let index = 0; index < comments.length; index++) {
+                let active = (index == comments_current_page ? 'active' : '');
+                $('.comments-pagination').append(
+                    '<li class="page-item '+active+'"><a class="page-link comments-page" href="#">'+(index + 1)+'</a></li>'
+                );
+                
+            }
+            $('.comments-pagination').append(
+                '<li class="page-item '+next_disabled+'">'+
+                    '<a class="page-link comments-next_page" href="#">Next</a>'+
+                '</li>'
+            );
+        }
+
+
+        $('body').on('click', '.comments-page', function(e) {
+            e.preventDefault();
+
+            let page = $(this).html();
+            page = page -1;
+            populateComments(page);
+        });
+
+        $('body').on('click', '.comments-prev_page', function(e) {
+            e.preventDefault();
+            populateComments(comments_current_page -1);
+        });
+        
+        $('body').on('click', '.comments-next_page', function(e) {
+            e.preventDefault();
+            populateComments(comments_current_page +1);
+        });
+        
+    }
+
+});
+</script>
 @endsection
 

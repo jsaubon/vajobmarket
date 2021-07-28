@@ -296,20 +296,24 @@ class DatabaseSeeder extends Seeder
 
 
         foreach ($users as $key => $user) {
-            $comment = $user->comments()->create([
-                'created_by' => rand(1,$user_count),
-                'content' => $faker->sentence(20)
-            ]);
+            for ($i=0; $i < rand(5, 20); $i++) { 
+                $comment = $user->comments()->create([
+                    'created_by' => rand(1,$user_count),
+                    'content' => $faker->sentence(20)
+                ]);
 
-            $likes = [];
-            for ($i=0; $i < rand(1,40); $i++) { 
-                $likes[] = [
-                    'comment_id' => $comment->id,
-                    'user_id' => rand(1,$user_count)
-                ];
+                $likes = [];
+                for ($i=0; $i < rand(1,40); $i++) { 
+                    $likes[] = [
+                        'comment_id' => $comment->id,
+                        'user_id' => rand(1,$user_count)
+                    ];
+                }
+
+                $model_likes = \App\CommentLike::insert($likes);
             }
 
-            $model_likes = \App\CommentLike::insert($likes);
+            
         }
 
 

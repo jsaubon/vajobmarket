@@ -124,33 +124,37 @@
     $('#form-job-post').on('submit', function(e) {
         e.preventDefault();
         
-
-        let job_post_data = $(this).serializeControls();
-        let skills_reqiured = job_post_data.skills;
-        skills_reqiured = Object.values(skills_reqiured);
-        let salary = job_post_data.monthly_rate + ', ' + job_post_data.hourly_rate;
-        job_post_data = {...job_post_data, client_id: userdata.client.id, salary: salary};
-        delete job_post_data.skills;
-        delete job_post_data.monthly_rate;
-        delete job_post_data.hourly_rate;
-        
-        postData('/api/ClientJobPost', job_post_data, ({data:res}) => {
-            if(res.success) {
-                skills_reqiured.map((skill, key) => {
-                    skills_reqiured[key]['client_job_post_id'] = res.data.id;
-                });
-                let _data =  {
-                    client_job_post_id: res.data.id,
-                    skills: skills_reqiured
-                }
-                postData('/api/ClientJobPostRequiredSkill', _data, ({data:res}) => {
-                    if(res.success) {
-                        alert('Job Post Successfully Created');
-                        window.location.href = '/BusinessAllJobPost';
+        if(!token) {
+            $('#modalLogin').modal('show');
+        } else {
+            let job_post_data = $(this).serializeControls();
+            let skills_reqiured = job_post_data.skills;
+            skills_reqiured = Object.values(skills_reqiured);
+            let salary = job_post_data.monthly_rate + ', ' + job_post_data.hourly_rate;
+            job_post_data = {...job_post_data, client_id: userdata.client.id, salary: salary};
+            delete job_post_data.skills;
+            delete job_post_data.monthly_rate;
+            delete job_post_data.hourly_rate;
+            
+            postData('/api/ClientJobPost', job_post_data, ({data:res}) => {
+                if(res.success) {
+                    skills_reqiured.map((skill, key) => {
+                        skills_reqiured[key]['client_job_post_id'] = res.data.id;
+                    });
+                    let _data =  {
+                        client_job_post_id: res.data.id,
+                        skills: skills_reqiured
                     }
-                });
-            }
-        });
+                    postData('/api/ClientJobPostRequiredSkill', _data, ({data:res}) => {
+                        if(res.success) {
+                            alert('Job Post Successfully Created');
+                            window.location.href = '/BusinessAllJobPost';
+                        }
+                    });
+                }
+            });
+        }
+        
 
     });
 </script>
