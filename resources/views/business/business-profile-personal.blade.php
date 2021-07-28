@@ -1,10 +1,10 @@
 @extends('layouts.profile-layout')
 @section('content')
-    <div class="container-fluid h-auto nav-style">
-        {{-- <div class="card-banner mx-auto w-50 d-flex  justify-content-center">
-            <div class="profile-stats container">
+    <div class="container-fluid h-auto pt-4 nav-style">
+        <div class="card-banner mx-auto w-50 d-flex  justify-content-center">
+            <div class="profile-stats pt-4 mt-4 container">
                 <div class="row card-deck mb-4">
-                    <div class="col-md-4 card shadow card-banner">
+                    {{-- <div class="col-md-4 card shadow card-banner">
                         <div class="card-body ">
                         This is some text within a card body.
                         </div>
@@ -18,10 +18,10 @@
                         <div class="card-body">
                         This is some text within a card body.
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
-        </div> --}}
+        </div>
         <ul class="nav nav-tabs d-flex justify-content-around " id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#first-choice" role="tab" aria-controls="home" aria-selected="true">

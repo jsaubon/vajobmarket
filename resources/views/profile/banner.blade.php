@@ -5,7 +5,7 @@
             <div class="profile-banner-container shadow">
 
             </div>
-            <div class="banner-offset-items" style="top:230px !important;">
+            <div class="banner-offset-items" style="top:380px !important;">
                 <a href="#" class="btn btn-danger hire-me-btn shadow" style="display: none;">hire me</a>
                 <div class="profile-pic shadow">
                     <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" alt="" />

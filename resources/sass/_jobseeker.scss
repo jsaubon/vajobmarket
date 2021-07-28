@@ -104,7 +104,7 @@ input:-webkit-autofill:active  {
 }
 .dash-text{
     text-transform: capitalize;
-    font-size: 11px;
+    font-size: 0.75em;
     color:#747677;
 }
 .dash-accordion{
@@ -124,7 +124,7 @@ input:-webkit-autofill:active  {
     padding: 3px 8px;
     background-color: #f1f9ff;
     color:#007bff;
-    font-size:10px;
+    font-size:0.8em;
 }
 .box-outline-none{
     box-shadow: none!important;
@@ -138,3 +138,8 @@ input:-webkit-autofill:active  {
     color:#cccccc !important;
 
 }
+.jobpostsList{
+    display:flex;
+    flex-wrap: wrap;
+}
+

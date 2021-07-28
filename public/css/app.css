@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100,200,400,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);@charset "UTF-8";
 
-200;400;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);@charset "UTF-8";
 body h1,
 body .h1,
 body h2,
@@ -21,6 +20,23 @@ body p,
 body a,
 body button {
   font-family: "Roboto", san-serif;
+}
+
+ul li {
+  font-family: "Oswald", sans-serif;
+}
+
+.btn-fom {
+  border: 1px solid #007bff;
+  border-radius: 20px;
+  color: #007bff;
+  background-color: transparent;
+  margin: 10px 0px;
+}
+
+.btn-fom:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 
 .frontSection-2,
@@ -107,7 +123,7 @@ body button {
 }
 
 .frontSection-2 .leftColumn {
-  padding-top: 300px;
+  margin-top: 295px !important;
 }
 
 .frontSection-2 .leftColumn h2,
@@ -149,6 +165,10 @@ body button {
 
 .frontSection-2 .rightColumn .card span {
   color: #7d7d7d;
+}
+
+.frontSection-2 .rightColumn .card label {
+  font-size: 1rem;
 }
 
 .frontSection-2 .rightColumn .card .btn-learn {
@@ -253,6 +273,289 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif !important;
+}
+
+.frontSection-2,
+.frontSection-3,
+.frontSection-4,
+.frontSection-5,
+.frontSection-6 {
+  padding: 100px 200px;
+}
+
+.frontSection-1 {
+  background-image: url(/images/hero_new.jpg?d7cb3d25725f5621833de4cff96995e7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 250px 200px;
+}
+
+.frontSection-1 h1,
+.frontSection-1 .h1 {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  letter-spacing: -0.3rem;
+}
+
+.frontSection-1 p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.frontSection-1 .btn-cta {
+  min-width: 200px !important;
+  border: 1px solid #fff !important;
+  border-radius: 10px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.frontSection-1 form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 500px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.frontSection-1 form input,
+.frontSection-1 form select {
+  height: auto;
+  font-size: 1rem;
+  color: #c2c2c2;
+  margin: 0px 0.5rem;
+}
+
+.frontSection-1 form input::-moz-placeholder {
+  color: #c2c2c2;
+}
+
+.frontSection-1 form input:-ms-input-placeholder {
+  color: #c2c2c2;
+}
+
+.frontSection-1 form input::placeholder {
+  color: #c2c2c2;
+}
+
+.frontSection-1 form .btn-search {
+  background: linear-gradient(180deg, #00d4ff 0%, #0094ff 54%, #007bff 100%);
+  color: #fff;
+  border: 0;
+}
+
+.frontSection-2 {
+  background-image: url("/images/HAND PICKED Updated@2x.jpg?7e201d21b378d835a9ae4321cbf27860");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.frontSection-2 .leftColumn {
+  margin-top: 370px;
+}
+
+.frontSection-2 .leftColumn h2,
+.frontSection-2 .leftColumn .h2 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.frontSection-2 .leftColumn p {
+  padding-top: 2px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.frontSection-2 .rightColumn .card {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 1rem 2rem;
+}
+
+.frontSection-2 .rightColumn .card h2,
+.frontSection-2 .rightColumn .card .h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #646464;
+  font-size: 26px;
+  text-align: center;
+}
+
+.frontSection-2 .rightColumn .card h4,
+.frontSection-2 .rightColumn .card .h4 {
+  font-size: 36px;
+  color: #767676;
+  text-align: center;
+}
+
+.frontSection-2 .rightColumn .card p {
+  font-size: 16px;
+  color: #9c9c9c;
+  text-align: center;
+}
+
+.frontSection-2 .rightColumn .card span {
+  color: #7d7d7d;
+  font-size: 18px;
+  padding: 0rem 8rem;
+}
+
+.frontSection-2 .rightColumn .card .btn-learn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #007bff;
+  color: #007bff;
+  border-radius: 8px;
+}
+
+.frontSection-2 .rightColumn .card .btn-learn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.frontSection-2 .btn-hire {
+  background-color: #da5252;
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: 4px 5px 5px -1px rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-weight: bold;
+}
+
+.frontSection-3 {
+  background-image: url("/images/Video Background Image@2x.png?b0fffe6fadb2a9b525383a6e2f92b9a7");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+  padding: 100px;
+}
+
+.frontSection-3 .inner {
+  padding: 5rem 24rem;
+}
+
+.frontSection-3 .inner h2,
+.frontSection-3 .inner .h2 {
+  font-size: 80px;
+  color: #fff;
+  letter-spacing: -5px;
+}
+
+.frontSection-3 .inner .btn-foh {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.frontSection-3 .inner .btn-foh::hover {
+  background-color: white;
+  color: #000;
+}
+
+.frontSection-3 .inner .playIcon {
+  background-image: url(/images/icon-playwhite.png?9dc58ec9f32f423651d32bac9968712c);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.frontSection-4 {
+  background-color: white;
+}
+
+.frontSection-4 h2,
+.frontSection-4 .h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.frontSection-4 img {
+  padding: 20px 60px;
+}
+
+.frontSection-4 .row {
+  margin: 20px 0px;
+}
+
+.frontSection-5 {
+  background-color: #e1e1e1;
+}
+
+.frontSection-5 h2,
+.frontSection-5 .h2,
+.frontSection-5 h4,
+.frontSection-5 .h4,
+.frontSection-5 p {
+  text-align: center;
+}
+
+.frontSection-5 h2,
+.frontSection-5 .h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.frontSection-5 .row {
+  margin: 20px 0px;
+}
+
+.frontSection-5 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.frontSection-6 {
+  background-color: #5590d3;
+}
+
+.frontSection-6 .bgImg {
+  background-image: url(/images/blog-imag01@2x.png?62ceb03a6ddbe3d149373c42520cf9a7);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 260px;
+  width: 100%;
+}
+
+.frontSection-6 .userImg {
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.frontSection-6 .userContext {
+  margin-left: 10px;
+  width: 150px;
+}
+
+.frontSection-6 .readMoreBtn {
+  height: 40px;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 20px;
 }
 
 .header {
@@ -510,6 +813,7 @@ body {
 
 .user-dashboard {
   background-color: #ECF6FF;
+  height: 100vh;
 }
 
 .fullwidth {
@@ -545,23 +849,25 @@ body {
 .small-nav {
   display: none;
   position: absolute;
-  right: 120px;
-  top: 40px;
+  right: 176px;
+  top: 44px;
   background-color: #ECF6FF;
   border-radius: 5px;
-  width: 120px;
+  width: 140px;
+  cursor: pointer;
 }
 
 .small-nav ul {
   list-style: none;
   padding: 10px;
-  font-size: 10px !important;
+  font-size: 12px !important;
   margin: 0;
   text-transform: uppercase;
 }
 
 .small-nav-list {
   background-color: #ECF6FF;
+  cursor: pointer;
 }
 
 .small-nav-list:hover {
@@ -601,9 +907,9 @@ body {
 }
 
 .profile-banner-container {
-  background: url("/images/HAND PICKED Updated@2x.jpg?7e201d21b378d835a9ae4321cbf27860") no-repeat center;
+  background: url("/images/Mask Group 11@2x.png?5cb73f871fa355bb37001e5ce2c3048c") no-repeat center;
   background-size: cover;
-  height: 300px;
+  height: 450px;
   width: 100% !important;
 }
 
@@ -939,7 +1245,7 @@ input:-webkit-autofill:active {
 
 .dash-text {
   text-transform: capitalize;
-  font-size: 11px;
+  font-size: 0.75em;
   color: #747677;
 }
 
@@ -960,7 +1266,7 @@ input:-webkit-autofill:active {
   padding: 3px 8px;
   background-color: #f1f9ff;
   color: #007bff;
-  font-size: 10px;
+  font-size: 0.8em;
 }
 
 .box-outline-none {
@@ -985,6 +1291,11 @@ input:-webkit-autofill:active {
 .placeholder-style::placeholder {
   font-size: 10px;
   color: #cccccc !important;
+}
+
+.jobpostsList {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*!

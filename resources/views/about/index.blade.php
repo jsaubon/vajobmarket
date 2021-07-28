@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<link href="{{URL::asset('assets/css/about.css')}}" rel="stylesheet">
+
 <section class="aboutSection">
     <div class="container">
-        <div class="card shadow p-4 cardSize text-start">
+        <!-- <div class="card shadow p-4 cardSize text-start">
             <h4><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat!</b></h4>
             <br/>
             <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ab quasi maiores dolorem sapiente saepe earum, cupiditate veniam rerum repellendus dolore quo facere nobis, repudiandae error asperiores cum vitae natus quia nostrum id voluptate voluptatum. Tempore consectetur sapiente molestias adipisci. Voluptatibus quos soluta corporis ipsam exercitationem iusto repellat repudiandae reprehenderit?</small>
@@ -15,7 +15,7 @@
             <div class="d-flex justify-content-end">
             <img src="nothing here" alt="about us" style="border: 1px solid #000"/>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 <section class="about2section">
