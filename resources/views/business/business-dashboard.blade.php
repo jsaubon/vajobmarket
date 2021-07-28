@@ -28,10 +28,10 @@
                 </div>
                 <!---alerts end--->
 
-                <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                     <div class="col-md-6 title-personal-info" style="margin: 0px;">all job posts</div>
                     <div class="col-md-6 text-right">
-                        <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                        <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:0.7em;" class="title-personal-info mt-0 ">
                         see more
 
                         <i class="fas fa-angle-right"></i>
@@ -61,10 +61,10 @@
                  <!---all job post end-->
 
                 <!---applicants--->
-                <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                     <div class="col-md-6 title-personal-info" style="margin: 0px;">applicants</div>
                     <div class="col-md-6 text-right">
-                        <a href="/BusinessApplications" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                        <a href="/BusinessApplications" style="text-decoration: none !important; color:#767676; font-size:0.7em;" class="title-personal-info mt-0" >
                         see more
                         <i class="fas fa-angle-right"></i>
                         </a>
@@ -95,10 +95,10 @@
 
 
                 <!---employee names--->
-                <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                     <div class="col-md-6 title-personal-info" style="margin: 0px;">employees</div>
                     <div class="col-md-6 text-right">
-                        <a href="/BusinessEmployment" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                        <a href="/BusinessEmployment" style="text-decoration: none !important; color:#767676; font-size:0.7em;" class="title-personal-info mt-0">
                         see more
                         <i class="fas fa-angle-right"></i>
                         </a>

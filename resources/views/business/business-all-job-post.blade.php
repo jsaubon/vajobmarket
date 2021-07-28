@@ -4,7 +4,7 @@
 
 <div class="user-dashboard h-auto">
 
-    <div class="container fullwidth">
+    <div class="container fullwidth" style="min-height: 80vh">
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
