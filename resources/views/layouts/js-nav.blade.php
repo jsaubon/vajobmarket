@@ -14,44 +14,44 @@
 <div class="small-nav-js small-nav shadow js-nav">
     <ul>
         <a href="/jobseekerDashboard" class="small-nav-link">
-            <li class="small-nav-list">
+            <li class="small-nav-list m-0">
                 dashboard
             </li>
         </a>
         <hr class=" m-0">
         <a href="/jobseekerProfile" class="small-nav-link">
-            <li class="small-nav-list">
+            <li class="small-nav-list m-0">
                 profile
             </li>
         </a>
         <hr class=" m-0">
-        <a href="#" class="small-nav-link">
-            <li class="small-nav-list">
+        <a href="/jobseekerApplications" class="small-nav-link">
+            <li class="small-nav-list m-0">
                 job application
             </li>
         </a>
         <hr class=" m-0">
-        <a href="#" class="small-nav-link">
-            <li class="small-nav-list">
+        <a href="#" class="small-nav-link ">
+            <li class="small-nav-list m-0">
                 employment
             </li>
         </a>
         <hr class=" m-0">
-        <hr class=" m-0">
-        <a href="#" class="small-nav-link">
-            <li class="small-nav-list">
+
+        <a href="/jobseekerMessages" class="small-nav-link ">
+            <li class="small-nav-list m-0">
                 messages
             </li>
         </a>
         <hr class=" m-0">
-        <a href="/jobseekerUpdateDetails" class="small-nav-link">
-            <li class="small-nav-list">
+        <a href="/jobseekerUpdateDetails" class="small-nav-link ">
+            <li class="small-nav-list m-0">
                 settings
             </li>
         </a>
         <hr class=" m-0">
-        <a href="#" class="small-nav-link btn-logout">
-            <li class="small-nav-list">
+        <a href="#" class="small-nav-link btn-logout ">
+            <li class="small-nav-list m-0">
                 logout
             </li>
         </a>

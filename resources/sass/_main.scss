@@ -65,10 +65,8 @@ body {
     padding: 0rem 10rem;
 }
 .mylogo{
-    background: url('../../public/assets/images/frontAssets/vajm-header-logo.png') no-repeat center center;
-    background-size: contain;
     cursor: pointer;
-    padding:30px;
+    padding:20px;
 }
 .header-items-left{
     display: flex;
@@ -76,10 +74,6 @@ body {
 }
 .img-container{
     display: inline;
-    background-image: url('../../public/assets/images/frontAssets/logo-vajm-whitefont1.png');
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     height: 80px;
     min-width: 60px;
 

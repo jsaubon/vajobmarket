@@ -1,4 +1,4 @@
-@extends('layouts.blank-layout')
+@extends('layouts.js-blank-layout')
 
 @section('content')
 
@@ -23,7 +23,7 @@
                 </h4>
             </div<>
 
-            
+
 
                 <!-- Accordion Start 1 -->
                     <div class="accordion" id="accordionExample">
@@ -78,7 +78,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                    
+
                             </div>
                         </div>
                     <!-- Accordion End 1 -->
@@ -115,6 +115,6 @@
                             </div>
                         </div>
                     </div>
- 
+
         </div>
 </div>

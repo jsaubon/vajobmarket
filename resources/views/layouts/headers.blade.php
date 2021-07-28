@@ -9,6 +9,7 @@ $obj = [
     "JOB ACADEMY" => "#academy"
 ];
 
+
 ?>
 <style>
     .hide {
@@ -19,7 +20,9 @@ $obj = [
             <div class="header-items-left">
 
                     <a class="my-auto px-3 mb-3" style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
-                    <div class="title my-auto h-100  mylogo"></div>
+
+                       <img src="{{ asset('images/frontAssets/vajm-header-logo.png') }}" alt="" class="mylogo">
+
                     </a>
 
                 <div class="nav-titles my-auto ml-4 px-3">
@@ -45,12 +48,13 @@ $obj = [
                 <small class="btn-signin"><b>SIGN-IN</b></small>
                 </button>
             </div>
-            <?php include('js-nav.php')?>
-            <?php include('bo-nav.php')?>
+            @include('layouts.js-nav')
+            @include('layouts.bo-nav')
 
 
 
-            <div class="chat-support"></div>
+
+            <!-- <div class="chat-support"></div> -->
 
 
 </div>

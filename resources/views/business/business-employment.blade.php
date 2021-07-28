@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="user-dashboard">
+<div class="user-dashboard h-auto">
     <div class="container fullwidth">
 
     <!-- Breamcrumbs Start -->

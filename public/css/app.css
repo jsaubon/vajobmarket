@@ -367,10 +367,8 @@ body button {
 }
 
 .mylogo {
-  background: url(/images/vajm-header-logo.png?2ec21d598571b649e1fa6dc8944f902f) no-repeat center center;
-  background-size: contain;
   cursor: pointer;
-  padding: 30px;
+  padding: 20px;
 }
 
 .header-items-left {
@@ -379,10 +377,6 @@ body button {
 
 .img-container {
   display: inline;
-  background-image: url(/images/logo-vajm-whitefont1.png?8643e25de325ced6b05549d72f1e48b6);
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   height: 80px;
   min-width: 60px;
 }
@@ -642,7 +636,7 @@ body button {
 }
 
 .small-nav {
-  display: none;
+  display: block;
   position: absolute;
   right: 176px;
   top: 44px;
@@ -799,10 +793,6 @@ body button {
 .business-img {
   padding: 20px 0px 20px 0px;
   margin-bottom: 20px;
-  background-image: url("/images/HAND PICKED.png?391480a5ec0b0be2a1339d168f86ff94");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
   height: 400px;
   box-shadow: 2px 7px 5px 0px rgba(194, 203, 210, 0.75);
   -webkit-box-shadow: 2px 7px 5px 0px rgba(194, 203, 210, 0.75);
@@ -925,7 +915,6 @@ body button {
 .jobseeker-img {
   padding: 20px 0px 20px 0px;
   margin-bottom: 20px;
-  background-image: url("/images/HAND PICKED.png?391480a5ec0b0be2a1339d168f86ff94");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;

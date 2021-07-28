@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="user-dashboard">
+<div class="user-dashboard h-auto">
     <div class="container fullwidth">
 
     <!-- Card Start -->
@@ -54,7 +54,7 @@
 
                     <tbody>
 
-                      
+
                     </tbody>
 
                 </table>
@@ -86,7 +86,7 @@
 
                     <tbody>
 
-                       
+
 
                     </tbody>
 
@@ -121,7 +121,7 @@
 
                     <tbody>
 
-                      
+
 
                     </tbody>
 
@@ -136,11 +136,11 @@
 <script>
 if(!token) {
     window.location.href = '/';
-}  
+}
 </script>
 
 <script>
-    
+
 $(document).ready(function() {
     getData('/api/Client/'+userdata.client.id, ({data:res}) => {
         if(res.success) {
@@ -166,7 +166,7 @@ $(document).ready(function() {
                     '</tr>'
                 );
             });
-            
+
             $('#myDataTable').DataTable().draw();
             var $label = document.querySelector("#myDataTable_length");
             if($label) {
@@ -211,7 +211,7 @@ $(document).ready(function() {
                 $label.style.display ='none'
             }
 
-            
+
             $('#myDataTable3').DataTable().destroy();
             let client_employees_hired = res.data.client_employees.filter(p => p.status == 'Hired');
             client_employees_hired.map((client_employee, key) => {
@@ -287,7 +287,7 @@ $(document).ready(function() {
             // })
         }
     });
-    
+
 });
 </script>
 @endsection

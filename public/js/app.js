@@ -32325,7 +32325,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/img-loader/index.js):\nError: ENOENT: no such file or directory, open 'D:\\xampp\\htdocs\\vajobmarket-new\\public\\assets\\images\\frontAssets\\HAND PICKED.png'\n    at D:\\xampp\\htdocs\\vajobmarket-new\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at D:\\xampp\\htdocs\\vajobmarket-new\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at D:\\xampp\\htdocs\\vajobmarket-new\\node_modules\\loader-runner\\lib\\LoaderRunner.js:203:19\n    at D:\\xampp\\htdocs\\vajobmarket-new\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:79:11)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -32336,8 +32336,8 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\xampp\htdocs\vajobmarket-new\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\xampp\htdocs\vajobmarket-new\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! F:\vajobmarket-backfront-ryan\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! F:\vajobmarket-backfront-ryan\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

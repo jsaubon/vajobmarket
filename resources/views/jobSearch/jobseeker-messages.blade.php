@@ -1,4 +1,4 @@
-@extends('layouts.blank-layout')
+@extends('layouts.js-blank-layout')
 
 @section('content')
 
