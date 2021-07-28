@@ -701,15 +701,17 @@
 
 
 <script>
+let jobpost_data;
 $(document).ready(function() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     let job_id = urlParams.get('job_id');
+    
     if(job_id) {
         getData('/api/PublicClientJobPost/'+job_id, ({data:res}) => {
             if(res.success) {
                 console.log(res);
-                let jobpost_data = res.data;
+                jobpost_data = res.data;
                 let client = jobpost_data.client;
                 let client_business_info = client.client_business_info;
                 let client_job_post_required_skills = jobpost_data.client_job_post_required_skills;

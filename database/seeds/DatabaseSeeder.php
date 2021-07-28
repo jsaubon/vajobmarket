@@ -323,13 +323,12 @@ class DatabaseSeeder extends Seeder
             $employees_count = rand(0,30);
             $employees = [];
             $statuses = ['Applicant','Shortlisted','Hired', 'Dismissed', 'End of Contract'];
-            $employment_statuses = $job_types[rand(0,2)];
             for ($i=0; $i < $employees_count; $i++) { 
                 $employees[] = [
                     'client_id' => $client->id,
                     'client_job_post_id' => $client_job_posts[rand(0,count($client_job_posts) -1)]['id'],
                     'jobseeker_id' => $jobseeker_ids[rand(0, count($jobseeker_ids) -1)],
-                    'employment_status' => $employment_statuses[rand(0,2)],
+                    'employment_status' => array_column($job_types, 'job_type')[rand(0,2)],
                     'status' => $statuses[rand(0,3)],
                     // 'status' => '',
                     'salary' => rand(4,15).'/hr',

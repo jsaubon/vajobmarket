@@ -56,6 +56,7 @@ class ClientEmployeeController extends Controller
     {
         $this->validate($request, [
             'client_id' => 'required',
+            'client_job_post_id' => 'required',
             'jobseeker_id' => 'required'
         ]);
         

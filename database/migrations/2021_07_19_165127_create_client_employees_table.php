@@ -41,6 +41,10 @@ class CreateClientEmployeesTable extends Migration
             $table->date('final_interview_date')->nullable();
             $table->longText('final_interview_message')->nullable();
             $table->longText('final_interview_remarks')->nullable();
+
+            
+            $table->string('application_subject')->nullable();
+            $table->longText('application_message')->nullable();
             $table->timestamps();
         });
     }
