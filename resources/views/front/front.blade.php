@@ -82,7 +82,7 @@
                         <label>Access to Exckysuve Facebook Community</label>
                     </span>
 
-                    <button class="btn btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
+                    <button class="btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
 
        
 
@@ -191,7 +191,7 @@
 
         <div class="row">
             <div class="col-md-3">
-                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
@@ -202,7 +202,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
@@ -213,7 +213,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
@@ -224,7 +224,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
