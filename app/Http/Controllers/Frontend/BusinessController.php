@@ -63,5 +63,7 @@ class BusinessController extends Controller
     function DashboardBusiness(){
         return view('business.business-dashboard');
     }
-
+    function BusinessInfoSettings(){
+        return view('business.business-settings');
+    }
 }

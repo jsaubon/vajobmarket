@@ -1,15 +1,23 @@
-//Front Section Start
+//Front Page Start
 
 .frontSection-2,
 .frontSection-3,
 .frontSection-4,
 .frontSection-5,
-.frontSection-6 {
+.frontSection-6,
+
+.aboutSection-1,
+.aboutSection-2,
+.aboutSection-3,
+.aboutSection-4,
+
+.pricingSection-1,
+.pricingSection-2 {
     padding: 100px 200px;
 }
 
 .frontSection-1 {
-    background-image: url('../../public/assets/images/frontAssets/hero_new.jpg');
+    background-image: url('../../public/images/frontAssets/hero_new.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +78,7 @@
 
 .frontSection-2 {
 
-    background-image: url('../../public/assets/images/frontAssets/HAND\ PICKED\ Updated@2x.jpg');
+    background-image: url('../../public/images/frontAssets/HAND\ PICKED\ Updated@2x.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,19 +135,6 @@
                 padding: 0rem 8rem;
             }
 
-            .btn-learn {
-                background-color: rgb(0,0,0,0);
-                border: 2px solid #007bff;
-                color: #007bff;
-                border-radius: 8px;
-            }
-
-            .btn-learn:hover {
-                background-color: #007bff;
-                color: #fff;
-            }
-
-            
         }
 
     }
@@ -158,7 +153,7 @@
 
 .frontSection-3 {
 
-    background-image: url('../../public/assets/images/frontAssets/Video\ Background\ Image@2x.png');
+    background-image: url('../../public/images/frontAssets/Video\ Background\ Image@2x.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -173,37 +168,8 @@
             color: #fff;
             letter-spacing: -5px;
         }
-
-        .btn-foh {
-            border: 1px solid #fff;
-            border-radius: 8px;
-            color: #fff;
-            background-color: rgb(0,0,0, 0);
-        }
         
-        .btn-foh::hover {
-            background-color: rgb(255,255,255);
-            color: #000;
-        }
-        
-        .playIcon {
-            background-image: url('../../public/assets/images/frontAssets/icon-playwhite.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-color: transparent;
-            border:none;
-            height: 100px;
-            width: 100px;
-            margin:20px auto;
-        }
-
     }
-
-
-
-    
-    
     
 }
 
@@ -241,27 +207,13 @@
         margin: 20px 0px;
     }
     
-    img {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        object-fit: cover;
-        margin-bottom: 10px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        
-
-
-    }
-    
 }
 
 .frontSection-6 {
     background-color: rgb(85, 144, 211);
 
     .bgImg {
-        background-image: url('../../public/assets/images/frontAssets/blog-imag01@2x.png');
+        background-image: url('../../public/images/frontAssets/blog-imag01@2x.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -290,7 +242,80 @@
     
 }
 
-//Front Section End
+//Front Page End
+
+//About Page Start
+
+.aboutSection-1 {
+    background: url('../../public/images/aboutAssets/about-banner.jpg');
+    height: 100vh;
+    align-items: center;
+    display: flex;
+
+    h2 {
+        border-right: 2px solid !important;
+    }
+    
+}
+
+.aboutSection-2 {
+
+    h2 {
+        border-right: 4px solid;
+        padding-right: 46px;
+    }
+
+}
+
+// .aboutSection-3 {
+
+// }
+
+.aboutSection-4 {
+    background: url('../../public/images/aboutAssets/bgimagemrkenn.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+//About Page End
+
+//Pricing Page Start
+
+.pricingSection-1 {
+    background: url('../../public/images/pricingAsssets/bgimagepricing@2x.png') no-repeat center center;
+    background-size: cover;
+    background-color: rgb(99, 99, 99);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    h2 {
+        font-size: 4.5rem;
+        line-height: 60px;
+        letter-spacing: -2px;
+        color: #fff;
+    }
+}
+
+.pricingSection-2 {
+    padding-top: 0px !important;
+
+    .card {
+        padding: 100px;
+        border-radius: 20px !important;
+        margin-top: -60px;
+
+        h2 {
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+            line-height: 40px;
+        }
+    }
+}
+
+//Pricing Page End
 
 .chat-container{
     position: relative;
@@ -299,7 +324,7 @@
     position: fixed;
     bottom: 10%;
     right: 10%;
-    background-image: url('../../public/assets/images/frontAssets/ChatSupportButton@2x.png');
+    background-image: url('../../public/images/frontAssets/ChatSupportButton@2x.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 60px;

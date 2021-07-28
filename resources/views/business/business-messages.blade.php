@@ -2,8 +2,8 @@
 
 @section('content')
 
-<div class="user-dashboard">
-    <div class="container fullwidth">
+<div class="user-dashboard h-auto">
+    <div class="container fullwidth" style="min-height: 80vh;">
     <!-- Content Sart -->
 
         <!-- Breadcrumbs Start -->

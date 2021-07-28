@@ -82,7 +82,7 @@
                         <label>Access to Exckysuve Facebook Community</label>
                     </span>
 
-                    <button class="btn btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
+                    <button class="btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
 
        
 
@@ -118,7 +118,7 @@
         <div class="row">
             <div class="col-md-2">
                 <div class="card shadow">
-                    <img src="{{URL::to('/assets/images/frontAssets/social-media@2x.png')}}" alt="" class="img-fluid">
+                    <img src="{{URL::to('/images/frontAssets/social-media@2x.png')}}" alt="" class="img-fluid">
                     <h4>
                         Social Media Manager
                     </h4>
@@ -127,7 +127,7 @@
 
             <div class="col-md-2">
                 <div class="card shadow">
-                    <img src="{{URL::to('/assets/images/frontAssets/content@2x.png')}}" alt="" class="img-fluid">
+                    <img src="{{URL::to('/images/frontAssets/content@2x.png')}}" alt="" class="img-fluid">
                     <h4>
                         Social Media Manager
                     </h4>
@@ -136,7 +136,7 @@
 
             <div class="col-md-2">
                 <div class="card shadow">
-                    <img src="{{URL::to('/assets/images/frontAssets/credit-card@2x.png')}}" alt="" class="img-fluid">
+                    <img src="{{URL::to('/images/frontAssets/credit-card@2x.png')}}" alt="" class="img-fluid">
                     <h4>
                         Social Media Manager
                     </h4>
@@ -145,7 +145,7 @@
 
             <div class="col-md-2">
                 <div class="card shadow">
-                    <img src="{{URL::to('/assets/images/frontAssets/digital-assistant@2x.png')}}" alt="" class="img-fluid">
+                    <img src="{{URL::to('/images/frontAssets/digital-assistant@2x.png')}}" alt="" class="img-fluid">
                     <h4>
                         Social Media Manager
                     </h4>
@@ -154,7 +154,7 @@
 
             <div class="col-md-2">
                 <div class="card shadow">
-                    <img src="{{URL::to('/assets/images/frontAssets/30-appointment@2x.png')}}" alt="" class="img-fluid">
+                    <img src="{{URL::to('/images/frontAssets/30-appointment@2x.png')}}" alt="" class="img-fluid">
                     <h4>
                         Social Media Manager
                     </h4>
@@ -163,7 +163,7 @@
 
             <div class="col-md-2">
                 <div class="card shadow">
-                    <img src="{{URL::to('/assets/images/frontAssets/media-monitor-screen-Digital Marketing@2x.png')}}" alt="" class="img-fluid">
+                    <img src="{{URL::to('/images/frontAssets/media-monitor-screen-Digital Marketing@2x.png')}}" alt="" class="img-fluid">
                     <h4>
                         Social Media Manager
                     </h4>
@@ -191,7 +191,7 @@
 
         <div class="row">
             <div class="col-md-3">
-                <img src="{{URL::to('/assets/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
@@ -202,7 +202,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="{{URL::to('/assets/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
@@ -213,7 +213,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="{{URL::to('/assets/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
@@ -224,7 +224,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="{{URL::to('/assets/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid">
+                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
