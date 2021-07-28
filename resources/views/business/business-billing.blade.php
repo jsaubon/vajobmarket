@@ -148,7 +148,7 @@
 
                     </div>
                     {{-- proceed and back buttons --}}
-                    <div class="row" style="padding-top:20px; font-size:1.3em; font-weight:400;">
+                    <div class="row" style="padding-top:20px; font-size:0.6em; font-weight:400;">
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
                             <p class="text-center  title-personal-info">ligula, cursus id sagittis eu,
