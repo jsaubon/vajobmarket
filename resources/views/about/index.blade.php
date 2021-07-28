@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="aboutSection">
+<section class="aboutSection-2">
     <div class="container">
         <!-- <div class="card shadow p-4 cardSize text-start">
             <h4><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat!</b></h4>
@@ -18,7 +18,7 @@
         </div> -->
     </div>
 </section>
-<section class="about2section">
+<section class="about2section-3">
     <div class="container">
         <div class="row mt-5 lowtext">
             <div class="col-sm-6">
@@ -48,7 +48,8 @@
         </div>
     </div>
 </section>
-<section class="servicesSection mt-5 mb-5">
+
+<section class="aboutSection-4 mt-5 mb-5">
     <div class="container">
         <div class="text-center">
             <h1><b>OUR SERVICES</b></h1>
@@ -69,7 +70,8 @@
         </div>
     </div>
 </section>
-<section class="goalsVision">
+
+<section class="aboutSection-5">
     <div class="container">
         <br/>
         <br/>
@@ -92,7 +94,8 @@
         </div>
     </div>
 </section>
-<section class="bossKenSection">
+
+<section class="aboutSection-6">
     <div class="container">
         <br/>
         <br/>

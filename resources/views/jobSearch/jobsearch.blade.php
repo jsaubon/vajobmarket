@@ -40,7 +40,7 @@
                                 <p>Showing <span id="job_posts_showing_count">-</span> Job Posts out of <span id="job_posts_all_count">-</span></p>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-center" id="job_posts_list">
+                        <div class="row d-flex justify-content-center h-50 flex-wrap flex-fill" id="job_posts_list">
 
                             <!-- @foreach($jobPosts as $post)
                             <div class="col-sm-6">
@@ -91,20 +91,20 @@
 
                 {{-- candidates --}}
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="wrapper d-flex flex-wrap">
-                        <div class="row">
+                    <div class="wrapper d-flex  flex-column flex-md-wrap">
+                        <div class="row w-100">
                             <div class="col-md-12">
                                 <p>Showing <span id="job_seekers_showing_count">-</span> Job Posts out of <span id="job_seekers_all_count">-</span></p>
                             </div>
                         </div>
 
-                        <div class="row d-flex justify-content-center" id="job_seekers_list">
+                        <div class="row d-flex justify-content-center  w-75 mx-auto   align-content-stretch" id="job_seekers_list">
 
                         </div>
                         <hr/>
-                        <div class="row d-flex justify-content-center">
+                        <div class="row justify-content-center">
                             <nav aria-label="Page navigation example">
-                                <ul class="pagination" id="job_seekers_pagination">
+                                <ul class="pagination d-flex justify-content-center" id="job_seekers_pagination">
                                 </ul>
                             </nav>
                         </div>
@@ -184,9 +184,9 @@
 
             res.data.data.map((job_post) => {
                 $('#job_posts_list').append('\
-                    <div class="col-sm-3 m-2 p-0">\
-                        <a href="/BusinessProfileCompany?job_id='+job_post.id+'">\
-                            <div class="card h-100 shadow  p-4" style="border-radius: 20px;">\
+                    \
+                        <a href="/BusinessProfileCompany?job_id='+job_post.id+'" class="w-25 m-2 h-auto">\
+                            <div class="card h-auto shadow  p-4" style="border-radius: 20px;">\
                                 <p class="text-center">'+job_post.job_title+'</p>\
                                 <div class="d-flex justify-content-between">\
                                     <span><small>'+job_post.job_type+'</small></span>\
@@ -199,7 +199,7 @@
                                 <button class="btn">READ MORE</button>\
                             </div>\
                         </a>\
-                    </div>\
+                  \
                 ');
             });
 
