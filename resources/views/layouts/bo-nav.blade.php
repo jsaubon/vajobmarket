@@ -17,49 +17,49 @@
 <div class="small-nav small-nav-bo shadow bo-nav">
     <ul>
         <a href="/DashboardBusiness" class="small-nav-link">
-            <li class="small-nav-list">
+            <li class="small-nav-list m-0">
                 dashboard
             </li>
         </a>
         <hr class=" m-0">
         <a href="/BusinessProfile" class="small-nav-link">
-            <li class="small-nav-list">
+            <li class="small-nav-list  m-0">
                 profile
             </li>
         </a>
         <hr class=" m-0">
         <a href="/BusinessAllJobPost" class="small-nav-link">
-            <li class="small-nav-list">
+            <li class="small-nav-list  m-0">
                 Job Posts
             </li>
         </a>
         <hr class=" m-0">
         <a href="/BusinessApplications" class="small-nav-link">
-            <li class="small-nav-list">
+            <li class="small-nav-list  m-0">
                 application
             </li>
         </a>
         <hr class=" m-0">
         <a href="/BusinessEmployment" class="small-nav-link">
-            <li class="small-nav-list">
+            <li class="small-nav-list  m-0">
                 employment
             </li>
         </a>
         <hr class=" m-0">
-        <a href="#" class="small-nav-link">
-            <li class="small-nav-list">
+        <a href="/BusinessMessages" class="small-nav-link ">
+            <li class="small-nav-list  m-0">
                 message
             </li>
         </a>
         <hr class=" m-0">
-        <a href="/BusinessProfilePersonal" class="small-nav-link">
-            <li class="small-nav-list">
+        <a href="/BusinessInfoSettings" class="small-nav-link">
+            <li class="small-nav-list  m-0">
                 settings
             </li>
         </a>
         <hr class=" m-0">
         <a href="#" class="small-nav-link btn-logout">
-            <li class="small-nav-list">
+            <li class="small-nav-list  m-0">
                 logout
             </li>
         </a>

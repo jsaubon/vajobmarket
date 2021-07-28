@@ -39,17 +39,17 @@
             </div>
         </div>
         <ul class="nav nav-tabs d-flex justify-content-around " id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
+            <li class="nav-item m-0" role="presentation">
                 <a class="nav-link title-personal-info mt-0 active-bottom active border-top-0 nav-link-style border-left-0 border-right-0 text-center text-dark" data-toggle="tab" href="#first-choice" role="tab" aria-controls="home" aria-selected="true">
                     personal
                 </a>
             </li>
-            <li class="nav-item " role="presentation" >
+            <li class="nav-item m-0" role="presentation" >
                 <a class="nav-link title-personal-info mt-0 active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#second-choice" role="tab" aria-controls="profile" aria-selected="false">
                     professional
                 </a>
             </li>
-            <li class="nav-item " role="presentation" >
+            <li class="nav-item m-0" role="presentation" >
                 <a class="nav-link title-personal-info mt-0 active-bottom border-top-0 nav-link-style border-left-0 border-right-0  text-center text-dark"  data-toggle="tab" href="#third-choice" role="tab" aria-controls="profile" aria-selected="false">
                     skills
                 </a>

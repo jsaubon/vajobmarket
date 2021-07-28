@@ -38,6 +38,8 @@ Route::get('/jobseekerMessages', 'Frontend\JobSearchController@jobseekerMessages
 Route::get('/jobseekerApplications', 'Frontend\JobSearchController@jobseekerApplications');
 Route::get('/jobseekerDashboard', 'Frontend\JobSearchController@jobseekerDashboard');
 Route::get('/jobseekerMessages', 'Frontend\JobSearchController@jobseekerMessages');
+Route::get('/jobseekerCurrentEmployment', 'Frontend\JobSearchController@jobseekerCurrentEmployment');
+Route::get('/jobseekerSettings', 'Frontend\JobSearchController@jobseekerSettings');
 
 
 //business-owner
@@ -51,6 +53,7 @@ Route::get('/BusinessProfile', 'Frontend\BusinessController@BusinessProfile');
 Route::get('/BusinessProfilePersonal', 'Frontend\BusinessController@BusinessProfilePersonal');
 Route::get('/BusinessProfileCompany', 'Frontend\BusinessController@BusinessProfileCompany');
 Route::get('/DashboardBusiness', 'Frontend\BusinessController@DashboardBusiness');
+Route::get('/BusinessInfoSettings', 'Frontend\BusinessController@BusinessInfoSettings');
 
 
 Route::get('/BusinessAllJobPost', 'Frontend\BusinessCOntroller@BusinessAllJobPost');

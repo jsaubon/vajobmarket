@@ -31,7 +31,7 @@
             </li>
         </a>
         <hr class=" m-0">
-        <a href="#" class="small-nav-link ">
+        <a href="/jobseekerCurrentEmployment" class="small-nav-link ">
             <li class="small-nav-list m-0">
                 employment
             </li>
@@ -44,7 +44,7 @@
             </li>
         </a>
         <hr class=" m-0">
-        <a href="/jobseekerUpdateDetails" class="small-nav-link ">
+        <a href="/jobseekerSettings" class="small-nav-link ">
             <li class="small-nav-list m-0">
                 settings
             </li>
