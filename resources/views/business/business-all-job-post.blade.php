@@ -14,7 +14,7 @@
     </nav>
 
     <div class="wrapper">
-        <table class="display tbl_bo_job_posts_all" id="myDataTable">
+        <table class="display tbl_bo_job_posts_all" id="myDataTable-AllJobPost">
             <thead>
                 <tr>
                 <th class="text-center" scope="col">Job Posted</th>

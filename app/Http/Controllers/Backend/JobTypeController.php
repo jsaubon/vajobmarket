@@ -57,7 +57,7 @@ class JobTypeController extends Controller
             'job_type' => 'required'
         ]);
         
-        $data = JobType::create($request->all())->save();
+        $data = JobType::create($request->all());
        
         return response()->json([
             'success' => true,

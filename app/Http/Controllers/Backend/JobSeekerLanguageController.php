@@ -60,7 +60,7 @@ class JobSeekerLanguageController extends Controller
         if($request->languages) {
             $data = JobSeekerLanguage::insert($request->languages);
         } else {
-            $data = JobSeekerLanguage::create($request->all())->save();
+            $data = JobSeekerLanguage::create($request->all());
         }
         
        

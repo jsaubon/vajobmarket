@@ -58,7 +58,7 @@ class CommentController extends Controller
             'content' => 'required'
         ]);
         
-        $data = Comment::create($request->all())->save();
+        $data = Comment::create($request->all());
        
         return response()->json([
             'success' => true,

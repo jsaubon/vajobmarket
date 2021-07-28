@@ -60,7 +60,7 @@ class JobSeekerSpecializedSkillController extends Controller
         if($request->skills) {
             $data = JobSeekerSpecializedSkill::insert($request->skills);
         } else {
-            $data = JobSeekerSpecializedSkill::create($request->all())->save();
+            $data = JobSeekerSpecializedSkill::create($request->all());
         }
        
         return response()->json([

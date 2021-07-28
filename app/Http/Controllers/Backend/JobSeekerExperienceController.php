@@ -60,7 +60,7 @@ class JobSeekerExperienceController extends Controller
         if($request->experiences) {
             $data = JobSeekerExperience::insert($request->experiences);
         } else {
-            $data = JobSeekerExperience::create($request->all())->save();
+            $data = JobSeekerExperience::create($request->all());
         }
         
        

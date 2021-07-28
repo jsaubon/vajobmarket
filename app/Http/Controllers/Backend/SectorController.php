@@ -57,7 +57,7 @@ class SectorController extends Controller
             'sector' => 'required'
         ]);
         
-        $data = Sector::create($request->all())->save();
+        $data = Sector::create($request->all());
        
         return response()->json([
             'success' => true,

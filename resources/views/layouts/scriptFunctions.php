@@ -124,6 +124,7 @@
 
     $(document).ready(function() {
         $("#myDataTable").DataTable();
+        $("#myDataTable-AllJobPost").DataTable();
     });
 
 
