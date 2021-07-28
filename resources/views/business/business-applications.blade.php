@@ -265,7 +265,7 @@ function getPageData() {
                 let client_employee_id = card.attr('client_employee_id');
                 let data = {
                     status: 'Hired',
-                    employment_status: 'Employed',
+                    // employment_status: 'Employed',
                     date_hired: moment().format('YYYY-MM-DD'),
                 }
                 updateData('/api/ClientEmployee/'+client_employee_id,data, ({data:res}) => {

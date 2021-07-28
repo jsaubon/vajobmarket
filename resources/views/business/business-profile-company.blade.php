@@ -713,6 +713,12 @@ $(document).ready(function() {
                 let client = jobpost_data.client;
                 let client_business_info = client.client_business_info;
                 let client_job_post_required_skills = jobpost_data.client_job_post_required_skills;
+
+                if(client_business_info.business_logo) {
+                    $('.client_business_info-business_logo').attr('src',client_business_info.business_logo);
+                }
+
+
                 Object.keys(jobpost_data).map((field, key) => {
                     let element = $('.job_post-'+field);
                     if(element.length) {

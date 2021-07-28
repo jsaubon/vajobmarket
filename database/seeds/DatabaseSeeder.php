@@ -322,8 +322,8 @@ class DatabaseSeeder extends Seeder
             $client_job_posts = $client->client_job_posts()->get();
             $employees_count = rand(0,30);
             $employees = [];
-            $statuses = ['Applicant','Shortlisted','Hired', 'Dismissed'];
-            $employment_statuses = ['Terminated','End of Contract','Employed'];
+            $statuses = ['Applicant','Shortlisted','Hired', 'Dismissed', 'End of Contract'];
+            $employment_statuses = $job_types[rand(0,2)];
             for ($i=0; $i < $employees_count; $i++) { 
                 $employees[] = [
                     'client_id' => $client->id,
