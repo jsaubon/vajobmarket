@@ -9,7 +9,7 @@
         </div>
         <div class="row h-100">
                 <div class="col-md-6 d-flex flex-column justify-content-center">
-                    <div class="jobseeker-img h-75"></div>
+                    <img src="{{URL::to('/images/JS-Onboarding/try.jpg')}}" alt="" class="img-fluid shadow">
                 </div>
                 <div class="col-md-1 "></div>
                 <div class="col-md-5 d-flex flex-column justify-content-center">

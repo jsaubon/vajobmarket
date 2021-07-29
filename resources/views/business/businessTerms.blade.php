@@ -5,7 +5,8 @@
     <div class="container d-flex flex-column justify-content-center h-100" style="padding-top: 100px;">
         <div class="row h-100">
                 <div class="col-md-6">
-                    <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid ">
+
+                    <img src="{{URL::to('/images/BO-Onboarding/try2.jpg')}}" alt="" class="img-fluid shadow">
                 </div>
                 <div class="col-md-1 "></div>
                 <div class="col-md-5 d-flex flex-column justify-content-center">
