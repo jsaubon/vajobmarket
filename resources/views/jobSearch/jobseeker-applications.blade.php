@@ -13,7 +13,7 @@
             </ol>
         </nav>
          {{-- breadcrumb end--}}
-        <div class="card shadow" style="border-radius:10px; min-height: 80vh;" >
+        <div class="card shadow" style="border-radius:10px; min-height: 60vh;" >
             <ul class="nav nav-tabs border-0 mt-3 px-3" id="myTab" role="tablist">
                 <li class="nav-item " role="presentation" style="width:50%;">
                     <a class="nav-link title-personal-info m-0 active-bottom border active border-2 border-top-0  border-left-0 border-right-0 text-center text-dark"  data-toggle="tab" href="#js-jobsapplied-tab" role="tab" aria-controls="home" aria-selected="true">
@@ -31,13 +31,13 @@
                <!-- Account -->
                 <div class="tab-pane fade show active" id="js-jobsapplied-tab" role="tabpanel" aria-labelledby="home-tab">
                     <div class="accordion mx-2"  id="accordionJobsApplied">
-                            
+
                     </div>
                 </div>
                 <!-- Payment  -->
                 <div class="tab-pane fade  " id="js-onhiring-tab" role="tabpanel" aria-labelledby="home-tab">
                     <div class="accordion mx-2" id="accordionJobsShortlisted">
-                            
+
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
 
 
- 
+
 
 
 <script>
@@ -151,7 +151,7 @@ $(document).ready(function() {
                 )
             });
 
-           
+
 
 
 
