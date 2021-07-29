@@ -55,6 +55,10 @@
 <script>
     if(!token) {
         window.location.href = '/';
+    } else {
+        if(!userdata.jobseeker) {
+            window.location.href = '/';
+        }
     }
 
 

@@ -76,7 +76,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <p class="text-center">Dont have an account? <a href="/signup">SIGN UP</a></p>
+                                <p class="text-center">Dont have an account? <a href="/signup?type=bo">SIGN UP</a></p>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <p class="text-center">Don't have an account? <a href="/signup">SIGN UP</a></p>
+                                <p class="text-center">Don't have an account? <a href="/signup?type=js">SIGN UP</a></p>
                             </div>
                         </div>
                     </div>

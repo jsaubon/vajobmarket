@@ -373,7 +373,7 @@ $(document).ready(function() {
         }
     }
     if(jobseeker_id) {
-        getData('/api/JobSeeker/'+jobseeker_id, ({data:res}) => {
+        getData('/api/PublicJobSeeker/'+jobseeker_id, ({data:res}) => {
             if(res.success) {
                 console.log(res);
                 let jobseeker_data = res.data;

@@ -64,7 +64,7 @@
 
                     <div class="row">
                         <div class="col-md-4">
-                            <label class="personal-info-forms-items" style="border:0 !important;">Date of Birth</label>
+                            <label class="personal-info-forms-items" style="border:0 !important;">Expiration</label>
                         </div>
                         <div class="col-md-4">
                             <select class="form-control personal-info-forms-items"  name="exp_date_month">
