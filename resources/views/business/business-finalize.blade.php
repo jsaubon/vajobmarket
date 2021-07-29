@@ -158,7 +158,11 @@
 
         <div class="row" style="margin-top: 10%;">
             <div class="container-fluid py-2 d-flex justify-content-center ">
+<<<<<<< HEAD
                 <a class="btn btn-primary font-weight-bolder proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="/BusinessPostJob">
+=======
+                <a class="btn btn-primary proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="/posts">
+>>>>>>> f86295d299151cfd632144b12f4088dc73e0e781
                     start posting
                 </a>
                 <a href="/DashboardBusiness" class="btn font-weight-bolder  btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">

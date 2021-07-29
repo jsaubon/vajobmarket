@@ -176,6 +176,10 @@
 .frontSection-4 {
     background-color: white;
 
+    .card {
+        min-height: 16rem;
+    }
+
     h2 {
         font-size: 3rem;
         font-weight: bold;
@@ -441,6 +445,106 @@
 }
 
 @media screen and (max-width:1024px) {
+
+    .frontSection-1, .frontSection-2 {
+        padding: 0rem 4rem;
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        p {
+            line-height: 16px;
+        }
+
+    }
+
+    .frontSection-2 {
+        
+        .leftColumn {
+            margin-top: 20rem;
+        }
+
+        .rightColumn {
+            padding: 1rem;
+
+            h2 {
+                font-size: 18px;
+            }
+
+            h4 {
+                line-height: 30px;
+            }
+            
+            p {
+                font-size: 18px !important;
+            }
+
+            span {
+                padding: 0rem 2rem !important;
+            }
+        }
+
+    }
+
+    .frontSection-3 {
+        padding: 16px;
+
+        h2 {
+            font-size: 50px !important;
+        }
+
+    }
+
+    .frontSection-4 {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .card {
+
+            min-height: 10rem;
+
+        img {
+            padding: 12px;
+            }
+
+        h4 {
+            font-size: 12px;
+            }
+                    
+        }
+
+    }
+
+    .frontSection-5 {
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        p {
+            line-height: 16px;
+        }
+
+        img {
+            height: 100px !important;
+            width: 100px !important;
+        }
+
+        .row {
+            p {
+                font-size: 12px !important;
+            }
+        }
+
+    }
+
 
 }
 

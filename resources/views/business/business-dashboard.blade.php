@@ -10,7 +10,7 @@
             <div class="wrapper rounded-lg" style="padding: 50px 40px 80px 40px;" >
                 <div class="row pt-2">
                     <div class="col-md-12" style="text-transform: uppercase ; color:#767676; font-size:1em;">
-                        Welcome back username!
+                        Welcome back <span class="user-firstname">username</span>!
                     </div>
                 </div>
 

@@ -58,7 +58,7 @@
                     <hr/>
                 </div>
                 <div class="card-body">
-                    <div id="skills_container py-4">
+                    <div id="skills_container" class=" py-4">
                         <div class="row">
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" name="skills[1][skill]" placeholder="Skills" />
@@ -126,14 +126,15 @@
 
     $('.btn-add-skill').on('click', function() {
         let skills_container = $('#skills_container');
-
+        
+        let row = skills_container.find('.row').length +1;
         skills_container.append(
             '<div class="row">'+
                 '<div class="col-sm-8">'+
-                    '<input type="text" class="form-control" name="skills['+(skills_container.find('.row').length +1)+'][skill]" placeholder="Skills" />'+
+                    '<input type="text" class="form-control" name="skills['+row+'][skill]" placeholder="Skills" />'+
                 '</div>'+
                 '<div class="col-sm-4">'+
-                    '<select  class="form-control" name="skills['+(skills_container.find('.row').length +1)+'][proficiency]">'+
+                    '<select  class="form-control" name="skills['+row+'][proficiency]">'+
                         '<option value="">Proficiency</option>'+
                         '<option value="Beginner">Beginner</option>'+
                         '<option value="Advanced">Advanced</option>'+
