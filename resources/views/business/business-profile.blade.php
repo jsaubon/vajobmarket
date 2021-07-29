@@ -214,7 +214,7 @@ $(document).ready(function() {
                 let client = res.data;
                 client_business_info = client.client_business_info;
                 if(client_business_info.business_logo) {
-                    $('.client_business_info-business_logo').attr('src','/'+client_business_info.business_logo);
+                    $('.client_business_info-business_logo').attr('src','/storage/'+client_business_info.business_logo);
                 }
 
                 let client_employees = client.client_employees.filter(p => p.status == 'Hired');
