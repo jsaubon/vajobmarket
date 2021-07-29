@@ -31,7 +31,9 @@
                     <br/>
                     <div class="row">
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="job_type" placeholder="Job Type" />
+                            <select class="form-control" name="job_type" id="jobtype_select">
+                                <option value="">Job Type</option>
+                            </select>
                         </div>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" name="monthly_rate" placeholder="Monthly Rate" />
@@ -111,16 +113,27 @@
         }
     })
 
+    getData('/api/JobType', ({data:res}) => {
+        // console.log('res',res);
+        if(res.success) {
+            res.data.map((jobtype, key) => {
+                $('#jobtype_select').append(
+                    '<option value="'+jobtype.job_type+'">'+jobtype.job_type+'</option>'
+                )
+            });
+        }
+    })
+
     $('.btn-add-skill').on('click', function() {
         let skills_container = $('#skills_container');
 
         skills_container.append(
             '<div class="row">'+
                 '<div class="col-sm-8">'+
-                    '<input type="text" class="form-control" name="skills['+(skills_container.length +1)+'][skill]" placeholder="Skills" />'+
+                    '<input type="text" class="form-control" name="skills['+(skills_container.find('.row').length +1)+'][skill]" placeholder="Skills" />'+
                 '</div>'+
                 '<div class="col-sm-4">'+
-                    '<select  class="form-control" name="skills['+(skills_container.length +1)+'][proficiency]">'+
+                    '<select  class="form-control" name="skills['+(skills_container.find('.row').length +1)+'][proficiency]">'+
                         '<option value="">Proficiency</option>'+
                         '<option value="Beginner">Beginner</option>'+
                         '<option value="Advanced">Advanced</option>'+

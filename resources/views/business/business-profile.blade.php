@@ -93,7 +93,7 @@
             {{-- second --}}
             <div class="tab-pane fade" id="company-pro" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="container ">
-                    <div class="row my-3">
+                    <div class="row my-3 btn-edit-container">
                         <div class="col-md-12 d-flex justify-content-end">
                             <a class="btn btn-light back-btn" style="border-radius: 50px; font-family: 'oswald',san-serif;" href="/BusinessProfilePersonal">Edit</a>
                         </div>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="container h-auto" style="gap:10px;">
                     {{-- comments --}}
-                    <div class="row comments_container">
+                    <!-- <div class="row comments_container">
                         <div class="col-md-4 my-2 shadow" style="border-radius: 10px;" >
                             <div class="card-body">
                               <h5 class="card-title d-flex" style="font-size:15px;">
@@ -167,7 +167,7 @@
                             </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                      {{-- comments end--}}
                 </div>
                 <div class="container">
@@ -206,13 +206,23 @@ $(document).ready(function() {
         }
     }
 
+    if(!token) {
+        if(!userdata.client) {
+            $('.btn-edit-container').addClass('hide');
+        }
+        
+    }
+
     
     if(client_id) {
         getData('/api/Client/'+client_id, ({data:res}) => {
             if(res.success) {
                 let client = res.data;
                 client_business_info = client.client_business_info;
-                
+                console.log('client_business_info',client_business_info)
+                if(client_business_info.business_logo) {
+                    $('.client_business_info-business_logo').attr('src',window.location.origin+'/'+client_business_info.business_logo);
+                }
                 
                 let client_employees = client.client_employees.filter(p => p.status == 'Hired');
                 

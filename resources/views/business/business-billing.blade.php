@@ -106,18 +106,15 @@
                     </div>
                     <div class="row">
                         <div class="col-md-8">
-                            <select class="form-control personal-info-forms-items"  name="billing_city" >
-                                <option>City</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items"  name="billing_city"  placeholder="City">
+                            </div>
+                          
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input type="text" class="form-control personal-info-forms-items"  name="billing_zip"  placeholder="Zip / Postal">
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -125,13 +122,10 @@
 
                         </div>
                         <div class="col-md-10">
-                            <select class="form-control personal-info-forms-items"  name="billing_country" >
-                                <option>Country</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items"  name="billing_country"  placeholder="Country">
+                            </div>
+                           
                         </div>
                         <div class="col-md-1">
 
