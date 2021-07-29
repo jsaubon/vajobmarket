@@ -189,17 +189,17 @@
             res.data.data.map((job_post) => {
                 $('#job_posts_list').append('\
                     \
-                        <a href="/BusinessProfileCompany?job_id='+job_post.id+'" class="w-25 m-2 h-auto">\
+                        <a href="/BusinessProfileCompany?job_id='+job_post.id+'" class="w-25 m-2 h-auto text-decoration-none">\
                             <div class="card h-auto shadow  p-4" style="border-radius: 20px;">\
-                                <p class="text-center">'+job_post.job_title+'</p>\
-                                <div class="d-flex justify-content-between">\
+                                <p class="text-center m-0 profile-info-forms-items " style="font-weight:bolder; font-size:1.3em !important;">'+job_post.job_title+'</p>\
+                                <div class="d-flex title-personal-info m-0 justify-content-between text-p" style="font-weight:bolder; font-size:1.3em !important;">\
                                     <span><small>'+job_post.job_type+'</small></span>\
                                     <span><small>'+job_post.client.client_business_info.business_name+'</small></span>\
                                     <span><small>'+job_post.salary+'</small></span>\
                                     <span><small>'+job_post.start_date+'</small></span>\
                                 </div>\
-                                <hr/>\
-                                <p>'+job_post.job_description+'</p>\
+                                <hr class="lsep"/>\
+                                <p class="title-personal-info m-0 pb-4" style="font-size:0.7em;">'+job_post.job_description+'</p>\
                                 <button class="btn">READ MORE</button>\
                             </div>\
                         </a>\
@@ -256,20 +256,24 @@
                     <div class="col-sm-3 m-2 p-0">\
                         <div class="card h-100 shadow p-4" style="border-radius: 20px;">\
                             <div class="row">\
-                                <div class="col-sm-3">        \
-                                    <img src="'+photo+'" style="height:80px; width:80px; border-radius: 40px; object-fit:cover;" />\
-                                </div>\
-                                <div class="col-sm-6" style="margin: 10px 0px;">\
-                                    <b>'+name+'</b>\
-                                    <p>'+job_seeker.jobseeker_profession.job_title+'</p>\
-                                </div>\
-                                <div class="col-sm-3">\
+                                <div class="col-md-12">\
+                                    <div class="row"> \
+                                        <div class="col-sm-4">        \
+                                        <img src="'+photo+'" style="height:60px; width:60px; border-radius: 40px; object-fit:cover;" />\
+                                        </div>\
+                                        <div class="col-sm-7 mx-1" style="margin: 10px 0px;">\
+                                        <b>'+name+'</b>\
+                                        <p>'+job_seeker.jobseeker_profession.job_title+'</p>\
+                                        </div>\
+                                    </div>\
+                                </div> \
+                                <div class="col-sm-12 d-flex justify-content-center">\
                                     Ratings: 100%\
                                 </div>\
                             </div>\
                             <hr/>\
                             <p>'+job_seeker.jobseeker_profession.skills_summary+'</p>\
-                            <a class="btn" href="/jobseekerProfile?jobseeker_id='+job_seeker.id+'" style="border:1px solid #000;">SEE PROFILE</a>\
+                            <a class="btn btn-outline-dark" href="/jobseekerProfile?jobseeker_id='+job_seeker.id+'" style="border:1px solid #000;">SEE PROFILE</a>\
                         </div>\
                     </div>\
                 ');

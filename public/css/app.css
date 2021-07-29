@@ -1235,6 +1235,10 @@ input:-webkit-autofill:active {
   flex-wrap: wrap;
 }
 
+.text-p {
+  font-family: "Oswald", sans-serif !important;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
