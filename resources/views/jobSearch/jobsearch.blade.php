@@ -192,7 +192,7 @@
                         <a href="/BusinessProfileCompany?job_id='+job_post.id+'" class="w-25 m-2 h-auto text-decoration-none">\
                             <div class="card h-auto shadow  p-4" style="border-radius: 20px;">\
                                 <p class="text-center m-0 profile-info-forms-items " style="font-weight:bolder; font-size:1.3em !important;">'+job_post.job_title+'</p>\
-                                <div class="d-flex title-personal-info m-0 justify-content-between text-p" style="font-weight:bolder; font-size:1.3em !important;">\
+                                <div class="d-flex title-personal-info m-0 justify-content-between text-p" style="font-weight:bolder; font-size:1em !important;">\
                                     <span><small>'+job_post.job_type+'</small></span>\
                                     <span><small>'+job_post.client.client_business_info.business_name+'</small></span>\
                                     <span><small>'+job_post.salary+'</small></span>\
