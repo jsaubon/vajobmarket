@@ -104,8 +104,9 @@ function getPageData() {
                         '<tr client_employee_id='+applicant.id+'>'+
                             '<td>'+name+'</td>'+
                             '<td class="text-center">'+applicant.status+'</td>'+
-                            '<td class="text-center">'+
+                            '<td class="text-center" style="white-space: break-spaces">'+
                                 'Subject: '+applicant.application_subject+''+
+                                '<br/>'+
                                 '<br/>'+
                                 'Message: '+applicant.application_message+''+
                             '</td>'+

@@ -530,7 +530,14 @@
 
 
         if(userdata) {
+            console.log('userdata',userdata);
             $('.user-firstname').html(userdata.firstname);
+            getData('/api/User/'+userdata.id, ({data: res}) => {
+                console.log(res);
+                if(res.success) {
+                    localStorage.userdata = JSON.stringify(res.data);
+                }
+            })
         }
     });
 

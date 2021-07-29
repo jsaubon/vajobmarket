@@ -338,6 +338,8 @@ class DatabaseSeeder extends Seeder
                     'responsibilities' => $faker->sentence(50),
                     'contract' => rand(1,4).'yr',
                     'date_applied' => $faker->date,
+                    'application_subject' => $faker->sentence(1),
+                    'application_message' => $faker->sentence(10),
                 ];
             }
 
