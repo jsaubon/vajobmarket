@@ -131,14 +131,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-md-12 d-flex justify-content-end">
                                 <div class="form-group personal-info-forms-items form-check " style="border:none !important;">
                                     <input type="checkbox" class="form-check-input p-2" name="exampleCheck1">
                                     <label class="form-check-label p-1" for="exampleCheck1">I currently work here</label>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="row">
                             <div class="col-md-12 ">
                                 <textarea placeholder="Write job scope here.."class="jobseeker-textarea p-2 w-100" name="experiences[1][job_scope]" rows="5" style=" resize: none;"></textarea>
@@ -327,14 +327,6 @@
 
 </script>
 
-// <div class="row">\
-//                     <div class="col-md-12 d-flex justify-content-end">\
-//                         <div class="form-group personal-info-forms-items form-check " style="border:none !important;">\
-//                             <input type="checkbox" class="form-check-input p-2" name="exampleCheck1">\
-//                             <label class="form-check-label p-1" for="exampleCheck1">I currently work here</label>\
-//                         </div>\
-//                     </div>\
-//                 </div>\
 
 @endsection
 
