@@ -82,8 +82,7 @@ function getPageData() {
                                     '<tr>'+
                                     '<th class="text-center" scope="col">Name</th>'+
                                     '<th class="text-center" scope="col">Status</th>'+
-                                    '<th class="text-center" scope="col">Rating</th>'+
-                                    '<th class="text-center" scope="col">Recommendation</th>'+
+                                    '<th class="text-center" scope="col">Message</th>'+
                                     '<th class="text-center" scope="col">Date Applied</th>'+
                                     '<th class="text-center" scope="col">Actions</th>'+
                                     '</tr>'+
@@ -105,8 +104,11 @@ function getPageData() {
                         '<tr client_employee_id='+applicant.id+'>'+
                             '<td>'+name+'</td>'+
                             '<td class="text-center">'+applicant.status+'</td>'+
-                            '<td class="text-center"></td>'+
-                            '<td class="text-center"></td>'+
+                            '<td class="text-center">'+
+                                'Subject: '+applicant.application_subject+''+
+                                '<br/>'+
+                                'Message: '+applicant.application_message+''+
+                            '</td>'+
                             '<td class="text-center">'+applicant.date_applied+'</td>'+
                             '<td class="text-center">'+
                             '<button class="btn btn-primary btn-shortlist">Shortlist</button>'+

@@ -77,8 +77,7 @@
                         <tr>
                         <th class="text-center dash-table-title" scope="col">name</th>
                         <th class="text-center dash-table-title" scope="col">status</th>
-                        <th class="text-center dash-table-title" scope="col">rating</th>
-                        <th class="text-center dash-table-title" scope="col">recomendation</th>
+                        <th class="text-center dash-table-title" scope="col">Message</th>
                         <th class="text-center dash-table-title" scope="col">Date applied</th>
                         <th class="text-center dash-table-title" scope="col">Actions</th>
                         </tr>
@@ -187,8 +186,11 @@ $(document).ready(function() {
                         '<tr>'+
                             '<td class="dash-table-content">'+name+'</td>'+
                             '<td class="text-center  dash-table-content">'+applicant.status+'</td>'+
-                            '<td class="text-center  dash-table-content"></td>'+
-                            '<td class="text-center  dash-table-content"></td>'+
+                            '<td class="dash-table-content">'+
+                                'Subject: '+applicant.application_subject+''+
+                                '<br/>'+
+                                'Message: '+applicant.application_message+''+
+                            '</td>'+
                             '<td class="text-center  dash-table-content">'+applicant.date_applied+'</td>'+
                             '<td class="text-center  dash-table-content d-flex justify-content-around">'+
                                 '<i class="fas fa-eye"></i>'+
