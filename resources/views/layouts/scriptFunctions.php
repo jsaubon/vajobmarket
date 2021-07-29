@@ -178,12 +178,13 @@
                 // alert('job seeker successfully logged in');
                 window.location.href = '/jobseekerDashboard';
             }, err =>  {
+                console.log('err.response.data',err.response.data);
                 if(err.response.data.error) {
-                    $('#signin_error_bo').removeClass('hide');
-                    $('#signin_error_bo_message').html(err.response.data.error);
+                    $('#signin_error_js').removeClass('hide');
+                    $('#signin_error_js_message').html(err.response.data.error);
                 }else {
-                    $('#signin_error_bo').removeClass('hide');
-                    $('#signin_error_bo_message').html(Object.values(err.response.data.errors)[0][0]);
+                    $('#signin_error_js').removeClass('hide');
+                    $('#signin_error_js_message').html(Object.values(err.response.data.errors)[0][0]);
                 }
             });
         });
