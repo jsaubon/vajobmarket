@@ -45,7 +45,7 @@
             <div class="container">
 
 
-                <form class="container" action="#" id="js_personal_detail"> 
+                <form class="container" action="#" id="js_personal_detail">
                     <h2 class="title-personal-info">Profession</h2>
                     <hr>
                     <div class="row">
@@ -145,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row m-auto">
                         <div class="col-md-12 d-flex justify-content-center p-2 btn-container btn_add_experience" >
                             <div class="btn-plus"></div>
@@ -154,10 +154,10 @@
 
 
 
-                    <div class="row" style="padding-top:70px;">
+                    <div class="row" style="padding-top:30px;font-size:0.6em; font-weight:400;">
                         <div class="col-md-2"></div>
                         <div class="col-md-8">
-                            <p class="text-center">ligula, cursus id sagittis eu,
+                            <p class="text-center title-personal-info">ligula, cursus id sagittis eu,
                                 volutpat id sapien. Cras scelerisque
                                 ullamcorper tellus, sed efficitur odio iaculis a.
                                 Pellentesque habitant morbi tristique senectus
@@ -184,7 +184,7 @@
 <script>
     if(!token) {
         window.location.href = '/signup';
-    } 
+    }
 
     $(document).ready(function() {
         $('[name="email"]').val(userdata.email);
@@ -203,7 +203,7 @@
 
 
             let data_languages = {...data.languages};
-            data_languages = Object.values(data_languages); 
+            data_languages = Object.values(data_languages);
             let data_experiences = {...data.experiences};
             data_experiences = Object.values(data_experiences);
 
@@ -212,7 +212,7 @@
             data_languages.map((edu, key) => {
                 data_languages[key]['jobseeker_id'] = jobseeker_id;
             });
-            
+
             data_experiences.map((edu, key) => {
                 data_experiences[key]['jobseeker_id'] = jobseeker_id;
             });
@@ -221,7 +221,7 @@
                 jobseeker_id: jobseeker_id,
                 languages: data_languages
             };
-            
+
             data_experiences = {
                 jobseeker_id: jobseeker_id,
                 experiences: data_experiences
@@ -239,7 +239,7 @@
                     createJobSeekerLanguages(data_languages, data_experiences);
                 }
             });
-            
+
         });
 
         function createJobSeekerLanguages(data_languages, data_experiences) {

@@ -86,11 +86,10 @@
                     </div>
 
 
-
-                    <div class="row" style="padding-top:70px;">
+                    <div class="row" style="padding-top:30px;font-size:0.6em; font-weight:400;">
                         <div class="col-md-2"></div>
                         <div class="col-md-8">
-                            <p class="text-center">ligula, cursus id sagittis eu,
+                            <p class="text-center title-personal-info">ligula, cursus id sagittis eu,
                                 volutpat id sapien. Cras scelerisque
                                 ullamcorper tellus, sed efficitur odio iaculis a.
                                 Pellentesque habitant morbi tristique senectus
@@ -116,7 +115,7 @@
 <script>
     if(!token) {
         window.location.href = '/signup';
-    } 
+    }
 
     $(document).ready(function() {
         $('[name="email"]').val(userdata.email);
@@ -125,22 +124,22 @@
             e.preventDefault();
 
             let data = $(this).serializeControls();
-            
+
 
             let data_skills = {...data.skills};
-            data_skills = Object.values(data_skills); 
+            data_skills = Object.values(data_skills);
 
 
             let jobseeker_id = userdata.jobseeker.id;
             data_skills.map((edu, key) => {
                 data_skills[key]['jobseeker_id'] = jobseeker_id;
             });
-            
+
             data_skills = {
                 jobseeker_id: jobseeker_id,
                 skills: data_skills
             };
-            
+
             console.log(data_skills)
 
             postData('/api/JobSeekerSpecializedSkill',data_skills, ({data:res}) => {
@@ -148,8 +147,8 @@
                     window.location.href = '/jobseekerProfileReview';
                 }
             });
-            
-        }); 
+
+        });
 
 
 
@@ -184,7 +183,7 @@
             ');
         });
 
- 
+
     });
 </script>
 @endsection

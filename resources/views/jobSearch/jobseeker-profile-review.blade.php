@@ -145,7 +145,7 @@
                     <h2 class="title-personal-info">references</h2>
                     <hr>
                     <div id="references_section">
-                    
+
                     </div>
 
                     {{-- Profession --}}
@@ -175,7 +175,7 @@
                             </textarea>
                         </div>
                     </div>
-                    
+
 
                     {{-- Languages --}}
                     <h2 class="title-personal-info">Languages</h2>
@@ -193,10 +193,10 @@
                     <div id="skills_section">
                     </div>
                     {{-- proceed and back buttons --}}
-                    <div class="row" style="padding-top:70px;">
+                    <div class="row" style="padding-top:30px;font-size:0.6em; font-weight:400;">
                         <div class="col-md-2"></div>
                         <div class="col-md-8">
-                            <p class="text-center">ligula, cursus id sagittis eu,
+                            <p class="text-center title-personal-info">ligula, cursus id sagittis eu,
                                 volutpat id sapien. Cras scelerisque
                                 ullamcorper tellus, sed efficitur odio iaculis a.
                                 Pellentesque habitant morbi tristique senectus
@@ -223,7 +223,7 @@
 <script>
  if(!token) {
     window.location.href = '/signup';
-} 
+}
 $(document).ready(function() {
     getData('/api/JobSeeker/'+userdata.jobseeker.id, ({data:res}) => {
         if(res.success) {
@@ -241,14 +241,14 @@ $(document).ready(function() {
                     input.val(jobseeker_data[field]);
                 }
             });
-            
+
             Object.keys(user).map((field, key) => {
                 let input = $('[name="personal_'+field+'"]');
                 if(input.length) {
                     input.val(user[field]);
                 }
             });
-            
+
             Object.keys(jobseeker_profession).map((field, key) => {
                 let input = $('[name="profession_'+field+'"]');
                 if(input.length) {
@@ -294,7 +294,7 @@ $(document).ready(function() {
                     </div>\
                 ');
             });
-              
+
 
             jobseeker_languages.map((language, key) => {
                 $('#languages_section').append('\
@@ -317,7 +317,7 @@ $(document).ready(function() {
                     </div>\
                 ');
             });
-              
+
             jobseeker_experiences.map((experience, key) => {
                 $('#experiences_section').append('\
                     <div class="row">\
@@ -382,7 +382,7 @@ $(document).ready(function() {
                     '</div>'
                 );
             });
-              
+
 
 
         }
