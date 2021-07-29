@@ -56,7 +56,7 @@ Route::get('/DashboardBusiness', 'Frontend\BusinessController@DashboardBusiness'
 Route::get('/BusinessInfoSettings', 'Frontend\BusinessController@BusinessInfoSettings');
 
 
-Route::get('/BusinessAllJobPost', 'Frontend\BusinessCOntroller@BusinessAllJobPost');
+Route::get('/BusinessAllJobPost', 'Frontend\BusinessController@BusinessAllJobPost');
 Route::get('/BusinessPostJob', 'Frontend\BusinessController@BusinessPostJob');
 Route::get('/BusinessEditJobPost', 'Frontend\BusinessController@BusinessEditJobPost');
 Route::get('/BusinessApplications', 'Frontend\BusinessController@BusinessApplications');
