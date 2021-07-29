@@ -95,7 +95,7 @@
                 <div class="container ">
                     <div class="row my-3 btn-edit-container">
                         <div class="col-md-12 d-flex justify-content-end">
-                            <a class="btn btn-light back-btn" style="border-radius: 50px; font-family: 'oswald',san-serif;" href="/BusinessProfilePersonal">Edit</a>
+                            <!-- <a class="btn btn-light back-btn" style="border-radius: 50px; font-family: 'oswald',san-serif;" href="/BusinessProfilePersonal">Edit</a> -->
                         </div>
                     </div>
                     <div class="card p-4">

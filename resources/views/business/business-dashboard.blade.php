@@ -186,14 +186,15 @@ $(document).ready(function() {
                         '<tr>'+
                             '<td class="dash-table-content">'+name+'</td>'+
                             '<td class="text-center  dash-table-content">'+applicant.status+'</td>'+
-                            '<td class="dash-table-content">'+
+                            '<td class="dash-table-content" style="white-space: break-spaces">'+
                                 'Subject: '+applicant.application_subject+''+
+                                '<br/>'+
                                 '<br/>'+
                                 'Message: '+applicant.application_message+''+
                             '</td>'+
                             '<td class="text-center  dash-table-content">'+applicant.date_applied+'</td>'+
                             '<td class="text-center  dash-table-content d-flex justify-content-around">'+
-                                '<i class="fas fa-eye"></i>'+
+                                '<a href="/jobseekerProfile?jobseeker_id='+applicant.jobseeker.id+'" target="_blank"><i class="fas fa-eye"></i></a>'+
                                 '<i class="fas fa-edit"></i>'+
                                 '<i class="fas fa-trash-alt"></i>'+
                             '</td>'+
