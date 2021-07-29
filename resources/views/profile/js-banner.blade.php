@@ -5,14 +5,14 @@
             <div class="profile-banner-container shadow">
 
             </div>
-            <div class="banner-offset-items" >
-                <a href="#" class="btn btn-danger hire-me-btn shadow">hire me</a>
+            <div class="banner-offset-items" style="top:300px !important;">
+                <a href="#" class="btn btn-danger hire-me-btn shadow d-flex flex-column justify-content-center">hire me</a>
                 <div class="profile-pic shadow">
-                    <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" alt="" />
+                    <img class="jobseeker_profession-jobseeker_photo" src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" />
                 </div>
                 <div class="profile-name">
-                    <h3>Jane Doe</h3>
-                    <p>Content Writer</p>
+                    <h3 class="jobseeker-fullname">-</h3>
+                    <p class="jobseeker_profession-job_title">-</p>
                 </div>
             </div>
         </div>

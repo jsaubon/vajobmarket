@@ -56,10 +56,11 @@ class ClientEmployeeController extends Controller
     {
         $this->validate($request, [
             'client_id' => 'required',
+            'client_job_post_id' => 'required',
             'jobseeker_id' => 'required'
         ]);
         
-        $data = ClientEmployee::create($request->all())->save();
+        $data = ClientEmployee::create($request->all());
        
         return response()->json([
             'success' => true,

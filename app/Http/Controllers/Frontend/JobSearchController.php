@@ -149,5 +149,11 @@ class JobSearchController extends Controller
     public function jobseekerApplications(){
         return view('jobSearch.jobseeker-applications');
     }
+    public function jobseekerCurrentEmployment(){
+        return view('jobSearch.jobseeker-current-employment');
+    }
+    public function jobseekerSettings(){
+        return view('jobSearch.jobseeker-settings');
+    }
 
 }

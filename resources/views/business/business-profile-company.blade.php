@@ -14,17 +14,21 @@
                                     <div class="d-flex justify-content-center w-100" >
                                         <div class="wrapper  py-0" style="background-color:#ecf6ff !important">
                                             <div class="job_post-job_type border border-primary rounded p-1 text-center" style="width: 80px; font-size:12px; color:#007bff;">
-                                                -
+                                                fulltime
                                             </div>
                                         </div>
                                         <div  class="wrapper p-0 my-auto" style=" font-size:12px; background-color:#ecf6ff !important">
                                             <i class="fas fa-money-bill-wave-alt"></i>
-                                            <span class="job_post-salary">-</span>
+                                            <span class="job_post-salary">
+                                                salary negotiable
+                                            </span>
                                         </div>
                                         <div  class="wrapper py-0 my-auto" style="font-size:12px; background-color:#ecf6ff !important">
                                             <i class="fas fa-clock"></i>
-                                            
-                                            <span class="job_post-start_date">-</span>
+
+                                            <span class="job_post-start_date">
+                                                posted:
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -43,10 +47,15 @@
 
                             <div class="row ">
                                 <div class="col-md-12 text-center">
-                                    <div class="w-50 mx-auto">
-                                        <a href="#" style="text-transform: uppercase; font-size:10px " class=" w-100 card-link btn btn-primary py-2">
+                                    <div class="mx-auto" style="width:320px;">
+                                        <button type="button" style="text-transform: uppercase; font-size:10px " class=" w-100 card-link btn btn-primary py-2" data-toggle="modal" data-target="#job-application-modal">
                                             apply for this job
-                                        </a>
+                                        </button>
+
+
+
+
+                                        @include('modals.job-application')
                                     </div>
                                 </div>
                             </div>
@@ -692,18 +701,29 @@
 
 
 <script>
+let jobpost_data;
 $(document).ready(function() {
+    if(!token) {
+        $('#modalLogin').modal('show');
+    }
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     let job_id = urlParams.get('job_id');
+    
     if(job_id) {
-        getData('/api/ClientJobPost/'+job_id, ({data:res}) => {
+        getData('/api/PublicClientJobPost/'+job_id, ({data:res}) => {
             if(res.success) {
                 console.log(res);
-                let jobpost_data = res.data;
+                jobpost_data = res.data;
                 let client = jobpost_data.client;
                 let client_business_info = client.client_business_info;
                 let client_job_post_required_skills = jobpost_data.client_job_post_required_skills;
+
+                if(client_business_info.business_logo) {
+                    $('.client_business_info-business_logo').attr('src',client_business_info.business_logo);
+                }
+
+
                 Object.keys(jobpost_data).map((field, key) => {
                     let element = $('.job_post-'+field);
                     if(element.length) {
@@ -740,8 +760,10 @@ $(document).ready(function() {
                 })
             }
         });
+    } else {
+        window.location.href = '/';
     }
-    
+
 });
 </script>
 @endsection

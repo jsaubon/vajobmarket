@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="user-dashboard">
+<div class="user-dashboard h-auto">
     <div class="container fullwidth">
 
     <!-- Card Start -->
@@ -28,10 +28,10 @@
                 </div>
                 <!---alerts end--->
 
-                <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                     <div class="col-md-6 title-personal-info" style="margin: 0px;">all job posts</div>
                     <div class="col-md-6 text-right">
-                        <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                        <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:0.7em;" class="title-personal-info mt-0 ">
                         see more
 
                         <i class="fas fa-angle-right"></i>
@@ -54,17 +54,17 @@
 
                     <tbody>
 
-                      
+
                     </tbody>
 
                 </table>
                  <!---all job post end-->
 
                 <!---applicants--->
-                <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                     <div class="col-md-6 title-personal-info" style="margin: 0px;">applicants</div>
                     <div class="col-md-6 text-right">
-                        <a href="/BusinessApplications" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                        <a href="/BusinessApplications" style="text-decoration: none !important; color:#767676; font-size:0.7em;" class="title-personal-info mt-0" >
                         see more
                         <i class="fas fa-angle-right"></i>
                         </a>
@@ -77,8 +77,7 @@
                         <tr>
                         <th class="text-center dash-table-title" scope="col">name</th>
                         <th class="text-center dash-table-title" scope="col">status</th>
-                        <th class="text-center dash-table-title" scope="col">rating</th>
-                        <th class="text-center dash-table-title" scope="col">recomendation</th>
+                        <th class="text-center dash-table-title" scope="col">Message</th>
                         <th class="text-center dash-table-title" scope="col">Date applied</th>
                         <th class="text-center dash-table-title" scope="col">Actions</th>
                         </tr>
@@ -86,7 +85,7 @@
 
                     <tbody>
 
-                       
+
 
                     </tbody>
 
@@ -95,10 +94,10 @@
 
 
                 <!---employee names--->
-                <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                     <div class="col-md-6 title-personal-info" style="margin: 0px;">employees</div>
                     <div class="col-md-6 text-right">
-                        <a href="/BusinessEmployment" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                        <a href="/BusinessEmployment" style="text-decoration: none !important; color:#767676; font-size:0.7em;" class="title-personal-info mt-0">
                         see more
                         <i class="fas fa-angle-right"></i>
                         </a>
@@ -121,7 +120,7 @@
 
                     <tbody>
 
-                      
+
 
                     </tbody>
 
@@ -136,11 +135,11 @@
 <script>
 if(!token) {
     window.location.href = '/';
-}  
+}
 </script>
 
 <script>
-    
+
 $(document).ready(function() {
     getData('/api/Client/'+userdata.client.id, ({data:res}) => {
         if(res.success) {
@@ -159,14 +158,14 @@ $(document).ready(function() {
                         '<td class="text-center  dash-table-content">'+job_post.start_date+'</td>'+
                         '<td class="text-center  dash-table-content">'+job_post.end_date+'</td>'+
                         '<td class="text-center  dash-table-content d-flex justify-content-around">'+
-                            '<i class="fas fa-eye"></i>'+
+                            '<a target="_blank" href="/BusinessProfileCompany?job_id='+job_post.id+'"><i class="fas fa-eye"></i></a>'+
                             '<i class="fas fa-edit"></i>'+
                             '<i class="fas fa-trash-alt"></i>'+
                         '</td>'+
                     '</tr>'
                 );
             });
-            
+
             $('#myDataTable').DataTable().draw();
             var $label = document.querySelector("#myDataTable_length");
             if($label) {
@@ -187,11 +186,15 @@ $(document).ready(function() {
                         '<tr>'+
                             '<td class="dash-table-content">'+name+'</td>'+
                             '<td class="text-center  dash-table-content">'+applicant.status+'</td>'+
-                            '<td class="text-center  dash-table-content"></td>'+
-                            '<td class="text-center  dash-table-content"></td>'+
+                            '<td class="dash-table-content" style="white-space: break-spaces">'+
+                                'Subject: '+applicant.application_subject+''+
+                                '<br/>'+
+                                '<br/>'+
+                                'Message: '+applicant.application_message+''+
+                            '</td>'+
                             '<td class="text-center  dash-table-content">'+applicant.date_applied+'</td>'+
                             '<td class="text-center  dash-table-content d-flex justify-content-around">'+
-                                '<i class="fas fa-eye"></i>'+
+                                '<a href="/jobseekerProfile?jobseeker_id='+applicant.jobseeker.id+'" target="_blank"><i class="fas fa-eye"></i></a>'+
                                 '<i class="fas fa-edit"></i>'+
                                 '<i class="fas fa-trash-alt"></i>'+
                             '</td>'+
@@ -211,7 +214,7 @@ $(document).ready(function() {
                 $label.style.display ='none'
             }
 
-            
+
             $('#myDataTable3').DataTable().destroy();
             let client_employees_hired = res.data.client_employees.filter(p => p.status == 'Hired');
             client_employees_hired.map((client_employee, key) => {
@@ -287,7 +290,7 @@ $(document).ready(function() {
             // })
         }
     });
-    
+
 });
 </script>
 @endsection

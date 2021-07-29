@@ -36,7 +36,7 @@ class JobTypeController extends Controller
             $datas = $datas->paginate(50);
 
         } else {
-            $datas = \App\JobType::orderBy('type','asc')->get();
+            $datas = \App\JobType::orderBy('job_type','asc')->get();
         }
 
         return response()->json([
@@ -57,7 +57,7 @@ class JobTypeController extends Controller
             'job_type' => 'required'
         ]);
         
-        $data = JobType::create($request->all())->save();
+        $data = JobType::create($request->all());
        
         return response()->json([
             'success' => true,

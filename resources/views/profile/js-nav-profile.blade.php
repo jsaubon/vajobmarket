@@ -20,7 +20,8 @@ $obj = [
 <div class="header" style="z-index:100;">
             <div class="header-items-left">
                 <a class="my-auto px-3 mb-3" style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
-                    <div class="title my-auto h-100  mylogo"></div>
+
+                    <img src="{{ asset('images/frontAssets/vajm-header-logo.png') }}" alt="" class="mylogo">
                 </a>
                 <div class="nav-titles my-auto ml-4 px-3">
                     <?php
@@ -39,7 +40,7 @@ $obj = [
                 </div>
             </div>
             @include('layouts.js-nav')
-            <div class="chat-support"></div>
+
 
 
 </div>

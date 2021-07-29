@@ -16,69 +16,171 @@
                 <h4>JOB DETAILS</h4>
                 <hr/>
             </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Job Title" />
+            <form id="form-job-post">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <input type="text" required class="form-control " name="job_title" placeholder="Job Title" />
+                        </div>
+                        <div class="col-sm-4">
+                            <select class="form-control" name="sector" id="sector_select">
+                                <option value="">Sector</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" placeholder="Sector" />
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <select class="form-control" name="job_type" id="jobtype_select">
+                                <option value="">Job Type</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="monthly_rate" placeholder="Monthly Rate" />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="hourly_rate" placeholder="Hourly Rate" />
+                        </div>
                     </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <input type="date" required class="form-control" name="start_date" placeholder="start date" />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="date" required class="form-control" name="end_date" placeholder="end date" />
+                        </div>
+                    </div>
+                    <br/>
                 </div>
-                <br/>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" placeholder="Job Type" />
-                    </div>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" placeholder="Monthly Rate" />
-                    </div>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" placeholder="Hourly Rate" />
-                    </div>
+                <div class="card-title">
+                    <h4>REQUIRED SKILLS</h4>
+                    <hr/>
                 </div>
-                <br/>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" placeholder="start date" />
+                <div class="card-body">
+                    <div id="skills_container">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" name="skills[1][skill]" placeholder="Skills" />
+                            </div>
+                            <div class="col-sm-4">
+                                <select  class="form-control" name="skills[1][proficiency]">
+                                    <option value="">Proficiency</option>
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Advanced">Advanced</option>
+                                    <option value="Expert">Expert</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" placeholder="end date" />
-                    </div>
+                    <br/>
+                    <button class="btn btn-secondary btn-add-skill form-control" type="button">
+                        add another skill
+                    </button>
                 </div>
-                <br/>
-            </div>
-            <div class="card-title">
-                <h4>REQUIRED SKILLS</h4>
-                <hr/>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="Skills" />
-                    </div>
-                    <div class="col-sm-4">
-                        <input type="text" class="form-control" placeholder="Profeciency" />
-                    </div>
+                <div class="card-title">
+                    <h4>JOB DESCRIPTION</h4>
+                    <hr/>
                 </div>
-                <br/>
-                <button class="btn btn-secondary form-control">
-                    add another skill
-                </button>
-            </div>
-            <div class="card-title">
-                <h4>JOB DESCRIPTION</h4>
-                <hr/>
-            </div>
-            <div class="card-body">
-                <textarea name="jobDesc" id="jobDesc" style="width:100%;" rows="10"></textarea>
-            </div>
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-secondary m-2 p-3">DISCARD</button>
-                <button class="btn btn-primary m-2 p-3">POST NOW</button>
-            </div>
+                <div class="card-body">
+                    <textarea  id="jobDesc" style="width:100%;" name="job_description" rows="10"></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-secondary m-2 p-3" type="button">DISCARD</button>
+                    <button class="btn btn-primary m-2 p-3" type="submit">POST NOW</button>
+                </div>
+            </form>
         </div>
         <br/><br/>
     </div>
 </section>
+
+
+<script>
+
+    if(!token) {
+        $('#modalLogin').modal('show');
+    }
+
+    getData('/api/Sector', ({data:res}) => {
+        // console.log('res',res);
+        if(res.success) {
+            res.data.map((sector, key) => {
+                $('#sector_select').append(
+                    '<option value="'+sector.sector+'">'+sector.sector+'</option>'
+                )
+            });
+        }
+    })
+
+    getData('/api/JobType', ({data:res}) => {
+        // console.log('res',res);
+        if(res.success) {
+            res.data.map((jobtype, key) => {
+                $('#jobtype_select').append(
+                    '<option value="'+jobtype.job_type+'">'+jobtype.job_type+'</option>'
+                )
+            });
+        }
+    })
+
+    $('.btn-add-skill').on('click', function() {
+        let skills_container = $('#skills_container');
+
+        skills_container.append(
+            '<div class="row">'+
+                '<div class="col-sm-8">'+
+                    '<input type="text" class="form-control" name="skills['+(skills_container.find('.row').length +1)+'][skill]" placeholder="Skills" />'+
+                '</div>'+
+                '<div class="col-sm-4">'+
+                    '<select  class="form-control" name="skills['+(skills_container.find('.row').length +1)+'][proficiency]">'+
+                        '<option value="">Proficiency</option>'+
+                        '<option value="Beginner">Beginner</option>'+
+                        '<option value="Advanced">Advanced</option>'+
+                        '<option value="Expert">Expert</option>'+
+'                    </select>'+
+                '</div>'+
+'            </div>'
+        );
+    });
+
+
+    $('#form-job-post').on('submit', function(e) {
+        e.preventDefault();
+        
+        if(!token) {
+            $('#modalLogin').modal('show');
+        } else {
+            let job_post_data = $(this).serializeControls();
+            console.log('job_post_data',job_post_data);
+            let skills_reqiured = job_post_data.skills;
+            skills_reqiured = Object.values(skills_reqiured);
+            let salary = job_post_data.monthly_rate + ', ' + job_post_data.hourly_rate;
+            job_post_data = {...job_post_data, client_id: userdata.client.id, salary: salary};
+            delete job_post_data.skills;
+            delete job_post_data.monthly_rate;
+            delete job_post_data.hourly_rate;
+            
+            postData('/api/ClientJobPost', job_post_data, ({data:res}) => {
+                if(res.success) {
+                    skills_reqiured.map((skill, key) => {
+                        skills_reqiured[key]['client_job_post_id'] = res.data.id;
+                    });
+                    let _data =  {
+                        client_job_post_id: res.data.id,
+                        skills: skills_reqiured
+                    }
+                    postData('/api/ClientJobPostRequiredSkill', _data, ({data:res}) => {
+                        if(res.success) {
+                            alert('Job Post Successfully Created');
+                            window.location.href = '/BusinessAllJobPost';
+                        }
+                    });
+                }
+            });
+        }
+        
+
+    });
+</script>
 @endsection

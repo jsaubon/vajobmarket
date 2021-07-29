@@ -2,14 +2,14 @@
 
 @section('content')
 
-<div class="container-fluid h-auto jobseeker-landing-container">
-    <div class="container d-flex flex-column justify-content-center h-100" style="padding-top: 100px;">
-        <div class=" h-100 d-flex justify-content-end">
+<div class="container-fluid h-auto" style="background-color:#ecf6ff;">
+    <div class="container  jobseeker-landing-container d-flex flex-column justify-content-center" style="padding-top: 100px;">
+        <div class=" h-auto d-flex justify-content-end">
             <a href="/">Cancel</a>
         </div>
         <div class="row h-100">
-                <div class="col-md-6">
-                    <div class="jobseeker-img"></div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="jobseeker-img h-75"></div>
                 </div>
                 <div class="col-md-1 "></div>
                 <div class="col-md-5 d-flex flex-column justify-content-center">

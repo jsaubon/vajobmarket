@@ -1,120 +1,167 @@
-@extends('layouts.blank-layout')
+@extends('layouts.js-blank-layout')
 
 @section('content')
 
-<div class="user-dashboard">
-    <div class="container fullwidth">
 
-    <!-- Breamcrumbs Start -->
+<div class="user-dashboard h-auto">
+    <div class="container h-auto fullwidth" >
+        {{-- breadcrumb --}}
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"> <a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item"> <a href="/jobseekerDashboard">Dashboard</a></li>
                 <li class="breadcrumb-item active">Jobs Applied</li>
             </ol>
         </nav>
-    <!-- Breadcrumbs End -->
+         {{-- breadcrumb end--}}
+        <div class="card shadow" style="border-radius:10px; min-height: 80vh;" >
+            <ul class="nav nav-tabs border-0 mt-3 px-3" id="myTab" role="tablist">
+                <li class="nav-item " role="presentation" style="width:50%;">
+                    <a class="nav-link title-personal-info m-0 active-bottom border active border-2 border-top-0  border-left-0 border-right-0 text-center text-dark"  data-toggle="tab" href="#js-jobsapplied-tab" role="tab" aria-controls="home" aria-selected="true">
+                        Jobs Applied
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation" style="width:50%;">
+                    <a class="nav-link title-personal-info m-0 active-bottom border border-bottom-1 border-top-0 border-2  border-left-0 border-right-0  text-center text-dark" data-toggle="tab" href="#js-onhiring-tab" role="tab" aria-controls="profile" aria-selected="false">
+                       on hiring process
+                    </a>
+                </li>
+            </ul>
 
-    <!-- Card Start -->
-        <div class="card w-100">
-            <div class="card-header">
-                <h4 class="card-title text-center">
-                    JOBS APPLIED
-                    <hr>
-                </h4>
-            </div<>
-
-            
-
-                <!-- Accordion Start 1 -->
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    JOB TITLE: Software Engineer (Fulltime)
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-
-                                <div class="wrapper">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <td>SUBJECT</td>
-                                                <td>Duration</td>
-                                                <td>TIME</td>
-                                                <td>Date</td>
-                                                <td>REMARKS</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Initial Interview</td>
-                                                <td>30 min</td>
-                                                <td>10:00AM EST</td>
-                                                <td>June 10,2021</td>
-                                                <td>Passed</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Skills Assestment</td>
-                                                <td>0</td>
-                                                <td>Tentative</td>
-                                                <td>Tentative</td>
-                                                <td>N/A</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Final Interview</td>
-                                                <td>0</td>
-                                                <td>Tentative</td>
-                                                <td>Tentative</td>
-                                                <td>N/A</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                                    
-                            </div>
-                        </div>
-                    <!-- Accordion End 1 -->
-
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
-                                </button>
-                            </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Collapsible Group Item #3
-                                </button>
-                            </h2>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                            </div>
-                        </div>
-
-                            </div>
-                        </div>
+            <div class="tab-content" id="myTabContent">
+               <!-- Account -->
+                <div class="tab-pane fade show active" id="js-jobsapplied-tab" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="accordion mx-2"  id="accordionJobsApplied">
+                            
                     </div>
- 
+                </div>
+                <!-- Payment  -->
+                <div class="tab-pane fade  " id="js-onhiring-tab" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="accordion mx-2" id="accordionJobsShortlisted">
+                            
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 </div>
+
+
+
+
+
+ 
+
+
+<script>
+    if(!token) {
+        window.location.href = '/';
+    } else {
+        if(!userdata.jobseeker) {
+            window.location.href = '/';
+        }
+    }
+
+
+$(document).ready(function() {
+    getData('/api/JobSeeker/'+userdata.jobseeker.id, ({data:res}) => {
+        if(res.success) {
+            console.log(res.data);
+            let hired = res.data.client_employees.filter(p => p.status == 'Hired' ); //&& p.employment_status == 'Employed'
+            let applied = res.data.client_employees; //&& p.employment_status == 'Employed'
+            let shortlisted = res.data.client_employees.filter(p => p.status == 'Shortlisted' ); //&& p.employment_status == 'Employed'
+
+            console.log('hired', hired);
+
+            applied.map((applied, key) => {
+                $('#accordionJobsApplied').append(
+                    '<div class="card border-0">'+
+                        '<div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="jobAppliedHeader_'+key+'">'+
+                            '<h2 class="mb-0 ">'+
+                                '<button class="btn w-100 text-left" style="font-family: \'Oswald\', sans-serif;" type="button" data-toggle="collapse" data-target="#jobApplied_'+key+'" aria-expanded="true" aria-controls="collapseOne" >'+
+                                'JOB TITLE: '+applied.client_job_post.job_title+' ('+applied.client_job_post.job_type+')'+
+                                '</button>'+
+                            '</h2>'+
+                        '</div>'+
+                        '<div id="jobApplied_'+key+'" class="collapse" aria-labelledby="jobAppliedHeader_'+key+'" data-parent="#accordionJobsApplied">'+
+                            '<div class="card-body">'+
+                                '<table class="row-border hover border-bottom " style="width: 100%" >'+
+                                    '<thead>'+
+                                        '<tr>'+
+                                            '<th class="dash-table-title" scope="col">company</th>'+
+                                            '<th class="dash-table-title" scope="col">salary</th>'+
+                                            '<th class="dash-table-title" scope="col">date applied</th>'+
+                                            '<th class="dash-table-title" scope="col">status</th>'+
+                                        '</tr>'+
+                                    '</thead>'+
+                                    '<tbody>'+
+                                        '<tr>'+
+                                            '<td class="dash-table-content">'+applied.client_job_post.client.client_business_info.business_name+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+applied.client_job_post.salary+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+applied.date_applied+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+applied.status+'</td>'+
+                                        '</tr>'+
+                                    '</tbody>'+
+
+                                '</table>'+
+                            '</div>'+
+                            '<div  class=" mx-4 mb-4 dash-table-content">Job Description: <br/>'+applied.client_job_post.job_description+'</div>'+
+                        '</div>'+
+                    '</div>'
+                )
+            });
+
+            shortlisted.map((shortlisted, key) => {
+                $('#accordionJobsShortlisted').append(
+                    '<div class="card border-0">'+
+                        '<div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="jobShortlistedHeader_'+key+'">'+
+                            '<h2 class="mb-0 ">'+
+                                '<button class="btn w-100 text-left" style="font-family: \'Oswald\', sans-serif;" type="button" data-toggle="collapse" data-target="#jobShortlisted_'+key+'" aria-expanded="true" aria-controls="collapseOne" >'+
+                                'JOB TITLE: '+shortlisted.client_job_post.job_title+' ('+shortlisted.client_job_post.job_type+')'+
+                                '</button>'+
+                            '</h2>'+
+                        '</div>'+
+                        '<div id="jobShortlisted_'+key+'" class="collapse" aria-labelledby="jobShortlistedHeader_'+key+'" data-parent="#accordionJobsShortlisted">'+
+                            '<div class="card-body">'+
+                                '<table class="row-border hover border-bottom " style="width: 100%" >'+
+                                    '<thead>'+
+                                        '<tr>'+
+                                            '<th class="dash-table-title" scope="col">subject</th>'+
+                                            '<th class="dash-table-title" scope="col">date</th>'+
+                                        '</tr>'+
+                                    '</thead>'+
+                                    '<tbody>'+
+                                        '<tr>'+
+                                            '<td class="dash-table-content">Initial Interview</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.initial_interview_date ? shortlisted.initial_interview_date : 'Not Set')+'</td>'+
+                                        '</tr>'+
+                                        '<tr>'+
+                                            '<td class="dash-table-content">Skills Assessment</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.skills_assessment_date ? shortlisted.skills_assessment_date : 'Not Set')+'</td>'+
+                                        '</tr>'+
+                                        '<tr>'+
+                                            '<td class="dash-table-content">Final Interview</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.final_interview_date ? shortlisted.final_interview_date : 'Not Set')+'</td>'+
+                                        '</tr>'+
+                                    '</tbody>'+
+
+                                '</table>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'
+                )
+            });
+
+           
+
+
+
+        }
+    });
+});
+</script>
+
+
+@endsection
+
+
+

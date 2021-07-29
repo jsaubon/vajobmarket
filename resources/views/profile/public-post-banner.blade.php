@@ -3,7 +3,7 @@
 
         <div class="col-md-6 px-0 h-50 col-banner">
             <div class="profile-banner-container shadow">
-                <div class="row " style="padding-top:70px;">
+                <div class="row " style="padding-top:80px;">
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
 
@@ -21,10 +21,10 @@
                 </div>
 
             </div>
-            <div class="banner-offset-items" style="top:230px !important;">
+            <div class="banner-offset-items" style="top:380px !important;">
                 <a href="#" class="btn btn-danger hire-me-btn shadow" style="display: none;">hire me</a>
                 <div class="profile-pic shadow">
-                    <img src="https://i.ibb.co/DwnSyq4/scott-webb-bmmcf-Zq-Sj-BU-unsplash.jpg" alt="" />
+                    <img class="client_business_info-business_logo" src="https://thumbs.dreamstime.com/z/realty-flat-apartment-modern-building-logo-design-graphic-style-realty-flat-apartment-modern-building-logo-design-graphic-style-158041756.jpg" alt="" />
                 </div>
                 <div class="profile-name">
                     <h3 class="client_business_info-business_name">my company name</h3>

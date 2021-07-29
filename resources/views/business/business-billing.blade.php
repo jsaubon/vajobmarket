@@ -64,7 +64,7 @@
 
                     <div class="row">
                         <div class="col-md-4">
-                            <label class="personal-info-forms-items" style="border:0 !important;">Date of Birth</label>
+                            <label class="personal-info-forms-items" style="border:0 !important;">Expiration</label>
                         </div>
                         <div class="col-md-4">
                             <select class="form-control personal-info-forms-items"  name="exp_date_month">
@@ -77,7 +77,7 @@
                         <div class="col-md-4">
                             <select class="form-control personal-info-forms-items"  name="exp_date_year">
                                 <option>Year</option>
-                                <?php for ($i=(int)date('Y'); $i > (int)date('Y') - 70; $i--) {  ?>
+                                <?php for ($i=(int)date('Y')+20; $i > (int)date('Y') ; $i--) {  ?>
                                     <option value="<?php echo $i;?>"><?php echo $i;?></option>
                                 <?php }?>
                               </select>
@@ -106,18 +106,15 @@
                     </div>
                     <div class="row">
                         <div class="col-md-8">
-                            <select class="form-control personal-info-forms-items"  name="billing_city" >
-                                <option>City</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items"  name="billing_city"  placeholder="City">
+                            </div>
+                          
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input type="text" class="form-control personal-info-forms-items"  name="billing_zip"  placeholder="Zip / Postal">
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -125,13 +122,10 @@
 
                         </div>
                         <div class="col-md-10">
-                            <select class="form-control personal-info-forms-items"  name="billing_country" >
-                                <option>Country</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items"  name="billing_country"  placeholder="Country">
+                            </div>
+                           
                         </div>
                         <div class="col-md-1">
 
@@ -148,10 +142,10 @@
 
                     </div>
                     {{-- proceed and back buttons --}}
-                    <div class="row" style="padding-top:20px;">
+                    <div class="row" style="padding-top:20px; font-size:0.6em; font-weight:400;">
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
-                            <p class="text-center">ligula, cursus id sagittis eu,
+                            <p class="text-center  title-personal-info">ligula, cursus id sagittis eu,
                                 volutpat id sapien. Cras scelerisque
                                 ullamcorper tellus, sed efficitur odio iaculis a.
                                 Pellentesque habitant morbi tristique senectus

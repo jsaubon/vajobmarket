@@ -1,4 +1,4 @@
-@extends('layouts.blank-layout')
+@extends('layouts.js-blank-layout')
 
 @section('content')
 
@@ -41,51 +41,51 @@
 
 
                             <div class="modal fade" id="jsNewMessage" tabindex="-1" role="dialog" aria-labelledby="jsNewMessageLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="jsNewMessageLabel">New message</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="jsNewMessageLabel">New message</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
 
-                                    <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">To:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label">To:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label">CC:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label">BCC:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Subject:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
+                                            <button type="button" class="btn btn-primary">Send</button>
+                                        </div>
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">CC:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">BCC:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="message-text" class="col-form-label">Subject:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-
-                                    </form>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
-                                    <button type="button" class="btn btn-primary">Send</button>
-                                </div>
-                                </div>
-                            </div>
                             </div>
 
                         </div> <br>
 
 
-                            <table class="table"">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th>

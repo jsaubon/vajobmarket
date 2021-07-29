@@ -78,13 +78,9 @@
                               </div>
                         </div>
                         <div class="col-md-4">
-                            <select class="form-control personal-info-forms-items"  name="city" >
-                                <option>City</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                            <div class="form-group">
+                                <input type="text" class="form-control personal-info-forms-items"  name="city" placeholder="City">
+                            </div>
                         </div>
                     </div>
 

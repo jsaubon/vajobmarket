@@ -34,6 +34,7 @@ class JobSeekerController extends Controller
             ->with([
                 'user',
                 'client_employees.employee_monitors',
+                'client_employees.client_job_post',
                 'jobseeker_educations',
                 'jobseeker_experiences',
                 'jobseeker_languages',
@@ -83,7 +84,7 @@ class JobSeekerController extends Controller
             'user_id' => 'required'
         ]);
         
-        $data = JobSeeker::create($request->all())->save();
+        $data = JobSeeker::create($request->all());
         $data = JobSeeker::where('user_id',$request->user_id)->first();
        
         return response()->json([
@@ -102,7 +103,9 @@ class JobSeekerController extends Controller
     {
         $data = JobSeeker::with([
             'user',
+            'user.comments.created_by.client.client_business_info',
             'client_employees.employee_monitors',
+            'client_employees.client_job_post.client.client_business_info',
             'jobseeker_educations',
             'jobseeker_experiences',
             'jobseeker_languages',

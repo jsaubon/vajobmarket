@@ -307,12 +307,12 @@
                     </div>\
                     <div class="col-md-2">\
                         <div class="form-group">\
-                            <input type="date" class="form-control personal-info-forms-items" name="experiences[1][from_date]" placeholder="From Date">\
+                            <input type="date" class="form-control personal-info-forms-items" name="experiences['+(rows+1)+'][from_date]" placeholder="From Date">\
                         </div>\
                     </div>\
                     <div class="col-md-2">\
                         <div class="form-group">\
-                            <input type="date" class="form-control personal-info-forms-items" name="experiences[1][to_date]" placeholder="To Date">\
+                            <input type="date" class="form-control personal-info-forms-items" name="experiences['+(rows+1)+'][to_date]" placeholder="To Date">\
                         </div>\
                     </div>\
                 </div>\

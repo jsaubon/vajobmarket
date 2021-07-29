@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="user-dashboard">
+<div class="user-dashboard h-auto">
 
-    <div class="container fullwidth">
+    <div class="container fullwidth" style="min-height: 80vh">
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -14,7 +14,7 @@
     </nav>
 
     <div class="wrapper">
-        <table class="display tbl_bo_job_posts_all" id="myDataTable">
+        <table class="display tbl_bo_job_posts_all" id="myDataTable-AllJobPost">
             <thead>
                 <tr>
                 <th class="text-center" scope="col">Job Posted</th>
@@ -40,7 +40,7 @@
 <script>
 if(!token) {
     window.location.href = '/';
-} 
+}
 // $(document).ready(function() {
     getData('/api/Client/'+userdata.client.id, ({data:res}) => {
         if(res.success) {

@@ -4,7 +4,9 @@
 <div class="container-fluid h-auto business-landing-container">
     <div class="container d-flex flex-column justify-content-center h-100" style="padding-top: 100px;">
         <div class="row h-100">
-                <div class="col-md-6 business-img"></div>
+                <div class="col-md-6">
+                    <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid ">
+                </div>
                 <div class="col-md-1 "></div>
                 <div class="col-md-5 d-flex flex-column justify-content-center">
                     <div class="title-business-landing">

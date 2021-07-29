@@ -2,15 +2,15 @@
 
 @section('content')
 
-<div class="user-dashboard">
+<div class="user-dashboard h-auto">
     <div class="container fullwidth">
 
      <!-- Card Start -->
         <div class="card w-100 shadow ">
             <div class="wrapper rounded-lg" style="padding: 50px 40px 80px 40px;" >
                 <div class="row pt-2">
-                    <div class="col-md-12" style="text-transform: uppercase ; color:#767676; font-size:1em;">
-                        Welcome back username!
+                    <div class="col-md-12" style="text-transform: uppercase ; color:#767676; font-size:1.3em;">
+                        Welcome back <span class="user-firstname">-</span>!
                     </div>
                 </div>
 
@@ -28,108 +28,29 @@
                 </div>
                 <!---alerts end--->
 
-                <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
-                    <div class="col-md-6 title-personal-info" style="margin: 0px;">current employment</div>
-                    <div class="col-md-6 text-right">
-                        <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:10px;">
-                        view
-                        <i class="fas fa-angle-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <hr class="lsep">
-
-                <div class="row px-2 text-center">
-                    <div class="col-md-2 dash-text">
-                        employment status : fulltime
-                    </div>
-                    <div class="col-md-2 dash-text">
-                        salary: $140/month
-                    </div>
-                    <div class="col-md-4 dash-text">
-                        working hours: 40 hrs/week
-                    </div>
-                    <div class="col-md-2 dash-text">
-                        date hired: july 9, 2021
-                    </div>
-                    <div class="col-md-2 dash-text">
-                        contract: 1yr
-                    </div>
-                </div>
-                <hr>
-
-                <div class="row text-left">
-                    <div class="col-md-5 dash-text">
-                        Job Description
-                    </div>
-                    <div class="col-md-1 dash-text">
-
-                    </div>
-                    <div class="col-md-6 dash-text">
-                        Responsibilites
-                    </div>
-                </div>
-
-                <div class="row text-left pt-4 pl-3">
-                    <div class="col-md-5 dash-text">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
-                         Ut enim ad minim veniam, quis nostrud
-                         exercitation ullamco laboris nisi ut aliquip
-                         ex ea commodo consequat. Duis aute irure
-                         dolor in reprehenderit in voluptate velit
-                         esse cillum dolore eu fugiat nulla pariatur.
-                         Excepteur sint occaecat cupidatat non proident,
-                         sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                    <div class="col-md-1">
-
-                    </div>
-                    <div class="col-md-6 dash-text">
-                       <ol>
-                           <li>Lorem ipsum dolor sit amet</li>
-                           <li>incididunt ut labore et dolore</li>
-                           <li>ex ea commodo consequat</li>
-                           <li>officia deserunt mollit anim id</li>
-                       </ol>
-                    </div>
-                </div>
-
-                <div class="row pt-4 ">
-                    <div class="col-md-12 d-flex justify-content-end">
-                        <div class="d-flex justify-content-around" style="width: 30%;">
-                            <a href="/BusinessPostJob" style="text-decoration:none;">
-                                <div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px; ">
-                                    <i class="fas fa-user-clock my-auto" style="font-size:12px;" ></i>&nbsp;
-                                    <b class="my-auto" style="text-transform: uppercase;">clock in</b>
-                                </div>
-                            </a>
-                            <a href="/BusinessPostJob" style="text-decoration:none;">
-                                <div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px;">
-                                    <i class="fas fa-coffee my-auto mr-1" style="font-size:12px;" ></i>&nbsp;
-                                    <b class="my-auto" style="text-transform: uppercase;">break</b>
-                                </div>
-                            </a>
-                            <a href="/BusinessPostJob" style="text-decoration:none;">
-                                <div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px;">
-                                    <i class="fas fa-times-circle my-auto" style="font-size:12px;" ></i>&nbsp;
-                                    <b class="my-auto" style="text-transform: uppercase;">clock out</b>
-                                </div>
+                
+                    <div class="row pt-2" style="text-transform:uppercase; font-size: 1rem;  margin-top:40px;">
+                        <div class="col-md-6 title-personal-info" style="margin: 0px;">current employment</div>
+                        <div class="col-md-6 text-right title-personal-info">
+                            <a href="/jobseekerCurrentEmployment" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
+                            view
+                            <i class="fas fa-angle-right"></i>
                             </a>
                         </div>
                     </div>
-                </div>
+                    <hr class="lsep">
+                    <div class="employments_container accordion" id="accordionEmployments">
+                    </div>
 
                 <hr>
 
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                        <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                             <div class="col-md-6 title-personal-info" style="margin: 0px;">jobs you applied for</div>
-                            <div class="col-md-6 text-right">
-                                <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                            <div class="col-md-6 text-right title-personal-info">
+                                <a href="/jobseekerApplications" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
                                 see more
                                 <i class="fas fa-angle-right"></i>
                                 </a>
@@ -138,10 +59,10 @@
                         <hr class="lsep">
                     </div>
                     <div class="col-md-6">
-                        <div class="row pt-2" style="text-transform:uppercase; font-size: 12px;  margin-top:40px;">
+                        <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                             <div class="col-md-6 title-personal-info" style="margin: 0px;">on going recruitement</div>
-                            <div class="col-md-6 text-right">
-                                <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:10px;">
+                            <div class="col-md-6 text-right title-personal-info">
+                                <a href="/jobseekerApplications" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
                                 see more
                                 <i class="fas fa-angle-right"></i>
                                 </a>
@@ -152,196 +73,16 @@
                 </div>
 
 
-                    <!--accordions-->
+                <!--accordions-->
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card border-0">
-                              <div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne">
-                                <h2 class="mb-0">
-                                  <button class="btn w-100 text-left" type="button" data-toggle="collapse" data-target="#job-title1" aria-expanded="true" aria-controls="collapseOne">
-                                    JOB TITLE: Lorem ipsum dolor sit amet, consectetur(full time)
-                                  </button>
-                                </h2>
-                              </div>
-
-                              <div id="job-title1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-
-                                    <table class="row-border hover border-bottom" id="jobtitletable">
-                                        <thead>
-                                            <tr>
-                                            <th class="text-center dash-table-title" scope="col">subjec</th>
-                                            <th class="text-center dash-table-title" scope="col">duration</th>
-                                            <th class="text-center dash-table-title" scope="col">time</th>
-                                            <th class="text-center dash-table-title" scope="col">date</th>
-
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
-
-                                            <tr>
-                                                <td class="dash-table-content">consectetur adipisicing elit.</td>
-                                                <td class="text-center  dash-table-content">25</td>
-                                                <td class="text-center  dash-table-content">123</td>
-                                                <td class="text-center  dash-table-content">April 20, 2021</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="dash-table-content">Lorem ipsum dolor </td>
-                                                <td class="text-center  dash-table-content">25</td>
-                                                <td class="text-center  dash-table-content">123</td>
-                                                <td class="text-center  dash-table-content">April 20, 2021</td>
-
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne">
-                                    <h2 class="mb-0">
-                                      <button class="btn w-100 text-left" type="button" data-toggle="collapse" data-target="#job-title2" aria-expanded="true" aria-controls="collapseOne">
-                                        JOB TITLE: Lorem ipsum dolor sit amet, consectetur(part time)
-                                      </button>
-                                    </h2>
-                                  </div>
-                              <div id="job-title2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <table class="row-border hover border-bottom" id="jobtitletable2">
-                                        <thead>
-                                            <tr>
-                                            <th class="text-center dash-table-title" scope="col">subjec</th>
-                                            <th class="text-center dash-table-title" scope="col">duration</th>
-                                            <th class="text-center dash-table-title" scope="col">time</th>
-                                            <th class="text-center dash-table-title" scope="col">date</th>
-
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
-
-                                            <tr>
-                                                <td class="dash-table-content">consectetur adipisicing elit.</td>
-                                                <td class="text-center  dash-table-content">25</td>
-                                                <td class="text-center  dash-table-content">123</td>
-                                                <td class="text-center  dash-table-content">April 20, 2021</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="dash-table-content">Lorem ipsum dolor </td>
-                                                <td class="text-center  dash-table-content">25</td>
-                                                <td class="text-center  dash-table-content">123</td>
-                                                <td class="text-center  dash-table-content">April 20, 2021</td>
-
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-                                </div>
-                              </div>
-                            </div>
+                        <div class="accordion" id="accordionJobsApplied">
+                            
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card border-0">
-                              <div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne">
-                                <h2 class="mb-0">
-                                  <button class="btn w-100 text-left" type="button" data-toggle="collapse" data-target="#job-title3" aria-expanded="true" aria-controls="collapseOne">
-                                    JOB TITLE: Lorem ipsum dolor sit amet, consectetur(full time)
-                                  </button>
-                                </h2>
-                              </div>
-
-                              <div id="job-title3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-
-                                    <table class="row-border hover border-bottom" id="jobtitletable3">
-                                        <thead>
-                                            <tr>
-                                            <th class="text-center dash-table-title" scope="col">subjec</th>
-                                            <th class="text-center dash-table-title" scope="col">duration</th>
-                                            <th class="text-center dash-table-title" scope="col">time</th>
-                                            <th class="text-center dash-table-title" scope="col">date</th>
-
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
-
-                                            <tr>
-                                                <td class="dash-table-content">consectetur adipisicing elit.</td>
-                                                <td class="text-center  dash-table-content">25</td>
-                                                <td class="text-center  dash-table-content">123</td>
-                                                <td class="text-center  dash-table-content">April 20, 2021</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="dash-table-content">Lorem ipsum dolor </td>
-                                                <td class="text-center  dash-table-content">25</td>
-                                                <td class="text-center  dash-table-content">123</td>
-                                                <td class="text-center  dash-table-content">April 20, 2021</td>
-
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne">
-                                    <h2 class="mb-0">
-                                      <button class="btn w-100 text-left" type="button" data-toggle="collapse" data-target="#job-title4" aria-expanded="true" aria-controls="collapseOne">
-                                        JOB TITLE: Lorem ipsum dolor sit amet, consectetur(part time)
-                                      </button>
-                                    </h2>
-                                  </div>
-                              <div id="job-title4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <table class="row-border hover border-bottom" id="jobtitletable4">
-                                        <thead>
-                                            <tr>
-                                            <th class="text-center dash-table-title" scope="col">subjec</th>
-                                            <th class="text-center dash-table-title" scope="col">duration</th>
-                                            <th class="text-center dash-table-title" scope="col">time</th>
-                                            <th class="text-center dash-table-title" scope="col">date</th>
-
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
-
-                                            <tr>
-                                                <td class="dash-table-content">consectetur adipisicing elit.</td>
-                                                <td class="text-center  dash-table-content">25</td>
-                                                <td class="text-center  dash-table-content">123</td>
-                                                <td class="text-center  dash-table-content">April 20, 2021</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="dash-table-content">Lorem ipsum dolor </td>
-                                                <td class="text-center  dash-table-content">25</td>
-                                                <td class="text-center  dash-table-content">123</td>
-                                                <td class="text-center  dash-table-content">April 20, 2021</td>
-
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-                                </div>
-                              </div>
-                            </div>
+                        <div class="accordion" id="accordionJobsShortlisted">
+                            
                         </div>
                     </div>
                 </div>
@@ -385,9 +126,9 @@
                     <!----cards ---->
                     <div class="row pt-4">
                         <div class="col-md-4">
-                            <div class="card  shadow" style="border-radius: 10px;" >
+                            <div class="card  shadow" style="border-radius: 10px; font-family: 'Oswald', sans-serif;" >
                                 <div class="card-body">
-                                  <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
+                                  <h5 class="card-title" style="font-size:0.95em;"> Excepteur sint occaecat cupidatat non proident</h5>
                                   <h6 class="card-subtitle mb-2 text-muted">
                                       <div class="row" style="text-transform: capitalize;">
                                           <div class="col-md-2 pr-0" style="font-size:9px;">
@@ -408,7 +149,7 @@
                                       </div>
                                   </h6>
                                   <hr class="lsep">
-                                  <p class="card-text" style="font-size:10px;">
+                                  <p class="card-text" style="font-size:0.7em; font-family: 'Oswald', sans-serif;">
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                     irure dolor in reprehenderit in voluptate velit esse cillum
@@ -425,16 +166,16 @@
                                   </p>
                                   <div class="row pb-4">
                                       <div class="col-md-12 text-center">
-                                        <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                        <a href="#" style="text-transform: uppercase; font-size:8px; font-family: 'Oswald', sans-serif;" class="card-link btn btn-outline-secondary">read more</a>
                                       </div>
                                   </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card  shadow" style="border-radius: 10px;" >
+                            <div class="card  shadow" style="border-radius: 10px; font-family: 'Oswald', sans-serif;" >
                                 <div class="card-body">
-                                  <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
+                                  <h5 class="card-title" style="font-size:0.95em;"> Excepteur sint occaecat cupidatat non proident</h5>
                                   <h6 class="card-subtitle mb-2 text-muted">
                                       <div class="row" style="text-transform: capitalize;">
                                           <div class="col-md-2 pr-0" style="font-size:9px;">
@@ -455,7 +196,7 @@
                                       </div>
                                   </h6>
                                   <hr class="lsep">
-                                  <p class="card-text" style="font-size:10px;">
+                                  <p class="card-text" style="font-size:0.7em; font-family: 'Oswald', sans-serif;">
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                     irure dolor in reprehenderit in voluptate velit esse cillum
@@ -472,16 +213,16 @@
                                   </p>
                                   <div class="row pb-4">
                                       <div class="col-md-12 text-center">
-                                        <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                        <a href="#" style="text-transform: uppercase; font-size:8px; font-family: 'Oswald', sans-serif;" class="card-link btn btn-outline-secondary">read more</a>
                                       </div>
                                   </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card  shadow" style="border-radius: 10px;" >
+                            <div class="card  shadow" style="border-radius: 10px; font-family: 'Oswald', sans-serif;" >
                                 <div class="card-body">
-                                  <h5 class="card-title" style="font-size:15px;"> Excepteur sint occaecat cupidatat non proident</h5>
+                                  <h5 class="card-title" style="font-size:0.95em;"> Excepteur sint occaecat cupidatat non proident</h5>
                                   <h6 class="card-subtitle mb-2 text-muted">
                                       <div class="row" style="text-transform: capitalize;">
                                           <div class="col-md-2 pr-0" style="font-size:9px;">
@@ -502,7 +243,7 @@
                                       </div>
                                   </h6>
                                   <hr class="lsep">
-                                  <p class="card-text" style="font-size:10px;">
+                                  <p class="card-text" style="font-size:0.7em; font-family: 'Oswald', sans-serif;">
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                     irure dolor in reprehenderit in voluptate velit esse cillum
@@ -519,7 +260,7 @@
                                   </p>
                                   <div class="row pb-4">
                                       <div class="col-md-12 text-center">
-                                        <a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>
+                                        <a href="#" style="text-transform: uppercase; font-size:8px; font-family: 'Oswald', sans-serif;" class="card-link btn btn-outline-secondary">read more</a>
                                       </div>
                                   </div>
                                 </div>
@@ -533,3 +274,206 @@
 
     </div>
 </div>
+
+
+<script>
+    if(!token) {
+        window.location.href = '/';
+    }
+
+
+$(document).ready(function() {
+    getData('/api/JobSeeker/'+userdata.jobseeker.id, ({data:res}) => {
+        if(res.success) {
+            console.log(res.data);
+            let hired = res.data.client_employees.filter(p => p.status == 'Hired' ); //&& p.employment_status == 'Employed'
+            let applied = res.data.client_employees; //&& p.employment_status == 'Employed'
+            let shortlisted = res.data.client_employees.filter(p => p.status == 'Shortlisted' ); //&& p.employment_status == 'Employed'
+
+            console.log('hired', hired);
+
+            hired.map((employment, key) => {
+                $('.employments_container').append(
+                    '<div class="card border-0 mx-2">'+
+                        '<div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne_'+employment.id+'">'+
+                        '<h2 class="mb-0 ">'+
+                            '<button class="btn text-capitalize w-100 d-flex  justify-content-between text-left" style="font-family: \'Oswald\', sans-serif;" type="button" data-toggle="collapse" data-target="#employment_'+employment.id+'" aria-expanded="true" aria-controls="collapseOne" >'+
+                            '<div> '+employment.client_job_post.client.client_business_info.business_name+' ('+employment.client_job_post.job_title+') </div>'+
+                            '<div class="my-auto">'+
+                                '<i class="fas fa-chevron-down my-auto "></i>'+
+                                '{{-- <i class="fas fa-chevron-up" ></i> --}}'+
+                            '</div>'+
+                            '</button>'+
+                        '</h2>'+
+                        '</div>'+
+
+                        '<div id="employment_'+employment.id+'" class="collapse" aria-labelledby="headingOne_'+employment.id+'" data-parent="#accordionEmployments">'+
+                        '<div class="card-body">'+
+
+                            '<div class="row px-2 text-center ">'+
+                                '<div class="col-md-2 dash-text ">'+
+                                    'employment status : '+employment.client_job_post.job_type+''+
+                                '</div>'+
+                                '<div class="col-md-2 dash-text">'+
+                                    'salary: '+employment.salary+''+
+                                '</div>'+
+                                '<div class="col-md-4 dash-text">'+
+                                    'working hours: '+employment.working_hours+''+
+                                '</div>'+
+                                '<div class="col-md-2 dash-text">'+
+                                    'date hired: '+employment.date_hired+''+
+                                '</div>'+
+                                '<div class="col-md-2 dash-text">'+
+                                    'contract: '+employment.contract+''+
+                                '</div>'+
+                            '</div>'+
+                            '<hr>'+
+
+                            '<div class="row text-left ml-1 ">'+
+                                '<div class="col-md-5 dash-text pl-0">'+
+                                    'Job Description'+
+                                '</div>'+
+                                '<div class="col-md-1 dash-text">'+
+
+                                '</div>'+
+                                '<div class="col-md-6 dash-text">'+
+                                    'Responsibilites'+
+                                '</div>'+
+                            '</div>'+
+
+                            '<div class="row text-left pt-4 pl-3">'+
+                                '<div class="col-md-5 dash-text" style="white-space: break-spaces">'+
+                                    ''+employment.job_description+''+
+                                '</div>'+
+                                '<div class="col-md-1">'+
+
+                                '</div>'+
+                                '<div class="col-md-6 dash-text" style="white-space: break-spaces">'+
+                                    ''+employment.responsibilities+''+
+                                '</div>'+
+                            '</div>'+
+
+                            '<div class="row pt-4 ">'+
+                                '<div class="col-md-12 d-flex justify-content-end">'+
+                                    '<div class="d-flex justify-content-around" style="width: 30%;">'+
+                                        '<a href="/BusinessPostJob" style="text-decoration:none;">'+
+                                            '<div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px; ">'+
+                                                '<i class="fas fa-user-clock my-auto" style="font-size:12px;" ></i>&nbsp;'+
+                                                '<b class="my-auto" style="text-transform: uppercase;">clock in</b>'+
+                                            '</div>'+
+                                        '</a>'+
+                                        '<a href="/BusinessPostJob" style="text-decoration:none;">'+
+                                            '<div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px;">'+
+                                                '<i class="fas fa-coffee my-auto mr-1" style="font-size:12px;" ></i>&nbsp;'+
+                                                '<b class="my-auto" style="text-transform: uppercase;">break</b>'+
+                                            '</div>'+
+                                        '</a>'+
+                                        '<a href="/BusinessPostJob" style="text-decoration:none;">'+
+                                            '<div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px;">'+
+                                                '<i class="fas fa-times-circle my-auto" style="font-size:12px;" ></i>&nbsp;'+
+                                                '<b class="my-auto" style="text-transform: uppercase;">clock out</b>'+
+                                            '</div>'+
+                                        '</a>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+
+                        '</div>'+
+                        '</div>'+
+                    '</div>'
+                );
+            });
+
+
+            applied.map((applied, key) => {
+                $('#accordionJobsApplied').append(
+                    '<div class="card border-0">'+
+                        '<div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="jobAppliedHeader_'+key+'">'+
+                            '<h2 class="mb-0 ">'+
+                                '<button class="btn w-100 text-left" style="font-family: \'Oswald\', sans-serif;" type="button" data-toggle="collapse" data-target="#jobApplied_'+key+'" aria-expanded="true" aria-controls="collapseOne" >'+
+                                'JOB TITLE: '+applied.client_job_post.job_title+' ('+applied.client_job_post.job_type+')'+
+                                '</button>'+
+                            '</h2>'+
+                        '</div>'+
+                        '<div id="jobApplied_'+key+'" class="collapse" aria-labelledby="jobAppliedHeader_'+key+'" data-parent="#accordionJobsApplied">'+
+                            '<div class="card-body">'+
+                                '<table class="row-border hover border-bottom " style="width: 100%" >'+
+                                    '<thead>'+
+                                        '<tr>'+
+                                            '<th class="dash-table-title" scope="col">company</th>'+
+                                            '<th class="dash-table-title" scope="col">salary</th>'+
+                                            '<th class="dash-table-title" scope="col">date applied</th>'+
+                                            '<th class="dash-table-title" scope="col">status</th>'+
+                                        '</tr>'+
+                                    '</thead>'+
+                                    '<tbody>'+
+                                        '<tr>'+
+                                            '<td class="dash-table-content">'+applied.client_job_post.client.client_business_info.business_name+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+applied.client_job_post.salary+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+applied.date_applied+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+applied.status+'</td>'+
+                                        '</tr>'+
+                                    '</tbody>'+
+
+                                '</table>'+
+                            '</div>'+
+                            '<div  class=" mx-4 mb-4 dash-table-content">Job Description: <br/>'+applied.client_job_post.job_description+'</div>'+
+                        '</div>'+
+                    '</div>'
+                )
+            });
+
+            shortlisted.map((shortlisted, key) => {
+                $('#accordionJobsShortlisted').append(
+                    '<div class="card border-0">'+
+                        '<div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="jobShortlistedHeader_'+key+'">'+
+                            '<h2 class="mb-0 ">'+
+                                '<button class="btn w-100 text-left" style="font-family: \'Oswald\', sans-serif;" type="button" data-toggle="collapse" data-target="#jobShortlisted_'+key+'" aria-expanded="true" aria-controls="collapseOne" >'+
+                                'JOB TITLE: '+shortlisted.client_job_post.job_title+' ('+shortlisted.client_job_post.job_type+')'+
+                                '</button>'+
+                            '</h2>'+
+                        '</div>'+
+                        '<div id="jobShortlisted_'+key+'" class="collapse" aria-labelledby="jobShortlistedHeader_'+key+'" data-parent="#accordionJobsShortlisted">'+
+                            '<div class="card-body">'+
+                                '<table class="row-border hover border-bottom " style="width: 100%" >'+
+                                    '<thead>'+
+                                        '<tr>'+
+                                            '<th class="dash-table-title" scope="col">subject</th>'+
+                                            '<th class="dash-table-title" scope="col">message</th>'+
+                                            '<th class="dash-table-title" scope="col">date</th>'+
+                                        '</tr>'+
+                                    '</thead>'+
+                                    '<tbody>'+
+                                        '<tr>'+
+                                            '<td class="dash-table-content">Initial Interview</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.initial_interview_message ? shortlisted.initial_interview_message : 'Not Set')+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.initial_interview_date ? shortlisted.initial_interview_date : 'Not Set')+'</td>'+
+                                        '</tr>'+
+                                        '<tr>'+
+                                            '<td class="dash-table-content">Skills Assessment</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.skills_assessment_message ? shortlisted.skills_assessment_message : 'Not Set')+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.skills_assessment_date ? shortlisted.skills_assessment_date : 'Not Set')+'</td>'+
+                                        '</tr>'+
+                                        '<tr>'+
+                                            '<td class="dash-table-content">Final Interview</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.final_interview_message ? shortlisted.final_interview_message : 'Not Set')+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.final_interview_date ? shortlisted.final_interview_date : 'Not Set')+'</td>'+
+                                        '</tr>'+
+                                    '</tbody>'+
+
+                                '</table>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'
+                )
+            });
+
+           
+
+
+
+        }
+    });
+});
+</script>
+@endsection

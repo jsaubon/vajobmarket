@@ -1,33 +1,16 @@
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;
-
-200;400;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);@charset "UTF-8";
-body h1,
-body .h1,
-body h2,
-body .h2,
-body h3,
-body .h3,
-body h4,
-body .h4,
-body h5,
-body .h5,
-body h6,
-body .h6 {
-  font-family: "Oswald", sans-serif;
-  margin-bottom: 1rem;
-}
-
-body p,
-body a,
-body button {
-  font-family: "Roboto", san-serif;
-}
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100,200,400,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);@charset "UTF-8";
 
 .frontSection-2,
 .frontSection-3,
 .frontSection-4,
 .frontSection-5,
-.frontSection-6 {
+.frontSection-6,
+.aboutSection-1,
+.aboutSection-2,
+.aboutSection-3,
+.aboutSection-4,
+.pricingSection-1,
+.pricingSection-2 {
   padding: 100px 200px;
 }
 
@@ -107,7 +90,7 @@ body button {
 }
 
 .frontSection-2 .leftColumn {
-  padding-top: 300px;
+  margin-top: 21rem;
 }
 
 .frontSection-2 .leftColumn h2,
@@ -125,7 +108,7 @@ body button {
 .frontSection-2 .rightColumn .card {
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  padding: 50px 30px;
+  padding: 1rem 2rem;
 }
 
 .frontSection-2 .rightColumn .card h2,
@@ -133,34 +116,27 @@ body button {
   font-weight: 600;
   margin-bottom: 1rem;
   color: #646464;
-  font-size: 30px;
+  font-size: 26px;
+  text-align: center;
 }
 
 .frontSection-2 .rightColumn .card h4,
 .frontSection-2 .rightColumn .card .h4 {
-  font-size: 40px;
+  font-size: 36px;
   color: #767676;
+  text-align: center;
 }
 
 .frontSection-2 .rightColumn .card p {
-  font-size: 26px;
+  font-size: 16px;
   color: #9c9c9c;
+  text-align: center;
 }
 
 .frontSection-2 .rightColumn .card span {
   color: #7d7d7d;
-}
-
-.frontSection-2 .rightColumn .card .btn-learn {
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #007bff;
-  color: #007bff;
-  border-radius: 8px;
-}
-
-.frontSection-2 .rightColumn .card .btn-learn:hover {
-  background-color: #007bff;
-  color: #fff;
+  font-size: 18px;
+  padding: 0rem 8rem;
 }
 
 .frontSection-2 .btn-hire {
@@ -178,15 +154,58 @@ body button {
   background-position: center;
   background-size: cover;
   filter: grayscale(100%);
-  padding: 100px !important;
+  padding: 100px;
+}
+
+.frontSection-3 .inner {
+  padding: 5rem 24rem;
+}
+
+.frontSection-3 .inner h2,
+.frontSection-3 .inner .h2 {
+  font-size: 80px;
+  color: #fff;
+  letter-spacing: -5px;
 }
 
 .frontSection-4 {
   background-color: white;
 }
 
+.frontSection-4 h2,
+.frontSection-4 .h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.frontSection-4 img {
+  padding: 20px 60px;
+}
+
+.frontSection-4 .row {
+  margin: 20px 0px;
+}
+
 .frontSection-5 {
   background-color: #e1e1e1;
+}
+
+.frontSection-5 h2,
+.frontSection-5 .h2,
+.frontSection-5 h4,
+.frontSection-5 .h4,
+.frontSection-5 p {
+  text-align: center;
+}
+
+.frontSection-5 h2,
+.frontSection-5 .h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.frontSection-5 .row {
+  margin: 20px 0px;
 }
 
 .frontSection-6 {
@@ -222,6 +241,65 @@ body button {
   border-radius: 20px;
 }
 
+.aboutSection-1 {
+  background: url(/images/about-banner.jpg?0c87c8e806bf3979cae35b5600b5d809);
+  height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
+.aboutSection-1 h2,
+.aboutSection-1 .h2 {
+  border-right: 2px solid !important;
+}
+
+.aboutSection-2 h2,
+.aboutSection-2 .h2 {
+  border-right: 4px solid;
+  padding-right: 46px;
+}
+
+.aboutSection-4 {
+  background: url(/images/bgimagemrkenn.png?b7eddb0ae157658a942a198605bdcfc8);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pricingSection-1 {
+  background: url(/images/bgimagepricing@2x.png?867b873d2e5f1cf384059df5e1a00ddb) no-repeat center center;
+  background-size: cover;
+  background-color: #636363;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.pricingSection-1 h2,
+.pricingSection-1 .h2 {
+  font-size: 4.5rem;
+  line-height: 60px;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+.pricingSection-2 {
+  padding-top: 0px !important;
+}
+
+.pricingSection-2 .card {
+  padding: 100px;
+  border-radius: 20px !important;
+  margin-top: -60px;
+}
+
+.pricingSection-2 .card h2,
+.pricingSection-2 .card .h2 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  line-height: 40px;
+}
+
 .chat-container {
   position: relative;
 }
@@ -247,12 +325,97 @@ body button {
   padding: 0;
 }
 
-/* header section */
-
 body {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif !important;
+}
+
+body h1,
+body .h1,
+body h2,
+body .h2,
+body h3,
+body .h3,
+body h4,
+body .h4,
+body h5,
+body .h5,
+body h6,
+body .h6,
+body ul,
+body li {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1rem;
+}
+
+body p,
+body a,
+body button {
+  font-family: "Roboto", san-serif;
+}
+
+.img-circle {
+  width: 200px;
+  height: 200px !important;
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-fom {
+  border: 1px solid #007bff;
+  border-radius: 20px;
+  color: #007bff;
+  background-color: transparent;
+  margin: 10px 0px;
+  padding: 10px 30px;
+}
+
+.btn-fom:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-foh {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px 30px;
+}
+
+.btn-foh::hover {
+  background-color: white;
+  color: #000;
+}
+
+.btn-learn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #007bff;
+  color: #007bff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.btn-learn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.playIcon {
+  background-image: url(/images/icon-playwhite.png?9dc58ec9f32f423651d32bac9968712c);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
 }
 
 .header {
@@ -267,10 +430,8 @@ body {
 }
 
 .mylogo {
-  background: url(/images/vajm-header-logo.png?2ec21d598571b649e1fa6dc8944f902f) no-repeat center center;
-  background-size: contain;
   cursor: pointer;
-  padding: 30px;
+  padding: 20px;
 }
 
 .header-items-left {
@@ -279,10 +440,6 @@ body {
 
 .img-container {
   display: inline;
-  background-image: url(/images/logo-vajm-whitefont1.png?8643e25de325ced6b05549d72f1e48b6);
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   height: 80px;
   min-width: 60px;
 }
@@ -350,8 +507,6 @@ body {
   text-decoration: none;
   color: white;
 }
-
-/* footer section */
 
 .footerSection {
   background-color: #0a1837;
@@ -510,6 +665,7 @@ body {
 
 .user-dashboard {
   background-color: #ECF6FF;
+  height: 100vh;
 }
 
 .fullwidth {
@@ -545,23 +701,25 @@ body {
 .small-nav {
   display: none;
   position: absolute;
-  right: 120px;
-  top: 40px;
+  right: 176px;
+  top: 54px;
   background-color: #ECF6FF;
   border-radius: 5px;
-  width: 120px;
+  width: 140px;
+  cursor: pointer;
 }
 
 .small-nav ul {
   list-style: none;
   padding: 10px;
-  font-size: 10px !important;
+  font-size: 12px !important;
   margin: 0;
   text-transform: uppercase;
 }
 
 .small-nav-list {
   background-color: #ECF6FF;
+  cursor: pointer;
 }
 
 .small-nav-list:hover {
@@ -601,9 +759,9 @@ body {
 }
 
 .profile-banner-container {
-  background: url("/images/HAND PICKED Updated@2x.jpg?7e201d21b378d835a9ae4321cbf27860") no-repeat center;
+  background: url("/images/Mask Group 11@2x.png?5cb73f871fa355bb37001e5ce2c3048c") no-repeat center;
   background-size: cover;
-  height: 300px;
+  height: 450px;
   width: 100% !important;
 }
 
@@ -639,11 +797,13 @@ body {
 }
 
 .hire-me-btn {
-  height: 25px;
-  width: 250px;
-  margin-bottom: 20px;
-  font-size: 10px !important;
+  height: 40px;
+  width: 350px;
+  margin: 20px;
+  font-size: 13px !important;
   padding: 2px !important;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
 }
 
 .profile-name {
@@ -696,10 +856,6 @@ body {
 .business-img {
   padding: 20px 0px 20px 0px;
   margin-bottom: 20px;
-  background-image: url("/images/HAND PICKED.png?391480a5ec0b0be2a1339d168f86ff94");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
   height: 400px;
   box-shadow: 2px 7px 5px 0px rgba(194, 203, 210, 0.75);
   -webkit-box-shadow: 2px 7px 5px 0px rgba(194, 203, 210, 0.75);
@@ -822,7 +978,6 @@ body {
 .jobseeker-img {
   padding: 20px 0px 20px 0px;
   margin-bottom: 20px;
-  background-image: url("/images/HAND PICKED.png?391480a5ec0b0be2a1339d168f86ff94");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -939,7 +1094,7 @@ input:-webkit-autofill:active {
 
 .dash-text {
   text-transform: capitalize;
-  font-size: 11px;
+  font-size: 0.75em;
   color: #747677;
 }
 
@@ -960,7 +1115,7 @@ input:-webkit-autofill:active {
   padding: 3px 8px;
   background-color: #f1f9ff;
   color: #007bff;
-  font-size: 10px;
+  font-size: 0.8em;
 }
 
 .box-outline-none {
@@ -985,6 +1140,11 @@ input:-webkit-autofill:active {
 .placeholder-style::placeholder {
   font-size: 10px;
   color: #cccccc !important;
+}
+
+.jobpostsList {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*!

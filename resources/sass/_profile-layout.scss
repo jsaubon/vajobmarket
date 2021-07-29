@@ -3,6 +3,7 @@
 
 .user-dashboard {
     background-color: #ECF6FF;
+    height: 100vh;
 }
 
 .fullwidth {
@@ -45,25 +46,28 @@
 .small-nav{
 display:none;
 position: absolute;
-right: 120px;
-top: 40px;
+right: 176px;
+top: 54px;
 background-color: #ECF6FF;
 border-radius:5px;
-width: 120px;
+width: 140px;
+cursor: pointer;
 }
 .small-nav ul{
     list-style: none;
     padding: 10px;
-    font-size: 10px !important;
+    font-size: 12px !important;
     margin: 0;
     text-transform: uppercase;
 }
 .small-nav-list{
     background-color: #ECF6FF;
+    cursor: pointer;
 
 }
 .small-nav-list:hover{
     background-color: #6e6e6e;
+
 
 }
 .small-nav-link{
