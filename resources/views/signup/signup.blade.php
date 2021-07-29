@@ -117,10 +117,16 @@ if(type) {
     if(type == 'bo') {
         $('.bo-nav-tab').addClass('active');
         $('.bo-nav-tab-content').addClass('active');
+        $('.bo-nav-tab-content').addClass('show');
+        $('.js-nav-tab').removeClass('active');
+        $('.js-nav-tab-content').removeClass('active');
     }
     if(type == 'js') {
         $('.js-nav-tab').addClass('active');
         $('.js-nav-tab-content').addClass('active');
+        $('.js-nav-tab-content').addClass('show');
+        $('.bo-nav-tab').removeClass('active');
+        $('.bo-nav-tab-content').removeClass('active');
     }
 } else {
         $('.bo-nav-tab').addClass('active');
