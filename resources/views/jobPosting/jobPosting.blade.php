@@ -58,7 +58,7 @@
                     <hr/>
                 </div>
                 <div class="card-body">
-                    <div id="skills_container">
+                    <div id="skills_container py-4">
                         <div class="row">
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" name="skills[1][skill]" placeholder="Skills" />
@@ -147,7 +147,7 @@
 
     $('#form-job-post').on('submit', function(e) {
         e.preventDefault();
-        
+
         if(!token) {
             $('#modalLogin').modal('show');
         } else {
@@ -160,7 +160,7 @@
             delete job_post_data.skills;
             delete job_post_data.monthly_rate;
             delete job_post_data.hourly_rate;
-            
+
             postData('/api/ClientJobPost', job_post_data, ({data:res}) => {
                 if(res.success) {
                     skills_reqiured.map((skill, key) => {
@@ -179,7 +179,7 @@
                 }
             });
         }
-        
+
 
     });
 </script>
