@@ -87,6 +87,7 @@ class UserController extends Controller
     {
         $user = User::with([
             'client',
+            'jobseeker',
             'comments',
             'created_comments',
             'messages',
