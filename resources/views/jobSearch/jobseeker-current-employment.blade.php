@@ -104,13 +104,13 @@ $(document).ready(function() {
                             '</div>'+
 
                             '<div class="row text-left pt-4 pl-3">'+
-                                '<div class="col-md-5 dash-text">'+
+                                '<div class="col-md-5 dash-text" style="white-space: break-spaces">'+
                                     ''+employment.job_description+''+
                                 '</div>'+
                                 '<div class="col-md-1">'+
 
                                 '</div>'+
-                                '<div class="col-md-6 dash-text">'+
+                                '<div class="col-md-6 dash-text" style="white-space: break-spaces">'+
                                     ''+employment.responsibilities+''+
                                 '</div>'+
                             '</div>'+
@@ -139,7 +139,6 @@ $(document).ready(function() {
                                     '</div>'+
                                 '</div>'+
                             '</div>'+
-
                         '</div>'+
                         '</div>'+
                     '</div>'

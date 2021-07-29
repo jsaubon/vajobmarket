@@ -124,8 +124,12 @@
 
 
     $(document).ready(function() {
-        getJobPosts(1);
-        getCandidates(1);
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let search = urlParams.get('search');
+        $('#search_job').val(search);
+        getJobPosts(1, search);
+        getCandidates(1, search);
         $(document).on('click','.page-link-pages',function(e) {
             e.preventDefault();
             let page = $(this).attr('page');
@@ -265,7 +269,7 @@
                             </div>\
                             <hr/>\
                             <p>'+job_seeker.jobseeker_profession.skills_summary+'</p>\
-                            <button class="btn" style="border:1px solid #000;">SEE PROFILE</button>\
+                            <a class="btn" href="/jobseekerProfile?jobseeker_id='+jobseeker.id+'" style="border:1px solid #000;">SEE PROFILE</a>\
                         </div>\
                     </div>\
                 ');

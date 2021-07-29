@@ -12,13 +12,13 @@
 
                 <form action="#" class="d-flex justify-content-around p-3">
                     
-                        <input type="text" class="form-control" placeholder="Start Your Search Here">
+                        <input type="text" class="form-control input-search" placeholder="Start Your Search Here">
 
-                        <select class="form-control">
+                        <!-- <select class="form-control">
                             <option value="1">Select Category</option>
-                        </select>
+                        </select> -->
 
-                        <button class="btn btn-block btn-search">SEARCH</button>
+                        <button class="btn btn-block btn-search" type="button">SEARCH</button>
 
                 </form>
             </div>
@@ -272,4 +272,11 @@
 
 </section>
 
+
+<script>
+    $('.btn-search').on('click', function() {
+        let search = $('.input-search').val();
+        window.location.href = '/jobs?search='+search;
+    })
+</script>
 @endsection

@@ -6,16 +6,16 @@
     <div class="container h-auto fullwidth" >
         <div class="card shadow" style="border-radius:10px; min-height: 80vh;" >
             <ul class="nav nav-tabs border-0 mt-3 px-3" id="myTab" role="tablist">
-                <li class="nav-item " role="presentation" style="width:50%;">
+                <li class="nav-item " role="presentation" style="width:100%;">
                     <a class="nav-link title-personal-info m-0 active-bottom border active border-2 border-top-0  border-left-0 border-right-0 text-center text-dark"  data-toggle="tab" href="#js-account-tab" role="tab" aria-controls="home" aria-selected="true">
                         Account
                     </a>
                 </li>
-                <li class="nav-item" role="presentation" style="width:50%;">
+                <!-- <li class="nav-item" role="presentation" style="width:50%;">
                     <a class="nav-link title-personal-info m-0 active-bottom border border-bottom-1 border-top-0 border-2  border-left-0 border-right-0  text-center text-dark" data-toggle="tab" href="#js-billing-tab" role="tab" aria-controls="profile" aria-selected="false">
                         Payment
                     </a>
-                </li>
+                </li> -->
             </ul>
 
             <div class="tab-content" id="myTabContent">

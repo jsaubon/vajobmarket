@@ -63,7 +63,7 @@ $(document).ready(function() {
         if(res.success) {
             console.log(res.data);
             let hired = res.data.client_employees.filter(p => p.status == 'Hired' ); //&& p.employment_status == 'Employed'
-            let applied = res.data.client_employees.filter(p => p.status == 'Applicant'  || p.status == 'Shortlisted' ); //&& p.employment_status == 'Employed'
+            let applied = res.data.client_employees; //&& p.employment_status == 'Employed'
             let shortlisted = res.data.client_employees.filter(p => p.status == 'Shortlisted' ); //&& p.employment_status == 'Employed'
 
             console.log('hired', hired);
