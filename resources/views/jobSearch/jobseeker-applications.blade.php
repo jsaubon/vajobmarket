@@ -126,6 +126,7 @@ $(document).ready(function() {
                                     '<thead>'+
                                         '<tr>'+
                                             '<th class="dash-table-title" scope="col">subject</th>'+
+                                            '<th class="dash-table-title" scope="col">message</th>'+
                                             '<th class="dash-table-title" scope="col">date</th>'+
                                         '</tr>'+
                                     '</thead>'+
@@ -133,14 +134,17 @@ $(document).ready(function() {
                                         '<tr>'+
                                             '<td class="dash-table-content">Initial Interview</td>'+
                                             '<td class="text-center  dash-table-content">'+(shortlisted.initial_interview_date ? shortlisted.initial_interview_date : 'Not Set')+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.initial_interview_message ? shortlisted.initial_interview_message : 'Not Set')+'</td>'+
                                         '</tr>'+
                                         '<tr>'+
                                             '<td class="dash-table-content">Skills Assessment</td>'+
                                             '<td class="text-center  dash-table-content">'+(shortlisted.skills_assessment_date ? shortlisted.skills_assessment_date : 'Not Set')+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.skills_assessment_message ? shortlisted.skills_assessment_message : 'Not Set')+'</td>'+
                                         '</tr>'+
                                         '<tr>'+
                                             '<td class="dash-table-content">Final Interview</td>'+
                                             '<td class="text-center  dash-table-content">'+(shortlisted.final_interview_date ? shortlisted.final_interview_date : 'Not Set')+'</td>'+
+                                            '<td class="text-center  dash-table-content">'+(shortlisted.final_interview_message ? shortlisted.final_interview_message : 'Not Set')+'</td>'+
                                         '</tr>'+
                                     '</tbody>'+
 
