@@ -214,7 +214,7 @@
                 updateData('/api/ClientBusinessInfo/'+userdata.client.id, {logo: logo}, ({data:res})  =>{
                     console.log(res);
                     $('.logo-container').find('img').removeClass('hide');
-                    $('.logo-container').find('img').attr('src','/'+res.data.business_logo);
+                    $('.logo-container').find('img').attr('src','/storage/'+res.data.business_logo);
                 });
             };
             reader.onerror = function() {
