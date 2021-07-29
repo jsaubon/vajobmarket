@@ -61,7 +61,7 @@
             {{-- first--}}
             <div class="tab-pane fade show active" id="js-candidate-detail" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container ">
-                    <div class="row my-3">
+                    <div class="row my-3 btn-edit hide" >
                         <div class="col-md-12 d-flex justify-content-end">
                             <a class="btn mr-2 btn-light back-btn" style="border-radius: 50px;" href="/jobseekerUpdateDetails">Edit</a>
                         </div>
@@ -354,6 +354,7 @@
 <script>
     let comments;
     let comments_current_page = 0;
+
 $(document).ready(function() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -363,6 +364,12 @@ $(document).ready(function() {
             jobseeker_id = userdata.jobseeker.id;
         } else {
             window.location.href = '/';
+        }
+    }
+
+    if(token) {
+        if(userdata.jobseeker) {
+            $('.btn-edit').removeClass('hide');
         }
     }
     if(jobseeker_id) {
@@ -549,6 +556,11 @@ $(document).ready(function() {
                 $('.comments-total').html(jobseeker_data.user.comments.length);
                 populateComments(0);
             }
+
+
+            $('input').attr('disabled', true);
+            $('select').attr('disabled', true);
+            $('textarea').attr('disabled', true);
         });
 
         function populateComments(page_number) {

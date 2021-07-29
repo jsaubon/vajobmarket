@@ -23,7 +23,7 @@
                             <input type="text" required class="form-control " name="job_title" placeholder="Job Title" />
                         </div>
                         <div class="col-sm-4">
-                            <select class="form-control" name="sector">
+                            <select class="form-control" name="sector" id="sector_select">
                                 <option value="">Sector</option>
                             </select>
                         </div>
@@ -100,16 +100,27 @@
         $('#modalLogin').modal('show');
     }
 
+    getData('/api/Sector', ({data:res}) => {
+        // console.log('res',res);
+        if(res.success) {
+            res.data.map((sector, key) => {
+                $('#sector_select').append(
+                    '<option value="'+sector.sector+'">'+sector.sector+'</option>'
+                )
+            });
+        }
+    })
+
     $('.btn-add-skill').on('click', function() {
         let skills_container = $('#skills_container');
 
         skills_container.append(
             '<div class="row">'+
                 '<div class="col-sm-8">'+
-                    '<input type="text" class="form-control" name="skills['+skills_container.length+'][skill]" placeholder="Skills" />'+
+                    '<input type="text" class="form-control" name="skills['+(skills_container.length +1)+'][skill]" placeholder="Skills" />'+
                 '</div>'+
                 '<div class="col-sm-4">'+
-                    '<select  class="form-control" name="skills['+skills_container.length+'][proficiency]">'+
+                    '<select  class="form-control" name="skills['+(skills_container.length +1)+'][proficiency]">'+
                         '<option value="">Proficiency</option>'+
                         '<option value="Beginner">Beginner</option>'+
                         '<option value="Advanced">Advanced</option>'+
@@ -128,6 +139,7 @@
             $('#modalLogin').modal('show');
         } else {
             let job_post_data = $(this).serializeControls();
+            console.log('job_post_data',job_post_data);
             let skills_reqiured = job_post_data.skills;
             skills_reqiured = Object.values(skills_reqiured);
             let salary = job_post_data.monthly_rate + ', ' + job_post_data.hourly_rate;

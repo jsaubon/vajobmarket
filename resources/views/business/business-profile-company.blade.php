@@ -703,6 +703,9 @@
 <script>
 let jobpost_data;
 $(document).ready(function() {
+    if(!token) {
+        $('#modalLogin').modal('show');
+    }
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     let job_id = urlParams.get('job_id');
@@ -757,6 +760,8 @@ $(document).ready(function() {
                 })
             }
         });
+    } else {
+        window.location.href = '/';
     }
 
 });

@@ -32,14 +32,14 @@
                     <div class="row pt-2" style="text-transform:uppercase; font-size: 1rem;  margin-top:40px;">
                         <div class="col-md-6 title-personal-info" style="margin: 0px;">current employment</div>
                         <div class="col-md-6 text-right title-personal-info">
-                            <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
+                            <a href="/jobseekerCurrentEmployment" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
                             view
                             <i class="fas fa-angle-right"></i>
                             </a>
                         </div>
                     </div>
                     <hr class="lsep">
-                    <div class="employments_container">
+                    <div class="employments_container accordion" id="accordionEmployments">
                     </div>
 
                 <hr>
@@ -50,7 +50,7 @@
                         <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                             <div class="col-md-6 title-personal-info" style="margin: 0px;">jobs you applied for</div>
                             <div class="col-md-6 text-right title-personal-info">
-                                <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
+                                <a href="/jobseekerApplications" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
                                 see more
                                 <i class="fas fa-angle-right"></i>
                                 </a>
@@ -62,7 +62,7 @@
                         <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
                             <div class="col-md-6 title-personal-info" style="margin: 0px;">on going recruitement</div>
                             <div class="col-md-6 text-right title-personal-info">
-                                <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
+                                <a href="/jobseekerApplications" style="text-decoration: none !important; color:#767676; font-size:0.7em;">
                                 see more
                                 <i class="fas fa-angle-right"></i>
                                 </a>
@@ -73,7 +73,7 @@
                 </div>
 
 
-                    <!--accordions-->
+                <!--accordions-->
                 <div class="row">
                     <div class="col-md-6">
                         <div class="accordion" id="accordionJobsApplied">
@@ -294,76 +294,93 @@ $(document).ready(function() {
 
             hired.map((employment, key) => {
                 $('.employments_container').append(
-                    '<div>'+
-                        '<h4 style="border-bottom: 1px solid grey; padding-bottom: 3px">'+employment.client_job_post.job_title+'</h4>'+
-                        '<div class="row px-2 text-center ">'+
-                            '<div class="col-md-2 dash-text ">'+
-                                'employment status : '+employment.employment_status+''+
+                    '<div class="card border-0 mx-2">'+
+                        '<div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOne_'+employment.id+'">'+
+                        '<h2 class="mb-0 ">'+
+                            '<button class="btn text-capitalize w-100 d-flex  justify-content-between text-left" style="font-family: \'Oswald\', sans-serif;" type="button" data-toggle="collapse" data-target="#employment_'+employment.id+'" aria-expanded="true" aria-controls="collapseOne" >'+
+                            '<div> '+employment.client_job_post.client.client_business_info.business_name+' ('+employment.client_job_post.job_title+') </div>'+
+                            '<div class="my-auto">'+
+                                '<i class="fas fa-chevron-down my-auto "></i>'+
+                                '{{-- <i class="fas fa-chevron-up" ></i> --}}'+
                             '</div>'+
-                            '<div class="col-md-2 dash-text">'+
-                                'salary: '+employment.salary+''+
-                            '</div>'+
-                            '<div class="col-md-4 dash-text">'+
-                                'working hours: '+employment.working_hours+''+
-                            '</div>'+
-                            '<div class="col-md-2 dash-text">'+
-                                'date hired: '+employment.date_hired+''+
-                            '</div>'+
-                            '<div class="col-md-2 dash-text">'+
-                                'contract: '+employment.contract+''+
-                            '</div>'+
-                        '</div>'+
-                        '<hr>'+
-
-                        '<div class="row text-left ml-1 ">'+
-                            '<div class="col-md-5 dash-text pl-0">'+
-                                'Job Description'+
-                            '</div>'+
-                            '<div class="col-md-1 dash-text">'+
-
-                            '</div>'+
-                            '<div class="col-md-6 dash-text">'+
-                                'Responsibilites'+
-                            '</div>'+
+                            '</button>'+
+                        '</h2>'+
                         '</div>'+
 
-                        '<div class="row text-left pt-4 pl-3">'+
-                            '<div class="col-md-5 dash-text">'+
-                                ''+employment.job_description+''+
-                            '</div>'+
-                            '<div class="col-md-1">'+
+                        '<div id="employment_'+employment.id+'" class="collapse" aria-labelledby="headingOne_'+employment.id+'" data-parent="#accordionEmployments">'+
+                        '<div class="card-body">'+
 
-                            '</div>'+
-                            '<div class="col-md-6 dash-text">'+
-                            ''+employment.responsibilities+''+
-                            '</div>'+
-                        '</div>'+
-                        '<div class="row pt-4 ">'+
-                            '<div class="col-md-12 d-flex justify-content-end">'+
-                                '<div class="d-flex justify-content-around" style="width: 30%;">'+
-                                    '<a href="/BusinessPostJob" style="text-decoration:none;">'+
-                                        '<div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px; ">'+
-                                            '<i class="fas fa-user-clock my-auto" style="font-size:12px;" ></i>&nbsp;'+
-                                            '<b class="my-auto" style="text-transform: uppercase;">clock in</b>'+
-                                        '</div>'+
-                                    '</a>'+
-                                    '<a href="/BusinessPostJob" style="text-decoration:none;">'+
-                                        '<div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px;">'+
-                                            '<i class="fas fa-coffee my-auto mr-1" style="font-size:12px;" ></i>&nbsp;'+
-                                            '<b class="my-auto" style="text-transform: uppercase;">break</b>'+
-                                        '</div>'+
-                                    '</a>'+
-                                    '<a href="/BusinessPostJob" style="text-decoration:none;">'+
-                                        '<div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px;">'+
-                                            '<i class="fas fa-times-circle my-auto" style="font-size:12px;" ></i>&nbsp;'+
-                                            '<b class="my-auto" style="text-transform: uppercase;">clock out</b>'+
-                                        '</div>'+
-                                    '</a>'+
+                            '<div class="row px-2 text-center ">'+
+                                '<div class="col-md-2 dash-text ">'+
+                                    'employment status : '+employment.client_job_post.job_type+''+
+                                '</div>'+
+                                '<div class="col-md-2 dash-text">'+
+                                    'salary: '+employment.salary+''+
+                                '</div>'+
+                                '<div class="col-md-4 dash-text">'+
+                                    'working hours: '+employment.working_hours+''+
+                                '</div>'+
+                                '<div class="col-md-2 dash-text">'+
+                                    'date hired: '+employment.date_hired+''+
+                                '</div>'+
+                                '<div class="col-md-2 dash-text">'+
+                                    'contract: '+employment.contract+''+
                                 '</div>'+
                             '</div>'+
+                            '<hr>'+
+
+                            '<div class="row text-left ml-1 ">'+
+                                '<div class="col-md-5 dash-text pl-0">'+
+                                    'Job Description'+
+                                '</div>'+
+                                '<div class="col-md-1 dash-text">'+
+
+                                '</div>'+
+                                '<div class="col-md-6 dash-text">'+
+                                    'Responsibilites'+
+                                '</div>'+
+                            '</div>'+
+
+                            '<div class="row text-left pt-4 pl-3">'+
+                                '<div class="col-md-5 dash-text">'+
+                                    ''+employment.job_description+''+
+                                '</div>'+
+                                '<div class="col-md-1">'+
+
+                                '</div>'+
+                                '<div class="col-md-6 dash-text">'+
+                                    ''+employment.responsibilities+''+
+                                '</div>'+
+                            '</div>'+
+
+                            '<div class="row pt-4 ">'+
+                                '<div class="col-md-12 d-flex justify-content-end">'+
+                                    '<div class="d-flex justify-content-around" style="width: 30%;">'+
+                                        '<a href="/BusinessPostJob" style="text-decoration:none;">'+
+                                            '<div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px; ">'+
+                                                '<i class="fas fa-user-clock my-auto" style="font-size:12px;" ></i>&nbsp;'+
+                                                '<b class="my-auto" style="text-transform: uppercase;">clock in</b>'+
+                                            '</div>'+
+                                        '</a>'+
+                                        '<a href="/BusinessPostJob" style="text-decoration:none;">'+
+                                            '<div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px;">'+
+                                                '<i class="fas fa-coffee my-auto mr-1" style="font-size:12px;" ></i>&nbsp;'+
+                                                '<b class="my-auto" style="text-transform: uppercase;">break</b>'+
+                                            '</div>'+
+                                        '</a>'+
+                                        '<a href="/BusinessPostJob" style="text-decoration:none;">'+
+                                            '<div  class="postJobBtn py-1 d-flex justify-content-center" style="margin:0 !important;color:#383232; width:100px;">'+
+                                                '<i class="fas fa-times-circle my-auto" style="font-size:12px;" ></i>&nbsp;'+
+                                                '<b class="my-auto" style="text-transform: uppercase;">clock out</b>'+
+                                            '</div>'+
+                                        '</a>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+
                         '</div>'+
-                    '</div>'+
-                    '<hr>'
+                        '</div>'+
+                    '</div>'
                 );
             });
 

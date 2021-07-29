@@ -36,7 +36,7 @@ class SectorController extends Controller
             $datas = $datas->paginate(50);
 
         } else {
-            $datas = \App\Sector::orderBy('type','asc')->get();
+            $datas = \App\Sector::orderBy('sector','asc')->get();
         }
 
         return response()->json([

@@ -60,23 +60,24 @@ function getPageData() {
     getData('/api/Client/'+userdata.client.id, ({data:res}) => {
         if(res.success) {
             let client_job_posts = res.data.client_job_posts;
-            client_job_posts.map((client_job_post, key) => {
-                let show = key == 0 ? 'show' : '';
+            console.log('client_job_posts',client_job_posts);
+            client_job_posts.map((client_job_post, client_job_post_key) => {
+                let show = client_job_post_key == 0 ? 'show' : '';
                 
                 $('#accordionApplicants').append(
                     '<div class="card">'+
-                            '<div class="card-header" id="accordion_'+key+'">'+
+                            '<div class="card-header" id="accordion_'+client_job_post_key+'">'+
                                 '<h2 class="mb-0">'+
-                                    '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_'+key+'" aria-expanded="true" aria-controls="collapse_'+key+'">'+
+                                    '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_'+client_job_post_key+'" aria-expanded="true" aria-controls="collapse_'+client_job_post_key+'">'+
                                     ''+client_job_post.job_title+''+
                                     '</button>'+
                                 '</h2>'+
                             '</div>'+
 
-                            '<div id="collapse_'+key+'" class="collapse '+show+'" aria-labelledby="accordion_'+key+'" data-parent="#accordionApplicants">'+
+                            '<div id="collapse_'+client_job_post_key+'" class="collapse '+show+'" aria-labelledby="accordion_'+client_job_post_key+'" data-parent="#accordionApplicants">'+
                             '<div class="card-body">'+
 
-                            '<table class="table tblApplicants_'+key+'">'+
+                            '<table class="table tblApplicants_'+client_job_post_key+'">'+
                                 '<thead>'+
                                     '<tr>'+
                                     '<th class="text-center" scope="col">Name</th>'+
@@ -100,14 +101,17 @@ function getPageData() {
                 
                 client_job_post.applicants.filter(p => p.status != 'Shortlisted').map((applicant, key) => {
                     let name = applicant.jobseeker.user.firstname+ ' ' + applicant.jobseeker.user.lastname;
-                    $('.tblApplicants_'+key).find('tbody').append(
-                        '<tr>'+
+                    $('.tblApplicants_'+client_job_post_key).find('tbody').append(
+                        '<tr client_employee_id='+applicant.id+'>'+
                             '<td>'+name+'</td>'+
                             '<td class="text-center">'+applicant.status+'</td>'+
                             '<td class="text-center"></td>'+
                             '<td class="text-center"></td>'+
                             '<td class="text-center">'+applicant.date_applied+'</td>'+
-                            '<td class="text-center">A1 A2 A3</td>'+
+                            '<td class="text-center">'+
+                            '<button class="btn btn-primary btn-shortlist">Shortlist</button>'+
+                            '<button class="btn btn-danger">Dismiss</button>'+
+                            '</td>'+
                         '</tr>'
                     );
                 });
@@ -142,7 +146,7 @@ function getPageData() {
                                         '</div>'+
                                     '</div>'+
                                     '<div class="col-md-6 text-right">'+
-                                        '<button class="btn btn-warning">Profile</button>'+
+                                        '<a class="btn btn-warning" target="_blank" href="/jobseekerProfile?jobseeker_id='+applicant.jobseeker.id+'">Profile</a>'+
                                         '<button class="btn btn-success btn-hire">Hire</button>'+
                                         '<button class="btn btn-danger btn-dismiss">Dismiss</button>'+
                                     '</div>'+
@@ -287,6 +291,21 @@ function getPageData() {
                     // console.log('update',res);
                     if(res.success) {
                         alert('Applicant Successfully Dismissed');
+                        window.location.href = '/BusinessApplications';
+                    }
+                });
+            });
+
+            $('body').on('click','.btn-shortlist', function() {
+                let tr = $(this).closest('tr');
+                let client_employee_id = tr.attr('client_employee_id');
+                let data = {
+                    status: 'Shortlisted',
+                }
+                updateData('/api/ClientEmployee/'+client_employee_id,data, ({data:res}) => {
+                    // console.log('update',res);
+                    if(res.success) {
+                        alert('Applicant Successfully Shortlisted');
                         window.location.href = '/BusinessApplications';
                     }
                 });
