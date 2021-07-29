@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="user-dashboard">
-    <div class="container fullwidth">
+    <div class="container fullwidth" style="min-height: 80vh">
 
 
         <nav aria-label="breadcrumb">
@@ -30,8 +30,8 @@
                     <div class="tab-pane fade show active" id="applicants" role="tabpanel" aria-labelledby="applicants-tab">
 
                         <div class="accordion" id="accordionApplicants">
-                          
-                       
+
+
                         </div>
 
                     </div>
@@ -50,20 +50,20 @@
 <script>
 if(!token) {
     window.location.href = '/';
-} 
+}
 
 getPageData();
 // $(document).ready(function() {
 function getPageData() {
 
-    
+
     getData('/api/Client/'+userdata.client.id, ({data:res}) => {
         if(res.success) {
             let client_job_posts = res.data.client_job_posts;
             console.log('client_job_posts',client_job_posts);
             client_job_posts.map((client_job_post, client_job_post_key) => {
                 let show = client_job_post_key == 0 ? 'show' : '';
-                
+
                 $('#accordionApplicants').append(
                     '<div class="card">'+
                             '<div class="card-header" id="accordion_'+client_job_post_key+'">'+
@@ -97,7 +97,7 @@ function getPageData() {
                             '</div>'+
                         '</div>'
                 );
-                
+
                 client_job_post.applicants.filter(p => p.status != 'Shortlisted').map((applicant, key) => {
                     let name = applicant.jobseeker.user.firstname+ ' ' + applicant.jobseeker.user.lastname;
                     $('.tblApplicants_'+client_job_post_key).find('tbody').append(
@@ -240,7 +240,7 @@ function getPageData() {
                         '</div>'+
                     '</div>'
                 );
-            }); 
+            });
 
 
             $('body').on('click','.btn-save', function() {
@@ -313,9 +313,9 @@ function getPageData() {
                 });
             });
         }
-    }); 
+    });
 
 }
-    
+
 </script>
 @endsection

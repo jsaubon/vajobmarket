@@ -71,7 +71,7 @@
                     <div class="client_job_post_container row">
 
                     </div>
-                    
+
                 </div>
                 <div class="container">
                     <hr>
@@ -93,7 +93,7 @@
             {{-- second --}}
             <div class="tab-pane fade" id="company-pro" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="container ">
-                    <div class="row my-3 btn-edit-container">
+                    <div class="row my-3">
                         <div class="col-md-12 d-flex justify-content-end">
                             <a class="btn btn-light back-btn" style="border-radius: 50px; font-family: 'oswald',san-serif;" href="/BusinessProfilePersonal">Edit</a>
                         </div>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="container h-auto" style="gap:10px;">
                     {{-- comments --}}
-                    <!-- <div class="row comments_container">
+                    <div class="row comments_container">
                         <div class="col-md-4 my-2 shadow" style="border-radius: 10px;" >
                             <div class="card-body">
                               <h5 class="card-title d-flex" style="font-size:15px;">
@@ -167,7 +167,7 @@
                             </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                      {{-- comments end--}}
                 </div>
                 <div class="container">
@@ -206,26 +206,16 @@ $(document).ready(function() {
         }
     }
 
-    if(!token) {
-        if(!userdata.client) {
-            $('.btn-edit-container').addClass('hide');
-        }
-        
-    }
 
-    
     if(client_id) {
         getData('/api/Client/'+client_id, ({data:res}) => {
             if(res.success) {
                 let client = res.data;
                 client_business_info = client.client_business_info;
-                console.log('client_business_info',client_business_info)
-                if(client_business_info.business_logo) {
-                    $('.client_business_info-business_logo').attr('src',window.location.origin+'/'+client_business_info.business_logo);
-                }
-                
+
+
                 let client_employees = client.client_employees.filter(p => p.status == 'Hired');
-                
+
                 $('.client_job_posts_count').html(client.client_job_posts.length);
                 $('.client_employees_count').html(client_employees.length);
 
@@ -255,18 +245,18 @@ $(document).ready(function() {
 
                 let client_job_posts_per_page = 10;
                 client_job_posts = paginate(client.client_job_posts, client_job_posts_per_page);
-                
+
                 $('.client_job_posts-total').html(client.client_job_posts.length);
                 populateJobPosts(0);
 
 
-                
+
                 let comments_per_page = 1;
                 comments = paginate(client.user.comments, comments_per_page);
                 console.log('client.comments',client.user.comments);
                 $('.comments-total').html(client.user.comments.length);
                 populateComments(0);
-                
+
             }
         });
 
@@ -329,7 +319,7 @@ $(document).ready(function() {
                 $('.client_job_posts-pagination').append(
                     '<li class="page-item '+active+'"><a class="page-link client_job_posts-page" href="#">'+(index + 1)+'</a></li>'
                 );
-                
+
             }
             $('.client_job_posts-pagination').append(
                 '<li class="page-item '+next_disabled+'">'+
@@ -351,7 +341,7 @@ $(document).ready(function() {
             e.preventDefault();
             populateJobPosts(client_job_posts_current_page -1);
         });
-        
+
         $('body').on('click', '.client_job_posts-next_page', function(e) {
             e.preventDefault();
             populateJobPosts(client_job_posts_current_page +1);
@@ -369,7 +359,7 @@ $(document).ready(function() {
                 console.log('jobseeker',jobseeker);
                 let name = comment.created_by.firstname + ' ' + comment.created_by.lastname;
                 let image = jobseeker.jobseeker_photo ? jobseeker.jobseeker_photo : 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png';
-                
+
                 $('.comments_container').append(
                     '<div class="col-md-4 my-2 shadow" style="border-radius: 10px;" >'+
                         '<div class="card-body">'+
@@ -417,7 +407,7 @@ $(document).ready(function() {
                 $('.comments-pagination').append(
                     '<li class="page-item '+active+'"><a class="page-link comments-page" href="#">'+(index + 1)+'</a></li>'
                 );
-                
+
             }
             $('.comments-pagination').append(
                 '<li class="page-item '+next_disabled+'">'+
@@ -439,12 +429,12 @@ $(document).ready(function() {
             e.preventDefault();
             populateComments(comments_current_page -1);
         });
-        
+
         $('body').on('click', '.comments-next_page', function(e) {
             e.preventDefault();
             populateComments(comments_current_page +1);
         });
-        
+
     }
 
 });
