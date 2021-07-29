@@ -15,7 +15,7 @@
     <!-- Breadcrumbs End -->
 
     <!-- Card Start -->
-        <div class="card w-100 h-100 shadow" style="border-radius: 20px;">
+        <div class="card w-100 h-100 shadow" style="border-radius: 20px; min-height: 60vh">
             <div class="card-header border-bottom-0 bg-white"  style="border-radius: 20px;">
                 <h4 class="card-title text-center title-personal-info ">
                     Current Employment
@@ -25,7 +25,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    
+
                     <div class="employments_container accordion" id="accordionEmployments">
                     </div>
                 </div>
@@ -149,7 +149,7 @@ $(document).ready(function() {
                 );
             });
 
-           
+
 
 
 

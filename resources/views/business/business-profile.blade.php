@@ -60,18 +60,18 @@
         <div class="tab-content " id="myTabContent">
             {{-- first--}}
             <div class="tab-pane h-auto fade show active" id="posts-pro" role="tabpanel" aria-labelledby="home-tab">
-                <div class="container pb-4">
-                    <div class="row">
-                        <div class="col-md-12">
+                <div class="container-fluid  pb-4">
+                    <div class="row w-75  mx-auto">
+                        <div class="col-md-2 pl-0">
                             Showing <span class="client_job_posts-per_page">-</span> posts out of <span class="client_job_posts-total">-</span>
                         </div>
                     </div>
                 </div>
-                <div class="container h-auto " style="gap:10px;">
-                    <div class="client_job_post_container row">
+                <div class="container-fluid h-auto w-100" style="gap:10px;">
+                    <div class="client_job_post_container row justify-content-center">
 
                     </div>
-                    
+
                 </div>
                 <div class="container">
                     <hr>
@@ -93,7 +93,7 @@
             {{-- second --}}
             <div class="tab-pane fade" id="company-pro" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="container ">
-                    <div class="row my-3 btn-edit-container">
+                    <div class="row my-3">
                         <div class="col-md-12 d-flex justify-content-end">
                             <!-- <a class="btn btn-light back-btn" style="border-radius: 50px; font-family: 'oswald',san-serif;" href="/BusinessProfilePersonal">Edit</a> -->
                         </div>
@@ -103,14 +103,13 @@
                             <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
                             <img class="client_business_info-business_logo" src="https://thumbs.dreamstime.com/z/realty-flat-apartment-modern-building-logo-design-graphic-style-realty-flat-apartment-modern-building-logo-design-graphic-style-158041756.jpg" alt="" />
                             </div>
-                            <div class="my-auto pl-2">
+                            <div class="my-auto pl-2 d-flex flex-column justify-content-center">
                                 <h3 style="font-size:15px; margin:0;" class="client_business_info-business_name">My Company Name</h3>
-                                <p style="font-size: 10px; margin:0;">
-                                    <a href="/BusinessProfilePersonal" class="client_business_info-type_of_business">Type of business</a></p>
+                                    <div class="client_business_info-type_of_business" style="font-size: 10px; margin:0;">Type of business</div>
                             </div>
                         </div>
                         <hr>
-                        <p class="card-text client_business_info-business_description" style="margin-bottom:60px;">
+                        <p class="card-text title-personal-info mt-0 client_business_info-business_description" style="margin-bottom:60px;">
                             -
                         </p>
                     </div>
@@ -118,23 +117,23 @@
             </div>
             {{-- third --}}
             <div class="tab-pane fade" id="comments-pro" role="tabpanel" aria-labelledby="profile-tab">
-                <div class="container pb-4">
-                    <div class="row">
+                <div class="container-fluid pb-4">
+                    <div class="row w-75  mx-auto">
                         <div class="col-md-12">
                             Showing <span class="comments-per_page"></span> comments out of <span class="comments-total"></span>
                         </div>
                     </div>
                 </div>
-                <div class="container h-auto" style="gap:10px;">
+                <div class="container-fluid h-auto w-100 " style="gap:10px;">
                     {{-- comments --}}
-                    <!-- <div class="row comments_container">
+                    <div class="row comments_container justify-content-center">
                         <div class="col-md-4 my-2 shadow" style="border-radius: 10px;" >
                             <div class="card-body">
                               <h5 class="card-title d-flex" style="font-size:15px;">
                                 <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
                                     <img src="https://i.ibb.co/L1xT86W/profileworkers.jpg" style="height:50px;" alt="" />
                                 </div>
-                                <div class="my-auto pl-2">
+                                <div class="my-auto pl-2  ">
                                     <h3 style="font-size:15px;" class="title-personal-info m-0">
                                         My Company Name
                                     </h3>
@@ -167,7 +166,9 @@
                             </div>
                             </div>
                         </div>
-                    </div> -->
+
+
+                    </div>
                      {{-- comments end--}}
                 </div>
                 <div class="container">
@@ -206,26 +207,16 @@ $(document).ready(function() {
         }
     }
 
-    if(!token) {
-        if(!userdata.client) {
-            $('.btn-edit-container').addClass('hide');
-        }
-        
-    }
 
-    
     if(client_id) {
         getData('/api/Client/'+client_id, ({data:res}) => {
             if(res.success) {
                 let client = res.data;
                 client_business_info = client.client_business_info;
-                console.log('client_business_info',client_business_info)
-                if(client_business_info.business_logo) {
-                    $('.client_business_info-business_logo').attr('src',window.location.origin+'/'+client_business_info.business_logo);
-                }
-                
+
+
                 let client_employees = client.client_employees.filter(p => p.status == 'Hired');
-                
+
                 $('.client_job_posts_count').html(client.client_job_posts.length);
                 $('.client_employees_count').html(client_employees.length);
 
@@ -255,18 +246,18 @@ $(document).ready(function() {
 
                 let client_job_posts_per_page = 10;
                 client_job_posts = paginate(client.client_job_posts, client_job_posts_per_page);
-                
+
                 $('.client_job_posts-total').html(client.client_job_posts.length);
                 populateJobPosts(0);
 
 
-                
+
                 let comments_per_page = 1;
                 comments = paginate(client.user.comments, comments_per_page);
                 console.log('client.comments',client.user.comments);
                 $('.comments-total').html(client.user.comments.length);
                 populateComments(0);
-                
+
             }
         });
 
@@ -276,35 +267,35 @@ $(document).ready(function() {
             $('.client_job_posts-per_page').html(client_job_posts[client_job_posts_current_page].length);
             client_job_posts[client_job_posts_current_page].map((client_job_posts, key) => {
                 $('.client_job_post_container').append(
-                    '<div class="col-md-4 my-2 card  shadow" style="border-radius: 10px;" >'+
+                    '<div class="col-md-3 m-2 card  shadow" style="border-radius: 10px;" >'+
                         '<div class="card-body">'+
-                            '<h5 class="card-title" style="font-size:15px;"> '+client_job_posts.job_title+'</h5>'+
+                            '<h5 class="card-title title-personal-info m-0 mb-2"  style="font-size:15px;"> '+client_job_posts.job_title+'</h5>'+
                             '<h6 class="card-subtitle mb-2 text-muted">'+
-                                '<div class="row" style="text-transform: capitalize;">'+
-                                    '<div class="col-md-2 pr-0" style="font-size:9px;">'+
-                                    '<div class="border border-primary rounded px-1" style="width: 42px;">'+client_job_posts.job_type+'</div>'+
+                                '<div class="row mt-3" style="text-transform: capitalize;">'+
+                                    '<div class="col-md-3 my-auto pr-0 w-100" style="font-size:9px;">'+
+                                    '<div class="border border-primary rounded pr-1 my-auto ml-0" style="width: 62px;">'+client_job_posts.job_type+'</div>'+
                                     '</div>'+
-                                    '<div class="col-md-4 " style="font-size:9px;">'+
+                                    '<div class="col-md-4 my-auto pl-0 w-100" style="font-size:9px;">'+
                                     '<i class="fas fa-building"></i>'+
                                     ''+client_business_info.business_name+''+
                                     '</div>'+
-                                    '<div class="col-md-3 " style="font-size:8px;">'+
+                                    '<div class="col-md-2 pl-0 my-auto w-100" style="font-size:8px;">'+
                                     '<i class="fas fa-money-bill-wave-alt"></i>'+
                                     ''+client_job_posts.salary+''+
                                     '</div>'+
-                                    '<div class="col-md-3 " style="font-size:8px;">'+
+                                    '<div class="col-md-3 pl-0 my-auto" style="font-size:8px;">'+
                                     '<i class="fas fa-clock"></i>'+
                                     'posted: '+client_job_posts.start_date+''+
                                     '</div>'+
                                 '</div>'+
                             '</h6>'+
                             '<hr class="lsep">'+
-                            '<p class="card-text" style="font-size:10px;">'+
+                            '<p class="card-text title-personal-info m-0" style="font-size:0.7em;">'+
                             ''+client_job_posts.job_description+''+
                             '</p>'+
-                            '<div class="row pb-4">'+
+                            '<div class="row p-4">'+
                                 '<div class="col-md-12 text-center">'+
-                                '<a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>'+
+                                '<a href="#" style="text-transform: uppercase; font-size:0.7em" class="card-link btn btn-outline-secondary  m-0">read more</a>'+
                                 '</div>'+
                             '</div>'+
                         '</div>'+
@@ -329,7 +320,7 @@ $(document).ready(function() {
                 $('.client_job_posts-pagination').append(
                     '<li class="page-item '+active+'"><a class="page-link client_job_posts-page" href="#">'+(index + 1)+'</a></li>'
                 );
-                
+
             }
             $('.client_job_posts-pagination').append(
                 '<li class="page-item '+next_disabled+'">'+
@@ -351,7 +342,7 @@ $(document).ready(function() {
             e.preventDefault();
             populateJobPosts(client_job_posts_current_page -1);
         });
-        
+
         $('body').on('click', '.client_job_posts-next_page', function(e) {
             e.preventDefault();
             populateJobPosts(client_job_posts_current_page +1);
@@ -369,15 +360,15 @@ $(document).ready(function() {
                 console.log('jobseeker',jobseeker);
                 let name = comment.created_by.firstname + ' ' + comment.created_by.lastname;
                 let image = jobseeker.jobseeker_photo ? jobseeker.jobseeker_photo : 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png';
-                
+
                 $('.comments_container').append(
-                    '<div class="col-md-4 my-2 shadow" style="border-radius: 10px;" >'+
+                    '<div class="col-md-3 m-2 shadow" style="border-radius: 10px;" >'+
                         '<div class="card-body">'+
                             '<h5 class="card-title d-flex" style="font-size:15px;">'+
                             '<div class="profile-pic shadow my-auto" style="height:50px; width:50px;">'+
                                 '<img src="'+image+'" style="height:50px;" alt="" />'+
                             '</div>'+
-                            '<div class="my-auto pl-2">'+
+                            '<div class="my-auto mt-0 pl-2 title-personal-info">'+
                                 '<h3 style="font-size:15px; margin:0;">'+name+'</h3>'+
                                 '<p style="font-size: 10px; margin:0;">'+
                                     ''+jobseeker.jobseeker_profession.job_title+''+
@@ -386,12 +377,12 @@ $(document).ready(function() {
                             '</h5>'+
 
                             '<hr class="lsep">'+
-                            '<p class="card-text" style="font-size:10px;">'+
+                            '<p class="card-text title-personal-info m-0" style="font-size:10px;">'+
                             ''+comment.content+''+
                             '</p>'+
-                            '<div class="row pb-4">'+
+                            '<div class="row p-4">'+
                                 '<div class="col-md-12 text-center">'+
-                                '<a href="#" style="text-transform: uppercase; font-size:8px" class="card-link btn btn-outline-secondary">read more</a>'+
+                                '<a href="#" style="text-transform: uppercase; font-size:0.7em;" class="card-link btn btn-outline-secondary ">read more</a>'+
                                 '</div>'+
                             '</div>'+
                         '</div>'+
@@ -417,7 +408,7 @@ $(document).ready(function() {
                 $('.comments-pagination').append(
                     '<li class="page-item '+active+'"><a class="page-link comments-page" href="#">'+(index + 1)+'</a></li>'
                 );
-                
+
             }
             $('.comments-pagination').append(
                 '<li class="page-item '+next_disabled+'">'+
@@ -439,12 +430,12 @@ $(document).ready(function() {
             e.preventDefault();
             populateComments(comments_current_page -1);
         });
-        
+
         $('body').on('click', '.comments-next_page', function(e) {
             e.preventDefault();
             populateComments(comments_current_page +1);
         });
-        
+
     }
 
 });

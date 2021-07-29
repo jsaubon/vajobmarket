@@ -54,7 +54,11 @@ if(!token) {
                         <td class="text-center">'+post.visits+'</td>\
                         <td class="text-center">'+post.start_date+'</td>\
                         <td class="text-center">'+post.start_date+'</td>\
-                        <td class="text-center">A1 A2 A3</td>\
+                        <td class="text-center">\
+                            <i class="fas fa-eye"></i>\
+                            <i class="fas fa-edit mx-1"></i>\
+                            <i class="fas fa-trash-alt"></i>\
+                        </td>\
                     </tr>\
                 ');
             });
