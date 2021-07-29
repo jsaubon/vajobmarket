@@ -12,13 +12,13 @@
                 </div>
                 <div class="profile-name">
                     <h3 class="client_business_info-business_name">-</h3>
-                    <div style="color:#007bff;">
+                    {{-- <div style="color:#007bff;">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

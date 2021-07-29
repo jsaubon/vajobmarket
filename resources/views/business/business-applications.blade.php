@@ -2,8 +2,8 @@
 
 @section('content')
 
-<div class="user-dashboard">
-    <div class="container fullwidth" style="min-height: 80vh">
+<div class="user-dashboard h-auto">
+    <div class="container h-auto fullwidth">
 
 
         <nav aria-label="breadcrumb">
@@ -13,21 +13,25 @@
             </ol>
         </nav>
 
-        <div class="card w-100">
-            <div class="card-header">
+        <div class="card w-100" style="min-height: 60vh">
+            <div class="card-header bg-white">
 
                 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="applicants-tab" data-toggle="tab" href="#applicants" role="tab" aria-controls="applicants" aria-selected="true">Applicants</a>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link active text-decoration-none title-personal-info m-0  title-personal-info m-0 active-bottom border active border-2 border-top-0  border-left-0 border-right-0 text-center text-dark" style="color:#747677;" id="currentEmployees-tab" data-toggle="tab" href="#bo-applicants-tab" role="tab" aria-controls="currentEmployees" aria-selected="true">
+                           APPLICANTS
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="shortlistings-tab" data-toggle="tab" href="#shortlistings" role="tab" aria-controls="shortlistings" aria-selected="false">Shortlisting</a>
+                    <li class="nav-item m-0">
+                        <a class="nav-link text-decoration-none title-personal-info m-0  title-personal-info m-0 active-bottom border  border-2 border-top-0  border-left-0 border-right-0 text-center text-dark" style="color:#747677;" id="employeeMonitor-tab" data-toggle="tab" href="#bo-shortlisting-tab" role="tab" aria-controls="employeeMonitor" aria-selected="false">
+                            SHORTLISTING
+                        </a>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
 
-                    <div class="tab-pane fade show active" id="applicants" role="tabpanel" aria-labelledby="applicants-tab">
+                    <div class="tab-pane fade show active" id="bo-applicants-tab" role="tabpanel" aria-labelledby="applicants-tab">
 
                         <div class="accordion" id="accordionApplicants">
 
@@ -36,7 +40,7 @@
 
                     </div>
 
-                    <div class="tab-pane fade" id="shortlistings" role="tabpanel" aria-labelledby="shortlistings-tab">
+                    <div class="tab-pane fade" id="bo-shortlisting-tab" role="tabpanel" aria-labelledby="shortlistings-tab">
 
                     <div class="accordion" id="accordionShortlisting">
                     </div>
@@ -65,10 +69,10 @@ function getPageData() {
                 let show = client_job_post_key == 0 ? 'show' : '';
 
                 $('#accordionApplicants').append(
-                    '<div class="card">'+
-                            '<div class="card-header" id="accordion_'+client_job_post_key+'">'+
+                    '<div class="card  border-0">'+
+                            '<div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="accordion_'+client_job_post_key+'">'+
                                 '<h2 class="mb-0">'+
-                                    '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_'+client_job_post_key+'" aria-expanded="true" aria-controls="collapse_'+client_job_post_key+'">'+
+                                    '<button class="accordion-button  w-100 family-size p-3 text-decoration-none text-p" type="button" data-toggle="collapse" data-target="#collapse_'+client_job_post_key+'" aria-expanded="true" aria-controls="collapse_'+client_job_post_key+'">'+
                                     ''+client_job_post.job_title+''+
                                     '</button>'+
                                 '</h2>'+
@@ -129,10 +133,10 @@ function getPageData() {
                 console.log('applicant',applicant);
                 let name = applicant.jobseeker.user.firstname+ ' ' + applicant.jobseeker.user.lastname;
                 $('#accordionShortlisting').append(
-                    '<div class="card" client_employee_id='+applicant.id+'>'+
-                        '<div class="card-header" id="headingOneShortlisted_'+key+'">'+
+                    '<div class="card  border-0" client_employee_id='+applicant.id+'>'+
+                        '<div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" id="headingOneShortlisted_'+key+'">'+
                             '<h2 class="mb-0">'+
-                                '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneShortlisted_'+key+'" aria-expanded="true" aria-controls="collapseOneShortlisted_'+key+'">'+
+                                '<button class="accordion-button  w-100 family-size p-3 text-decoration-none text-p" type="button" data-toggle="collapse" data-target="#collapseOneShortlisted_'+key+'" aria-expanded="true" aria-controls="collapseOneShortlisted_'+key+'">'+
                                 ''+name+''+
                                 '</button>'+
                             '</h2>'+

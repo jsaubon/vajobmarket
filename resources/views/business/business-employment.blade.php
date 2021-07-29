@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="user-dashboard h-auto">
-    <div class="container h-auto fullwidth" style="min-height: 80vh">
+    <div class="container h-auto fullwidth" >
 
     <!-- Breamcrumbs Start -->
         <nav aria-label="breadcrumb">
@@ -15,22 +15,26 @@
     <!-- Breadcrumbs End -->
 
     <!-- Card Start -->
-        <div class="card w-100 h-100">
-            <div class="card-header">
+        <div class="card w-100 h-100" style="min-height: 60vh">
+            <div class="card-header  bg-white">
 
             <!-- NavTabs List Start -->
                 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="currentEmployees-tab" data-toggle="tab" href="#currentEmployees" role="tab" aria-controls="currentEmployees" aria-selected="true">Current Employees</a>
+                    <li class="nav-item m-0">
+                        <a class="nav-link active text-decoration-none title-personal-info m-0  title-personal-info m-0 active-bottom border active border-2 border-top-0  border-left-0 border-right-0 text-center text-dark" style="color:#747677;" id="currentEmployees-tab" data-toggle="tab" href="#currentEmployees" role="tab" aria-controls="currentEmployees" aria-selected="true">
+                            Current Employees
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="employeeMonitor-tab" data-toggle="tab" href="#employeeMonitor" role="tab" aria-controls="employeeMonitor" aria-selected="false">Employee Monitor</a>
+                    <li class="nav-item m-0">
+                        <a class="nav-link text-decoration-none title-personal-info m-0  title-personal-info m-0 active-bottom border  border-2 border-top-0  border-left-0 border-right-0 text-center text-dark" style="color:#747677;" id="employeeMonitor-tab" data-toggle="tab" href="#employeeMonitor" role="tab" aria-controls="employeeMonitor" aria-selected="false">
+                            Employee Monitor
+                        </a>
                     </li>
                 </ul>
             <!-- NavTabs List End -->
 
             <!-- Tab Content 1 Start -->
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content mt-4" id="myTabContent">
 
                     <div class="tab-pane fade show active" id="currentEmployees" role="tabpanel" aria-labelledby="currentEmployees-tab">
 
@@ -161,6 +165,7 @@
                     </div>
                     <!-- NavTabs 1 Content End -->
 
+                    </div>
 
                     <!-- NavTabs 2 Content Start -->
                     <div class="tab-pane fade" id="employeeMonitor" role="tabpanel" aria-labelledby="employeeMonitor-tab">
@@ -226,10 +231,10 @@ $(document).ready(function() {
                 console.log('client_employee',client_employee);
                 let name = client_employee.jobseeker.user.firstname+ ' ' + client_employee.jobseeker.user.lastname;
                 $('#accordionCurrentEmployees').append(
-                    '<div class="card">'+
-                        '<div class="card-header" id="currentEmployeeHeader_'+client_employee.id+'">'+
+                    '<div class="card border-0">'+
+                        '<div class="card-header shadow-sm rounded mb-2 p-0 shadow-md dash-accordion" style="" id="currentEmployeeHeader_'+client_employee.id+'">'+
                             '<h2 class="mb-0">'+
-                                '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#currentEmployee_'+client_employee.id+'" aria-expanded="true" aria-controls="currentEmployee_'+client_employee.id+'">'+
+                                '<button class="accordion-button w-100 family-size p-3 text-decoration-none text-p" type="button" data-toggle="collapse" data-target="#currentEmployee_'+client_employee.id+'" aria-expanded="true" aria-controls="currentEmployee_'+client_employee.id+'">'+
                                 ''+name+' ('+client_employee.client_job_post.sector+')'+
                                 '</button>'+
                             '</h2>'+
@@ -316,13 +321,22 @@ $(document).ready(function() {
                                 '<br>'+
                                 '<div class="row">'+
                                     '<div class="col ">'+
-                                        '<button class="btn btn-primary btn-save">Save</button>'+
+                                        '<button class="btn w-25 font-weight-bold btn-primary rounded-pill px-3 btn-save">Save</button>'+
                                     '</div>'+
                                     '<div class="col text-right">'+
-                                        '<a class="btn btn-info" href="/jobseekerProfile?jobseeker_id='+client_employee.jobseeker.id+'" target="_blank">Profile</a>'+
-                                        '<button class="btn btn-warning btn-end-of-contact">End of Contract</button>'+
-                                        '<button class="btn btn-warning btn-suspend">Suspend</button>'+
-                                        '<button class="btn btn-danger btn-terminate">Terminate</button>'+
+                                        '<a class="btn  btn-sm btn-outline-dark font-weight-bold rounded-pill px-3" href="/jobseekerProfile?jobseeker_id='+client_employee.jobseeker.id+'" target="_blank">'+
+                                            '<i class="fas fa-eye "></i>'+
+                                            '&nbsp; Profile'+
+                                            '</a>'+
+                                        '<button class="btn btn-sm mx-2 btn-outline-dark btn-suspend font-weight-bold rounded-pill  px-3">'+
+                                            '<i class="fas fa-calendar-times"></i>'+
+                                            '&nbsp;Suspend'+
+                                            '</button>'+
+                                        '<button class="btn btn-sm btn-outline-dark btn-terminate font-weight-bold rounded-pill  px-3">'+
+                                            '<i class="fas fa-calendar-times"></i>'+
+                                            '&nbsp;Terminate'+
+                                            '</button>'+
+
                                     '</div>'+
                                 '</div>'+
                             '</div>'+

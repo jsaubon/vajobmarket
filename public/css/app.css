@@ -172,6 +172,10 @@
   background-color: white;
 }
 
+.frontSection-4 .card {
+  min-height: 16rem;
+}
+
 .frontSection-4 h2,
 .frontSection-4 .h2 {
   font-size: 3rem;
@@ -410,6 +414,102 @@
   .frontSection-5 h2,
   .frontSection-5 .h2 {
     font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .frontSection-1,
+  .frontSection-2 {
+    padding: 0rem 4rem;
+  }
+
+  .frontSection-1 h1,
+  .frontSection-1 .h1,
+  .frontSection-2 h1,
+  .frontSection-2 .h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .frontSection-1 p,
+  .frontSection-2 p {
+    line-height: 16px;
+  }
+
+  .frontSection-2 .leftColumn {
+    margin-top: 20rem;
+  }
+
+  .frontSection-2 .rightColumn {
+    padding: 1rem;
+  }
+
+  .frontSection-2 .rightColumn h2,
+  .frontSection-2 .rightColumn .h2 {
+    font-size: 18px;
+  }
+
+  .frontSection-2 .rightColumn h4,
+  .frontSection-2 .rightColumn .h4 {
+    line-height: 30px;
+  }
+
+  .frontSection-2 .rightColumn p {
+    font-size: 18px !important;
+  }
+
+  .frontSection-2 .rightColumn span {
+    padding: 0rem 2rem !important;
+  }
+
+  .frontSection-3 {
+    padding: 16px;
+  }
+
+  .frontSection-3 h2,
+  .frontSection-3 .h2 {
+    font-size: 50px !important;
+  }
+
+  .frontSection-4 h2,
+  .frontSection-4 .h2 {
+    font-size: 2.5rem;
+  }
+
+  .frontSection-4 .card {
+    min-height: 10rem;
+  }
+
+  .frontSection-4 .card img {
+    padding: 12px;
+  }
+
+  .frontSection-4 .card h4,
+  .frontSection-4 .card .h4 {
+    font-size: 12px;
+  }
+
+  .frontSection-5 h2,
+  .frontSection-5 .h2 {
+    font-size: 2.5rem;
+  }
+
+  .frontSection-5 h4,
+  .frontSection-5 .h4 {
+    font-size: 16px;
+  }
+
+  .frontSection-5 p {
+    line-height: 16px;
+  }
+
+  .frontSection-5 img {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .frontSection-5 .row p {
+    font-size: 12px !important;
   }
 }
 
@@ -1237,6 +1337,12 @@ input:-webkit-autofill:active {
 
 .text-p {
   font-family: "Oswald", sans-serif !important;
+}
+
+.family-size {
+  font-family: "Oswald", sans-serif !important;
+  font-size: 0.5em !important;
+  color: #747677 !important;
 }
 
 /*!
