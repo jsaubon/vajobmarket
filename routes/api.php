@@ -26,6 +26,7 @@ Route::get('public_job_posts', 'Backend\ClientJobPostController@index');
 Route::get('public_job_seekers', 'Backend\JobSeekerController@index');
 Route::get('PublicClientJobPost/{id}', 'Backend\ClientJobPostController@show');
 Route::get('PublicJobSeeker/{id}', 'Backend\JobSeekerController@show');
+Route::post('visitIncrement', 'Backend\ClientJobPostController@visitIncrement');
 
 
 Route::middleware('auth:api')->group(function () {

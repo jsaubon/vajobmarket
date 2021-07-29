@@ -336,6 +336,7 @@ $(document).ready(function() {
                                             '<i class="fas fa-calendar-times"></i>'+
                                             '&nbsp;Terminate'+
                                             '</button>'+
+
                                     '</div>'+
                                 '</div>'+
                             '</div>'+
@@ -369,6 +370,22 @@ $(document).ready(function() {
             }
         })
     })
+
+    $('body').on('click','.btn-end-of-contact', function() {
+        let cardBody = $(this).closest('.card-body');
+        let client_employee_id = cardBody.attr('client_employee_id');
+        let data = {
+            status: 'Contract Ended',
+        };
+
+        updateData('/api/ClientEmployee/'+client_employee_id, data, ({data:res}) => {
+            console.log(res);
+            if(res.success) {
+                alert('Employee Successfully Contract Ended');
+                location.reload();
+            }
+        })
+    });
 
     $('body').on('click','.btn-suspend', function() {
         let cardBody = $(this).closest('.card-body');

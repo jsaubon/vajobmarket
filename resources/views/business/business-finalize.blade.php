@@ -124,7 +124,7 @@
 
         <div class="row" style="margin-top: 20%;">
             <div class="container-fluid py-2 d-flex justify-content-center ">
-                <a class="btn btn-primary proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="/BusinessPostJob">
+                <a class="btn btn-primary proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="/posts">
                     start posting
                 </a>
                 <a href="/DashboardBusiness" class="btn btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">
