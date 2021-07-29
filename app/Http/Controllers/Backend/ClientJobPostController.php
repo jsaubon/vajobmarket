@@ -157,6 +157,20 @@ class ClientJobPostController extends Controller
         }
     }
 
+    public function visitIncrement(Request $request) {
+        $job_id = $request->job_id;
+        $client_job_post = \App\ClientJobPost::find($job_id);
+
+        if($client_job_post) {
+            $client_job_post->visits = $client_job_post->visits + 1;
+            $client_job_post->save();
+
+            return response()->json([
+                'success' => true
+            ]);
+        }
+    }
+
 }
 
 

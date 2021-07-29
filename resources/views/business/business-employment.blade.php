@@ -320,6 +320,7 @@ $(document).ready(function() {
                                     '</div>'+
                                     '<div class="col text-right">'+
                                         '<a class="btn btn-info" href="/jobseekerProfile?jobseeker_id='+client_employee.jobseeker.id+'" target="_blank">Profile</a>'+
+                                        '<button class="btn btn-warning btn-end-of-contact">End of Contract</button>'+
                                         '<button class="btn btn-warning btn-suspend">Suspend</button>'+
                                         '<button class="btn btn-danger btn-terminate">Terminate</button>'+
                                     '</div>'+
@@ -355,6 +356,22 @@ $(document).ready(function() {
             }
         })
     })
+
+    $('body').on('click','.btn-end-of-contact', function() {
+        let cardBody = $(this).closest('.card-body');
+        let client_employee_id = cardBody.attr('client_employee_id');
+        let data = {
+            status: 'Contract Ended',
+        };
+
+        updateData('/api/ClientEmployee/'+client_employee_id, data, ({data:res}) => {
+            console.log(res);
+            if(res.success) {
+                alert('Employee Successfully Contract Ended');
+                location.reload();
+            }
+        })
+    });
 
     $('body').on('click','.btn-suspend', function() {
         let cardBody = $(this).closest('.card-body');

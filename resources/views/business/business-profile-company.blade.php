@@ -709,8 +709,18 @@ $(document).ready(function() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     let job_id = urlParams.get('job_id');
+
+    
     
     if(job_id) {
+        if(!localStorage.job_post_visited) {
+            localStorage.job_post_visited = true;
+
+            postData('/api/visitIncrement',{job_id: job_id}, ({data:res}) => {
+                console.log('visit incremented');
+            })
+        }
+
         getData('/api/PublicClientJobPost/'+job_id, ({data:res}) => {
             if(res.success) {
                 console.log(res);
