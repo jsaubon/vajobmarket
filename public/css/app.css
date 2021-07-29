@@ -1239,6 +1239,12 @@ input:-webkit-autofill:active {
   font-family: "Oswald", sans-serif !important;
 }
 
+.family-size {
+  font-family: "Oswald", sans-serif !important;
+  font-size: 0.5em !important;
+  color: #747677 !important;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
