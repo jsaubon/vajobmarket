@@ -11,7 +11,7 @@
                 <button class="btn btn-cta">CLICK HERE TO FIND OUT</button>
 
                 <form action="#" class="d-flex justify-content-around p-3">
-                    
+
                         <input type="text" class="form-control input-search" placeholder="Start Your Search Here">
 
                         <!-- <select class="form-control">
@@ -42,7 +42,7 @@
                 <button class="btn btn-hire">START YOU HIRING PROCESS NOW</button>
 
             </div>
-            
+
             <div class="col-md-6 rightColumn">
                 <div class="card">
                     <h2>
@@ -84,7 +84,7 @@
 
                     <button class="btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
 
-       
+
 
                 </div>
             </div>
@@ -191,7 +191,7 @@
 
         <div class="row">
             <div class="col-md-3">
-                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
+                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
@@ -202,7 +202,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
+                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
@@ -213,7 +213,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
+                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>
@@ -224,7 +224,7 @@
             </div>
 
             <div class="col-md-3">
-                <img src="{{URL::to('/images/frontAssets/dummy.jpg')}}" alt="" class="img-fluid img-circle">
+                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
                 <h4>
                     Jane Doe
                 </h4>

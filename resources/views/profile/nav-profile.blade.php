@@ -2,7 +2,7 @@
 $brand = ["JOB MARKET" => "/"];
 $navBrand = array_keys($brand);
 $obj = [
-    "ABOUT" => "/about",
+    "ABOUT" => "#about",
     "SOLUTION" => "#solution",
     "PRICING" => "/pricing",
     "BLOGS" => "#blogs",
