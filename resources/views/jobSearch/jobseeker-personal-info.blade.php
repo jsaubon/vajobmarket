@@ -179,7 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row m-auto">
                         <div class="col-md-12 d-flex justify-content-center p-2 btn-container btn_add_education">
                             <div class="btn-plus " ></div>
@@ -214,10 +214,10 @@
 
 
                     {{-- proceed and back buttons --}}
-                    <div class="row" style="padding-top:70px;">
+                    <div class="row" style="padding-top:30px;font-size:0.6em; font-weight:400;">
                         <div class="col-md-2"></div>
                         <div class="col-md-8">
-                            <p class="text-center">ligula, cursus id sagittis eu,
+                            <p class="text-center title-personal-info">ligula, cursus id sagittis eu,
                                 volutpat id sapien. Cras scelerisque
                                 ullamcorper tellus, sed efficitur odio iaculis a.
                                 Pellentesque habitant morbi tristique senectus
@@ -243,7 +243,7 @@
 <script>
     if(!token) {
         window.location.href = '/signup';
-    } 
+    }
 
     $(document).ready(function() {
         $('[name="email"]').val(userdata.email);
@@ -265,7 +265,7 @@
 
 
             let data_educations = {...data.educations};
-            data_educations = Object.values(data_educations); 
+            data_educations = Object.values(data_educations);
             let data_references = {...data.references};
             data_references = Object.values(data_references);
             let data_jobseeker = {...data};
@@ -286,7 +286,7 @@
                     createJobSeeker(data_jobseeker, data_educations, data_references);
                 }
             });
-            
+
         });
 
         function createJobSeeker(data_jobseeker, data_educations, data_references) {
@@ -294,12 +294,12 @@
                 if(res.success) {
                     userdata.jobseeker = res.data;
                     localStorage.userdata = JSON.stringify(userdata);
-                    
+
                     let jobseeker_id = res.data.id;
                     data_educations.map((edu, key) => {
                         data_educations[key]['jobseeker_id'] = jobseeker_id;
                     });
-                    
+
                     data_references.map((edu, key) => {
                         data_references[key]['jobseeker_id'] = jobseeker_id;
                     });
@@ -308,7 +308,7 @@
                         jobseeker_id: jobseeker_id,
                         educations: data_educations
                     };
-                    
+
                     data_references = {
                         jobseeker_id: jobseeker_id,
                         references: data_references

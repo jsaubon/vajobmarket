@@ -144,10 +144,10 @@
                     </div>
 
                     {{-- proceed and back buttons --}}
-                    <div class="row" style="padding-top:70px;">
+                    <div class="row" style="padding-top:30px; font-size:0.6em; font-weight:400;">
                         <div class="col-md-2"></div>
                         <div class="col-md-8">
-                            <p class="text-center">ligula, cursus id sagittis eu,
+                            <p class="text-center title-personal-info">ligula, cursus id sagittis eu,
                                 volutpat id sapien. Cras scelerisque
                                 ullamcorper tellus, sed efficitur odio iaculis a.
                                 Pellentesque habitant morbi tristique senectus
@@ -175,7 +175,7 @@
 <script>
     if(!token) {
         window.location.href = '/signup';
-    } 
+    }
 
     $(document).ready(function() {
         $('[name="email"]').val(userdata.email);
@@ -220,9 +220,9 @@
             reader.onerror = function() {
                 console.log('there are some problems');
             };
-            
 
-            
+
+
         });
     });
 
