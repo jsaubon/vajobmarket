@@ -63,7 +63,7 @@
                                         </div>
 
                                         <div class="col-md-12 mt-4 d-flex justify-content-center">
-                                            <button type="submit" class="btn btn-primary   text-uppercase" style="height: 50px; width: 120px; ">
+                                            <button type="submit" class="btn btn-primary text-uppercase" style="height: 50px; width: 120px; font-weight:bolder; font-size:0.7em;">
                                                 update
                                             </button>
                                         </div>
@@ -73,7 +73,7 @@
 
 
                             <div class="col-md-12">
-                                <div class="title-personal-info text-uppercase">
+                                <div class="title-personal-info text-uppercase" >
                                    change password
                                 </div>
 
@@ -97,7 +97,7 @@
 
                                             </div>
                                             <div class="col-md-12 mt-4 d-flex justify-content-center">
-                                                <button type="submit" class="btn btn-primary   text-uppercase" style="height: 50px;">
+                                                <button type="submit" class="btn btn-primary   text-uppercase" style="height: 50px; font-weight:bolder; font-size:0.7em;">
                                                     change password
                                                 </button>
                                             </div>
@@ -105,7 +105,7 @@
 
                                 </div>
                             </div>
-                            
+
                     </div>
                 </div>
                 <!-- Payment  -->
@@ -301,7 +301,7 @@ $(document).ready(function() {
         } else {
             alert('Confirm Password doesnt invalid');
         }
-        
+
     });
 
     $('#bo_business_billing').on('submit', function(e) {

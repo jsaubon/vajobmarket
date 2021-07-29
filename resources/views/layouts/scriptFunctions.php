@@ -20,13 +20,13 @@
       </div>
       <div style="modal-body">
                 <p class="text-center"><b>SIGN IN</b></p>
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item " role="presentation" style="width:50%;">
+                <ul class="nav nav-tabs " id="myTab" role="tablist">
+                    <li class="nav-item m-0 " role="presentation" style="width:50%;">
                         <a class="nav-link active-bottom active border-top-0  border-left-0 border-right-0 text-center text-dark" id="home-tab" data-toggle="tab" href="#business-in" role="tab" aria-controls="home" aria-selected="true">
                             As a Business Owner
                         </a>
                     </li>
-                    <li class="nav-item" role="presentation" style="width:50%;">
+                    <li class="nav-item m-0" role="presentation" style="width:50%;">
                         <a class="nav-link active-bottom border-top-0  border-left-0 border-right-0  text-center text-dark" id="profile-tab" data-toggle="tab" href="#job-in" role="tab" aria-controls="profile" aria-selected="false">
                             As a Job Seeker
                         </a>
@@ -213,7 +213,7 @@
     }
 
 
-    
+
     function getData(url, then_function = () => {}, catch_function = () => {}) {
         axios
             .get(url, {

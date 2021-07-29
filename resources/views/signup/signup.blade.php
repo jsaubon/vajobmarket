@@ -5,21 +5,21 @@
 <section class="container-fluid">
     <div class="container">
         <br/> <br/> <br/>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between pt-4">
             <a href="/">Back</a>
             <a href="/">Cancel</a>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center pt-4">
             <div style="width:500px;">
                 <p class="text-center"><b>SIGN UP</b></p>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item " role="presentation" style="width:50%;">
-                        <a class="nav-link bo-nav-tab active-bottom  border-top-0  border-left-0 border-right-0 text-center text-dark" id="home-tab" data-toggle="tab" href="#business" role="tab" aria-controls="home" aria-selected="true">
+                    <li class="nav-item m-0" role="presentation" style="width:50%;">
+                        <a class="nav-link bo-nav-tab active-bottom  border-top-0  border-left-0 border-right-0 text-center text-dark" id="home-tab" data-toggle="tab" href="#bo-signup-tab" role="tab" aria-controls="home" aria-selected="true">
                             As a Business Owner
                         </a>
                     </li>
-                    <li class="nav-item" role="presentation" style="width:50%;">
-                        <a class="nav-link js-nav-tab active-bottom border-top-0  border-left-0 border-right-0  text-center text-dark" id="profile-tab" data-toggle="tab" href="#job" role="tab" aria-controls="profile" aria-selected="false">
+                    <li class="nav-item m-0" role="presentation" style="width:50%;">
+                        <a class="nav-link js-nav-tab active-bottom border-top-0  border-left-0 border-right-0  text-center text-dark" id="profile-tab" data-toggle="tab" href="#js-signup-tab" role="tab" aria-controls="profile" aria-selected="false">
                             As a Job Seeker
                         </a>
                     </li>
@@ -27,7 +27,7 @@
 
                 <div class="tab-content" id="myTabContent">
                     {{-- business Owner --}}
-                    <div class="tab-pane fade show active bo-nav-tab-content" id="business" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade show active bo-nav-tab-content" id="bo-signup-tab" role="tabpanel" aria-labelledby="home-tab">
                         <div class="p-5">
                             <form action="/business" id="signup_form_bo">
                                 <div class="d-flex">
@@ -54,16 +54,28 @@
                                     Sign-up using your social media account
                                 </p>
                                 <div class="d-flex justify-content-center mb-5">
-                                    <span class="p-1">Facebook</span>
-                                    <span class="p-1">Twitter</span>
-                                    <span class="p-1">Google</span>
+                                    <a href="#" class="text-decoration-none " >
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                        <i class="fab fa-facebook-f my-auto" ></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none mx-2">
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                            <i class="fas fa-user-clock my-auto"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                            <i class="fab fa-google-plus-g my-auto"></i>
+                                        </div>
+                                    </a>
                                 </div>
                                 <p class="text-center">Already have an account? <a href="/business">SIGN IN</a></p>
                             </div>
                         </div>
                     </div>
                     {{-- job Search --}}
-                    <div class="tab-pane fade js-nav-tab-content" id="job" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="tab-pane fade js-nav-tab-content" id="js-signup-tab" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="p-5">
                             <form action="/jobterms" id="signup_form_js">
                                 <div class="d-flex">
@@ -89,9 +101,21 @@
                                     Sign-up using your social media account
                                 </p>
                                 <div class="d-flex justify-content-center mb-5">
-                                    <span class="p-1">Facebook</span>
-                                    <span class="p-1">Twitter</span>
-                                    <span class="p-1">Google</span>
+                                    <a href="#" class="text-decoration-none " >
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                        <i class="fab fa-facebook-f my-auto" ></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none mx-2">
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                            <i class="fas fa-user-clock my-auto"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <div  class="postJobBtn d-flex justify-content-center border btn-outline-light"  style="margin:0 !important;color:#383232; width:40px; height:40px; border-radius:50%;">
+                                            <i class="fab fa-google-plus-g my-auto"></i>
+                                        </div>
+                                    </a>
                                 </div>
                                 <p class="text-center">Already have an account? <a href="/">SIGN IN</a></p>
                             </div>

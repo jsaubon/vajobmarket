@@ -134,32 +134,236 @@
                         </div>
                     </div>
 
-                    <div class="row py-2">
-                        <div class="col-md-12">
-                            <select class="form-control personal-info-forms-items text-uppercase"  >
-                                <option>Business Information</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item ">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button style="color:#646464; font-family:'Oswald',sans-serif;" class="accordion-button text-uppercase personal-info-forms-items" type="button" data-bs-toggle="collapse" data-bs-target="#business-info-accordion" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Business Information
+                            </button>
+                          </h2>
+                          <div id="business-info-accordion" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body ">
+                                <form class="container" action="" id="bo_business_info">
+                                    <h2 class="title-personal-info">Business Information</h2>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items" name="business_name" placeholder="Business Name">
+                                              </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items" name="business_owner_name" placeholder="Business Owner Name">
+                                              </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items" name="type_of_business"  placeholder="Type of Business">
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items" name="address1"  placeholder="Address">
+                                              </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="address2" placeholder="Apartment, Suite, etc">
+                                              </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="city" placeholder="City">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="state" placeholder="State / Province">
+                                              </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="country"  placeholder="Country">
+                                              </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="zip" placeholder="Zip / Postal">
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control profile-info-forms-items"  name="email" placeholder="E-mail Address">
+                                              </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="mobile_no" placeholder="Mobile Number">
+                                              </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="phone_no"  placeholder="Phone Number">
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-8 ">
+                                            <textarea placeholder="Write something about your business..." name="business_description" class="business-textarea p-2 h-100 w-100" rows="2" style=" resize: none; min-height:50px !important;"></textarea>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="logo-container">
+                                                        <img src="" style="height: 94px; width: 96px;margin-bottom: 0px" class="hide"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 px-auto">
+                                                    <div class="h-100 d-flex flex-column justify-content-center">
+                                                        <p style=" font-size: 10px; color:#646464; opacity:0.5;">Upload an image of your logo</p>
+                                                        <button class="browse-logo " type="button" id="btn_business_logo">Browse</button>
+
+                                                        <input type="file" accept="image/*" id="input_business_logo" class="hide"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- proceed and back buttons --}}
+
+                                </form>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="row py-2">
-                        <div class="col-md-12">
-                            <select class="form-control personal-info-forms-items text-uppercase"  >
-                                <option>Billine Details</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button style="color:#646464; font-family:'Oswald',sans-serif;" class="accordion-button collapsed text-uppercase personal-info-forms-items" type="button" data-bs-toggle="collapse" data-bs-target="#billing-details-accordion" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              billing details
+                            </button>
+                          </h2>
+                          <div id="billing-details-accordion" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body profile-info-forms-items">
+                                <form class="container w-75" action="#" id="bo_business_billing">
+                                    <h2 class="title-personal-info"></h2>
+
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="card_number" placeholder="Card Number">
+                                              </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="card_type" placeholder="VISA">
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="profile-info-forms-items" style="border:0 !important;">Expiration</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control profile-info-forms-items"  name="exp_date_month">
+                                                <option>Month</option>
+                                                <?php for ($i=1; $i < 12; $i++) {  ?>
+                                                    <option value="<?php echo $i;?>"><?php echo $i > 9 ? $i : '0'.$i;?></option>
+                                                <?php }?>
+                                              </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control profile-info-forms-items"  name="exp_date_year">
+                                                <option>Year</option>
+                                                <?php for ($i=(int)date('Y'); $i > (int)date('Y') - 70; $i--) {  ?>
+                                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
+                                                <?php }?>
+                                              </select>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-1">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="cardholder_name"  placeholder="Card Holder's Name">
+                                              </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="cvv" placeholder="CVV">
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="billing_address" placeholder="Billing Adress">
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <select class="form-control profile-info-forms-items"  name="billing_city" >
+                                                <option>City</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                              </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control profile-info-forms-items"  name="billing_zip"  placeholder="Zip / Postal">
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1">
+
+                                        </div>
+                                        <div class="col-md-10">
+                                            <select class="form-control profile-info-forms-items"  name="billing_country" >
+                                                <option>Country</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                              </select>
+                                        </div>
+                                        <div class="col-md-1">
+
+                                        </div>
+                                    </div>
+                                    <div class="row " style="padding-top:20px;">
+
+                                    </div>
+
+
+                                </form>
+                            </div>
+                          </div>
                         </div>
                     </div>
 
 
 
                     {{-- proceed and back buttons --}}
+
+
+
                     <div class="row" style="padding-top:70px;">
                         <div class="col-md-2"></div>
                         <div class="col-md-8">
@@ -189,7 +393,7 @@
 <script>
 if(!token) {
     window.location.href = '/signup';
-} 
+}
 $(document).ready(function() {
     getData('/api/Client/'+userdata.client.id, ({data:res}) => {
         if(res.success) {
@@ -204,7 +408,7 @@ $(document).ready(function() {
                     input.val(client_data[field]);
                 }
             });
-            
+
             Object.keys(user).map((field, key) => {
                 let input = $('[name="personal_'+field+'"]');
                 if(input.length) {

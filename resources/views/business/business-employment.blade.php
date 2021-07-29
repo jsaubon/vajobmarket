@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="user-dashboard h-auto">
-    <div class="container fullwidth">
+    <div class="container h-auto fullwidth" style="min-height: 80vh">
 
     <!-- Breamcrumbs Start -->
         <nav aria-label="breadcrumb">
@@ -15,7 +15,7 @@
     <!-- Breadcrumbs End -->
 
     <!-- Card Start -->
-        <div class="card w-100">
+        <div class="card w-100 h-100">
             <div class="card-header">
 
             <!-- NavTabs List Start -->
