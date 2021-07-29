@@ -720,7 +720,7 @@ $(document).ready(function() {
                 let client_job_post_required_skills = jobpost_data.client_job_post_required_skills;
 
                 if(client_business_info.business_logo) {
-                    $('.client_business_info-business_logo').attr('src',client_business_info.business_logo);
+                    $('.client_business_info-business_logo').attr('src','/storage/'+client_business_info.business_logo);
                 }
 
 
