@@ -193,10 +193,10 @@
             <div class="col-md-3">
                 <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
                 <h4>
-                    Jane Doe
+                    John Adams
                 </h4>
                 <p>
-                    Credit Repair Specialist
+                    Web Developer
                 </p>
 
             </div>
@@ -215,10 +215,10 @@
             <div class="col-md-3">
                 <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
                 <h4>
-                    Jane Doe
+                    Megan Schmidth
                 </h4>
                 <p>
-                    Credit Repair Specialist
+                    Executive Assistant
                 </p>
 
             </div>
@@ -226,10 +226,10 @@
             <div class="col-md-3">
                 <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
                 <h4>
-                    Jane Doe
+                    Mark Cameron
                 </h4>
                 <p>
-                    Credit Repair Specialist
+                    Graphic Designer
                 </p>
 
             </div>
