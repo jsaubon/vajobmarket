@@ -79,7 +79,7 @@ function getPageData() {
                             '</div>'+
 
                             '<div id="collapse_'+client_job_post_key+'" class="collapse '+show+'" aria-labelledby="accordion_'+client_job_post_key+'" data-parent="#accordionApplicants">'+
-                            '<div class="card-body">'+
+                            '<div class="card-body table-responsive">'+
 
                             '<table class="table tblApplicants_'+client_job_post_key+'">'+
                                 '<thead>'+

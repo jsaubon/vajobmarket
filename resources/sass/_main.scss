@@ -24,7 +24,7 @@ body {
 
 }
 
-// Image 
+// Image
 
 .img-circle {
 
@@ -132,6 +132,7 @@ body {
     width: 140px;
 }
 .navitems {
+
     text-decoration: none;
     transition: 0.2s;
     font-weight: 300;
@@ -152,6 +153,12 @@ body {
    align-items: center;
 
 }
+.header-items-right-hamburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
 
 .postJobBtn {
     border-radius: 15px;
@@ -214,7 +221,29 @@ body {
 .button-style{
     margin-top: 100px;
 }
-
+.nav-titles-hamburger{
+    display:block;
+}
+.nav-titles{
+    display:block;
+}
+@media screen and (max-width: 768px ) {
+    .bo-nav-toggle{
+        display:block;
+    }
+    .nav-toggle {
+    display:block;
+    }
+    .nav-titles{
+        display:none !important;
+    }
+    .header-items-right{
+        display:none !important;
+    }
+    .header{
+        padding:0;
+    }
+}
 //Footer End
 
 

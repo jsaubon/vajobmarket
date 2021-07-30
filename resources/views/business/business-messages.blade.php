@@ -35,143 +35,144 @@
                     <div class="tab-pane fade show active" id="boInbox" role="tabpanel" aria-labelledby="boInbox-tab">
                         <div class="wrapper">
 
-                        <div class="col">
+                            <div class="col">
 
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#boNewMessage">New Message</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#boNewMessage">New Message</button>
 
 
-                            <div class="modal fade" id="boNewMessage" tabindex="-1" role="dialog" aria-labelledby="boNewMessageLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="boNewMessageLabel">New message</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
+                                <div class="modal fade" id="boNewMessage" tabindex="-1" role="dialog" aria-labelledby="boNewMessageLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="boNewMessageLabel">New message</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
 
-                                    <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">To:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label">To:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label">CC:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label">BCC:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label">Subject:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
+                                            <button type="button" class="btn btn-primary">Send</button>
+                                        </div>
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">CC:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">BCC:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="message-text" class="col-form-label">Subject:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-
-                                    </form>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
-                                    <button type="button" class="btn btn-primary">Send</button>
-                                </div>
-                                </div>
+
+                            </div> <br>
+
+
+                            <div class="table-responsive">
+                                <table class="table"">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Subject
+                                            </th>
+                                            <th>
+                                                Recepient
+                                            </th>
+                                            <th>
+                                                Date
+                                            </th>
+                                            <th>
+                                                Actions
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </td>
+                                            <td>
+                                                Jande Doe
+                                            </td>
+                                            <td>
+                                                June 10, 2021
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-info" data-toggle="modal" data-target="#boReply">Reply</button>
+                                                <button class="btn  btn-warning">Attach</button>
+                                                <button class="btn  btn-danger">Delete</button>
+
+
+                                                <div class="modal fade" id="boReply" tabindex="-1" role="dialog" aria-labelledby="boReplyLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="boReplyLabel">Reply</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+
+                                                            <div class="form-group">
+                                                                <label for="recipient-name" class="col-form-label">To:</label>
+                                                                <input type="text" class="form-control" id="recipient-name">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="recipient-name" class="col-form-label">CC:</label>
+                                                                <input type="text" class="form-control" id="recipient-name">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="recipient-name" class="col-form-label">BCC:</label>
+                                                                <input type="text" class="form-control" id="recipient-name">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="message-text" class="col-form-label">Subject:</label>
+                                                                <textarea class="form-control" id="message-text"></textarea>
+                                                            </div>
+
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
+                                                            <button type="button" class="btn btn-primary">Send</button>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            </div>
-
-                        </div> <br>
-
-
-                            <table class="table"">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            Subject
-                                        </th>
-                                        <th>
-                                            Recepient
-                                        </th>
-                                        <th>
-                                            Date
-                                        </th>
-                                        <th>
-                                            Actions
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </td>
-                                        <td>
-                                            Jande Doe
-                                        </td>
-                                        <td>
-                                            June 10, 2021
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-info" data-toggle="modal" data-target="#boReply">Reply</button>
-                                            <button class="btn  btn-warning">Attach</button>
-                                            <button class="btn  btn-danger">Delete</button>
-
-
-                                            <div class="modal fade" id="boReply" tabindex="-1" role="dialog" aria-labelledby="boReplyLabel" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="boReplyLabel">Reply</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-
-                                                        <div class="form-group">
-                                                            <label for="recipient-name" class="col-form-label">To:</label>
-                                                            <input type="text" class="form-control" id="recipient-name">
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label for="recipient-name" class="col-form-label">CC:</label>
-                                                            <input type="text" class="form-control" id="recipient-name">
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label for="recipient-name" class="col-form-label">BCC:</label>
-                                                            <input type="text" class="form-control" id="recipient-name">
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label for="message-text" class="col-form-label">Subject:</label>
-                                                            <textarea class="form-control" id="message-text"></textarea>
-                                                        </div>
-
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
-                                                        <button type="button" class="btn btn-primary">Send</button>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
                         </div>
                     </div>
 
                     <div class="tab-pane fade" id="boOutBox" role="tabpanel" aria-labelledby="boOutBox-tab">
 
-                        <div class="wrapper">
+                        <div class="wrapper table-responsive">
                             <table class="table"">
                                 <thead>
                                     <tr>
