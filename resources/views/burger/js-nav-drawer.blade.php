@@ -210,11 +210,11 @@
                 <div class="bo-header-items-right js-nav">
                     <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco"><small><b>POST A JOB</b></small></a>
 
-                    {{-- <div class="p-1 ml-3 mr-3 noDeco user-btn user-btn-bo">
-                        <small><b class="my-auto user-firstname ">Username</b></small>
-                        <i class="fas fa-chevron-down my-auto" style="font-size:10px;"></i>
-                    </div> --}}
-
+                    <a href="/jobs" class="w-50 mx-auto" style="display: inline !important;">
+                        <div class=" d-flex justify-content-center">
+                           <b class="btn btn-outline-light font-weight-bolder text-uppercase" style="font-size: 1.2em; border-radius:20px;">JOB SEARCH </b>
+                        </div>
+                    </a>
 
 
                 </div>
