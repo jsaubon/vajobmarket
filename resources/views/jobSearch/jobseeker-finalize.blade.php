@@ -2,6 +2,21 @@
 
 @section('content')
 
+<style>
+    @media screen and (max-width: 780px) {
+        .progress-steps {
+            display: none !important;
+        }
+
+        .w-75 {
+            width: 100% !important;
+        }
+
+        .container {
+            padding: 10px;
+        }
+    }
+</style>
 <div class="container-fluid  personal-info">
     <div class="container d-flex flex-column justify-content-center h-100  w-75 pl-4" style="max-width:800px">
         <div class="row" >

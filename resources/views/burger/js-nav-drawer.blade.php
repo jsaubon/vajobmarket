@@ -32,6 +32,7 @@
         z-index: 100;
         transform: translateX(100%);
         transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+        overflow-y: 'scroll';
     }
 
     .js-nav__list {
@@ -180,12 +181,6 @@
                                     </li>
                                 </a>
                                 <hr class=" m-0">
-                                <a href="/jobseekerCurrentEmployment" class="py-3 bo-small-nav-link  d-flex justify-content-center" style="background-color:#ECF6FF !important;">
-                                  <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
-                                     employment
-                                 </li>
-                                 </a>
-                                <hr class=" m-0">
                                    <a href="/jobseekerMessages" class="py-3 bo-small-nav-link  d-flex justify-content-center" style="background-color:#ECF6FF !important;">
                                      <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
                                         message
@@ -198,8 +193,8 @@
                                     </li>
                                 </a>
                                 <hr class=" m-0">
-                                <a href="#" class="py-3 js-small-nav-link btn-logout d-flex justify-content-center" style="background-color:#ECF6FF !important;">
-                                    <li class="js-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
+                                <a href="#" class="py-3 bo-small-nav-link btn-logout d-flex justify-content-center" style="background-color:#ECF6FF !important;">
+                                    <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
                                         logout
                                     </li>
                                 </a>
@@ -212,17 +207,18 @@
 
                   </div>
 
-                  <div class="row p-4">
-                    <div class="col-md-12 pt-4">
+                <div class="bo-header-items-right js-nav">
+                    <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco"><small><b>POST A JOB</b></small></a>
 
-                      <a href="/jobs" class="w-50 mx-auto" style="display: inline !important;">
-                          <div class=" d-flex justify-content-center">
-                             <b class="btn btn-outline-light font-weight-bolder text-uppercase" style="font-size: 1.2em; border-radius:20px;">JOB SEARCH </b>
-                          </div>
-                      </a>
+                    <a href="/jobs" class="w-50 mx-auto" style="display: inline !important;">
+                        <div class=" d-flex justify-content-center">
+                           <b class="btn btn-outline-light font-weight-bolder text-uppercase" style="font-size: 1.2em; border-radius:20px;">JOB SEARCH </b>
+                        </div>
+                    </a>
 
-                    </div>
-                 </div>
+
+                </div>
+
 
 
                 <div class="row w-100  mx-auto bo-nav-titles my-auto" style="padding-top:20px; min-width:300px;">

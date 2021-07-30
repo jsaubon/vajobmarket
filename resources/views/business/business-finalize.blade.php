@@ -137,25 +137,22 @@
 
                 </div>
             </div>
-        </div>
+            <div class="row" style="margin-top: 20%;">
+                <div class="container-fluid py-2 d-flex justify-content-center ">
+                    <a class="btn btn-primary font-weight-bolder proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="/BusinessPostJob">
 
-
-<<<<<<< HEAD
-        <div class="row" style="margin-top: 10%;">
-=======
-
-        <div class="row" style="margin-top: 20%;">
->>>>>>> main
-            <div class="container-fluid py-2 d-flex justify-content-center ">
-                <a class="btn btn-primary font-weight-bolder proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="/BusinessPostJob">
-
-                    start posting
-                </a>
-                <a href="/DashboardBusiness" class="btn font-weight-bolder  btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">
-                    skip to dashboard
-                </a>
+                        start posting
+                    </a>
+                    <a href="/DashboardBusiness" class="btn font-weight-bolder  btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">
+                        skip to dashboard
+                    </a>
+                </div>
             </div>
         </div>
+
+
+
+       
      </div>
 </div>
 
