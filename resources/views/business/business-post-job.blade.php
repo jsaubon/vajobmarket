@@ -3,9 +3,9 @@
 @section('content')
 
 <div class="user-dashboard">
-    <div class="container fullwidth">
+    <div class="container fullwidth ">
 
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb ">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"> <a href="/DashboardBusiness">Dashboard</a></li>
                 <li class="breadcrumb-item active"> <a href="/BusinessAllJobPost">Job Post</a></li>

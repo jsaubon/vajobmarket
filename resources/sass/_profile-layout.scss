@@ -60,6 +60,14 @@ cursor: pointer;
     margin: 0;
     text-transform: uppercase;
 }
+
+.bo-accordion-nav ul{
+    list-style: none;
+    padding: 10px;
+    font-size: 12px !important;
+    margin: 0;
+    text-transform: uppercase;
+}
 .small-nav-list{
     background-color: #ECF6FF;
     cursor: pointer;
@@ -68,7 +76,6 @@ cursor: pointer;
 .small-nav-list:hover{
     background-color: #6e6e6e;
 
-
 }
 .small-nav-link{
     text-decoration: none;
@@ -76,6 +83,26 @@ cursor: pointer;
     width: 100%;
 }
 .small-nav-link:hover{
+    text-decoration: none;
+    color:#ECF6FF !important;
+}
+
+
+.bo-small-nav-list{
+    background-color: #ECF6FF;
+    cursor: pointer;
+
+}
+.bo-small-nav-list:hover{
+    background-color: #6e6e6e;
+
+}
+.bo-small-nav-link{
+    text-decoration: none;
+    color:#6e6e6e !important;
+    width: 100%;
+}
+.bo-small-nav-link:hover{
     text-decoration: none;
     color:#ECF6FF !important;
 }

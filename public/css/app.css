@@ -11,7 +11,7 @@
 .aboutSection-4,
 .pricingSection-1,
 .pricingSection-2 {
-  padding: 100px 200px;
+  padding: 100px 200px !important;
 }
 
 .frontSection-1 {
@@ -90,7 +90,7 @@
 }
 
 .frontSection-2 .leftColumn {
-  margin-top: 21rem;
+  margin-top: 21rem !important;
 }
 
 .frontSection-2 .leftColumn h2,
@@ -263,17 +263,56 @@
   padding-right: 46px;
 }
 
+.aboutSection-2 .testimonial {
+  padding: 2rem 4rem !important;
+}
+
+.aboutSection-2 .testimonial .col-md-8 {
+  background: url(/images/imgqoutebg.png?1c0642eac88fcee9106ec0525d8f8b3b);
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 0rem;
+}
+
+.aboutSection-3 h2,
+.aboutSection-3 .h2 {
+  font-size: 4rem;
+  letter-spacing: -4px;
+}
+
+.aboutSection-3 .subTitle {
+  padding: 0rem 28rem;
+}
+
+.aboutSection-3 .col-md-2 img {
+  padding: 2rem 4rem !important;
+}
+
+.aboutSection-3 .card {
+  min-height: 34rem !important;
+}
+
 .aboutSection-4 {
   background: url(/images/bgimagemrkenn.png?b7eddb0ae157658a942a198605bdcfc8);
-  height: 100vh;
+  min-height: 73rem;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.aboutSection-4 .col-md-6 {
+  margin-top: 12rem;
+  padding: 0rem 4rem;
+}
+
+.aboutSection-4 .col-md-6 .card {
+  padding: 4rem;
 }
 
 .pricingSection-1 {
   background: url(/images/bgimagepricing@2x.png?867b873d2e5f1cf384059df5e1a00ddb) no-repeat center center;
   background-size: cover;
-  background-color: #636363;
+  background-color: #7e5c5c;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -513,6 +552,99 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .frontSection-1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .frontSection-1 {
+    padding: 1rem 0rem;
+    background-position: initial;
+  }
+
+  .frontSection-1 form {
+    min-width: 260px !important;
+  }
+
+  .frontSection-2 {
+    padding: 1rem 0rem;
+    background-position: right !important;
+  }
+
+  .frontSection-2 .leftColumn {
+    margin-top: 3rem;
+  }
+
+  .frontSection-2 .rightColumn span {
+    padding: 0rem 1rem !important;
+  }
+
+  .frontSection-3 {
+    padding: 2rem 0rem;
+  }
+
+  .frontSection-3 .inner {
+    padding: 0;
+  }
+
+  .frontSection-4 {
+    padding: 1rem 0rem;
+  }
+
+  .frontSection-4 .card {
+    margin-bottom: 1rem !important;
+    padding-bottom: 2rem;
+  }
+
+  .frontSection-4 .card img {
+    padding: 2rem 8rem 0rem !important;
+  }
+
+  .frontSection-5 {
+    padding: 2rem 0rem;
+  }
+
+  .frontSection-6 {
+    padding: 2rem 0rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .frontSection-2 .leftColumn {
+    margin: 2rem 0rem;
+  }
+
+  .frontSection-2 .rightColumn {
+    padding: 0 !important;
+  }
+
+  .frontSection-4 .card img {
+    padding: 1.5rem 5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pricingSection-1 {
+    padding: 0rem 1rem !important;
+  }
+
+  .pricingSection-1 h2,
+  .pricingSection-1 .h2 {
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  .pricingSection-2 {
+    padding: 0rem 1rem !important;
+  }
+
+  .pricingSection-2 .card {
+    padding: 40px !important;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -667,6 +799,12 @@ body button {
   align-items: center;
 }
 
+.header-items-right-hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .postJobBtn {
   border-radius: 15px;
   font-size: 0.7em;
@@ -725,6 +863,36 @@ body button {
 
 .button-style {
   margin-top: 100px;
+}
+
+.nav-titles-hamburger {
+  display: block;
+}
+
+.nav-titles {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .bo-nav-toggle {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-titles {
+    display: none !important;
+  }
+
+  .header-items-right {
+    display: none !important;
+  }
+
+  .header {
+    padding: 0;
+  }
 }
 
 .active-bottom.active {
@@ -905,6 +1073,14 @@ body button {
   text-transform: uppercase;
 }
 
+.bo-accordion-nav ul {
+  list-style: none;
+  padding: 10px;
+  font-size: 12px !important;
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .small-nav-list {
   background-color: #ECF6FF;
   cursor: pointer;
@@ -921,6 +1097,26 @@ body button {
 }
 
 .small-nav-link:hover {
+  text-decoration: none;
+  color: #ECF6FF !important;
+}
+
+.bo-small-nav-list {
+  background-color: #ECF6FF;
+  cursor: pointer;
+}
+
+.bo-small-nav-list:hover {
+  background-color: #6e6e6e;
+}
+
+.bo-small-nav-link {
+  text-decoration: none;
+  color: #6e6e6e !important;
+  width: 100%;
+}
+
+.bo-small-nav-link:hover {
   text-decoration: none;
   color: #ECF6FF !important;
 }
@@ -1176,7 +1372,7 @@ body button {
 }
 
 .content-jobseeker-landing p {
-  font-size: 10px;
+  font-size: 1em;
 }
 
 .title-jobseeker-landing h2,

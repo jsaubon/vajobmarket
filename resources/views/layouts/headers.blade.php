@@ -25,7 +25,7 @@ $obj = [
 
                     </a>
 
-                <div class="nav-titles my-auto ml-4 px-3">
+                <div class="nav-titles  my-auto ml-4 px-3">
                     <?php
                     foreach(array_keys($obj) as $row) {
                         if ($row == "JOB ACADEMY") {
@@ -47,10 +47,14 @@ $obj = [
                 <button type="button " class="btn text-light" data-toggle="modal" data-target="#modalLogin">
                 <small class="btn-signin"><b>SIGN-IN</b></small>
                 </button>
+
             </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
             @include('layouts.js-nav')
             @include('layouts.bo-nav')
-
+            @include ('burger.nav-drawer')
 
 
 

@@ -33,14 +33,14 @@
     
 </style>
 <div class="container-fluid  personal-info">
-    <div class="container d-flex flex-column justify-content-center h-100  w-50 pl-4" style="max-width:600px">
+    <div class="container d-flex flex-column justify-content-center h-100  w-50 pl-4" style="max-width:800px">
         <div class="row" >
             <div class="col-md-12 d-flex flex-column justify-content-center">
                 <div class="title-jobseeker-landing container-fluid text-center"  >
                     <h2>In Job Seeker lorem.
                         Etiam non </h2>
                 </div>
-                <div class="content-jobseeker-landing container-fluid" >
+                <div class="content-jobseeker-landing font-weight-bolder container-fluid" >
                     <p > Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.
                          In eget sagittis lorem.
@@ -135,17 +135,23 @@
             </div>
             <div class="col-md-4 col-sm-12">
 
+                </div>
             </div>
         </div>
 
 
+<<<<<<< HEAD
+        <div class="row" style="margin-top: 10%;">
+=======
 
         <div class="row" style="margin-top: 20%;">
+>>>>>>> main
             <div class="container-fluid py-2 d-flex justify-content-center ">
-                <a class="btn btn-primary proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="/posts">
+                <a class="btn btn-primary font-weight-bolder proceed-btn d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important" href="/BusinessPostJob">
+
                     start posting
                 </a>
-                <a href="/DashboardBusiness" class="btn btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">
+                <a href="/DashboardBusiness" class="btn font-weight-bolder  btn-light back-btn mx-2  d-flex flex-column justify-content-center" style="width: 120px; height: 30px; font-size:8px !important">
                     skip to dashboard
                 </a>
             </div>

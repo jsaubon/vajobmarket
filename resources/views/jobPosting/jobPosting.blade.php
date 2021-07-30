@@ -9,10 +9,10 @@
     }
 </style>
 <link href="{{URL::asset('assets/css/jobPost.css')}}" rel="stylesheet">
-<section class="jobPostSection">
-    <div class="container">
+<section class="jobPostSection pt-4">
+    <div class="container pt-4">
         <br/> <br/>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between pt-4">
         <a href="/dashboard">Back</a>
         <span>
             <p>Monthly Job Posting Limit: <b>1/10</b></p>
@@ -140,7 +140,7 @@
 
     $('.btn-add-skill').on('click', function() {
         let skills_container = $('#skills_container');
-        
+
         let row = skills_container.find('.row').length +1;
         skills_container.append(
             '<div class="row">'+
