@@ -178,7 +178,7 @@
             }
             let url = window.location.origin+'/api/login';
             postData(url,data,function({data: res}) {
-                if(res.userdata.client) {
+                if(res.userdata.jobseeker) {
                     localStorage.token = res.token;
                     localStorage.userdata = JSON.stringify(res.userdata);
                     // alert('job seeker successfully logged in');
