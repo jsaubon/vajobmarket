@@ -32,6 +32,7 @@
         z-index: 100;
         transform: translateX(100%);
         transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+        overflow-y: 'scroll';
     }
 
     .js-nav__list {
