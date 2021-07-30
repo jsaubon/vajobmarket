@@ -1,7 +1,4 @@
 
-<button class="bo-nav-toggle  bo-nav" aria-label="toggle navigation">
-    <span class="hamburger"></span>
-</button>
 
 <div class="header-items-right bo-nav hide">
     <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco"><small><b>POST A JOB</b></small></a>
