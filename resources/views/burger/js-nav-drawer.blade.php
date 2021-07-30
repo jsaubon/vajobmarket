@@ -149,17 +149,16 @@
             <div class="container w-100 mx-auto" >
 
 
-                <div class="accordion border-0" id="accordionExample" style="padding-top:90px;  outline:none !important;box-shadow: none!important;">
+                <div class="accordion border-0" id="js-accordion-drawer" style="padding-top:90px;  outline:none !important;box-shadow: none!important;">
                     <div class="accordion-item border-0" style=" outline:none !important;box-shadow: none!important;">
-                      <h2 class="accordion-header border-0" style=" outline:none !important;box-shadow: none!important;" id="headingOne" >
-                        <button class="accordion-button  secondary bg-secondary border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
+                      <h2 class="accordion-header border-0" style=" outline:none !important;box-shadow: none!important;" id="js-headingOne" >
+                        <button class="accordion-button  secondary bg-secondary border-0" type="button" data-bs-toggle="collapse" data-bs-target="#js-drawer" aria-expanded="true" aria-controls="js-drawer">
                             <div class="p-1 ml-3 border-0 mr-3 noDeco user-btn user-btn-bo">
                                 <b class="my-auto user-firstname font-weight-bolder" style="color:#efeeee; font-size:1.3em;" >Username</b>
                             </div>
                         </button>
                       </h2>
-                      <div id="collapseOne" style=" outline:none !important;box-shadow: none!important;" class="accordion-collapse  border-0 collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div id="js-drawer" style=" outline:none !important;box-shadow: none!important;" class="accordion-collapse  border-0 collapse show" aria-labelledby="js-headingOne" data-bs-parent="#js-accordion-drawer">
                         <div class="accordion-body p-0 border-0 bo-accordion-nav" style="background-color: #303030; outline:none !important;box-shadow: none!important;">
 
                             <ul class="border-0 p-0">

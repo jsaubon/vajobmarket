@@ -152,7 +152,7 @@
                 <div class="accordion border-0" id="accordionExample" style="padding-top:90px;  outline:none !important;box-shadow: none!important;">
                     <div class="accordion-item border-0" style=" outline:none !important;box-shadow: none!important;">
                       <h2 class="accordion-header border-0" style=" outline:none !important;box-shadow: none!important;" id="headingOne" >
-                        <button class="accordion-button  secondary bg-secondary border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button  secondary bg-secondary border-0" type="button" data-bs-toggle="collapse" data-bs-target="#bo-drawer" aria-expanded="true" aria-controls="bo-drawer">
 
                             <div class="p-1 ml-3 border-0 mr-3 noDeco user-btn user-btn-bo">
 
@@ -163,7 +163,7 @@
                             </div>
                         </button>
                       </h2>
-                      <div id="collapseOne" style=" outline:none !important;box-shadow: none!important;" class="accordion-collapse  border-0 collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div id="bo-drawer" style=" outline:none !important;box-shadow: none!important;" class="accordion-collapse  border-0 collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body p-0 border-0 bo-accordion-nav" style="background-color: #303030; outline:none !important;box-shadow: none!important;">
 
                             <ul class="border-0 p-0">
