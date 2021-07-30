@@ -25,7 +25,7 @@
             <div class="col-md-6">
                 <div class="card shadow text-center">
                     <h2>PRO ENTREPRENEUR PACKAGE</h2>
-                    wq<p>We'll help you find your skilled virtual staff to scale your business.</p>
+                    <p>We'll help you find your skilled virtual staff to scale your business.</p>
    
                     <h2>$ <span style="font-size: 70px;"><b>99</b></span>/month</h2>
      
@@ -36,7 +36,7 @@
             </div>
 
             <div class="col-md-6">
-                <div class="ml-5 mt-4">
+                <div class="rightColumn">
                     <h4><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero.</b></h4>
                     <br/>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quod? Eum, modi eos in id fugit aperiam! Cupiditate est temporibus recusandae ullam esse nostrum deserunt voluptates ab accusamus natus reprehenderit doloribus ea sunt, sapiente vel repudiandae voluptatibus odio minus blanditiis.</p>
