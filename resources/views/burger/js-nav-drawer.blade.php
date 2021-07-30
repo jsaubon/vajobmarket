@@ -20,7 +20,7 @@
               0.125em 0.125em 0.25em rgba(0,0,0,.15);
     }
 
-    .bo-nav-drawer {
+    .js-nav-drawer {
         width: 100vw;
         position: fixed;
         background: var(--clr-dark);
@@ -34,7 +34,7 @@
         transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
     }
 
-    .bo-nav__list {
+    .js-nav__list {
         list-style: none;
         display: flex;
         height: 100%;
@@ -46,18 +46,18 @@
         padding: 0;
     }
 
-    .bo-nav__link {
+    .js-nav__link {
         color: inherit;
         font-weight: var(--fw-bold);
         font-size: var(--fs-h2);
         text-decoration: none;
     }
 
-    .bo-nav__link:hover {
+    .js-nav__link:hover {
         color: var(--clr-accent);
     }
 
-    .bo-nav-toggle {
+    .js-nav-toggle {
         display:none;
         padding: .5em;
         background: transparent;
@@ -69,23 +69,23 @@
         z-index: 1000;
     }
 
-    .bo-nav-open .bo-nav-drawer {
+    .js-nav-open .js-nav-drawer {
         transform: translateX(0);
     }
 
-    .bo-nav-open .bo-nav-toggle {
+    .js-nav-open .js-nav-toggle {
         position: fixed;
     }
 
-    .bo-nav-open .hamburger {
+    .js-nav-open .hamburger {
         transform: rotate(.625turn);
     }
 
-    .bo-nav-open .hamburger::before {
+    .js-nav-open .hamburger::before {
         transform: rotate(90deg) translateX(-6px);
     }
 
-    .bo-nav-open .hamburger::after {
+    .js-nav-open .hamburger::after {
         opacity: 0;
     }
     .nav-burger:hover{
@@ -120,11 +120,13 @@
     .hamburger::after { bottom: 6px; }
 
     @media screen and (max-width: 768px ) {
-        .bo-nav-toggle {
+        .js-nav-toggle {
         display:block;
         }
 
     }
+
+
 
     </style>
     <?php
@@ -140,8 +142,8 @@
 
 
     ?>
-    <nav class="bo-nav-drawer  bo-nav">
-            <div class="container w-100 mx-auto bo-nav" >
+    <nav class="js-nav-drawer  js-nav">
+            <div class="container w-100 mx-auto" >
 
 
                 <div class="accordion border-0" id="accordionExample" style="padding-top:90px;  outline:none !important;box-shadow: none!important;">
@@ -214,7 +216,7 @@
 
                   </div>
 
-                <div class="bo-header-items-right bo-nav ">
+                <div class="bo-header-items-right js-nav">
                     <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco"><small><b>POST A JOB</b></small></a>
 
                     {{-- <div class="p-1 ml-3 mr-3 noDeco user-btn user-btn-bo">

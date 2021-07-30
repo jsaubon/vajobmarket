@@ -41,11 +41,11 @@ $obj = [
             </div>
 
 
-            <button class="bo-nav-toggle  bo-nav" aria-label="toggle navigation">
+            <button class="bo-nav-toggle bo-nav" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
             @include('layouts.bo-nav')
-
+            @include('burger.bo-nav-drawer')
 
 
 
