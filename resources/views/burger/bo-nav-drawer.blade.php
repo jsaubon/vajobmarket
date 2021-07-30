@@ -73,7 +73,7 @@
         transform: translateX(0);
     }
 
-    .nav-open .bo-nav-toggle {
+    .bo-nav-open .bo-nav-toggle {
         position: fixed;
     }
 
@@ -142,8 +142,8 @@
 
 
     ?>
-    <nav class="bo-nav-drawer">
-            <div class="container w-100 mx-auto" stlye="min-width:400px; ">
+    <nav class="bo-nav-drawer  bo-nav">
+            <div class="container w-100 mx-auto" >
 
 
                 <div class="accordion border-0" id="accordionExample" style="padding-top:90px;  outline:none !important;box-shadow: none!important;">

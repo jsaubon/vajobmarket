@@ -65,7 +65,7 @@
     </ul>
 </div>
 
-@include('burger.bo-nav-drawer')
+
 
 
 
