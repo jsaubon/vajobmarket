@@ -13,7 +13,7 @@
     <div class="container pt-4">
         <br/> <br/>
         <div class="d-flex justify-content-between pt-4">
-        <a href="/dashboard">Back</a>
+        <!-- <a href="/dashboard">Back</a> -->
         <span>
             <p>Monthly Job Posting Limit: <b>1/10</b></p>
         </span>
