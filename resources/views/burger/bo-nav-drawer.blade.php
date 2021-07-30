@@ -155,7 +155,11 @@
                         <button class="accordion-button  secondary bg-secondary border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 
                             <div class="p-1 ml-3 border-0 mr-3 noDeco user-btn user-btn-bo">
-                                <b class="my-auto user-firstname font-weight-bolder" style="color:#efeeee; font-size:1.3em;" >Username</b>
+
+                                <b class="my-auto user-firstname font-weight-bolder" style="color:#efeeee; font-size:1.3em;" >
+                                    <i class="fas fa-user" ></i>
+                                    Username
+                                </b>
                             </div>
                         </button>
                       </h2>
@@ -219,8 +223,17 @@
 
                   </div>
 
-                <div class="bo-header-items-right bo-nav ">
-                    <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco"><small><b>POST A JOB</b></small></a>
+                  <div class="row p-4">
+                      <div class="col-md-12 pt-4">
+
+                        <a href="/posts" class="w-50  mx-auto" style="display: inline !important;">
+                            <div class=" d-flex justify-content-center">
+                               <b class="btn btn-outline-light font-weight-bolder text-uppercase" style="font-size: 1.2em; border-radius:20px;">POST A JOB </b>
+                            </div>
+                        </a>
+
+                      </div>
+                  </div>
 
                     {{-- <div class="p-1 ml-3 mr-3 noDeco user-btn user-btn-bo">
                         <small><b class="my-auto user-firstname ">Username</b></small>
@@ -229,11 +242,11 @@
 
 
 
-                </div>
 
 
 
-                <div class="row w-100  mx-auto bo-nav-titles my-auto" style="padding-top:20px; min-width:300px;">
+
+                <div class="row w-100  mx-auto bo-nav-titles my-auto" style="padding-top:5px; min-width:300px;">
                     <?php
                     foreach(array_keys($obj) as $row) {
                         if ($row == "JOB ACADEMY") {
