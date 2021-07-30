@@ -860,10 +860,12 @@ body button {
 @media screen and (max-width: 768px) {
   .bo-nav-toggle {
     display: block;
+    position: absolute !important;
   }
 
   .js-nav-toggle {
     display: block;
+    position: absolute !important;
   }
 
   .nav-toggle {

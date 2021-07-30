@@ -52,6 +52,8 @@ $obj = [
             @include('layouts.js-nav')
             @include('layouts.bo-nav')
             @include ('burger.nav-drawer')
+            @include ('burger.bo-nav-drawer')
+            @include ('burger.js-nav-drawer')
 
 
 

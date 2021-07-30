@@ -41,12 +41,6 @@ $obj = [
             </div>
 
 
-<<<<<<< HEAD
-            <button class="bo-nav-toggle bo-nav" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-=======
->>>>>>> 5b95eeac4434f2a0f15d66e45877e904f3193c93
             @include('layouts.bo-nav')
             @include('burger.bo-nav-drawer')
 
