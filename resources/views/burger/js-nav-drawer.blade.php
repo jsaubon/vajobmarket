@@ -181,6 +181,12 @@
                                     </li>
                                 </a>
                                 <hr class=" m-0">
+                                <a href="/jobseekerCurrentEmployment" class="py-3 bo-small-nav-link  d-flex justify-content-center" style="background-color:#ECF6FF !important;">
+                                  <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
+                                     employment
+                                 </li>
+                                 </a>
+                                <hr class=" m-0">
                                    <a href="/jobseekerMessages" class="py-3 bo-small-nav-link  d-flex justify-content-center" style="background-color:#ECF6FF !important;">
                                      <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
                                         message
@@ -193,8 +199,8 @@
                                     </li>
                                 </a>
                                 <hr class=" m-0">
-                                <a href="#" class="py-3 bo-small-nav-link btn-logout d-flex justify-content-center" style="background-color:#ECF6FF !important;">
-                                    <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
+                                <a href="#" class="py-3 js-small-nav-link btn-logout d-flex justify-content-center" style="background-color:#ECF6FF !important;">
+                                    <li class="js-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
                                         logout
                                     </li>
                                 </a>
