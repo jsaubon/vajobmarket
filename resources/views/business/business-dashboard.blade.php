@@ -40,24 +40,26 @@
                 </div>
                 <hr class="lsep">
                 <!---all job posts--->
-                <table class="row-border hover border-bottom" id="myDataTable">
-                    <thead>
-                        <tr>
-                        <th class="text-center dash-table-title" scope="col">Job Posted</th>
-                        <th class="text-center dash-table-title" scope="col">Application</th>
-                        <th class="text-center dash-table-title" scope="col">Visits</th>
-                        <th class="text-center dash-table-title" scope="col">Date Posted</th>
-                        <th class="text-center dash-table-title" scope="col">Date End</th>
-                        <th class="text-center dash-table-title" scope="col">Actions</th>
-                        </tr>
-                    </thead>
+                <div class="table-responsive">
+                    <table class="row-border hover border-bottom" id="myDataTable">
+                        <thead>
+                            <tr>
+                            <th class="text-center dash-table-title" scope="col">Job Posted</th>
+                            <th class="text-center dash-table-title" scope="col">Application</th>
+                            <th class="text-center dash-table-title" scope="col">Visits</th>
+                            <th class="text-center dash-table-title" scope="col">Date Posted</th>
+                            <th class="text-center dash-table-title" scope="col">Date End</th>
+                            <th class="text-center dash-table-title" scope="col">Actions</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
+                        <tbody>
 
 
-                    </tbody>
+                        </tbody>
 
-                </table>
+                    </table>
+                </div>
                  <!---all job post end-->
 
                 <!---applicants--->
@@ -72,24 +74,26 @@
                 </div>
                 <hr class="lsep">
 
-                <table class="row-border hover border-bottom" id="myDataTable2">
-                    <thead>
-                        <tr>
-                        <th class="text-center dash-table-title" scope="col">name</th>
-                        <th class="text-center dash-table-title" scope="col">status</th>
-                        <th class="text-center dash-table-title" scope="col">Message</th>
-                        <th class="text-center dash-table-title" scope="col">Date applied</th>
-                        <th class="text-center dash-table-title" scope="col">Actions</th>
-                        </tr>
-                    </thead>
+                <div class="table-responsive">
+                    <table class="row-border hover border-bottom" id="myDataTable2">
+                        <thead>
+                            <tr>
+                            <th class="text-center dash-table-title" scope="col">name</th>
+                            <th class="text-center dash-table-title" scope="col">status</th>
+                            <th class="text-center dash-table-title" scope="col">Message</th>
+                            <th class="text-center dash-table-title" scope="col">Date applied</th>
+                            <th class="text-center dash-table-title" scope="col">Actions</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
+                        <tbody>
 
 
 
-                    </tbody>
+                        </tbody>
 
-                </table>
+                    </table>
+                </div>
                  <!---applicants end-->
 
 
@@ -105,26 +109,28 @@
                 </div>
                 <hr class="lsep">
 
-                <table class="row-border hover border-bottom" id="myDataTable3">
-                    <thead >
-                        <tr>
-                            <th class="text-center dash-table-title" scope="col">employee name</th>
-                            <th class="text-center dash-table-title" scope="col">employment status</th>
-                            <th class="text-center dash-table-title" scope="col">salary</th>
-                            <th class="text-center dash-table-title" scope="col">working hours</th>
-                            <th class="text-center dash-table-title" scope="col">date applied</th>
-                            <th class="text-center dash-table-title" scope="col">date hired</th>
-                            <th class="text-center dash-table-title" scope="col">Actions</th>
-                        </tr>
-                    </thead>
+                <div class="table-responsive">
+                    <table class="row-border hover border-bottom" id="myDataTable3">
+                        <thead >
+                            <tr>
+                                <th class="text-center dash-table-title" scope="col">employee name</th>
+                                <th class="text-center dash-table-title" scope="col">employment status</th>
+                                <th class="text-center dash-table-title" scope="col">salary</th>
+                                <th class="text-center dash-table-title" scope="col">working hours</th>
+                                <th class="text-center dash-table-title" scope="col">date applied</th>
+                                <th class="text-center dash-table-title" scope="col">date hired</th>
+                                <th class="text-center dash-table-title" scope="col">Actions</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
+                        <tbody>
 
 
 
-                    </tbody>
+                        </tbody>
 
-                </table>
+                    </table>
+                </div>
                 <!---employee names end--->
             </div>
         </div>

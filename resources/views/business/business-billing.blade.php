@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    @media screen and (max-width: 780px) {
+        .progress-steps {
+            display: none !important;
+        }
+
+        .w-75 {
+            width: 100% !important;
+        }
+        .w-50 {
+            width: 100% !important;
+        }
+    }
+</style>
 <div class="container-fluid h-auto personal-info">
     <div class="container h-100" style="padding-top: 100px; padding-bottom:10px;">
         <div class="d-flex justify-content-end">
@@ -46,7 +60,8 @@
 
 
                 <form class="container w-50" action="#" id="bo_business_billing">
-                    <h2 class="title-personal-info"></h2>
+                    <h2 class="title-personal-info">Billing Details</h2>
+                    <hr>
 
                     <div class="row">
                         <div class="col-md-8">

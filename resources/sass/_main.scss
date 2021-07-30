@@ -1,6 +1,6 @@
 //Fonts
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@100,200,400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@100,200,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 // Variables
 // $primary-color:
@@ -9,37 +9,42 @@
 
 // Typography
 body {
+    margin: 0;
+    padding: 0;
 
-    margin:0;
-    padding:0;
-
-    h1, h2, h3, h4, h5, h6, ul, li {
-        font-family: 'Oswald', sans-serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    li {
+        font-family: "Oswald", sans-serif;
         margin-bottom: 1rem;
     }
 
-    p, a, button {
-        font-family: 'Roboto', san-serif;
+    p,
+    a,
+    button {
+        font-family: "Roboto", san-serif;
     }
-
 }
 
 // Image
 
 .img-circle {
-
-        width: 200px;
-        height: 200px !important;
-        border-radius: 100px;
-        object-fit: cover;
-        margin-bottom: 10px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
+    width: 200px;
+    height: 200px !important;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
- //Buttons
+//Buttons
 
 .btn-fom {
     border: 1px solid #007bff;
@@ -50,7 +55,6 @@ body {
     padding: 10px 30px;
 }
 
-
 .btn-fom:hover {
     background-color: #007bff;
     color: #fff;
@@ -60,17 +64,17 @@ body {
     border: 1px solid #fff;
     border-radius: 8px;
     color: #fff;
-    background-color: rgb(0,0,0, 0);
+    background-color: rgb(0, 0, 0, 0);
     padding: 10px 30px;
 }
 
 .btn-foh::hover {
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     color: #000;
 }
 
 .btn-learn {
-    background-color: rgb(0,0,0,0);
+    background-color: rgb(0, 0, 0, 0);
     border: 2px solid #007bff;
     color: #007bff;
     border-radius: 8px;
@@ -83,17 +87,16 @@ body {
 }
 
 .playIcon {
-    background-image: url('../../public/images/frontAssets/icon-playwhite.png');
+    background-image: url("../../public/images/frontAssets/icon-playwhite.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: transparent;
-    border:none;
+    border: none;
     height: 100px;
     width: 100px;
-    margin:20px auto;
+    margin: 20px auto;
 }
-
 
 //Header Start
 .header {
@@ -106,19 +109,17 @@ body {
     justify-content: space-between;
     padding: 0rem 10rem;
 }
-.mylogo{
+.mylogo {
     cursor: pointer;
-    padding:20px;
+    padding: 20px;
 }
-.header-items-left{
+.header-items-left {
     display: flex;
-
 }
-.img-container{
+.img-container {
     display: inline;
     height: 80px;
     min-width: 60px;
-
 }
 .img-container i {
     display: inline;
@@ -128,11 +129,10 @@ body {
 }
 .title {
     display: flex;
-    color:#fff;
+    color: #fff;
     width: 140px;
 }
 .navitems {
-
     text-decoration: none;
     transition: 0.2s;
     font-weight: 300;
@@ -147,18 +147,16 @@ body {
     // border-bottom: 2px solid #fff;
     color: #fff;
 }
-.header-items-right{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-}
-.header-items-right-hamburger{
+.header-items-right {
     display: flex;
     justify-content: center;
     align-items: center;
-
- }
+}
+.header-items-right-hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .postJobBtn {
     border-radius: 15px;
@@ -167,14 +165,14 @@ body {
     color: #383232;
     width: 80px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .postJobBtn:hover {
     background-color: #fff;
     color: #383232 !important;
 }
-.btn-signin{
+.btn-signin {
     font-size: 0.65em;
 }
 .noDeco {
@@ -184,7 +182,7 @@ body {
 
 .noDeco:hover {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 //Header End
@@ -193,57 +191,54 @@ body {
 
 .footerSection {
     background-color: #0a1837;
-
 }
 
 .footerBody {
     width: 900px;
 }
 
-
-.active-bottom.active{
-    border-bottom:4px solid;
+.active-bottom.active {
+    border-bottom: 4px solid;
     border-color: #dee2e6 #dee2e6 #212529 !important;
 }
 
-.email-style{
+.email-style {
     border-bottom: 1px solid #646464 !important;
-    outline:none !important;
-    box-shadow: none!important;
+    outline: none !important;
+    box-shadow: none !important;
     margin-bottom: 20px;
 }
-.password-style{
+.password-style {
     border-bottom: 1px solid #646464 !important;
-    outline:none !important;
-    box-shadow: none!important;
+    outline: none !important;
+    box-shadow: none !important;
     margin-bottom: 20px;
 }
-.button-style{
+.button-style {
     margin-top: 100px;
 }
-.nav-titles-hamburger{
-    display:block;
+.nav-titles-hamburger {
+    display: block;
 }
-.nav-titles{
-    display:block;
+.nav-titles {
+    display: block;
 }
-@media screen and (max-width: 768px ) {
-    .bo-nav-toggle{
-        display:block;
+@media screen and (max-width: 768px) {
+    .bo-nav-toggle {
+        display: block;
     }
     .nav-toggle {
-    display:block;
+        display: block;
     }
-    .nav-titles{
-        display:none !important;
+    .nav-titles {
+        display: none !important;
     }
-    .header-items-right{
-        display:none !important;
+    .header-items-right {
+        display: none !important;
     }
-    .header{
-        padding:0;
+    .header {
+        padding: 0;
+        position: absolute;
     }
 }
 //Footer End
-
-
