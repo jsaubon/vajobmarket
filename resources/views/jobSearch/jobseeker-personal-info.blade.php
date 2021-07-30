@@ -1,12 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    @media screen and (max-width: 780px) {
+        .progress-steps {
+            display: none !important;
+        }
+
+        .w-75 {
+            width: 100% !important;
+        }
+
+        .container {
+            padding: 10px;
+        }
+    }
+</style>
 <div class="container-fluid h-auto personal-info">
     <div class="container h-100" style="padding-top: 100px; padding-bottom:10px;">
         <div class="d-flex justify-content-end">
             <a href="/">Cancel</a>
         </div>
-        <div class="container w-75 stepper-container">
+        <div class=" w-75 stepper-container">
             <ul class="d-flex justify-content-around  progress-steps">
                 <li class="text-active">
                     <div class="shape shape-active">
