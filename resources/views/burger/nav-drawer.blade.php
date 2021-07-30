@@ -21,7 +21,6 @@
 }
 
 .nav-drawer {
-
     position: fixed;
     background: var(--clr-dark);
     color: var(--clr-light);
@@ -71,6 +70,7 @@
 
 .nav-open .nav-drawer {
     transform: translateX(0);
+    width: 100vw;
 }
 
 .nav-open .nav-toggle {
