@@ -560,7 +560,7 @@
 
 @media screen and (max-width: 480px) {
   .frontSection-1 {
-    padding: 1rem 0rem;
+    padding: 1rem 0rem !important;
     background-position: initial;
   }
 
@@ -569,12 +569,12 @@
   }
 
   .frontSection-2 {
-    padding: 1rem 0rem;
+    padding: 1rem 0rem !important;
     background-position: right !important;
   }
 
   .frontSection-2 .leftColumn {
-    margin-top: 3rem;
+    margin-top: 3rem !important;
   }
 
   .frontSection-2 .rightColumn span {
@@ -582,7 +582,7 @@
   }
 
   .frontSection-3 {
-    padding: 2rem 0rem;
+    padding: 2rem 0rem !important;
   }
 
   .frontSection-3 .inner {
@@ -590,7 +590,7 @@
   }
 
   .frontSection-4 {
-    padding: 1rem 0rem;
+    padding: 1rem 0rem !important;
   }
 
   .frontSection-4 .card {
@@ -603,29 +603,13 @@
   }
 
   .frontSection-5 {
-    padding: 2rem 0rem;
+    padding: 2rem 0rem !important;
   }
 
   .frontSection-6 {
-    padding: 2rem 0rem;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .frontSection-2 .leftColumn {
-    margin: 2rem 0rem;
+    padding: 2rem 0rem !important;
   }
 
-  .frontSection-2 .rightColumn {
-    padding: 0 !important;
-  }
-
-  .frontSection-4 .card img {
-    padding: 1.5rem 5rem !important;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .pricingSection-1 {
     padding: 0rem 1rem !important;
   }
@@ -875,6 +859,10 @@ body button {
 
 @media screen and (max-width: 768px) {
   .bo-nav-toggle {
+    display: block;
+  }
+
+  .js-nav-toggle {
     display: block;
   }
 

@@ -39,9 +39,7 @@ $obj = [
                     ?>
                 </div>
             </div>
-            <button class="js-nav-toggle js-nav" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
+
             @include('layouts.js-nav')
             @include('burger.js-nav-drawer')
 

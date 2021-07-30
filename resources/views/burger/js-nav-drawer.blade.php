@@ -142,6 +142,9 @@
 
 
     ?>
+    <button class="js-nav-toggle js-nav" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
     <nav class="js-nav-drawer  js-nav">
             <div class="container w-100 mx-auto" >
 
@@ -160,43 +163,31 @@
                         <div class="accordion-body p-0 border-0 bo-accordion-nav" style="background-color: #303030; outline:none !important;box-shadow: none!important;">
 
                             <ul class="border-0 p-0">
-                                <a href="/DashboardBusiness" class=" py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
+                                <a href="/jobseekerDashboard" class=" py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
                                     <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
                                         dashboard
                                     </li>
                                 </a>
                                 <hr class=" m-0">
-                                <a href="/BusinessProfile" class="py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
+                                <a href="/jobseekerProfile" class="py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
                                      <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
                                         profile
                                     </li>
                                 </a>
                                 <hr class=" m-0">
-                                <a href="/BusinessAllJobPost" class="py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
+                                <a href="/jobseekerApplications" class="py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
                                      <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
-                                        Job Posts
+                                        job application
                                     </li>
                                 </a>
                                 <hr class=" m-0">
-                                <a href="/BusinessApplications" class="py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
-                                     <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
-                                        application
-                                    </li>
-                                </a>
-                                <hr class=" m-0">
-                                <a href="/BusinessEmployment" class="py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
-                                     <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
-                                        employment
-                                    </li>
-                                </a>
-                                <hr class=" m-0">
-                                <a href="/BusinessMessages" class="py-3 bo-small-nav-link  d-flex justify-content-center" style="background-color:#ECF6FF !important;">
+                                   <a href="/jobseekerMessages" class="py-3 bo-small-nav-link  d-flex justify-content-center" style="background-color:#ECF6FF !important;">
                                      <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
                                         message
                                     </li>
                                 </a>
                                 <hr class=" m-0">
-                                <a href="/BusinessInfoSettings" class="py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
+                                <a href="/jobseekerSettings" class="py-3 bo-small-nav-link d-flex justify-content-center" style="background-color:#ECF6FF !important;">
                                      <li class="bo-small-nav-list  m-0 font-weight-bolder" style="font-size:1.3em;">
                                         settings
                                     </li>
@@ -253,14 +244,14 @@
     </nav>
 
     <script>
-    const bonavToggle = document.querySelector('.js-nav-toggle');
-    const bonavLinks = document.querySelectorAll('.js-nav__link')
+    const jsnavToggle = document.querySelector('.js-nav-toggle');
+    const jsnavLinks = document.querySelectorAll('.js-nav__link')
 
-    bonavToggle.addEventListener('click', () => {
+    jsnavToggle.addEventListener('click', () => {
         document.body.classList.toggle('js-nav-open');
     });
 
-    bonavLinks.forEach(link => {
+    jsnavLinks.forEach(link => {
         link.addEventListener('click', () => {
             document.body.classList.remove('js-nav-open');
         })

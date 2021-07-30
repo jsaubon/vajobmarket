@@ -256,16 +256,16 @@
     </nav>
 
     <script>
-    const bonavToggle = document.querySelector('.js-nav-toggle');
-    const bonavLinks = document.querySelectorAll('.js-nav__link')
+    const bonavToggle = document.querySelector('.bo-nav-toggle');
+    const bonavLinks = document.querySelectorAll('.bo-nav__link')
 
     bonavToggle.addEventListener('click', () => {
-        document.body.classList.toggle('js-nav-open');
+        document.body.classList.toggle('bo-nav-open');
     });
 
     bonavLinks.forEach(link => {
         link.addEventListener('click', () => {
-            document.body.classList.remove('js-nav-open');
+            document.body.classList.remove('bo-nav-open');
         })
     })
     </script>
