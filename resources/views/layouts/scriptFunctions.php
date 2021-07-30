@@ -26,7 +26,7 @@
                             As a Business Owner
                         </a>
                     </li>
-                    <li class="nav-item m-0" role="presentation" style="width:50%;">
+                    <li class="nav-item m-0 h-100" role="presentation" style="width:50%;">
                         <a class="nav-link active-bottom border-top-0  border-left-0 border-right-0  text-center text-dark" id="profile-tab" data-toggle="tab" href="#job-in" role="tab" aria-controls="profile" aria-selected="false">
                             As a Job Seeker
                         </a>
