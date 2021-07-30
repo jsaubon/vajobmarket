@@ -884,6 +884,10 @@ body button {
   .header {
     padding: 0;
   }
+
+  .mobile-jobsearch {
+    display: block !important;
+  }
 }
 
 .active-bottom.active {
