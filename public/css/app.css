@@ -726,7 +726,7 @@ body button {
   display: flex;
   top: 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background: linear-gradient(180deg, #646468 0%, transparent 100%);
   z-index: 2;
   justify-content: space-between;
@@ -860,14 +860,17 @@ body button {
 @media screen and (max-width: 768px) {
   .bo-nav-toggle {
     display: block;
+    position: absolute !important;
   }
 
   .js-nav-toggle {
     display: block;
+    position: absolute !important;
   }
 
   .nav-toggle {
     display: block;
+    position: absolute !important;
   }
 
   .nav-titles {
