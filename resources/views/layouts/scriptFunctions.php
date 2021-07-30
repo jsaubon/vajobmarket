@@ -1,4 +1,3 @@
-
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <style>
@@ -149,14 +148,10 @@
 
             let url = window.location.origin+'/api/login';
             postData(url,data,function({data: res}) {
-                if(res.userdata.client) {
-                    localStorage.token = res.token;
-                    localStorage.userdata = JSON.stringify(res.userdata);
-                    // alert('business owner successfully logged in');
-                    window.location.href = '/DashboardBusiness';
-                } else {
-                    alert('Please Login as Jobseeker');
-                }
+                localStorage.token = res.token;
+                localStorage.userdata = JSON.stringify(res.userdata);
+                // alert('business owner successfully logged in');
+                window.location.href = '/DashboardBusiness';
             }, err =>  {
                 if(err.response.data.error) {
                     $('#signin_error_bo').removeClass('hide');
@@ -178,14 +173,10 @@
             }
             let url = window.location.origin+'/api/login';
             postData(url,data,function({data: res}) {
-                if(res.userdata.client) {
-                    localStorage.token = res.token;
-                    localStorage.userdata = JSON.stringify(res.userdata);
-                    // alert('job seeker successfully logged in');
-                    window.location.href = '/jobseekerDashboard';
-                } else {
-                    alert('Please Login as Business Owner');
-                }
+                localStorage.token = res.token;
+                localStorage.userdata = JSON.stringify(res.userdata);
+                // alert('job seeker successfully logged in');
+                window.location.href = '/jobseekerDashboard';
             }, err =>  {
                 console.log('err.response.data',err.response.data);
                 if(err.response.data.error) {
