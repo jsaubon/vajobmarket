@@ -149,10 +149,14 @@
 
             let url = window.location.origin+'/api/login';
             postData(url,data,function({data: res}) {
-                localStorage.token = res.token;
-                localStorage.userdata = JSON.stringify(res.userdata);
-                // alert('business owner successfully logged in');
-                window.location.href = '/DashboardBusiness';
+                if(res.userdata.client) {
+                    localStorage.token = res.token;
+                    localStorage.userdata = JSON.stringify(res.userdata);
+                    // alert('business owner successfully logged in');
+                    window.location.href = '/DashboardBusiness';
+                } else {
+                    alert('Please Login as Jobseeker');
+                }
             }, err =>  {
                 if(err.response.data.error) {
                     $('#signin_error_bo').removeClass('hide');
@@ -174,10 +178,14 @@
             }
             let url = window.location.origin+'/api/login';
             postData(url,data,function({data: res}) {
-                localStorage.token = res.token;
-                localStorage.userdata = JSON.stringify(res.userdata);
-                // alert('job seeker successfully logged in');
-                window.location.href = '/jobseekerDashboard';
+                if(res.userdata.client) {
+                    localStorage.token = res.token;
+                    localStorage.userdata = JSON.stringify(res.userdata);
+                    // alert('job seeker successfully logged in');
+                    window.location.href = '/jobseekerDashboard';
+                } else {
+                    alert('Please Login as Business Owner');
+                }
             }, err =>  {
                 console.log('err.response.data',err.response.data);
                 if(err.response.data.error) {

@@ -29,12 +29,20 @@
                 <!---alerts end--->
 
                 <div class="row pt-2" style="text-transform:uppercase; font-size: 1em;  margin-top:40px;">
-                    <div class="col-md-6 title-personal-info" style="margin: 0px;">all job posts</div>
+                    <div class="col-md-12 title-personal-info" style="margin: 0px;">all job posts
+                    </div>
+                </div>
+                <div class="row" style="text-transform:uppercase; font-size: 1em;  ">
+                    <div class="col-md-6 title-personal-info" style="margin: 0px;">
+                        <a href="/posts" style="text-decoration: none !important; color:#767676; font-size:0.7em; " class="title-personal-info mt-0 ">
+                            Post a Job  <i class="fas fa-plus-circle"></i>
+                        </a>
+                    </div>
                     <div class="col-md-6 text-right">
                         <a href="/BusinessAllJobPost" style="text-decoration: none !important; color:#767676; font-size:0.7em;" class="title-personal-info mt-0 ">
                         see more
 
-                        <i class="fas fa-angle-right"></i>
+                            <i class="fas fa-angle-right"></i>
                         </a>
                     </div>
                 </div>
