@@ -2,6 +2,13 @@
 
 @section('content')
 
+<style>
+    @media screen and (max-width: 780px) {
+        .w-50 {
+            width: 80% !important;
+        }
+    }
+</style>
 <div class="user-dashboard h-auto">
     <div class="container h-auto fullwidth" >
         <div class="card shadow" style="border-radius:10px; min-height: 80vh;" >
@@ -119,7 +126,7 @@
                             <div class="col-md-12">
 
 
-                                <form class="container w-75" action="#" id="bo_business_billing">
+                                <form class="container " action="#" id="bo_business_billing">
                                     <h2 class="title-personal-info"></h2>
 
                                     <div class="row">
