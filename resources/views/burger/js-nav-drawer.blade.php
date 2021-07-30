@@ -215,7 +215,7 @@
                   <div class="row p-4">
                     <div class="col-md-12 pt-4">
 
-                      <a href="/jobs" class="w-50  mx-auto" style="display: inline !important;">
+                      <a href="/jobs" class="w-50 mx-auto" style="display: inline !important;">
                           <div class=" d-flex justify-content-center">
                              <b class="btn btn-outline-light font-weight-bolder text-uppercase" style="font-size: 1.2em; border-radius:20px;">JOB SEARCH </b>
                           </div>
