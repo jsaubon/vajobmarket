@@ -13,7 +13,7 @@
 
 .pricingSection-1,
 .pricingSection-2 {
-    padding: 100px 200px;
+    padding: 100px 200px !important;
 }
 
 .frontSection-1 {
@@ -85,7 +85,7 @@
 
     .leftColumn {
 
-        margin-top: 21rem;
+        margin-top: 21rem !important;
 
         h2 {
             color: #fff;
@@ -269,17 +269,66 @@
         padding-right: 46px;
     }
 
+    .testimonial {
+         padding: 2rem 4rem !important;
+
+         .col-md-8 {
+            background: url('../../public/images/aboutAssets/imgqoutebg.png');
+            background-size: cover;
+            background-position: center;
+            padding: 2rem 0rem;
+         }
+
+    }
+    
+
 }
 
-// .aboutSection-3 {
+.aboutSection-3 {
 
-// }
+    h2 {
+        font-size: 4rem;
+        letter-spacing: -4px;
+    }
+
+    .subTitle {
+        padding: 0rem 28rem;
+    }
+
+    .col-md-2 {
+
+        img {
+            padding: 2rem 4rem !important;
+        }
+
+    }
+
+    .card {
+
+        min-height: 34rem !important;
+
+    }
+
+}
 
 .aboutSection-4 {
     background: url('../../public/images/aboutAssets/bgimagemrkenn.png');
-    height: 100vh;
+    min-height: 73rem;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
+    
+    .col-md-6 {
+
+        margin-top: 12rem;
+        padding: 0rem 4rem;
+
+        .card {
+        
+            padding: 4rem;
+        }
+    }
     
 }
 
@@ -290,7 +339,7 @@
 .pricingSection-1 {
     background: url('../../public/images/pricingAsssets/bgimagepricing@2x.png') no-repeat center center;
     background-size: cover;
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(126, 92, 92);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -495,6 +544,10 @@
             font-size: 50px !important;
         }
 
+        // .rightColumn {
+
+        // }
+
     }
 
     .frontSection-4 {
@@ -546,5 +599,128 @@
     }
 
 
+}
+
+@media screen and (max-width:768px) {
+    .frontSection-1 {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    
+    .frontSection-1 {
+
+        padding: 1rem 0rem;
+        background-position: initial;
+
+    form {
+        min-width: 260px !important;
+    }
+
+    }
+
+    .frontSection-2 {
+
+        padding: 1rem 0rem;
+        background-position: right !important;
+        
+        .leftColumn {
+            margin-top: 3rem;
+        }
+
+        .rightColumn {
+            span {
+                padding: 0rem 1rem !important;
+            }
+        }
+
+    }
+
+    .frontSection-3 {
+
+        padding: 2rem 0rem;
+
+        .inner {
+            padding: 0;
+        }
+    }
+
+    .frontSection-4 {
+
+        padding: 1rem 0rem;
+
+        .card {
+
+            margin-bottom: 1rem !important;
+            padding-bottom: 2rem;
+            
+            img {
+                padding: 2rem 8rem 0rem !important;
+            }
+        }
+    }
+
+    .frontSection-5 {
+
+        padding: 2rem 0rem;
+
+    }
+
+    .frontSection-6 {
+        padding: 2rem 0rem;
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+
+
+    .frontSection-2 {
+
+        .leftColumn {
+            margin: 2rem 0rem;
+        }
+        
+        .rightColumn {
+            padding: 0 !important;
+        }
+    }
+
+    .frontSection-4 {
+
+        .card {
+            
+            img {
+                padding: 1.5rem 5rem !important;
+            }
+        }
+
+    }
+
+    
+    
+
+}
+
+@media screen and (max-width: 480px ) {
+    .pricingSection-1 {
+        padding:0rem 1rem !important;
+
+        h2 {
+            font-size: 50px;
+            line-height: 40px;
+        }
+    }
+
+    .pricingSection-2 {
+        padding: 0rem 1rem !important;
+
+        .card {
+            padding: 40px !important;
+        }
+
+    }
 }
 

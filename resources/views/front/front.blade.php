@@ -129,7 +129,7 @@
                 <div class="card shadow">
                     <img src="{{URL::to('/images/frontAssets/content@2x.png')}}" alt="" class="img-fluid">
                     <h4>
-                        Social Media Manager
+                        Content Writer
                     </h4>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                 <div class="card shadow">
                     <img src="{{URL::to('/images/frontAssets/credit-card@2x.png')}}" alt="" class="img-fluid">
                     <h4>
-                        Social Media Manager
+                        Credit Repair Assistant
                     </h4>
                 </div>
             </div>
@@ -147,7 +147,7 @@
                 <div class="card shadow">
                     <img src="{{URL::to('/images/frontAssets/digital-assistant@2x.png')}}" alt="" class="img-fluid">
                     <h4>
-                        Social Media Manager
+                        Executive Assistant
                     </h4>
                 </div>
             </div>
@@ -156,7 +156,7 @@
                 <div class="card shadow">
                     <img src="{{URL::to('/images/frontAssets/30-appointment@2x.png')}}" alt="" class="img-fluid">
                     <h4>
-                        Social Media Manager
+                        Appointment Setter
                     </h4>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                 <div class="card shadow">
                     <img src="{{URL::to('/images/frontAssets/media-monitor-screen-Digital Marketing@2x.png')}}" alt="" class="img-fluid">
                     <h4>
-                        Social Media Manager
+                        Digital Marketing Specialist
                     </h4>
                 </div>
             </div>
