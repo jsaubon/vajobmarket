@@ -21,7 +21,7 @@
 }
 
 .nav-drawer {
-    width: 100vw;
+
     position: fixed;
     background: var(--clr-dark);
     color: var(--clr-light);
@@ -142,6 +142,11 @@ $obj = [
 
 
 ?>
+
+
+<button class="nav-toggle" aria-label="toggle navigation">
+    <span class="hamburger"></span>
+</button>
 <nav class="nav-drawer ">
         <div class="container w-100 mx-auto" stlye="min-width:400px; ">
 

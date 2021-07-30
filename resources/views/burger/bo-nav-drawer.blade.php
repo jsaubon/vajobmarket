@@ -140,8 +140,13 @@
 
 
     ?>
-    <nav class="bo-nav-drawer  bo-nav">
-            <div class="container w-100 mx-auto bo-nav" >
+
+
+<button class="bo-nav-toggle  bo-nav" aria-label="toggle navigation">
+    <span class="hamburger"></span>
+</button>
+    <nav class="bo-nav-drawer">
+            <div class="container w-100 mx-auto" stlye="min-width:400px; ">
 
 
                 <div class="accordion border-0" id="accordionExample" style="padding-top:90px;  outline:none !important;box-shadow: none!important;">

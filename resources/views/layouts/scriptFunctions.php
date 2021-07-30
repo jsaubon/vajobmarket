@@ -467,6 +467,8 @@
         if(token) {
             console.log(userdata);
             $('.not_logged_in_nav').addClass('hide');
+            $('.nav-drawer').remove();
+            $('.nav-toggle').remove();
             if(userdata.type == 'Client') {
                 $('.bo-nav').removeClass('hide');
                 $('.js-nav').remove();
@@ -478,6 +480,11 @@
                 $('.bo-nav').remove();
                 $('.not_logged_in_nav').remove();
             }
+        } else {
+            $('.bo-nav-drawer').remove();
+            $('.js-nav-drawer').remove();
+            $('.bo-nav-toggle').remove();
+            $('.js-nav-toggle').remove();
         }
 
         $('body').on('click','.btn-logout', function(e) {
