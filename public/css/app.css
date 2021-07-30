@@ -892,6 +892,7 @@ body button {
 
   .header {
     padding: 0;
+    position: absolute;
   }
 }
 

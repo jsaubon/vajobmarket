@@ -21,7 +21,7 @@
     }
 
     .bo-nav-drawer {
-
+        width: 100vw;
         position: fixed;
         background: var(--clr-dark);
         color: var(--clr-light);
