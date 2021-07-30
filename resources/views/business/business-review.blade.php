@@ -1,6 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    @media screen and (max-width: 780px) {
+        .progress-steps {
+            display: none !important;
+        }
+
+        .w-75 {
+            width: 100% !important;
+        }
+        .w-50 {
+            width: 100% !important;
+        }
+    }
+
+
+    .accordion-item ,.accordion-item * {
+        background-color: #ECF6FF !important;
+    }
+</style>
 <div class="container-fluid h-auto personal-info">
     <div class="container h-100" style="padding-top: 100px; padding-bottom:10px;">
         <div class="d-flex justify-content-end">
@@ -142,24 +161,24 @@
                             </button>
                           </h2>
                           <div id="business-info-accordion" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body ">
+                            <div class=" ">
                                 <form class="container" action="" id="bo_business_info">
                                     <h2 class="title-personal-info">Business Information</h2>
                                     <hr>
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items" name="business_name" placeholder="Business Name">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-business_name" name="business_name" placeholder="Business Name">
                                               </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items" name="business_owner_name" placeholder="Business Owner Name">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-business_owner_name" name="business_owner_name" placeholder="Business Owner Name">
                                               </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items" name="type_of_business"  placeholder="Type of Business">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-type_of_business" name="type_of_business"  placeholder="Type of Business">
                                               </div>
                                         </div>
                                     </div>
@@ -167,17 +186,17 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items" name="address1"  placeholder="Address">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-address1" name="address1"  placeholder="Address">
                                               </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="address2" placeholder="Apartment, Suite, etc">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-address2"  name="address2" placeholder="Apartment, Suite, etc">
                                               </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="city" placeholder="City">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-city"  name="city" placeholder="City">
                                             </div>
                                         </div>
                                     </div>
@@ -185,17 +204,17 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="state" placeholder="State / Province">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-state"  name="state" placeholder="State / Province">
                                               </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="country"  placeholder="Country">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-country"  name="country"  placeholder="Country">
                                               </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="zip" placeholder="Zip / Postal">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-zip"  name="zip" placeholder="Zip / Postal">
                                               </div>
                                         </div>
                                     </div>
@@ -203,17 +222,17 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="email" class="form-control profile-info-forms-items"  name="email" placeholder="E-mail Address">
+                                                <input type="email" class="form-control profile-info-forms-items client_business_info-email"  name="email" placeholder="E-mail Address">
                                               </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="mobile_no" placeholder="Mobile Number">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-mobile_no"  name="mobile_no" placeholder="Mobile Number">
                                               </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="phone_no"  placeholder="Phone Number">
+                                                <input type="text" class="form-control profile-info-forms-items client_business_info-phone_no"  name="phone_no"  placeholder="Phone Number">
                                               </div>
                                         </div>
                                     </div>
@@ -254,20 +273,21 @@
                             </button>
                           </h2>
                           <div id="billing-details-accordion" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body profile-info-forms-items">
-                                <form class="container w-75" action="#" id="bo_business_billing">
-                                    <h2 class="title-personal-info"></h2>
+                            <div class=" ">
+                                <form class="container " style="padding: 0" action="#" id="bo_business_billing">
+                                    <h2 class="title-personal-info">Billing Details</h2>
+                                    <hr/>
 
                                     <div class="row">
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="card_number" placeholder="Card Number">
+                                                <input type="text" class="form-control profile-info-forms-items client_billing_detail-card_number"  name="card_number" placeholder="Card Number">
                                               </div>
                                         </div>
 
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="card_type" placeholder="VISA">
+                                                <input type="text" class="form-control profile-info-forms-items client_billing_detail-card_type"  name="card_type" placeholder="VISA">
                                               </div>
                                         </div>
                                     </div>
@@ -276,33 +296,20 @@
                                         <div class="col-md-4">
                                             <label class="profile-info-forms-items" style="border:0 !important;">Expiration</label>
                                         </div>
-                                        <div class="col-md-4">
-                                            <select class="form-control profile-info-forms-items"  name="exp_date_month">
-                                                <option>Month</option>
-                                                <?php for ($i=1; $i < 12; $i++) {  ?>
-                                                    <option value="<?php echo $i;?>"><?php echo $i > 9 ? $i : '0'.$i;?></option>
-                                                <?php }?>
-                                              </select>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <select class="form-control profile-info-forms-items"  name="exp_date_year">
-                                                <option>Year</option>
-                                                <?php for ($i=(int)date('Y'); $i > (int)date('Y') - 70; $i--) {  ?>
-                                                    <option value="<?php echo $i;?>"><?php echo $i;?></option>
-                                                <?php }?>
-                                              </select>
-                                        </div>
+                                        <div class="col-md-8">
+                                            <input class="form-control profile-info-forms-items client_billing_detail-exp_date"  name="exp_date_month">
+                                        </div> 
                                     </div>
                                     <div class="row pt-1">
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="cardholder_name"  placeholder="Card Holder's Name">
+                                                <input type="text" class="form-control profile-info-forms-items client_billing_detail-cardholder_name"  name="cardholder_name"  placeholder="Card Holder's Name">
                                               </div>
                                         </div>
 
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="cvv" placeholder="CVV">
+                                                <input type="text" class="form-control profile-info-forms-items client_billing_detail-cvv"  name="cvv" placeholder="CVV">
                                               </div>
                                         </div>
                                     </div>
@@ -310,23 +317,17 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="billing_address" placeholder="Billing Adress">
+                                                <input type="text" class="form-control profile-info-forms-items client_billing_detail-billing_address"  name="billing_address" placeholder="Billing Adress">
                                               </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-8">
-                                            <select class="form-control profile-info-forms-items"  name="billing_city" >
-                                                <option>City</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                              </select>
+                                            <input class="form-control profile-info-forms-items client_billing_detail-billing_city"  name="billing_city" />
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <input type="text" class="form-control profile-info-forms-items"  name="billing_zip"  placeholder="Zip / Postal">
+                                                <input type="text" class="form-control profile-info-forms-items client_billing_detail-billing_zip"  name="billing_zip"  placeholder="Zip / Postal">
                                               </div>
                                         </div>
                                     </div>
@@ -335,13 +336,7 @@
 
                                         </div>
                                         <div class="col-md-10">
-                                            <select class="form-control profile-info-forms-items"  name="billing_country" >
-                                                <option>Country</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                              </select>
+                                            <input class="form-control profile-info-forms-items client_billing_detail-billing_country"  name="billing_country" />
                                         </div>
                                         <div class="col-md-1">
 
@@ -414,6 +409,21 @@ $(document).ready(function() {
                 if(input.length) {
                     // console.log(input);
                     input.val(user[field]);
+                }
+            });
+
+            console.log('client_business_info',client_business_info);
+            Object.keys(client_business_info).map((field, key) => {
+                let input = $('.client_business_info-'+field);
+                if(input.length) {
+                    // console.log(input);
+                    input.val(client_business_info[field]);
+                }
+            });
+            Object.keys(client_billing_detail).map((field, key) => {
+                let input = $('client_billing_detail-'+field);
+                if(input.length) {
+                    input.val(client_billing_detail[field]);
                 }
             });
         }
