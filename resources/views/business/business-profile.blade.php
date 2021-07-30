@@ -1,6 +1,10 @@
 @extends('layouts.profile-layout')
 @section('content')
-
+<style>
+    .w-nowrap {
+        white-space: nowrap;
+    }
+</style>
     <div class="container-fluid h-auto nav-style">
         <div class="card-banner mx-auto w-50 d-flex  justify-content-center">
             <div class="profile-stats container">
@@ -61,7 +65,7 @@
             {{-- first--}}
             <div class="tab-pane h-auto fade show active" id="posts-pro" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container-fluid  pb-4">
-                    <div class="row w-75  mx-auto">
+                    <div class="row mx-auto">
                         <div class="col-md-2 pl-0">
                             Showing <span class="client_job_posts-per_page">-</span> posts out of <span class="client_job_posts-total">-</span>
                         </div>
@@ -127,7 +131,7 @@
                 <div class="container-fluid h-auto w-100 " style="gap:10px;">
                     {{-- comments --}}
                     <div class="row comments_container justify-content-center">
-                        <div class="col-md-4 my-2 shadow" style="border-radius: 10px;" >
+                        <!-- <div class="col-md-4 my-2 shadow" style="border-radius: 10px;" >
                             <div class="card-body">
                               <h5 class="card-title d-flex" style="font-size:15px;">
                                 <div class="profile-pic shadow my-auto" style="height:50px; width:50px;">
@@ -165,7 +169,7 @@
                                 </div>
                             </div>
                             </div>
-                        </div>
+                        </div> -->
 
 
                     </div>
@@ -254,7 +258,7 @@ $(document).ready(function() {
 
 
 
-                let comments_per_page = 1;
+                let comments_per_page = 10;
                 comments = paginate(client.user.comments, comments_per_page);
                 console.log('client.comments',client.user.comments);
                 $('.comments-total').html(client.user.comments.length);
@@ -274,20 +278,20 @@ $(document).ready(function() {
                             '<h5 class="card-title title-personal-info m-0 mb-2"  style="font-size:15px;"> '+client_job_posts.job_title+'</h5>'+
                             '<h6 class="card-subtitle mb-2 text-muted">'+
                                 '<div class="row mt-3" style="text-transform: capitalize;">'+
-                                    '<div class="col-md-3 my-auto pr-0 w-100" style="font-size:9px;">'+
-                                    '<div class="border border-primary rounded pr-1 my-auto ml-0" style="width: 62px;">'+client_job_posts.job_type+'</div>'+
+                                    '<div class="col-lg-3 col-sm-6 text-center w-nowrap " style="font-size:9px;">'+
+                                        '<div class="" >'+client_job_posts.job_type+'</div>'+
+                                        '</div>'+
+                                    '<div class="col-lg-4 col-sm-6 text-center w-nowrap" style="font-size:9px;">'+
+                                        '<i class="fas fa-building"></i>'+
+                                        ''+client_business_info.business_name+''+
                                     '</div>'+
-                                    '<div class="col-md-4 my-auto pl-0 w-100" style="font-size:9px;">'+
-                                    '<i class="fas fa-building"></i>'+
-                                    ''+client_business_info.business_name+''+
+                                    '<div class="col-lg-2 col-sm-6 text-center w-nowrap " style="font-size:8px;">'+
+                                        '<i class="fas fa-money-bill-wave-alt"></i>'+
+                                        ''+client_job_posts.salary+''+
                                     '</div>'+
-                                    '<div class="col-md-2 pl-0 my-auto w-100" style="font-size:8px;">'+
-                                    '<i class="fas fa-money-bill-wave-alt"></i>'+
-                                    ''+client_job_posts.salary+''+
-                                    '</div>'+
-                                    '<div class="col-md-3 pl-0 my-auto" style="font-size:8px;">'+
-                                    '<i class="fas fa-clock"></i>'+
-                                    'posted: '+client_job_posts.start_date+''+
+                                    '<div class="col-lg-3 col-sm-6 text-center " style="font-size:8px;">'+
+                                        '<i class="fas fa-clock"></i>'+
+                                        'posted: '+client_job_posts.start_date+''+
                                     '</div>'+
                                 '</div>'+
                             '</h6>'+
@@ -361,7 +365,7 @@ $(document).ready(function() {
                 let jobseeker = comment.created_by.jobseeker; //jobseeker_photo
                 console.log('jobseeker',jobseeker);
                 let name = comment.created_by.firstname + ' ' + comment.created_by.lastname;
-                let image = jobseeker.jobseeker_photo ? jobseeker.jobseeker_photo : 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png';
+                let image = jobseeker && jobseeker.jobseeker_photo ? jobseeker.jobseeker_photo : 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png';
 
                 $('.comments_container').append(
                     '<div class="col-md-3 m-2 shadow" style="border-radius: 10px;" >'+
@@ -373,7 +377,7 @@ $(document).ready(function() {
                             '<div class="my-auto mt-0 pl-2 title-personal-info">'+
                                 '<h3 style="font-size:15px; margin:0;">'+name+'</h3>'+
                                 '<p style="font-size: 10px; margin:0;">'+
-                                    ''+jobseeker.jobseeker_profession.job_title+''+
+                                    ''+(jobseeker && jobseeker.jobseeker_profession.job_title ? jobseeker.jobseeker_profession.job_title : '')+''+
                                 '</p>'+
                             '</div>'+
                             '</h5>'+

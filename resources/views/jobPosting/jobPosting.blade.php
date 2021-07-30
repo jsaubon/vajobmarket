@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style>
+    label {
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
+</style>
 <link href="{{URL::asset('assets/css/jobPost.css')}}" rel="stylesheet">
 <section class="jobPostSection">
     <div class="container">
@@ -20,34 +27,41 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-8">
+                            <label>Job Title</label>
                             <input type="text" required class="form-control " name="job_title" placeholder="Job Title" />
                         </div>
                         <div class="col-sm-4">
+                            <label>Sector</label>
                             <select class="form-control" name="sector" id="sector_select">
-                                <option value="">Sector</option>
+                                <option value="">Select</option>
                             </select>
                         </div>
                     </div>
                     <br/>
                     <div class="row">
                         <div class="col-sm-4">
+                            <label>Job Type</label>
                             <select class="form-control" name="job_type" id="jobtype_select">
-                                <option value="">Job Type</option>
+                                <option value="">Select</option>
                             </select>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="monthly_rate" placeholder="Monthly Rate" />
+                            <label>Monthly Rate</label>
+                            <input type="text" class="form-control" name="monthly_rate" placeholder="900/month" />
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" name="hourly_rate" placeholder="Hourly Rate" />
+                            <label>Hourly Rate</label>
+                            <input type="text" class="form-control" name="hourly_rate" placeholder="ex. 5/hr" />
                         </div>
                     </div>
                     <br/>
                     <div class="row">
                         <div class="col-sm-4">
+                            <label>Start Date</label>
                             <input type="date" required class="form-control" name="start_date" placeholder="start date" />
                         </div>
                         <div class="col-sm-4">
+                            <label>End Date</label>
                             <input type="date" required class="form-control" name="end_date" placeholder="end date" />
                         </div>
                     </div>
