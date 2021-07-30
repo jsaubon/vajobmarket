@@ -169,9 +169,9 @@
 
                     <!-- NavTabs 2 Content Start -->
                     <div class="tab-pane fade" id="employeeMonitor" role="tabpanel" aria-labelledby="employeeMonitor-tab">
-                        <div class="wrapper">
+                        <div class="wrapper table-responsive">
 
-                                <table class="display" id="myDataTable">
+                            <table class="display" id="myDataTable">
                                 <thead>
                                     <tr>
                                         <th>Employee Name</th>
@@ -192,7 +192,7 @@
                                         <td>Complete</td>
                                     </tr> -->
                                 </tbody>
-                                </table>
+                            </table>
 
                         </div>
 
@@ -321,14 +321,14 @@ $(document).ready(function() {
                                 '<br>'+
                                 '<div class="row">'+
                                     '<div class="col ">'+
-                                        '<button class="btn w-25 font-weight-bold btn-primary rounded-pill px-3 btn-save">Save</button>'+
+                                        '<button class="btn font-weight-bold btn-primary rounded-pill px-3 btn-save">Save</button>'+
                                     '</div>'+
                                     '<div class="col text-right">'+
                                         '<a class="btn  btn-sm btn-outline-dark font-weight-bold rounded-pill px-3" href="/jobseekerProfile?jobseeker_id='+client_employee.jobseeker.id+'" target="_blank">'+
                                             '<i class="fas fa-eye "></i>'+
                                             '&nbsp; Profile'+
                                             '</a>'+
-                                        '<button class="btn btn-sm mx-2 btn-outline-dark btn-suspend font-weight-bold rounded-pill  px-3">'+
+                                        '<button style="white-space: nowrap" class="btn btn-sm btn-outline-dark btn-suspend font-weight-bold rounded-pill  px-3">'+
                                             '<i class="fas fa-calendar-times"></i>'+
                                             '&nbsp;Suspend'+
                                             '</button>'+

@@ -70,7 +70,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <p class="text-center">Already have an account? <a href="/business">SIGN IN</a></p>
+                                <p class="text-center">Already have an account? <a href="/">SIGN IN</a></p>
                             </div>
                         </div>
                     </div>
