@@ -11,6 +11,8 @@
         <i class="fas fa-chevron-down my-auto" style="font-size:10px;"></i>
     </div>
 </div>
+
+
 <div class="small-nav small-nav-bo shadow bo-nav">
     <ul>
         <a href="/DashboardBusiness" class="small-nav-link">
@@ -62,3 +64,10 @@
         </a>
     </ul>
 </div>
+
+@include('burger.bo-nav-drawer')
+
+
+
+
+

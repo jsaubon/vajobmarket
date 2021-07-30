@@ -667,6 +667,12 @@ body button {
   align-items: center;
 }
 
+.header-items-right-hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .postJobBtn {
   border-radius: 15px;
   font-size: 0.7em;
@@ -725,6 +731,36 @@ body button {
 
 .button-style {
   margin-top: 100px;
+}
+
+.nav-titles-hamburger {
+  display: block;
+}
+
+.nav-titles {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .bo-nav-toggle {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-titles {
+    display: none !important;
+  }
+
+  .header-items-right {
+    display: none !important;
+  }
+
+  .header {
+    padding: 0;
+  }
 }
 
 .active-bottom.active {
@@ -905,6 +941,14 @@ body button {
   text-transform: uppercase;
 }
 
+.bo-accordion-nav ul {
+  list-style: none;
+  padding: 10px;
+  font-size: 12px !important;
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .small-nav-list {
   background-color: #ECF6FF;
   cursor: pointer;
@@ -921,6 +965,26 @@ body button {
 }
 
 .small-nav-link:hover {
+  text-decoration: none;
+  color: #ECF6FF !important;
+}
+
+.bo-small-nav-list {
+  background-color: #ECF6FF;
+  cursor: pointer;
+}
+
+.bo-small-nav-list:hover {
+  background-color: #6e6e6e;
+}
+
+.bo-small-nav-link {
+  text-decoration: none;
+  color: #6e6e6e !important;
+  width: 100%;
+}
+
+.bo-small-nav-link:hover {
   text-decoration: none;
   color: #ECF6FF !important;
 }
