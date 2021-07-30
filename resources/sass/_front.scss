@@ -612,7 +612,7 @@
     
     .frontSection-1 {
 
-        padding: 1rem 0rem;
+        padding: 1rem 0rem !important;
         background-position: initial;
 
     form {
@@ -623,11 +623,11 @@
 
     .frontSection-2 {
 
-        padding: 1rem 0rem;
+        padding: 1rem 0rem !important;
         background-position: right !important;
         
         .leftColumn {
-            margin-top: 3rem;
+            margin-top: 3rem !important;
         }
 
         .rightColumn {
@@ -640,7 +640,7 @@
 
     .frontSection-3 {
 
-        padding: 2rem 0rem;
+        padding: 2rem 0rem !important;
 
         .inner {
             padding: 0;
@@ -649,7 +649,7 @@
 
     .frontSection-4 {
 
-        padding: 1rem 0rem;
+        padding: 1rem 0rem !important;
 
         .card {
 
@@ -664,47 +664,14 @@
 
     .frontSection-5 {
 
-        padding: 2rem 0rem;
+        padding: 2rem 0rem !important;
 
     }
 
     .frontSection-6 {
-        padding: 2rem 0rem;
+        padding: 2rem 0rem !important;
     }
 
-}
-
-@media screen and (min-width: 320px) {
-
-
-    .frontSection-2 {
-
-        .leftColumn {
-            margin: 2rem 0rem;
-        }
-        
-        .rightColumn {
-            padding: 0 !important;
-        }
-    }
-
-    .frontSection-4 {
-
-        .card {
-            
-            img {
-                padding: 1.5rem 5rem !important;
-            }
-        }
-
-    }
-
-    
-    
-
-}
-
-@media screen and (max-width: 480px ) {
     .pricingSection-1 {
         padding:0rem 1rem !important;
 
@@ -722,5 +689,7 @@
         }
 
     }
+
 }
+
 

@@ -73,7 +73,7 @@
         transform: translateX(0);
     }
 
-    .nav-open .bo-nav-toggle {
+    .bo-nav-open .bo-nav-toggle {
         position: fixed;
     }
 
@@ -125,8 +125,6 @@
         }
 
     }
-
-
 
     </style>
     <?php
@@ -221,7 +219,7 @@
 
                   </div>
 
-                <div class="bo-header-items-right bo-nav hide">
+                <div class="bo-header-items-right bo-nav ">
                     <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco"><small><b>POST A JOB</b></small></a>
 
                     {{-- <div class="p-1 ml-3 mr-3 noDeco user-btn user-btn-bo">

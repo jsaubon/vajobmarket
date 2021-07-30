@@ -32336,8 +32336,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/jsaubon/Documents/ihrbuddy/vajobmarket/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/jsaubon/Documents/ihrbuddy/vajobmarket/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! F:\vajobmarket-backfront-ryan\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! F:\vajobmarket-backfront-ryan\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

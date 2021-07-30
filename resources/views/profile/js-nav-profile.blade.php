@@ -39,7 +39,9 @@ $obj = [
                     ?>
                 </div>
             </div>
+
             @include('layouts.js-nav')
+            @include('burger.js-nav-drawer')
 
 
 
