@@ -1,5 +1,5 @@
 @section('front')
-<section class="frontSection-1">
+<section class="frontSection-1 w-auto overflow-hidden">
 
     <div class="container-fluid">
         <div class="row">
@@ -27,149 +27,165 @@
 
 </section>
 
-<section class="frontSection-2">
+<section class=" h-auto min-vh-100 overflow-hidden">
+    <div class="row">
+        <div class="col-md-12 h-50 frontSection-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 text-center leftColumn">
+                        <h2>
+                            Handpicked Candidates with Great Potentials
+                        </h2>
+                        <p>
+                            With our skilled Virtual Assistants on out marketplace, any business can tackle a wide range of projects. From Graphic Designing to SEO blogging, name it all. We got you covered!
+                        </p>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 text-center leftColumn">
+                        <button class="btn btn-hire">START YOU HIRING PROCESS NOW</button>
+
+                    </div>
+
+                    <div class="col-md-6 rightColumn">
+                        <div class="card">
+                            <h2>
+                                SUBSCRIBE TO OUR PREMIUM PACKAGE AND HIRE YOUR OWN VIRTUAL STAFF
+                            </h2>
+                            <h4>
+                                PRO ENTREPRENEUR PACKAGE
+                            </h4>
+                            <p>We'll help you find your skilled virtual staff to scale your business.</p>
+
+                            <span>
+                                <input class="mr-2" type="checkbox" checked />
+                                <label>UNLIMITED JOB POSTING</label>
+                            </span>
+                            <span>
+                                <input class="mr-2" type="checkbox" checked />
+                                <label>Job Displayed for 30 Days</label>
+                            </span>
+                            <span>
+                                <input class="mr-2" type="checkbox" checked />
+                                <label>Weekly Featured Ad Jobs</label>
+                            </span>
+                            <span>
+                                <input class="mr-2" type="checkbox" checked />
+                                <label>Email and Chat Support 24/7</label>
+                            </span>
+                            <span>
+                                <input class="mr-2" type="checkbox" checked />
+                                <label>Unlimited Download of Candidate Resume PDF</label>
+                            </span>
+                            <span>
+                                <input class="mr-2" type="checkbox" checked />
+                                <label>Quick VA Skilled Matching</label>
+                            </span>
+                            <span>
+                                <input class="mr-2" type="checkbox" checked />
+                                <label>Access to Exckysuve Facebook Community</label>
+                            </span>
+
+                            <button class="btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 h-50 frontSection-3 p-0">
+                    {{-- section3 --}}
+            <div class="container-fluid h-auto text-center">
+                <div class="inner">
+                    <h2>Upskill your Virtual Assistants to their full Potential</h2>
+                    <button class="playIcon"></button> <br>
+                    <button class="btn-foh">WATCH THE VIDEO AND FIND OUT HOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+<section class="frontSection-4 p-4 my-4 h-auto">
+
+    <div class="text-center px-0 py-4 d-flex my-4 flex-column justify-content-center container-fluid">
+
+        <div class="row my-4 py-4">
+
+            <div class="col-md-12 text-center">
                 <h2>
-                    Handpicked Candidates with Great Potentials
+                    SPECIALIZED CAREERS
                 </h2>
-                <p>
-                    With our skilled Virtual Assistants on out marketplace, any business can tackle a wide range of projects. From Graphic Designing to SEO blogging, name it all. We got you covered!
-                </p>
-
-                <button class="btn btn-hire">START YOU HIRING PROCESS NOW</button>
-
             </div>
 
-            <div class="col-md-6 rightColumn">
-                <div class="card">
-                    <h2>
-                        SUBSCRIBE TO OUR PREMIUM PACKAGE AND HIRE YOUR OWN VIRTUAL STAFF
-                    </h2>
-                    <h4>
-                        PRO ENTREPRENEUR PACKAGE
-                    </h4>
-                    <p>We'll help you find your skilled virtual staff to scale your business.</p>
-
-                    <span>
-                        <input class="mr-2" type="checkbox" checked />
-                        <label>UNLIMITED JOB POSTING</label>
-                    </span>
-                    <span>
-                        <input class="mr-2" type="checkbox" checked />
-                        <label>Job Displayed for 30 Days</label>
-                    </span>
-                    <span>
-                        <input class="mr-2" type="checkbox" checked />
-                        <label>Weekly Featured Ad Jobs</label>
-                    </span>
-                    <span>
-                        <input class="mr-2" type="checkbox" checked />
-                        <label>Email and Chat Support 24/7</label>
-                    </span>
-                    <span>
-                        <input class="mr-2" type="checkbox" checked />
-                        <label>Unlimited Download of Candidate Resume PDF</label>
-                    </span>
-                    <span>
-                        <input class="mr-2" type="checkbox" checked />
-                        <label>Quick VA Skilled Matching</label>
-                    </span>
-                    <span>
-                        <input class="mr-2" type="checkbox" checked />
-                        <label>Access to Exckysuve Facebook Community</label>
-                    </span>
-
-                    <button class="btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
-
-
-
-                </div>
+            <div class="col-md-12 text-center">
+                <button class="btn-fom">FIND OUT MORE</button>
             </div>
 
-        </div>
-    </div>
 
-</section>
+            <div class="col-md-12 fixed-width">
+                <div class="d-flex justify-content-start p-4 w-100 specialized-sm   mx-auto">
+                    <div class="col-md-2 text-wrap fixed-width h-auto w-auto">
+                        <div class="card shadow p-3 w-auto h-100">
+                            <img class="pb-4 mx-auto my-2" src="{{URL::to('/images/frontAssets/social-media@2x.png')}}" alt="" >
+                            <h4 class="pb-4 mx-auto my-2">
+                                Social Media Manager
+                            </h4>
+                        </div>
+                    </div>
 
-<section class="frontSection-3">
+                    <div class="col-md-2 text-wrap fixed-width h-auto w-auto">
+                        <div class="card shadow p-3 w-auto h-100">
+                            <img class="pb-4 mx-auto my-2" src="{{URL::to('/images/frontAssets/content@2x.png')}}" alt="" >
+                            <h4 class="pb-4 mx-auto my-2">
+                                Content Writer
+                            </h4>
+                        </div>
+                    </div>
 
-    <div class="container-fluid text-center">
-        <div class="inner">
-            <h2>Upskill your Virtual Assistants to their full Potential</h2>
-            <button class="playIcon"></button> <br>
-            <button class="btn-foh">WATCH THE VIDEO AND FIND OUT HOW</button>
-        </div>
-    </div>
+                    <div class="col-md-2 text-wrap fixed-width h-auto w-auto">
+                        <div class="card shadow p-3 w-auto h-100">
+                            <img class="pb-4 mx-auto my-2" src="{{URL::to('/images/frontAssets/credit-card@2x.png')}}" alt="" >
+                            <h4 class="pb-4 mx-auto my-2">
+                                Credit Repair Assistant
+                            </h4>
+                        </div>
+                    </div>
 
-</section>
+                    <div class="col-md-2 text-wrap fixed-width h-auto w-auto">
+                        <div class="card shadow p-3 w-auto h-100">
+                            <img class="pb-4 mx-auto my-2" src="{{URL::to('/images/frontAssets/digital-assistant@2x.png')}}" alt="" >
+                            <h4 class="pb-4 mx-auto my-2">
+                                Executive Assistant
+                            </h4>
+                        </div>
+                    </div>
 
-<section class="frontSection-4">
+                    <div class="col-md-2 text-wrap fixed-width h-auto w-auto">
+                        <div class="card shadow p-3 w-auto h-100">
+                            <img class="pb-4 mx-auto my-2" src="{{URL::to('/images/frontAssets/30-appointment@2x.png')}}" alt="" >
+                            <h4 class="pb-4 mx-auto my-2">
+                                Appointment Setter
+                            </h4>
+                        </div>
+                    </div>
 
-    <div class="text-center container-fluid">
-        <h2>
-            SPECIALIZED CAREERS
-        </h2>
-
-            <button class="btn-fom">FIND OUT MORE</button>
-
-        <div class="row">
-            <div class="col-md-2">
-                <div class="card shadow">
-                    <img src="{{URL::to('/images/frontAssets/social-media@2x.png')}}" alt="" class="img-fluid">
-                    <h4>
-                        Social Media Manager
-                    </h4>
-                </div>
-            </div>
-
-            <div class="col-md-2">
-                <div class="card shadow">
-                    <img src="{{URL::to('/images/frontAssets/content@2x.png')}}" alt="" class="img-fluid">
-                    <h4>
-                        Content Writer
-                    </h4>
-                </div>
-            </div>
-
-            <div class="col-md-2">
-                <div class="card shadow">
-                    <img src="{{URL::to('/images/frontAssets/credit-card@2x.png')}}" alt="" class="img-fluid">
-                    <h4>
-                        Credit Repair Assistant
-                    </h4>
-                </div>
-            </div>
-
-            <div class="col-md-2">
-                <div class="card shadow">
-                    <img src="{{URL::to('/images/frontAssets/digital-assistant@2x.png')}}" alt="" class="img-fluid">
-                    <h4>
-                        Executive Assistant
-                    </h4>
-                </div>
-            </div>
-
-            <div class="col-md-2">
-                <div class="card shadow">
-                    <img src="{{URL::to('/images/frontAssets/30-appointment@2x.png')}}" alt="" class="img-fluid">
-                    <h4>
-                        Appointment Setter
-                    </h4>
-                </div>
-            </div>
-
-            <div class="col-md-2">
-                <div class="card shadow">
-                    <img src="{{URL::to('/images/frontAssets/media-monitor-screen-Digital Marketing@2x.png')}}" alt="" class="img-fluid">
-                    <h4>
-                        Digital Marketing Specialist
-                    </h4>
+                    <div class="col-md-2 text-wrap fixed-width h-auto w-auto ">
+                        <div class="card shadow p-3 w-auto h-100">
+                            <img class="pb-4 mx-auto my-2" src="{{URL::to('/images/frontAssets/media-monitor-screen-Digital Marketing@2x.png')}}" alt="" >
+                            <h4 class="pb-4 mx-auto my-2">
+                                Digital Marketing Specialist
+                            </h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
 
     </div>
 
@@ -177,98 +193,115 @@
 
 <section class="frontSection-5">
 
-    <div class="container-fluid">
-        <h2>
-            OUR TOP REMOTE WORKERS
-        </h2>
-        <p>
-            Be with only the best. Meet our top performing Virtual Assistants, see how they love working remotely and how they will help you level up your business!
-        </p>
 
-        <div class="col text-center">
-        <button class="btn-fom">FIND OUT MORE</button>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3">
-                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
-                <h4>
-                    John Adams
-                </h4>
+            <div class="container-fluid">
+                <h2>
+                    OUR TOP REMOTE WORKERS
+                </h2>
                 <p>
-                    Web Developer
+                    Be with only the best. Meet our top performing Virtual Assistants, see how they love working remotely and how they will help you level up your business!
                 </p>
+
+                <div class="col text-center">
+                <button class="btn-fom">FIND OUT MORE</button>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
+                        <h4>
+                            John Adams
+                        </h4>
+                        <p>
+                            Web Developer
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
+                        <h4>
+                            Jane Doe
+                        </h4>
+                        <p>
+                            Credit Repair Specialist
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
+                        <h4>
+                            Megan Schmidth
+                        </h4>
+                        <p>
+                            Executive Assistant
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
+                        <h4>
+                            Mark Cameron
+                        </h4>
+                        <p>
+                            Graphic Designer
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="col-md-3">
-                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
-                <h4>
-                    Jane Doe
-                </h4>
-                <p>
-                    Credit Repair Specialist
-                </p>
-
-            </div>
-
-            <div class="col-md-3">
-                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
-                <h4>
-                    Megan Schmidth
-                </h4>
-                <p>
-                    Executive Assistant
-                </p>
-
-            </div>
-
-            <div class="col-md-3">
-                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
-                <h4>
-                    Mark Cameron
-                </h4>
-                <p>
-                    Graphic Designer
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
 
 </section>
 
 <section class="frontSection-6">
-    <div class="container py-4">
+    <div class="row">
+        <div class="col-md-1 my-auto text-center">
+            <button  class="mx-auto rotate-button border-0 p-0 bg-transparent" >
+                <img  class="a-left" src="{{URL::to('/images/frontAssets/arrow-go-right@2x.png')}}" alt="">
+            </button>
+        </div>
+        <div class="col-md-10">
+            <div class="container py-4">
 
                 @foreach($testimonials as $row)
-                <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center flex-column">
-                        <div class="{{ $row['img'] }}"> </div>
-                    </div>
-                    <div class="col-md-6  d-flex justify-content-center flex-column">
-                        <h5><b>{{ $row['title'] }}</b></h5>
-                        <div class="d-flex justify-content-start">
-                            @foreach(array_keys($row['metaData']) as $data)
-                            <p class="p-2">Icon {{ $row['metaData'][$data] }}</p>
-                            @endforeach
+                    <div class="row">
+                        <div class="col-md-6 d-flex justify-content-center flex-column">
+                            <div class="{{ $row['img'] }}"> </div>
                         </div>
-                        <p> {{ $row['body'] }} </p>
-                        {{-- <div class="d-flex justify-content-between mt-5">
-                            <div class="d-flex">
-                                <img src="{{ $row['user']['img'] }}" class="userImg" />
-                                <span class="userContext">
-                                    <p>{{ $row['user']['name'] }}{{ $row['user']['job'] }}</p>
-                                </span>
+                        <div class="col-md-6  d-flex justify-content-center flex-column">
+                            <h5><b>{{ $row['title'] }}</b></h5>
+                            <div class="d-flex justify-content-start">
+                                @foreach(array_keys($row['metaData']) as $data)
+                                <p class="p-2">Icon {{ $row['metaData'][$data] }}</p>
+                                @endforeach
                             </div>
-                            <a href="#seemore"><span class="btn readMoreBtn"><small>READ MORE</small></span></a>
-                        </div> --}}
+                            <p> {{ $row['body'] }} </p>
+                            {{-- <div class="d-flex justify-content-between mt-5">
+                                <div class="d-flex">
+                                    <img src="{{ $row['user']['img'] }}" class="userImg" />
+                                    <span class="userContext">
+                                        <p>{{ $row['user']['name'] }}{{ $row['user']['job'] }}</p>
+                                    </span>
+                                </div>
+                                <a href="#seemore"><span class="btn readMoreBtn"><small>READ MORE</small></span></a>
+                            </div> --}}
+                        </div>
                     </div>
-                </div>
                 @endforeach
             </div>
+        </div>
+        <div class="col-md-1 my-auto text-center">
+            <button  class=" border-0 p-0 bg-transparent" >
+                <img class="a-right"src="{{URL::to('/images/frontAssets/arrow-go-right@2x.png')}}" alt="">
+            </button>
+        </div>
+    </div>
+
 
 </section>
 

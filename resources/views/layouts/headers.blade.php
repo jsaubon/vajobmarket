@@ -32,7 +32,24 @@ $obj = [
                             ?>
                             <a href="<?= $obj[$row] ?>" class="px-2 ml-4 navitemsPlus navitems my-auto text-decoration-none"><b><small><b><?= $row ?></b></small></b></a>
                             <?php
-                        } else {
+                        }
+                        else if ($row == "SOLUTION"){
+                            ?>
+                              <div class="nav-item dropdown d-md-inline ">
+                                    <a class=" px-2 ml-4 text-light navitems my-auto text-decoration-none  d-md-inline dropdown-toggle dropdown " data-toggle="dropdown" href="<?= $obj[$row] ?>" role="button" aria-haspopup="true" aria-expanded="false">
+                                       <small><b> <?= $row ?></b></small>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            <?php
+                        }
+                        else {
                             ?>
                             <a href="<?= $obj[$row] ?>" class="px-2 ml-4  text-light navitems my-auto text-decoration-none"><small><b><?= $row ?></b></small></a>
                             <?php
@@ -42,8 +59,14 @@ $obj = [
                 </div>
             </div>
             <div class="header-items-right not_logged_in_nav">
-                <a href="/jobs" class="p-1 ml-3 postJobBtn noDeco btn-outline-light"><small><b>JOB SEARCH</b></small></a>
-                <a href="/posts" class="p-1 ml-3 mr-3 postJobBtn noDeco btn-outline-light"><small><b>POST A JOB</b></small></a>
+                <a href="/jobs" class="pl-2  btn rounded-pill btn-outline-light">
+                    <i class="fas fa-search-plus"></i>
+                    <b>JOB SEARCH</b>
+                </a>
+                <a href="/posts" class="pl-2 ml-3 mr-3 btn rounded-pill  btn-outline-light">
+                    <i class="fas fa-plus-circle"></i>
+                    <b>POST A JOB</b>
+                </a>
                 <button type="button " class="btn text-light" data-toggle="modal" data-target="#modalLogin">
                 <small class="btn-signin"><b>SIGN-IN</b></small>
                 </button>
