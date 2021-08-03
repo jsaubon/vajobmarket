@@ -9,6 +9,7 @@
 .aboutSection-2,
 .aboutSection-3,
 .aboutSection-4,
+.aboutSection-GV,
 .pricingSection-1,
 .pricingSection-2 {
   padding: 100px 200px !important;
@@ -294,10 +295,10 @@
 
 .aboutSection-4 {
   background: url(/images/bgimagemrkenn.png?b7eddb0ae157658a942a198605bdcfc8);
-  min-height: 73rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 .aboutSection-4 .col-md-6 {
@@ -307,6 +308,14 @@
 
 .aboutSection-4 .col-md-6 .card {
   padding: 4rem;
+}
+
+.aboutSection-GV {
+  background: url(/images/bgimageclimber.png?a72e22bfa2aa86cda491df991444ef67);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .pricingSection-1 {

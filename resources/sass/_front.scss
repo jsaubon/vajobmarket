@@ -10,6 +10,7 @@
 .aboutSection-2,
 .aboutSection-3,
 .aboutSection-4,
+.aboutSection-GV,
 
 .pricingSection-1,
 .pricingSection-2 {
@@ -313,10 +314,10 @@
 
 .aboutSection-4 {
     background: url('../../public/images/aboutAssets/bgimagemrkenn.png');
-    min-height: 73rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
 
     
     .col-md-6 {
@@ -330,6 +331,14 @@
         }
     }
     
+}
+
+.aboutSection-GV {
+    background: url('../../public/images/aboutAssets/bgimageclimber.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 //About Page End

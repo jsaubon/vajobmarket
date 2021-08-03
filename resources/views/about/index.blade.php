@@ -55,7 +55,7 @@
     <div class="container-fluid">
         <div class="text-center">
             <h2>OUR SERVICES</h2>
-            <p class="subTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aspernatur alias nobis pariatur expedita eum ullam amet modi, quas consequuntur dolores laudantium nisi, eos qui impedit architecto voluptas, quaerat iste!</p>
+            <p class="subTitle">We offer a wide array of services which will help you and your business grow further!</p>
 
             <div class="row">
 
@@ -111,6 +111,35 @@
     </div>
 </section>
 
+<section class="aboutSection-GV">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="card text-center shadow">
+                    <div class="col">
+                        <h2>OUR GOALS</h2>
+                        <p>VA Job Market’s primary goal is to help business owners secure the right virtual assistants for their requirements who would play a vital role in growing their businesses further. Alternatively, we also would want to provide an avenue for displaced professionals in the workforce to earn a living and continue with their career and professional growth</p>
+                    </div>
+
+                    <div class="col">
+                        <h2>THE VISION</h2>
+                        <p>
+                        Our vision is to become the top-of-mind choice when it comes to sourcing out virtual assistants for most clients as much as possible, but it is world-class services and client satisfaction that we put premium on. We envision our organization to have an environment for individuals to learn the basics, explore their potentials and further improve themselves to become more equipped and competitive.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="aboutSection-4">
     <div class="container-fluid">
         <div class="row">
@@ -127,19 +156,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iure sequi aspernatur, commodi non laboriosam aliquid assumenda exercitationem nisi at facere pariatur qui excepturi. Eos deserunt suscipit quidem quos vitae!
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, rerum aut quia vitae voluptates dolorem neque ab eaque tempora minima beatae earum saepe in quod enim adipisci quaerat quisquam hic?
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, expedita ducimus libero labore itaque aliquam nobis atque sed suscipit eligendi distinctio amet deleniti temporibus fuga, laudantium iure aspernatur totam alias.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti adipisci quis, illum nemo at quidem soluta natus neque perferendis eveniet enim! Perferendis corrupti cum at iusto, magni laboriosam fuga!
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sunt ea error ab ut cumque aperiam dolore? Dolorem quia rem ea commodi ab inventore atque saepe, nulla id? Soluta, ex.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde! Suscipit iure numquam veritatis molestiae ducimus eaque similique voluptatibus corporis reiciendis voluptas error, asperiores architecto dolores aperiam! Nisi, exercitationem nam!
-
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatum, natus fuga facilis magnam in aliquam? Dolore hic laudantium voluptates illo itaque. Hic ab repellat autem reiciendis distinctio molestiae ipsum.
+                     
                     </p>
 
                     <p class="text-left">
