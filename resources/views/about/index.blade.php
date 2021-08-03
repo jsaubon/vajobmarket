@@ -41,7 +41,7 @@
                         <div class="col-md-8">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quos repellendus tenetur quod beatae voluptatum debitis nesciunt vel delectus similique?</p>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -59,45 +59,51 @@
 
             <div class="row">
 
-                    <div class="col-md-2 card shadow">
+                    <div class="col-md-2 h-100 card shadow">
                         <img src="{{URL::to('/images/aboutAssets/job.png')}}" alt="">
                         <h4>Job Posting</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, commodi repellendus ipsam consectetur ipsa molestiae ipsum nobis voluptatum. Tempora nesciunt sunt similique earum est, ab esse nemo reprehenderit nobis laboriosam.</p>
+                        <p>We’ll post available and updated positions on your behalf based on your requirements
+                        </p>
                         <button class="btn-learn">Learn More</button>
                     </div>
 
                     <div class="col-md-2 card shadow">
                         <img src="{{URL::to('/images/aboutAssets/approved.png')}}" alt="">
                         <h4>Professional Hiring</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, commodi repellendus ipsam consectetur ipsa molestiae ipsum nobis voluptatum. Tempora nesciunt sunt similique earum est, ab esse nemo reprehenderit nobis laboriosam.</p>
+                        <p>Course through applications and get to select the appropriate candidates for the roles
+                        </p>
                         <button class="btn-learn">Learn More</button>
                     </div>
 
                     <div class="col-md-2 card shadow">
                         <img src="{{URL::to('/images/aboutAssets/marketing.png')}}" alt="">
                         <h4>Client Liason</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, commodi repellendus ipsam consectetur ipsa molestiae ipsum nobis voluptatum. Tempora nesciunt sunt similique earum est, ab esse nemo reprehenderit nobis laboriosam.</p>
+                        <p>Ensure a smooth and seamless transitions of your chosen VAs into their corresponding role in your organization
+                        </p>
                         <button class="btn-learn">Learn More</button>
                     </div>
 
                     <div class="col-md-2 card shadow">
                         <img src="{{URL::to('/images/aboutAssets/value.png')}}" alt="">
                         <h4>Permanent Staffing</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, commodi repellendus ipsam consectetur ipsa molestiae ipsum nobis voluptatum. Tempora nesciunt sunt similique earum est, ab esse nemo reprehenderit nobis laboriosam.</p>
+                        <p>Facilitate required candidates for long-term employment based on specified factors
+                        </p>
                         <button class="btn-learn">Learn More</button>
                     </div>
 
                     <div class="col-md-2 card shadow">
                         <img src="{{URL::to('/images/aboutAssets/finance.png')}}" alt="">
                         <h4>Payroll Management</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, commodi repellendus ipsam consectetur ipsa molestiae ipsum nobis voluptatum. Tempora nesciunt sunt similique earum est, ab esse nemo reprehenderit nobis laboriosam.</p>
+                        <p>We are responsible in providing all financial records and release of compensations/benefits
+                        </p>
                         <button class="btn-learn">Learn More</button>
                     </div>
 
                     <div class="col-md-2 card shadow">
                         <img src="{{URL::to('/images/aboutAssets/support.png')}}" alt="">
                         <h4>Premium Support</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, commodi repellendus ipsam consectetur ipsa molestiae ipsum nobis voluptatum. Tempora nesciunt sunt similique earum est, ab esse nemo reprehenderit nobis laboriosam.</p>
+                        <p>End-to-end support with all that you’ll need from hiring, training, monitoring, and evaluating your virtual assistant so as to ensure that we’re aligned with your goals
+                        </p>
                         <button class="btn-learn">Learn More</button>
                     </div>
             </div>
