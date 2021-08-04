@@ -21,6 +21,6 @@ class PricingController extends Controller
             ]
         ];
 
-        return view('pricing.index', $metaData);
+        return view('primary-pages.pricing.index', $metaData);
     }
 }

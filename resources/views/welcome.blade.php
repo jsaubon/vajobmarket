@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('front')
-    @include('front.front');
+    @include('primary-pages.front.front');
 @endsection
