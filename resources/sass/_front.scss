@@ -10,7 +10,6 @@
 .aboutSection-2,
 .aboutSection-3,
 .aboutSection-4,
-.aboutSection-GV,
 
 .pricingSection-1,
 .pricingSection-2 {
@@ -253,6 +252,8 @@
 
 .aboutSection-1 {
     background: url('../../public/images/aboutAssets/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     align-items: center;
     display: flex;
@@ -270,18 +271,9 @@
         padding-right: 46px;
     }
 
-    .testimonial {
-         padding: 2rem 4rem !important;
-
-         .col-md-8 {
-            background: url('../../public/images/aboutAssets/imgqoutebg.png');
-            background-size: cover;
-            background-position: center;
-            padding: 2rem 0rem;
-         }
-
+    li {
+        margin-left: 1rem;
     }
-
 
 }
 
@@ -333,12 +325,13 @@
 
 }
 
-.aboutSection-GV {
-    background: url('../../public/images/aboutAssets/bgimageclimber.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+.aboutSection-Testimonial {
+    padding: 1rem 23rem;
+
+    .testimonial {
+        padding: 2rem 1rem;
+    }
+
 }
 
 //About Page End
