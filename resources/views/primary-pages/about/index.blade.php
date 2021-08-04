@@ -12,24 +12,46 @@
     <div class="container-fluid text-right">
         <div class="row">
             <div class="col-md-6">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, alias!</h2>
+                <h2>WHY HIRE A VIRTUAL ASSISTANT?</h2>
                 <img src="{{URL::to('/images/aboutAssets/imghappyclient.png')}}" alt="">
             </div>
             <div class="col-md-6">
                 <div class="text-justify">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima ab itaque ad cumque laudantium facilis provident inventore fugiat pariatur excepturi nam aut ratione eum molestiae numquam dolorum ipsam obcaecati, esse amet quasi tenetur quaerat? Qui neque necessitatibus enim consectetur, quam aliquam illo, optio quod possimus sit magnam fuga rem?</p>
-                    <p><b>1.) Lorem ipsum dolor sit amet.</b></p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima ab itaque ad cumque laudantium facilis provident inventore fugiat pariatur excepturi nam aut ratione eum molestiae numquam dolorum ipsam obcaecati, esse amet quasi tenetur quaerat? Qui neque necessitatibus enim consectetur, quam aliquam illo, optio quod possimus sit magnam fuga rem?</p>
-                    <p><b>1.) Lorem ipsum dolor sit amet.</b></p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima ab itaque ad cumque laudantium facilis provident inventore fugiat pariatur excepturi nam aut ratione eum molestiae numquam dolorum ipsam obcaecati, esse amet quasi tenetur quaerat? Qui neque necessitatibus enim consectetur, quam aliquam illo, optio quod possimus sit magnam fuga rem?</p>
-                    <p><b>1.) Lorem ipsum dolor sit amet.</b></p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima ab itaque ad cumque laudantium facilis provident inventore fugiat pariatur excepturi nam aut ratione eum molestiae numquam dolorum ipsam obcaecati, esse amet quasi tenetur quaerat? Qui neque necessitatibus enim consectetur, quam aliquam illo, optio quod possimus sit magnam fuga rem?</p>
+                    <p><b>1.) What Is a Virtual Assistant? </b></p>
+                    <p>A virtual assistant is an independent contractor who provides administrative services to clients while operating outside of the client's office. They typically operate from a home-office but have complete access with the necessary planning documents, such as shared calendars, mailboxes, files, etc. People employed as virtual assistants often have several years of experience as an administrative assistant or office manager. However, new opportunities are opening up for virtual assistants who are skilled in social media, content management, blog post writing, graphic design, and Internet marketing. <br><br>
+                
+                    As working from home has become more accepted for both workers and employers, the demand for skilled virtual assistants is expected to grow.
+                </p>
+                    <p><b>2.) When Should I Hire a Virtual Assistant? </b></p>
+                    <p>Anytime is a good time to add another skilled professional to your team. You might especially want to hire a virtual assistant if: 
+                        
+                        <li>Overwhelmed with your current workload</li>
+                        <li>More paperwork than you/your staff can handle</li>
+                        <li>Desire to utilize your time more productively</li>
+                        <li>Can’t afford another full-time hire</li>
+                        <li>Don’t have the skills to perform something with your skillset</li>
+
+                    </p>
+                    <p><b>3.) Benefits of Having a Virtual Assistant</b></p>
+                        
+                        <li>A virtual assistant is a self-employed worker who specializes in offering administrative services to clients from a remote location, usually a home office.</li>
+                        <li>Typical tasks include scheduling appointments, making phone calls, making travel arrangements, and managing email accounts.</li>
+                        <li>Some specialize in offering graphic design, blog writing, bookkeeping, social media, and marketing services.</li>
+                        <li>Increased productivity as virtual assistants tend to be more focused even at home, dedicate their time in accomplishing tasks and put premium with the number one goal of client satisfaction.</li>
+                        <li>Greater flexibility as they would be working based on your schedule and would make themselves readily available when needed.</li>
+                        <li>Improved work quality as you get the luxury of focusing on business essentials while your VA takes on administrative and/or skill-specific tasks.</li>
+                        <li>Another advantage of hiring a virtual assistant is the flexibility to contract only for specific services, which also reduces labor costs rather than hiring a full-time employee and avoids you from risk in scaling operations.</li>
+                   
                 </div>
             </div>
 
+        </div>
+    </div>
 
+</section>
 
-                <div class="card testimonial">
+<section class="aboutSection-Testimonial">
+                <div class="card shadow testimonial">
                     <div class="row">
 
                         <div class="col-md-4 text-center">
@@ -44,18 +66,13 @@
 
                     </div>
                 </div>
-
-
-        </div>
-    </div>
-
 </section>
 
 <section class="aboutSection-3">
     <div class="container-fluid">
         <div class="text-center">
             <h2>OUR SERVICES</h2>
-            <p class="subTitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aspernatur alias nobis pariatur expedita eum ullam amet modi, quas consequuntur dolores laudantium nisi, eos qui impedit architecto voluptas, quaerat iste!</p>
+            <p class="subTitle">We offer a wide array of services which will help you and your business grow further!</p>
 
             <div class="row">
 
@@ -127,19 +144,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iure sequi aspernatur, commodi non laboriosam aliquid assumenda exercitationem nisi at facere pariatur qui excepturi. Eos deserunt suscipit quidem quos vitae!
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, rerum aut quia vitae voluptates dolorem neque ab eaque tempora minima beatae earum saepe in quod enim adipisci quaerat quisquam hic?
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, expedita ducimus libero labore itaque aliquam nobis atque sed suscipit eligendi distinctio amet deleniti temporibus fuga, laudantium iure aspernatur totam alias.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti adipisci quis, illum nemo at quidem soluta natus neque perferendis eveniet enim! Perferendis corrupti cum at iusto, magni laboriosam fuga!
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sunt ea error ab ut cumque aperiam dolore? Dolorem quia rem ea commodi ab inventore atque saepe, nulla id? Soluta, ex.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde! Suscipit iure numquam veritatis molestiae ducimus eaque similique voluptatibus corporis reiciendis voluptas error, asperiores architecto dolores aperiam! Nisi, exercitationem nam!
-
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatum, natus fuga facilis magnam in aliquam? Dolore hic laudantium voluptates illo itaque. Hic ab repellat autem reiciendis distinctio molestiae ipsum.
+                     
                     </p>
 
                     <p class="text-left">

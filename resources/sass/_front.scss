@@ -338,6 +338,8 @@
 
 .aboutSection-1 {
     background: url('../../public/images/aboutAssets/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     align-items: center;
     display: flex;
@@ -355,18 +357,9 @@
         padding-right: 46px;
     }
 
-    .testimonial {
-         padding: 2rem 4rem !important;
-
-         .col-md-8 {
-            background: url('../../public/images/aboutAssets/imgqoutebg.png');
-            background-size: cover;
-            background-position: center;
-            padding: 2rem 0rem;
-         }
-
+    li {
+        margin-left: 1rem;
     }
-
 
 }
 
@@ -399,10 +392,10 @@
 
 .aboutSection-4 {
     background: url('../../public/images/aboutAssets/bgimagemrkenn.png');
-    min-height: 73rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
 
 
     .col-md-6 {
@@ -414,6 +407,15 @@
 
             padding: 4rem;
         }
+    }
+
+}
+
+.aboutSection-Testimonial {
+    padding: 1rem 23rem;
+
+    .testimonial {
+        padding: 2rem 1rem;
     }
 
 }
