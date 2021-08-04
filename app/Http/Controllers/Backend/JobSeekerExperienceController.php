@@ -58,7 +58,11 @@ class JobSeekerExperienceController extends Controller
         ]);
         
         if($request->experiences) {
-            $data = JobSeekerExperience::insert($request->experiences);
+            // $data = JobSeekerExperience::insert($request->experiences);
+            $data = $request->experiences;
+            foreach ($request->experiences as $key => $experience) {
+                JobSeekerExperience::updateOrCreate(['id' => isset($experience['id']) ? $experience['id'] : ''],$this->object_to_array($experience));
+            }
         } else {
             $data = JobSeekerExperience::create($request->all());
         }
