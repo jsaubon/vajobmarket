@@ -61,7 +61,7 @@
                 {{-- personal-info --}}
 
                 <form class="container" action="" id="js_personal_info">
-                <h2 class="title-personal-info">Personal Information</h2>
+                    <h2 class="title-personal-info">Personal Information</h2>
                     <hr>
                     <div class="row">
                         <div class="col-md-4">

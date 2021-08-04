@@ -63,7 +63,7 @@
                 <div class="container ">
                     <div class="row my-3 btn-edit hide" >
                         <div class="col-md-12 d-flex justify-content-end">
-                            <!-- <a class="btn mr-2 btn-light back-btn" style="border-radius: 50px;" href="/jobseekerUpdateDetails">Edit</a> -->
+                            <a class="btn mr-2 btn-light back-btn" style="border-radius: 50px;" href="/jobseekerUpdateDetails">Edit</a>
                         </div>
                     </div>
                     <div class="card p-4 shadow">
