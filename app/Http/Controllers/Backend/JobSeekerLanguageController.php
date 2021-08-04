@@ -58,7 +58,11 @@ class JobSeekerLanguageController extends Controller
         ]);
 
         if($request->languages) {
-            $data = JobSeekerLanguage::insert($request->languages);
+            // $data = JobSeekerLanguage::insert($request->languages);
+            $data = $request->languages;
+            foreach ($request->languages as $key => $language) {
+                JobSeekerLanguage::updateOrCreate(['id' => isset($language['id']) ? $language['id'] : ''],$this->object_to_array($language));
+            }
         } else {
             $data = JobSeekerLanguage::create($request->all());
         }

@@ -27,3 +27,13 @@
 
     </div>
 </div>
+<script>
+    if(token) {
+        if(userdata.jobseeker) {
+            $('.hire-me-btn').remove();
+            $('.banner-offset-items').css('top','370px');
+        }
+    } else {
+        // $('.hire-me-btn').removeClass('')
+    }
+</script>

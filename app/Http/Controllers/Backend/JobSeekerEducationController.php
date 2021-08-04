@@ -51,6 +51,8 @@ class JobSeekerEducationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -58,7 +60,11 @@ class JobSeekerEducationController extends Controller
         ]);
         
         if($request->educations) {
-            $data = JobSeekerEducation::insert($request->educations);
+            // $data = JobSeekerEducation::insert($request->educations);
+            $data = $request->educations;
+            foreach ($request->educations as $key => $education) {
+                JobSeekerEducation::updateOrCreate(['id' => isset($education['id']) ? $education['id'] : ''],$this->object_to_array($education));
+            }
         } else {
             $data = JobSeekerEducation::create($request->all());
         }

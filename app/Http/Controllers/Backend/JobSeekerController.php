@@ -84,7 +84,7 @@ class JobSeekerController extends Controller
             'user_id' => 'required'
         ]);
         
-        $data = JobSeeker::create($request->all());
+        $data = JobSeeker::updateOrCreate(['user_id' => $request->user_id],$request->all());
         $data = JobSeeker::where('user_id',$request->user_id)->first();
        
         return response()->json([

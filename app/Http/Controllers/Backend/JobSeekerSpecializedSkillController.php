@@ -58,7 +58,11 @@ class JobSeekerSpecializedSkillController extends Controller
         ]);
         
         if($request->skills) {
-            $data = JobSeekerSpecializedSkill::insert($request->skills);
+            // $data = JobSeekerSpecializedSkill::insert($request->skills);
+            $data = $request->skills;
+            foreach ($request->skills as $key => $skill) {
+                JobSeekerSpecializedSkill::updateOrCreate(['id' => isset($skill['id']) ? $skill['id'] : ''],$this->object_to_array($skill));
+            }
         } else {
             $data = JobSeekerSpecializedSkill::create($request->all());
         }

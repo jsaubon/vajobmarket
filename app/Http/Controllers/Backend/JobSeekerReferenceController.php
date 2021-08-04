@@ -58,7 +58,11 @@ class JobSeekerReferenceController extends Controller
         ]);
         
         if($request->references) {
-            $data = JobSeekerReference::insert($request->references);
+            // $data = JobSeekerReference::insert($request->references);
+            $data = $request->references;
+            foreach ($request->references as $key => $reference) {
+                JobSeekerReference::updateOrCreate(['id' => isset($reference['id']) ? $reference['id'] : ''],$this->object_to_array($reference));
+            }
         } else {
             $data = JobSeekerReference::create($request->all());
         }
