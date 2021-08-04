@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100,200,400,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);@import url(https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300,700&display=swap);@import url(//db.onlinewebfonts.com/c/623c7118249e082fe87a78e08506cb4b?family=Segoe+UI);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100,200,400,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);@import url(https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@600,700,800&display=swap);@import url(//db.onlinewebfonts.com/c/623c7118249e082fe87a78e08506cb4b?family=Segoe+UI);@charset "UTF-8";
 
 .frontSection-5,
 .frontSection-6,
@@ -17,21 +17,26 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  padding: 250px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 200px;
 }
 
 .frontSection-1 h1,
 .frontSection-1 .h1 {
   color: #fff;
-  font-size: 4rem;
-  line-height: 4.5rem;
-  letter-spacing: -0.3rem;
+  font-size: 4.3rem;
+  font-weight: 100;
+  line-height: 4rem;
+  max-width: 46rem;
 }
 
 .frontSection-1 p {
   color: #fff;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.37rem;
+  line-height: 1.7rem;
+  max-width: 46rem;
 }
 
 .frontSection-1 .btn-cta {
@@ -80,7 +85,7 @@
 }
 
 .frontSection-2 {
-  background-image: url("/images/HAND PICKED Updated@2x.jpg?7e201d21b378d835a9ae4321cbf27860");
+  background-image: url(/images/landing-2-bg.jpg?81b56ed1e3958130fe4b67f3b169890d);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,6 +93,14 @@
 
 .frontSection-2 .leftColumn {
   margin-top: 21rem !important;
+}
+
+.frontSection-2 .leftColumn img {
+  position: absolute;
+  top: -381px;
+  left: -90px;
+  height: 626px;
+  z-index: 1;
 }
 
 .frontSection-2 .leftColumn h2,
@@ -105,15 +118,15 @@
 .frontSection-2 .rightColumn .card {
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  padding: 1rem 2rem;
 }
 
 .frontSection-2 .rightColumn .card h2,
 .frontSection-2 .rightColumn .card .h2 {
   font-weight: 600;
   margin-bottom: 1rem;
+  padding: 0px 4rem;
   color: #646464;
-  font-size: 26px;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -122,6 +135,7 @@
   font-size: 36px;
   color: #767676;
   text-align: center;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .frontSection-2 .rightColumn .card p {
@@ -132,8 +146,10 @@
 
 .frontSection-2 .rightColumn .card span {
   color: #7d7d7d;
+  padding-left: 7rem;
   font-size: 18px;
   padding: 0rem 8rem;
+  text-align: left;
 }
 
 .frontSection-2 .btn-hire {
@@ -353,20 +369,23 @@
 
 @media screen and (max-width: 1440px) {
   .frontSection-1 {
-    padding: 0rem 12rem;
+    padding: 0rem 6rem;
     display: flex;
     align-items: center;
   }
 
   .frontSection-1 h1,
   .frontSection-1 .h1 {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
+    font-weight: 100;
     line-height: 3rem;
+    max-width: 37rem;
   }
 
   .frontSection-1 p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    max-width: 37rem;
   }
 
   .frontSection-2 {
@@ -430,13 +449,17 @@
   .frontSection-1 .h1,
   .frontSection-2 h1,
   .frontSection-2 .h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 2.9rem;
+    font-weight: 100;
+    line-height: 3rem;
+    max-width: 31rem;
   }
 
   .frontSection-1 p,
   .frontSection-2 p {
-    line-height: 16px;
+    line-height: 1.2rem;
+    font-size: 0.92rem;
+    max-width: 31rem;
   }
 
   .frontSection-2 .leftColumn {
@@ -501,13 +524,51 @@
 @media screen and (max-width: 768px) {
   .frontSection-1 {
     text-align: center;
+    padding: 0rem 1rem !important;
+  }
+
+  .frontSection-1 h1,
+  .frontSection-1 .h1 {
+    text-align: left;
+    margin: auto;
+    font-size: 2.4rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    max-width: 26rem;
+  }
+
+  .frontSection-1 p {
+    text-align: left;
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+    max-width: 26rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .frontSection-1 {
-    padding: 1rem 0rem !important;
+    text-align: center;
+    padding: 0rem 1rem !important;
     background-position: initial;
+  }
+
+  .frontSection-1 h1,
+  .frontSection-1 .h1 {
+    font-size: 1.87rem;
+    font-weight: 100;
+    line-height: 1.8rem;
+    width: 20rem;
+  }
+
+  .frontSection-1 p {
+    text-align: left;
+    margin: auto;
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 1.2rem;
+    max-width: 26rem;
   }
 
   .frontSection-1 form {
@@ -617,7 +678,7 @@ body h6,
 body .h6,
 body ul,
 body li {
-  font-family: "rouge-sans";
+  font-family: "rouge-light";
   margin-bottom: 1rem;
 }
 
@@ -827,7 +888,23 @@ body .dropdown {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
+  .header {
+    padding: 0rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0rem 2rem;
+  }
+
+  div.nav-titles {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1179px) {
   .bo-nav-toggle {
     display: block;
     position: absolute !important;
@@ -1198,8 +1275,8 @@ a.btn {
 }
 
 @font-face {
-  font-family: "rouge-sans", sans-serif;
-  src: url("/fonts/rogue_sans_medium.ttf") format("truetype");
+  font-family: "rouge-light";
+  src: url(/fonts/rogue_sans_light.ttf?6d1f98a9e9e61f752a9b4f39e65eb79b) format("truetype");
 }
 
 .business-landing-container {
