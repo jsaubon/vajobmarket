@@ -684,6 +684,7 @@
 
   .frontSection-1 form {
     width: 26rem;
+    padding: 12px;
   }
 }
 
@@ -712,7 +713,8 @@
   }
 
   .frontSection-1 form {
-    width: 26rem;
+    width: 20rem;
+    padding: 15px;
   }
 
   .frontSection-2 {

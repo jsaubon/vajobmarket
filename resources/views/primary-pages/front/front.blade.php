@@ -15,8 +15,8 @@
                     <button class="btn btn-cta">CLICK HERE TO FIND OUT</button>
 
                     <div class="row w-md-75 mx-md-1 mx-lg-0">
-                        <div class="col-xl-6 col-lg-12 pl-0  mx-sm-auto">
-                            <form action="#" class="row flex-sm-column py-md-auto mx-sm-0 mx-md-0  w-md-75 flex-md-row">
+                        <div class="col-xl-6 col-lg-12 p-sm-auto p-md-0   mx-sm-auto">
+                            <form action="#" class="row flex-sm-column py-sm-3 mx-auto mx-sm-auto mx-md-auto mx-lg-0 w-md-75 flex-md-row">
                                 <div class="col-md-4  col-sm-12">
                                     <input type="text" class="form-control mx-0 input-search" placeholder="Start Your Search Here">
                                 </div>
