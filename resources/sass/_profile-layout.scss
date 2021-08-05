@@ -1,8 +1,7 @@
 //AllJobPost Table
 
-
 .user-dashboard {
-    background-color: #ECF6FF;
+    background-color: #ecf6ff;
     height: 100vh;
 }
 
@@ -12,12 +11,10 @@
     padding: 100px 0px 50px 0px;
 }
 
-.container  {
-
+.container {
     // padding: 100px 0px 10px 0px;
 
     .breadcrumb {
-
         .active {
             text-decoration: none;
         }
@@ -26,12 +23,11 @@
         background: none !important;
     }
 
-    .table{
+    .table {
         color: #6e6e6e;
         background: #fff;
         border-radius: 10px;
     }
-
 }
 
 .wrapper {
@@ -43,17 +39,17 @@
     padding: 20px;
 }
 
-.small-nav{
-display:none;
-position: absolute;
-right: 176px;
-top: 54px;
-background-color: #ECF6FF;
-border-radius:5px;
-width: 140px;
-cursor: pointer;
+.small-nav {
+    display: none;
+    position: absolute;
+    right: 60px;
+    top: 54px;
+    background-color: #ecf6ff;
+    border-radius: 5px;
+    width: 140px;
+    cursor: pointer;
 }
-.small-nav ul{
+.small-nav ul {
     list-style: none;
     padding: 10px;
     font-size: 12px !important;
@@ -61,50 +57,43 @@ cursor: pointer;
     text-transform: uppercase;
 }
 
-.bo-accordion-nav ul{
+.bo-accordion-nav ul {
     list-style: none;
     padding: 10px;
     font-size: 12px !important;
     margin: 0;
     text-transform: uppercase;
 }
-.small-nav-list{
-    background-color: #ECF6FF;
+.small-nav-list {
+    background-color: #ecf6ff;
     cursor: pointer;
-
 }
-.small-nav-list:hover{
+.small-nav-list:hover {
     background-color: #6e6e6e;
-
 }
-.small-nav-link{
+.small-nav-link {
     text-decoration: none;
-    color:#6e6e6e !important;
+    color: #6e6e6e !important;
     width: 100%;
 }
-.small-nav-link:hover{
+.small-nav-link:hover {
     text-decoration: none;
-    color:#ECF6FF !important;
+    color: #ecf6ff !important;
 }
 
-
-.bo-small-nav-list{
-    background-color: #ECF6FF;
+.bo-small-nav-list {
+    background-color: #ecf6ff;
     cursor: pointer;
-
 }
-.bo-small-nav-list:hover{
+.bo-small-nav-list:hover {
     background-color: #6e6e6e;
-
 }
-.bo-small-nav-link{
+.bo-small-nav-link {
     text-decoration: none;
-    color:#6e6e6e !important;
+    color: #6e6e6e !important;
     width: 100%;
 }
-.bo-small-nav-link:hover{
+.bo-small-nav-link:hover {
     text-decoration: none;
-    color:#ECF6FF !important;
+    color: #ecf6ff !important;
 }
-
-

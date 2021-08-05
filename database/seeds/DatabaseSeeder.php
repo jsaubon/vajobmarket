@@ -42,15 +42,6 @@ class DatabaseSeeder extends Seeder
     
         $users = [
             [
-                'firstname' => 'admin',
-                'middlename' => '',
-                'lastname' => 'test',
-                'email' => 'admin@test.com',
-                'password' => bcrypt('admin123'),
-                'mobile_no' => $faker->phoneNumber,
-                'phone_no' => $faker->phoneNumber,
-                'type' => 'Admin'
-            ],[
                 'firstname' => 'client',
                 'middlename' => '',
                 'lastname' => 'test',
@@ -70,23 +61,25 @@ class DatabaseSeeder extends Seeder
                 'type' => 'JobSeeker'
             ],
         ];
-        $types = ['JobSeeker','Client'];
-        $user_count = 50;
-        for ($i=0; $i < $user_count; $i++) { 
-    
-            $users[] = [
-                'firstname' => $faker->firstName,
-                'middlename' => $faker->lastName,
-                'lastname' => $faker->lastName,
-                'email' => $faker->email,
-                'password' => bcrypt('admin123'),
-                'mobile_no' => $faker->phoneNumber,
-                'phone_no' => $faker->phoneNumber,
-                'type' => $types[rand(0,1)]
-            ];
-        }
-    
+
         $model_users = \App\User::insert($users);
+        // $types = ['JobSeeker','Client'];
+        $user_count = 2;
+        // for ($i=0; $i < $user_count; $i++) { 
+    
+        //     $users[] = [
+        //         'firstname' => $faker->firstName,
+        //         'middlename' => $faker->lastName,
+        //         'lastname' => $faker->lastName,
+        //         'email' => $faker->email,
+        //         'password' => bcrypt('admin123'),
+        //         'mobile_no' => $faker->phoneNumber,
+        //         'phone_no' => $faker->phoneNumber,
+        //         'type' => $types[rand(0,1)]
+        //     ];
+        // }
+    
+        
         
         $users = \App\User::where('type','Client')->get();
         $user_ids = array_column($users->toArray(),'id');
@@ -320,7 +313,7 @@ class DatabaseSeeder extends Seeder
 
         foreach ($clients as $key => $client) {
             $client_job_posts = $client->client_job_posts()->get();
-            $employees_count = rand(0,30);
+            $employees_count = rand(0,1);
             $employees = [];
             $statuses = ['Applicant','Shortlisted','Hired', 'Dismissed', 'End of Contract'];
             for ($i=0; $i < $employees_count; $i++) { 
