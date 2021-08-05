@@ -1205,7 +1205,7 @@ a.btn {
 }
 
 .user-dashboard {
-  background-color: #ECF6FF;
+  background-color: #ecf6ff;
   height: 100vh;
 }
 
@@ -1242,9 +1242,9 @@ a.btn {
 .small-nav {
   display: none;
   position: absolute;
-  right: 176px;
+  right: 60px;
   top: 54px;
-  background-color: #ECF6FF;
+  background-color: #ecf6ff;
   border-radius: 5px;
   width: 140px;
   cursor: pointer;
@@ -1267,7 +1267,7 @@ a.btn {
 }
 
 .small-nav-list {
-  background-color: #ECF6FF;
+  background-color: #ecf6ff;
   cursor: pointer;
 }
 
@@ -1283,11 +1283,11 @@ a.btn {
 
 .small-nav-link:hover {
   text-decoration: none;
-  color: #ECF6FF !important;
+  color: #ecf6ff !important;
 }
 
 .bo-small-nav-list {
-  background-color: #ECF6FF;
+  background-color: #ecf6ff;
   cursor: pointer;
 }
 
@@ -1303,7 +1303,7 @@ a.btn {
 
 .bo-small-nav-link:hover {
   text-decoration: none;
-  color: #ECF6FF !important;
+  color: #ecf6ff !important;
 }
 
 .banner-offset-items {
