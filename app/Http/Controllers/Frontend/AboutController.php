@@ -45,6 +45,6 @@ class AboutController extends Controller
             ]
         ];
 
-        return view('about.index', $metaData);
+        return view('primary-pages.about.index', $metaData);
     }
 }

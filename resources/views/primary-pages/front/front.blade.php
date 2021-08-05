@@ -1,51 +1,146 @@
 @section('front')
-<section class="frontSection-1 w-auto overflow-hidden">
+<section  id="carouselExampleIndicators" class=" frontSection-1 p-0 carousel slide carousel-fade  w-auto " data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="container-fluid d-flex flex-column justify-content-center">
+            <div class="row mx-auto mx-md-0">
+                <div class="col-md-12 w-auto text-wrap">
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
+                    <h1 >YOUR GO - TO PARTNER IN HIRING THE BEST VIRTUAL ASSISTANTS</h1>
+                    <P class="text-wrap">The leading marketplace in helping entrepreneurs in finding great talents to scale their business that offers the most affordable rates. Hire your Virtual Assistant Today</P>
 
-                <h1>YOUR GO-TO PARTNER IN HIRING THE BEST VIRTUAL ASSISTANTS</h1>
-                <P>The leading marketplace in helping entrepreneurs in finding great talents to scale their business that offers the most affordable rates. Hire your Virtual Assistant Today</P>
+                    <button class="btn btn-cta">CLICK HERE TO FIND OUT</button>
 
-                <button class="btn btn-cta">CLICK HERE TO FIND OUT</button>
+                    <div class="row w-md-75 mx-md-1 mx-lg-0">
+                        <div class="col-xl-6 col-lg-12 pl-0  mx-sm-auto">
+                            <form action="#" class="row flex-sm-column py-md-auto mx-sm-0 mx-md-0  w-md-75 flex-md-row">
+                                <div class="col-md-4  col-sm-12">
+                                    <input type="text" class="form-control mx-0 input-search" placeholder="Start Your Search Here">
+                                </div>
+                                <div class="col-md-4 col-sm-12">
 
-                <form action="#" class="d-flex justify-content-around p-3">
+                                        <select class="form-control my-sm-2 my-md-0 mx-0">
+                                            <option value="1">Select Category</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-4   col-sm-12">
+                                        <button class="btn btn-block btn-search mx-0" type="button">SEARCH</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
 
-                        <input type="text" class="form-control input-search" placeholder="Start Your Search Here">
-
-                        <!-- <select class="form-control">
-                            <option value="1">Select Category</option>
-                        </select> -->
-
-                        <button class="btn btn-block btn-search" type="button">SEARCH</button>
-
-                </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        {{-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 w-auto p-sm-3">
+
+                    <h1 >YOUR GO - TO PARTNER IN HIRING THE BEST VIRTUAL ASSISTANTS</h1>
+                    <P class="text-wrap">The leading marketplace in helping entrepreneurs in finding great talents to scale their business that offers the most affordable rates. Hire your Virtual Assistant Today</P>
+
+                    <button class="btn btn-cta">CLICK HERE TO FIND OUT</button>
+
+                <div class="row  w-sm-75 w-md-100">
+                    <div class=" col-lg-6 col-md-12">
+                        <form action="#" class="row flex-sm-column flex-md-row">
+                            <div class="col-md-4 col-sm-12">
+                                <input type="text" class="form-control mx-0 input-search" placeholder="Start Your Search Here">
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+
+                                    <select class="form-control my-sm-2 my-md-0 mx-0">
+                                        <option value="1">Select Category</option>
+                                    </select>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                    <button class="btn btn-block btn-search mx-0" type="button">SEARCH</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div> --}}
+
+        {{-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol> --}}
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item  active carousel-1" >
+
+                </div>
+                <div class="carousel-item carousel-2" >
+                    <img src="" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item carousel-3" >
+                    <img src="" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            {{-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span> --}}
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            {{-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span> --}}
+            </a>
+      {{-- </div> --}}
+
 
 </section>
 
-<section class=" h-auto min-vh-100 overflow-hidden">
-    <div class="row">
-        <div class="col-md-12 h-50 frontSection-2">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 text-center leftColumn">
-                        <h2>
-                            Handpicked Candidates with Great Potentials
-                        </h2>
-                        <p>
-                            With our skilled Virtual Assistants on out marketplace, any business can tackle a wide range of projects. From Graphic Designing to SEO blogging, name it all. We got you covered!
-                        </p>
-
-                        <button class="btn btn-hire">START YOU HIRING PROCESS NOW</button>
+<section class="h-auto min-vh-100 overflow-hidden">
+    <div class="row flex-column h-100">
+        <div class="col-md-12 h-100  frontSection-2 overflow-hidden" style="min-height: 50vh">
+                <div class="row flex-sm-column flex-md-row h-100 ">
+                    <div class="col-md-1 d-lg-none d-xl-block">
 
                     </div>
+                    <div class="col-md-5 text-center leftColumn ">
 
-                    <div class="col-md-6 rightColumn">
-                        <div class="card">
+                        <div class="row" style="z-index:10; position:relative;">
+                            <div class="col-md-12 text-wrap">
+                                <h2>
+                                    Handpicked Candidates with Great Potentials
+                                </h2>
+                            </div>
+                            <div class="col-md-12 ">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8 border-top">
+                                      <p>
+                                          With our skilled Virtual Assistants on out marketplace, any business can tackle a wide range of projects. From Graphic Designing to SEO blogging, name it all. We got you covered!
+                                      </p>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-4">
+                                <button class="btn btn-hire">START YOU HIRING PROCESS NOW</button>
+                            </div>
+                        </div>
+                        <div class="opacity_div"></div>
+                        <img src="{{URL::to('/images/frontAssets/landing-2-va.png')}}" alt="">
+                    </div>
+                    <div class="col-md-1 p-0 d-lg-none d-xl-block">
+                    </div>
+                    <div class="col-md-4 p-4 h-100 text-center rightColumn">
+                        <div class="card py-4 ">
                             <h2>
                                 SUBSCRIBE TO OUR PREMIUM PACKAGE AND HIRE YOUR OWN VIRTUAL STAFF
                             </h2>
@@ -83,30 +178,38 @@
                                 <label>Access to Exckysuve Facebook Community</label>
                             </span>
 
-                            <button class="btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
-
-
-
+                            <button class=" mx-auto w-75 btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
                         </div>
                     </div>
 
+                    <div class="col-md-1 d-lg-none d-xl-block">
+                    </div>
                 </div>
+        </div>
+        <div class="d-xl-none col-lg-12"  style="min-height: 20vh">a</div>
+        <div class="col-md-12 h-100  frontSection-3" style="min-height: 50vh">
+            <div class="container-fluid h-auto text-center">
+
+                <h2>Upskill your Virtual Assistants to their full Potential</h2>
+                <button class="playIcon"></button> <br>
+                <button class="btn-foh">WATCH THE VIDEO AND FIND OUT HOW</button>
+
             </div>
         </div>
-        <div class="col-md-12 h-50 frontSection-3 p-0">
-                    {{-- section3 --}}
+
+
+        {{-- section 2 bottom portion --}}
+        {{-- <div class="col-md-12 h-50 frontSection-3 p-0">
+
             <div class="container-fluid h-auto text-center">
-                <div class="inner">
+
                     <h2>Upskill your Virtual Assistants to their full Potential</h2>
                     <button class="playIcon"></button> <br>
                     <button class="btn-foh">WATCH THE VIDEO AND FIND OUT HOW</button>
-                </div>
+
             </div>
-        </div>
+        </div> --}}
     </div>
-
-
-
 
 </section>
 
@@ -311,5 +414,11 @@
         let search = $('.input-search').val();
         window.location.href = '/jobs?search='+search;
     })
+
+
+    // $('.carousel').carousel({
+
+    // touch:true;
+    // })
 </script>
 @endsection
