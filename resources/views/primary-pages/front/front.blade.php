@@ -106,28 +106,28 @@
 
 <section class="h-auto min-vh-100 overflow-hidden">
     <div class="row flex-column h-100">
-        <div class="col-md-12 h-100  frontSection-2 overflow-hidden" style="min-height: 50vh">
+        <div class="col-md-12 p-0 h-100  frontSection-2 overflow-hidden" style="min-height: 50vh">
                 <div class="row flex-sm-column flex-md-row h-100 ">
                     <div class="col-md-1 d-lg-none d-xl-block">
 
                     </div>
-                    <div class="col-md-5 text-center leftColumn ">
+                    <div class="col-md-12 col-lg-5 text-center leftColumn ">
 
                         <div class="row" style="z-index:10; position:relative;">
                             <div class="col-md-12 text-wrap">
-                                <h2>
+                                <h2 class="mx-lg-auto">
                                     Handpicked Candidates with Great Potentials
                                 </h2>
                             </div>
                             <div class="col-md-12 ">
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-8 border-top">
+                                <div class="row w-100 mx-auto container-fluid">
+                                    <div class="col-md-2 d-none d-lg-block"></div>
+                                    <div class="col-md-12 col-lg-12 border-top">
                                       <p>
                                           With our skilled Virtual Assistants on out marketplace, any business can tackle a wide range of projects. From Graphic Designing to SEO blogging, name it all. We got you covered!
                                       </p>
                                     </div>
-                                    <div class="col-md-2"></div>
+                                    <div class="col-md-2  d-none d-lg-block"></div>
                                 </div>
                             </div>
                             <div class="col-md-12 pb-4">
@@ -139,7 +139,7 @@
                     </div>
                     <div class="col-md-1 p-0 d-lg-none d-xl-block">
                     </div>
-                    <div class="col-md-4 p-4 h-100 text-center rightColumn">
+                    <div class="col-md-4 p-4 h-100 text-center my-auto rightColumn">
                         <div class="card py-4 ">
                             <h2>
                                 SUBSCRIBE TO OUR PREMIUM PACKAGE AND HIRE YOUR OWN VIRTUAL STAFF
@@ -149,34 +149,36 @@
                             </h4>
                             <p>We'll help you find your skilled virtual staff to scale your business.</p>
 
-                            <span>
-                                <input class="mr-2" type="checkbox" checked />
-                                <label>UNLIMITED JOB POSTING</label>
-                            </span>
-                            <span>
-                                <input class="mr-2" type="checkbox" checked />
-                                <label>Job Displayed for 30 Days</label>
-                            </span>
-                            <span>
-                                <input class="mr-2" type="checkbox" checked />
-                                <label>Weekly Featured Ad Jobs</label>
-                            </span>
-                            <span>
-                                <input class="mr-2" type="checkbox" checked />
-                                <label>Email and Chat Support 24/7</label>
-                            </span>
-                            <span>
-                                <input class="mr-2" type="checkbox" checked />
-                                <label>Unlimited Download of Candidate Resume PDF</label>
-                            </span>
-                            <span>
-                                <input class="mr-2" type="checkbox" checked />
-                                <label>Quick VA Skilled Matching</label>
-                            </span>
-                            <span>
-                                <input class="mr-2" type="checkbox" checked />
-                                <label>Access to Exckysuve Facebook Community</label>
-                            </span>
+                            <div class="row w-75 text-left mx-auto">
+                                <div class="col-md-12">
+                                    <input class="mr-2" type="checkbox" checked />
+                                    <label>UNLIMITED JOB POSTING</label>
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="mr-2" type="checkbox" checked />
+                                    <label>Job Displayed for 30 Days</label>
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="mr-2" type="checkbox" checked />
+                                    <label>Weekly Featured Ad Jobs</label>
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="mr-2" type="checkbox" checked />
+                                    <label>Email and Chat Support 24/7</label>
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="mr-2" type="checkbox" checked />
+                                    <label>Unlimited Download of Candidate Resume PDF</label>
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="mr-2" type="checkbox" checked />
+                                    <label>Quick VA Skilled Matching</label>
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="mr-2" type="checkbox" checked />
+                                    <label>Access to Exckysuve Facebook Community</label>
+                                </div>
+                            </div>
 
                             <button class=" mx-auto w-75 btn-learn">LEARN MORE ABOUT THE ADVANTAGES</button>
                         </div>
@@ -186,11 +188,26 @@
                     </div>
                 </div>
         </div>
-        <div class="d-xl-none col-lg-12"  style="min-height: 20vh">a</div>
+        <div class="d-xl-none col-lg-12 p-3"  style="min-height: 20vh">
+
+            <div class="container">
+                @include('primary-pages.front.right-col')
+            </div>
+
+        </div>
         <div class="col-md-12 h-100  frontSection-3" style="min-height: 50vh">
             <div class="container-fluid h-auto text-center">
+                <div class="row">
+                    <div class="col-md-4">
 
-                <h2>Upskill your Virtual Assistants to their full Potential</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 >
+                            Upskill your Virtual Assistants to their full Potential
+                        </h2>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
                 <button class="playIcon"></button> <br>
                 <button class="btn-foh">WATCH THE VIDEO AND FIND OUT HOW</button>
 
@@ -213,11 +230,11 @@
 
 </section>
 
-<section class="frontSection-4 p-4 my-4 h-auto">
+<section class="frontSection-4 h-auto">
 
     <div class="text-center px-0 py-4 d-flex my-4 flex-column justify-content-center container-fluid">
 
-        <div class="row my-4 py-4">
+        <div class="row ">
 
             <div class="col-md-12 text-center">
                 <h2>

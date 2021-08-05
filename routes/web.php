@@ -62,3 +62,7 @@ Route::get('/BusinessEditJobPost', 'Frontend\BusinessController@BusinessEditJobP
 Route::get('/BusinessApplications', 'Frontend\BusinessController@BusinessApplications');
 Route::get('/BusinessEmployment', 'Frontend\BusinessController@BusinessEmployment');
 Route::get('/BusinessMessages', 'Frontend\BusinessController@BusinessMessages');
+
+//Legal
+Route::get('/termsAndCondtions', 'Frontend\PageController@termsAndCondtions');
+

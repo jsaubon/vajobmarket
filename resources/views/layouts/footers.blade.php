@@ -25,7 +25,7 @@
                                     <a href="#solutions" class="text-secondary"><b>Privacy Policy</b></a>
                                 </div>
                                 <div>
-                                    <a href="#solutions" class="text-secondary"><b>Terms and Condition</b></a>
+                                    <a href="/termsAndCondtions" class="text-secondary"><b>Terms and Condition</b></a>
                                 </div>
                             </div>
                             <div class="col-sm-3">
