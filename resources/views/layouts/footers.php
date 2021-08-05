@@ -1,13 +1,13 @@
 <section class="footerSection container-fluid" style="padding-bottom: 60px;">
             <div class="container">
                 <br /><br />
-                <div class="d-flex justify-content-between">
-                    <div>
+                <div class="row flex-justify-content-between">
+                    <div class="col-md-4 mb-4">
                         <h5><b class="text-light">JOB MARKET</b></h5>
                         <small class="text-secondary">@VAJOBMARKET.COM</small><br />
                         <small class="text-secondary">All rights reserved</small>
                     </div>
-                    <div class="footerBody">
+                    <div class="footerBody col-md-8">
                         <h4 style="color:grey">Be a rockstar entrepreneur. Save time, money and gain freedom with VA Job Market</h4>
                         <br />
                         <div class="row">
