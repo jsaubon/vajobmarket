@@ -1,7 +1,8 @@
 //Fonts
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@100,200,400,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@100,200,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600,700,800&display=swap');
 @import url("//db.onlinewebfonts.com/c/623c7118249e082fe87a78e08506cb4b?family=Segoe+UI");
 
 
@@ -9,7 +10,6 @@
 // font-face
 
 @font-face {
-    font-family: 'rouge-sans', sans-serif ;
-    src: url('/fonts/rogue_sans_medium.ttf') format("truetype");
-
+    font-family: 'rouge-light';
+    src: url('../../resources/sass/fonts/rogue_sans_light.ttf') format("truetype");
 }
