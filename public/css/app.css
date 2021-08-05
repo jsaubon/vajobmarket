@@ -1240,7 +1240,8 @@ a.btn {
 .small-nav {
   display: none;
   position: absolute;
-  right: 176px;
+  /* right: 176px; */
+  right: 60px;
   top: 54px;
   background-color: #ECF6FF;
   border-radius: 5px;
