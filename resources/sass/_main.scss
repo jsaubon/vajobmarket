@@ -26,8 +26,7 @@ body {
     p,
     a,
     button,
-    .dropdown,
-    .small-nav-link{
+    .dropdown{
         font-family: "Segoe UI","Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
     }
 }
@@ -224,6 +223,31 @@ body {
 .nav-titles {
     display: block;
 }
+
+a.btn{
+    font-family: "Segoe UI","Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 0.69rem;
+}
+.about-va-background,.about-bosskenn-background{
+    position:absolute;
+
+}
+.about-va-background{
+    top: 465px;
+    left: 811px;
+    height: 768px;
+    z-index: 1;
+}
+.about-bosskenn-background{
+    z-index: 2;
+    top: -188px;
+    left: -21px;
+    height: 1281px;
+}
+
+
+
+
 @media screen and (max-width:1440px) {
 
     .header {
@@ -232,7 +256,9 @@ body {
 
 }
 @media screen and (max-width:1024px) {
-
+    .about-bosskenn-background{
+        position: static !important;
+    }
     .header {
         padding: 0rem 2rem;
     }
@@ -273,8 +299,5 @@ body {
 }
 
 
-a.btn{
-    font-family: "Segoe UI","Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
-    font-size: 0.69rem;
-}
+
 //Footer End

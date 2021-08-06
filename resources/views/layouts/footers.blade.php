@@ -22,7 +22,7 @@
                                     <a href="#solutions" class="text-secondary"><b>Contact</b></a>
                                 </div>
                                 <div>
-                                    <a href="/privacyPolicy" class="text-secondary"><b>Privacy Policy</b></a>
+                                    <a href="/#" class="text-secondary"><b>Privacy Policy</b></a>
                                 </div>
                                 <div>
                                     <a href="/termsAndCondtions" class="text-secondary"><b>Terms and Condition</b></a>
