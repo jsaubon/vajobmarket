@@ -19,29 +19,29 @@
                 <div class="text-justify">
                     <p><b>1.) What Is a Virtual Assistant? </b></p>
                     <p>A virtual assistant is an independent contractor who provides administrative services to clients while operating outside of the client's office. They typically operate from a home-office but have complete access with the necessary planning documents, such as shared calendars, mailboxes, files, etc. People employed as virtual assistants often have several years of experience as an administrative assistant or office manager. However, new opportunities are opening up for virtual assistants who are skilled in social media, content management, blog post writing, graphic design, and Internet marketing. <br><br>
-                
+
                     As working from home has become more accepted for both workers and employers, the demand for skilled virtual assistants is expected to grow.
                 </p>
                     <p><b>2.) When Should I Hire a Virtual Assistant? </b></p>
-                    <p>Anytime is a good time to add another skilled professional to your team. You might especially want to hire a virtual assistant if: 
-                        
-                        <li>Overwhelmed with your current workload</li>
-                        <li>More paperwork than you/your staff can handle</li>
-                        <li>Desire to utilize your time more productively</li>
-                        <li>Can’t afford another full-time hire</li>
-                        <li>Don’t have the skills to perform something with your skillset</li>
+                    <p>Anytime is a good time to add another skilled professional to your team. You might especially want to hire a virtual assistant if:
+
+                        <p>Overwhelmed with your current workload</p>
+                        <p>More paperwork than you/your staff can handle</p>
+                        <p>Desire to utilize your time more productively</p>
+                        <p>Can’t afford another full-time hire</p>
+                        <p>Don’t have the skills to perform something with your skillset</p>
 
                     </p>
                     <p><b>3.) Benefits of Having a Virtual Assistant</b></p>
-                        
-                        <li>A virtual assistant is a self-employed worker who specializes in offering administrative services to clients from a remote location, usually a home office.</li>
-                        <li>Typical tasks include scheduling appointments, making phone calls, making travel arrangements, and managing email accounts.</li>
-                        <li>Some specialize in offering graphic design, blog writing, bookkeeping, social media, and marketing services.</li>
-                        <li>Increased productivity as virtual assistants tend to be more focused even at home, dedicate their time in accomplishing tasks and put premium with the number one goal of client satisfaction.</li>
-                        <li>Greater flexibility as they would be working based on your schedule and would make themselves readily available when needed.</li>
-                        <li>Improved work quality as you get the luxury of focusing on business essentials while your VA takes on administrative and/or skill-specific tasks.</li>
-                        <li>Another advantage of hiring a virtual assistant is the flexibility to contract only for specific services, which also reduces labor costs rather than hiring a full-time employee and avoids you from risk in scaling operations.</li>
-                   
+
+                        <p>A virtual assistant is a self-employed worker who specializes in offering administrative services to clients from a remote location, usually a home office.</p>
+                        <p>Typical tasks include scheduling appointments, making phone calls, making travel arrangements, and managing email accounts.</p>
+                        <p>Some specialize in offering graphic design, blog writing, bookkeeping, social media, and marketing services.</p>
+                        <p>Increased productivity as virtual assistants tend to be more focused even at home, dedicate their time in accomplishing tasks and put premium with the number one goal of client satisfaction.</p>
+                        <p>Greater flexibility as they would be working based on your schedule and would make themselves readily available when needed.</p>
+                        <p>Improved work quality as you get the luxury of focusing on business essentials while your VA takes on administrative and/or skill-specific tasks.</p>
+                        <p>Another advantage of hiring a virtual assistant is the flexibility to contract only for specific services, which also reduces labor costs rather than hiring a full-time employee and avoids you from risk in scaling operations.</p>
+
                 </div>
             </div>
 
@@ -144,7 +144,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </h2>
                     <p>
-                     
+
                     </p>
 
                     <p class="text-left">

@@ -42,13 +42,15 @@
 .small-nav {
     display: none;
     position: absolute;
-    right: 60px;
+    right: 184px;
     top: 54px;
     background-color: #ecf6ff;
     border-radius: 5px;
     width: 140px;
     cursor: pointer;
 }
+
+
 .small-nav ul {
     list-style: none;
     padding: 10px;
@@ -67,6 +69,8 @@
 .small-nav-list {
     background-color: #ecf6ff;
     cursor: pointer;
+    font-family: "Segoe UI","Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
+
 }
 .small-nav-list:hover {
     background-color: #6e6e6e;
@@ -96,4 +100,10 @@
 .bo-small-nav-link:hover {
     text-decoration: none;
     color: #ecf6ff !important;
+}
+
+@media screen and (max-width:1440px) {
+    .small-nav{
+        right: 60px;
+    }
 }

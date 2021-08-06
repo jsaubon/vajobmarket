@@ -122,4 +122,7 @@ class PageController extends Controller
     public function termsAndCondtions(){
         return view('primary-pages.legal.terms-and-conditions');
     }
+    public function privacyPolicy(){
+        return view('primary-pages.legal.privacy-policy');
+    }
 }
