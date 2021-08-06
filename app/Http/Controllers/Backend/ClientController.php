@@ -62,12 +62,14 @@ class ClientController extends Controller
             'user_id' => 'required'
         ]);
         
-        $data = Client::create($request->all());
+        $data = Client::updateOrCreate(['user_id' => $request->user_id],$request->all());
         $data = Client::where('user_id',$request->user_id)->first();
        
         return response()->json([
             'success' => true,
             'data' => $data,
+
+            'req' => $request->all()
         ],200);
     }
 

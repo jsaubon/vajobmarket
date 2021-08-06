@@ -58,7 +58,8 @@ class ClientBillingDetailController extends Controller
             'client_id' => 'required',
         ]);
         
-        $data = ClientBillingDetail::create($request->all());
+
+        $data = ClientBillingDetail::updateOrCreate(['client_id' => $request->client_id],$request->all());
        
         return response()->json([
             'success' => true,

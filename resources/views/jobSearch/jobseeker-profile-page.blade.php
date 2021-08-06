@@ -368,7 +368,7 @@ $(document).ready(function() {
     }
 
     if(token) {
-        if(userdata.jobseeker) {
+        if(userdata.jobseeker.id == jobseeker_id) {
             $('.btn-edit').removeClass('hide');
         }
     }

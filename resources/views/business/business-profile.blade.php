@@ -65,6 +65,7 @@
             {{-- first--}}
             <div class="tab-pane h-auto fade show active" id="posts-pro" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container-fluid  pb-4">
+                    
                     <div class="row mx-auto">
                         <div class="col-md-2 pl-0">
                             Showing <span class="client_job_posts-per_page">-</span> posts out of <span class="client_job_posts-total">-</span>
@@ -97,9 +98,9 @@
             {{-- second --}}
             <div class="tab-pane fade" id="company-pro" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="container ">
-                    <div class="row my-3">
+                    <div class="row my-3 btn-edit hide" >
                         <div class="col-md-12 d-flex justify-content-end">
-                            <!-- <a class="btn btn-light back-btn" style="border-radius: 50px; font-family: 'oswald',san-serif;" href="/BusinessProfilePersonal">Edit</a> -->
+                            <a class="btn mr-2 btn-light back-btn" style="border-radius: 50px;" href="/BusinessProfilePersonal">Edit</a>
                         </div>
                     </div>
                     <div class="card p-4">
@@ -208,6 +209,12 @@ $(document).ready(function() {
             client_id = userdata.client.id;
         } else {
             window.location.href = '/';
+        }
+    }
+
+    if(token) {
+        if(userdata.client.id == client_id) {
+            $('.btn-edit').removeClass('hide');
         }
     }
 
