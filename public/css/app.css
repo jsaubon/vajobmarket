@@ -138,6 +138,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-top: 18rem;
 }
 
 .frontSection-2 .leftColumn img {
@@ -187,6 +188,8 @@
 .frontSection-2 .rightColumn .card {
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  max-height: 609px;
+  min-width: 517px;
 }
 
 .frontSection-2 .rightColumn .card h2,
@@ -238,22 +241,25 @@
   background-position: center;
   background-size: cover;
   filter: grayscale(100%);
-  padding: 100px;
+  padding: 50px;
+  background-attachment: fixed;
 }
 
-.frontSection-3 .inner {
-  padding: 5rem 24rem;
-}
-
-.frontSection-3 .inner h2,
-.frontSection-3 .inner .h2 {
-  font-size: 80px;
+.frontSection-3 h2,
+.frontSection-3 .h2 {
+  font-size: 4rem;
   color: #fff;
-  letter-spacing: -5px;
 }
 
 .frontSection-4 {
   background-color: white;
+}
+
+.frontSection-4 h2,
+.frontSection-4 .h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #525151;
 }
 
 .frontSection-4 .row {
@@ -537,6 +543,42 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .frontSection-2 .leftColumn {
+    margin: 18rem auto 0px auto;
+  }
+
+  .frontSection-2 .leftColumn img {
+    left: -348px;
+    height: 704px;
+  }
+
+  .frontSection-2 .leftColumn .opacity_div {
+    height: 262px;
+    width: 266px;
+    left: 139px;
+    opacity: 0.6;
+  }
+
+  .frontSection-2 .leftColumn h2,
+  .frontSection-2 .leftColumn .h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 3rem;
+    max-width: 33rem;
+  }
+
+  .frontSection-2 .leftColumn p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    max-width: 33rem;
+  }
+
+  .frontSection-2 .rightColumn {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .frontSection-1 h1,
   .frontSection-1 .h1 {
@@ -589,6 +631,8 @@
   .frontSection-2 .rightColumn {
     padding: 1rem;
     position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   .frontSection-2 .rightColumn h2,
@@ -647,6 +691,26 @@
     width: 30rem;
     padding: 0px;
   }
+
+  .frontSection-2 h2,
+  .frontSection-2 .h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 3rem;
+    max-width: 48rem !important;
+  }
+
+  .frontSection-2 img {
+    left: -229px !important;
+    height: 704px;
+  }
+
+  .frontSection-2 .opacity_div {
+    height: 262px;
+    width: 266px;
+    left: 139px;
+    opacity: 0.6;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -686,6 +750,61 @@
     width: 26rem;
     padding: 12px;
   }
+
+  .frontSection-2 .leftColumn {
+    margin: 18rem auto 0px auto;
+  }
+
+  .frontSection-2 .leftColumn img {
+    left: -410px;
+    height: 704px;
+  }
+
+  .frontSection-2 .leftColumn .opacity_div {
+    height: 262px;
+    width: 266px;
+    left: 139px;
+    opacity: 0.6;
+  }
+
+  .frontSection-2 .leftColumn h2,
+  .frontSection-2 .leftColumn .h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 3rem;
+    max-width: 45rem;
+  }
+
+  .frontSection-2 .leftColumn p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    max-width: 33rem;
+  }
+
+  .frontSection-2 .rightColumn {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .frontSection-2 .rightColumn h2,
+  .frontSection-2 .rightColumn .h2 {
+    font-size: 18px;
+  }
+
+  .frontSection-2 .rightColumn h4,
+  .frontSection-2 .rightColumn .h4 {
+    line-height: 30px;
+  }
+
+  .frontSection-2 .rightColumn p {
+    font-size: 18px !important;
+  }
+
+  .frontSection-2 .rightColumn span {
+    padding: 0rem 2rem !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -723,7 +842,19 @@
   }
 
   .frontSection-2 .leftColumn {
-    margin-top: 3rem !important;
+    margin-top: 18rem !important;
+  }
+
+  .frontSection-2 .leftColumn img {
+    left: -285px !important;
+    height: 632px;
+  }
+
+  .frontSection-2 .leftColumn .opacity_div {
+    height: 262px;
+    width: 266px;
+    left: 139px;
+    opacity: 0.6;
   }
 
   .frontSection-2 .rightColumn span {
@@ -798,6 +929,12 @@
     overflow-x: auto;
     white-space: nowrap;
     padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1179px) {
+  .terms-section .w-75 {
+    width: 100% !important;
   }
 }
 

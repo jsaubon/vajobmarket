@@ -119,4 +119,7 @@ class PageController extends Controller
 
         return view('welcome', $metaData);
     }
+    public function termsAndCondtions(){
+        return view('primary-pages.legal.terms-and-conditions');
+    }
 }

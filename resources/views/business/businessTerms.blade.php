@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid h-auto business-landing-container">
     <div class="container d-flex flex-column justify-content-center h-100" style="padding-top: 100px;">
-        <div class="row h-100">
+        <div class="row"  style="min-height: 60vh; !important">
                 <div class="col-md-6">
 
                     <img src="{{URL::to('/images/BO-Onboarding/try2.jpg')}}" alt="" class="img-fluid shadow">
