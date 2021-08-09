@@ -68,15 +68,18 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="form-group">
+                                    <label class="mb-0 label-forms text-capitalize">title</label>
                                     <input type="text" class="form-control personal-info-forms-items" name="skills[1][title]" placeholder="Title">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
+                                    <label class="mb-0 label-forms text-capitalize">experience</label>
                                     <input type="text" class="form-control personal-info-forms-items" name="skills[1][experience]" placeholder="Experience">
                                 </div>
                             </div>
                             <div class="col-md-2 ">
+                                <label class="mb-0 label-forms text-capitalize">proficiency</label>
                                 <select class="form-control personal-info-forms-items"  name="skills[1][proficiency]">
                                     <option>Proficiency</option>
                                     <option>Beginner</option>

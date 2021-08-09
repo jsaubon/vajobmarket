@@ -39,12 +39,20 @@
                     <div class="tab-pane fade show active" id="business-in" role="tabpanel" aria-labelledby="home-tab">
                         <div class="p-5">
                             <form id="form_bo">
-                                <div class="d-flex">
+                                <div class="d-flex ">
                                 <div class="email-logo"></div>
-                                <input type="text" required class="bo_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                                    <div class="form-group  w-100">
+                                        <label class="mb-0">Email address</label>
+                                        <input  type="text" required class="bo_email pt-0 form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                               
+                                    </div>
                                 </div>
-                                <input type="password" required class="bo_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <div id="signin_error_bo" class="hide">
+                                <div class="form-group  w-100">
+                                    <label class="mb-0">Password</label>
+                                    <input type="password" required class="bo_password pt-0 form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
+                              
+                                </div>
+                                 <div id="signin_error_bo" class="hide">
                                     <div class="alert alert-danger" id="signin_error_bo_message"  role="alert">
                                     </div>
                                 </div>
@@ -87,10 +95,16 @@
                             <form id="form_js">
                                 <div class="d-flex">
                                 <div class="email-logo"></div>
-                                <input type="text" class="js_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                                <div class="form-group  w-100">
+                                    <label class="mb-0">Email address</label>
+                                    <input type="text" class="js_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
-                                <input type="password" class="js_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <div id="signin_error_js" class="hide">
+                                </div>
+                                <div class="form-group  w-100">
+                                    <label class="mb-0">Password</label>
+                                    <input type="password" class="js_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
+                                </div>
+                                    <div id="signin_error_js" class="hide">
                                     <div class="alert alert-danger" id="signin_error_js_message"  role="alert">
                                     </div>
                                 </div>

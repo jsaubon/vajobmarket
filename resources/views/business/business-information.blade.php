@@ -62,16 +62,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">business name</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="business_name" placeholder="Business Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">business owner name</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="business_owner_name" placeholder="Business Owner Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">type of business</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="type_of_business"  placeholder="Type of Business">
                               </div>
                         </div>
@@ -80,16 +83,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">address</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="address1"  placeholder="Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">Apartment, Suite, etc </label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="address2" placeholder="Apartment, Suite, etc">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">city</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="city" placeholder="City">
                             </div>
                         </div>
@@ -98,16 +104,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">state / province</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="state" placeholder="State / Province">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">cpuntry</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="country"  placeholder="Country">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">zip / [postal]</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="zip" placeholder="Zip / Postal">
                               </div>
                         </div>
@@ -116,16 +125,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">email</label>
                                 <input type="email" class="form-control personal-info-forms-items"  name="email" placeholder="E-mail Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">mobile number</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="mobile_no" placeholder="Mobile Number">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">phone number</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="phone_no"  placeholder="Phone Number">
                               </div>
                         </div>
