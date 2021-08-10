@@ -47,4 +47,7 @@ class AboutController extends Controller
 
         return view('primary-pages.about.index', $metaData);
     }
+    public function jsAboutUs(){
+        return view('primary-pages.about.js-about');
+    }
 }

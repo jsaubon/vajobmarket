@@ -3,6 +3,7 @@
 .frontSection-5,
 .frontSection-6,
 .aboutSection-1,
+.js-aboutSection-1,
 .pricingSection-1,
 .pricingSection-2 {
   padding: 100px 200px !important;
@@ -329,6 +330,20 @@
 
 .aboutSection-1 h2,
 .aboutSection-1 .h2 {
+  border-right: 2px solid !important;
+}
+
+.js-aboutSection-1 {
+  background: url(/images/js-about-s1.jpg?9f416c8d305c313a378be0f55a97df76);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
+.js-aboutSection-1 h2,
+.js-aboutSection-1 .h2 {
   border-right: 2px solid !important;
 }
 
@@ -940,6 +955,25 @@
 .fixed-width {
   min-width: 304px;
   min-height: 360px;
+}
+
+.main-nav-dropdown {
+  background: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(14.5px) !important;
+  -webkit-backdrop-filter: blur(13.5px) !important;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+.main-nav-dropdown a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.9px;
+  color: #007bff;
+  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.357272);
 }
 
 @media screen and (max-width: 1920px) {
