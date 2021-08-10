@@ -39,8 +39,8 @@
                          </div>
                     </div>
                     <div class="container-fluid d-flex justify-content-center ">
-                        <a class="btn btn-light back-btn mx-2" href="#">Back</a>
-                        <a class="btn btn-primary proceed-btn" href="/businessPersonalInfo">Proceed Next</a>
+                        <a class="btn btn-light back-btn mx-2" href="/signup?type=bo">Back</a>
+                        <a class="btn btn-primary proceed-btn" href="#">Proceed Next</a>
                     </div>
 
                 </div>
@@ -50,11 +50,19 @@
 
 </div>
 <script>
-    let token = localStorage.token;
-    let userdata = localStorage.userdata ? JSON.parse(localStorage.userdata) : null;
+    // let token = localStorage.token;
+    // let userdata = localStorage.userdata ? JSON.parse(localStorage.userdata) : null;
     if(!token) {
         window.location.href = '/signup';
     }
+
+    $('body').on('click','.proceed-btn', function(e) {
+        e.preventDefault();
+        let agree = $('#business-agree')[0].checked;
+        if(agree) {
+            location.href = '/businessPersonalInfo';
+        }
+    })
 </script>
 @endsection
 
