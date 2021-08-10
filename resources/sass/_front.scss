@@ -7,12 +7,13 @@
 .frontSection-6,
 
 .aboutSection-1,
-.js-aboutSection-1,
+.js-aboutSection-1
 // .aboutSection-3,
 // .aboutSection-4,
 
-.pricingSection-1,
-.pricingSection-2 {
+// .pricingSection-1,
+// .pricingSection-2 
+{
     padding: 100px 200px !important;
 }
 
@@ -1116,10 +1117,15 @@
     font-size: 18px;
     line-height: 23px;
     letter-spacing: -.9px;
-    color: #007bff;
+    color: #000000 !important;
     text-shadow: 0 2px 4px rgba(71,97,206,.357272);
+    text-transform: capitalize;
    
 }
+.main-nav-dropdown a:hover{
+    color: #0777f0 !important;
+}
+
 @media screen and (max-width: 1920px ) {
     .specialized-sm{
         overflow-x: auto;

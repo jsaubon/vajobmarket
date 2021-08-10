@@ -257,27 +257,27 @@
 
                                 <div class="my-4 py-4"></div>
                                         <div class="card p-4 shadow h-auto mx-0 mx-lg-auto m-xl-0" style="z-index: 3">
-                                            <h2>
+                                            {{-- <h2>
                                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                            </h2>
-                                            <p>
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                            </h2> --}}
+                                            {{-- <p style="font-size:1.2rem;">
+                                                VA Job Market is simple, straightforward, and efficient. 
+                                                Our database is updated every hour with thousands of new positions. 
+                                                We have a wide variety of online jobs depending on every candidate’s skill set.
 
-                                            </p>
-
-                                            <p class="text-left">
+                                            </p> --}}
+                                            <blockquote class="blockquote">
+                                                <p class="mb-2">
+                                                    VA Job Market is simple, straightforward, and efficient. 
+                                                    Our database is updated every hour with thousands of new positions. 
+                                                    We have a wide variety of online jobs depending on every candidate’s skill set.
+                                                </p>
+                                                <footer class="blockquote-footer">Kenn Collier<cite title="Source Title"> Chief Executive Officer iHrBuddy</cite></footer>
+                                              </blockquote>
+                                            {{-- <p class="text-left">
                                                 <span>Kenn Collier</span><br>
                                                 Chief Executive Officer
-                                            </p>
+                                            </p> --}}
                                             <div class="my-4 py-4"></div>
                                             <div class="my-4 py-4"></div>
                                             <div class="my-4 py-4"></div>

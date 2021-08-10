@@ -206,7 +206,7 @@ $obj = [
                         <?php
                     } else {
                         ?>
-                        <a href="<?= $obj[$row] ?>" style="font-size:20px;" class=" col-md-12 nav-burger d-flex justify-content-center py-4  text-light navitems my-auto text-decoration-none"><small><b><?= $row ?></b></small></a>
+                        <a href="<?= $obj[$row] ?>" style="font-size:20px;" class="btn btn-outline-secondary rounded my-1 col-md-12 nav-burger d-flex justify-content-center py-4  text-light navitems  text-decoration-none"><small><b><?= $row ?></b></small></a>
 
                         <?php
                     }
