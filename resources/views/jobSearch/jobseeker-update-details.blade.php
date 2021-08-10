@@ -145,15 +145,18 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-5">'+
                                 '<div class="form-group">'+
+                                    '  <label class="mb-0 label-forms text-capitalize">name of school</label>'+
                                     '<input type="hidden" class="form-control profile-info-forms-items" name="educations['+(key+1)+'][id]" value="'+education.id+'">'+
                                     '<input type="text" class="form-control profile-info-forms-items" name="educations['+(key+1)+'][name_of_school]" value="'+education.name_of_school+'" placeholder="Name of School">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-3">'+
+                                '  <label class="mb-0 label-forms text-capitalize">year graduated</label>'+
                                 '<input type="text" class="form-control profile-info-forms-items" name="educations['+(key+1)+'][year_graduated]" value="'+education.year_graduated+'" placeholder="Year Graduated">'+
                             '</div>'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                    '  <label class="mb-0 label-forms text-capitalize">course graduated</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" name="educations['+(key+1)+'][course_graduated]"  value="'+education.course_graduated+'" placeholder="Course Graduated">'+
                                 '</div>'+
                             '</div>'+
@@ -169,12 +172,14 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                    '  <label class="mb-0 label-forms text-capitalize">social media / website</label>'+
                                     '<input type="hidden" class="form-control profile-info-forms-items" name="references['+(key+1)+'][id]" value="'+reference.id+'" >'+
                                     '<input type="text" class="form-control profile-info-forms-items" name="references['+(key+1)+'][website]" value="'+reference.website+'" placeholder="Website">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-8">'+
                                 '<div class="form-group">'+
+                                '  <label class="mb-0 label-forms text-capitalize">Url / Link here</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" name="references['+(key+1)+'][link]" value="'+reference.link+'" placeholder="Enter URL/Link here">'+
                                 '</div>'+
                             '</div>'+
@@ -189,17 +194,21 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                    '  <label class="mb-0 label-forms text-capitalize">language</label>'+
                                     '<input type="hidden" name="languages['+(key+1)+'][id]" value="'+language.id+'">'+
                                     '<input type="text" class="form-control profile-info-forms-items" name="languages['+(key+1)+'][language]" value="'+language.language+'" placeholder="Type Language">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                    
+                                    '  <label class="mb-0 label-forms text-capitalize">written proficiency</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" name="languages['+(key+1)+'][written_proficiency]" value="'+language.written_proficiency+'" placeholder="Writted Proficiency">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                '<label class="mb-0 label-forms text-capitalize">oral proficiency</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" name="languages['+(key+1)+'][oral_proficiency]" value="'+language.oral_proficiency+'" placeholder="Oral Proficiency">'+
                                 '</div>'+
                             '</div>'+
@@ -214,19 +223,23 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                '<label class="mb-0 label-forms text-capitalize">company name</label>'+
                                     '<input type="hidden" name="experiences['+(key+1)+'][id]" value="'+experience.id+'">'+
                                     '<input type="text" class="form-control profile-info-forms-items" name="experiences['+(key+1)+'][company_name]" value="'+experience.company_name+'" placeholder="Company Name">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                '<label class="mb-0 label-forms text-capitalize">job description</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" name="experiences['+(key+1)+'][job_description]" value="'+experience.job_description+'" placeholder="Job Description">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-2">'+
+                                '<label class="mb-0 label-forms text-capitalize">from</label>'+
                                 '<input type="date" class="form-control profile-info-forms-items" name="experiences['+(key+1)+'][from_date]" value="'+experience.from_date+'" placeholder="From Date">'+
                             '</div>'+
                             '<div class="col-md-2">'+
+                            '<label class="mb-0 label-forms text-capitalize">until</label>'+
                                 '<input type="date" class="form-control profile-info-forms-items" name="experiences['+(key+1)+'][to_date]" value="'+experience.to_date+'" placeholder="To Date">'+
                             '</div>'+
                         '</div>'+
@@ -247,6 +260,7 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-6">'+
                                 '<div class="form-group">'+
+                                '<label class="mb-0 label-forms text-capitalize">title</label>'+
                                     '<input type="hidden"  value="'+specialized_skill.id+'" name="skills['+(key+1)+'][id]">'+
                                     '<input type="text" class="form-control personal-info-forms-items" value="'+specialized_skill.title+'" name="skills['+(key+1)+'][title]" placeholder="Title">'+
                                 '</div>'+
@@ -255,9 +269,11 @@ $(document).ready(function() {
 
                             '</div>'+
                             '<div class="col-md-2 ">'+
+                            '<label class="mb-0 label-forms text-capitalize">experience</label>'+
                                 '<input type="text" class="form-control personal-info-forms-items" value="'+specialized_skill.experience+'" name="skills['+(key+1)+'][experience]" placeholder="Experience">'+
                             '</div>'+
                             '<div class="col-md-2 ">'+
+                            '<label class="mb-0 label-forms text-capitalize">proficiency</label>'+
                                 '<select class="form-control profile-info-forms-items" name="skills['+(key+1)+'][proficiency]">'+
                                     '<option value="" >Proficiency</option>'+
                                     '<option value="Beginner" '+(specialized_skill.proficiency == 'Beginner' ? 'selected' : '')+'>Beginner</option>'+

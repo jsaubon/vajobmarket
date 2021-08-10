@@ -24,15 +24,6 @@
         width: 100vw;
         position: fixed;
         background: var(--clr-dark);
-
-           /* glassmorphism */
-        /* background: rgba( 48, 48, 48, 0.50 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 11.5px );
-        -webkit-backdrop-filter: blur( 11.5px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-
         color: var(--clr-light);
         top: 0;
         bottom: 0;
@@ -143,7 +134,7 @@
     $brand = ["JOB MARKET" => "/"];
     $navBrand = array_keys($brand);
     $obj = [
-        "ABOUT" => "#about",
+        "ABOUT" => "/about",
         "SOLUTION" => "#solution",
         "PRICING" => "/pricing",
         "BLOGS" => "#blogs",

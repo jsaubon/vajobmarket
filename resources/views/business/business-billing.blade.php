@@ -66,12 +66,14 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">card number</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="card_number" placeholder="Card Number">
                               </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">card type</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="card_type" placeholder="VISA">
                               </div>
                         </div>
@@ -82,6 +84,7 @@
                             <label class="personal-info-forms-items" style="border:0 !important;">Expiration</label>
                         </div>
                         <div class="col-md-4">
+                            <label class="mb-0 label-forms text-capitalize">Month</label>
                             <select class="form-control personal-info-forms-items"  name="exp_date_month">
                                 <option>Month</option>
                                 <?php for ($i=1; $i < 12; $i++) {  ?>
@@ -90,6 +93,7 @@
                               </select>
                         </div>
                         <div class="col-md-4">
+                            <label class="mb-0 label-forms text-capitalize">year</label>
                             <select class="form-control personal-info-forms-items"  name="exp_date_year">
                                 <option>Year</option>
                                 <?php for ($i=(int)date('Y')+20; $i > (int)date('Y') ; $i--) {  ?>
@@ -101,12 +105,14 @@
                     <div class="row pt-1">
                         <div class="col-md-8">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">card holder's name</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="cardholder_name"  placeholder="Card Holder's Name">
                               </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-uppercase">cvv</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="cvv" placeholder="CVV">
                               </div>
                         </div>
@@ -115,6 +121,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">billing address</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="billing_address" placeholder="Billing Adress">
                               </div>
                         </div>
@@ -122,12 +129,14 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">city</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="billing_city"  placeholder="City">
                             </div>
                           
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">zip / postal</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="billing_zip"  placeholder="Zip / Postal">
                             </div>
                         </div>
@@ -138,6 +147,7 @@
                         </div>
                         <div class="col-md-10">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">country</label>
                                 <input type="text" class="form-control personal-info-forms-items"  name="billing_country"  placeholder="Country">
                             </div>
                            

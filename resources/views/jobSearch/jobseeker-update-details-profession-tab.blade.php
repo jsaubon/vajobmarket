@@ -7,17 +7,20 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" class="form-control personal-info-forms-items" name="job_title" placeholder="Job title">
+                            <label class="mb-0 label-forms text-capitalize">job title</label>
+                            <input type="text" class="form-control profile-info-forms-items" name="job_title" placeholder="Job title">
                             </div>
                     </div>
                     <div class="col-md-2">
                         <div class="form-group">
-                            <input type="text" class="form-control personal-info-forms-items" name="availability" placeholder="Availability">
+                            <label class="mb-0 label-forms text-capitalize">availability</label>
+                            <input type="text" class="form-control profile-info-forms-items" name="availability" placeholder="Availability">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <input type="text" class="form-control personal-info-forms-items" name="salary" placeholder="Asking Rate/Hr or Rate/Month">
+                            <label class="mb-0 label-forms text-capitalize">asking rate/hr or rate/month</label>
+                            <input type="text" class="form-control profile-info-forms-items" name="salary" placeholder="Asking Rate/Hr or Rate/Month">
                         </div>
                     </div>
                 </div>
@@ -35,11 +38,13 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" name="languages[1][language]" placeholder="Language">
+                                <label class="mb-0 label-forms text-capitalize">language</label>
+                                <input type="text" class="form-control profile-info-forms-items" name="languages[1][language]" placeholder="Language">
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <select class="form-control personal-info-forms-items" name="languages[1][written_proficiency]">
+                            <label class="mb-0 label-forms text-capitalize">Written proficiency</label>
+                            <select class="form-control profile-info-forms-items" name="languages[1][written_proficiency]">
                                 <option>Written Proficiency</option>
                                 <option>Beginner</option>
                                 <option>Advanced</option>
@@ -47,7 +52,8 @@
                             </select>
                         </div>
                         <div class="col-md-4">
-                            <select class="form-control personal-info-forms-items" name="languages[1][oral_proficiency]">
+                            <label class="mb-0 label-forms text-capitalize">oral proficiency</label>
+                            <select class="form-control profile-info-forms-items" name="languages[1][oral_proficiency]">
                                 <option>Oral Proficiency</option>
                                 <option>Beginner</option>
                                 <option>Advanced</option>
@@ -68,6 +74,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">company name</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="experiences[1][company_name]" placeholder="Company Name">
                             </div>
                         </div>
@@ -222,6 +229,7 @@ $(document).ready(function() {
             <div class="row">\
                 <div class="col-md-4">\
                     <div class="form-group">\
+                        <label class="mb-0 label-forms text-capitalize">language</label>\
                         <input type="text" class="form-control personal-info-forms-items" name="languages['+(rows+1)+'][language]" placeholder="Select Language">\
                     </div>\
                 </div>\
@@ -252,6 +260,7 @@ $(document).ready(function() {
             <div class="row">\
                 <div class="col-md-4">\
                     <div class="form-group">\
+                        <label class="mb-0 label-forms text-capitalize">company name</label>\
                         <input type="text" class="form-control personal-info-forms-items" name="experiences['+(rows+1)+'][company_name]" placeholder="Company Name">\
                     </div>\
                 </div>\

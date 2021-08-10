@@ -74,16 +74,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms">First Name</label>
                                 <input type="text" name="firstname" class="form-control personal-info-forms-items"  placeholder="First Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">middle Name</label>
                                 <input type="text" name="middlename" class="form-control personal-info-forms-items" placeholder="Middle Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">last Name</label>
                                 <input type="text" name="lastname" class="form-control personal-info-forms-items"  placeholder="Last Name">
                               </div>
                         </div>
@@ -94,6 +97,7 @@
                             <label class="personal-info-forms-items" style="border:0 !important;">Date of Birth</label>
                         </div>
                         <div class="col-md-2">
+                            <label class="mb-0 label-forms text-capitalize">month</label>
                             <select class="form-control personal-info-forms-items" name="dob_month">
                                 <option>Month</option>
                                 <?php for ($i=1; $i <= 12; $i++) {  ?>
@@ -102,6 +106,7 @@
                               </select>
                         </div>
                         <div class="col-md-2">
+                            <label class="mb-0 label-forms text-capitalize">date</label>
                             <select class="form-control personal-info-forms-items" name="dob_date">
                                 <option>Date</option>
                                 <?php for ($i=1; $i <= 31; $i++) {  ?>
@@ -110,6 +115,7 @@
                             </select>
                         </div>
                         <div class="col-md-2">
+                            <label class="mb-0 label-forms text-capitalize">year</label>
                             <select class="form-control personal-info-forms-items" name="dob_year">
                                 <option>Year</option>
                                 <?php for ($i=(int)date('Y'); $i > (int)date('Y') - 70; $i--) {  ?>
@@ -119,6 +125,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">nationality</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="nationality"  placeholder="Nationality">
                               </div>
                         </div>
@@ -126,16 +133,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">address</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="address1"  placeholder="Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">Apartment, Suite, etc.</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="address2"  placeholder="Apartment, Suite, etc.">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">City</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="city" placeholder="City">
                               </div>
                         </div>
@@ -143,16 +153,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">state / province</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="state" placeholder="State / Province">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">country</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="country"  placeholder="Country">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">zip / postal</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="zip" placeholder="Zip / Postal">
                               </div>
                         </div>
@@ -161,16 +174,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">email adress</label>
                                 <input disabled type="email" class="form-control personal-info-forms-items" name="email" placeholder="E-mail Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">mobile number</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="mobile_no" placeholder="Mobile Number">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">phone number</label>
                                 <input type="text" class="form-control personal-info-forms-items" name="phone_no"  placeholder="Phone Number">
                               </div>
                         </div>

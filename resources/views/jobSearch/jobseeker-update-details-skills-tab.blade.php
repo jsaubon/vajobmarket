@@ -9,12 +9,12 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" name="skills[1][title]" placeholder="Title">
+                                <input type="text" class="form-control profile-info-forms-items" name="skills[1][title]" placeholder="Title">
                             </div>
                         </div>
                         <div class="col-md-2">
                             <div class="form-group">
-                                <input type="text" class="form-control personal-info-forms-items" name="skills[1][experience]" placeholder="Experience">
+                                <input type="text" class="form-control profile-info-forms-items" name="skills[1][experience]" placeholder="Experience">
                             </div>
                         </div>
                         <div class="col-md-2 ">

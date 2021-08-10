@@ -89,6 +89,7 @@
                                                     <input type="password" required name="new_password" placeholder="New password" class="form-control border-left-0  border-right-0 bo_password form-control border-top-0 rounded-0 password-style" aria-label="Dollar amount (with dot and two decimal places)">
                                                 </div>
                                                 <div class="input-group mb-3">
+                                                    
                                                     <span class="input-group-text border-secondary border-left-0 border-right-0  bg-white border-top-0  rounded-0">
                                                         <i class="fas fa-lock"></i>
                                                     </span>
