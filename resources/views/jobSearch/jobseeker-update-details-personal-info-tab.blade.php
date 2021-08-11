@@ -1,6 +1,23 @@
             <div class="tab-pane fade show active" id="first-choice" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container ">
                     <div class="card p-4 shadow">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="logo-container text-center">
+                                        <img src="" style="height: 94px; width: 96px;margin-bottom: 0px" class="hide"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 px-auto">
+                                    <div class="h-100 d-flex flex-column justify-content-center">
+                                        <p style=" font-size: 10px; color:#646464; opacity:0.5;">Upload an image of your logo</p>
+                                        <button class="browse-logo " type="button" id="btn_jobseeker_logo">Browse</button>
+
+                                        <input type="file" accept="image/*" id="input_jobseeker_logo" class="hide"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="container">
                             {{-- personal-info --}}
@@ -200,6 +217,34 @@
 
 <script>
 
+$('#btn_jobseeker_logo').on('click', function() {
+    $('#input_jobseeker_logo').trigger('click');
+});
+
+$('#input_jobseeker_logo').on('change', function() {
+    var file = $(this).prop('files')[0];
+    // console.log(files);
+
+    var reader = new FileReader();
+    reader.readAsBinaryString(file);
+
+    reader.onload = function() {
+        let logo = btoa(reader.result);
+        console.log('logo',logo);
+        updateData('/api/JobSeeker/'+userdata.jobseeker.id, {logo: logo}, ({data:res})  =>{
+            console.log(res);
+            $('.logo-container').find('img').removeClass('hide');
+            $('.logo-container').find('img').attr('src','/storage/'+res.data.jobseeker_photo);
+            window.location.reload();
+        });
+    };
+    reader.onerror = function() {
+        console.log('there are some problems');
+    };
+
+
+
+});
 
 $(document).ready(function() {
         $('[name="email"]').val(userdata.email);

@@ -365,11 +365,16 @@ $(document).ready(function() {
         } else {
             window.location.href = '/';
         }
-    }
+    } 
+        
 
     if(token) {
-        if(userdata.jobseeker.id == jobseeker_id) {
+        if(userdata.jobseeker && userdata.jobseeker.id == jobseeker_id) {
             $('.btn-edit').removeClass('hide');
+        }
+
+        if(userdata.jobseeker) {
+            $('.hire-me-btn').addClass('hide');
         }
     }
     if(jobseeker_id) {
@@ -389,7 +394,7 @@ $(document).ready(function() {
 
 
                 if(jobseeker_data.jobseeker_photo) {
-                    $('.jobseeker_profession-jobseeker_photo').attr('src',jobseeker_data.jobseeker_photo);
+                    $('.jobseeker-jobseeker_photo').attr('src',jobseeker_data.jobseeker_photo);
                 }
 
 

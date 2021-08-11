@@ -8,7 +8,7 @@
             <div class="banner-offset-items" style="top:300px !important;">
                 <a href="#" class="btn btn-danger hire-me-btn shadow d-flex flex-column justify-content-center">hire me</a>
                 <div class="profile-pic shadow">
-                    <img class="jobseeker_profession-jobseeker_photo" src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" />
+                    <img class="jobseeker-jobseeker_photo" src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" />
                 </div>
                 <div class="profile-name">
                     <h3 class="jobseeker-fullname">-</h3>

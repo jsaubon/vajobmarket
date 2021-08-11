@@ -251,7 +251,7 @@
 
             res.data.data.map((job_seeker) => {
                 let name = job_seeker.user.firstname+ ' ' + job_seeker.user.lastname;
-                let photo = job_seeker.job_seeker_photo ? job_seeker.job_seeker_photo : 'https://i.ibb.co/L1xT86W/profileworkers.jpg';
+                let photo = job_seeker.jobseeker_photo ? job_seeker.jobseeker_photo : 'https://i.ibb.co/L1xT86W/profileworkers.jpg';
                 $('#job_seekers_list').append('\
                     <div class="col-sm-3 m-2 p-0">\
                         <div class="card h-100 shadow p-4" style="border-radius: 20px;">\

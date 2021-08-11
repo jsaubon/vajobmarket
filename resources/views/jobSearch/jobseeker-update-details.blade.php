@@ -106,7 +106,9 @@ $(document).ready(function() {
 
 
                 if(jobseeker_data.jobseeker_photo) {
-                    $('.jobseeker_profession-jobseeker_photo').attr('src',jobseeker_data.jobseeker_photo);
+                    $('.jobseeker-jobseeker_photo').attr('src',jobseeker_data.jobseeker_photo);
+                    $('.logo-container').find('img').removeClass('hide');
+                    $('.logo-container').find('img').attr('src','/storage/'+jobseeker_data.jobseeker_photo);
                 }
 
 

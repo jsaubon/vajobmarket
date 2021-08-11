@@ -136,6 +136,29 @@ class JobSeekerController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+        if($request->logo) {
+            $data = JobSeeker::where('id',$id)->first();
+            if(!$data) {
+                $data = new JobSeeker();
+            }
+            
+            //Display File Name
+            $file_name = time().'.jpg';
+            //Move Uploaded File
+            $destinationPath = 'public/'.$file_name;
+            \Storage::disk('local')->put($destinationPath, base64_decode($request->logo));
+            
+            $data->jobseeker_photo = $file_name;
+            $data->save();
+            return response()->json([
+                'success' => true,
+                'data' => $data
+            ]);
+        }
+
+
+
         $data = JobSeeker::find($id);
 
         if (!$data) {
