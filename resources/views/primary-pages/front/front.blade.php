@@ -1,5 +1,6 @@
 @section('front')
-<section  id="carouselExampleIndicators" class=" frontSection-1 p-0 carousel slide carousel-fade  w-auto " data-ride="carousel">
+
+    <section  id="carouselExampleIndicators" class=" frontSection-1 p-0 carousel slide carousel-fade  w-auto " data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -311,22 +312,26 @@
 
 </section>
 
-<section class="frontSection-5">
-
-
+<section class="frontSection-5 h-auto p-4">
             <div class="container-fluid">
-                <h2>
-                    OUR TOP REMOTE WORKERS
-                </h2>
-                <p>
-                    Be with only the best. Meet our top performing Virtual Assistants, see how they love working remotely and how they will help you level up your business!
-                </p>
-
-                <div class="col text-center">
-                <button class="btn-fom">FIND OUT MORE</button>
-                </div>
-
                 <div class="row">
+                    <div class="col-12">
+                        <h2>
+                            OUR TOP REMOTE WORKERS
+                        </h2>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            Be with only the best. Meet our top performing Virtual Assistants, see how they love working remotely and how they will help you level up your business!
+                        </p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn-fom">FIND OUT MORE</button>
+                    </div>
+                </div>
+               
+
+                <div class="row mb-0">
                     <div class="col-md-3">
                         <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="" class="img-fluid img-circle">
                         <h4>
@@ -378,9 +383,9 @@
 
 </section>
 
-<section class="frontSection-6">
+<section class="frontSection-6 h-auto">
     <div class="row">
-        <div class="col-md-1 my-auto text-center">
+        <div class="col-md-1 my-auto text-right">
             <button  class="mx-auto rotate-button border-0 p-0 bg-transparent" >
                 <img  class="a-left" src="{{URL::to('/images/frontAssets/arrow-go-right@2x.png')}}" alt="">
             </button>
@@ -388,20 +393,50 @@
         <div class="col-md-10">
             <div class="container py-4">
 
-                @foreach($testimonials as $row)
                     <div class="row">
                         <div class="col-md-6 d-flex justify-content-center flex-column">
-                            <div class="{{ $row['img'] }}"> </div>
+                            <img src="{{URL::to('/images/frontAssets/blog-imag01@2x.png')}}" alt="">
                         </div>
                         <div class="col-md-6  d-flex justify-content-center flex-column">
-                            <h5><b>{{ $row['title'] }}</b></h5>
-                            <div class="d-flex justify-content-start">
-                                @foreach(array_keys($row['metaData']) as $data)
-                                <p class="p-2">Icon {{ $row['metaData'][$data] }}</p>
-                                @endforeach
+                              <div class="d-flex justify-content-start flex-column">
+                                <div class="row  w-75">
+                                    <div class="col-md-12">
+                                    <h5>
+                                        <b>
+                                            Our top ReWill Hiring a Virtual Assistant Help
+                                                you Survive this Crisis?
+                                        </b>
+                                    </h5>
+                                    </div>
+                                </div>
+                                <div class="row w-75">
+                                    <div class="col-md-3 pr-0">
+                                        <i class="fas fa-clock"></i>
+                                        1 hr ago
+                                    </div>
+                                    <div class="col-md-3">
+                                        <i class="fas fa-heart"></i>
+                                        609
+                                    </div>
+                                    <div class="col-md-3">
+                                        <i class="far fa-comment-dots"></i>
+                                        120
+                                    </div>
+                                    <div class="col-md-3">
+                                       <b class="text-uppercase"> share</b>
+                                    </div>
+                                </div>
+                                <div class="row w-75 pt-3">
+                                    <p>
+                                        the pandemic had made this year a tough year for all of us.
+                                        As everyone stays at home on lockdown, so are business. But as business owners,
+                                        we're also just humans that worry about our own family and want to take care
+                                        of them, but how dow we do such, without pausing our business?
+                                    </p>
+                                </div>
                             </div>
-                            <p> {{ $row['body'] }} </p>
-                            {{-- <div class="d-flex justify-content-between mt-5">
+                            {{-- <p> {{ $row['body'] }} </p>
+                            <div class="d-flex justify-content-between mt-5">
                                 <div class="d-flex">
                                     <img src="{{ $row['user']['img'] }}" class="userImg" />
                                     <span class="userContext">
@@ -412,10 +447,10 @@
                             </div> --}}
                         </div>
                     </div>
-                @endforeach
+                
             </div>
         </div>
-        <div class="col-md-1 my-auto text-center">
+        <div class="col-md-1 my-auto text-left">
             <button  class=" border-0 p-0 bg-transparent" >
                 <img class="a-right"src="{{URL::to('/images/frontAssets/arrow-go-right@2x.png')}}" alt="">
             </button>
@@ -426,13 +461,14 @@
 </section>
 
 
+
 <script>
     $('.btn-search').on('click', function() {
         let search = $('.input-search').val();
         window.location.href = '/jobs?search='+search;
     })
 
-
+    var testimonials = document
     // $('.carousel').carousel({
 
     // touch:true;

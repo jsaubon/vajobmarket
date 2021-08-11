@@ -128,7 +128,7 @@
     .hamburger::before { top: 6px; }
     .hamburger::after { bottom: 6px; }
 
-    @media screen and (max-width: 768px ) {
+    @media screen and (max-width: 1179px ) {
         .bo-nav-toggle {
         display:block;
         }
