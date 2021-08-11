@@ -7,9 +7,9 @@
 .frontSection-6,
 
 .aboutSection-1,
-.aboutSection-2,
-.aboutSection-3,
-.aboutSection-4,
+
+// .aboutSection-3,
+// .aboutSection-4,
 
 .pricingSection-1,
 .pricingSection-2 {
@@ -353,7 +353,7 @@
 }
 
 .aboutSection-2 {
-
+    padding: 60px 0px;
     h2 {
         border-right: 4px solid;
         padding-right: 46px;
@@ -363,10 +363,11 @@
         margin-left: 1rem;
     }
 
+
 }
 
 .aboutSection-3 {
-
+    padding: 60px 0px;
     h2 {
         font-size: 4rem;
         letter-spacing: -4px;
@@ -379,7 +380,8 @@
     .col-md-2 {
 
         img {
-            padding: 2rem 4rem !important;
+            height: 150px;
+            width: 150px;
         }
 
     }
@@ -393,28 +395,35 @@
 }
 
 .aboutSection-4 {
-    background: url('../../public/images/aboutAssets/bgimagemrkenn.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-color:#0a73da;
 
-
-    .col-md-6 {
-
-        margin-top: 12rem;
-        padding: 0rem 4rem;
-
-        .card {
-
-            padding: 4rem;
-        }
+    .container-fluid{
+        min-height: 100vh;
     }
 
+    // .col-md-6 {
+
+    //     // margin-top: 12rem;
+    //     // padding: 0rem 4rem;
+
+
+    // }
+    .card {
+        background: rgba( 255, 255, 255, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 2.5px );
+        -webkit-backdrop-filter: blur( 2.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 4rem !important;
+        color:#fff;
+
+        min-width: 400px;
+        // margin: -35px 423px;
+    }
 }
 
 .aboutSection-Testimonial {
-    padding: 1rem 23rem;
 
     .testimonial {
         padding: 2rem 1rem;
@@ -644,6 +653,12 @@
             display: none;
         }
 
+    }
+
+    .aboutSection-4{
+        .card{
+          width: 100%;
+        }
     }
 }
 
@@ -1026,6 +1041,9 @@
         padding: 2rem 0rem !important;
     }
 
+    .aboutSection-2{
+        padding: 30px 0px;
+    }
     .pricingSection-1 {
         padding:0rem 1rem !important;
 

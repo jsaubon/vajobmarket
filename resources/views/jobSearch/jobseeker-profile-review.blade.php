@@ -66,16 +66,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">first name</label>
                                 <input type="text" disabled name="personal_firstname" class="form-control personal-info-forms-items"  placeholder="First Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">middle name</label>
                                 <input type="text" disabled name="personal_middlename" class="form-control personal-info-forms-items" placeholder="Middle Name">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">last name</label>
                                 <input type="text" disabled name="personal_lastname" class="form-control personal-info-forms-items"  placeholder="Last Name">
                               </div>
                         </div>
@@ -92,6 +95,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">nationality</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="personal_nationality"  placeholder="Nationality">
                               </div>
                         </div>
@@ -99,16 +103,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">address</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="personal_address1"  placeholder="Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">apartment, suite, etc.</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="personal_address2"  placeholder="Apartment, Suite, etc.">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">city</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="personal_city" placeholder="City">
                               </div>
                         </div>
@@ -116,16 +123,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">state / province</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="personal_state" placeholder="State / Province">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">country</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="personal_country"  placeholder="Country">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">zip / postal</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="personal_zip" placeholder="Zip / Postal">
                               </div>
                         </div>
@@ -134,16 +144,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">email address</label>
                                 <input disabled type="email" class="form-control personal-info-forms-items" disabled name="personal_email" placeholder="E-mail Address">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">mobile number</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="personal_mobile_no" placeholder="Mobile Number">
                               </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">phone number</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="personal_phone_no"  placeholder="Phone Number">
                               </div>
                         </div>
@@ -170,16 +183,19 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">job title</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="profession_job_title" placeholder="Job title">
                             </div>
                         </div>
                         <div class="col-md-2">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">availability</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="profession_availability" placeholder="Availability">
                             </div>
                         </div>
                         <div class="col-md-2">
                             <div class="form-group">
+                                <label class="mb-0 label-forms text-capitalize">rate</label>
                                 <input type="text" class="form-control personal-info-forms-items" disabled name="profession_salary" placeholder="Rate">
                             </div>
                         </div>
@@ -276,16 +292,19 @@ $(document).ready(function() {
                     <div class="row">\
                         <div class="col-md-5">\
                             <div class="form-group">\
+                                <label class="mb-0 label-forms text-capitalize">name of school</label>\
                                 <input type="text" disabled class="form-control personal-info-forms-items"  value="'+edu.name_of_school+'" placeholder="Name of School">\
                             </div>\
                         </div>\
                         <div class="col-md-3">\
+                            <label class="mb-0 label-forms text-capitalize">year graduated</label>\
                             <select class="form-control personal-info-forms-items" disabled >\
                                 <option>'+edu.year_graduated+'</option>\
                             </select>\
                         </div>\
                         <div class="col-md-4">\
                             <div class="form-group">\
+                                <label class="mb-0 label-forms text-capitalize">course graduated</label>\
                                 <input type="text" disabled class="form-control personal-info-forms-items" value="'+edu.course_graduated+'" placeholder="Course Graduated">\
                             </div>\
                         </div>\
@@ -297,12 +316,14 @@ $(document).ready(function() {
                 $('#references_section').append('\
                     <div class="row">\
                         <div class="col-md-4">\
+                            <label class="mb-0 label-forms text-capitalize">social media / website</label>\
                             <select disabled class="form-control personal-info-forms-items" i>\
                                 <option>'+reference.website+'</option>\
                             </select>\
                         </div>\
                         <div class="col-md-8">\
                             <div class="form-group">\
+                                <label class="mb-0 label-forms text-capitalize">URL / Link</label>\
                                 <input type="text" disabled class="form-control personal-info-forms-items"  value="'+reference.link+'" placeholder="Enter URL/Link here">\
                             </div>\
                         </div>\
@@ -316,15 +337,18 @@ $(document).ready(function() {
                     <div class="row">\
                         <div class="col-md-4">\
                             <div class="form-group">\
+                                <label class="mb-0 label-forms text-capitalize">languange</label>\
                                 <input type="text" disabled class="form-control personal-info-forms-items" value="'+language.language+'" placeholder="Select Language">\
                             </div>\
                         </div>\
                         <div class="col-md-4">\
+                            <label class="mb-0 label-forms text-capitalize">written proficency</label>\
                             <select disabled class="form-control personal-info-forms-items"  >\
                                 <option>'+language.written_proficiency+'</option>\
                             </select>\
                         </div>\
                         <div class="col-md-4">\
+                            <label class="mb-0 label-forms text-capitalize">oral proficiency</label>\
                             <select disabled class="form-control personal-info-forms-items"  >\
                                 <option>'+language.oral_proficiency+'</option>\
                             </select>\
@@ -338,20 +362,24 @@ $(document).ready(function() {
                     <div class="row">\
                         <div class="col-md-4">\
                             <div class="form-group">\
+                                <label class="mb-0 label-forms text-capitalize">company name</label>\
                                 <input disabled type="text" class="form-control personal-info-forms-items" value="'+experience.company_name+'" placeholder="Company Name">\
                               </div>\
                         </div>\
                         <div class="col-md-4">\
                             <div class="form-group">\
+                                <label class="mb-0 label-forms text-capitalize">job description</label>\
                                 <input disabled type="text" class="form-control personal-info-forms-items" value="'+experience.job_description+'" placeholder="Job Description">\
                               </div>\
                         </div>\
                         <div class="col-md-2">\
+                            <label class="mb-0 label-forms text-capitalize">from</label>\
                             <select disabled class="form-control personal-info-forms-items "  >\
                                 <option>'+experience.from_date+'</option>\
                               </select>\
                         </div>\
                         <div class="col-md-2">\
+                            <label class="mb-0 label-forms text-capitalize">until</label>\
                             <select disabled class="form-control personal-info-forms-items" >\
                                 <option>'+experience.to_date+'</option>\
                               </select>\
@@ -371,6 +399,7 @@ $(document).ready(function() {
                         '<div class="col-md-6">'+
                             '<div class="form-group">'+
                                 '<div class="form-group">'+
+                                    '<label class="mb-0 label-forms text-capitalize">title</label>'+
                                     '<input disabled type="text" class="form-control personal-info-forms-items" value="'+skill.title+'" placeholder="Title">'+
                                 '</div>'+
                             '</div>'+
@@ -380,11 +409,13 @@ $(document).ready(function() {
                         '</div>'+
                         '<div class="col-md-2 ">'+
                             '<div class="form-group">'+
+                                ' <label class="mb-0 label-forms text-capitalize">experience</label>'+
                                 '<input disabled type="text" class="form-control personal-info-forms-items" value="'+skill.experience+'" placeholder="Experience">'+
                             '</div>'+
                         '</div>'+
                         '<div class="col-md-2 ">'+
                             '<div class="form-group">'+
+                                ' <label class="mb-0 label-forms text-capitalize">proficiency</label>'+
                                 '<input disabled type="text" class="form-control personal-info-forms-items" value="'+skill.proficiency+'" placeholder="Proficiency">'+
                             '</div>'+
                         '</div>'+

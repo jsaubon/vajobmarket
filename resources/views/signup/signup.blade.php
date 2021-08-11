@@ -32,11 +32,19 @@
                             <form action="/business" id="signup_form_bo">
                                 <div class="d-flex">
                                 <div class="email-logo"></div>
-                                <input type="email" required class="signup_email_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                                <div class="form-group  w-100">
+                                    <label class="mb-0">Email address</label>
+                                    <input type="email" required class="signup_email_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
-                                <input type="password" required class="signup_password_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <input type="password" required class="signup_confirm_password_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
-
+                                </div>
+                                <div class="form-group  w-100">
+                                    <label class="mb-0">Password</label>
+                                    <input type="password" required class="signup_password_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
+                                </div>
+                                <div class="form-group  w-100">
+                                    <label class="mb-0">Confirm Password</label>
+                                    <input type="password" required class="signup_confirm_password_bo form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
+                                </div>
                                 <div id="signup_error_bo" class="hide">
                                     <div class="alert alert-danger" id="signup_error_bo_message"  role="alert">
                                     </div>
@@ -80,11 +88,20 @@
                             <form action="/jobterms" id="signup_form_js">
                                 <div class="d-flex">
                                 <div class="email-logo"></div>
-                                <input type="email" required class=" signup_email_js form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                                <div class="form-group  w-100">
+                                    <label class="mb-0">Email address</label>
+                                    <input type="email" required class=" signup_email_js form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
-                                <input type="password" required class=" signup_password_js form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
-                                <input type="password" required class=" signup_confirm_password_js form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
-                                <div id="signup_error_js" class="hide">
+                                </div>
+                                <div class="form-group  w-100">
+                                    <label class="mb-0">Password</label>
+                                    <input type="password" required class=" signup_password_js form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
+                                </div>
+                                <div class="form-group  w-100">
+                                    <label class="mb-0">Confirm Password</label>
+                                    <input type="password" required class=" signup_confirm_password_js form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*confirm password" />
+                                </div>
+                                    <div id="signup_error_js" class="hide">
                                     <div class="alert alert-danger" id="signup_error_js_message"  role="alert">
                                     </div>
                                 </div>

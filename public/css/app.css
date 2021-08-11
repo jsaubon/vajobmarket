@@ -3,9 +3,6 @@
 .frontSection-5,
 .frontSection-6,
 .aboutSection-1,
-.aboutSection-2,
-.aboutSection-3,
-.aboutSection-4,
 .pricingSection-1,
 .pricingSection-2 {
   padding: 100px 200px !important;
@@ -335,6 +332,10 @@
   border-right: 2px solid !important;
 }
 
+.aboutSection-2 {
+  padding: 60px 0px;
+}
+
 .aboutSection-2 h2,
 .aboutSection-2 .h2 {
   border-right: 4px solid;
@@ -343,6 +344,10 @@
 
 .aboutSection-2 li {
   margin-left: 1rem;
+}
+
+.aboutSection-3 {
+  padding: 60px 0px;
 }
 
 .aboutSection-3 h2,
@@ -356,7 +361,8 @@
 }
 
 .aboutSection-3 .col-md-2 img {
-  padding: 2rem 4rem !important;
+  height: 150px;
+  width: 150px;
 }
 
 .aboutSection-3 .card {
@@ -364,24 +370,28 @@
 }
 
 .aboutSection-4 {
-  background: url(/images/bgimagemrkenn.png?b7eddb0ae157658a942a198605bdcfc8);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-color: #0a73da;
 }
 
-.aboutSection-4 .col-md-6 {
-  margin-top: 12rem;
-  padding: 0rem 4rem;
+.aboutSection-4 .container-fluid,
+.aboutSection-4 .container-xxl,
+.aboutSection-4 .container-xl,
+.aboutSection-4 .container-lg,
+.aboutSection-4 .container-md,
+.aboutSection-4 .container-sm {
+  min-height: 100vh;
 }
 
-.aboutSection-4 .col-md-6 .card {
-  padding: 4rem;
-}
-
-.aboutSection-Testimonial {
-  padding: 1rem 23rem;
+.aboutSection-4 .card {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 4rem !important;
+  color: #fff;
+  min-width: 400px;
 }
 
 .aboutSection-Testimonial .testimonial {
@@ -576,6 +586,10 @@
 
   .frontSection-2 .rightColumn {
     display: none;
+  }
+
+  .aboutSection-4 .card {
+    width: 100%;
   }
 }
 
@@ -877,6 +891,10 @@
     padding: 2rem 0rem !important;
   }
 
+  .aboutSection-2 {
+    padding: 30px 0px;
+  }
+
   .pricingSection-1 {
     padding: 0rem 1rem !important;
   }
@@ -1167,6 +1185,35 @@ body .dropdown {
   display: block;
 }
 
+a.btn {
+  font-family: "Segoe UI", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 0.69rem;
+}
+
+.about-va-background,
+.about-bosskenn-background {
+  position: absolute;
+}
+
+.about-va-background {
+  top: 465px;
+  left: 811px;
+  height: 768px;
+  z-index: 1;
+}
+
+.about-bosskenn-background {
+  z-index: 2;
+  top: -188px;
+  left: -21px;
+  height: 1281px;
+}
+
+.label-forms {
+  font-size: 0.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 @media screen and (max-width: 1440px) {
   .header {
     padding: 0rem 3rem;
@@ -1174,6 +1221,10 @@ body .dropdown {
 }
 
 @media screen and (max-width: 1024px) {
+  .about-bosskenn-background {
+    position: static !important;
+  }
+
   .header {
     padding: 0rem 2rem;
   }
@@ -1210,11 +1261,6 @@ body .dropdown {
   .header {
     padding: 0;
   }
-}
-
-a.btn {
-  font-family: "Segoe UI", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
-  font-size: 0.69rem;
 }
 
 .active-bottom.active {
@@ -1379,7 +1425,7 @@ a.btn {
 .small-nav {
   display: none;
   position: absolute;
-  right: 60px;
+  right: 184px;
   top: 54px;
   background-color: #ecf6ff;
   border-radius: 5px;
@@ -1406,6 +1452,7 @@ a.btn {
 .small-nav-list {
   background-color: #ecf6ff;
   cursor: pointer;
+  font-family: "Segoe UI", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
 }
 
 .small-nav-list:hover {
@@ -1441,6 +1488,12 @@ a.btn {
 .bo-small-nav-link:hover {
   text-decoration: none;
   color: #ecf6ff !important;
+}
+
+@media screen and (max-width: 1440px) {
+  .small-nav {
+    right: 60px;
+  }
 }
 
 .banner-offset-items {

@@ -65,4 +65,5 @@ Route::get('/BusinessMessages', 'Frontend\BusinessController@BusinessMessages');
 
 //Legal
 Route::get('/termsAndCondtions', 'Frontend\PageController@termsAndCondtions');
+Route::get('/privacyPolicy', 'Frontend\PageController@privacyPolicy');
 

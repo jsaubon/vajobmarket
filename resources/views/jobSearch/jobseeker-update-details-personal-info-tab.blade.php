@@ -27,27 +27,31 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" name="firstname" class="form-control personal-info-forms-items"  placeholder="First Name">
+                                            <label class="mb-0 label-forms text-capitalize">first name</label>
+                                            <input type="text" name="firstname" class="form-control profile-info-forms-items"  placeholder="First Name">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" name="middlename" class="form-control personal-info-forms-items" placeholder="Middle Name">
+                                            <label class="mb-0 label-forms text-capitalize">middle name</label>
+                                            <input type="text" name="middlename" class="form-control profile-info-forms-items" placeholder="Middle Name">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" name="lastname" class="form-control personal-info-forms-items"  placeholder="Last Name">
+                                            <label class="mb-0 label-forms text-capitalize">last name</label>
+                                            <input type="text" name="lastname" class="form-control profile-info-forms-items"  placeholder="Last Name">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-2">
-                                        <label class="personal-info-forms-items" style="border:0 !important;">Date of Birth</label>
+                                        <label class="profile-info-forms-items" style="border:0 !important;">Date of Birth</label>
                                     </div>
                                     <div class="col-md-2">
-                                        <select class="form-control personal-info-forms-items" name="dob_month">
+                                        <label class="mb-0 label-forms text-capitalize">month</label>
+                                        <select class="form-control profile-info-forms-items" name="dob_month">
                                             <option>Month</option>
                                             <?php for ($i=1; $i <= 12; $i++) {  ?>
                                                 <option value="<?php echo $i;?>"><?php echo $i;?></option>
@@ -55,7 +59,8 @@
                                         </select>
                                     </div>
                                     <div class="col-md-2">
-                                        <select class="form-control personal-info-forms-items" name="dob_date">
+                                        <label class="mb-0 label-forms text-capitalize">date</label>
+                                        <select class="form-control profile-info-forms-items" name="dob_date">
                                             <option>Date</option>
                                             <?php for ($i=1; $i <= 31; $i++) {  ?>
                                                 <option value="<?php echo $i;?>"><?php echo $i;?></option>
@@ -63,7 +68,8 @@
                                         </select>
                                     </div>
                                     <div class="col-md-2">
-                                        <select class="form-control personal-info-forms-items" name="dob_year">
+                                        <label class="mb-0 label-forms text-capitalize">year</label>
+                                        <select class="form-control profile-info-forms-items" name="dob_year">
                                             <option>Year</option>
                                             <?php for ($i=(int)date('Y'); $i > (int)date('Y') - 70; $i--) {  ?>
                                                 <option value="<?php echo $i;?>"><?php echo $i;?></option>
@@ -72,41 +78,48 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control personal-info-forms-items" name="nationality"  placeholder="Nationality">
+                                            <label class="mb-0 label-forms text-capitalize">nationality</label>
+                                            <input type="text" class="form-control profile-info-forms-items" name="nationality"  placeholder="Nationality">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control personal-info-forms-items" name="address1"  placeholder="Address">
+                                            <label class="mb-0 label-forms text-capitalize">address</label>
+                                            <input type="text" class="form-control profile-info-forms-items" name="address1"  placeholder="Address">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control personal-info-forms-items" name="address2"  placeholder="Apartment, Suite, etc.">
+                                            <label class="mb-0 label-forms text-capitalize">Apartment, suite, etc</label>
+                                            <input type="text" class="form-control profile-info-forms-items" name="address2"  placeholder="Apartment, Suite, etc.">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control personal-info-forms-items" name="city" placeholder="City">
+                                            <label class="mb-0 label-forms text-capitalize">city</label>
+                                            <input type="text" class="form-control profile-info-forms-items" name="city" placeholder="City">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control personal-info-forms-items" name="state" placeholder="State / Province">
+                                            <label class="mb-0 label-forms text-capitalize">state / province</label>
+                                            <input type="text" class="form-control profile-info-forms-items" name="state" placeholder="State / Province">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control personal-info-forms-items" name="country"  placeholder="Country">
+                                            <label class="mb-0 label-forms text-capitalize">country</label>
+                                            <input type="text" class="form-control profile-info-forms-items" name="country"  placeholder="Country">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control personal-info-forms-items" name="zip" placeholder="Zip / Postal">
+                                            <label class="mb-0 label-forms text-capitalize">zip / postal</label>
+                                            <input type="text" class="form-control profile-info-forms-items" name="zip" placeholder="Zip / Postal">
                                         </div>
                                     </div>
                                 </div>
@@ -114,17 +127,20 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input disabled type="email" class="form-control personal-info-forms-items" name="email" placeholder="E-mail Address">
+                                            <label class="mb-0 label-forms text-capitalize">email address</label>
+                                            <input disabled type="email" class="form-control profile-info-forms-items" name="email" placeholder="E-mail Address">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control personal-info-forms-items" name="mobile_no" placeholder="Mobile Number">
+                                            <label class="mb-0 label-forms text-capitalize">mobile number</label>
+                                            <input type="text" class="form-control profile-info-forms-items" name="mobile_no" placeholder="Mobile Number">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control personal-info-forms-items" name="phone_no"  placeholder="Phone Number">
+                                            <label class="mb-0 label-forms text-capitalize">phone number</label>
+                                            <input type="text" class="form-control profile-info-forms-items" name="phone_no"  placeholder="Phone Number">
                                         </div>
                                     </div>
                                 </div>
@@ -137,10 +153,12 @@
                                     <div class="row">
                                         <div class="col-md-5">
                                             <div class="form-group">
+                                                <label class="mb-0 label-forms text-capitalize">name of school</label>
                                                 <input type="text" class="form-control personal-info-forms-items" name="educations[1][name_of_school]" placeholder="Name of School">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
+                                            <label class="mb-0 label-forms text-capitalize">year graduated</label>
                                             <select class="form-control personal-info-forms-items"  name="educations[1][year_graduated]">
                                                 <option>Year Graduated</option>
                                                 <?php for ($i=(int)date('Y'); $i > (int)date('Y') - 70; $i--) {  ?>
@@ -150,6 +168,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
+                                                <label class="mb-0 label-forms text-capitalize">course graduated</label>
                                                 <input type="text" class="form-control personal-info-forms-items" name="educations[1][course_graduated]" placeholder="Course Graduated">
                                             </div>
                                         </div>
@@ -364,10 +383,12 @@ $(document).ready(function() {
                 <div class="row">\
                     <div class="col-md-5">\
                         <div class="form-group">\
+                            <label class="mb-0 label-forms text-capitalize">name of school</label>\
                             <input type="text" class="form-control personal-info-forms-items" name="educations['+(rows+1)+'][name_of_school]" placeholder="Name of School">\
                         </div>\
                     </div>\
                     <div class="col-md-3">\
+                        <label class="mb-0 label-forms text-capitalize">year graduated</label>\
                         <select class="form-control personal-info-forms-items"  name="educations['+(rows+1)+'][year_graduated]">\
                             <option>Year Graduated</option>\
                             <?php for ($i=(int)date('Y'); $i > (int)date('Y') - 70; $i--) {  ?>\
@@ -377,6 +398,7 @@ $(document).ready(function() {
                     </div>\
                     <div class="col-md-4">\
                         <div class="form-group">\
+                            <label class="mb-0 label-forms text-capitalize">course graduated</label>\
                             <input type="text" class="form-control personal-info-forms-items" name="educations['+(rows+1)+'][course_graduated]" placeholder="Course Graduated">\
                         </div>\
                     </div>\

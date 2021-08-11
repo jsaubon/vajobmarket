@@ -38,9 +38,10 @@
                     <div class="tab-pane fade show active" id="business-in" role="tabpanel" aria-labelledby="home-tab">
                         <div class="p-5">
                             <form id="form_bo">
-                                <div class="d-flex">
-                                <div class="email-logo"></div>
-                                <input type="text" required class="bo_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
+                                <div class="d-flex form-group">
+                                <div class="email-logo "></div>
+                            
+                                    <input type="text" required class="bo_email form-control border-top-0 border-left-0 border-right-0 rounded-0 email-style" placeholder="*email" />
                                 </div>
                                 <input type="password" required class="bo_password form-control border-top-0 border-left-0 border-right-0 rounded-0 password-style" placeholder="*password" />
                                 <div id="signin_error_bo" class="hide">

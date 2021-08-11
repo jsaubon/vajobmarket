@@ -16,13 +16,13 @@
                                     <a href="#solutions" class="text-secondary"><b>Solutions</b></a>
                                 </div>
                                 <div>
-                                    <a href="#solutions" class="text-secondary"><b>About Us</b></a>
+                                    <a href="/about" class="text-secondary"><b>About Us</b></a>
                                 </div>
                                 <div>
                                     <a href="#solutions" class="text-secondary"><b>Contact</b></a>
                                 </div>
                                 <div>
-                                    <a href="#solutions" class="text-secondary"><b>Privacy Policy</b></a>
+                                    <a href="/#" class="text-secondary"><b>Privacy Policy</b></a>
                                 </div>
                                 <div>
                                     <a href="/termsAndCondtions" class="text-secondary"><b>Terms and Condition</b></a>
@@ -36,10 +36,10 @@
                                     <a href="#solutions" class="text-secondary"><b>How it works</b></a>
                                 </div>
                                 <div>
-                                    <a href="#solutions" class="text-secondary"><b>Register</b></a>
+                                    <a href="/signup" class="text-secondary"><b>Register</b></a>
                                 </div>
                                 <div>
-                                    <a href="#solutions" class="text-secondary"><b>Job Search</b></a>
+                                    <a href="/jobs" class="text-secondary"><b>Job Search</b></a>
                                 </div>
                             </div>
                             <div class="col-sm-3">

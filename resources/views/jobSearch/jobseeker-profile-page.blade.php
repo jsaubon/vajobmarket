@@ -80,21 +80,25 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
+                                            <label class="mb-0 label-forms text-capitalize">first name</label>
                                             <input type="text"  class="form-control profile-info-forms-items user-firstname"  placeholder="First Name">
                                           </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
+                                            <label class="mb-0 label-forms text-capitalize">last name</label>
                                             <input type="text"  class="form-control profile-info-forms-items user-lastname"  placeholder="Last Name">
                                           </div>
                                     </div>
                                     <div class="col-md-2">
+                                        <label class="mb-0 label-forms text-capitalize">gender</label>
                                         <select class="form-control profile-info-forms-items" >
                                             <option class="jobseeker-gender">Gender</option>
                                         </select>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
+                                            <label class="mb-0 label-forms text-capitalize">nationality</label>
                                             <input type="text" class="form-control profile-info-forms-items jobseeker-nationality"  placeholder="Nationality">
                                           </div>
                                     </div>
@@ -103,12 +107,14 @@
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div class="form-group">
+                                            <label class="mb-0 label-forms text-capitalize">address</label>
                                             <input type="text" class="form-control profile-info-forms-items jobseeker-address1" id="address" placeholder="Address">
                                           </div>
                                     </div>
 
                                     <div class="col-md-4">
                                         <div class="form-group">
+                                            <label class="mb-0 label-forms text-capitalize">city</label>
                                             <input type="text" class="form-control profile-info-forms-items jobseeker-city" id="city" placeholder="City">
                                           </div>
                                     </div>
@@ -116,16 +122,19 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
+                                            <label class="mb-0 label-forms text-capitalize">state / province</label>
                                             <input type="text" class="form-control profile-info-forms-items jobseeker-state" id="state" placeholder="State / Province">
                                           </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
+                                            <label class="mb-0 label-forms text-capitalize">country</label>
                                             <input type="text" class="form-control profile-info-forms-items jobseeker-country" id="country" placeholder="Country">
                                           </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
+                                            <label class="mb-0 label-forms text-capitalize">zip / postal</label>
                                             <input type="text" class="form-control profile-info-forms-items jobseeker-zip" id="zip" placeholder="Zip / Postal">
                                           </div>
                                     </div>
@@ -138,11 +147,13 @@
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="form-group">
+                                                    <label class="mb-0 label-forms text-capitalize">availability</label>
                                                     <input type="text" class="form-control profile-info-forms-items jobseeker_profession-availability" id="state" placeholder="Availability">
                                                   </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
+                                                    <label class="mb-0 label-forms text-capitalize">asking rate</label>
                                                     <input type="text" class="form-control profile-info-forms-items jobseeker_profession-salary" id="country" placeholder="Asking Rate">
                                                   </div>
                                             </div>
@@ -427,14 +438,17 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-5">'+
                                 '<div class="form-group">'+
+                                    ' <label class="mb-0 label-forms text-capitalize">name of school</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" value="'+education.name_of_school+'" placeholder="Name of School">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-3">'+
+                                ' <label class="mb-0 label-forms text-capitalize">year graduated</label>'+
                                 '<input type="text" class="form-control profile-info-forms-items"  value="'+education.year_graduated+'" placeholder="Year Graduated">'+
                             '</div>'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                ' <label class="mb-0 label-forms text-capitalize">course graduated</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" value="'+education.course_graduated+'" placeholder="Course Graduated">'+
                                 '</div>'+
                             '</div>'+
@@ -449,11 +463,13 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                    ' <label class="mb-0 label-forms text-capitalize">social media / website</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" value="'+reference.website+'" placeholder="Website">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-8">'+
                                 '<div class="form-group">'+
+                                ' <label class="mb-0 label-forms text-capitalize">Url / Link</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" value="'+reference.link+'" placeholder="Enter URL/Link here">'+
                                 '</div>'+
                             '</div>'+
@@ -467,16 +483,19 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                ' <label class="mb-0 label-forms text-capitalize">language</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" value="'+language.language+'" placeholder="Type Language">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
-                                    '<input type="text" class="form-control profile-info-forms-items" value="'+language.written_proficiency+'" placeholder="Writted Proficiency">'+
+                                ' <label class="mb-0 label-forms text-capitalize">written proficiency</label>'+
+                                    '<input type="text" class="form-control profile-info-forms-items" value="'+language.written_proficiency+'" placeholder="Written Proficiency">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                ' <label class="mb-0 label-forms text-capitalize">oral proficiency</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" value="'+language.oral_proficiency+'" placeholder="Oral Proficiency">'+
                                 '</div>'+
                             '</div>'+
@@ -490,20 +509,24 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                ' <label class="mb-0 label-forms text-capitalize">company name</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" value="'+experience.company_name+'" id="jobseeker-company-name" placeholder="Company Name">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-4">'+
                                 '<div class="form-group">'+
+                                ' <label class="mb-0 label-forms text-capitalize">job description</label>'+
                                     '<input type="text" class="form-control profile-info-forms-items" value="'+experience.job_description+'" id="job-description" placeholder="Job Description">'+
                                 '</div>'+
                             '</div>'+
                             '<div class="col-md-2">'+
+                                ' <label class="mb-0 label-forms text-capitalize">from</label>'+
                                 '<select class="form-control profile-info-forms-items "  >'+
                                     '<option>'+experience.from_date+'</option>'+
                                 '</select>'+
                             '</div>'+
                             '<div class="col-md-2">'+
+                            ' <label class="mb-0 label-forms text-capitalize">until</label>'+
                                 '<select class="form-control profile-info-forms-items" value="'+experience.company_name+'"  >'+
                                     '<option>'+experience.to_date+'</option>'+
                                 '</select>'+
@@ -525,6 +548,7 @@ $(document).ready(function() {
                         '<div class="row">'+
                             '<div class="col-md-6">'+
                                 '<div class="form-group">'+
+                                ' <label class="mb-0 label-forms text-capitalize">title</label>'+
                                     '<select class="form-control profile-info-forms-items" id="skill-title1">'+
                                         '<option>'+specialized_skill.title+'</option>'+
                                     '</select>'+
@@ -534,11 +558,13 @@ $(document).ready(function() {
 
                             '</div>'+
                             '<div class="col-md-2 ">'+
+                            ' <label class="mb-0 label-forms text-capitalize">experience</label>'+
                                 '<select class="form-control profile-info-forms-items "  id="skill-experience1">'+
                                     '<option>'+specialized_skill.experience+'</option>'+
                                 '</select>'+
                             '</div>'+
                             '<div class="col-md-2 ">'+
+                            ' <label class="mb-0 label-forms text-capitalize">proficiency</label>'+
                                 '<select class="form-control profile-info-forms-items"  id="skill-proficiency1">'+
                                     '<option>'+specialized_skill.proficiency+'</option>'+
                                 '</select>'+

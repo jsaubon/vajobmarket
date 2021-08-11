@@ -39,12 +39,26 @@ $obj = [
                                     <a class=" px-2 ml-4 text-light navitems my-auto text-decoration-none  d-md-inline dropdown-toggle dropdown " data-toggle="dropdown" href="<?= $obj[$row] ?>" role="button" aria-haspopup="true" aria-expanded="false">
                                        <small><b> <?= $row ?></b></small>
                                     </a>
+
                                     <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    {{-- <a class="dropdown-item" href="#">Job Posting</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
+                                    <a class="dropdown-item" href="#">Professional Hiring</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Client Liason</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Permanent Staffing</a>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Payroll Management</a>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Premium Support</a>
+                                    </div> --}}
+
+                                    <a class="dropdown-item" href="#">Feature is not yet ready but we are brewing something cool...</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Come back later..</a>
                                     </div>
                                 </div>
                             <?php
