@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', 'Frontend\PageController@index');
+Route::get('/contactUs', 'Frontend\PageController@contactUs');
 Route::get('/about', 'Frontend\AboutController@index');
 Route::get('/jsAboutUs', 'Frontend\AboutController@jsAboutUs');
 Route::get('/pricing', 'Frontend\PricingController@index');

@@ -19,7 +19,7 @@
                                     <a href="/about" class="text-secondary"><b>About Us</b></a>
                                 </div>
                                 <div>
-                                    <a href="#solutions" class="text-secondary"><b>Contact</b></a>
+                                    <a href="/contactUs" class="text-secondary"><b>Contact</b></a>
                                 </div>
                                 <div>
                                     <a href="/#" class="text-secondary"><b>Privacy Policy</b></a>

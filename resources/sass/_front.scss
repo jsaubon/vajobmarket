@@ -365,7 +365,14 @@
     }
 
 }
-
+.contactUs-section-02 {
+    background: url('../../public/images/contactAssets/bgimagecontactus@2x.png');
+    background-size: cover;
+    background-color:#516689 ;
+    background-blend-mode:overlay ;
+    background-position: center;
+    height: 100vh;
+}
 .aboutSection-2 {
     padding: 60px 0px;
     h2 {

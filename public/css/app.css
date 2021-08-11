@@ -344,6 +344,15 @@
   border-right: 2px solid !important;
 }
 
+.contactUs-section-02 {
+  background: url(/images/bgimagecontactus@2x.png?8cd313537ed5b779e9e42aed7c897769);
+  background-size: cover;
+  background-color: #516689;
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 100vh;
+}
+
 .aboutSection-2 {
   padding: 60px 0px;
 }
