@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'Frontend\PageController@index');
 Route::get('/about', 'Frontend\AboutController@index');
+Route::get('/jsAboutUs', 'Frontend\AboutController@jsAboutUs');
 Route::get('/pricing', 'Frontend\PricingController@index');
 Route::get('/jobs', 'Frontend\JobSearchController@index');
 Route::get('/posts', 'Frontend\JobPostingController@index');
