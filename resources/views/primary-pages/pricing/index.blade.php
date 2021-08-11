@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="pricingSection-1">
-    <div class="container-fluid">
+    <div class="container-fluid row">
 
         <div class="col-md-6">
             <h2>Exceptuer sint occeaecat cupidatat non proident, sunt in culpa qui</h2>
@@ -19,7 +19,7 @@
 
     </div>
 </section>
-<section class="pricingSection-2">
+<section class="pricingSection-2 p-4">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">

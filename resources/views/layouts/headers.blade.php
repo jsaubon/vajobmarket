@@ -2,7 +2,7 @@
 $brand = ["JOB MARKET" => "/"];
 $navBrand = array_keys($brand);
 $obj = [
-    "ABOUT" => "/about",
+    "ABOUT" => "#about",
     "SOLUTION" => "#solution",
     "PRICING" => "/pricing",
     "BLOGS" => "#blogs",
@@ -40,7 +40,7 @@ $obj = [
                                        <small><b> <?= $row ?></b></small>
                                     </a>
 
-                                    <div class="dropdown-menu">
+                                    <div class="dropdown-menu main-nav-dropdown">
                                     {{-- <a class="dropdown-item" href="#">Job Posting</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Professional Hiring</a>
@@ -59,6 +59,31 @@ $obj = [
                                     <a class="dropdown-item" href="#">Feature is not yet ready but we are brewing something cool...</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Come back later..</a>
+                                    </div>
+                                </div>
+                            <?php
+                        }
+                        else if ($row == "ABOUT"){
+                            ?>
+                              <div class="nav-item dropdown d-md-inline ">
+                                    <a class=" px-2 ml-4 text-light navitems my-auto text-decoration-none  d-md-inline dropdown-toggle dropdown " data-toggle="dropdown" href="<?= $obj[$row] ?>" role="button" aria-haspopup="true" aria-expanded="false">
+                                       <small><b> <?= $row ?></b></small>
+                                    </a>
+
+                                    <div class="dropdown-menu main-nav-dropdown">
+                                        <a class="dropdown-item" href="/about">business owners</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="/jsAboutUs">jobseekers</a>
+                                        {{-- <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Client Liason</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Permanent Staffing</a>
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Payroll Management</a>
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Premium Support</a> --}}
                                     </div>
                                 </div>
                             <?php
