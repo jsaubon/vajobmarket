@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use SendGrid\Mail\From;
+use SendGrid\Mail\To;
+use SendGrid\Mail\Mail;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -54,27 +57,26 @@ Route::middleware('auth:api')->group(function () {
 
 Route::get('test1',function() {
 
-    // $model = new \App\ClientJobPost();
-    // $fields = $model->getTableColumns();
-    $datas = \App\ClientJobPost::with([
-        'client',
-        'client.client_business_info',
-    ]);
-    // ->where(function($query) ) {
-        // if($request->search) {
-        //     foreach ($fields as $key => $field) {
-        //         $query->orWhere($field,'LIKE',"%$request->search%");    
-        //     }
-        // }
-    // });
-    $datas->where(\DB::raw('DATE(start_date)'),'<=',date('Y-m-d'));
-    $datas->where(\DB::raw('DATE(end_date)'),'>=',date('Y-m-d'));
-    // if($request->sort_order != '') {
-    //     if(in_array($request->sort_field, $fields)) {
-    //         $datas->orderBy($request->sort_field, $request->sort_order == 'ascend' ? 'asc' : 'desc');
-    //     }
-    // }
-
-    dd($datas->toSql());
-    // $datas = $datas->paginate(50);
+    $email = new Mail();
+    $email->setFrom("devsupport@ihrbuddy.com", "Support");
+    $email->setSubject("I'm replacing the subject tag");
+    $email->addTo(
+        "joshuasaubon@gmail.com",
+        "Joshua Saubon",
+        [
+            "subject" => "Subject Test",
+            "name" => "Test Joshua",
+        ],
+        0
+    );
+    $email->setTemplateId("d-7b75b67cbc7b4a1cbf2f7dfb53115686");
+    $sendgrid = new \SendGrid(env('SENDGRID_API_KEY'));
+    try {
+        $response = $sendgrid->send($email);
+        print $response->statusCode() . "\n";
+        print_r($response->headers());
+        print $response->body() . "\n";
+    } catch (Exception $e) {
+        dd('Caught exception: '.  $e->getMessage());
+    }
 });
