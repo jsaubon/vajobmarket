@@ -125,4 +125,7 @@ class PageController extends Controller
     public function privacyPolicy(){
         return view('primary-pages.legal.privacy-policy');
     }
+    public function contactUs(){
+        return view('primary-pages.contact-us');
+    }
 }

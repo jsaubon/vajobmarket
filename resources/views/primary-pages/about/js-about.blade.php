@@ -19,31 +19,78 @@
                 </div>
                 <div class="col-xl-6 col-lg-12 ">
                     <div class="text-justify w-75 mr-xl-4 mx-auto float-none  float-xl-right" style="padding-left:60px;">
-                        <h2>WHY HIRE A VIRTUAL ASSISTANT?</h2>
-                        <p>A virtual assistant is an independent contractor who provides administrative services to clients while operating outside of the client's office. They typically operate from a home-office but have complete access with the necessary planning documents, such as shared calendars, mailboxes, files, etc. People employed as virtual assistants often have several years of experience as an administrative assistant or office manager. However, new opportunities are opening up for virtual assistants who are skilled in social media, content management, blog post writing, graphic design, and Internet marketing. <br><br>
-
-                        As working from home has become more accepted for both workers and employers, the demand for skilled virtual assistants is expected to grow.
-                    </p>
-                        <p><b>2.) When Should I Hire a Virtual Assistant? </b></p>
-                        <p>Anytime is a good time to add another skilled professional to your team. You might especially want to hire a virtual assistant if:
-
-                            <p>Overwhelmed with your current workload</p>
-                            <p>More paperwork than you/your staff can handle</p>
-                            <p>Desire to utilize your time more productively</p>
-                            <p>Can’t afford another full-time hire</p>
-                            <p>Don’t have the skills to perform something with your skillset</p>
-
+                        <h2>What is VAJobMarket?</h2>
+                        <p>As you know by now, VA Job Market is an online outsourcing platform
+                           that will help you find job opportunities which you may consider applying for. 
+                           You may consider us as your “bridge” towards your next employer: we’ll show you 
+                           all the job postings, sort things out based on your skills and job preference, 
+                           get yourself hired by one of the business owners, and we’ll still be there for 
+                           you during the duration of your deployment with our client. It’s going to be a 
+                           commitment and we hope you’re ready for this!
                         </p>
-                        <p><b>3.) Benefits of Having a Virtual Assistant</b></p>
+                        <p><b>1.) Why VAJobMarket? </b></p>
+                        <p>Unlike other job platforms, VAJobMarket makes it super easy for you to be hired 
+                            by companies internationally. May it be full time, part time or just project 
+                            based, we got you covered! It’s easy, hassle free and most importantly,
+                             you earn while you’re just at home!
+                        </p>
+                      
+                        <p><b>2.) Your Benefits when you get hired through VAJobMarket</b></p>
 
-                            <p>A virtual assistant is a self-employed worker who specializes in offering administrative services to clients from a remote location, usually a home office.</p>
-                            <p>Typical tasks include scheduling appointments, making phone calls, making travel arrangements, and managing email accounts.</p>
-                            <p>Some specialize in offering graphic design, blog writing, bookkeeping, social media, and marketing services.</p>
-                            <p>Increased productivity as virtual assistants tend to be more focused even at home, dedicate their time in accomplishing tasks and put premium with the number one goal of client satisfaction.</p>
-                            <p>Greater flexibility as they would be working based on your schedule and would make themselves readily available when needed.</p>
-                            <p>Improved work quality as you get the luxury of focusing on business essentials while your VA takes on administrative and/or skill-specific tasks.</p>
-                            <p>Another advantage of hiring a virtual assistant is the flexibility to contract only for specific services, which also reduces labor costs rather than hiring a full-time employee and avoids you from risk in scaling operations.</p>
-
+                            <ul>
+                                <li>
+                                    <p>
+                                        <em> Organized Job Grid</em>
+                                        <br>
+                                        &emsp; &emsp;
+                                        We offer a ton of postings and what we do is to keep everything
+                                         organized or systematic for a more efficient view of available 
+                                         job opportunities; not to mention, the platform also reads the 
+                                         information in your profile and tries its best to only show you 
+                                         what could possibly match yours.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                       <em> Profile Matching with Job Postings</em>
+                                        <br>
+                                        &emsp; &emsp;
+                                        Overwhelming as it may be for most, we also do our own profile 
+                                        matching against the open requisitions we have in the platform. 
+                                        We try to recommend certain job openings for candidates, aside 
+                                        from what is based on your profile information, based on your 
+                                        credentials and also certain aptitude exercises so that we can
+                                         better see your capabilities.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                       <em> Get You Hired ASAP</em>
+                                        <br>
+                                        &emsp; &emsp;
+                                        It would be anyone’s desire to get the role that they want, 
+                                        ASAP! With all considerations in place and favoring you, we will 
+                                        do our best to guide you all the way from getting you selected as 
+                                        a potential candidate, going through interviews and examinations
+                                         as needed, and finally obtaining that affirmation of being hired
+                                          as the new Virtual Assistant.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <em> Assist You with Client Relationship</em>
+                                       
+                                        <br>
+                                        &emsp; &emsp;
+                                        We highly value the work environment and client-virtual assistant 
+                                        relationship within VA Job Market and you’re assured that we may not
+                                         be involved in the nitty gritty of your workload, but we’ll be more 
+                                         than happy to properly onboard and deploy you with your client and 
+                                         quickly assist you if you have any concerns with your employment.
+                                    </p>
+                                </li>
+                                
+                            </ul>
                     </div>
                 </div>
 

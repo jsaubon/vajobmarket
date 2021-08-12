@@ -17,11 +17,11 @@
 
         @include('layouts.scriptFunctions')
     </head>
-    <body>
+    <body >
 
         @include('layouts.headers')
 
-        <div style="position:relative;">
+        <div style="position:relative;" >
             @include('layouts.messenger')
             @yield('content')
             @yield('front')
