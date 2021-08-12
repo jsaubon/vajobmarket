@@ -13,36 +13,80 @@
         <div class="container-fluid text-xl-right text-sm-center">
             <div class="row">
                 <div class="col-xl-6 col-lg-12">
-                    <h2>WHY HIRE A VIRTUAL ASSISTANT?</h2>
+                    <h2>What is VAJobMarket?</h2>
                     <img class="img-fluid"src="{{URL::to('/images/aboutAssets/imghappyclient.png')}}" alt="">
                 </div>
                 <div class="col-xl-6 col-lg-12">
                     <div class="text-justify w-75 mx-auto">
-                        <p><b>1.) What Is a Virtual Assistant? </b></p>
-                        <p>A virtual assistant is an independent contractor who provides administrative services to clients while operating outside of the client's office. They typically operate from a home-office but have complete access with the necessary planning documents, such as shared calendars, mailboxes, files, etc. People employed as virtual assistants often have several years of experience as an administrative assistant or office manager. However, new opportunities are opening up for virtual assistants who are skilled in social media, content management, blog post writing, graphic design, and Internet marketing. <br><br>
+                        <p>As you know by now, VA Job Market is an online outsourcing platform that will help 
+                            you find the perfect virtual assistant: offloading some of your administrative tasks 
+                            or getting someone who specializes with your requirement will enable you to focus on 
+                            your core business objectives. Connecting you with people who are looking for job opportunities 
+                            may be tricky and really a difficult process to undertake but worry no more as this is our
+                             expertise and we’ll help you all the way! 
+                        </p>
 
-                        As working from home has become more accepted for both workers and employers, the demand for skilled virtual assistants is expected to grow.
-                    </p>
-                        <p><b>2.) When Should I Hire a Virtual Assistant? </b></p>
-                        <p>Anytime is a good time to add another skilled professional to your team. You might especially want to hire a virtual assistant if:
+                        <p><b>1.) Why VAJobMarket?</b></p>
+                        <p>
+                            Getting yourself a virtual assistant will definitely change your life. We want you to 
+                            experience the freedom you deserve with your business; may it be with managing your workload 
+                            or even enjoying your personal time.
+                    
+                        </p>
+                        <p><b>2.) Your Benefits when you hire with VAJobMarket </b></p>
 
-                            <p>Overwhelmed with your current workload</p>
-                            <p>More paperwork than you/your staff can handle</p>
-                            <p>Desire to utilize your time more productively</p>
-                            <p>Can’t afford another full-time hire</p>
-                            <p>Don’t have the skills to perform something with your skillset</p>
+                            <ul>
+                                <li>
+                                    <p>
+                                       <em> Efficient Job Posting</em>
+                                        <br>
+                                        &emsp; &emsp;
+                                        You get to create and maintain job postings based on 
+                                        your requirements in an orderly manner. We also provide 
+                                        a level of review before publishing each item and we also
+                                         use a specialized algorithm to potentially target better 
+                                         candidates for the roles
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <em> Scan through Resumes and Candidate Profiles</em>
+                                        <br>
+                                        &emsp; &emsp;
+                                        Unlike most platforms, you have visibility on candidate 
+                                        profiles containing their resumes, skills and specifications,
+                                        and other relevant information which you may use for screening 
+                                        candidates.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <em> Get Tips and Assistance during the Hiring Process</em>
+                                        <br>
+                                        &emsp; &emsp;
+                                        Of course, this is where we help a bit more as we know that looking 
+                                        for a candidate, screening and interviewing them and finally hiring 
+                                        one suited for you is altogether a tedious journey. We’ll guide you
+                                         step by step to become efficient and assist you most especially 
+                                         if you have any troubles or concerns within the entire process.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <em>Effectively Managing Your Virtual Assistant</em> 
+                                        <br>
+                                        &emsp; &emsp;
+                                        We don’t stop once you hire your own VA! We provide assistance to
+                                         keep you and your VA aligned with your business objectives; facilitate 
+                                         check-ins to keep everything in track and mitigate any possible 
+                                         issues or concerns that may arise with your journey with us.
+                                    </p>
+                                </li>
+                                
+                            </ul>
+                          
 
                         </p>
-                        <p><b>3.) Benefits of Having a Virtual Assistant</b></p>
-
-                            <p>A virtual assistant is a self-employed worker who specializes in offering administrative services to clients from a remote location, usually a home office.</p>
-                            <p>Typical tasks include scheduling appointments, making phone calls, making travel arrangements, and managing email accounts.</p>
-                            <p>Some specialize in offering graphic design, blog writing, bookkeeping, social media, and marketing services.</p>
-                            <p>Increased productivity as virtual assistants tend to be more focused even at home, dedicate their time in accomplishing tasks and put premium with the number one goal of client satisfaction.</p>
-                            <p>Greater flexibility as they would be working based on your schedule and would make themselves readily available when needed.</p>
-                            <p>Improved work quality as you get the luxury of focusing on business essentials while your VA takes on administrative and/or skill-specific tasks.</p>
-                            <p>Another advantage of hiring a virtual assistant is the flexibility to contract only for specific services, which also reduces labor costs rather than hiring a full-time employee and avoids you from risk in scaling operations.</p>
-
                     </div>
                 </div>
 
