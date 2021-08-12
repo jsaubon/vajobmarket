@@ -405,7 +405,7 @@ $(document).ready(function() {
 
 
                 if(jobseeker_data.jobseeker_photo) {
-                    $('.jobseeker-jobseeker_photo').attr('src',jobseeker_data.jobseeker_photo);
+                    $('.jobseeker-jobseeker_photo').attr('src','/storage/'+jobseeker_data.jobseeker_photo);
                 }
 
 

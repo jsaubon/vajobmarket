@@ -37,7 +37,7 @@
 
                             <div class="col">
 
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jsNewMessage">New Message</button>
+                            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jsNewMessage">New Message</button> -->
 
 
                                 <div class="modal fade" id="jsNewMessage" tabindex="-1" role="dialog" aria-labelledby="jsNewMessageLabel" aria-hidden="true">
@@ -82,9 +82,10 @@
                                     </div>
                                 </div>
 
-                            </div> <br>
+                            </div>
+                             <br>
 
-                            <div class="row ">
+                            <!-- <div class="row ">
                                 <div class="col-12  my-auto col-md-4">
                                     <div class="dropdown ">
                                         <button class="btn d-flex my-auto justify-content-between w-100 text-left dropdown-toggle profile-info-forms-items" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -110,8 +111,8 @@
                                         </div>
                                       </div>
                                 </div>
-                            </div>
-                            <br>
+                            </div> -->
+                            <!-- <br> -->
 
                                 <div class="table-responsive">
                                     <table class="table">
