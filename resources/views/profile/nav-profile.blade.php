@@ -20,7 +20,7 @@ $obj = [
 <div class="header" style="z-index:100;">
             <div class="header-items-left">
                 <a class="my-auto px-3 mb-3" style="color:#fff; text-decoration:none;" href="<?= $brand[$navBrand[0]]; ?>">
-                    <img src="{{ asset('images/frontAssets/vajm-header-logo.png') }}" alt="" class="jobseeker-">
+                    <img src="{{ asset('images/frontAssets/vajm-header-logo.png') }}" alt="" class="myLogo">
                 </a>
                 <div class="nav-titles my-auto ml-4 px-3">
                     <?php
