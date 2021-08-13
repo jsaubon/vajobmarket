@@ -5,10 +5,14 @@ const RouteBusinessOwners = () => {
     return (
         <>
             <Switch>
-                {/* <PrivateRoute
+                {/* <Route
                     exact
-                    path="/dashboard"
-                    component={PageBODashboard}
+                    path="/"
+                    render={props => (
+                        <Content>
+                            <PageBODashboard {...props} />
+                        </Content>
+                    )}
                 /> */}
 
                 <Route component={PageNotFound} />

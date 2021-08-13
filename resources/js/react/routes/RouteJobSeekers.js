@@ -6,10 +6,14 @@ const RouteJobSeekers = () => {
     return (
         <>
             <Switch>
-                {/* <PrivateRoute
+                {/* <Route
                     exact
-                    path="/dashboard"
-                    component={PageJSDashboard}
+                    path="/"
+                    render={props => (
+                        <Content>
+                            <PageJSDashboard {...props} />
+                        </Content>
+                    )}
                 /> */}
 
                 <Route component={PageNotFound} />

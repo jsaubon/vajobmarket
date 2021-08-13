@@ -14,6 +14,7 @@ import getUserData from "../components/providers/getUserData";
 import RouteJobSeekers from "./RouteJobSeekers";
 import RouteBusinessOwners from "./RouteBusinessOwners";
 import LandingPage from "../components/public/LandingPage";
+import Content from "../components/layout/Content";
 
 /** end private */
 
@@ -24,7 +25,15 @@ export default function Routes() {
         <QueryClientProvider client={queryClient}>
             <Router>
                 <Switch>
-                    <Route exact path="/" component={LandingPage} />
+                    <Route
+                        exact
+                        path="/"
+                        render={props => (
+                            <Content>
+                                <LandingPage {...props} />
+                            </Content>
+                        )}
+                    />
                     {userdata && userdata.role == "Job Seeker" && (
                         <RouteJobSeekers />
                     )}
