@@ -17,55 +17,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', 'Frontend\PageController@index');
-Route::get('/contactUs', 'Frontend\PageController@contactUs');
-Route::get('/about', 'Frontend\AboutController@index');
-Route::get('/jsAboutUs', 'Frontend\AboutController@jsAboutUs');
-Route::get('/pricing', 'Frontend\PricingController@index');
-Route::get('/jobs', 'Frontend\JobSearchController@index');
-Route::get('/posts', 'Frontend\JobPostingController@index');
-Route::get('/dashboard', 'Frontend\DashboardController@index');
-Route::get('/signup', 'Frontend\SignupController@index');
 
-//jobseeker
-Route::get('/jobterms', 'Frontend\JobSearchController@jobterms');
-Route::get('/personalInfo', 'Frontend\JobSearchController@personalInfo');
-Route::get('/personalDetails', 'Frontend\JobSearchController@personalDetails');
-Route::get('/jobseekerSkillset', 'Frontend\JobSearchController@jobseekerSkillset');
-Route::get('/jobseekerProfileReview', 'Frontend\JobSearchController@jobseekerProfileReview');
-Route::get('/jobseekerFinalize', 'Frontend\JobSearchController@jobseekerFinalize');
-Route::get('/jobseekerProfile', 'Frontend\JobSearchController@jobseekerProfile');
-Route::get('/jobseekerUpdateDetails', 'Frontend\JobSearchController@jobseekerUpdateDetails');
-Route::get('/jobseekerMessages', 'Frontend\JobSearchController@jobseekerMessages');\
-Route::get('/jobseekerApplications', 'Frontend\JobSearchController@jobseekerApplications');
-Route::get('/jobseekerDashboard', 'Frontend\JobSearchController@jobseekerDashboard');
-Route::get('/jobseekerMessages', 'Frontend\JobSearchController@jobseekerMessages');
-Route::get('/jobseekerCurrentEmployment', 'Frontend\JobSearchController@jobseekerCurrentEmployment');
-Route::get('/jobseekerSettings', 'Frontend\JobSearchController@jobseekerSettings');
-
-
-//business-owner
-Route::get('/business', 'Frontend\BusinessController@index');
-Route::get('/businessPersonalInfo', 'Frontend\BusinessController@businessPersonalInfo');
-Route::get('/businessInfo', 'Frontend\BusinessController@businessInfo');
-Route::get('/BusinessBilling', 'Frontend\BusinessController@BusinessBilling');
-Route::get('/businessReview', 'Frontend\BusinessController@businessReview');
-Route::get('/BusinessFinalize', 'Frontend\BusinessController@BusinessFinalize');
-Route::get('/BusinessProfile', 'Frontend\BusinessController@BusinessProfile');
-Route::get('/BusinessProfilePersonal', 'Frontend\BusinessController@BusinessProfilePersonal');
-Route::get('/BusinessProfileCompany', 'Frontend\BusinessController@BusinessProfileCompany');
-Route::get('/DashboardBusiness', 'Frontend\BusinessController@DashboardBusiness');
-Route::get('/BusinessInfoSettings', 'Frontend\BusinessController@BusinessInfoSettings');
-
-
-Route::get('/BusinessAllJobPost', 'Frontend\BusinessController@BusinessAllJobPost');
-Route::get('/BusinessPostJob', 'Frontend\BusinessController@BusinessPostJob');
-Route::get('/BusinessEditJobPost', 'Frontend\BusinessController@BusinessEditJobPost');
-Route::get('/BusinessApplications', 'Frontend\BusinessController@BusinessApplications');
-Route::get('/BusinessEmployment', 'Frontend\BusinessController@BusinessEmployment');
-Route::get('/BusinessMessages', 'Frontend\BusinessController@BusinessMessages');
-
-//Legal
-Route::get('/termsAndCondtions', 'Frontend\PageController@termsAndCondtions');
-Route::get('/privacyPolicy', 'Frontend\PageController@privacyPolicy');
-
+Route::get('{all?}/{all1?}/{all2?}/{all3?}/{all4?}/{all5?}/{all6?}/{all7?}/{all8?}/{all9?}/{all10?}/{all11?}/{all12?}/{all13?}/{all14?}/{all15?}', function(Request $request){
+    return view('react.app');
+});
+ 

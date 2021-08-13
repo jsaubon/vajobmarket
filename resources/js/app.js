@@ -1,7 +1,7 @@
 require("./bootstrap");
 
-import "bootstrap";
-import "@fortawesome/fontawesome-free/js/fontawesome";
-import "@fortawesome/fontawesome-free/js/solid";
-import "@fortawesome/fontawesome-free/js/regular";
-import "@fortawesome/fontawesome-free/js/brands";
+import React from "react";
+import { render } from "react-dom";
+import Routes from "./react/routes/index";
+
+render(<Routes />, document.getElementById("app"));
