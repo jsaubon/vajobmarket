@@ -57,26 +57,35 @@ Route::middleware('auth:api')->group(function () {
 
 Route::get('test1',function() {
 
-    $email = new Mail();
-    $email->setFrom("devsupport@ihrbuddy.com", "Support");
-    $email->setSubject("I'm replacing the subject tag");
-    $email->addTo(
-        "joshuasaubon@gmail.com",
-        "Joshua Saubon",
-        [
-            "subject" => "Subject Test",
-            "name" => "Test Joshua",
-        ],
-        0
-    );
-    $email->setTemplateId("d-7b75b67cbc7b4a1cbf2f7dfb53115686");
-    $sendgrid = new \SendGrid(env('SENDGRID_API_KEY'));
-    try {
-        $response = $sendgrid->send($email);
-        print $response->statusCode() . "\n";
-        print_r($response->headers());
-        print $response->body() . "\n";
-    } catch (Exception $e) {
-        dd('Caught exception: '.  $e->getMessage());
-    }
+    $exp_date = '01/21';
+    $cvc = '321';
+
+
+    $card = [
+        'number' => '4242424242424242',
+        'exp_month' => '01',
+        'exp_year' => '2022',
+        'cvc' => $cvc,
+    ];
+
+
+    $stripe = new \Stripe\StripeClient('sk_test_n4PP5wnx5j42xhC9pmzfsefF00GnQvHVlX');
+     
+    // dd($exp_year,$exp_month);
+    // CREATE TOKEN
+    $token = $stripe->tokens->create([
+        'card' => $card,
+    ]);
+    // dd($token);
+    $token_id = $token->id;
+    
+
+    // CREATE CUSTOMER
+    $customer = $stripe->customers->create([
+        'description' => 'Test Customer',
+        'email' => 'test@test.com',
+        'source' => $token_id,
+    ]);
+
+    dd($customer);
 });
